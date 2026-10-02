@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="{{ '/' | relative_url }}"><span class="brand-symbol">俄</span><span>俄庇娜<span class="brand-sub">资料百科</span></span></a><nav><a href="{{ '/catalog/' | relative_url }}">条目目录</a><a href="{{ '/gallery/' | relative_url }}">图像档案</a><a href="{{ '/about/' | relative_url }}">关于与编辑</a></nav><a class="github-link" href="{{ site.github.repository_url | default: '#' }}">GitHub</a></header>
+<main class="container">{{ content }}</main>
+<footer class="footer"><span>俄庇娜百科 · 世界观资料整理站</span><a href="{{ '/catalog/' | relative_url }}">浏览全部条目</a></footer>
+<script>window.WIKI_BASEURL={{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
+</body>
+</html>
