@@ -1,0 +1,26 @@
+title: 俄庇娜百科
+name: 俄庇娜资料库
+description: 俄庇娜世界观的可检索、可持续更新资料站
+url: https://xdd44894-hub.github.io
+baseurl: /orbina-encyclopedia
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
+permalink: pretty
+collections:
+  articles:
+    output: true
+    permalink: /articles/:name/
+defaults:
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: article
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
