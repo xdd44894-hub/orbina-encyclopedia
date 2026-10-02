@@ -1,33 +1,28 @@
 ---
 layout: default
-title: 俄庇娜百科
+title: 档案总览
 permalink: /
 ---
 
-<section class="hero">
-  <div class="eyebrow">WORLD REFERENCE · 俄庇娜世界观资料库</div>
-  <h1>俄庇娜百科</h1>
-  <p>一座持续生长的世界设定档案馆。按主题浏览，或直接搜索术语、人物、地点与事件。</p>
-  <label class="searchbox"><span aria-hidden="true">⌕</span><input id="wiki-search" type="search" placeholder="搜索：联合城、现实失衡能、洛古里克……" autocomplete="off"><kbd>/</kbd></label>
-  <div id="search-results" class="search-results" hidden></div>
-  <div class="hero-meta"><span>现有条目 <strong>{{ site.articles | size }}</strong></span><span>资料整理至 2026.10.02</span></div>
-</section>
-
-<section class="section-heading"><div><div class="eyebrow">EXPLORE</div><h2>按主题浏览</h2></div><a href="{{ '/catalog/' | relative_url }}">全部条目 →</a></section>
-<div class="category-grid">
+<h1>俄庇娜世界观资料档案库</h1>
+<p>资料条目：{{ site.articles | size }}。按主题列出；条目保留来源文件名，遇到冲突请查看覆盖说明与日期。</p>
+<p>来源优先级：明确标注的后续覆盖修正优先于冲突旧稿；未确认推测不作为正式设定。</p>
+<label class="searchbox"><span>全文检索</span><input id="wiki-search" type="search" placeholder="输入人物、地点、术语、事件或来源文件名" autocomplete="off"></label>
+<div id="search-results" class="search-results" hidden></div>
+<h2>分类目录</h2>
+<ul class="category-index">
 {% assign categories = site.articles | map: 'category' | uniq | sort %}
 {% for category in categories %}
   {% assign count = site.articles | where: 'category', category | size %}
-  <a class="category-card" href="{{ '/catalog/' | relative_url }}#{{ category | slugify }}"><span class="category-mark">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span><h3>{{ category }}</h3><p>{{ count }} 篇资料</p></a>
+  <li><a href="{{ '/catalog/' | relative_url }}#{{ category | slugify }}">{{ category }}</a>（{{ count }}）</li>
 {% endfor %}
-</div>
-
-<section class="section-heading"><div><div class="eyebrow">RECENTLY CURATED</div><h2>近期修订与核心资料</h2></div><a href="{{ '/catalog/' | relative_url }}">打开目录 →</a></section>
-<div class="feature-list">
-{% assign featured = site.articles | sort: 'source' | reverse %}
-{% for article in featured limit: 6 %}
-<a class="feature-row" href="{{ article.url | relative_url }}"><span class="feature-category">{{ article.category }}</span><span class="feature-title">{{ article.title }}</span><span class="feature-arrow">↗</span></a>
+</ul>
+{% for category in categories %}
+<section class="catalog-section" id="{{ category | slugify }}">
+  <h2>{{ category }}</h2>
+  {% assign entries = site.articles | where: 'category', category | sort: 'title' %}
+  <table class="record-table"><thead><tr><th>条目</th><th>来源文件</th></tr></thead><tbody>
+  {% for article in entries %}<tr><td><a href="{{ article.url | relative_url }}">{{ article.title }}</a></td><td>{{ article.source }}</td></tr>{% endfor %}
+  </tbody></table>
+</section>
 {% endfor %}
-</div>
-
-<div class="notice"><strong>资料优先级</strong><span>明确标注为“覆盖修正”的新文件优先于旧稿。遇到冲突时，先查看条目开头的来源文件与日期；讨论中的猜测不自动视为正式设定。</span></div>
