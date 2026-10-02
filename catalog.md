@@ -1,13 +1,17 @@
 ---
 layout: default
-title: 条目目录
+title: 全部资料
 permalink: /catalog/
 ---
-<div class="page-intro"><div class="eyebrow">INDEX</div><h1>条目目录</h1><p>每条资料都是独立的 Markdown 文件。更新设定时可以直接改对应条目，也可以新增文件。</p></div>
+<h1>全部资料</h1>
+<p>按分类列出所有条目。来源列指向整理所依据的原始文件或对话记录。</p>
 {% assign categories = site.articles | map: 'category' | uniq | sort %}
 {% for category in categories %}
-<section class="catalog-section" id="{{ category | slugify }}"><h2>{{ category }}</h2><div class="catalog-list">
+<section class="catalog-section" id="{{ category | slugify }}">
+<h2>{{ category }}</h2>
 {% assign entries = site.articles | where: 'category', category | sort: 'title' %}
-{% for article in entries %}<a href="{{ article.url | relative_url }}"><span>{{ article.title }}</span><small>{{ article.source }}</small></a>{% endfor %}
-</div></section>
+<table class="record-table"><thead><tr><th>条目</th><th>来源文件</th></tr></thead><tbody>
+{% for article in entries %}<tr><td><a href="{{ article.url | relative_url }}">{{ article.title }}</a></td><td>{{ article.source }}</td></tr>{% endfor %}
+</tbody></table>
+</section>
 {% endfor %}
