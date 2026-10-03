@@ -1,0 +1,10 @@
+---
+layout: null
+permalink: /ai-search-index.json
+---
+{% assign approved_articles = site.articles | where_exp: "article", "article.ai_search == true" %}
+[
+{% for article in approved_articles %}
+{"title":{{ article.title | jsonify }},"category":{{ article.category | jsonify }},"source":{{ article.source | jsonify }},"url":{{ article.url | relative_url | jsonify }},"text":{{ article.content | strip_html | normalize_whitespace | jsonify }}}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
