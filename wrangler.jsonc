@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "orbina-archive-search",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-03",
+  "vars": {
+    "SEARCH_INDEX_URL": "https://xdd44894-hub.github.io/orbina-encyclopedia/ai-search-index.json"
+  }
+}
