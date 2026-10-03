@@ -97,7 +97,7 @@ async function loadIndex(env, ctx) {
   const cacheResponse = new Response(JSON.stringify(data), {
     headers: { "Cache-Control": "public, max-age=300", "Content-Type": "application/json" }
   });
-  ctx.waitUntil(cache.put(cacheLeyKey, cacheResponse));
+    ctx.waitUntil(cache.put(cacheKey, cacheResponse));
   return data;
 }
 
