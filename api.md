@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 检索 API
 permalink: /api/
 ---
