@@ -1,0 +1,136 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "俄庇娜资料档案库检索 API",
+    "version": "1.0.0",
+    "description": "检索已完成分类审核并标记为 ai_search 的公开档案，返回标题、分类、来源、页面链接与摘要。"
+  },
+  "servers": [
+    {
+      "url": "https://orbina-encyclopedia.xdd44894.workers.dev"
+    }
+  ],
+  "paths": {
+    "/api/search": {
+      "get": {
+        "operationId": "search_orbina_archive",
+        "summary": "检索俄庇娜资料档案",
+        "description": "按关键词检索已审核档案。查询最多 200 字符，最多返回 10 条。",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "description": "搜索关键词",
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "最多返回结果数，范围 1–10，默认 5。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10,
+              "default": 5
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "搜索结果",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "关键词缺失、为空或过长"
+          },
+          "502": {
+            "description": "档案索引暂时不可用"
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "operationId": "check_orbina_search_health",
+        "summary": "检查检索服务状态",
+        "responses": {
+          "200": {
+            "description": "Worker 在线"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SearchResponse": {
+        "type": "object",
+        "required": [
+          "query",
+          "count",
+          "results"
+        ],
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer"
+          },
+          "note": {
+            "type": "string"
+          },
+          "results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchResult"
+            }
+          }
+        }
+      },
+      "SearchResult": {
+        "type": "object",
+        "required": [
+          "title",
+          "category",
+          "source",
+          "url",
+          "snippet"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "score": {
+            "type": "integer"
+          },
+          "snippet": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
