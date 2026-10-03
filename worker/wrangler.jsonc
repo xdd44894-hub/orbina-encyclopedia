@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "orbina-archive-search",
+  "name": "orbina-encyclopedia",
   "main": "src/index.js",
   "compatibility_date": "2026-10-03",
   "vars": {
