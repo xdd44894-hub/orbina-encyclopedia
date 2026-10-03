@@ -1,6 +1,7 @@
 ---
 title: "联合城_七大治安官_v0.3_人物档案扩充版"
-category: "势力与军事"
+category: "人物档案"
+ai_search: true
 source: "联合城_七大治安官_v0.3_人物档案扩充版.txt"
 ---
 
@@ -379,7 +380,8 @@ source: "联合城_七大治安官_v0.3_人物档案扩充版.txt"
 证词、语言、眼镜、成熟、锋利的礼貌
 
 ### 外观
-
+category: "人物档案"
+ai_search: true
 性别：
 女
 
