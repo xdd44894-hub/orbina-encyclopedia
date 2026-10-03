@@ -2,9 +2,33 @@
 title: "俄庇娜_2026-09-17中午后至09-20_未归档新增设定整理"
 category: "基础设定"
 source: "俄庇娜_2026-09-17中午后至09-20_未归档新增设定整理.txt"
+archived: true
 ---
 
-俄庇娜｜2026-09-17中午后至2026-09-20 未归档新增设定整理
+俄庇娜｜2026-09-17中午后至2026-09-20 来源归档（已拆分）
+
+> 本页保留原始整理稿供溯源。资料已拆入现行主题条目；请优先从下方分类入口阅读。原始内容中的争议、传言和未确认项仍按其原状态记录。
+
+## 分类去向
+
+| 原稿内容 | 现行归档 |
+| --- | --- |
+| 历史年代、弑神战时间口径 | [基础世界观]({{ '/articles/article-008/' | relative_url }})；冲突见[待确认事项]({{ '/articles/article-060/' | relative_url }}) |
+| 联合城民生、住房、劳动、教育与AI法院 | [联合民生]({{ '/articles/article-027/' | relative_url }}) |
+| 军团阵亡抚恤 | [阵亡抚恤制度]({{ '/articles/article-061/' | relative_url }}) |
+| 赫雷克斯·卡修人物资料 | [赫雷克斯·卡修人物档案]({{ '/articles/article-062/' | relative_url }}) |
+| 萨德林物价与流浪者再就业 | [萨德林民生与福利]({{ '/articles/article-063/' | relative_url }}) |
+| 银柳港鱼竿、饵料与捕捞规则 | [银柳港钓鱼文化补充]({{ '/articles/article-064/' | relative_url }}) |
+| 人民天国步兵武器与火力组 | [天国军工]({{ '/articles/article-013/' | relative_url }}) |
+| 曼德尔科学家叛逃与实体电台 | [曼德尔科学家叛逃事件]({{ '/articles/article-065/' | relative_url }})；电台见[军用实体电台]({{ '/articles/article-066/' | relative_url }}) |
+| 湾区矿场、大坝、赫伦索冲突、“攀登” | [战争事件与争议记录]({{ '/articles/article-067/' | relative_url }}) |
+| “风暴眼”与A1104 | [风暴眼行动与气象武器]({{ '/articles/article-068/' | relative_url }}) |
+| 萨瑞拉—胡思迪金字塔战役 | [萨瑞拉—胡思迪战役]({{ '/articles/article-069/' | relative_url }}) |
+| Z-C系武器 | [Z-C系设定档案]({{ '/articles/article-070/' | relative_url }}) |
+| 白石城饮食与环境 | [白石城补充档案]({{ '/articles/article-071/' | relative_url }}) |
+| 已在资料库0.3归档的项目 | 不重复录入；本页后附原始清单 |
+
+以下为原始来源整理文本，保留用于核对出处和变更历史。
 
 整理说明
 ---
