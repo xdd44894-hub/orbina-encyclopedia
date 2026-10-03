@@ -1,0 +1,59 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "俄庇娜资料档案库检索 API",
+    "version": "1.0.0",
+    "description": "Cloudflare Worker 对已分类审核的档案提供与站内检索规则一致的关键词搜索。"
+  },
+  "servers": [{
+    "url": "https://{subdomain}.workers.dev",
+    "description": "部署后替换为 Cloudflare Worker 的 workers.dev 地址",
+    "variables": { "subdomain": { "default": "your-worker-subdomain" } }
+  }],
+  "paths": {
+    "/api/search": {
+      "get": {
+        "operationId": "searchOrbinaArchive",
+        "summary": "检索俄庇娜档案",
+        "parameters": [
+          { "name": "q", "in": "query", "required": true, "description": "搜索关键词，最多 200 字符。", "schema": { "type": "string", "maxLength": 200 } },
+          { "name": "limit", "in": "query", "required": false, "description": "返回数量，1–10，默认 5。", "schema": { "type": "integer", "minimum": 1, "maximum": 10, "default": 5 } }
+        ],
+        "responses": {
+          "200": { "description": "匹配结果及可引用的档案链接。", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SearchResponse" } } } },
+          "400": { "description": "查询缺失、为空或过长。" },
+          "502": { "description": "静态档案索引暂时不可用。" }
+        }
+      }
+    },
+    "/health": { "get": { "operationId": "healthCheck", "summary": "检查服务状态", "responses": { "200": { "description": "Worker 在线。" } } } }
+  },
+  "components": {
+    "schemas": {
+      "SearchResponse": {
+        "type": "object",
+        "required": ["query", "count", "results"],
+        "properties": {
+          "query": { "type": "string" },
+          "count": { "type": "integer" },
+          "note": { "type": "string" },
+          "results": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["title", "category", "source", "url", "snippet"],
+              "properties": {
+                "title": { "type": "string" },
+                "category": { "type": "string" },
+                "source": { "type": "string" },
+                "url": { "type": "string", "format": "uri" },
+                "score": { "type": "integer" },
+                "snippet": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
