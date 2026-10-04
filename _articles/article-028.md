@@ -1852,7 +1852,7 @@ Ha              疑问标志
 Nyr-Nyr-Zhol    九九之火 / 核爆
 Nyr-Nyr-Ghor    九九手
 
-> 【待确认】“九九手”的正式组织位置、指挥隶属及编制边界尚未确认；保留为现代礼仪称谓，不扩展推断。详见[待确认事项]({{ '/articles/article-060/' | relative_url }})。
+“九九手”是现代礼仪称谓；其正式组织位置、指挥隶属与编制边界尚未设定。
 Thal-Ghor       立手
 Khal-Ghor       眼手
 部分 Kha / Thor / Ta 的现代标准用法
