@@ -1,8 +1,20 @@
 ---
-title: "俄庇娜_2026-09-08_新增设定整理_修正版"
-category: "基础设定"
+title: "2026-09-08来源原稿（分类后归档）"
+category: "历史档案"
+archived: true
 source: "俄庇娜_2026-09-08_新增设定整理_修正版.txt"
 ---
+
+## 分类结果与现行条目
+
+原稿已按内容拆分并归并到同类型条目。以下专题条目为整理后的现行检索入口；本页保留原稿、排除项和原始语境。
+
+- HVaK六轮步兵战斗突击炮：[HVaK六轮步兵战斗突击炮]({{ '/articles/article-014/' | relative_url }})
+- 人民天国步兵编组、旗号与通信：[人民天国步兵编组、旗号与通信]({{ '/articles/article-051/' | relative_url }})
+- 黑土、土币与园艺文化：[黑土、土币与园艺文化]({{ '/articles/article-076/' | relative_url }})
+- 守望角基金会：[守望角基金会]({{ '/articles/article-074/' | relative_url }})
+- PUMP与庞币、乓币：[PUMP与庞币、乓币]({{ '/articles/article-077/' | relative_url }})
+- 联合城教育与青少年神经接口：[联合城教育与青少年神经接口]({{ '/articles/article-027/' | relative_url }})
 
 《俄庇娜》近期新增设定整理
 整理日期：2026-09-08

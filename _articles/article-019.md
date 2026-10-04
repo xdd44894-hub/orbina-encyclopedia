@@ -9,7 +9,8 @@ source: "俄庇娜_2026-09-10_未归档新增设定整理.txt"
 
 本来源稿已按内容拆分，并与同类资料并入专题条目。下列内容以专题条目为准；本页保留原稿，供核对来源和原始语境。
 
-- 俄庇娜文明概况、人口口径与民间俗语：[俄庇娜基础设定]({{ '/articles/article-008/' | relative_url }})
+- 俄庇娜文明概况与人口口径：[俄庇娜基础设定]({{ '/articles/article-008/' | relative_url }})
+- 俄庇娜民间俗语：[俄庇娜笑话集]({{ '/articles/article-052/' | relative_url }})
 - 喀沃图正式名称、训练与任务：[联合部队]({{ '/articles/article-007/' | relative_url }})
 - 狂想曲三型长度与视觉比例：[天国军工]({{ '/articles/article-013/' | relative_url }})
 - 联合城街头牛排与饮食：[联合城饮食]({{ '/articles/article-025/' | relative_url }})
