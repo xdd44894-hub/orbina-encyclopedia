@@ -1,7 +1,8 @@
 ---
 title: "福祉"
-category: "社会与文化"
+category: "文章"
 source: "福祉.txt"
+ai_search: true
 ---
 
 天国民生
