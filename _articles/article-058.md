@@ -24,4 +24,4 @@ source: "项目对话归档（2026-09-01、2026-09-29）"
 
 ## 关联人物档案
 - [洛古里克人物档案]({{ '/articles/article-057/' | relative_url }})
-- [斐德岚及近期新增设定]({{ '/articles/article-001/' | relative_url }})
+- [斐德岚人物档案]({{ '/articles/article-101/' | relative_url }})
