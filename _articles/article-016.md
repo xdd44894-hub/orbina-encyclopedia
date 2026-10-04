@@ -1,8 +1,29 @@
 ---
-title: "俄庇娜_2026-09-12至09-14_未归档新增设定整理"
-category: "基础设定"
+title: "2026-09-12至09-14来源原稿（分类后归档）"
+category: "历史档案"
+archived: true
 source: "俄庇娜_2026-09-12至09-14_未归档新增设定整理.txt"
 ---
+
+## 分类结果与现行条目
+
+本原稿含多个主题，已拆分归并到相应人物、地点、装备、组织、生态、历史、制度和饮食条目。明确待确认内容集中记录在“待确认事项”中；本页保留原文供逐项核对。
+
+- 新曼彻斯特：[新曼彻斯特档案]({{ '/articles/article-029/' | relative_url }})
+- 恐龙复原：[恐龙复原与古生物观念]({{ '/articles/article-084/' | relative_url }})
+- “穹顶”狙击枪：[联合城“穹顶”狙击枪]({{ '/articles/article-085/' | relative_url }})
+- 全球工业与发展定位：[俄庇娜基础设定]({{ '/articles/article-008/' | relative_url }})
+- 寰宇工业生产：[寰宇重工]({{ '/articles/article-009/' | relative_url }})
+- 卡西米尔线、维度与“无瓤现象”：见[深蓝科技]({{ '/articles/article-040/' | relative_url }})、[无瓤现象档案]({{ '/articles/article-091/' | relative_url }})
+- 失衡现实制取与产业：[藏朔原科技]({{ '/articles/article-046/' | relative_url }})
+- 哈维克公司与产品：[公司档案]({{ '/articles/article-086/' | relative_url }})、[武器产品档案]({{ '/articles/article-087/' | relative_url }})
+- 白石城：[白石城补充档案]({{ '/articles/article-071/' | relative_url }})
+- 陆地交通与私家车：[联合交通工具与航空推进体系]({{ '/articles/article-080/' | relative_url }})
+- 民用枪械：[俄庇娜民用枪械档案]({{ '/articles/article-088/' | relative_url }})
+- 持枪管制、走私处罚与武力管控局：[枪械管制与武力管控局档案]({{ '/articles/article-092/' | relative_url }})
+- 碎洋植物：[碎洋植物与水生蔬菜]({{ '/articles/article-089/' | relative_url }})
+- 面火炉（3F）：[披萨与餐饮档案]({{ '/articles/article-090/' | relative_url }})
+- 待确认事项：[登记表]({{ '/articles/article-060/' | relative_url }})
 
 俄庇娜｜2026-09-12—2026-09-14 未归档新增设定整理
 
