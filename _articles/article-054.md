@@ -1,7 +1,6 @@
 ---
 title: "天国印象"
 category: "势力与军事"
-source: "天国印象.txt"
 ---
 
 人民天国印象

@@ -53,7 +53,6 @@ export default {
         .map(({ item, score }) => ({
           title: item.title,
           category: item.category,
-          source: item.source,
           url: absoluteArticleUrl(item.url),
           score,
           snippet: makeSnippet(item.text, rawQuery)
@@ -63,7 +62,7 @@ export default {
         query: rawQuery,
         count: results.length,
         results,
-        note: "仅检索已完成分类审核并标记为 ai_search 的档案。"
+        note: "仅检索已整理的公开条目。"
       }, 200, headers);
     } catch (error) {
       return json({ error: "index_unavailable", message: "检索索引暂时不可用。", detail: String(error?.message || error) }, 502, headers);
@@ -109,7 +108,7 @@ async function handleMcp(request, env, ctx, headers) {
     case "tools/list":
       result = { tools: [{
         name: "search_orbina_archive",
-        description: "Search reviewed and classified Orbina archive entries. Returns titles, categories, source links, and short excerpts.",
+        description: "Search reviewed and classified Orbina archive entries. Returns titles, categories, page links, and short excerpts.",
         inputSchema: {
           type: "object",
           properties: {
@@ -159,12 +158,11 @@ async function searchArchive(rawQuery, requestedLimit, env, ctx) {
     .map(({ item, score }) => ({
       title: item.title,
       category: item.category,
-      source: item.source,
       url: absoluteArticleUrl(item.url),
       score,
       snippet: makeSnippet(item.text, rawQuery)
     }));
-  return { query: rawQuery, count: results.length, results, note: "仅检索已完成分类审核并标记为 ai_search 的档案。" };
+  return { query: rawQuery, count: results.length, results, note: "仅检索已整理的公开条目。" };
 }
 
 function json(data, status, headers) {

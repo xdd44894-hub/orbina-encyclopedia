@@ -3,7 +3,7 @@
   "info": {
     "title": "俄庇娜资料档案库检索 API",
     "version": "1.0.0",
-    "description": "检索已完成分类审核并标记为 ai_search 的公开档案，返回标题、分类、来源、页面链接与摘要。"
+    "description": "按关键词检索已整理的公开条目，返回标题、分类、页面链接与摘要。"
   },
   "servers": [
     {
@@ -15,7 +15,7 @@
       "get": {
         "operationId": "search_orbina_archive",
         "summary": "检索俄庇娜资料档案",
-        "description": "按关键词检索已审核档案。查询最多 200 字符，最多返回 10 条。",
+        "description": "按关键词检索公开条目。查询最多 200 字符，最多返回 10 条。",
         "parameters": [
           {
             "name": "q",
@@ -105,7 +105,6 @@
         "required": [
           "title",
           "category",
-          "source",
           "url",
           "snippet"
         ],
@@ -114,9 +113,6 @@
             "type": "string"
           },
           "category": {
-            "type": "string"
-          },
-          "source": {
             "type": "string"
           },
           "url": {

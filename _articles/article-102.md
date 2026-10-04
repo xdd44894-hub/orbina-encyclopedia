@@ -1,7 +1,6 @@
 ---
 title: "鬨"
 category: "文章"
-source: "鬨_俄庇娜短篇小说_扩展润色版.txt（用户提供原文）"
 ai_search: true
 ---
 

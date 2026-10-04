@@ -1,7 +1,6 @@
 ---
 title: "卡西米尔“无瓤现象”"
 category: "异常与事件"
-source: "俄庇娜_2026-09-12至09-14_未归档新增设定整理.txt"
 ai_search: true
 ---
 

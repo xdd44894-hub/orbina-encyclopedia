@@ -1,7 +1,6 @@
 ---
 title: "福祉"
 category: "文章"
-source: "福祉.txt"
 ai_search: true
 ---
 

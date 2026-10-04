@@ -1,7 +1,6 @@
 ---
 title: "阿黛尔·莫里（留命者）人物档案"
 category: "人物"
-source: "联合城_七大治安官_v0.3_人物档案扩充版.txt"
 ai_search: true
 ---
 

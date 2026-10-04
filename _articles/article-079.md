@@ -1,7 +1,6 @@
 ---
 title: "旧地球第三至第五次世界大战"
 category: "历史与时间线"
-source: "俄庇娜_2026-09-09_新增未整合设定整理.txt"
 ai_search: true
 ---
 

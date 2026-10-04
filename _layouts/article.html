@@ -3,8 +3,7 @@ layout: default
 ---
 <article class="article-page">
   <a class="back-link" href="{{ '/catalog/' | relative_url }}">← 返回条目目录</a>
-  <div class="article-heading"><span class="pill">{{ page.category }}</span><h1>{{ page.title }}</h1><p class="source-line">来源：{{ page.source }}</p></div>
-  <aside class="source-note">本文按归档原稿整理为独立页面。若发现与后续覆盖稿冲突，请以更新日期更晚且明确标注覆盖的设定为准。</aside>
+  <div class="article-heading"><span class="pill">{{ page.category }}</span><h1>{{ page.title }}</h1></div>
   <div class="article-body">{{ content }}</div>
   <div class="article-end"><a href="{{ '/catalog/' | relative_url }}">继续浏览目录 →</a></div>
 </article>

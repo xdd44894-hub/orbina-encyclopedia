@@ -1,7 +1,6 @@
 ---
 title: "伊莱娅·赫斯（归档者）人物档案"
 category: "人物"
-source: "联合城_七大治安官_v0.3_人物档案扩充版.txt"
 ai_search: true
 ---
 

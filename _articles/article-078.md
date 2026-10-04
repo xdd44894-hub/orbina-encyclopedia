@@ -1,7 +1,6 @@
 ---
 title: "俄庇娜亚人与人类改造"
 category: "生物与社会"
-source: "俄庇娜_2026-09-09_新增未整合设定整理.txt"
 ai_search: true
 ---
 

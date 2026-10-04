@@ -1,7 +1,6 @@
 ---
 title: "联合城七大治安官共同设定与关系"
 category: "人物"
-source: "联合城_七大治安官_v0.3_人物档案扩充版.txt"
 ai_search: true
 ---
 

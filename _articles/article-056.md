@@ -1,7 +1,6 @@
 ---
 title: "天国法节选"
 category: "势力与军事"
-source: "天国法节选.txt"
 ---
 
 天国法节选

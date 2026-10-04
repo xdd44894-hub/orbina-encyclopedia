@@ -1,7 +1,6 @@
 ---
 title: "汴谷车站与汴谷车站饭店"
 category: "地点与设施"
-source: "俄庇娜_2026-09-10_未归档新增设定整理.txt"
 ai_search: true
 ---
 

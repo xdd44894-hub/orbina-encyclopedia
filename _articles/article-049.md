@@ -1,7 +1,6 @@
 ---
 title: "联合印象"
 category: "势力与军事"
-source: "联合印象.txt"
 ---
 
 夜巡

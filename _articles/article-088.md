@@ -1,7 +1,6 @@
 ---
 title: "俄庇娜民用枪械档案"
 category: "科技与装备"
-source: "俄庇娜_2026-09-12至09-14_未归档新增设定整理.txt"
 ai_search: true
 ---
 

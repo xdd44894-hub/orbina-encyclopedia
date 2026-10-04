@@ -1,7 +1,6 @@
 ---
 title: "联合动力机甲与工程战斗机器人"
 category: "科技与装备"
-source: "俄庇娜_2026-09-12_近期未整理新增设定整合.txt"
 ai_search: true
 ---
 

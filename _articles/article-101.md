@@ -1,7 +1,6 @@
 ---
 title: "斐德岚人物档案"
 category: "人物"
-source: "俄庇娜_近期新增设定完整归档_2026-10-02.txt（第27—33节）；斐楠之死与斐德岚生平补遗"
 ai_search: true
 ---
 
@@ -180,4 +179,3 @@ ai_search: true
 - 挚友：[洛古里克人物档案]({{ '/articles/article-057/' | relative_url }})
 - 叛逃事件：[曼德尔科学家叛逃事件]({{ '/articles/article-065/' | relative_url }})
 - 死亡事件的身份与时间关系仍待核对：[待确认事项]({{ '/articles/article-060/' | relative_url }})
-- 原始混合资料：[2026-10-02近期新增设定完整归档]({{ '/articles/article-001/' | relative_url }})

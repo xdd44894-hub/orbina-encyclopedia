@@ -1,7 +1,6 @@
 ---
 title: "很普通的一天"
 category: "文章"
-source: "Normal Day.txt（用户提供原文）"
 ai_search: true
 ---
 

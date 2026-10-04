@@ -1,7 +1,6 @@
 ---
 title: "俄庇娜笑话集"
 category: "社会与文化"
-source: "俄庇娜笑话集.txt；俄庇娜_2026-09-10_未归档新增设定整理.txt（民间俗语）"
 ai_search: true
 ---
 

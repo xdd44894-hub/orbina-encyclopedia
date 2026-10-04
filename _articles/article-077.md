@@ -1,7 +1,6 @@
 ---
 title: "PUMP、庞币与乓币"
 category: "经济与货币"
-source: "俄庇娜_2026-09-08_新增设定整理_修正版.txt"
 ai_search: true
 ---
 

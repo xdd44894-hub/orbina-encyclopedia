@@ -1,7 +1,6 @@
 ---
 title: "联合巨人"
 category: "势力与军事"
-source: "联合巨人.txt"
 ---
 
 联合势力“巨人”
