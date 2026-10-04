@@ -2,7 +2,8 @@
 title: "联合军事"
 category: "势力与军事"
 ai_search: true
----## 一、科幻材料补充1:
+---
+## 一、科幻材料补充1:
 碳化硅-石墨烯叠层复合陶瓷基装甲（SiC/Graphene Matrix Composite）
 简称代号：GCS陶瓷复合层
 结构原理：
