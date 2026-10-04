@@ -1,8 +1,24 @@
 ---
-title: "俄庇娜_2026-09-12_近期未整理新增设定整合"
-category: "基础设定"
+title: "2026-09-12来源原稿（分类后归档）"
+category: "历史档案"
+archived: true
 source: "俄庇娜_2026-09-12_近期未整理新增设定整合.txt"
 ---
+
+## 分类结果与现行条目
+
+本原稿已依主题拆分；下列条目为当前检索入口，原稿保留以便追溯。跨作品比较、现实科普和内部维护清单留在来源档案，不作为正史事实。
+
+- 悍将平台与皇家礼炮：[天国军工]({{ '/articles/article-013/' | relative_url }})
+- 天国炮种口径与300mm铅钔炮：[天国巨炮]({{ '/articles/article-043/' | relative_url }})
+- 钛晶电击弱点与防静电涂层：[藏朔原科技]({{ '/articles/article-046/' | relative_url }})
+- 联合静电罩与独立掷弹筒：[联合军事]({{ '/articles/article-014/' | relative_url }})
+- 民用交通、火箭推进与航空燃料：[联合交通工具与航空推进体系]({{ '/articles/article-080/' | relative_url }})
+- 餐饮信息服务：[联合城饮食]({{ '/articles/article-025/' | relative_url }})
+- 强袭者与鹰角：[联合动力机甲与工程战斗机器人]({{ '/articles/article-083/' | relative_url }})
+- 天国士兵持枪动作：[天国部队]({{ '/articles/article-051/' | relative_url }})
+- 烟雾弹、烟幕炮弹与主动烟体：[联合烟幕与主动烟体系统]({{ '/articles/article-082/' | relative_url }})
+- 医疗兵、医疗无人机与机器狗：[联合战场医疗与伤员后送]({{ '/articles/article-081/' | relative_url }})
 
 俄庇娜｜2026-09-12 近期未整理新增设定整合
 
