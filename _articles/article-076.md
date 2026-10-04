@@ -55,4 +55,4 @@ ai_search: true
 ## 关联条目
 
 - [守望角基金会]({{ '/articles/article-074/' | relative_url }})负责土金原址等博物馆和遗址保护。
-- [2026-09-10来源原稿]({{ '/articles/article-019/' | relative_url }})及[2026-09-08来源原稿]({{ '/articles/article-020/' | relative_url }})保留原始语境与出处。
+- 及保留原始语境与出处。

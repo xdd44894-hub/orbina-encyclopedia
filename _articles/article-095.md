@@ -120,4 +120,4 @@ ai_search: true
 ---
 
 所属群体共同背景与关系见[联合城七大治安官共同设定]({{ '/articles/article-100/' | relative_url }})。
-来源原稿：[七大治安官来源档案]({{ '/articles/article-024/' | relative_url }})。
+

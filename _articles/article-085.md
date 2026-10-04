@@ -32,4 +32,4 @@ ai_search: true
 
 不能把它理解成普通导轨步枪随便挂满附件。
 
-来源：[2026-09-12至09-14来源原稿]({{ '/articles/article-016/' | relative_url }})。
+

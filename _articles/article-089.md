@@ -2,8 +2,7 @@
 title: "碎洋植物与水生蔬菜"
 category: "地理与生态"
 ai_search: true
----
-## 三十五、柠荷碱与“次碱”
+---## 三十五、柠荷碱与“次碱”
 
 ### 果实：柠荷碱
 柠荷果实含：
@@ -114,6 +113,6 @@ ai_search: true
 切成细丝，
 制作沙拉。
 
-来源：[2026-09-12至09-14来源原稿]({{ '/articles/article-016/' | relative_url }})。
+
 
 与碎洋海洋环境的总体关系见[碎洋与巨齿鲨亚种文化]({{ '/articles/article-030/' | relative_url }})。
