@@ -1,6 +1,7 @@
 ---
 title: "仲学阳_新版设定整理"
 category: "人物"
+ai_search: true
 source: "仲学阳_新版设定整理.txt"
 ---
 

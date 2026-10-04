@@ -1,6 +1,6 @@
 ---
 title: "赫雷克斯·卡修人物档案"
-category: "人物档案"
+category: "人物"
 source: "俄庇娜_2026-09-17中午后至09-20_未归档新增设定整理.txt（第三节）"
 ai_search: true
 ---

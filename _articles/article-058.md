@@ -1,6 +1,7 @@
 ---
 title: "人物身份索引补充"
-category: "人物档案"
+category: "人物"
+ai_search: true
 source: "项目对话归档（2026-09-01、2026-09-29）"
 ---
 

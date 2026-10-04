@@ -1,6 +1,6 @@
 ---
 title: "夕哈尔·安迪"
-category: "人物档案"
+category: "人物"
 source: "俄庇娜_2026-09-10_未归档新增设定整理.txt"
 ai_search: true
 ---
