@@ -1,5 +1,5 @@
 ---
-title: "俄庇娜笑话集"
+title: "笑话集"
 category: "社会与文化"
 ai_search: true
 ---

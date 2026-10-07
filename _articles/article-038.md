@@ -1,4 +1,6 @@
 ---
+archived: true
+ai_search: false
 title: "俄庇娜基础设定补充"
 category: "基础设定"
 ---
@@ -381,3 +383,4 @@ category: "基础设定"
 
 
 ---
+

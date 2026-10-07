@@ -1,6 +1,7 @@
 ---
 title: "赤垩虫族兵种"
 category: "势力与军事"
+ai_search: true
 ---
 
 赤垩虫族兵种

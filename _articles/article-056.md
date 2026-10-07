@@ -1,6 +1,7 @@
 ---
-title: "天国法节选"
+title: "人民天国法律"
 category: "势力与军事"
+ai_search: true
 ---
 
 天国法节选

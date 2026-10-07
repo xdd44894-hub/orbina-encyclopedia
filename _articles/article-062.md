@@ -1,5 +1,5 @@
 ---
-title: "赫雷克斯·卡修人物档案"
+title: "赫雷克斯·卡修"
 category: "人物"
 ai_search: true
 ---

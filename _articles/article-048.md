@@ -1,6 +1,7 @@
 ---
-title: "联合巨人"
+title: "联合城工程巨构"
 category: "势力与军事"
+ai_search: true
 ---
 
 联合势力“巨人”

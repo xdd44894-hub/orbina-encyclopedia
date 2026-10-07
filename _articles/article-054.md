@@ -1,6 +1,7 @@
 ---
 title: "天国印象"
 category: "势力与军事"
+ai_search: true
 ---
 
 人民天国印象

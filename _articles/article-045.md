@@ -1,4 +1,6 @@
 ---
+archived: true
+ai_search: false
 title: "藏朔原人文"
 category: "势力与军事"
 ---
@@ -705,3 +707,4 @@ category: "势力与军事"
 冰河葬
 
 冰河葬的完整主条目见[《藏朔原葬礼·冰河葬》]({{ '/articles/article-044/' | relative_url }})。本文不重复刊载正文。
+

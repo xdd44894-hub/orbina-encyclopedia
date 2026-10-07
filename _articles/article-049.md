@@ -1,6 +1,7 @@
 ---
 title: "联合印象"
 category: "势力与军事"
+ai_search: true
 ---
 
 夜巡
