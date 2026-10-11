@@ -1,6 +1,6 @@
 ---
 title: "联合城饮食"
-category: "势力与军事"
+category: "食品与饮食"
 ai_search: true
 ---
 

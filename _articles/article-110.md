@@ -44,3 +44,8 @@ ai_search: true
 
 与秦棠：
 形成长期重/轻工业互补。
+
+
+## 首都溪热
+
+萨瑞拉首都为[溪热（Xireh）]({{ '/articles/article-328/' | relative_url }})。城市与温泉山庄资料见该条目。

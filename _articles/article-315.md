@@ -1,6 +1,6 @@
 ---
 title: "食品工业与配给"
-category: "科技与装备"
+category: "食品与饮食"
 ai_search: true
 ---
 
