@@ -4,7 +4,18 @@ category: "组织机构"
 ai_search: true
 ---
 
-亚速小队，英文名 R.U.S.H.，亦写作 RUSH，是深蓝的政治暗杀部队，由效能部主任与安全部长共同主持建立。
+亚速小队，英文全称 Recon Unit Strike Headquarters，缩写 RUSH，亦写作 R.U.S.H.，是深蓝的政治暗杀部队，由效能部主任与安全部长共同主持建立。
+
+## 英文全称
+
+| 字母 | 对应词 |
+| --- | --- |
+| R | Recon |
+| U | Unit |
+| S | Strike |
+| H | Headquarters |
+
+正式称谓仍为“亚速小队”。英文全称中的Headquarters不表示已经确认它是上级总指挥机构，也不据此另设指挥层级或编制。
 
 ## 椰阁城区行动
 
