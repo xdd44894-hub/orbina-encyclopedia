@@ -6,6 +6,8 @@ ai_search: true
 
 ## 寰宇—深蓝三年战争正式史称
 
+<figure><a href="{{ '/assets/images/战后高架.png' | relative_url }}"><img src="{{ '/assets/images/战后高架.png' | relative_url }}" alt="战后高架环境概念图" loading="lazy" style="max-width:100%;height:auto;"></a><figcaption>战争后的交通设施废墟概念画面；不特指某一场已命名战役。</figcaption></figure>
+
 ### 正式史称
 
 寰宇—深蓝持续三年的大规模战争，后世正式史称：
