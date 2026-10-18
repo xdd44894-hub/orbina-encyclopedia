@@ -1,0 +1,56 @@
+# 图片档案资料。每个原件仅保存一份；衍生合成图关联原始素材，不视为重复原件。
+"获得终端.png":
+  classification: "非正史联动／合成画面"
+  article_url: ""
+  article_title: ""
+  note: "以警务终端与开发区废弃加油站画面合成；不据此认定真实警务案件发生于该加油站，也不视为新增终端型号或独立地点。"
+  derived_from: ["警务终端.png", "开发区废弃加油站.png"]
+  sha256: "42cfba032ff6f885b0ee003330ec0c8cbf1116ba4f7d29883d97130c43ea204b"
+  width: 2049
+  height: 1153
+  bytes: 2930287
+"寰宇工业区（傍晚）.png":
+  classification: "正式设定／环境插画"
+  article_url: "/articles/article-009/"
+  article_title: "寰宇重工"
+  note: "工业设施环境概念画面，不指向已确认的特定分厂或寰宇总部。"
+  sha256: "58f22e909b6f530cdc1e86754f76b3d380a16341e9a7c3cae1ee4f89caea67ef"
+  width: 1672
+  height: 941
+  bytes: 2461680
+"世纪大厦（遗址）.png":
+  classification: "正式设定／遗址环境插画"
+  article_url: "/articles/article-395/"
+  article_title: "世纪大厦"
+  note: "战后遗址的环境概念表现，不用于推定世纪大厦的精确建筑结构或废墟测绘尺寸。"
+  sha256: "8ab20e8d1eb1528f0318bd76c17610d64f94770253079739d4b3a4c20106e85f"
+  width: 1672
+  height: 941
+  bytes: 2540109
+"警务终端.png":
+  classification: "正式设定／装备外观图"
+  article_url: "/articles/article-397/"
+  article_title: "遇袭警员遗留公务终端"
+  note: "独立设备视觉基准；与《获得终端》共享同一设备主体，不是第二种警用终端。"
+  sha256: "f31669b4b9e01d2b5674e1963a07487b3ed63e32e829f37aa9211cffdc169cbc"
+  width: 1403
+  height: 1121
+  bytes: 1521383
+"开发区废弃加油站.png":
+  classification: "正式设定／环境插画"
+  article_url: "/articles/article-350/"
+  article_title: "开发区与废土"
+  note: "独立环境视觉基准；与《获得终端》共享站点背景，不等于空猎-92A事件的加油站。"
+  sha256: "bd623d58cfd64be9c108764996f170a576a45d25d726a457d49f1e5bb9cc9df5"
+  width: 1672
+  height: 941
+  bytes: 2603037
+"战后高架.png":
+  classification: "正式设定／战后环境插画"
+  article_url: "/articles/article-004/"
+  article_title: "全球攻势"
+  note: "战争造成交通设施毁损的概念画面，不特指七大战役中的某一地点。"
+  sha256: "f53704094d8195f47e25f778a6484ffa544a1012126039cf5ca93ce3b2d596a1"
+  width: 1448
+  height: 1086
+  bytes: 1922344
