@@ -22,6 +22,8 @@ ai_search: true
 
 ## 开发区废弃加油站实例
 
+<figure><a href="{{ '/assets/images/开发区废弃加油站.png' | relative_url }}"><img src="{{ '/assets/images/开发区废弃加油站.png' | relative_url }}" alt="开发区废弃加油站环境插画" loading="lazy" style="max-width:100%;height:auto;"></a><figcaption>开发区的一处废弃公路加油站；不与空猎-92A补给事件自动视为同一地点。</figcaption></figure>
+
 已出现一处**开发区内的废弃公路加油站**环境场景：道路与油泵设施仍可辨认，站内保留加油雨棚及附属营业建筑，周围路面开裂、植被生长，呈现长期停止正常经营后的景象。
 
 这是开发区可以存在的**个别废弃设施**，不能据此推导所有开发区的加油站都是废弃站点，也不意味着加油站必然由犯罪团体经营。它与[《空猎-92A开发区加油站事件》]({{ '/articles/article-370/' | relative_url }})所涉及的超级跑车专供加油站，**并未被确认是同一地点**。
