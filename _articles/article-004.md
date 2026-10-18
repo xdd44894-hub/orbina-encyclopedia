@@ -23,7 +23,7 @@ ai_search: true
 
 | 代号与详细条目 | 主要战区 | 最终军事结果 |
 | --- | --- | --- |
-| [“回响”]({{ '/articles/article-387/' | relative_url }}) | 联合城旧核心城区 | **寰宇防御胜利**；世纪大厦倒塌约3,000人死亡 |
+| [“回响”]({{ '/articles/article-387/' | relative_url }}) | 联合城旧核心城区 | **寰宇防御胜利**；[世纪大厦]({{ '/articles/article-395/' | relative_url }})因深蓝强震装置倒塌，约3,000人死亡 |
 | [“风暴眼”]({{ '/articles/article-388/' | relative_url }}) | 莱利昂地区 | **深蓝局部战术胜利**；使用A1104气象武器迫使寰宇部队撤出原阵地 |
 | [“攀登”]({{ '/articles/article-389/' | relative_url }}) | 碎洋旧军事基地 | **寰宇军事胜利**；尖顶灯塔毁灭、“利剑”小队秘密出逃 |
 | [“沙丘”]({{ '/articles/article-390/' | relative_url }}) | 萨瑞拉胡思迪金字塔 | **深蓝防御胜利**；金字塔严重损毁 |
