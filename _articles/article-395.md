@@ -6,6 +6,11 @@ ai_search: true
 
 <figure><a href="{{ '/assets/images/世纪大厦（遗址）.png' | relative_url }}"><img src="{{ '/assets/images/世纪大厦（遗址）.png' | relative_url }}" alt="世纪大厦战后遗址概念图" loading="lazy" style="max-width:100%;height:auto;"></a><figcaption>世纪大厦遗址环境概念画面，非建筑测绘图。</figcaption></figure>
 
+{% assign century_second_art = site.static_files | where: 'path', '/assets/images/世纪大厦遗址2.jpg' | first %}
+{% if century_second_art %}
+<figure><a href="{{ '/assets/images/世纪大厦遗址2.jpg' | relative_url }}"><img src="{{ '/assets/images/世纪大厦遗址2.jpg' | relative_url }}" alt="世纪大厦遗址第二幅场景：装甲车辆、双直升机与倾塌建筑" loading="lazy" style="max-width:100%;height:auto;"></a><figcaption>世纪大厦遗址第二幅环境概念图；画面包含装甲车辆与两架直升机，仅为视觉表现，不单独确认型号与具体时间。</figcaption></figure>
+{% endif %}
+
 **世纪大厦**是位于**联合城旧核心城区**的一座大型综合商业及办公高层建筑，也是寰宇—深蓝三年战争[“全球攻势”]({{ '/articles/article-004/' | relative_url }})中的[“回响”战役]({{ '/articles/article-387/' | relative_url }})最具代表性的重大民用建筑损毁事件发生地。
 
 在“回响”战役中，**深蓝实际使用强震装置，使世纪大厦灾难性倒塌，造成约3,000人死亡**。这是已确定的历史事件真相，不是普通自然地震，也不是寰宇制造的假旗事件。深蓝在公开宣传中否认承担责任并指控寰宇捏造所谓地震武器；**战时公开说法和实际事件原因必须区分**。
