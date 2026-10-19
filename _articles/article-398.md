@@ -4,7 +4,7 @@ category: "航空装备"
 ai_search: true
 ---
 
-**AiF** 是寰宇重工航空炸弹体系的家族名称，全称 **Air-delivered Integrated Family**。它是一套以重量级别、任务型和可选制导／增程套件构成的标准型号体系，可作为寰宇旗下[洪水-7]({{ '/articles/article-384/' | relative_url }})、[洪水-7P]({{ '/articles/article-385/' | relative_url }})、[洪水-8]({{ '/articles/article-386/' | relative_url }})等轰炸机的航空弹药类别。实际机型适配必须分别符合既定弹舱、导轨、挂点质量、外形和接口限制，**不能仅凭统一型号规则推断每型飞机都能挂载全部AiF产品**。
+**AiF** 是寰宇重工航空炸弹体系的家族名称，全称 **Air-delivered Integrated Family**。它是一套以重量级别、任务型和可选制导／增程套件构成的标准型号体系，可作为寰宇旗下[洪水-7]({{ '/articles/article-384/' | relative_url }})、[洪水-7P]({{ '/articles/article-385/' | relative_url }})、[洪水-8]({{ '/articles/article-386/' | relative_url }})以及[枭1式]({{ '/articles/article-400/' | relative_url }})、[枭1B式]({{ '/articles/article-401/' | relative_url }})等轰炸机的航空弹药类别。实际机型适配必须分别符合既定弹舱、导轨、挂点质量、外形和接口限制，**不能仅凭统一型号规则推断每型飞机都能挂载全部AiF产品**。
 
 ## 型号体系
 
