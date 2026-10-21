@@ -1,14 +1,14 @@
 ---
-title: "反斜面：给蕾莎的信"
+title: "只鹿"
 category: "文章"
 ai_search: true
 ---
 
 > 寰宇—深蓝三年战争“全球攻势”背景下的军事小说。本篇为文学创作，人物、具体交火与幸存情况不作为峰岭争夺战的历史正史。
 
-[下载纯文本 TXT]({{ '/assets/text/fanling-fanxiemian-ch01-ch02.txt' | relative_url }})
+[下载纯文本 TXT]({{ '/assets/text/zhi-lu-ch01-ch02.txt' | relative_url }})
 
-# 《反斜面》
+# 《只鹿》
 
 *第一部·给蕾莎的信｜全球攻势·峰岭争夺战*
 
