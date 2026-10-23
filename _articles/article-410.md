@@ -6,6 +6,8 @@ ai_search: true
 
 ## 布鲁纳省渔民的高碳水混搭主食
 
+参见[布鲁纳省]({{ '/articles/article-411/' | relative_url }})地理总览。当地也有以[茭鱿、桨蟹为代表的海产]({{ '/articles/article-412/' | relative_url }})和专门的[日料式调味体系]({{ '/articles/article-413/' | relative_url }})；下面记录的是另一种较随意的渔民家常吃法。
+
 布鲁纳省部分渔民的日常主食搭配常显得随意而混杂，碳水化合物的比例往往较高。方便面与隔夜或冷却的熟米饭可以同时下锅，配上罐头鱼、调味品和蛋黄，并不要求把米饭、面条、海产分别做成独立菜肴。
 
 以下为已明确的一种具体吃法。它不是布鲁纳省所有居民统一遵守的标准食谱，也不是当地全部海鲜料理的代表。
@@ -42,3 +44,7 @@ ai_search: true
 ## 关联
 
 - [卡佩多速食面]({{ '/articles/article-326/' | relative_url }})：海鲜味 Cupdle 所属品牌及速食面产品背景。
+
+- [布鲁纳省]({{ '/articles/article-411/' | relative_url }})：海洋殖民地概况。
+- [布鲁纳省海产]({{ '/articles/article-412/' | relative_url }})：茭鱿与桨蟹。
+- [布鲁纳省调味料]({{ '/articles/article-413/' | relative_url }})：精细化料理的十种代表性调味料。
