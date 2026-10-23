@@ -41,4 +41,4 @@ ai_search: true
 
 冰河葬
 
-冰河葬的完整主条目见[《藏朔原葬礼·冰河葬》]({{ '/articles/article-044/' | relative_url }})。本文不重复刊载正文。
+冰河葬的完整主条目见[《藏朔原葬礼·冰河葬》]({{ '/articles/article-139/' | relative_url }})。本文不重复刊载正文。
