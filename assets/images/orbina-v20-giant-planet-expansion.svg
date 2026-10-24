@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="2600" viewBox="0 0 2400 2600" role="img" aria-label="俄庇娜巨行星世界自然地理V2.0候选方形地图，中央保留已知大陆及南口内海，地图四周新增八个未定名大陆轮廓。25个正式海名以底部名录标注，具体位置尚未锁定。"><title>俄庇娜母星 V2.0｜巨行星四向拓展世界地图</title><desc>世界地图候选底图，非比例、非经纬度投影、非政治版图。仅旧有确定的地理相对关系作为正史。新大陆分布与所有海名的地理归属仍为候选。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="2600" viewBox="0 0 2400 2600" role="img" aria-label="俄庇娜巨行星世界自然地理V2.0候选近方形地图，中央保留已知大陆及南口内海，地图四周新增八个未定名大陆轮廓。25个正式海名以底部名录标注，具体位置尚未锁定。"><title>俄庇娜母星 V2.0｜巨行星四向拓展世界地图</title><desc>世界地图候选底图，非比例、非经纬度投影、非政治版图。仅旧有确定的地理相对关系作为正史。新大陆分布与所有海名的地理归属仍为候选。</desc>
 <defs><linearGradient id="atlasSea" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0c2838"/><stop offset=".47" stop-color="#215467"/><stop offset="1" stop-color="#12374b"/></linearGradient><linearGradient id="atlasLand" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d0d3ad"/><stop offset=".45" stop-color="#a5bba1"/><stop offset="1" stop-color="#7b9d8a"/></linearGradient><pattern id="atlasWater" width="47" height="47" patternUnits="userSpaceOnUse"><path d="M-5 18Q12 11 26 18T54 18" fill="none" stroke="#acd3e2" stroke-opacity=".12" stroke-width="1.2"/></pattern>
 <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102d42"/><stop offset=".56" stop-color="#214f64"/><stop offset="1" stop-color="#0e3448"/></linearGradient>
 <linearGradient id="land" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#A9B69C"/><stop offset=".5" stop-color="#899E8B"/><stop offset="1" stop-color="#9CAE89"/></linearGradient>
@@ -10,7 +10,7 @@
 <style>.atlasTitle{fill:#f6f5e9;font:700 42px "Noto Sans CJK SC","Microsoft YaHei",sans-serif}.atlasSub{fill:#adcad2;font:22px "Noto Sans CJK SC","Microsoft YaHei",sans-serif}.atlasLand{fill:#1e4948;font:700 26px "Noto Sans CJK SC","Microsoft YaHei",sans-serif;text-anchor:middle}.atlasLandMini{fill:#295553;font:19px "Noto Sans CJK SC","Microsoft YaHei",sans-serif;text-anchor:middle}.atlasOcean{fill:#b5d9e3;font:500 28px "Noto Sans CJK SC","Microsoft YaHei",sans-serif;letter-spacing:3px;text-anchor:middle;paint-order:stroke;stroke:#163b4d;stroke-width:4px}.atlasLoc{fill:#eef4e1;font:700 23px "Noto Sans CJK SC","Microsoft YaHei",sans-serif;text-anchor:middle;stroke:#173b4d;stroke-width:4px;paint-order:stroke}.atlasFoot{fill:#e2efeb;font:26px "Noto Sans CJK SC","Microsoft YaHei",sans-serif}.atlasNote{fill:#b6cdd2;font:21px "Noto Sans CJK SC","Microsoft YaHei",sans-serif}.atlasList{fill:#f2ebd4;font:700 23px "Noto Sans CJK SC","Microsoft YaHei",sans-serif}.atlasSmall{fill:#9ebdc6;font:17px "Noto Sans CJK SC","Microsoft YaHei",sans-serif}</style></defs>
 <rect width="2400" height="2600" fill="#081d2a"/><rect x="36" y="35" width="2328" height="2530" rx="22" fill="#0b2739" stroke="#476b7d" stroke-width="2"/>
 <text x="86" y="100" class="atlasTitle" >俄庇娜母星  /  巨行星自然地理 V2.0</text>
-<text x="88" y="142" class="atlasSub" >ORBINA · FOUR-DIRECTION CONTINENTAL EXPANSION · 正方形扩展 / 不套用地球 16:9 海图</text>
+<text x="88" y="142" class="atlasSub" >ORBINA · FOUR-DIRECTION CONTINENTAL EXPANSION · 近方形扩展 / 不套用地球 16:9 海图</text>
 <rect x="72" y="172" width="2256" height="2061" rx="19" fill="url(#atlasSea)" stroke="#456f7e" stroke-width="2"/><rect x="72" y="172" width="2256" height="2061" rx="19" fill="url(#atlasWater)"/>
 <line x1="86" y1="320" x2="2318" y2="320" stroke="#b1d0db" opacity=".09" stroke-dasharray="9 13"/>
 <line x1="86" y1="580" x2="2318" y2="580" stroke="#b1d0db" opacity=".09" stroke-dasharray="9 13"/>
@@ -216,7 +216,7 @@
 <path d="M1708.5 1659.0096277263199q4.62 -7 8.82 -2 q4.2 6 12.18 2 l-3 8q-10.5 5 -18 -6Z"/>
 </g>
 <path d="M1668 1517 Q1719 1582 1684 1653" fill="none" stroke="#c2e0d9" stroke-width="3" stroke-dasharray="9 13" opacity=".65"/>
-<text x="1733" y="1632" class="atlasLoc" >碎洋 · 32岛链概念标注</text>
+<text x="1733" y="1632" class="atlasLoc" >碎洋 · 岛链结构候选</text>
 <text x="1216" y="210" class="atlasOcean" >北白洋</text>
 <text x="685" y="766" class="atlasOcean" >白潮海</text>
 <text x="1677" y="762" class="atlasOcean" >北西里？</text>
