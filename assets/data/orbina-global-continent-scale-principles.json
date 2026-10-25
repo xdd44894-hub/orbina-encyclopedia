@@ -19,20 +19,26 @@
     "caveat": "本草案中的47.6%是假想纬度与假定球面下的几何比例，不等同已定f_land；真实椭球时公式还需修正。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B07",
-    "status": "唯一现行全球制图非正史候选；正式地理关系和25个海名不变",
-    "working_map": "assets/images/orbina-v225r-b07-global-silhouette.svg",
-    "equal_area_map": "assets/images/orbina-v225r-b07-mollweide-equal-area.svg",
-    "viewer": "assets/maps/orbina-v225r-b07-planetary-atlas.html",
-    "data": "assets/data/orbina-v225r-b07-global-geography-master.json",
+    "edition": "V2.25-R-B08",
+    "status": "当前非正史全球工作图：保留B07海陆轮廓，新增可隐藏的海床地貌研究图层",
+    "working_map": "assets/images/orbina-v225r-b08-global-silhouette.svg",
+    "equal_area_map": "assets/images/orbina-v225r-b08-mollweide-equal-area.svg",
+    "viewer": "assets/maps/orbina-v225r-b08-planetary-atlas.html",
+    "data": "assets/data/orbina-v225r-b08-global-geography-master.json",
+    "audit": "assets/data/orbina-v225r-b08-marine-morphology-audit.json",
     "geometry_model": {
       "continental_origin_groups": 6,
       "disconnected_major_land_polygons": 13,
       "candidate_islands": 93,
-      "new_small_micro_land_shapes": 32,
+      "new_recent_small_micro_land_shapes": 32,
       "official_named_major_seas": 25,
       "numbers_not_canon": true
+    },
+    "marine_morphology": {
+      "status": "only a map-distance-based illustrative hypothesis; no real bathymetry",
+      "north_east_shelf": "narrower",
+      "south_east_shelf": "wider and spatially varying"
     }
   },
-  "following_work": "在B07地图局部放大审查东北、东南盲端深湾及小微碎陆的构造可信度，确认视觉问题后再做海底地形与板块历史。不能为了凑数机械切裂成H形，也不允许擅定25个海名位置。"
+  "following_work": "在B08候选地貌图层基础上，结合可见陆岸审查海盆形态与候选岸线，逐步补足板块结构、地形高差及海底剖面。海域研究色带不得直接转换成水深米数或正式地质/海名归属。"
 }
