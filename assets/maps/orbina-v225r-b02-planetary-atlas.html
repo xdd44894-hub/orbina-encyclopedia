@@ -31,7 +31,15 @@ ul{padding-left:20px}li{margin:8px 0}footer{border-top:1px solid #385e6b;color:#
 <li><strong>确定地理暂不迁移：</strong>联合城—人民天国、秦棠—萨瑞拉、棠溪与南口内湾仍由旧版局部地图保存。母图标记只是提示，不是坐标迁移。</li>
 <li><strong>数学比例仍需谨慎：</strong>平面像素的面积不等于球体地表面积；纬度带、行星半径、海陆板块运动等仍属下一步任务。</li>
 </ul><p>西南陆架已分裂为两片被海峡分开的陆块，纬度面积复核约47.6%。目标仍是验证“这颗星球看起来是否合理”，不是继续堆积局部岸线锯齿。</p></section></div>
-</main><footer>ORBINA • V2.25-R-B02 GLOBAL SILHOUETTE / SPHERICAL PREVIEW • NON-CANON WORK IN PROGRESS</footer>
+<section class="panel notes" style="margin-top:18px" aria-label="大陆相对规模分析">
+<h2>现行 B02 大陆相对规模（非正史）</h2>
+<p>下表根据同一张候选地图的 Mollweide 等面积矢量轮廓计算。<strong>它只比较面积比例，不确定大陆正式数量或任何实际平方千米。</strong> 岛屿另行计入全球陆地覆盖率。</p>
+<div style="overflow-x:auto"><table id="areaHierarchy" style="width:100%;border-collapse:collapse;min-width:430px">
+<thead><tr><th style="text-align:left;padding:10px">候选陆块</th><th style="text-align:right;padding:10px">占候选陆地</th><th style="text-align:right;padding:10px">占假设球面</th></tr></thead>
+<tbody><tr><td colspan="3" style="padding:10px">读取等面积比例中…</td></tr></tbody>
+</table></div>
+<p><strong>尺度约束：</strong>全星陆地总绝对规模大概率更大，但各片大陆的面积与数量必须独立设计，不能将地球大陆按星球半径机械放大。当前最大陆块比例明显较高，可在下一轮重新调整。</p>
+</section></main><footer>ORBINA • V2.25-R-B02 GLOBAL SILHOUETTE / SPHERICAL PREVIEW • NON-CANON WORK IN PROGRESS</footer>
 <script>
 const projection=document.getElementById("projection"),mapPreview=document.getElementById("mapPreview"),areaNote=document.getElementById("areaNote");
 function updateProjection(){
@@ -98,7 +106,9 @@ function draw(){
  if(check.checked)gridLine(lon0);
 }
 fetch("../data/orbina-v225r-b02-global-geography-master.json").then(r=>{if(!r.ok)throw Error("JSON加载失败");return r.json()}).then(data=>{
- texture=populateTexture(data);status.textContent="全球母图已载入 · "+data.coarse_statistics.continental_nuclei+"片候选大陆核、"+data.coarse_statistics.archipelago_candidate_islands+"座候选岛屿。球面仅用于视觉比例检查。";draw();
+ texture=populateTexture(data);const dataRows=data.candidate_continental_area_hierarchy?.major_land_polygons||[];
+if(dataRows.length){document.querySelector("#areaHierarchy tbody").innerHTML=dataRows.map(r=>"<tr><td style='padding:9px;border-top:1px solid #345d69'>"+r.label+"</td><td style='text-align:right;padding:9px;border-top:1px solid #345d69'>"+r.land_share_percent.toFixed(2)+"%</td><td style='text-align:right;padding:9px;border-top:1px solid #345d69'>"+r.planet_share_percent.toFixed(3)+"%</td></tr>").join("");}
+status.textContent="全球母图已载入 · "+data.coarse_statistics.continental_nuclei+"片候选大陆核、"+data.coarse_statistics.archipelago_candidate_islands+"座候选岛屿。球面仅用于视觉比例检查。";draw();
 }).catch(e=>{status.textContent="无法读取球面数据。可用上面的母图SVG查看全球轮廓；错误："+e.message;draw()});
 slider.addEventListener("input",draw);check.addEventListener("change",draw);
 document.querySelectorAll("[data-longitude]").forEach(b=>b.addEventListener("click",()=>{slider.value=b.dataset.longitude;draw()}));draw();
