@@ -16,49 +16,38 @@
     "f_land": "全星陆地真实面积份额，未定",
     "f_i": "第i个大陆真实面积份额，未定",
     "R": "行星平均或采用的参考半径，未定",
-    "caveat": "目前约42.35%的数字仅为假想纬度与假定球面下的最新工作图几何比例，不等于已确定f_land；真实椭球时面积公式还需修正。"
+    "caveat": "B09假设经纬投影曾有约42.35%陆地比例，B11已改变真实绘图海陆轮廓，必须重算；旧42.35%绝非现行B11或俄庇娜正史海陆比例。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B10",
-    "status": "当前非正史构造解释A/B对照；B09的陆地轮廓、分区与剖面仍是数据基线，不代表正式板块构造",
-    "working_map": "assets/images/orbina-v225r-b09-global-silhouette.svg",
-    "equal_area_map": "assets/images/orbina-v225r-b09-mollweide-equal-area.svg",
-    "viewer": "assets/maps/orbina-v225r-b10-tectonic-scenario-atlas.html",
-    "data": "assets/data/orbina-v225r-b09-global-geography-master.json",
-    "audit": "assets/data/orbina-v225r-b09-seabed-transects-audit.json",
+    "edition": "V2.25-R-B11",
+    "status": "当前现行的非正史海陆工作地图：东北双主陆加碎陆群，东南原大陆主体拆成可辨原轮廓的众多独立陆地",
+    "working_map": "assets/images/orbina-v225r-b11-global-silhouette.svg",
+    "equal_area_map": "assets/images/orbina-v225r-b11-mollweide-equal-area.svg",
+    "viewer": "assets/maps/orbina-v225r-b11-fragmented-planetary-atlas.html",
+    "data": "assets/data/orbina-v225r-b11-fragmented-geography-master.json",
+    "audit": "assets/data/orbina-v225r-b11-fracture-integrity-audit.json",
     "geometry_model": {
-      "continental_origin_groups": 6,
-      "disconnected_major_land_polygons": 13,
-      "candidate_islands": 93,
-      "recent_small_micro_land_shapes": 32,
+      "disconnected_large_land_polygons": 15,
+      "candidate_fragment_and_island_shapes": 150,
+      "all_candidate_polygons": 165,
+      "NE_principal_landforms": 2,
+      "NE_fragments": 20,
+      "SE_fragments": 45,
+      "unchanged_b09_islands": 93,
       "approved_named_major_seas": 25,
       "numbers_not_canon": true
     },
-    "profile_layers": {
-      "count": 5,
-      "group_counts": {
-        "NE": 2,
-        "SE": 2,
-        "SW": 1
-      },
-      "interpretation": "relative bathymetry classification only, no official depth, gradients, coordinates or coast geology"
+    "source_history": {
+      "b09": "V2.25-R-B09: old coast vector, 13 larger land polygons and 93 islands",
+      "b10": "V2.25-R-B10: competing tectonic mechanisms A/B for old B09 coast shapes",
+      "b11": "V2.25-R-B11: real polygon fracture of six NE/SE mother polygons, other seven untouched"
     },
-    "base_atlas": "V2.25-R-B09",
-    "tectonic_hypotheses": "assets/data/orbina-v225r-b10-tectonic-hypotheses.json",
-    "map_source_note": "B10新增交互研究线与文字，但B09 SVG/JSON原始海陆多边形、面积、32碎屿定位与五剖面没有编辑；地图/等面积图链接保持指向B09底图。",
-    "tectonic_scenarios": {
-      "count": 2,
-      "names": [
-        "多期张裂与差异沉降",
-        "斜向走滑与局部拉分盆地"
-      ],
-      "region_sets": [
-        "NE",
-        "SE",
-        "SW"
-      ],
-      "status": "全部非正史候选"
-    }
+    "invalidated_layers": [
+      "B08 coastal-distance sea shelf raster does not match B11 coast",
+      "B09 five old transect class paths do not match B11 coast",
+      "B10 geometry corridors require reassessment and are not B11 tectonic overlays"
+    ],
+    "canon_scope": "Existing named geography relationships preserved; global map geometry, names, relative dimensions and precise locations all non-canon"
   },
-  "following_work": "B10已开始并列比较多期张裂与斜向走滑/拉分两套候选解释，待核查古陆拼合与地层连续性；然后研究不同海盆沉积演化，最后才尝试相对海拔/水深的定性地形。严禁据B08离岸色带补造实测水深或直接落实板块运动；25个正式海名不分配给匿名点。"
+  "following_work": "B11的新海峡与残岛链需要地理和古陆形态核查，再开展B12古陆拼合、区域沉积假说和水系连续性审查。不要把B09旧海床条带或B10旧构造研究轴线套用到新海岸，不要编造实际海深、星球半径或25个海名的准确位置。"
 }
