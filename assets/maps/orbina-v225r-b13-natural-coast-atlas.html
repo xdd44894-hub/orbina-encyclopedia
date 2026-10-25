@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 · V2.25-R-B13 碎裂大陆世界地图</title>
+<style>
+:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color-scheme:dark;background:#081e29;color:#ecf2ec}*{box-sizing:border-box}body{margin:0}
+header{background:#123c49;padding:28px max(18px,calc((100% - 1240px)/2));border-bottom:1px solid #3d7180}header h1{font-size:clamp(24px,3vw,37px);line-height:1.3;margin:0 0 8px}header p{color:#bdd3d5;margin:0;line-height:1.7}
+main{max-width:1280px;margin:auto;padding:18px}a{color:#c5e7de}.links{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 19px}.links a{border:1px solid #4e7883;border-radius:8px;padding:9px;text-decoration:none;background:#153e4b;font-size:14px}
+.card{background:#123542;border:1px solid #456e7c;border-radius:13px;padding:16px;margin:15px 0}.card h2{font-size:20px;margin:0 0 10px}
+#mapView{display:block;background:#0c3444;width:100%;height:auto;aspect-ratio:2/1;border-radius:8px;border:1px solid #356271}.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 0}.controls label{display:flex;align-items:center;gap:7px;font-size:14px}
+button,select{background:#255566;color:#f0f7ec;border:1px solid #6b9ba3;border-radius:7px;padding:8px;cursor:pointer}button:hover{background:#316c7e}
+small,.muted{color:#b6ccd1;line-height:1.7}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{background:#0d2b36;border-radius:9px;padding:13px}.stat strong{display:block;font-size:28px}.stat span{font-size:13px;color:#bfd0d0}
+.grid2{display:grid;grid-template-columns:minmax(240px,410px) 1fr;gap:20px}.grid2 p{line-height:1.8;color:#d4e4dd}
+#globe{display:block;width:100%;max-width:400px;margin:auto;border-radius:50%;background:#0e3041}
+.range{width:min(300px,55vw)}footer{text-align:center;color:#a6bfc3;padding:22px}
+@media(max-width:740px){.grid2{grid-template-columns:1fr}main{padding:10px}.card{padding:12px}}
+</style></head><body>
+<header><h1>俄庇娜 · 全球海岸自然化工作图</h1>
+<p><strong>V2.25-R-B13</strong> · 新图不拘泥B11旧海岸线：东北双主陆、东南碎陆群和全球各陆地的岸线均经过多尺度自然化。正式国家地理相对关系保持不变。<strong>当前仍为全球海陆工作方案，不是正史全球坐标图。</strong></p></header>
+<main>
+<div class="links">
+<a href="../images/orbina-v225r-b13-global-coastline.svg" target="_blank">B13自然化海岸 SVG</a>
+<a href="../images/orbina-v225r-b13-mollweide-equal-area.svg" target="_blank">B13等面积图 SVG</a>
+<a href="../data/orbina-v225r-b13-natural-coast-geography-master.json" target="_blank">可编辑海陆坐标 JSON</a>
+<a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank">海洋地理正史说明</a>
+</div>
+<section class="card">
+<div class="controls">
+<label>投影<select id="projection"><option value="working">经纬工作网格</option><option value="equal">Mollweide等面积</option></select></label>
+<label>区域<select id="region"><option value="all">全球全览</option><option value="ne">东北双主陆</option><option value="se">东南碎裂陆群</option><option value="sw">西南断裂海</option><option value="core">中央超级大陆</option></select></label>
+<label><input type="checkbox" id="oldOutline">对照B11旧海岸线</label>
+<label><input type="checkbox" id="terrainSeeds">显示8处高地候选点</label>
+<button id="reset" type="button">重置地图</button>
+</div>
+<object id="mapView" aria-label="俄庇娜B13自然化海岸工作图" type="image/svg+xml" data="../images/orbina-v225r-b13-global-coastline.svg">地图 SVG 加载失败，请使用上方原图链接。</object>
+<p class="muted" id="mapStatus">橙色虚线仅用于B11旧海岸对照；候选高地标记不是实际山脉或已测海拔。</p>
+</section>
+<section class="card"><h2>B13候选陆地与海岸复核</h2>
+<div class="stats">
+<div class="stat"><strong id="neCount">20</strong><span>东北切分后陆块总数</span></div>
+<div class="stat"><strong id="neMain">2</strong><span>东北保留较大主体</span></div>
+<div class="stat"><strong id="seCount">45</strong><span>东南切分后陆块总数</span></div>
+<div class="stat"><strong id="allCount">165</strong><span>全球候选陆地多边形</span></div>
+<div class="stat"><strong>38.86%</strong><span>假设球面工作图陆地比例（非正史）</span></div>
+</div>
+<p class="muted">陆块统计来自B11分组，B13只是暂时沿用同一组索引；不要求未来始终保持固定陆块数量或旧海岸形状。经过新岸线积分，工作图在假设球面上约38.86%为候选陆地，但绝非真实行星面积比例。</p>
+</section>
+<section class="card grid2"><div>
+<h2>3D 球面概览</h2><canvas width="400" height="400" id="globe" aria-label="候选大陆球面正射预览"></canvas>
+<div class="controls"><label>旋转角度 <input id="heading" class="range" type="range" min="-180" max="180" value="0"></label><span id="deg">0°</span></div>
+<div class="controls"><button data-lon="0" type="button">中央超级大陆</button><button data-lon="124" type="button">东北/东南</button><button data-lon="-130" type="button">西部大陆</button></div>
+<p id="globeStatus" class="muted">正在读取 B11 源数据…</p></div>
+<div><h2>新版本的自然化海岸原则</h2>
+<p><strong>东北：</strong>保留两片主体和散陆的构图方向，但海岬、弯曲海湾、孤岛岸缘均自由重新塑造；不把某条横贯裂海或固定断层当作不可改变的设定。</p>
+<p><strong>东南：</strong>让总体陆群形状保持可辨，却不依靠原来的直线切口；局部碎陆、岬角及岸线长短采用不均匀细节，同时避免独立点状岛屿机械等间距排列。</p>
+<p><strong>地理正史：</strong>联合城和人民天国仍在同一中央超级大陆；秦棠在萨瑞拉西北；内海与棠溪等既定关系不变。25个已确认海名继续保留，但不据图上匿名点分配海名。</p>
+<p><strong>形成机制：</strong>用多尺度相关扰动与局部岸段侵蚀模拟形态差异，不等同实测地质史。现实的岩岸、河谷淹没海湾、潟湖海岸和冰蚀峡湾不能简单互相替代。旧B08/B09海床剖面仍不适合套用B13岸线。</p></div></section>
+<section class="card"><h2>B13 · 地形建设第一步</h2><p class="muted">八处暂定高地位于两片东北主陆和六片东南较大残陆的内陆空间，仅代表未来优先研究的相对高地区域；下一步再建立山脊、谷地、沿岸冲积平原与独立流域的候选地貌关系。高地种子位置不表示真实地理坐标，任何河流都不得跨越断开的海水区域。</p><p><a href="../data/orbina-v225r-b13-relative-relief-seeds.json" target="_blank">查看高地候选与海岸地貌方法数据</a></p></section>
+</main><footer>ORBINA · B13 MULTISCALE NATURAL COASTS · NON-CANON</footer>
+<script>
+const map=document.getElementById("mapView"),proj=document.getElementById("projection"),region=document.getElementById("region"),old=document.getElementById("oldOutline"),terrain=document.getElementById("terrainSeeds"),mapStatus=document.getElementById("mapStatus");
+const windows={all:"0 0 2400 1200",ne:"1340 12 780 465",se:"1465 465 880 690",sw:"180 718 510 455",core:"525 102 1080 825"};
+function updateMap(){
+const equal=proj.value==="equal";const desired=equal?"../images/orbina-v225r-b13-mollweide-equal-area.svg":"../images/orbina-v225r-b13-global-coastline.svg";
+if(map.getAttribute("data")!==desired){map.setAttribute("data",desired);return;}
+try{const svg=map.contentDocument?.documentElement;if(!svg||svg.localName!=="svg")return;
+svg.setAttribute("viewBox",equal?"0 0 2400 1200":windows[region.value]);
+const overlay=svg.ownerDocument.getElementById("b13-b11-prev-coasts");if(overlay)overlay.style.display=old.checked&&!equal?"":"none";
+const seedLayer=svg.ownerDocument.getElementById("b13-relative-highland-candidates");if(seedLayer)seedLayer.style.display=terrain.checked&&!equal?"":"none";
+mapStatus.textContent=equal?"等面积图展示B13当前岸线。投影面积统计只对应假定球面。":terrain.checked?"显示8处相对内陆高地研究点，非实测海拔或确定山脉。":old.checked?"橙色虚线表示B11旧海岸，当前填色陆地为B13重新塑形的海岸。":"B13当前岸线已自然化。可切换旧B11岸线对比和8处相对高地研究点。";
+}catch(e){mapStatus.textContent="可打开SVG原图查看；交互层未成功读取："+e.message;}}
+map.addEventListener("load",updateMap);
+proj.addEventListener("change",()=>{if(proj.value==="equal")region.value="all";updateMap();});
+region.addEventListener("change",()=>{if(region.value!=="all"&&proj.value==="equal")proj.value="working";updateMap();});
+old.addEventListener("change",()=>{if(old.checked&&proj.value==="equal")proj.value="working";updateMap();});
+terrain.addEventListener("change",()=>{if(terrain.checked&&proj.value==="equal")proj.value="working";updateMap();});
+document.getElementById("reset").addEventListener("click",()=>{region.value="all";proj.value="working";old.checked=false;terrain.checked=false;updateMap();});
+const canvas=document.getElementById("globe"),ctx=canvas.getContext("2d",{willReadFrequently:true}),heading=document.getElementById("heading"),deg=document.getElementById("deg"),r=canvas.width*.467,cx=canvas.width/2,cy=canvas.height/2;
+let tex=null;
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+function populate(data){
+const off=document.createElement("canvas");off.width=1200;off.height=600;const c=off.getContext("2d");
+c.fillStyle="#154c61";c.fillRect(0,0,1200,600);
+for(let p of data.macro_landmasses.concat(data.archipelago)){
+c.fillStyle=p.color||"#c4cbae";c.strokeStyle="#dfeadc";c.lineWidth=.55;
+for(let shift of [-2400,0,2400]){const pts=p.coordinates;if(!pts?.length)continue;c.beginPath();c.moveTo((pts[0][0]+shift)/2,pts[0][1]/2);for(let i=1;i<pts.length;i++)c.lineTo((pts[i][0]+shift)/2,pts[i][1]/2);c.closePath();c.fill();c.stroke();}}
+return c.getImageData(0,0,1200,600);
+}
+function render(){
+deg.textContent=heading.value+"°";const sz=canvas.width;ctx.fillStyle="#0b2633";ctx.fillRect(0,0,sz,sz);
+if(!tex){ctx.fillStyle="#d1e3e6";ctx.font="16px system-ui";ctx.fillText("读取地图数据…",115,190);return;}
+let out=ctx.createImageData(sz,sz),dst=out.data,src=tex.data,centerLon=+heading.value;
+for(let yy=0;yy<sz;yy++){let y=(cy-yy)/r;for(let xx=0;xx<sz;xx++){let x=(xx-cx)/r,z2=1-x*x-y*y;if(z2<0)continue;let z=Math.sqrt(z2),lat=Math.asin(y)*180/Math.PI,lon=centerLon+Math.atan2(x,z)*180/Math.PI;lon=((lon+180)%360+360)%360-180;
+let ix=clamp(Math.floor((lon+180)*1200/360),0,1199),iy=clamp(Math.floor((90-lat)*600/180),0,599),si=4*(iy*1200+ix),di=4*(yy*sz+xx),shade=.64+.33*z;
+dst[di]=src[si]*shade;dst[di+1]=src[si+1]*shade;dst[di+2]=src[si+2]*shade;dst[di+3]=255;}}
+ctx.putImageData(out,0,0);ctx.strokeStyle="#e8f5ee";ctx.lineWidth=2;ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.stroke();}
+heading.addEventListener("input",render);
+document.querySelectorAll("[data-lon]").forEach(b=>b.addEventListener("click",()=>{heading.value=b.dataset.lon;render();}));
+fetch("../data/orbina-v225r-b13-natural-coast-geography-master.json").then(r=>{if(!r.ok)throw Error("无法读取B11源文件");return r.json();}).then(data=>{
+tex=populate(data);document.getElementById("neCount").textContent=data.b11_fracture.new_NE_fragment_shapes;
+document.getElementById("neMain").textContent=data.b11_fracture.new_principal_NE_landforms.length;
+document.getElementById("seCount").textContent=data.b11_fracture.new_SE_fragment_shapes;
+document.getElementById("allCount").textContent=data.macro_landmasses.length+data.archipelago.length;
+document.getElementById("globeStatus").textContent="B13新海岸球面已载入；该球面仅用于观察候选全球构图，不包含正式经纬或测高信息。";render();
+}).catch(e=>{document.getElementById("globeStatus").textContent="球面源数据未加载："+e.message;});
+render();updateMap();
+</script>
+</body></html>
