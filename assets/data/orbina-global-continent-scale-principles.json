@@ -16,41 +16,43 @@
     "f_land": "全星陆地真实面积份额，未定",
     "f_i": "第i个大陆真实面积份额，未定",
     "R": "行星平均或采用的参考半径，未定",
-    "caveat": "B13暂定经纬网格的球面面积数学积分约38.86%候选陆地（B12约40.95%）；是纯假设工作图中的相对值，绝非已确认行星覆盖率或真实面积。具体星球半径、经纬和版块仍待定。"
+    "caveat": "B14重新组织东北东南大小陆地后，在假想的2400×1200等角经纬网格及球面面积积分下陆地比例约43.48%；这一比例非已确认海陆正史，也不可推出半径、海深和地表公里面积。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B13",
-    "status": "当前非正史全球工作地图：全域多尺度自然化海岸与东北、东南碎陆的相对高地初步研究",
-    "working_map": "assets/images/orbina-v225r-b13-global-coastline.svg",
-    "equal_area_map": "assets/images/orbina-v225r-b13-mollweide-equal-area.svg",
-    "viewer": "assets/maps/orbina-v225r-b13-natural-coast-atlas.html",
-    "data": "assets/data/orbina-v225r-b13-natural-coast-geography-master.json",
-    "preliminary_terrain": "assets/data/orbina-v225r-b13-relative-relief-seeds.json",
-    "audit": "assets/data/orbina-v225r-b13-naturalization-audit.json",
-    "design_policy": "宏观两主体与碎陆格局只是构图方向，任何旧版候选岸线与碎裂几何不再被作为硬约束。正式正史的国家和海域关系仍保留。",
-    "draft_land_polygons": {
-      "larger": 15,
-      "smaller_or_islands": 150,
-      "total": 165,
-      "NE_current": 20,
-      "SE_current": 45,
-      "NE_current_two_major": true,
-      "counts_not_fixed_canon": true
+    "edition": "V2.25-R-B14",
+    "status": "当前非正史有机碎陆全球工作图；东北2片主陆与多散岛，东南7片较大残陆与不均匀群岛。旧切块及区域旧岛已替换",
+    "working_map": "assets/images/orbina-v225r-b14-organic-global-coast.svg",
+    "equal_area_map": "assets/images/orbina-v225r-b14-mollweide.svg",
+    "viewer": "assets/maps/orbina-v225r-b14-organic-archipelago-atlas.html",
+    "data": "assets/data/orbina-v225r-b14-organic-geography-master.json",
+    "audit": "assets/data/orbina-v225r-b14-organic-archipelago-audit.json",
+    "geometry_model": {
+      "NE_principal": 2,
+      "NE_candidate_polygons": 23,
+      "SE_major_remnants": 7,
+      "SE_candidate_polygons": 54,
+      "global_macro_layer": 16,
+      "global_islands_and_smaller_layer": 94,
+      "total_candidate_land_polygons": 110,
+      "old_regional_candidate_islands_replaced": 67,
+      "other_continents_preserved": 7,
+      "other_historical_island_polygons_preserved": 26,
+      "not_official_land_or_island_count": true
     },
     "hypothetical_sphere": {
-      "candidate_land_fraction": 0.38857487,
-      "percent_approx": 38.86,
-      "comparison_B12_percent_approx": 40.95,
-      "comparison_B09_percent_approx": 42.35,
-      "interpretation": "纯工作图经纬假设下的球面积分，不能代表正式海陆面积比例"
+      "land_fraction": 0.434833,
+      "land_percent_approx": 43.48,
+      "not_actual_planet_land_coverage": true,
+      "global_latlon_grid": "2400x1200 temporary longitude-latitude work coordinates"
     },
-    "relief_candidate_sites": {
-      "NE": 2,
-      "SE": 6,
-      "total": 8,
-      "all_only_inland_distance_staging": true
-    },
-    "carry_forward": "B11/B12母陆归属、59条旧边界最近配对线及B08/B09海床剖面均属于历史参考，不自动解释B13新海岸。"
+    "design_principles": [
+      "不把任何旧版陆块形状、拼接轮廓、硬切割线或碎陆数量作为后续设计的正史要求",
+      "新陆地采用独立曲线、多尺度凹湾与非均匀群岛分布，优先自然外观",
+      "两片东北主陆及东南松散群岛是当前构图方向，不代表完整地质历史",
+      "B12的59条旧陆缘配对线和B13的8个旧高地候选点已经不适用于新岸线",
+      "不改联合城/人民天国同超级大陆、秦棠—萨瑞拉、南口内海与25个海名及碎洋32岛链设定"
+    ],
+    "quality": "GitHub源文件提交、SVG语法结构和几何重叠审核由B14审查文件记录；在线或手机端实际渲染须另行确认。"
   },
-  "following_work": "B14开始按B13真正海岸分布复查相对内陆山脊、盆地和沿岸的沉积型/岩岸类型。河流、分水岭与三角洲必须依据低精度相对高程再生成，而不是凭旧陆块轮廓硬设。东北与东南碎岛数量不再机械固定。"
+  "following_work": "下一阶段继续检查B14东北与东南群岛在远景的视觉自然感；在新的独立陆地上建立相对山地与海盆、沉积岸、独立集水区，不能沿用旧图切割线、旧地貌高地坐标或虚构已有实测数据。"
 }
