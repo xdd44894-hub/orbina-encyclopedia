@@ -1,0 +1,52 @@
+{
+  "version": "V2.25-R-B02",
+  "status": "non-canonical morphology and projection comparison only",
+  "baseline": "assets/images/orbina-v225r-b-global-silhouette.svg",
+  "new_geography": "assets/data/orbina-v225r-b02-global-geography-master.json",
+  "global_working_map": "assets/images/orbina-v225r-b02-global-silhouette.svg",
+  "equal_area_map": "assets/images/orbina-v225r-b02-mollweide-equal-area.svg",
+  "interactive_viewer": "assets/maps/orbina-v225r-b02-planetary-atlas.html",
+  "coastal_structure": {
+    "origin_continent_groups": 6,
+    "displayed_disconnected_major_polygons": 7,
+    "baseline_island_count": 43,
+    "candidate_island_count": 50,
+    "modification": "southwestern microcontinent separated by a diagonal ~28 work-unit candidate marine corridor; seven small rift islets added",
+    "geometry_checks": {
+      "major_polygon_self_crossings": 0,
+      "major_to_major_crossings": 0,
+      "rift_islets_overlapping_major_or_old_islands": 0,
+      "dateline_land_seam_mismatches_3px_scan": 0,
+      "svg_path_total_reference_checks": "passed"
+    }
+  },
+  "projection": {
+    "source": "2400×1200 equirectangular (plate carrée) candidate globe coordinates; no actual planet coordinate reference yet",
+    "target": "spherical Mollweide equal-area projection",
+    "eqarea_formula": "theta solves 2 theta + sin(2 theta) = PI sin(phi); x=(2 sqrt(2)/PI)*longitudeRadians*cos(theta); y=sqrt(2)*sin(theta)",
+    "projected_ellipse_area_svg_units2": 2061199,
+    "projected_land_polygon_area_svg_units2": 981777,
+    "land_fraction_equal_area_vector": 0.476313,
+    "land_fraction_latitude_weighted_sample": 0.47569,
+    "old_v225r_b01_spherical_fraction": 0.47855,
+    "map_pixel_fraction_non_equal_area": 0.38969,
+    "comparison_error_percentage_points": 0.0623,
+    "grid_sample_count": 64800,
+    "sampling_algorithm": "Point-in-land for each 360x180 midpoint longitude-latitude grid cell; physical spherical surface weighting by cos(latitude).",
+    "valid_only_if": "Assumed longitude latitude interpolation describes a sphere. Planet oblateness, real coordinates, radius, seas, and ice are not established."
+  },
+  "protected_world_lore": [
+    "联合城与人民天国同超级大陆",
+    "秦棠位于萨瑞拉西北",
+    "中央R1/R2与棠溪",
+    "北冠半岛及南开口内海",
+    "25正式海域名尚未指配全球经纬"
+  ],
+  "limitations": [
+    "Mollweide map is for proportional area, not for preserving coast shapes or navigation distances.",
+    "V2.25-R geography is wholly candidate, including coastline origin and every latitude.",
+    "Rift coast is edited geometry, not a validated plate-tectonic mechanism.",
+    "Flat raster rendering by a user browser has not been visually QA-tested.",
+    "No elevation, ocean depth, crustal thickness, plate velocity or climate simulations."
+  ]
+}
