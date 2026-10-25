@@ -19,11 +19,11 @@
     "caveat": "目前约42.35%的数字仅为假想纬度与假定球面下的最新工作图几何比例，不等于已确定f_land；真实椭球时面积公式还需修正。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B09",
-    "status": "当前非正史全球地理候选，海陆轮廓继承B07/B08；海床类别剖面不等于实测水深",
+    "edition": "V2.25-R-B10",
+    "status": "当前非正史构造解释A/B对照；B09的陆地轮廓、分区与剖面仍是数据基线，不代表正式板块构造",
     "working_map": "assets/images/orbina-v225r-b09-global-silhouette.svg",
     "equal_area_map": "assets/images/orbina-v225r-b09-mollweide-equal-area.svg",
-    "viewer": "assets/maps/orbina-v225r-b09-planetary-atlas.html",
+    "viewer": "assets/maps/orbina-v225r-b10-tectonic-scenario-atlas.html",
     "data": "assets/data/orbina-v225r-b09-global-geography-master.json",
     "audit": "assets/data/orbina-v225r-b09-seabed-transects-audit.json",
     "geometry_model": {
@@ -42,7 +42,23 @@
         "SW": 1
       },
       "interpretation": "relative bathymetry classification only, no official depth, gradients, coordinates or coast geology"
+    },
+    "base_atlas": "V2.25-R-B09",
+    "tectonic_hypotheses": "assets/data/orbina-v225r-b10-tectonic-hypotheses.json",
+    "map_source_note": "B10新增交互研究线与文字，但B09 SVG/JSON原始海陆多边形、面积、32碎屿定位与五剖面没有编辑；地图/等面积图链接保持指向B09底图。",
+    "tectonic_scenarios": {
+      "count": 2,
+      "names": [
+        "多期张裂与差异沉降",
+        "斜向走滑与局部拉分盆地"
+      ],
+      "region_sets": [
+        "NE",
+        "SE",
+        "SW"
+      ],
+      "status": "全部非正史候选"
     }
   },
-  "following_work": "先审查B09五条线穿越多个陆块、海峡和海床色带的阶段变化，之后依次建立可选择的板块构造、沉积和地形高程假设。不能由岸距推算真实水深，不能直接把25个海名定位到匿名点。"
+  "following_work": "B10已开始并列比较多期张裂与斜向走滑/拉分两套候选解释，待核查古陆拼合与地层连续性；然后研究不同海盆沉积演化，最后才尝试相对海拔/水深的定性地形。严禁据B08离岸色带补造实测水深或直接落实板块运动；25个正式海名不分配给匿名点。"
 }
