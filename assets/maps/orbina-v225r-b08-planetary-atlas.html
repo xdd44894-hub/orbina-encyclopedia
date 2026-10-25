@@ -1,0 +1,149 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 V2.25-R-B 全球陆海重构 · 双投影视图</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#081c27;color:#f1f2e8}
+*{box-sizing:border-box}body{margin:0}header{padding:25px max(16px,calc((100% - 1220px)/2));background:#153645;border-bottom:1px solid #527986}
+h1{font-size:clamp(24px,3vw,37px);margin:0 0 10px}p{color:#bcd2d7;line-height:1.7}main{max-width:1250px;margin:auto;padding:18px}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}nav a{color:#d8f3e5;border:1px solid #4e7c8a;background:#1e485a;border-radius:8px;padding:9px 11px;text-decoration:none;font-size:14px}
+.hero{background:#123440;border:1px solid #527b84;border-radius:13px;overflow:hidden}
+.hero object{display:block;width:100%;height:auto;aspect-ratio:2/1;background:#123b4b}
+.hero .caption{font-size:13px;color:#a4c7cf;line-height:1.6;padding:10px 15px;border-top:1px solid #436978}
+.options{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:15px;background:#123442;border:1px solid #517787;border-radius:12px;margin:16px 0}
+.options label{display:inline-flex;align-items:center;gap:8px}input[type=range]{accent-color:#b9e2d1;width:clamp(145px,27vw,315px)}
+button{background:#29586b;color:#f0f6ef;border:1px solid #6896a1;padding:8px 12px;border-radius:8px;cursor:pointer}
+.showcase{display:grid;grid-template-columns:minmax(220px,450px) 1fr;gap:17px}
+.panel{background:#133743;border:1px solid #507b87;border-radius:12px;padding:16px}
+.panel h2{font-size:20px;margin:0 0 10px}.panel canvas{width:100%;max-width:430px;height:auto;display:block;margin:auto;background:#0d2633;border-radius:50%}
+.notes{line-height:1.7;color:#d7e2dd}.notes p{margin:10px 0;color:#d7e2dd}
+ul{padding-left:20px}li{margin:8px 0}footer{border-top:1px solid #385e6b;color:#a9c2c8;padding:22px}
+@media(max-width:810px){.showcase{grid-template-columns:1fr}.panel canvas{max-width:360px}}
+</style></head>
+<body><header><h1>俄庇娜 · 全球陆海骨架重构</h1><p><strong>V2.25-R-B08 · 海底地貌候选分区与裂海陆架审查</strong> · 多核错位破碎型。建立完整360°经纬工作画布和可旋转球体预览，先检查大陆尺度、海洋留白与接缝，再决定山脉、国家坐标和海岸成因。<strong>全部为非正史试绘。</strong></p></header>
+<main>
+<nav><a href="../images/orbina-v225r-b08-global-silhouette.svg" target="_blank" rel="noopener">经纬工作母图</a><a href="../images/orbina-v225r-b08-mollweide-equal-area.svg" target="_blank" rel="noopener">Mollweide等面积图</a><a href="../data/orbina-v225r-b08-global-geography-master.json" target="_blank" rel="noopener">结构与轮廓数据 JSON</a><a href="../data/orbina-global-continent-scale-principles.json" target="_blank" rel="noopener">巨行星大陆尺度原则</a><a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank" rel="noopener">已确认的海洋地理设定</a></nav>
+<div class="hero"><object id="mapPreview" type="image/svg+xml" data="../images/orbina-v225r-b08-global-silhouette.svg" role="img" aria-label="俄庇娜B08候选全球海陆经纬工作图">地图加载失败，可使用上方SVG链接查看</object><div class="caption">默认展示2:1经纬工作图，用局部放大比较去H形前后的海湾轮廓；另可切换等面积图；右侧球体来自同一组候选大陆数据。陆地比例测算仍假设球面与暂定纬度，不代表已经确定俄庇娜的真实经纬坐标或行星半径。</div></div>
+<div class="options">
+<label><strong>地图投影</strong><select id="projection"><option value="working">经纬工作网格（适合放大海岸）</option><option value="equal">Mollweide 等面积地图</option></select></label>
+<span id="areaNote" style="font-size:13px;color:#b4d5d0">工作网格：用于检查海岸裂解细节</span>
+<label><strong>查看区域</strong><select id="focus"><option value="all">全球</option><option value="ne">东北裂解大陆（重点）</option><option value="se">东南斜向大陆（重点）</option><option value="sw">西南裂海</option><option value="bay">中央超级大陆</option></select></label>
+<label><input id="showShape" type="checkbox"/>高亮重新设计的两组海岸</label>
+<label><input id="showWater" type="checkbox"/>显示25处匿名海域研究点</label>
+<label><input id="showSeaFloor" type="checkbox"/>显示陆架—海盆阶段推测（非水深）</label>
+<label><input id="showRiftAxes" type="checkbox"/>显示候选裂海轴线</label>
+<label><strong>旋转球体</strong><input id="heading" type="range" min="-180" max="180" step="1" value="0"/></label>
+<output id="deg">0°</output><button type="button" data-longitude="0">超级大陆侧</button><button type="button" data-longitude="-126">跨接缝大陆侧</button><button type="button" data-longitude="124">东南裂解大陆侧</button>
+<label><input id="showGrid" type="checkbox" checked/>球面经纬网</label>
+</div>
+<div class="showcase"><section class="panel"><h2>球面预览 · 正射视角</h2><canvas id="globe" width="420" height="420" aria-label="可旋转的俄庇娜全球陆海草案球面预览"></canvas><p id="state" class="notes">正在读取已保存的世界母图坐标…</p></section>
+<section class="panel notes"><h2>这次的东北和东南大陆为什么不同？</h2><ul>
+<li><strong>世界不再挤在单一画框中：</strong>西北侧的长形大陆穿越左右经度接缝，球面上实际连续。</li>
+<li><strong>大陆不按地球比例机械放大：</strong>全球陆地总绝对规模可能更大，但各片大陆的数量和大小都可独立变化；目前13片分离大块陆地只是候选，不能等同13个正式大洲。岛屿数量也可随海岸与板块设计继续调整。<br><strong>大陆有不同尺度与方向：</strong>核心超级大陆、斜向次级大陆、长形高纬陆地、微大陆和岛弧并不对称排列。</li>
+<li><strong>远洋获得连续空间：</strong>开放大洋、陆缘海、岛弧海和裂海可以并存；25个正式海名不必一一对应大陆，也不应未经确认就固定位置。</li>
+<li><strong>确定地理暂不迁移：</strong>联合城—人民天国、秦棠—萨瑞拉、棠溪与南口内湾等已确认关系由百科正史保留。母图标记只是提示，不是坐标迁移。</li>
+<li><strong>数学比例仍需谨慎：</strong>平面像素的面积不等于球体地表面积；纬度带、行星半径、海陆板块运动等仍属下一步任务。</li>
+</ul><p>西南两片裂解陆块继续保留；东北与东南大陆分别试绘窄陆架、宽陆架和不同尺度的海湾。删除14个互相重叠的小岛候选后，当前剩93座岛屿；假设球面陆地覆盖率约42.35%。目标仍是验证“这颗星球看起来是否合理”，不是继续堆积局部岸线锯齿。</p></section></div>
+<section class="panel notes" style="margin-top:18px">
+<h2>全球 B08 · 陆架与海盆的候选形态</h2>
+<p>这次<strong>不改变 B07 的海岸几何</strong>，把重点放在“海底应如何过渡”：东北长形裂海先以较狭窄陆架为研究假设，东南弯折裂海则采用较宽、宽度不均的陆架研究假设。局部还有从近岸到陡坡再到远洋盆地的过渡形态。这是<strong>按离岸距离与不规则变化函数生成的示意色带</strong>，不包含任何实际水深、米数或真实地壳年龄。</p>
+<div style="display:flex;gap:13px;flex-wrap:wrap;margin:13px 0;font-size:14px">
+<span><span style="color:#68baaa">■</span> 近岸陆架候选</span>
+<span><span style="color:#448f9e">■</span> 坡折与陆坡候选</span>
+<span><span style="color:#285d83">■</span> 外侧过渡水域</span>
+<span><span style="color:#0b2b47">■</span> 远洋海盆候选</span>
+</div>
+<p>使用上方“查看区域”放大东北、东南；开启“陆架—海盆阶段推测”，可以比较海域分层，再开启“候选裂海轴线”观察构造解释如何分布。轴线只是地图设计提示，不等于活动断层、海沟或实际航道。</p>
+<p><strong>保留的构图：</strong>13片候选大块陆地、93座大小不等的候选岛屿。东北、东南两处“H”形完整横裂口仍已改为互相错位的盲端深湾。中央超级大陆和已确定的国家地理关系不变。</p>
+<h2>假设球面候选面积层次</h2>
+<p>以下比例采用同一组暂定经纬坐标的等面积投影，不是实际星球面积。</p>
+<div style="overflow-x:auto"><table id="areaHierarchy" style="width:100%;min-width:440px;border-collapse:collapse"><thead><tr><th style="padding:9px;text-align:left">候选陆块</th><th style="padding:9px;text-align:right">占候选陆地</th><th style="padding:9px;text-align:right">占假设球面</th></tr></thead><tbody><tr><td colspan="3">读取相对面积中…</td></tr></tbody></table></div>
+<p>已确认的25个海洋／大型海域名称继续全部保留。25处匿名研究点不代表正式地理位置，也不能证明存在25个互不连通的海盆。</p>
+</section>
+</main><footer>ORBINA • V2.25-R-B08 GLOBAL SILHOUETTE / SPHERICAL PREVIEW • NON-CANON WORK IN PROGRESS</footer>
+<script>
+const projection=document.getElementById("projection"),mapPreview=document.getElementById("mapPreview"),areaNote=document.getElementById("areaNote"),focus=document.getElementById("focus"),shapeCtrl=document.getElementById("showShape"),waterCtrl=document.getElementById("showWater"),seaCtrl=document.getElementById("showSeaFloor"),riftCtrl=document.getElementById("showRiftAxes");
+const windows={all:"0 0 2400 1200",ne:"1330 14 760 365",se:"1480 474 875 650",sw:"206 742 476 405",bay:"620 196 1030 705"};
+function updateProjection(){const equal=projection.value==="equal";
+ mapPreview.data=equal?"../images/orbina-v225r-b08-mollweide-equal-area.svg":"../images/orbina-v225r-b08-global-silhouette.svg";
+ areaNote.textContent=equal?"等面积图仅用于假设球面的面积比例观察":"经纬工作图适合观察裂海海岸细节，不代表正式纬度";}
+function applyStudyLayers(){try{const doc=mapPreview.contentDocument,svg=doc?.documentElement;if(!svg||svg.localName!=="svg")return;const working=projection.value==="working";
+ svg.setAttribute("viewBox",working?windows[focus.value]:"0 0 2400 1200");
+ const shape=doc.getElementById("b08-coastal-shape-review"),water=doc.getElementById("b08-anonymous-water-markers"),sea=doc.getElementById("b08-seafloor-concept-zones"),rift=doc.getElementById("b08-hypothesized-rift-basin-lines");
+ if(shape)shape.style.display=working&&shapeCtrl.checked?"":"none";
+ if(water)water.style.display=working&&waterCtrl.checked?"":"none";
+ if(sea)sea.style.display=working&&seaCtrl.checked?"":"none";
+ if(rift)rift.style.display=working&&riftCtrl.checked?"":"none";
+}catch(e){}}
+function ensureWorking(){if(projection.value!=="working"){projection.value="working";updateProjection();}}
+projection.addEventListener("change",()=>{updateProjection();applyStudyLayers()});
+focus.addEventListener("change",()=>{if(focus.value!=="all")ensureWorking();applyStudyLayers();});
+shapeCtrl.addEventListener("change",()=>{if(shapeCtrl.checked)ensureWorking();applyStudyLayers();});
+waterCtrl.addEventListener("change",()=>{if(waterCtrl.checked)ensureWorking();applyStudyLayers();});
+seaCtrl.addEventListener("change",()=>{if(seaCtrl.checked)ensureWorking();applyStudyLayers();});
+riftCtrl.addEventListener("change",()=>{if(riftCtrl.checked)ensureWorking();applyStudyLayers();});
+mapPreview.addEventListener("load",applyStudyLayers);
+const canvas=document.getElementById("globe"),ctx=canvas.getContext("2d",{willReadFrequently:true}),slider=document.getElementById("heading"),deg=document.getElementById("deg"),status=document.getElementById("state"),check=document.getElementById("showGrid");
+const toRad=Math.PI/180;let texture=null;
+const size=canvas.width,cx=size/2,cy=size/2,R=size*.472;
+function normalize(lon){return ((lon+180)%360+360)%360-180}
+function populateTexture(data){
+ const tex=document.createElement("canvas");tex.width=1200;tex.height=600;const c=tex.getContext("2d");
+ c.fillStyle="#154b61";c.fillRect(0,0,tex.width,tex.height);
+ for(const s of [...data.macro_landmasses,...data.archipelago]){
+  c.fillStyle=s.color||"#c4cbac";c.strokeStyle="#e7ead4";c.lineWidth=.65;
+  for(const shift of [-2400,0,2400]){
+   c.beginPath();let p=s.coordinates;if(!p?.length)continue;
+   c.moveTo((p[0][0]+shift)/2,p[0][1]/2);
+   for(let i=1;i<p.length;i++)c.lineTo((p[i][0]+shift)/2,p[i][1]/2);
+   c.closePath();c.fill();c.stroke();
+  }
+ }
+ return c.getImageData(0,0,tex.width,tex.height);
+}
+function project(lon,lat,centerLon){
+ const phi=lat*toRad,lam=(lon-centerLon)*toRad,depth=Math.cos(phi)*Math.cos(lam);
+ if(depth<0)return null;
+ return [cx+R*Math.cos(phi)*Math.sin(lam),cy-R*Math.sin(phi)];
+}
+function gridLine(lon0){
+ ctx.strokeStyle="rgba(202,230,227,.28)";ctx.lineWidth=1;
+ for(let lat=-60;lat<=60;lat+=30){
+  ctx.beginPath();let started=false;
+  for(let lon=lon0-100;lon<=lon0+100;lon+=2){
+   let p=project(lon,lat,lon0);if(p){if(!started){ctx.moveTo(...p);started=true}else ctx.lineTo(...p)}else if(started){ctx.stroke();ctx.beginPath();started=false}
+  }ctx.stroke();
+ }
+ for(let lon=lon0-90;lon<=lon0+90;lon+=30){
+  ctx.beginPath();let started=false;
+  for(let lat=-90;lat<=90;lat+=2){
+   let p=project(lon,lat,lon0);if(p){if(!started){ctx.moveTo(...p);started=true}else ctx.lineTo(...p)}else if(started){ctx.stroke();ctx.beginPath();started=false}
+  }ctx.stroke();
+ }
+}
+function draw(){
+ ctx.clearRect(0,0,size,size);
+ const lon0=+slider.value;deg.textContent=lon0+"°";
+ ctx.fillStyle="#0a2433";ctx.fillRect(0,0,size,size);
+ if(!texture){ctx.fillStyle="#bdd8df";ctx.font="18px system-ui";ctx.fillText("等待地图数据…",120,205);return}
+ const w=texture.width,h=texture.height,src=texture.data,im=ctx.createImageData(size,size),out=im.data;
+ for(let y=0;y<size;y++){
+  const ny=(cy-y)/R;
+  for(let x=0;x<size;x++){
+   const nx=(x-cx)/R,r2=nx*nx+ny*ny;if(r2>1)continue;
+   const z=Math.sqrt(1-r2),phi=Math.asin(ny),delta=Math.atan2(nx,z),lat=phi/toRad,lon=normalize(lon0+delta/toRad);
+   const tx=Math.min(w-1,Math.max(0,Math.floor((lon+180)*w/360))),ty=Math.min(h-1,Math.max(0,Math.floor((90-lat)*h/180))),j=4*(ty*w+tx),idx=4*(y*size+x);
+   const shade=.65+.31*z+.025*nx;out[idx]=src[j]*shade;out[idx+1]=src[j+1]*shade;out[idx+2]=src[j+2]*shade;out[idx+3]=255;
+  }
+ }
+ ctx.putImageData(im,0,0);
+ ctx.beginPath();ctx.arc(cx,cy,R,0,Math.PI*2);ctx.strokeStyle="#e5f2ec";ctx.lineWidth=2;ctx.stroke();
+ if(check.checked)gridLine(lon0);
+}
+fetch("../data/orbina-v225r-b08-global-geography-master.json").then(r=>{if(!r.ok)throw Error("JSON加载失败");return r.json()}).then(data=>{
+ texture=populateTexture(data);const labelNames={"continental-nucleus":"核心超级大陆候选","seam-crossing-western-long-continent":"跨接缝长大陆","southeast-north-coastal-crust":"东南北侧陆片","southeast-central-transitional-block":"东南中部不对称海湾陆块","southeast-southern-remnant":"东南南侧陆片","northwest-lance-relict":"东北西部陆片","north-east-oceanward-shoulder":"东北东部陆片","north-east-central-shelf-block":"东北中部错位海湾陆块","southwestern-fractured-northern-block":"西南裂海北部陆片","southwest-southern-west-subcontinent":"西南裂海南部西陆片","southwest-southern-east-subcontinent":"西南裂海南部东陆片","southern-ocean-west-ridge":"南缘西陆片","southern-ocean-east-ridge":"南缘东陆片"};
+const dataRows=data.candidate_continental_area_hierarchy?.major_land_polygons||[];
+if(dataRows.length){document.querySelector("#areaHierarchy tbody").innerHTML=dataRows.map(r=>"<tr><td style='padding:9px;border-top:1px solid #345d69'>"+(labelNames[r.id]||r.id)+"</td><td style='text-align:right;padding:9px;border-top:1px solid #345d69'>"+r.land_share_percent.toFixed(2)+"%</td><td style='text-align:right;padding:9px;border-top:1px solid #345d69'>"+r.planet_share_percent.toFixed(3)+"%</td></tr>").join("");}
+status.textContent="全球母图已载入 · "+data.coarse_statistics.major_candidate_polygons+"片候选大块陆地、"+data.coarse_statistics.candidate_island_shapes+"座候选岛屿。球面仅用于视觉比例检查。";draw();
+}).catch(e=>{status.textContent="无法读取球面数据。可用上面的母图SVG查看全球轮廓；错误："+e.message;draw()});
+slider.addEventListener("input",draw);check.addEventListener("change",draw);
+document.querySelectorAll("[data-longitude]").forEach(b=>b.addEventListener("click",()=>{slider.value=b.dataset.longitude;draw()}));draw();
+</script></body></html>
