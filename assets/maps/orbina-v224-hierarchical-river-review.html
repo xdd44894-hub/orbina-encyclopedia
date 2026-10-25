@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>俄庇娜 V2.24 · 主支流自然化</title>
+<style>:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif}*{box-sizing:border-box}body{margin:0;background:#0a2939;color:#edf4e9}header{padding:24px;background:#143b4e;border-bottom:1px solid #587f91}h1{margin:0;font-size:clamp(23px,3vw,34px)}p{color:#c0d7da;line-height:1.55}main{max-width:1630px;margin:auto;padding:20px}.links{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 20px}.links a{padding:10px 14px;border-radius:8px;background:#1c5469;border:1px solid #6795a5;text-decoration:none;color:#e9f1e8}.controls{border:1px solid #618996;padding:17px;border-radius:12px;background:#153b4e;margin:12px 0}.controls label{display:inline-flex;gap:9px;align-items:center;margin:6px 17px 6px 0;cursor:pointer}.controls input{accent-color:#90d5c5;width:19px;height:19px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:#113948;border:1px solid #608392;border-radius:12px;overflow:hidden}.panel h2{font-size:20px;margin:14px 16px}.panel img,.panel object{width:100%;height:auto;aspect-ratio:2400/2730;object-fit:contain;display:block}.panel p{font-size:13px;margin:12px 17px}.local{margin-top:24px;border-radius:12px;border:1px solid #648895;overflow:hidden}.local img{display:block;width:100%;height:auto}footer{border-top:1px solid #3d6c80;padding:23px;color:#b0cbd0}@media(max-width:920px){.grid{grid-template-columns:1fr}main{padding:11px}}</style></head><body>
+<header><h1>俄庇娜 V2.24 · 河流主次与自然曲线</h1><p>北部、东缘5个破碎陆片的8条主河和8条支流，替换旧版17条互不关联的短溪流显示。所有内容仍为地理候选。</p></header>
+<main><div class="links"><a href="../images/orbina-v224-refined-river-systems.svg" target="_blank" rel="noopener">新版完整SVG</a><a href="../images/orbina-v224-river-basin-closeups.svg" target="_blank" rel="noopener">北部与东缘局部图</a><a href="../data/orbina-v224-branching-river-model.json">河网生成数据</a></div>
+<div class="controls"><strong>新版主图的独立图层</strong>
+<label><input data-layer="v224-refined-river-systems" type="checkbox" checked>新主支流系统</label>
+<label><input data-layer="candidate-local-drainage" type="checkbox">旧17条溪流（对照）</label>
+<label><input data-layer="candidate-ridge-correlations" type="checkbox" checked>山脊候选</label>
+<label><input data-layer="rift-water-shading" type="checkbox" checked>裂海色调</label>
+<p id="status">正在读取矢量地图…</p></div>
+<div class="grid"><section class="panel"><h2>V2.23：17条独立短溪流</h2><img src="../images/orbina-v223-north-east-watershed.svg" loading="lazy" alt="旧版破碎大陆候选河网"/><p>溪流均到海岸，但缺乏明确的干支流汇合关系。</p></section>
+<section class="panel"><h2>V2.24：八组主支流系统</h2><object id="atlas" type="image/svg+xml" data="../images/orbina-v224-refined-river-systems.svg" aria-label="新版候选八组主支流自然化全球地图"></object><p>主河和支流线宽不同、曲线化处理，原始格点数据可追溯。</p></section></div>
+<section class="local"><img src="../images/orbina-v224-river-basin-closeups.svg" loading="lazy" alt="八组候选主支流在北部及东缘两处放大地理板"></section>
+</main><footer>仅以人工排水势进行河流空间组织，不能代表已确认的降水、径流量、地形演化和正式河名。</footer>
+<script>(function(){"use strict";let svg=null;const obj=document.getElementById("atlas"),state=document.getElementById("status"),switches=[...document.querySelectorAll("[data-layer]")];
+function apply(){if(!svg)return;switches.forEach(function(c){const group=svg.getElementById(c.getAttribute("data-layer"));if(group)group.style.display=c.checked?"inline":"none";});}
+obj.addEventListener("load",function(){try{svg=obj.contentDocument;if(!svg)throw Error("No SVG");apply();state.textContent="矢量图已载入，可分别开启新旧河流图层。";}catch(e){state.textContent="此浏览器不支持控制嵌入SVG，请打开原图。";}});
+switches.forEach(c=>c.addEventListener("change",apply));})();</script></body></html>
