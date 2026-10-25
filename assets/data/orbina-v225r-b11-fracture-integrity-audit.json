@@ -1,0 +1,65 @@
+{
+  "version": "V2.25-R-B11",
+  "status": "SOURCE_STATIC_QA_PASS_RENDER_NOT_TESTED",
+  "scope": "B11 new fragmentation of six B09 northeast and southeast large candidate land polygons; no changes to existing canon geography",
+  "source": "assets/data/orbina-v225r-b09-global-geography-master.json",
+  "current": "assets/data/orbina-v225r-b11-fragmented-geography-master.json",
+  "map_files": [
+    "assets/images/orbina-v225r-b11-global-silhouette.svg",
+    "assets/images/orbina-v225r-b11-mollweide-equal-area.svg",
+    "assets/maps/orbina-v225r-b11-fragmented-planetary-atlas.html"
+  ],
+  "regional_stats": {
+    "NE": {
+      "parent_polygons": 3,
+      "original_svg_area": 53500,
+      "remnant_svg_area": 46324,
+      "new_fragment_polygons": 20,
+      "principal_landforms": 2,
+      "local_land_retention_percent": 86.59
+    },
+    "SE": {
+      "parent_polygons": 3,
+      "original_svg_area": 125072,
+      "remnant_svg_area": 98308,
+      "new_fragment_polygons": 45,
+      "larger_remnants": 6,
+      "local_land_retention_percent": 78.6
+    }
+  },
+  "global_summary": {
+    "unchanged_major_land_shapes": 7,
+    "unchanged_existing_islands": 93,
+    "new_fragments_from_6_previous_land_shapes": 65,
+    "new_total_macro_shapes": 15,
+    "new_total_archipelago_polygons": 150,
+    "new_total_global_polygons": 165,
+    "macroland_count_not_geologic_continent_count": true,
+    "all_geometries_non_canon": true
+  },
+  "checks": {
+    "unchanged_seven_macro_polygons_bit_identical": true,
+    "unchanged_93_islands_bit_identical": true,
+    "all_65_new_polygons_represented_in_flat_svg": true,
+    "all_65_new_polygons_represented_in_mollweide": true,
+    "all_new_flat_svg_polygons_have_three_wrap_instances": true,
+    "old_6_mother_polygons_not_visible_as_filled_land": true,
+    "b09_old_coastline_comparison_exists_as_disabled_overlay": true,
+    "obsolete_b08_bathymetry_raster_removed_from_B11_svg": true,
+    "b09_old_five_transect_overlay_removed_from_B11_svg": true,
+    "b11_map_group_xml_tag_balance": "passed",
+    "b11_mollweide_group_xml_tag_balance": "passed",
+    "html_inline_script_parse": "passed",
+    "article_and_active_policy_b11": "passed",
+    "browser_render": "not_tested",
+    "mobile_render": "not_tested",
+    "github_pages_build": "not_checked"
+  },
+  "interpretation": [
+    "NE two major blocks plus 18 additional fragments, including some small relicts; together they form 20 fragments.",
+    "SE three old land polygons are replaced by 45 candidate shapes; the envelope still recalls the original oblique spread.",
+    "Local SVG area ratios are only planar draft coordinates, not real planetary surface coverage and not measurement of old or future geography.",
+    "B10 plate A/B lines are not carried over as asserted active tectonic structures. B09 cross sections and B08 sea-floor bands were created for the previous coast and must be regenerated later."
+  ],
+  "next_stage": "Review B11 coastline visuals and freshwater/sea-channel topology before pursuing candidate paleogeographic restorations and sediment histories in B12."
+}
