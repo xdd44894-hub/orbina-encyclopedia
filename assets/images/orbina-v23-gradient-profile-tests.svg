@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1110" viewBox="0 0 1600 1110" role="img" aria-label="俄庇娜V2.3示例高程剖面：三条候选外流河与一个内流湖盆的高程下降逻辑测试，不是真实测量。"><title>俄庇娜V2.3 河流高程逻辑测试</title>
+<defs><style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif}.title{font-size:40px;font-weight:700;fill:#eef2e9}.subtitle{font-size:22px;fill:#bcd3df}.h{font-size:29px;font-weight:700;fill:#eff3e8}.legend{font-size:19px;fill:#cbd8dc}.num{font-size:18px;fill:#d0e1e4}.note{font-size:19px;fill:#f4d8ba}.small{font-size:17px;fill:#abbec7}</style></defs><rect width="1600" height="1110" fill="#0b2335"/><rect x="34" y="33" width="1532" height="1043" rx="23" fill="#133449" stroke="#608293" stroke-width="2"/>
+<text x="74" y="102" class="title" >俄庇娜 · V2.3 高程—坡降候选剖面</text>
+<text x="74" y="145" class="subtitle" >四种示例河流类型｜单位：米（人工测试值）；距离采用河程百分比，不能计算真实 m/km 坡度</text>
+<rect x="73" y="187" width="715" height="382" rx="16" fill="#193e51" stroke="#567787" stroke-width="1.4"/>
+<text x="101" y="231" class="h" >A · 山地短河</text>
+<text x="101" y="265" class="legend" >峡谷切割明显 · 外流河口</text>
+<line x1="164" y1="492" x2="719" y2="492" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="149" y="497" class="num" text-anchor="end">0</text>
+<line x1="164" y1="430.56" x2="719" y2="430.56" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="149" y="435.56" class="num" text-anchor="end">800</text>
+<line x1="164" y1="369.12" x2="719" y2="369.12" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="149" y="374.12" class="num" text-anchor="end">1600</text>
+<line x1="164" y1="307.68" x2="719" y2="307.68" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="149" y="312.68" class="num" text-anchor="end">2400</text>
+<path d="M164.0 307.7 L349.0 365.3 L534.0 444.4 L719.0 492.0" fill="none" stroke="#bfe5df" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="164" cy="307.68" r="7" fill="#bfe5df" stroke="#102d40" stroke-width="2"/>
+<text x="164" y="334.68" class="num" text-anchor="middle">2400m</text>
+<circle cx="349" cy="365.28" r="7" fill="#bfe5df" stroke="#102d40" stroke-width="2"/>
+<text x="349" y="351.28" class="num" text-anchor="middle">1650m</text>
+<circle cx="534" cy="444.384" r="7" fill="#bfe5df" stroke="#102d40" stroke-width="2"/>
+<text x="534" y="430.384" class="num" text-anchor="middle">620m</text>
+<circle cx="719" cy="492" r="7" fill="#bfe5df" stroke="#102d40" stroke-width="2"/>
+<text x="719" y="478" class="num" text-anchor="middle">0m</text>
+<text x="164" y="520" class="num" text-anchor="middle">0%</text>
+<text x="349" y="520" class="num" text-anchor="middle">33%</text>
+<text x="534" y="520" class="num" text-anchor="middle">67%</text>
+<text x="719" y="520" class="num" text-anchor="middle">100%</text>
+<text x="441.5" y="552" class="legend" text-anchor="middle">流向：上游 → 河口（近似海平面）</text>
+<rect x="813" y="187" width="715" height="382" rx="16" fill="#193e51" stroke="#567787" stroke-width="1.4"/>
+<text x="841" y="231" class="h" >B · 冲积长河</text>
+<text x="841" y="265" class="legend" >上游山前 · 下游宽缓平原</text>
+<line x1="904" y1="492" x2="1459" y2="492" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="889" y="497" class="num" text-anchor="end">0</text>
+<line x1="904" y1="430.56" x2="1459" y2="430.56" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="889" y="435.56" class="num" text-anchor="end">800</text>
+<line x1="904" y1="369.12" x2="1459" y2="369.12" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="889" y="374.12" class="num" text-anchor="end">1600</text>
+<line x1="904" y1="307.68" x2="1459" y2="307.68" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="889" y="312.68" class="num" text-anchor="end">2400</text>
+<path d="M904.0 369.1 L1089.0 416.7 L1274.0 472.0 L1459.0 492.0" fill="none" stroke="#e7d6a0" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="904" cy="369.12" r="7" fill="#e7d6a0" stroke="#102d40" stroke-width="2"/>
+<text x="904" y="355.12" class="num" text-anchor="middle">1600m</text>
+<circle cx="1089" cy="416.736" r="7" fill="#e7d6a0" stroke="#102d40" stroke-width="2"/>
+<text x="1089" y="402.736" class="num" text-anchor="middle">980m</text>
+<circle cx="1274" cy="472.032" r="7" fill="#e7d6a0" stroke="#102d40" stroke-width="2"/>
+<text x="1274" y="458.032" class="num" text-anchor="middle">260m</text>
+<circle cx="1459" cy="492" r="7" fill="#e7d6a0" stroke="#102d40" stroke-width="2"/>
+<text x="1459" y="478" class="num" text-anchor="middle">0m</text>
+<text x="904" y="520" class="num" text-anchor="middle">0%</text>
+<text x="1089" y="520" class="num" text-anchor="middle">33%</text>
+<text x="1274" y="520" class="num" text-anchor="middle">67%</text>
+<text x="1459" y="520" class="num" text-anchor="middle">100%</text>
+<text x="1181.5" y="552" class="legend" text-anchor="middle">流向：上游 → 河口（近似海平面）</text>
+<rect x="73" y="589" width="715" height="382" rx="16" fill="#193e51" stroke="#567787" stroke-width="1.4"/>
+<text x="101" y="633" class="h" >C · 山前侧谷</text>
+<text x="101" y="667" class="legend" >侧谷下切 · 海岸附近汇流</text>
+<line x1="164" y1="894" x2="719" y2="894" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="149" y="899" class="num" text-anchor="end">0</text>
+<line x1="164" y1="832.56" x2="719" y2="832.56" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="149" y="837.56" class="num" text-anchor="end">800</text>
+<line x1="164" y1="771.12" x2="719" y2="771.12" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="149" y="776.12" class="num" text-anchor="end">1600</text>
+<line x1="164" y1="709.6800000000001" x2="719" y2="709.6800000000001" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="149" y="714.6800000000001" class="num" text-anchor="end">2400</text>
+<path d="M164.0 748.1 L349.0 806.4 L534.0 867.9 L719.0 894.0" fill="none" stroke="#c3d8ed" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="164" cy="748.0799999999999" r="7" fill="#c3d8ed" stroke="#102d40" stroke-width="2"/>
+<text x="164" y="734.0799999999999" class="num" text-anchor="middle">1900m</text>
+<circle cx="349" cy="806.448" r="7" fill="#c3d8ed" stroke="#102d40" stroke-width="2"/>
+<text x="349" y="792.448" class="num" text-anchor="middle">1140m</text>
+<circle cx="534" cy="867.888" r="7" fill="#c3d8ed" stroke="#102d40" stroke-width="2"/>
+<text x="534" y="853.888" class="num" text-anchor="middle">340m</text>
+<circle cx="719" cy="894" r="7" fill="#c3d8ed" stroke="#102d40" stroke-width="2"/>
+<text x="719" y="880" class="num" text-anchor="middle">0m</text>
+<text x="164" y="922" class="num" text-anchor="middle">0%</text>
+<text x="349" y="922" class="num" text-anchor="middle">33%</text>
+<text x="534" y="922" class="num" text-anchor="middle">67%</text>
+<text x="719" y="922" class="num" text-anchor="middle">100%</text>
+<text x="441.5" y="954" class="legend" text-anchor="middle">流向：上游 → 河口（近似海平面）</text>
+<rect x="813" y="589" width="715" height="382" rx="16" fill="#193e51" stroke="#567787" stroke-width="1.4"/>
+<text x="841" y="633" class="h" >D · 内陆湖盆</text>
+<text x="841" y="667" class="legend" >封闭内流盆地 · 湖面高于海平面</text>
+<line x1="904" y1="894" x2="1459" y2="894" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="889" y="899" class="num" text-anchor="end">0</text>
+<line x1="904" y1="832.56" x2="1459" y2="832.56" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="889" y="837.56" class="num" text-anchor="end">800</text>
+<line x1="904" y1="771.12" x2="1459" y2="771.12" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="889" y="776.12" class="num" text-anchor="end">1600</text>
+<line x1="904" y1="709.6800000000001" x2="1459" y2="709.6800000000001" stroke="#8ab2bb" stroke-opacity=".25" stroke-dasharray="6 9"/>
+<text x="889" y="714.6800000000001" class="num" text-anchor="end">2400</text>
+<path d="M904.0 759.6 L1089.0 808.0 L1274.0 841.8 L1459.0 854.1" fill="none" stroke="#e5bea6" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="904" cy="759.6" r="7" fill="#e5bea6" stroke="#102d40" stroke-width="2"/>
+<text x="904" y="745.6" class="num" text-anchor="middle">1750m</text>
+<circle cx="1089" cy="807.984" r="7" fill="#e5bea6" stroke="#102d40" stroke-width="2"/>
+<text x="1089" y="793.984" class="num" text-anchor="middle">1120m</text>
+<circle cx="1274" cy="841.776" r="7" fill="#e5bea6" stroke="#102d40" stroke-width="2"/>
+<text x="1274" y="827.776" class="num" text-anchor="middle">680m</text>
+<circle cx="1459" cy="854.064" r="7" fill="#e5bea6" stroke="#102d40" stroke-width="2"/>
+<text x="1459" y="840.064" class="num" text-anchor="middle">520m</text>
+<text x="904" y="922" class="num" text-anchor="middle">0%</text>
+<text x="1089" y="922" class="num" text-anchor="middle">33%</text>
+<text x="1274" y="922" class="num" text-anchor="middle">67%</text>
+<text x="1459" y="922" class="num" text-anchor="middle">100%</text>
+<text x="1181.5" y="954" class="legend" text-anchor="middle">流向：上游 → 湖盆（非入海）</text>
+<rect x="74" y="1004" width="1450" height="48" rx="9" fill="#0a2738" stroke="#547687"/>
+<text x="95" y="1036" class="note" >地图拓扑初筛：20 段候选海向河段｜3 段支流汇合｜2 段内流湖盆；仍需真实高程栅格与地表比例尺。</text>
+</svg>
