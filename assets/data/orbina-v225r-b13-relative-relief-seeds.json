@@ -1,0 +1,175 @@
+{
+  "version": "V2.25-R-B13",
+  "kind": "RELATIVE_RELIEF_SEED_SITES_OVER_NATURALIZED_COASTLINE",
+  "status": "NON_CANON_GEOMORPHIC_PREPARATION",
+  "geography_master": "assets/data/orbina-v225r-b13-natural-coast-geography-master.json",
+  "seed_sites": [
+    {
+      "id": "HL-01",
+      "region": "SE",
+      "land_polygon_id": "b11-se-north-coastal-crust-01",
+      "study_center_svg": [
+        1706.52,
+        562.62
+      ],
+      "minimum_distance_from_coast_svg_units": 27.3,
+      "relative_candidate_role": "possible inland highland seed (largest available inland clear-zone candidate; NOT surveyed relief)",
+      "approved_meters": null,
+      "approved_longitude_latitude": null,
+      "mountain_name_assigned": false,
+      "hydrographic_network_assigned": false
+    },
+    {
+      "id": "HL-02",
+      "region": "SE",
+      "land_polygon_id": "b11-se-north-coastal-crust-02",
+      "study_center_svg": [
+        1706.54,
+        635.16
+      ],
+      "minimum_distance_from_coast_svg_units": 29.06,
+      "relative_candidate_role": "possible inland highland seed (largest available inland clear-zone candidate; NOT surveyed relief)",
+      "approved_meters": null,
+      "approved_longitude_latitude": null,
+      "mountain_name_assigned": false,
+      "hydrographic_network_assigned": false
+    },
+    {
+      "id": "HL-03",
+      "region": "SE",
+      "land_polygon_id": "b11-se-southern-remnant-01",
+      "study_center_svg": [
+        1620.58,
+        999.38
+      ],
+      "minimum_distance_from_coast_svg_units": 40.35,
+      "relative_candidate_role": "possible inland highland seed (largest available inland clear-zone candidate; NOT surveyed relief)",
+      "approved_meters": null,
+      "approved_longitude_latitude": null,
+      "mountain_name_assigned": false,
+      "hydrographic_network_assigned": false
+    },
+    {
+      "id": "HL-04",
+      "region": "SE",
+      "land_polygon_id": "b11-se-southern-remnant-02",
+      "study_center_svg": [
+        1950.37,
+        897.87
+      ],
+      "minimum_distance_from_coast_svg_units": 39.82,
+      "relative_candidate_role": "possible inland highland seed (largest available inland clear-zone candidate; NOT surveyed relief)",
+      "approved_meters": null,
+      "approved_longitude_latitude": null,
+      "mountain_name_assigned": false,
+      "hydrographic_network_assigned": false
+    },
+    {
+      "id": "HL-05",
+      "region": "NE",
+      "land_polygon_id": "b11-ne-lance-relict-01",
+      "study_center_svg": [
+        1520.08,
+        145.08
+      ],
+      "minimum_distance_from_coast_svg_units": 65.48,
+      "relative_candidate_role": "possible inland highland seed (largest available inland clear-zone candidate; NOT surveyed relief)",
+      "approved_meters": null,
+      "approved_longitude_latitude": null,
+      "mountain_name_assigned": false,
+      "hydrographic_network_assigned": false
+    },
+    {
+      "id": "HL-06",
+      "region": "NE",
+      "land_polygon_id": "b11-ne-oceanward-shoulder-01",
+      "study_center_svg": [
+        1882.26,
+        199.7
+      ],
+      "minimum_distance_from_coast_svg_units": 27.3,
+      "relative_candidate_role": "possible inland highland seed (largest available inland clear-zone candidate; NOT surveyed relief)",
+      "approved_meters": null,
+      "approved_longitude_latitude": null,
+      "mountain_name_assigned": false,
+      "hydrographic_network_assigned": false
+    },
+    {
+      "id": "HL-07",
+      "region": "SE",
+      "land_polygon_id": "b11-se-central-transitional-block-01",
+      "study_center_svg": [
+        1631.89,
+        822.09
+      ],
+      "minimum_distance_from_coast_svg_units": 38.9,
+      "relative_candidate_role": "possible inland highland seed (largest available inland clear-zone candidate; NOT surveyed relief)",
+      "approved_meters": null,
+      "approved_longitude_latitude": null,
+      "mountain_name_assigned": false,
+      "hydrographic_network_assigned": false
+    },
+    {
+      "id": "HL-08",
+      "region": "SE",
+      "land_polygon_id": "b11-se-central-transitional-block-02",
+      "study_center_svg": [
+        1797.03,
+        808.69
+      ],
+      "minimum_distance_from_coast_svg_units": 30.45,
+      "relative_candidate_role": "possible inland highland seed (largest available inland clear-zone candidate; NOT surveyed relief)",
+      "approved_meters": null,
+      "approved_longitude_latitude": null,
+      "mountain_name_assigned": false,
+      "hydrographic_network_assigned": false
+    }
+  ],
+  "method": "Select a candidate interior highland core for each of the eight large B13 remnant polygons by maximizing distance from coastline within its polygon, with a weak smooth tie-breaker. This is cartographic staging, not an actual elevation model.",
+  "site_count": 8,
+  "NE_sites": 2,
+  "SE_sites": 6,
+  "coastal_style_families": [
+    {
+      "name": "岩质岬角—曲折海湾",
+      "shape_hint": "Irregular rocky headlands and recessed coves; plausible where relative coastal relief and resistance are high",
+      "status": "not yet mapped to official areas"
+    },
+    {
+      "name": "淹没河谷型港湾",
+      "shape_hint": "Drowned valley or branching estuarine indentations, contingent on former drainage topography and relative sea-level history",
+      "status": "not yet mapped to official rivers"
+    },
+    {
+      "name": "低缓海岸—沙嘴潟湖",
+      "shape_hint": "Gently curved depositional coast, barrier beach or lagoon where sediment and wave reworking dominate",
+      "status": "not yet mapped to official areas"
+    },
+    {
+      "name": "冰蚀峡湾候选",
+      "shape_hint": "Narrow deep embayments only if glacial history, former relief and climate justify them; cannot assume high latitude alone",
+      "status": "not canon"
+    }
+  ],
+  "hypothetical_geometry_integral": {
+    "land_fraction": 0.38857487,
+    "land_percent": 38.8575,
+    "comparison_B09_percent_approx": 42.35,
+    "not_real_planet_statistic": true
+  },
+  "next_work": "After visual shoreline assessment, use qualitative uplift/denudation/relative lowlands to establish a grid of relative elevation. Then delineate independent watershed divides INSIDE each land polygon. Do not infer river continuity across new straits.",
+  "sources": [
+    {
+      "title": "USGS Types of Coasts",
+      "url": "https://pubs.usgs.gov/circ/c1075/types.html"
+    },
+    {
+      "title": "NOAA Five types of estuaries",
+      "url": "https://www.coast.noaa.gov/nerrs/about/what-is-an-estuary.html"
+    },
+    {
+      "title": "Mandelbrot statistical coastlines",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC433088/"
+    }
+  ]
+}
