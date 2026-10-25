@@ -5072,9 +5072,12 @@
     "continental_origin_groups": 6,
     "displayed_separated_land_polygons": 7,
     "archipelago_candidate_islands": 36,
-    "updated_metrics_pending": true,
+    "map_grid_land_share_estimate": 0.379244,
+    "sphere_weighted_land_share_estimate": 0.46411,
+    "equal_area_vector_land_share_estimate": 0.463831,
+    "area_fraction_disagreement_percentage_points": 0.028,
     "horizontal_seam_mismatched_samples": 0,
-    "global_surface_land_fraction_unknown": true
+    "spherical_assumptions_are_official": false
   },
   "limitations": [
     "No known radius, rotation rate, obliquity, topographic elevation, or measured coordinates.",
@@ -5202,5 +5205,47 @@
   "render_layers": {
     "shelf": "b03-shelf-width-hypotheses",
     "geology": "b03-geology-study"
+  },
+  "candidate_continental_area_hierarchy": {
+    "status": "non-canonical relative geometry under hypothetical spherical coordinates",
+    "major_land_polygons": [
+      {
+        "id": "continental-nucleus",
+        "land_share_percent": 47.59,
+        "planet_share_percent": 22.076
+      },
+      {
+        "id": "seam-crossing-western-long-continent",
+        "land_share_percent": 21.29,
+        "planet_share_percent": 9.877
+      },
+      {
+        "id": "southeast-oblique-continent",
+        "land_share_percent": 19.85,
+        "planet_share_percent": 9.206
+      },
+      {
+        "id": "north-east-lance",
+        "land_share_percent": 3.68,
+        "planet_share_percent": 1.708
+      },
+      {
+        "id": "southwestern-fractured-northern-block",
+        "land_share_percent": 3,
+        "planet_share_percent": 1.393
+      },
+      {
+        "id": "subpolar-elongated-ridge",
+        "land_share_percent": 2.17,
+        "planet_share_percent": 1.008
+      },
+      {
+        "id": "southwestern-fractured-southern-block",
+        "land_share_percent": 1.32,
+        "planet_share_percent": 0.611
+      }
+    ],
+    "small_islands_planet_percent": 0.505,
+    "land_count_not_official": true
   }
 }
