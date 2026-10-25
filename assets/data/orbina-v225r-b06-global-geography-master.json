@@ -12517,10 +12517,14 @@
     ]
   ],
   "coarse_statistics": {
-    "major_candidate_polygon_count": 15,
-    "candidate_island_count": 63,
-    "sphere_area_fraction_awaiting_new_projection": true,
-    "global_seam_mismatches": 0
+    "continent_origin_groups": 6,
+    "disconnected_major_land_polygons": 15,
+    "candidate_islands": 63,
+    "planar_grid_fraction": 0.346574,
+    "spherical_weighted_fraction": 0.426367,
+    "equal_area_vector_fraction": 0.426222,
+    "difference_percentage_points": 0.0145,
+    "radius_and_latitudes_official": false
   },
   "limitations": [
     "No known radius, rotation rate, obliquity, topographic elevation, or measured coordinates.",
@@ -12729,5 +12733,86 @@
     "global_seam_mismatches": 0,
     "no_core_changes": true,
     "all_lengths_nonphysical_svg_coordinates": true
+  },
+  "candidate_continental_area_hierarchy": {
+    "status": "not actual continent sizes; compare geometry only",
+    "major_land_polygons": [
+      {
+        "id": "continental-nucleus",
+        "land_share_percent": 51.79,
+        "candidate_sphere_share_percent": 22.076
+      },
+      {
+        "id": "seam-crossing-western-long-continent",
+        "land_share_percent": 23.17,
+        "candidate_sphere_share_percent": 9.877
+      },
+      {
+        "id": "southeast-north-coastal-crust",
+        "land_share_percent": 6.48,
+        "candidate_sphere_share_percent": 2.762
+      },
+      {
+        "id": "southeast-central-west-riftblock",
+        "land_share_percent": 3.41,
+        "candidate_sphere_share_percent": 1.452
+      },
+      {
+        "id": "southwestern-fractured-northern-block",
+        "land_share_percent": 3.03,
+        "candidate_sphere_share_percent": 1.29
+      },
+      {
+        "id": "southeast-southern-remnant",
+        "land_share_percent": 3.02,
+        "candidate_sphere_share_percent": 1.289
+      },
+      {
+        "id": "southern-ocean-west-ridge",
+        "land_share_percent": 1.3,
+        "candidate_sphere_share_percent": 0.555
+      },
+      {
+        "id": "southeast-central-east-riftblock",
+        "land_share_percent": 1.22,
+        "candidate_sphere_share_percent": 0.522
+      },
+      {
+        "id": "northwest-lance-relict",
+        "land_share_percent": 1.19,
+        "candidate_sphere_share_percent": 0.508
+      },
+      {
+        "id": "southern-ocean-east-ridge",
+        "land_share_percent": 0.88,
+        "candidate_sphere_share_percent": 0.376
+      },
+      {
+        "id": "north-east-oceanward-shoulder",
+        "land_share_percent": 0.76,
+        "candidate_sphere_share_percent": 0.323
+      },
+      {
+        "id": "southwest-southern-west-subcontinent",
+        "land_share_percent": 0.61,
+        "candidate_sphere_share_percent": 0.26
+      },
+      {
+        "id": "southwest-southern-east-subcontinent",
+        "land_share_percent": 0.53,
+        "candidate_sphere_share_percent": 0.224
+      },
+      {
+        "id": "northeast-mid-southern-splinter",
+        "land_share_percent": 0.51,
+        "candidate_sphere_share_percent": 0.216
+      },
+      {
+        "id": "northeast-mid-northern-splinter",
+        "land_share_percent": 0.45,
+        "candidate_sphere_share_percent": 0.191
+      }
+    ],
+    "independent_of_earth_continent_area": true
   }
 }
