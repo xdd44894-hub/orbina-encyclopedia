@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1770" height="925" viewBox="0 0 1770 925" role="img" aria-label="同一候选河口M11在浅陆架弱浪、强波浪、深槽强潮情景下可能的三角洲、沿岸沙嘴和河口湾三种平面概念草图"><title>V2.14 三种河口平面地貌形态候选</title><defs><style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif}.title{font-size:38px;font-weight:700;fill:#eaf3e8}.heading{font-size:26px;font-weight:700;fill:#f4f1e1}.sub{font-size:18px;fill:#bed9d7}.body{font-size:18px;fill:#eef0e4}.foot{font-size:18px;fill:#bad5db}</style></defs><rect width="1770" height="925" fill="#092a39"/>
+ <text x="67" y="80" class="title">俄庇娜 V2.14 · 同一河口的三种地貌可能</text>
+ <text x="68" y="119" class="sub">三幅仅为形态机理示意，不贴入原地图；M11编号与实际海岸仍未定稿</text>
+ <g><rect x="64" y="163" width="520" height="605" rx="16" fill="#174456" stroke="#638c97"/>
+ <text x="86" y="205" class="heading">冲积三角洲候选</text>
+ <text x="86" y="236" class="sub">M11 同一个候选河口 · 情景 A</text>
+ <g transform="translate(84 259)"><rect width="480" height="485" rx="11" fill="#416879"/><path d="M45 50 H450 V390 L325 390 Q280 350 250 330 Q188 350 145 389 L45 389 Z" fill="#9fb29b"/>
+ <path d="M250 75V300" stroke="#85dfe3" stroke-width="25" stroke-linecap="round"/>
+ <path d="M250 255 L186 382 M250 285 L310 387 M250 290 L250 411" fill="none" stroke="#b3eef0" stroke-width="12" stroke-linecap="round"/>
+ <path d="M144 391 Q184 354 207 366 Q251 390 289 365 Q324 356 348 395 Q302 445 239 456 Q165 450 144 391Z" fill="#dfc69a" opacity=".82"/>
+ <path d="M250 334L250 422 M220 339L180 389 M283 345L314 403" stroke="#5c9ca8" stroke-width="4" fill="none"/></g>
+ </g>
+<g><rect x="609" y="163" width="520" height="605" rx="16" fill="#174456" stroke="#638c97"/>
+ <text x="631" y="205" class="heading">沿岸沙嘴候选</text>
+ <text x="631" y="236" class="sub">M11 同一个候选河口 · 情景 B</text>
+ <g transform="translate(629 259)"><rect width="480" height="485" rx="11" fill="#416879"/><path d="M45 50H450V310 Q340 292 240 318 Q115 315 45 340Z" fill="#9fb29b"/>
+ <path d="M248 65 L248 315" stroke="#92dcdf" stroke-width="23" stroke-linecap="round"/>
+ <path d="M80 320 Q150 338 240 337 Q335 340 405 400 Q421 423 398 436 Q332 365 250 359 Q133 360 80 338Z" fill="#dfc69a"/>
+ <path d="M90 445L382 445" stroke="#f3e4be" stroke-width="6" stroke-dasharray="16 8"/><path d="M359 431L388 445L359 459" stroke="#f3e4be" stroke-width="6" fill="none"/></g>
+ </g>
+<g><rect x="1154" y="163" width="520" height="605" rx="16" fill="#174456" stroke="#638c97"/>
+ <text x="1176" y="205" class="heading">深槽河口湾候选</text>
+ <text x="1176" y="236" class="sub">M11 同一个候选河口 · 情景 C</text>
+ <g transform="translate(1174 259)"><rect width="480" height="485" rx="11" fill="#416879"/><path d="M45 50H450V282 Q365 245 327 266 Q284 270 250 377 Q213 271 178 267 Q123 257 45 297Z" fill="#9fb29b"/>
+ <path d="M249 65 Q246 225 250 305 Q245 355 250 455" stroke="#8dd9e3" stroke-width="23" fill="none" stroke-linecap="round"/>
+ <path d="M189 376 Q213 398 211 422 Q191 425 176 403Z M300 372 Q274 391 285 427 Q310 421 317 394Z" fill="#dfc69a"/>
+ <path d="M188 441L188 381 M311 441L311 381" stroke="#c4e9e3" stroke-width="3" stroke-dasharray="8 5"/></g>
+ </g>
+ <text x="74" y="841" class="body">绿色为概念陆地 · 蓝色为水域与示意河道 · 浅金色为条件性沉积物 · 箭头仅示意可能的沿岸搬运方向</text>
+ <text x="74" y="878" class="foot">海底坡度、潮差、波浪、沉积物粒径与真实海岸变化尚无资料，因此不构成俄庇娜正式地貌。</text>
+ </svg>
