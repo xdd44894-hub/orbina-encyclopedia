@@ -1,0 +1,358 @@
+{
+  "atlas": "V2.25-R-B09",
+  "scope": "32 new small/tiny/micro land shapes generated in previous coastline revisions; review overlay, not additional land shapes",
+  "candidate_microland_count": 32,
+  "category_thresholds_local_svg_area": "micro <10; tiny 10 to <60; small >=60; SVG^2 only, arbitrary visualization bins",
+  "counts": {
+    "sizes": {
+      "small": 17,
+      "micro": 9,
+      "tiny": 6
+    },
+    "sectors": {
+      "northeast": 12,
+      "southeast": 20
+    }
+  },
+  "locators": [
+    {
+      "name": "b07-ne-nw-outer-06",
+      "local_svg_area": 83.106,
+      "tier": "small",
+      "sector": "northeast",
+      "centroid_local_svg": [
+        1605.78,
+        109.42
+      ]
+    },
+    {
+      "name": "b07-ne-nw-outer-04",
+      "local_svg_area": 73.087,
+      "tier": "small",
+      "sector": "northeast",
+      "centroid_local_svg": [
+        1597.07,
+        140.01
+      ]
+    },
+    {
+      "name": "b07-ne-nw-outer-03",
+      "local_svg_area": 3.804,
+      "tier": "micro",
+      "sector": "northeast",
+      "centroid_local_svg": [
+        1592.81,
+        158.09
+      ]
+    },
+    {
+      "name": "b07-ne-mid-sinuous-06",
+      "local_svg_area": 116.286,
+      "tier": "small",
+      "sector": "northeast",
+      "centroid_local_svg": [
+        1645.76,
+        223.5
+      ]
+    },
+    {
+      "name": "b07-ne-mid-sinuous-02",
+      "local_svg_area": 45.045,
+      "tier": "tiny",
+      "sector": "northeast",
+      "centroid_local_svg": [
+        1702.36,
+        224.33
+      ]
+    },
+    {
+      "name": "b07-ne-mid-sinuous-04",
+      "local_svg_area": 4.81,
+      "tier": "micro",
+      "sector": "northeast",
+      "centroid_local_svg": [
+        1693.74,
+        229.39
+      ]
+    },
+    {
+      "name": "b07-ne-east-04",
+      "local_svg_area": 186.755,
+      "tier": "small",
+      "sector": "northeast",
+      "centroid_local_svg": [
+        1762,
+        175.26
+      ]
+    },
+    {
+      "name": "b07-ne-east-07",
+      "local_svg_area": 47.149,
+      "tier": "tiny",
+      "sector": "northeast",
+      "centroid_local_svg": [
+        1820.1,
+        190.43
+      ]
+    },
+    {
+      "name": "b07-ne-east-03",
+      "local_svg_area": 3.845,
+      "tier": "micro",
+      "sector": "northeast",
+      "centroid_local_svg": [
+        1772.86,
+        227.23
+      ]
+    },
+    {
+      "name": "b07-ne-oceanward-01",
+      "local_svg_area": 31.815,
+      "tier": "tiny",
+      "sector": "northeast",
+      "centroid_local_svg": [
+        1879.97,
+        289.99
+      ]
+    },
+    {
+      "name": "b07-ne-oceanward-04",
+      "local_svg_area": 20.717,
+      "tier": "tiny",
+      "sector": "northeast",
+      "centroid_local_svg": [
+        1891.32,
+        316.33
+      ]
+    },
+    {
+      "name": "b07-ne-oceanward-03",
+      "local_svg_area": 4.339,
+      "tier": "micro",
+      "sector": "northeast",
+      "centroid_local_svg": [
+        1834.59,
+        285.49
+      ]
+    },
+    {
+      "name": "b07-se-north-basin-04",
+      "local_svg_area": 221.901,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        1671.46,
+        696.29
+      ]
+    },
+    {
+      "name": "b07-se-north-basin-07",
+      "local_svg_area": 68.633,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        1728.35,
+        701.09
+      ]
+    },
+    {
+      "name": "b07-se-north-basin-06",
+      "local_svg_area": 1.988,
+      "tier": "micro",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        1774.77,
+        744.13
+      ]
+    },
+    {
+      "name": "b07-se-north-basin-08",
+      "local_svg_area": 128.884,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        1733.87,
+        717.84
+      ]
+    },
+    {
+      "name": "b07-se-rift-cove-06",
+      "local_svg_area": 134.653,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        1849.94,
+        737.15
+      ]
+    },
+    {
+      "name": "b07-se-rift-cove-07",
+      "local_svg_area": 70.89,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        1946.15,
+        760.44
+      ]
+    },
+    {
+      "name": "b07-se-rift-cove-01",
+      "local_svg_area": 6.743,
+      "tier": "micro",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        1944.38,
+        752.62
+      ]
+    },
+    {
+      "name": "b07-se-rift-cove-02",
+      "local_svg_area": 65.238,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        1978.17,
+        753.26
+      ]
+    },
+    {
+      "name": "b07-se-eastern-shore-04",
+      "local_svg_area": 144.155,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        2090.32,
+        771.81
+      ]
+    },
+    {
+      "name": "b07-se-eastern-shore-06",
+      "local_svg_area": 64.225,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        2122.55,
+        772.94
+      ]
+    },
+    {
+      "name": "b07-se-eastern-shore-01",
+      "local_svg_area": 8.784,
+      "tier": "micro",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        2083.09,
+        805.59
+      ]
+    },
+    {
+      "name": "b07-se-eastern-shore-08",
+      "local_svg_area": 57.027,
+      "tier": "tiny",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        2135.11,
+        750.14
+      ]
+    },
+    {
+      "name": "b07-se-lower-embayment-03",
+      "local_svg_area": 102.73,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        1780.75,
+        876.64
+      ]
+    },
+    {
+      "name": "b07-se-lower-embayment-08",
+      "local_svg_area": 31.399,
+      "tier": "tiny",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        1798.39,
+        871.65
+      ]
+    },
+    {
+      "name": "b07-se-lower-embayment-02",
+      "local_svg_area": 6.582,
+      "tier": "micro",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        1730.05,
+        910.42
+      ]
+    },
+    {
+      "name": "b07-se-lower-embayment-05",
+      "local_svg_area": 79.861,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        1743.54,
+        907.18
+      ]
+    },
+    {
+      "name": "b07-se-south-east-04",
+      "local_svg_area": 112.888,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        2113.15,
+        866.68
+      ]
+    },
+    {
+      "name": "b07-se-south-east-05",
+      "local_svg_area": 69.12,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        2023.78,
+        872.46
+      ]
+    },
+    {
+      "name": "b07-se-south-east-06",
+      "local_svg_area": 5.992,
+      "tier": "micro",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        2013.05,
+        866.1
+      ]
+    },
+    {
+      "name": "b07-se-south-east-02",
+      "local_svg_area": 60.407,
+      "tier": "small",
+      "sector": "southeast",
+      "centroid_local_svg": [
+        2024.18,
+        836.74
+      ]
+    }
+  ],
+  "sources": [
+    "assets/data/orbina-v225r-b09-global-geography-master.json",
+    "assets/images/orbina-v225r-b09-global-silhouette.svg",
+    "assets/maps/orbina-v225r-b09-planetary-atlas.html"
+  ],
+  "checks": {
+    "global_continental_polygon_count": 13,
+    "all_candidate_islands": 93,
+    "annotated_locator_svg_nodes": 32,
+    "duplicate_svg_id_count": 0,
+    "undefined_svg_internal_refs": [],
+    "html_js_static_syntax": "passed",
+    "geometry_changes_to_B09_master": false
+  },
+  "caveats": [
+    "Labels and circles are temporary visualization; they do not outline real coastlines or add land.",
+    "No formal name, size, physical island classification, plate tectonic status, or approved kilometer dimensions are assigned.",
+    "No actual browser/mobile render test has been performed; static checks only."
+  ]
+}
