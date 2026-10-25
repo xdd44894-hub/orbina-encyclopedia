@@ -12732,7 +12732,21 @@
     "skipped_relict_candidates": [],
     "global_seam_mismatches": 0,
     "no_core_changes": true,
-    "all_lengths_nonphysical_svg_coordinates": true
+    "all_lengths_nonphysical_svg_coordinates": true,
+    "water_probe_relocation": {
+      "id": "W-05",
+      "old": [
+        1801.9,
+        170.3
+      ],
+      "new": [
+        1822.5,
+        166.2
+      ],
+      "move_svg": 21,
+      "clearance_neighborhood_svg": 24,
+      "still_unassigned": true
+    }
   },
   "candidate_continental_area_hierarchy": {
     "status": "not actual continent sizes; compare geometry only",
@@ -12814,5 +12828,594 @@
       }
     ],
     "independent_of_earth_continent_area": true
+  },
+  "water_region_capacity_study": {
+    "intent": "Explore whether the new mix of oceanic expanses, continent-margin seas, island-arc passages and new rifts offers candidate spaces for the 25 APPROVED sea/ocean names. No name is assigned to a point; a dot is not an ocean basin, a polygon, or a legal geographical boundary.",
+    "official_major_sea_name_count": 25,
+    "mandatory_one_to_one_match_between_continents_and_named_seas": false,
+    "classification_count": {
+      "裂海研究": 7,
+      "岛弧海研究": 4,
+      "陆缘海研究": 6,
+      "远洋研究": 8
+    },
+    "provisional_review_points": [
+      {
+        "slot": "W-01",
+        "classification": "裂海研究",
+        "study_context": "西南旧裂海弯曲主水道",
+        "working_position_svg": [
+          410,
+          954
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 12,
+          "grid5": 15
+        }
+      },
+      {
+        "slot": "W-02",
+        "classification": "裂海研究",
+        "study_context": "西南南部分叉峡道",
+        "working_position_svg": [
+          370.2,
+          985.6
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "previously_b04_svg_position": [
+          376,
+          987
+        ],
+        "position_reliability_note": "Moved within candidate marine study sector to a more robust raster-water sample; no official sea coordinate changed.",
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 15,
+          "grid5": 15
+        }
+      },
+      {
+        "slot": "W-03",
+        "classification": "裂海研究",
+        "study_context": "南缘长陆东西段裂口",
+        "working_position_svg": [
+          1045.8,
+          1066.5
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "previously_b04_svg_position": [
+          1053,
+          1050
+        ],
+        "position_reliability_note": "Moved within candidate marine study sector to a more robust raster-water sample; no official sea coordinate changed.",
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 15,
+          "grid5": 15
+        }
+      },
+      {
+        "slot": "W-04",
+        "classification": "裂海研究",
+        "study_context": "东北长陆第一狭海",
+        "working_position_svg": [
+          1611,
+          181
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 12,
+          "grid5": 15
+        }
+      },
+      {
+        "slot": "W-05",
+        "classification": "裂海研究",
+        "study_context": "东北长陆第二狭海",
+        "working_position_svg": [
+          1822.5,
+          166.2
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "previously_b04_svg_position": [
+          1794,
+          183
+        ],
+        "position_reliability_note": "Shifted after B06 northeast coastline reshaping to verified water sample; no sea name or official coordinate allocated.",
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 15,
+          "grid5": 15
+        },
+        "previously_b05_svg_position": [
+          1801.9,
+          170.3
+        ]
+      },
+      {
+        "slot": "W-06",
+        "classification": "裂海研究",
+        "study_context": "东南大陆第一曲折海峡",
+        "working_position_svg": [
+          1845,
+          730
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 9,
+          "grid5": 10
+        }
+      },
+      {
+        "slot": "W-07",
+        "classification": "裂海研究",
+        "study_context": "东南大陆第二曲折海峡",
+        "working_position_svg": [
+          1860,
+          879
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 15,
+          "grid5": 20
+        }
+      },
+      {
+        "slot": "W-08",
+        "classification": "岛弧海研究",
+        "study_context": "东北岛弧内侧边缘海",
+        "working_position_svg": [
+          1890.9,
+          401.9
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "previously_b04_svg_position": [
+          1865,
+          431
+        ],
+        "position_reliability_note": "Moved within candidate marine study sector to a more robust raster-water sample; no official sea coordinate changed.",
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 45,
+          "grid5": 45
+        }
+      },
+      {
+        "slot": "W-09",
+        "classification": "岛弧海研究",
+        "study_context": "西缘群岛间海",
+        "working_position_svg": [
+          542,
+          668
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 21,
+          "grid5": 25
+        }
+      },
+      {
+        "slot": "W-10",
+        "classification": "岛弧海研究",
+        "study_context": "南部陆架外侧岛海",
+        "working_position_svg": [
+          1461,
+          938
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 39,
+          "grid5": 40
+        }
+      },
+      {
+        "slot": "W-11",
+        "classification": "岛弧海研究",
+        "study_context": "南部远岛弧海",
+        "working_position_svg": [
+          1853.7,
+          1150.6
+        ],
+        "shifted_from_initial_seed_svg": 6,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "previously_b04_svg_position": [
+          1869,
+          1118
+        ],
+        "position_reliability_note": "Moved within candidate marine study sector to a more robust raster-water sample; no official sea coordinate changed.",
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 42,
+          "grid5": 45
+        }
+      },
+      {
+        "slot": "W-12",
+        "classification": "陆缘海研究",
+        "study_context": "超级大陆南侧外缘",
+        "working_position_svg": [
+          1124,
+          899
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 84,
+          "grid5": 90
+        }
+      },
+      {
+        "slot": "W-13",
+        "classification": "陆缘海研究",
+        "study_context": "超级大陆东北海岸",
+        "working_position_svg": [
+          1481.2,
+          252.6
+        ],
+        "shifted_from_initial_seed_svg": 42,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "previously_b04_svg_position": [
+          1492,
+          227.9
+        ],
+        "position_reliability_note": "Moved within candidate marine study sector to a more robust raster-water sample; no official sea coordinate changed.",
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 39,
+          "grid5": 40
+        }
+      },
+      {
+        "slot": "W-14",
+        "classification": "陆缘海研究",
+        "study_context": "中央内湾南部水域（位置仅研究）",
+        "working_position_svg": [
+          1085,
+          725
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 120,
+          "grid5": 120
+        }
+      },
+      {
+        "slot": "W-15",
+        "classification": "陆缘海研究",
+        "study_context": "跨接缝长大陆东南边缘",
+        "working_position_svg": [
+          332,
+          538
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 93,
+          "grid5": 90
+        }
+      },
+      {
+        "slot": "W-16",
+        "classification": "陆缘海研究",
+        "study_context": "东南群陆东岸",
+        "working_position_svg": [
+          2270,
+          772
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 42,
+          "grid5": 45
+        }
+      },
+      {
+        "slot": "W-17",
+        "classification": "陆缘海研究",
+        "study_context": "东北碎陆北岸",
+        "working_position_svg": [
+          1685,
+          28
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 69,
+          "grid5": 70
+        }
+      },
+      {
+        "slot": "W-18",
+        "classification": "远洋研究",
+        "study_context": "西部远洋北海盆",
+        "working_position_svg": [
+          400,
+          55
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 297,
+          "grid5": 300
+        }
+      },
+      {
+        "slot": "W-19",
+        "classification": "远洋研究",
+        "study_context": "中北大洋深水区",
+        "working_position_svg": [
+          920,
+          54
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 111,
+          "grid5": 110
+        }
+      },
+      {
+        "slot": "W-20",
+        "classification": "远洋研究",
+        "study_context": "远东北外洋",
+        "working_position_svg": [
+          2168.4,
+          216.1
+        ],
+        "shifted_from_initial_seed_svg": 24,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "previously_b04_svg_position": [
+          2191.3,
+          243.8
+        ],
+        "position_reliability_note": "Moved within candidate marine study sector to a more robust raster-water sample; no official sea coordinate changed.",
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 42,
+          "grid5": 40
+        }
+      },
+      {
+        "slot": "W-21",
+        "classification": "远洋研究",
+        "study_context": "东部低纬开阔洋",
+        "working_position_svg": [
+          2165.7,
+          486.4
+        ],
+        "shifted_from_initial_seed_svg": 108,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "previously_b04_svg_position": [
+          2197.8,
+          479
+        ],
+        "position_reliability_note": "Moved within candidate marine study sector to a more robust raster-water sample; no official sea coordinate changed.",
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 42,
+          "grid5": 40
+        }
+      },
+      {
+        "slot": "W-22",
+        "classification": "远洋研究",
+        "study_context": "西南开阔洋",
+        "working_position_svg": [
+          102,
+          915
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 153,
+          "grid5": 155
+        }
+      },
+      {
+        "slot": "W-23",
+        "classification": "远洋研究",
+        "study_context": "南部主洋海盆",
+        "working_position_svg": [
+          729,
+          1034
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 96,
+          "grid5": 100
+        }
+      },
+      {
+        "slot": "W-24",
+        "classification": "远洋研究",
+        "study_context": "中南盆地",
+        "working_position_svg": [
+          1301,
+          1105
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 108,
+          "grid5": 115
+        }
+      },
+      {
+        "slot": "W-25",
+        "classification": "远洋研究",
+        "study_context": "东南外洋远端",
+        "working_position_svg": [
+          2216,
+          1123
+        ],
+        "shifted_from_initial_seed_svg": 0,
+        "assigned_official_sea_name": null,
+        "has_defined_borders": false,
+        "canon": false,
+        "sampled_water_connected_at_svg_grids": [
+          3,
+          5
+        ],
+        "sampled_clearance_manhattan_svg": {
+          "grid3": 258,
+          "grid5": 260
+        }
+      }
+    ],
+    "default_layer_visibility": false,
+    "needs_geology_and_ocean_current_review": true,
+    "b06_revalidation": "25 original anonymous water region study markers retained; W-05 relocated as prior position became land in new NE rift geometry. Other 24 remained water in both 3-unit and 5-unit raster samples."
+  },
+  "render_layers": {
+    "ne_se_sculpt": "b06-sculpture-coastline-overlay",
+    "anonymous_water_study": "b06-ocean-study-markers"
   }
 }
