@@ -19,19 +19,19 @@
     "caveat": "本草案中的47.6%是假想纬度与假定球面下的几何比例，不等同已定f_land；真实椭球时公式还需修正。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B05",
-    "status": "唯一现行非正史候选全球地图；正式海名及地理关系不变",
-    "working_map": "assets/images/orbina-v225r-b05-global-silhouette.svg",
-    "equal_area_map": "assets/images/orbina-v225r-b05-mollweide-equal-area.svg",
-    "viewer": "assets/maps/orbina-v225r-b05-planetary-atlas.html",
-    "data": "assets/data/orbina-v225r-b05-global-geography-master.json",
+    "edition": "V2.25-R-B06",
+    "status": "现行非正史候选世界地图；确认的海名和国家相对地理不变",
+    "working_map": "assets/images/orbina-v225r-b06-global-silhouette.svg",
+    "equal_area_map": "assets/images/orbina-v225r-b06-mollweide-equal-area.svg",
+    "viewer": "assets/maps/orbina-v225r-b06-planetary-atlas.html",
+    "data": "assets/data/orbina-v225r-b06-global-geography-master.json",
     "geometry_model": {
       "continental_origin_groups": 6,
-      "disconnected_major_land_polygons": 13,
-      "candidate_islands": 55,
+      "disconnected_major_land_polygons": 15,
+      "candidate_islands": 63,
       "official_named_major_seas": 25,
       "numbers_not_canon": true
     }
   },
-  "following_work": "B05仅确认二维有限分辨率的水面网格连通，下一阶段重点应审查海底盆地与大陆架、海峡深度和面积、裂海演变及真实海盆分区；不强行把25海洋正式名称分配给25个匿名点。"
+  "following_work": "先以东北/东南局部放大图检验不对称裂海与残余陆片形态，之后再复核微小海峡的精细拓扑、海底地形和成因。保持25个海名、巨行星不同比放大原则，避免继续机械随机裂解。"
 }
