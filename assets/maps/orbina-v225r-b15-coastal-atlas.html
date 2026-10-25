@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 · V2.25-R-B15 碎裂大陆世界地图</title>
+<style>
+:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color-scheme:dark;background:#081e29;color:#ecf2ec}*{box-sizing:border-box}body{margin:0}
+header{background:#123c49;padding:28px max(18px,calc((100% - 1240px)/2));border-bottom:1px solid #3d7180}header h1{font-size:clamp(24px,3vw,37px);line-height:1.3;margin:0 0 8px}header p{color:#bdd3d5;margin:0;line-height:1.7}
+main{max-width:1280px;margin:auto;padding:18px}a{color:#c5e7de}.links{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 19px}.links a{border:1px solid #4e7883;border-radius:8px;padding:9px;text-decoration:none;background:#153e4b;font-size:14px}
+.card{background:#123542;border:1px solid #456e7c;border-radius:13px;padding:16px;margin:15px 0}.card h2{font-size:20px;margin:0 0 10px}
+#mapView{display:block;background:#0c3444;width:100%;height:auto;aspect-ratio:2/1;border-radius:8px;border:1px solid #356271}.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 0}.controls label{display:flex;align-items:center;gap:7px;font-size:14px}
+button,select{background:#255566;color:#f0f7ec;border:1px solid #6b9ba3;border-radius:7px;padding:8px;cursor:pointer}button:hover{background:#316c7e}
+small,.muted{color:#b6ccd1;line-height:1.7}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{background:#0d2b36;border-radius:9px;padding:13px}.stat strong{display:block;font-size:28px}.stat span{font-size:13px;color:#bfd0d0}
+.grid2{display:grid;grid-template-columns:minmax(240px,410px) 1fr;gap:20px}.grid2 p{line-height:1.8;color:#d4e4dd}
+#globe{display:block;width:100%;max-width:400px;margin:auto;border-radius:50%;background:#0e3041}
+.range{width:min(300px,55vw)}footer{text-align:center;color:#a6bfc3;padding:22px}
+@media(max-width:740px){.grid2{grid-template-columns:1fr}main{padding:10px}.card{padding:12px}}
+</style></head><body>
+<header><h1>俄庇娜 · 自然海岬、分叉海湾与狭长岛链</h1>
+<p><strong>V2.25-R-B15</strong> · B15在B14独立岛群基础上，为九片主要陆地增添不对称岬角、分叉深湾，并将22片外围岛屿调整为更加狭长的形态。正式国家地理关系保留。<strong>当前仍为全球海陆工作方案，不是正史全球坐标图。</strong></p></header>
+<main>
+<div class="links">
+<a href="../images/orbina-v225r-b15-coastal-global.svg" target="_blank">B15自然海岬全球地图</a>
+<a href="../images/orbina-v225r-b15-mollweide.svg" target="_blank">B15等面积图</a>
+<a href="../data/orbina-v225r-b15-coastal-geography-master.json" target="_blank">可编辑海陆坐标 JSON</a>
+<a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank">海洋地理正史说明</a>
+</div>
+<section class="card">
+<div class="controls">
+<label>投影<select id="projection"><option value="working">经纬工作网格</option><option value="equal">Mollweide等面积</option></select></label>
+<label>区域<select id="region"><option value="all">全球全览</option><option value="ne">东北双主陆</option><option value="se">东南碎裂陆群</option><option value="sw">西南断裂海</option><option value="core">中央超级大陆</option></select></label>
+<label><input type="checkbox" id="oldOutline">对照B14旧海岸</label>
+<label><input type="checkbox" id="shelfLayer">候选近岸范围（非实际水深）</label>
+<button id="reset" type="button">重置地图</button>
+</div>
+<object id="mapView" aria-label="俄庇娜B15自然湾岸全球地图" type="image/svg+xml" data="../images/orbina-v225r-b15-coastal-global.svg">地图 SVG 加载失败，请使用上方原图链接。</object>
+<p class="muted" id="mapStatus">橙色虚线表示B14旧海岸；浅青色近岸带为可关闭的形态研究示意，非实测陆架或水深。</p>
+</section>
+<section class="card"><h2>B15岬角与分叉海湾重构</h2>
+<div class="stats">
+<div class="stat"><strong id="neCount">23</strong><span>东北独立有机陆块总数</span></div>
+<div class="stat"><strong id="neMain">2</strong><span>东北保留较大主体</span></div>
+<div class="stat"><strong id="seCount">54</strong><span>东南独立有机陆块总数</span></div>
+<div class="stat"><strong id="allCount">110</strong><span>全球候选陆地多边形</span></div>
+<div class="stat"><strong>44.19%</strong><span>假设球面工作图陆地比例（非正史）</span></div>
+</div>
+<p class="muted">B15沿用B14独立有机陆群，在九片主要陆地添加岬角、较深凹湾与细小支湾，并使22座岛屿呈更长、更弯曲的形态。全球110片只是当前绘图对象数，44.19%仅为假设球面下的绘图面积比。</p>
+</section>
+<section class="card grid2"><div>
+<h2>3D 球面概览</h2><canvas width="400" height="400" id="globe" aria-label="候选大陆球面正射预览"></canvas>
+<div class="controls"><label>旋转角度 <input id="heading" class="range" type="range" min="-180" max="180" value="0"></label><span id="deg">0°</span></div>
+<div class="controls"><button data-lon="0" type="button">中央超级大陆</button><button data-lon="124" type="button">东北/东南</button><button data-lon="-130" type="button">西部大陆</button></div>
+<p id="globeStatus" class="muted">正在读取B15海岸地理数据…</p></div>
+<div><h2>B15：分叉海湾与不同尺度的岬角</h2>
+<p><strong>东北：</strong>双主陆保持分离，但各有更明显的岬角和凹湾，海湾附近出现次级小湾与不同尺度的曲线岸。外围部分岛屿细长且方向错列。</p>
+<p><strong>东南：</strong>七片主要残陆形成更复杂的分叉海湾、海岬和不对称湾口；部分外围陆地更狭长或弯曲，仍能看出原来的斜向陆群布局。</p>
+<p><strong>地理正史：</strong>联合城和人民天国仍在同一中央超级大陆；秦棠在萨瑞拉西北；内海与棠溪等既定关系不变。25个已确认海名继续保留，但不据图上匿名点分配海名。</p>
+<p><strong>研究边界：</strong>目前这些海湾和岬角是几何候选，并不能直接确定其形成于海蚀、海面变化、沉积或冰川作用。浅青色沿岸范围只是视觉研究层，不表示真实海深或陆架。</p></div></section>
+<section class="card"><h2>下一轮相对地形研究</h2><p class="muted">B15仍没有正式地质高程与河网。后续应先确定新的相对山脊、低地与沉积源，再决定哪些海湾适合河口和潮汐作用，不得沿用B12/B13的旧线条。</p></section>
+</main><footer>ORBINA · B15 HEADLANDS AND BRANCHING COVES · NON-CANON</footer>
+<script>
+const map=document.getElementById("mapView"),proj=document.getElementById("projection"),region=document.getElementById("region"),old=document.getElementById("oldOutline"),shelfToggle=document.getElementById("shelfLayer"),mapStatus=document.getElementById("mapStatus");
+const windows={all:"0 0 2400 1200",ne:"1340 12 780 465",se:"1465 465 880 690",sw:"180 718 510 455",core:"525 102 1080 825"};
+function updateMap(){
+const equal=proj.value==="equal";const desired=equal?"../images/orbina-v225r-b15-mollweide.svg":"../images/orbina-v225r-b15-coastal-global.svg";
+if(map.getAttribute("data")!==desired){map.setAttribute("data",desired);return;}
+try{const svg=map.contentDocument?.documentElement;if(!svg||svg.localName!=="svg")return;
+svg.setAttribute("viewBox",equal?"0 0 2400 1200":windows[region.value]);
+const overlay=svg.ownerDocument.getElementById("b15-b14-coast-comparison");if(overlay)overlay.style.display=old.checked&&!equal?"":"none";
+const shelf=svg.ownerDocument.getElementById("b15-nearshore-shelf-study");if(shelf)shelf.style.display=shelfToggle.checked&&!equal?"":"none";
+mapStatus.textContent=equal?"B15当前等面积工作图，不涉及真实行星尺寸。":shelfToggle.checked?"浅青色仅表示候选近岸示意范围，并非实测深度或实际陆架边界。":old.checked?"橙色虚线为B14旧海岸；填色为B15更新后的岬角与分叉海湾。":"当前显示B15曲折海岸。可选择B14旧岸线及近岸候选研究层。";
+}catch(e){mapStatus.textContent="可打开SVG原图查看；交互层未成功读取："+e.message;}}
+map.addEventListener("load",updateMap);
+proj.addEventListener("change",()=>{if(proj.value==="equal")region.value="all";updateMap();});
+region.addEventListener("change",()=>{if(region.value!=="all"&&proj.value==="equal")proj.value="working";updateMap();});
+old.addEventListener("change",()=>{if(old.checked&&proj.value==="equal")proj.value="working";updateMap();});
+shelfToggle.addEventListener("change",()=>{if(shelfToggle.checked&&proj.value==="equal")proj.value="working";updateMap();});
+
+document.getElementById("reset").addEventListener("click",()=>{region.value="all";proj.value="working";old.checked=false;shelfToggle.checked=false;updateMap();});
+const canvas=document.getElementById("globe"),ctx=canvas.getContext("2d",{willReadFrequently:true}),heading=document.getElementById("heading"),deg=document.getElementById("deg"),r=canvas.width*.467,cx=canvas.width/2,cy=canvas.height/2;
+let tex=null;
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+function populate(data){
+const off=document.createElement("canvas");off.width=1200;off.height=600;const c=off.getContext("2d");
+c.fillStyle="#154c61";c.fillRect(0,0,1200,600);
+for(let p of data.macro_landmasses.concat(data.archipelago)){
+c.fillStyle=p.color||"#c4cbae";c.strokeStyle="#dfeadc";c.lineWidth=.55;
+for(let shift of [-2400,0,2400]){const pts=p.coordinates;if(!pts?.length)continue;c.beginPath();c.moveTo((pts[0][0]+shift)/2,pts[0][1]/2);for(let i=1;i<pts.length;i++)c.lineTo((pts[i][0]+shift)/2,pts[i][1]/2);c.closePath();c.fill();c.stroke();}}
+return c.getImageData(0,0,1200,600);
+}
+function render(){
+deg.textContent=heading.value+"°";const sz=canvas.width;ctx.fillStyle="#0b2633";ctx.fillRect(0,0,sz,sz);
+if(!tex){ctx.fillStyle="#d1e3e6";ctx.font="16px system-ui";ctx.fillText("读取地图数据…",115,190);return;}
+let out=ctx.createImageData(sz,sz),dst=out.data,src=tex.data,centerLon=+heading.value;
+for(let yy=0;yy<sz;yy++){let y=(cy-yy)/r;for(let xx=0;xx<sz;xx++){let x=(xx-cx)/r,z2=1-x*x-y*y;if(z2<0)continue;let z=Math.sqrt(z2),lat=Math.asin(y)*180/Math.PI,lon=centerLon+Math.atan2(x,z)*180/Math.PI;lon=((lon+180)%360+360)%360-180;
+let ix=clamp(Math.floor((lon+180)*1200/360),0,1199),iy=clamp(Math.floor((90-lat)*600/180),0,599),si=4*(iy*1200+ix),di=4*(yy*sz+xx),shade=.64+.33*z;
+dst[di]=src[si]*shade;dst[di+1]=src[si+1]*shade;dst[di+2]=src[si+2]*shade;dst[di+3]=255;}}
+ctx.putImageData(out,0,0);ctx.strokeStyle="#e8f5ee";ctx.lineWidth=2;ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.stroke();}
+heading.addEventListener("input",render);
+document.querySelectorAll("[data-lon]").forEach(b=>b.addEventListener("click",()=>{heading.value=b.dataset.lon;render();}));
+fetch("../data/orbina-v225r-b15-coastal-geography-master.json").then(r=>{if(!r.ok)throw Error("无法读取B15地理文件");return r.json();}).then(data=>{
+tex=populate(data);document.getElementById("neCount").textContent=data.b15_coastal_reconstruction.complete_region_counts.NE;
+document.getElementById("neMain").textContent=2;
+document.getElementById("seCount").textContent=data.b15_coastal_reconstruction.complete_region_counts.SE;
+document.getElementById("allCount").textContent=data.macro_landmasses.length+data.archipelago.length;
+document.getElementById("globeStatus").textContent="B15自然海岬和曲折海湾球面已载入；仅供构图预览，非真实地理测量。";render();
+}).catch(e=>{document.getElementById("globeStatus").textContent="球面源数据未加载："+e.message;});
+render();updateMap();
+</script>
+</body></html>
