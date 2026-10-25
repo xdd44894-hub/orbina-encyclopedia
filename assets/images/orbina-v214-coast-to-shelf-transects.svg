@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1555" viewBox="0 0 1700 1555" role="img" aria-label="俄庇娜V2.14六处候选河口的陆地数字高程采样与浅陆架、强波浪陆架及深潮槽三条假设海底剖面"><title>V2.14 河口大陆架连续剖面候选</title><defs><style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif}.title{fill:#eff5e9;font-size:39px;font-weight:700}.sub{fill:#aecbd5;font-size:19px}.panel{fill:#f0f2e8;font-size:26px;font-weight:700}.meta{fill:#c0d9d7;font-size:16.5px}.legend{fill:#d6e5e2;font-size:19px}.tiny{fill:#adc5cb;font-size:16px}</style></defs>
+<rect width="1700" height="1555" fill="#0a2939"/>
+<text x="60" y="80" class="title">俄庇娜 V2.14 · 六处候选河口海陆连续剖面</text>
+<text x="61" y="114" class="sub">陆侧取V2.4人工DEM网格；海侧是三组人为设定的深度曲线，不能作为海底测深成果</text>
+<g><rect x="55" y="150" width="770" height="405" rx="17" fill="#173c4e" stroke="#668694" stroke-width="1.3"/>
+ <text x="78" y="190" class="panel">M11 · 海岸外法线剖面</text>
+ <text x="78" y="218" class="meta">流域IoU 74.1% · 图面水域开放 100%</text>
+ <line x1="123" y1="370" x2="722.4" y2="370" stroke="#d3e5de" stroke-width="1.5" stroke-dasharray="6 4"/>
+ <line x1="322.79999999999995" y1="231" x2="322.79999999999995" y2="523" stroke="#f7ebbc" stroke-width="1.3" stroke-dasharray="4 6"/>
+ <polygon points="123,370 123,223 156.3,223 189.6,226.49 222.9,305.24 256.2,312.33 289.5,370 322.8,370 322.79999999999995,370" fill="#83a999" opacity=".35"/>
+ <polyline points="123,223 156.3,223 189.6,226.49 222.9,305.24 256.2,312.33 289.5,370 322.8,370" stroke="#d2d9a9" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <polyline points="322.8,370 356.1,371.46 389.4,373.17 422.7,375.12 456,377.31 489.3,379.75 522.6,382.42 555.9,385.35 589.2,388.51 622.5,391.92 655.8,395.57 689.1,399.46 722.4,403.6" stroke="#81cfbf" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="322.8,370 356.1,372.76 389.4,376.13 422.7,380.1 456,384.68 489.3,389.87 522.6,395.67 555.9,402.07 589.2,409.09 622.5,416.71 655.8,424.93 689.1,433.77 722.4,443.21" stroke="#e9c086" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="322.8,370 356.1,374.16 389.4,379.89 422.7,387.37 456,396.65 489.3,407.56 522.6,419.69 555.9,432.5 589.2,445.7 622.5,459.41 655.8,474.04 689.1,490.07 722.4,507.78" stroke="#b0b5eb" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="128.55" y="523" class="tiny">陆地 −36</text><text x="300.79999999999995" y="523" class="tiny">岸线0</text>
+ <text x="589.2" y="523" class="tiny">外海 +72</text>
+ <text x="81" y="547" class="tiny">浅陆架末端假设深度 80 / 深槽 328.1 模型米；陆地高值截顶 2格</text>
+ </g>
+<g><rect x="870" y="150" width="770" height="405" rx="17" fill="#173c4e" stroke="#668694" stroke-width="1.3"/>
+ <text x="893" y="190" class="panel">M07 · 海岸外法线剖面</text>
+ <text x="893" y="218" class="meta">流域IoU 75.3% · 图面水域开放 100%</text>
+ <line x1="938" y1="370" x2="1537.4" y2="370" stroke="#d3e5de" stroke-width="1.5" stroke-dasharray="6 4"/>
+ <line x1="1137.8" y1="231" x2="1137.8" y2="523" stroke="#f7ebbc" stroke-width="1.3" stroke-dasharray="4 6"/>
+ <polygon points="938,370 938,223 971.3,223 1004.6,223 1037.9,262.23 1071.2,318.13 1104.5,370 1137.8,370 1137.8,370" fill="#83a999" opacity=".35"/>
+ <polyline points="938,223 971.3,223 1004.6,223 1037.9,262.23 1071.2,318.13 1104.5,370 1137.8,370" stroke="#d2d9a9" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <polyline points="1137.8,370 1171.1,371.46 1204.4,373.17 1237.7,375.12 1271,377.32 1304.3,379.75 1337.6,382.44 1370.9,385.36 1404.2,388.53 1437.5,391.94 1470.8,395.59 1504.1,399.49 1537.4,403.63" stroke="#81cfbf" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1137.8,370 1171.1,372.76 1204.4,376.13 1237.7,380.11 1271,384.7 1304.3,389.89 1337.6,395.69 1370.9,402.1 1404.2,409.12 1437.5,416.75 1470.8,424.98 1504.1,433.82 1537.4,443.27" stroke="#e9c086" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1137.8,370 1171.1,374.16 1204.4,379.9 1237.7,387.38 1271,396.67 1304.3,407.6 1337.6,419.73 1370.9,432.55 1404.2,445.77 1437.5,459.49 1470.8,474.13 1504.1,490.17 1537.4,507.9" stroke="#b0b5eb" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="943.55" y="523" class="tiny">陆地 −36</text><text x="1115.8" y="523" class="tiny">岸线0</text>
+ <text x="1404.2" y="523" class="tiny">外海 +72</text>
+ <text x="896" y="547" class="tiny">浅陆架末端假设深度 80.1 / 深槽 328.3 模型米；陆地高值截顶 3格</text>
+ </g>
+<g><rect x="55" y="580" width="770" height="405" rx="17" fill="#173c4e" stroke="#668694" stroke-width="1.3"/>
+ <text x="78" y="620" class="panel">M01 · 海岸外法线剖面</text>
+ <text x="78" y="648" class="meta">流域IoU 90.5% · 图面水域开放 86%</text>
+ <line x1="123" y1="800" x2="722.4" y2="800" stroke="#d3e5de" stroke-width="1.5" stroke-dasharray="6 4"/>
+ <line x1="322.79999999999995" y1="661" x2="322.79999999999995" y2="953" stroke="#f7ebbc" stroke-width="1.3" stroke-dasharray="4 6"/>
+ <polygon points="123,800 123,653 156.3,675.97 189.6,698.86 222.9,733.51 256.2,768.42 289.5,800 322.8,800 322.79999999999995,800" fill="#83a999" opacity=".35"/>
+ <polyline points="123,653 156.3,675.97 189.6,698.86 222.9,733.51 256.2,768.42 289.5,800 322.8,800" stroke="#d2d9a9" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <polyline points="322.8,800 356.1,801.42 389.4,803.09 422.7,805.01 456,807.18 489.3,809.59 522.6,812.25 555.9,815.16 589.2,818.31 622.5,821.71 655.8,825.36 689.1,829.26 722.4,833.4" stroke="#81cfbf" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="322.8,800 356.1,802.72 389.4,806.05 422.7,810.01 456,814.58 489.3,819.77 522.6,825.58 555.9,832 589.2,839.05 622.5,846.71 655.8,855 689.1,863.9 722.4,873.42" stroke="#e9c086" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="322.8,800 356.1,804.12 389.4,809.85 422.7,817.35 456,826.68 489.3,837.68 522.6,849.91 555.9,862.84 589.2,876.18 622.5,890.02 655.8,904.8 689.1,921.01 722.4,938.93" stroke="#b0b5eb" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="128.55" y="953" class="tiny">陆地 −36</text><text x="300.79999999999995" y="953" class="tiny">岸线0</text>
+ <text x="589.2" y="953" class="tiny">外海 +72</text>
+ <text x="81" y="977" class="tiny">浅陆架末端假设深度 79.5 / 深槽 330.8 模型米；陆地高值截顶 1格</text>
+ </g>
+<g><rect x="870" y="580" width="770" height="405" rx="17" fill="#173c4e" stroke="#668694" stroke-width="1.3"/>
+ <text x="893" y="620" class="panel">M10 · 海岸外法线剖面</text>
+ <text x="893" y="648" class="meta">流域IoU 76.5% · 图面水域开放 80%</text>
+ <line x1="938" y1="800" x2="1537.4" y2="800" stroke="#d3e5de" stroke-width="1.5" stroke-dasharray="6 4"/>
+ <line x1="1137.8" y1="661" x2="1137.8" y2="953" stroke="#f7ebbc" stroke-width="1.3" stroke-dasharray="4 6"/>
+ <polygon points="938,800 938,653 971.3,665.22 1004.6,704.62 1037.9,739.65 1071.2,772.78 1104.5,772.78 1137.8,800 1137.8,800" fill="#83a999" opacity=".35"/>
+ <polyline points="938,653 971.3,665.22 1004.6,704.62 1037.9,739.65 1071.2,772.78 1104.5,772.78 1137.8,800" stroke="#d2d9a9" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <polyline points="1137.8,800 1171.1,801.39 1204.4,803.02 1237.7,804.91 1271,807.03 1304.3,809.41 1337.6,812.03 1370.9,814.89 1404.2,818 1437.5,821.36 1470.8,824.96 1504.1,828.81 1537.4,832.91" stroke="#81cfbf" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1137.8,800 1171.1,802.67 1204.4,805.95 1237.7,809.84 1271,814.35 1304.3,819.48 1337.6,825.22 1370.9,831.58 1404.2,838.55 1437.5,846.13 1470.8,854.33 1504.1,863.15 1537.4,872.58" stroke="#e9c086" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1137.8,800 1171.1,804.06 1204.4,809.71 1237.7,817.12 1271,826.36 1304.3,837.26 1337.6,849.38 1370.9,862.2 1404.2,875.41 1437.5,889.14 1470.8,903.8 1504.1,919.87 1537.4,937.65" stroke="#b0b5eb" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="943.55" y="953" class="tiny">陆地 −36</text><text x="1115.8" y="953" class="tiny">岸线0</text>
+ <text x="1404.2" y="953" class="tiny">外海 +72</text>
+ <text x="896" y="977" class="tiny">浅陆架末端假设深度 78.4 / 深槽 327.7 模型米；陆地高值截顶 1格</text>
+ </g>
+<g><rect x="55" y="1010" width="770" height="405" rx="17" fill="#173c4e" stroke="#668694" stroke-width="1.3"/>
+ <text x="78" y="1050" class="panel">M08 · 海岸外法线剖面</text>
+ <text x="78" y="1078" class="meta">流域IoU 69.3% · 图面水域开放 100%</text>
+ <line x1="123" y1="1230" x2="722.4" y2="1230" stroke="#d3e5de" stroke-width="1.5" stroke-dasharray="6 4"/>
+ <line x1="322.79999999999995" y1="1091" x2="322.79999999999995" y2="1383" stroke="#f7ebbc" stroke-width="1.3" stroke-dasharray="4 6"/>
+ <polygon points="123,1230 123,1088.42 156.3,1114.63 189.6,1141.72 222.9,1172.92 256.2,1199.3 289.5,1230 322.8,1230 322.79999999999995,1230" fill="#83a999" opacity=".35"/>
+ <polyline points="123,1088.42 156.3,1114.63 189.6,1141.72 222.9,1172.92 256.2,1199.3 289.5,1230 322.8,1230" stroke="#d2d9a9" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <polyline points="322.8,1230 356.1,1231.46 389.4,1233.17 422.7,1235.12 456,1237.31 489.3,1239.75 522.6,1242.43 555.9,1245.35 589.2,1248.51 622.5,1251.92 655.8,1255.57 689.1,1259.47 722.4,1263.61" stroke="#81cfbf" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="322.8,1230 356.1,1232.76 389.4,1236.13 422.7,1240.1 456,1244.69 489.3,1249.88 522.6,1255.68 555.9,1262.08 589.2,1269.1 622.5,1276.72 655.8,1284.95 689.1,1293.78 722.4,1303.23" stroke="#e9c086" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="322.8,1230 356.1,1234.16 389.4,1239.9 422.7,1247.37 456,1256.65 489.3,1267.57 522.6,1279.7 555.9,1292.51 589.2,1305.72 622.5,1319.43 655.8,1334.07 689.1,1350.1 722.4,1367.82" stroke="#b0b5eb" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="128.55" y="1383" class="tiny">陆地 −36</text><text x="300.79999999999995" y="1383" class="tiny">岸线0</text>
+ <text x="589.2" y="1383" class="tiny">外海 +72</text>
+ <text x="81" y="1407" class="tiny">浅陆架末端假设深度 80 / 深槽 328.1 模型米</text>
+ </g>
+<g><rect x="870" y="1010" width="770" height="405" rx="17" fill="#173c4e" stroke="#668694" stroke-width="1.3"/>
+ <text x="893" y="1050" class="panel">M05 · 海岸外法线剖面</text>
+ <text x="893" y="1078" class="meta">流域IoU 91.3% · 图面水域开放 91%</text>
+ <line x1="938" y1="1230" x2="1537.4" y2="1230" stroke="#d3e5de" stroke-width="1.5" stroke-dasharray="6 4"/>
+ <line x1="1137.8" y1="1091" x2="1137.8" y2="1383" stroke="#f7ebbc" stroke-width="1.3" stroke-dasharray="4 6"/>
+ <polygon points="938,1230 938,1083 971.3,1096.52 1004.6,1133.23 1037.9,1167.67 1071.2,1206.1 1104.5,1230 1137.8,1230 1137.8,1230" fill="#83a999" opacity=".35"/>
+ <polyline points="938,1083 971.3,1096.52 1004.6,1133.23 1037.9,1167.67 1071.2,1206.1 1104.5,1230 1137.8,1230" stroke="#d2d9a9" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <polyline points="1137.8,1230 1171.1,1231.43 1204.4,1233.1 1237.7,1235.02 1271,1237.18 1304.3,1239.58 1337.6,1242.23 1370.9,1245.12 1404.2,1248.26 1437.5,1251.64 1470.8,1255.26 1504.1,1259.13 1537.4,1263.24" stroke="#81cfbf" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1137.8,1230 1171.1,1232.71 1204.4,1236.04 1237.7,1239.97 1271,1244.51 1304.3,1249.66 1337.6,1255.43 1370.9,1261.8 1404.2,1268.78 1437.5,1276.37 1470.8,1284.57 1504.1,1293.38 1537.4,1302.79" stroke="#e9c086" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1137.8,1230 1171.1,1234.11 1204.4,1239.8 1237.7,1247.23 1271,1256.47 1304.3,1267.36 1337.6,1279.46 1370.9,1292.24 1404.2,1305.43 1437.5,1319.11 1470.8,1333.73 1504.1,1349.74 1537.4,1367.45" stroke="#b0b5eb" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="943.55" y="1383" class="tiny">陆地 −36</text><text x="1115.8" y="1383" class="tiny">岸线0</text>
+ <text x="1404.2" y="1383" class="tiny">外海 +72</text>
+ <text x="896" y="1407" class="tiny">浅陆架末端假设深度 79.1 / 深槽 327.3 模型米；陆地高值截顶 1格</text>
+ </g>
+<rect x="60" y="1465" width="1580" height="69" rx="10" fill="#143d4c" stroke="#668998"/>
+<line x1="85" y1="1495" x2="150" y2="1495" stroke="#81cfbf" stroke-width="5"/><text x="168" y="1502" class="legend">浅陆架 · 弱波浪</text><line x1="555" y1="1495" x2="620" y2="1495" stroke="#e9c086" stroke-width="5"/><text x="638" y="1502" class="legend">开放岸 · 强波浪</text><line x1="1025" y1="1495" x2="1090" y2="1495" stroke="#b0b5eb" stroke-width="5"/><text x="1108" y="1502" class="legend">深槽 · 强潮流</text>
+</svg>
