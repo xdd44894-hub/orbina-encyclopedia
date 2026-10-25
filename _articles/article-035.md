@@ -113,7 +113,7 @@ ai_search: true
 
 示意轴线是观察与审查用的绘图坐标，不是已确认断层、板块分界、灾害区或运动方向。B09根据海岸距离制作的“近岸陆架—陆坡—过渡海盆—远洋”色带本身不足以证明任何一种板块机制。下一阶段优先检验候选古陆拼合、地层/基底联系、沉积中心与构造时序，再考虑定性的相对地形。不能根据色带直接计算水深、海峡通行性或沉积厚度。
 
-[查看B10可审查的构造假设数据]({{ '/assets/data/orbina-v225r-b10-tectonic-hypotheses.json' | relative_url }})。
+[查看B10可审查的构造假设数据]({{ '/assets/data/orbina-v225r-b10-tectonic-hypotheses.json' | relative_url }})；[查看B10源文件完整性核验]({{ '/assets/data/orbina-v225r-b10-tectonic-integrity-audit.json' | relative_url }})。其中自动静态检查已通过；浏览器和手机端实际呈现尚未验证。
 
 #### B09保留的陆海几何与海床研究基线
 
