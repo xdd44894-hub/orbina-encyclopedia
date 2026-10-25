@@ -12796,7 +12796,12 @@
     "major_candidate_polygons": 13,
     "candidate_island_shapes": 93,
     "projected_area_pending": true,
-    "longitude_wrap_seam_mismatches": 0
+    "longitude_wrap_seam_mismatches": 0,
+    "planar_fraction": 0.344537,
+    "spherical_weighted_fraction": 0.423613,
+    "equal_area_vector_fraction": 0.423478,
+    "spherical_vs_vector_difference_percentage_points": 0.0135,
+    "planet_area_not_official": true
   },
   "limitations": [
     "No known radius, rotation rate, obliquity, topographic elevation, or measured coordinates.",
@@ -13243,5 +13248,76 @@
       "b07-se-south-east-08"
     ],
     "visual_density_policy": "Nine asymmetric clusters are retained, with a mixture of larger and micro fragments. Extra point-like islands removed."
+  },
+  "candidate_continental_area_hierarchy": {
+    "status": "non-canon geometry under hypothetical spherical longitude/latitude",
+    "major_land_polygons": [
+      {
+        "id": "continental-nucleus",
+        "land_share_percent": 52.13,
+        "planet_share_percent": 22.076
+      },
+      {
+        "id": "seam-crossing-western-long-continent",
+        "land_share_percent": 23.32,
+        "planet_share_percent": 9.877
+      },
+      {
+        "id": "southeast-north-coastal-crust",
+        "land_share_percent": 6.52,
+        "planet_share_percent": 2.762
+      },
+      {
+        "id": "southeast-central-transitional-block",
+        "land_share_percent": 3.9,
+        "planet_share_percent": 1.652
+      },
+      {
+        "id": "southwestern-fractured-northern-block",
+        "land_share_percent": 3.05,
+        "planet_share_percent": 1.29
+      },
+      {
+        "id": "southeast-southern-remnant",
+        "land_share_percent": 3.04,
+        "planet_share_percent": 1.289
+      },
+      {
+        "id": "southern-ocean-west-ridge",
+        "land_share_percent": 1.31,
+        "planet_share_percent": 0.555
+      },
+      {
+        "id": "northwest-lance-relict",
+        "land_share_percent": 1.2,
+        "planet_share_percent": 0.508
+      },
+      {
+        "id": "north-east-central-shelf-block",
+        "land_share_percent": 0.93,
+        "planet_share_percent": 0.393
+      },
+      {
+        "id": "southern-ocean-east-ridge",
+        "land_share_percent": 0.89,
+        "planet_share_percent": 0.376
+      },
+      {
+        "id": "north-east-oceanward-shoulder",
+        "land_share_percent": 0.76,
+        "planet_share_percent": 0.323
+      },
+      {
+        "id": "southwest-southern-west-subcontinent",
+        "land_share_percent": 0.61,
+        "planet_share_percent": 0.26
+      },
+      {
+        "id": "southwest-southern-east-subcontinent",
+        "land_share_percent": 0.53,
+        "planet_share_percent": 0.224
+      }
+    ],
+    "no_real_area_units": true
   }
 }
