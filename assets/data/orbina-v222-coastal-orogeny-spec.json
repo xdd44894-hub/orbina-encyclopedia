@@ -1,0 +1,169 @@
+{
+  "version": "V2.22",
+  "status": "NONCANONICAL_ART_DIRECTED_GEOLOGY_CONCEPT",
+  "inheritance": "assets/images/orbina-v221-coastline-refinement.svg",
+  "output": "assets/images/orbina-v222-strait-headlands-orogeny.svg",
+  "viewer": "assets/maps/orbina-v222-natural-geography-review.html",
+  "overview": "Refine four rift openings with coast-aware flared mouths, maintain complementary facing banks, reuse fragment clips for visual shelves, and introduce clipped parent-ridge paths corresponding across opposing continental fragments. No plate tectonic or rock units solved.",
+  "footprints": "Eight V2.3 candidate polygon originals, 12 large candidate land fragments (7 from 1/4/7 + five intact), 24 candidate tiny islands unchanged.",
+  "shoreline_method": "Find where the original rift centerline enters/leaves its parent polygon by 500 source-local samples, add positive Gaussian width flare centered near both crossings, keep original correlated meandering centerline and a variable but always positive width; clip exactly using original source polygon and 3 fracture source polygons. Relative fragment shifts are kept.",
+  "risks": [
+    "Ridge strokes are art-directed proposed correlations, not reconstructed pre-rift paleogeography or confirmed fault-block uplifts.",
+    "Coastline centerline-based flares can visually improve entrances but do not model a tidal estuary or seafloor.",
+    "Existing V2.21 relief is reused, with overlaid hypothesis ridgelines; a true new elevation raster, rivers, basins and global projection remain absent.",
+    "Names of 25 official seas are not allocated to any visible polygon; 碎洋 32 chains are not equated to the 24 illustrative islands."
+  ],
+  "ridges": [
+    {
+      "source_id": 1,
+      "source_paths": [
+        {
+          "id": "N-1",
+          "source_coordinate_svg_path": "M115 434 C206 407 274 476 360 446 S524 432 600 462 S722 477 784 446",
+          "stroke_width_source_units": 18
+        },
+        {
+          "id": "N-2",
+          "source_coordinate_svg_path": "M205 345 C304 357 361 401 426 440 C472 472 508 508 570 532",
+          "stroke_width_source_units": 10
+        },
+        {
+          "id": "N-3",
+          "source_coordinate_svg_path": "M319 530 Q445 476 522 471 T695 507",
+          "stroke_width_source_units": 8
+        }
+      ],
+      "fragment_count": 2,
+      "clip": "fracture plus original source coastline"
+    },
+    {
+      "source_id": 4,
+      "source_paths": [
+        {
+          "id": "E-1",
+          "source_coordinate_svg_path": "M226 854 C281 923 306 988 248 1090 S295 1240 259 1364 S268 1511 228 1550",
+          "stroke_width_source_units": 16
+        },
+        {
+          "id": "E-2",
+          "source_coordinate_svg_path": "M136 928 C193 988 197 1090 168 1190 S178 1386 160 1480",
+          "stroke_width_source_units": 9
+        },
+        {
+          "id": "E-3",
+          "source_coordinate_svg_path": "M349 890 Q301 1014 338 1112 T341 1360 Q320 1436 347 1500",
+          "stroke_width_source_units": 9
+        }
+      ],
+      "fragment_count": 3,
+      "clip": "fracture plus original source coastline"
+    },
+    {
+      "source_id": 7,
+      "source_paths": [
+        {
+          "id": "S-1",
+          "source_coordinate_svg_path": "M856 1923 C960 1891 1031 1980 1113 1959 S1259 1931 1431 2010",
+          "stroke_width_source_units": 18
+        },
+        {
+          "id": "S-2",
+          "source_coordinate_svg_path": "M938 1758 Q1008 1825 1065 1877 T1239 1967",
+          "stroke_width_source_units": 10
+        },
+        {
+          "id": "S-3",
+          "source_coordinate_svg_path": "M955 2089 C1090 2059 1198 2086 1390 2055",
+          "stroke_width_source_units": 8
+        }
+      ],
+      "fragment_count": 2,
+      "clip": "fracture plus original source coastline"
+    }
+  ],
+  "cuts": [
+    {
+      "source_id": 1,
+      "axis": "x",
+      "flaring_width_parameter": 26,
+      "number_of_cuts": 1,
+      "shore_crossing_ranges": [
+        {
+          "entry_source_units": 340.01,
+          "exit_source_units": 534.5,
+          "flare_gaussian_spread": 26,
+          "source_width_min": 83.47,
+          "source_width_max": 158.06
+        }
+      ],
+      "fragment_occupied_sample_counts": [
+        1321,
+        307
+      ]
+    },
+    {
+      "source_id": 4,
+      "axis": "y",
+      "flaring_width_parameter": 19,
+      "number_of_cuts": 2,
+      "shore_crossing_ranges": [
+        {
+          "entry_source_units": 93.65,
+          "exit_source_units": 406.84,
+          "flare_gaussian_spread": 37.58,
+          "source_width_min": 91.35,
+          "source_width_max": 126.82
+        },
+        {
+          "entry_source_units": 123.67,
+          "exit_source_units": 389.83,
+          "flare_gaussian_spread": 31.94,
+          "source_width_min": 87.85,
+          "source_width_max": 131.44
+        }
+      ],
+      "fragment_occupied_sample_counts": [
+        572,
+        579,
+        338
+      ]
+    },
+    {
+      "source_id": 7,
+      "axis": "x",
+      "flaring_width_parameter": 28,
+      "number_of_cuts": 1,
+      "shore_crossing_ranges": [
+        {
+          "entry_source_units": 1746.93,
+          "exit_source_units": 2101.84,
+          "flare_gaussian_spread": 42.59,
+          "source_width_min": 86.91,
+          "source_width_max": 147.77
+        }
+      ],
+      "fragment_occupied_sample_counts": [
+        957,
+        670
+      ]
+    }
+  ],
+  "qa": {
+    "source_coast_shapes": 8,
+    "corrected_fragment_source_regions": 7,
+    "continuous_correlative_bank_edges": 8,
+    "updated_edge_halos": 8,
+    "overlaid_ridge_group_instances": 7,
+    "distinct_ridge_paths": 9,
+    "source_ocean_names_placed": 0
+  },
+  "protection": [
+    "联合城和人民天国同在超级大陆",
+    "中央南向敞开内海不变",
+    "北冠半岛、抵抗者之弧三处山口不变",
+    "内海东岸R1和R2独立",
+    "秦棠—新来戈—萨瑞拉及北侧白石城相对位置不变",
+    "棠溪最终河口和溪热直接相通仍未知",
+    "25正式海域名录保留但位置待定"
+  ]
+}
