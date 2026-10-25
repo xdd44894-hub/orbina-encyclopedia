@@ -10331,10 +10331,21 @@
   "coarse_statistics": {
     "continental_origin_groups": 6,
     "disconnected_land_polygons": 13,
-    "nonofficial_island_candidates": 55,
-    "metric_recalculation_pending": true,
+    "archipelago_candidate_islands": 55,
+    "map_grid_land_share_estimate": 0.357006,
+    "sphere_weighted_land_share_estimate": 0.438011,
+    "equal_area_vector_land_share_estimate": 0.437986,
+    "area_fraction_disagreement_percentage_points": 0.0025,
+    "latitude_bands_north_to_south": [
+      0.2753,
+      0.5975,
+      0.5836,
+      0.4217,
+      0.2609,
+      0.1663
+    ],
     "dateline_land_seam_mismatches": 0,
-    "all_area_values_noncanon": true
+    "spherical_assumptions_are_official": false
   },
   "limitations": [
     "No known radius, rotation rate, obliquity, topographic elevation, or measured coordinates.",
@@ -10453,5 +10464,89 @@
     "splinter_islands_added": 19,
     "splinter_islands_skipped_due_to_land_overlap_or_outside_rift": 2,
     "design_goal": "Introduce varied scales of enclosed/semi-enclosed basins, island passages and distant oceans, not 1 continent per official sea name"
+  },
+  "candidate_continental_area_hierarchy": {
+    "status": "non-canon; independent continent sizes, not linked to Earth radius multiplier",
+    "major_land_polygons": [
+      {
+        "id": "continental-nucleus",
+        "label": "核心超级大陆（未裂）",
+        "planet_share_percent": 22.076,
+        "land_share_percent": 50.4
+      },
+      {
+        "id": "seam-crossing-western-long-continent",
+        "label": "跨全球接缝长大陆",
+        "planet_share_percent": 9.877,
+        "land_share_percent": 22.55
+      },
+      {
+        "id": "southeast-north-coastal-crust",
+        "label": "东南裂解北陆片",
+        "planet_share_percent": 3.007,
+        "land_share_percent": 6.86
+      },
+      {
+        "id": "southeast-central-transitional-block",
+        "label": "东南裂解中陆片",
+        "planet_share_percent": 2.615,
+        "land_share_percent": 5.97
+      },
+      {
+        "id": "southeast-southern-remnant",
+        "label": "东南裂解南陆片",
+        "planet_share_percent": 1.466,
+        "land_share_percent": 3.35
+      },
+      {
+        "id": "southwestern-fractured-northern-block",
+        "label": "西南裂海北陆片",
+        "planet_share_percent": 1.29,
+        "land_share_percent": 2.95
+      },
+      {
+        "id": "northwest-lance-relict",
+        "label": "东北裂解西陆片",
+        "planet_share_percent": 0.558,
+        "land_share_percent": 1.28
+      },
+      {
+        "id": "north-east-central-shelf-block",
+        "label": "东北裂解中央陆片",
+        "planet_share_percent": 0.557,
+        "land_share_percent": 1.27
+      },
+      {
+        "id": "southern-ocean-west-ridge",
+        "label": "南缘长陆西段",
+        "planet_share_percent": 0.555,
+        "land_share_percent": 1.27
+      },
+      {
+        "id": "southern-ocean-east-ridge",
+        "label": "南缘长陆东段",
+        "planet_share_percent": 0.376,
+        "land_share_percent": 0.86
+      },
+      {
+        "id": "north-east-oceanward-shoulder",
+        "label": "东北裂解东陆片",
+        "planet_share_percent": 0.372,
+        "land_share_percent": 0.85
+      },
+      {
+        "id": "southwest-southern-west-subcontinent",
+        "label": "西南裂海南陆西段",
+        "planet_share_percent": 0.26,
+        "land_share_percent": 0.59
+      },
+      {
+        "id": "southwest-southern-east-subcontinent",
+        "label": "西南裂海南陆东段",
+        "planet_share_percent": 0.224,
+        "land_share_percent": 0.51
+      }
+    ],
+    "minor_islands_surface_share_percent": 0.565
   }
 }
