@@ -1,0 +1,157 @@
+{
+  "version": "V2.25-R-B09",
+  "status": "NON_CANON_STAGE_CLASSIFICATION_CROSS_SECTIONS",
+  "intent": "Make northeast, southeast and southwestern fragmented continental marine-band morphology legible across actual paths rather than assuming one simple oceanward transect.",
+  "provenance": "Sampled the B08 8-svg-coordinate raster stage cells encoded in the SVG, not real bathymetric sondes.",
+  "unchanged_geometry": {
+    "candidate_major_land_polygons": 13,
+    "candidate_islands": 93,
+    "coordinate_vertex_arrays_identical_to_B08": true,
+    "icon_representations_landpath_equal": true,
+    "mollweide_polygon_path_count": 107,
+    "approved_geography_unchanged": true
+  },
+  "sections": {
+    "count": 5,
+    "samples_per_line": 192,
+    "source_grid_step_svg_units": 8,
+    "sample_validation_mismatch": 0,
+    "overview": [
+      {
+        "id": "NE-1",
+        "group": "NE",
+        "svg_start": [
+          1388,
+          190
+        ],
+        "svg_end": [
+          2000,
+          190
+        ],
+        "category_transition_count": 17,
+        "stage_sample_counts": {
+          "abyssal": 4,
+          "intermediate": 18,
+          "slope": 31,
+          "shelf": 19,
+          "land": 120
+        }
+      },
+      {
+        "id": "NE-2",
+        "group": "NE",
+        "svg_start": [
+          1550,
+          76
+        ],
+        "svg_end": [
+          2040,
+          300
+        ],
+        "category_transition_count": 28,
+        "stage_sample_counts": {
+          "land": 61,
+          "slope": 55,
+          "shelf": 38,
+          "intermediate": 9,
+          "abyssal": 29
+        }
+      },
+      {
+        "id": "SE-1",
+        "group": "SE",
+        "svg_start": [
+          1845,
+          502
+        ],
+        "svg_end": [
+          1845,
+          1080
+        ],
+        "category_transition_count": 18,
+        "stage_sample_counts": {
+          "abyssal": 14,
+          "intermediate": 47,
+          "slope": 28,
+          "shelf": 47,
+          "land": 56
+        }
+      },
+      {
+        "id": "SE-2",
+        "group": "SE",
+        "svg_start": [
+          1640,
+          740
+        ],
+        "svg_end": [
+          2265,
+          925
+        ],
+        "category_transition_count": 23,
+        "stage_sample_counts": {
+          "shelf": 78,
+          "land": 68,
+          "slope": 24,
+          "intermediate": 9,
+          "abyssal": 13
+        }
+      },
+      {
+        "id": "SW-1",
+        "group": "SW",
+        "svg_start": [
+          245,
+          821
+        ],
+        "svg_end": [
+          586,
+          1108
+        ],
+        "category_transition_count": 11,
+        "stage_sample_counts": {
+          "intermediate": 13,
+          "slope": 34,
+          "shelf": 23,
+          "land": 87,
+          "abyssal": 35
+        }
+      }
+    ],
+    "stages": {
+      "0": "land",
+      "1": "abyssal style distant-water",
+      "2": "intermediate",
+      "3": "slope",
+      "4": "shelf"
+    },
+    "strict_limit": "Categorical index only; line height represents ordinal visual bands, NOT metric depth, actual slope, navigability or geology."
+  },
+  "static_integrity": {
+    "svg_land_instances": 318,
+    "expected_land_instances": 318,
+    "cross_section_line_count": 5,
+    "water_study_markers": 25,
+    "svg_ids_unique": true,
+    "svg_missing_definition_refs": [],
+    "mollweide_missing_definition_refs": [],
+    "open_and_close_g": [
+      48,
+      48
+    ],
+    "viewer_script_static_syntax": true
+  },
+  "legitimate_next_work": "If these profiles are approved as concept illustrations, subsequently build distinct tectonic scenarios, sedimentation and topography; only then explore a relative elevation field. No formal depth or basin assignment is authorized.",
+  "constraints": [
+    "Do not assign 25 named seas to 25 anonymous spatial points",
+    "Do not infer precise planet radius, continent sizes or coastline coordinates",
+    "Do not alter United City / People's Paradise supercontinental adjacency or QinTang to Sarila relationships",
+    "No actual bathymetric measurements exist for fictional Orbina"
+  ],
+  "file_links": {
+    "data": "assets/data/orbina-v225r-b09-global-geography-master.json",
+    "global_svg": "assets/images/orbina-v225r-b09-global-silhouette.svg",
+    "mollweide": "assets/images/orbina-v225r-b09-mollweide-equal-area.svg",
+    "viewer": "assets/maps/orbina-v225r-b09-planetary-atlas.html"
+  }
+}
