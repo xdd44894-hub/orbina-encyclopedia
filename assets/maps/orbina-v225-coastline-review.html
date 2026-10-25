@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜世界地图 V2.25 · 大陆轮廓修订前后对比</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#071e2a;color:#f4f0e4}
+*{box-sizing:border-box}body{margin:0}header{padding:26px max(18px,calc((100vw - 1170px)/2));background:#103748;border-bottom:1px solid #42697b}
+h1{margin:0;font-size:clamp(23px,3.4vw,38px)}p{line-height:1.7;color:#bbd1d4}main{max-width:1220px;padding:20px;margin:auto}
+nav{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 17px}a{color:#bceadf}nav a{padding:9px 13px;border-radius:7px;background:#174457;border:1px solid #436e80;text-decoration:none}
+.controls{display:flex;flex-wrap:wrap;align-items:center;gap:16px;background:#153b49;border:1px solid #4f8491;border-radius:11px;padding:14px;margin-bottom:18px}
+.controls input[type=range]{width:clamp(190px,35vw,400px);accent-color:#85ddcb}select{background:#0e2c3a;color:#eef8f5;border:1px solid #7b9da4;padding:8px;border-radius:6px}
+.stage{position:relative;border:1px solid #517b89;border-radius:10px;overflow:hidden;isolation:isolate;max-width:1040px;margin:auto;background:#082b3d}
+.stage img{display:block;width:100%;height:auto;user-select:none;pointer-events:none}.stage .after{position:absolute;inset:0;clip-path:inset(0 50% 0 0)}.stage .handle{position:absolute;inset:0 auto 0 50%;width:3px;background:#f7e3a2;pointer-events:none;box-shadow:0 0 13px #081b23}
+.stage .handle:after{content:"⇆";position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);background:#f2d891;color:#21353f;border-radius:99px;padding:8px;font-weight:bold}
+.hint{display:flex;justify-content:space-between;font-size:14px;padding:10px 5px;color:#d5e9e8}.notes{max-width:1040px;margin:24px auto;border:1px solid #477489;background:#123644;border-radius:10px;padding:13px 20px}.notes li{margin:9px 0;line-height:1.6}
+footer{padding:20px;color:#a6c5cb;border-top:1px solid #375f70}
+</style></head><body>
+<header><h1>俄庇娜 · V2.25 大陆轮廓自然化对照</h1><p>在 V2.24 河网基线上，仅为外围八处候选陆块增加有区别的湾岸、岬角与碎岛。中央正式相对地理不改动。</p></header>
+<main><nav><a href="../images/orbina-v224-refined-river-systems.svg" target="_blank" rel="noopener">打开 V2.24 原图</a><a href="../images/orbina-v225-natural-coastline-candidate.svg" target="_blank" rel="noopener">打开 V2.25 候选图</a><a href="../data/orbina-v225-coastline-geometry-audit.json" target="_blank" rel="noopener">查看几何核查记录</a></nav>
+<div class="controls"><label for="reveal"><strong>对比位置：</strong></label><input id="reveal" type="range" min="0" max="100" value="50"/><span id="pct">50%</span><label for="mode">模式</label><select id="mode"><option value="wipe">左右擦除对比</option><option value="blend">透明叠加</option></select></div>
+<div class="hint"><span>左侧为 V2.25 新轮廓</span><span>右侧为 V2.24 原轮廓</span></div>
+<div class="stage" id="stage"><img src="../images/orbina-v224-refined-river-systems.svg" alt="V2.24 世界地图旧版"/><img class="after" id="after" src="../images/orbina-v225-natural-coastline-candidate.svg" alt="V2.25 外围大陆自然海岸线候选"/><div class="handle" id="handle"></div></div>
+<div class="notes"><h2>本轮修改的边界</h2><ul><li>八处外围大陆候选线进行宏观凹湾、凸岬修订；并修复原候选路径的16个几何自交。</li><li>增加39座可独立编辑的近岸碎岛候选，不强行把所有大陆连成单一完整陆块。</li><li>仍然沿用 V2.24 的八组主支流及既有山脊、旧河网对照层，中央正式水系与已确认的国家相对位置不动。</li><li>新海岸与岛屿只是地图形态试绘：尚未建立海底地形、海平面演变、海岸岩性、实测高程和板块模型；需人工检查岛距及河口连续性。</li></ul></div></main>
+<footer>ORBINA WORLD GEOGRAPHY · V2.25 CANDIDATE · 2026-10-25</footer>
+<script>
+const slider=document.getElementById('reveal'),mode=document.getElementById('mode'),after=document.getElementById('after'),handle=document.getElementById('handle'),pct=document.getElementById('pct');
+function render(){const n=Number(slider.value);pct.textContent=n+'%';if(mode.value==='wipe'){after.style.clipPath='inset(0 '+(100-n)+'% 0 0)';after.style.opacity='1';handle.style.display='block';handle.style.left=n+'%';}else{after.style.clipPath='none';after.style.opacity=String(n/100);handle.style.display='none';}}
+slider.addEventListener('input',render);mode.addEventListener('change',render);render();
+</script></body></html>
