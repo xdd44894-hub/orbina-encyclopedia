@@ -32,7 +32,7 @@ ul{padding-left:20px}li{margin:8px 0}footer{border-top:1px solid #385e6b;color:#
 <li><strong>数学比例仍需谨慎：</strong>平面像素的面积不等于球体地表面积；纬度带、行星半径、海陆板块运动等仍属下一步任务。</li>
 </ul><p>西南两片裂解陆块继续保留；东北与东南大陆分别试绘窄陆架、宽陆架和不同尺度的海湾。删除14个互相重叠的小岛候选后，当前剩55座岛屿；假设球面陆地覆盖率约43.8%。目标仍是验证“这颗星球看起来是否合理”，不是继续堆积局部岸线锯齿。</p></section></div>
 <section class="panel notes" style="margin-top:18px" aria-label="大陆相对规模分析">
-<h2>B05 候选陆地相对规模（继承B04轮廓）</h2>
+<h2>B05 候选陆地相对规模（轮廓未变）</h2>
 <p>下表根据同一张候选地图的 Mollweide 等面积矢量轮廓计算。<strong>它只比较面积比例，不确定大陆正式数量或任何实际平方千米。</strong> 岛屿另行计入全球陆地覆盖率。</p>
 <div style="overflow-x:auto"><table id="areaHierarchy" style="width:100%;border-collapse:collapse;min-width:430px">
 <thead><tr><th style="text-align:left;padding:10px">候选陆块</th><th style="text-align:right;padding:10px">占候选陆地</th><th style="text-align:right;padding:10px">占假设球面</th></tr></thead>
@@ -60,7 +60,7 @@ const focusWindows={all:"0 0 2400 1200",sw:"207 742 475 404",ne:"1370 28 722 350
 function applyStudyLayers(){try{const doc=mapPreview.contentDocument;if(!doc)return;
  const root=doc.documentElement;if(!root||root.localName!=="svg")return;
  const isWork=projection.value==="working";root.setAttribute("viewBox",isWork?focusWindows[focus.value]:"0 0 2400 1200");
- const rift=doc.getElementById("b04-rift-corridor-guides"),water=doc.getElementById("b05-ocean-allocations"),routes=doc.getElementById("b05-water-connectivity-paths"),coreBay=doc.getElementById("b05-core-bay-ocean-link");
+ const rift=doc.getElementById("b05-rift-corridor-guides"),water=doc.getElementById("b05-ocean-allocations"),routes=doc.getElementById("b05-water-connectivity-paths"),coreBay=doc.getElementById("b05-core-bay-ocean-link");
  if(rift)rift.style.display=isWork&&riftCtrl.checked?"":"none";
  if(water)water.style.display=isWork&&waterCtrl.checked?"":"none";
  if(routes)routes.style.display=isWork&&routesCtrl.checked?"":"none";
