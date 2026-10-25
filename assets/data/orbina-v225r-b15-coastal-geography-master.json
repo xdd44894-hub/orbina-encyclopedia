@@ -43586,9 +43586,10 @@
     "major_candidate_polygons": 16,
     "candidate_island_shapes": 94,
     "total_candidate_land_polygons": 110,
-    "planar_svg2_area": 1013668.86,
-    "planar_working_frame_fraction": 0.351968,
-    "hypothetical_spherical_fraction": 0.434833,
+    "planar_svg2_area": 1030434.39,
+    "planar_working_frame_fraction": 0.35778972,
+    "hypothetical_spherical_fraction": 0.4418505,
+    "hypothetical_spherical_percent": 44.18505,
     "actual_planet_area_unknown": true,
     "global_land_polygon_count_noncanon": true
   },
