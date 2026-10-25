@@ -1,0 +1,56 @@
+{
+  "edition": "V2.25-R-B14",
+  "result": "STATIC_SHAPE_AND_REFERENCE_QA_PASS",
+  "visual_device_qa": "NOT_CHECKED_IN_REAL_BROWSER",
+  "design_change": "Direct replacement of Northeast/Southeast artificially severed land polygons AND accumulated regional old candidate islands, not a cosmetic coastline noise layer",
+  "sources": {
+    "current_geo": "assets/data/orbina-v225r-b14-organic-geography-master.json",
+    "global_map": "assets/images/orbina-v225r-b14-organic-global-coast.svg",
+    "mollweide": "assets/images/orbina-v225r-b14-mollweide.svg",
+    "viewer": "assets/maps/orbina-v225r-b14-organic-archipelago-atlas.html"
+  },
+  "statistics": {
+    "preserved_nonregional_major": 7,
+    "preserved_nonregional_island_polygons": 26,
+    "retired_obsolete_NE_SE_region_island_polygons": 67,
+    "new_NE_organic_shapes": 23,
+    "new_NE_major": 2,
+    "new_SE_organic_shapes": 54,
+    "new_SE_major": 7,
+    "global_major_layer": 16,
+    "global_small_island_layer": 94,
+    "global_total": 110,
+    "visual_geometry_polygon_count_is_not_geological_count": true,
+    "hypothetical_sphere_land_percent": 43.4833,
+    "hypothetical_sphere_land_percent_is_not_canon": true
+  },
+  "seam_repair": {
+    "repositioned": [
+      "b14-se-032",
+      "b14-se-052"
+    ],
+    "reason": "seam-wrapped geometry collided with western seam-crossing land; moved positions after full 3-shift overlap test",
+    "candidates_checked_bounding_pairs": 63,
+    "residual_intersecting_or_contained_polygons": 0
+  },
+  "checks": {
+    "all_B14_polygons_have_three_flat_map_wrap_instances": true,
+    "all_B14_polygons_projected_in_mollweide": true,
+    "Svg_IdsUnique": true,
+    "Svg_xml_g_tag_balance": true,
+    "Mollweide_svg_g_tag_balance": true,
+    "periodic_wrap_overlap_test_passed": true,
+    "viewer_inline_js_parses": true,
+    "viewer_uses_B14_data_and_comparison_overlay": true,
+    "encyclopedia_active_is_B14": true,
+    "active_world_map_policy_is_B14": true,
+    "old_b08_b13_study_layers_not_exported_in_current_geo": true
+  },
+  "limitations": [
+    "Static SVG and JS syntax QA cannot establish real mobile rendering quality or aesthetics; user comparison is still needed.",
+    "Current organically undulating coastal polygons are procedural visual trials; rock type, river valley drowning, tides, erosion, plate tectonics and sediment supply were not physically modeled.",
+    "The Northeast two-mainland and Southeast major-remnant composition reflects the latest user design preference, but exact shoreline and polygon counts may continue to change.",
+    "The confirmed 25 major sea names and Shattered Sea 32 island chains have not been silently tied to these anonymous draft polygons."
+  ],
+  "future_work": "Inspect Northeast/Southeast B14 regional maps at multiple zoom levels. Continue by varying lobed peninsula scales and geologically motivated embayments, not by reviving cut-grid fragments. Build new B14-compatible relative highland and watershed sketches only after shape feedback."
+}
