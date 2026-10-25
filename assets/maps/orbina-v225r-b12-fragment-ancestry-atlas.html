@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 · V2.25-R-B12 碎裂大陆复原参考世界地图</title>
+<style>
+:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color-scheme:dark;background:#081e29;color:#ecf2ec}*{box-sizing:border-box}body{margin:0}
+header{background:#123c49;padding:28px max(18px,calc((100% - 1240px)/2));border-bottom:1px solid #3d7180}header h1{font-size:clamp(24px,3vw,37px);line-height:1.3;margin:0 0 8px}header p{color:#bdd3d5;margin:0;line-height:1.7}
+main{max-width:1280px;margin:auto;padding:18px}a{color:#c5e7de}.links{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 19px}.links a{border:1px solid #4e7883;border-radius:8px;padding:9px;text-decoration:none;background:#153e4b;font-size:14px}
+.card{background:#123542;border:1px solid #456e7c;border-radius:13px;padding:16px;margin:15px 0}.card h2{font-size:20px;margin:0 0 10px}
+#mapView{display:block;background:#0c3444;width:100%;height:auto;aspect-ratio:2/1;border-radius:8px;border:1px solid #356271}.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 0}.controls label{display:flex;align-items:center;gap:7px;font-size:14px}
+button,select{background:#255566;color:#f0f7ec;border:1px solid #6b9ba3;border-radius:7px;padding:8px;cursor:pointer}button:hover{background:#316c7e}
+small,.muted{color:#b6ccd1;line-height:1.7}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{background:#0d2b36;border-radius:9px;padding:13px}.stat strong{display:block;font-size:28px}.stat span{font-size:13px;color:#bfd0d0}
+.grid2{display:grid;grid-template-columns:minmax(240px,410px) 1fr;gap:20px}.grid2 p{line-height:1.8;color:#d4e4dd}
+#globe{display:block;width:100%;max-width:400px;margin:auto;border-radius:50%;background:#0e3041}
+.range{width:min(300px,55vw)}footer{text-align:center;color:#a6bfc3;padding:22px}
+@media(max-width:740px){.grid2{grid-template-columns:1fr}main{padding:10px}.card{padding:12px}}
+</style></head><body>
+<header><h1>俄庇娜 · 碎裂大陆与古陆来源研究图</h1>
+<p><strong>V2.25-R-B12</strong> · 东北双主陆与散陆群、东南破碎化仍保留B11原有海陆；本阶段增加六组母陆来源识别与近邻拼合研究图层。中央超级大陆及既定地理关系不变。<strong>当前仍为全球海陆工作方案，不是正史全球坐标图。</strong></p></header>
+<main>
+<div class="links">
+<a href="../images/orbina-v225r-b12-global-silhouette.svg" target="_blank">B11经纬工作母图 SVG</a>
+<a href="../images/orbina-v225r-b12-mollweide-equal-area.svg" target="_blank">B11等面积图 SVG</a>
+<a href="../data/orbina-v225r-b11-fragmented-geography-master.json" target="_blank">B11海陆坐标母数据</a>
+<a href="../data/orbina-v225r-b12-fragment-ancestry-study.json" target="_blank">B12碎陆来源与近邻配对研究</a>
+<a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank">海洋地理正史说明</a>
+</div>
+<section class="card">
+<div class="controls">
+<label>投影<select id="projection"><option value="working">经纬工作网格</option><option value="equal">Mollweide等面积</option></select></label>
+<label>区域<select id="region"><option value="all">全球全览</option><option value="ne">东北双主陆</option><option value="se">东南碎裂陆群</option><option value="sw">西南断裂海</option><option value="core">中央超级大陆</option></select></label>
+<label><input type="checkbox" id="oldOutline">对照B09原轮廓（橙色虚线）</label>
+<label><input type="checkbox" id="sourceFamilies">六组母陆来源着色</label>
+<label><input type="checkbox" id="neighborLinks">碎陆近邻配对线</label>
+<button id="reset" type="button">重置地图</button>
+</div>
+<object id="mapView" aria-label="俄庇娜B11海陆候选地图" type="image/svg+xml" data="../images/orbina-v225r-b12-global-silhouette.svg">地图 SVG 加载失败，请使用上方原图链接。</object>
+<p class="muted" id="mapStatus">B12的母陆着色、碎陆配对线与B09旧轮廓均属于可隐藏的研究图层，不改变B11海陆边界。</p>
+</section>
+<section class="card" id="b12Study"><h2>B12 · 六组母陆来源与碎陆邻接研究</h2>
+<p class="muted">当前陆地轮廓完整继承B11。勾选“六组母陆来源着色”可以直接看出碎陆各自来自哪片原母陆；勾选“碎陆近邻配对线”则显示同来源碎陆之间的59条相对最短岸缘连接，<strong>这些线不是桥梁、海峡通航距离、古构造缝合线或地质实测</strong>。也可以开启B09旧轮廓比较原大陆整体形状。</p>
+<div id="b12Legend" class="stats"><div class="stat">正在读取六组来源数据…</div></div>
+<p class="muted" id="b12Summary">来源由B11数据自带的b11_fragment_parent字段确定；地质拼合合理性仍需单独论证，不能直接认定为古陆真实复原。</p>
+</section>
+<section class="card"><h2>B11海陆轮廓（B12原样保留）</h2>
+<div class="stats">
+<div class="stat"><strong id="neCount">20</strong><span>东北切分后陆块总数</span></div>
+<div class="stat"><strong id="neMain">2</strong><span>东北保留较大主体</span></div>
+<div class="stat"><strong id="seCount">45</strong><span>东南切分后陆块总数</span></div>
+<div class="stat"><strong id="allCount">165</strong><span>全球总候选陆地多边形</span></div>
+</div>
+<p class="muted">东北的20片、东南的45片是对原有六块大陆的重新分割，不是在完整原大陆之外再新增同等数量的岛屿。B09既有93处候选岛屿完整保留。绘图陆块数不等于正式地理学大陆/岛屿数量。</p>
+</section>
+<section class="card grid2"><div>
+<h2>3D 球面概览</h2><canvas width="400" height="400" id="globe" aria-label="候选大陆球面正射预览"></canvas>
+<div class="controls"><label>旋转角度 <input id="heading" class="range" type="range" min="-180" max="180" value="0"></label><span id="deg">0°</span></div>
+<div class="controls"><button data-lon="0" type="button">中央超级大陆</button><button data-lon="124" type="button">东北/东南</button><button data-lon="-130" type="button">西部大陆</button></div>
+<p id="globeStatus" class="muted">正在读取 B11 源数据…</p></div>
+<div><h2>破碎形态的设计原则</h2>
+<p><strong>东北：</strong>保留两片较大的原大陆残体，其余以小型断块、弯折海峡和错开的海湾分隔。不预设它们全部属于同一条活动断层。</p>
+<p><strong>东南：</strong>原来斜向延伸的大陆外缘仍隐约可辨，但内部被不均匀的裂海切割成大小不一的碎片；不是简单摆成等大小、等间距的岛屿棋盘。</p>
+<p><strong>地理正史：</strong>联合城和人民天国仍在同一中央超级大陆；秦棠在萨瑞拉西北；内海与棠溪等既定关系不变。25个已确认海名继续保留，但不据图上匿名点分配海名。</p>
+<p><strong>重要边界：</strong>由于 B11 海岸已经真正改变，B08按旧岸距制作的海床色带、B09五条海陆剖面不能直接沿用。B10的A/B构造成因仍只是候选解释，须在新几何下重新核对。</p></div></section>
+<section class="card"><h2>下一阶段：相对地形与水系分水岭研究</h2><p class="muted">以B12六组碎陆来源及海水分离情况为基础，下一阶段先构造低精度相对高地—低地假设，再判断每块陆地的独立分水岭和可能海岸河口；不能先按旧大陆画跨海河流。在此之前不填写未经确认的海峡深度、板块运动速度、行星半径或真实公里尺度。</p></section>
+</main><footer>ORBINA · B12 FRAGMENT ANCESTRY STUDY OVER B11 UNCHANGED COASTLINES · NON-CANON</footer>
+<script>
+const map=document.getElementById("mapView"),proj=document.getElementById("projection"),region=document.getElementById("region"),old=document.getElementById("oldOutline"),familyToggle=document.getElementById("sourceFamilies"),linkToggle=document.getElementById("neighborLinks"),mapStatus=document.getElementById("mapStatus");
+const windows={all:"0 0 2400 1200",ne:"1350 22 750 422",se:"1490 480 820 645",sw:"200 740 480 420",core:"535 112 1050 800"};
+function updateMap(){
+const equal=proj.value==="equal";const desired=equal?"../images/orbina-v225r-b12-mollweide-equal-area.svg":"../images/orbina-v225r-b12-global-silhouette.svg";
+if(map.getAttribute("data")!==desired){map.setAttribute("data",desired);return;}
+try{const svg=map.contentDocument?.documentElement;if(!svg||svg.localName!=="svg")return;
+svg.setAttribute("viewBox",equal?"0 0 2400 1200":windows[region.value]);
+const overlay=svg.ownerDocument.getElementById("b11-parental-contour-comparison");if(overlay)overlay.style.display=old.checked&&!equal?"":"none";
+const families=svg.ownerDocument.getElementById("b12-six-parent-families");if(families)families.style.display=familyToggle.checked&&!equal?"":"none";
+const pairs=svg.ownerDocument.getElementById("b12-neighbor-mst-links");if(pairs)pairs.style.display=linkToggle.checked&&!equal?"":"none";
+mapStatus.textContent=equal?"Mollweide显示完整B11岸线；可切回经纬工作图操作B12来源研究图层。":familyToggle.checked||linkToggle.checked?"B12研究层已显示，颜色表示六组母陆的绘图来源，虚线代表相邻碎陆边界配对，不是正式板块构造。":old.checked?"橙色虚线为B09原海岸轮廓；新陆地仍按B11真实分割后的形状显示。":"B12沿用B11海陆几何；可以打开各项图层观察碎陆与旧大陆的关系。";
+}catch(e){mapStatus.textContent="可打开SVG原图查看；交互层未成功读取："+e.message;}}
+map.addEventListener("load",updateMap);
+proj.addEventListener("change",()=>{if(proj.value==="equal")region.value="all";updateMap();});
+region.addEventListener("change",()=>{if(region.value!=="all"&&proj.value==="equal")proj.value="working";updateMap();});
+old.addEventListener("change",()=>{if(old.checked&&proj.value==="equal")proj.value="working";updateMap();});
+for(const ctl of [familyToggle,linkToggle])ctl.addEventListener("change",()=>{if(ctl.checked&&proj.value==="equal")proj.value="working";updateMap();});
+document.getElementById("reset").addEventListener("click",()=>{region.value="all";proj.value="working";old.checked=false;familyToggle.checked=false;linkToggle.checked=false;updateMap();});
+const canvas=document.getElementById("globe"),ctx=canvas.getContext("2d",{willReadFrequently:true}),heading=document.getElementById("heading"),deg=document.getElementById("deg"),r=canvas.width*.467,cx=canvas.width/2,cy=canvas.height/2;
+let tex=null;
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+function populate(data){
+const off=document.createElement("canvas");off.width=1200;off.height=600;const c=off.getContext("2d");
+c.fillStyle="#154c61";c.fillRect(0,0,1200,600);
+for(let p of data.macro_landmasses.concat(data.archipelago)){
+c.fillStyle=p.color||"#c4cbae";c.strokeStyle="#dfeadc";c.lineWidth=.55;
+for(let shift of [-2400,0,2400]){const pts=p.coordinates;if(!pts?.length)continue;c.beginPath();c.moveTo((pts[0][0]+shift)/2,pts[0][1]/2);for(let i=1;i<pts.length;i++)c.lineTo((pts[i][0]+shift)/2,pts[i][1]/2);c.closePath();c.fill();c.stroke();}}
+return c.getImageData(0,0,1200,600);
+}
+function render(){
+deg.textContent=heading.value+"°";const sz=canvas.width;ctx.fillStyle="#0b2633";ctx.fillRect(0,0,sz,sz);
+if(!tex){ctx.fillStyle="#d1e3e6";ctx.font="16px system-ui";ctx.fillText("读取地图数据…",115,190);return;}
+let out=ctx.createImageData(sz,sz),dst=out.data,src=tex.data,centerLon=+heading.value;
+for(let yy=0;yy<sz;yy++){let y=(cy-yy)/r;for(let xx=0;xx<sz;xx++){let x=(xx-cx)/r,z2=1-x*x-y*y;if(z2<0)continue;let z=Math.sqrt(z2),lat=Math.asin(y)*180/Math.PI,lon=centerLon+Math.atan2(x,z)*180/Math.PI;lon=((lon+180)%360+360)%360-180;
+let ix=clamp(Math.floor((lon+180)*1200/360),0,1199),iy=clamp(Math.floor((90-lat)*600/180),0,599),si=4*(iy*1200+ix),di=4*(yy*sz+xx),shade=.64+.33*z;
+dst[di]=src[si]*shade;dst[di+1]=src[si+1]*shade;dst[di+2]=src[si+2]*shade;dst[di+3]=255;}}
+ctx.putImageData(out,0,0);ctx.strokeStyle="#e8f5ee";ctx.lineWidth=2;ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.stroke();}
+heading.addEventListener("input",render);
+document.querySelectorAll("[data-lon]").forEach(b=>b.addEventListener("click",()=>{heading.value=b.dataset.lon;render();}));
+fetch("../data/orbina-v225r-b11-fragmented-geography-master.json").then(r=>{if(!r.ok)throw Error("无法读取B11源文件");return r.json();}).then(data=>{
+tex=populate(data);document.getElementById("neCount").textContent=data.b11_fracture.new_NE_fragment_shapes;
+document.getElementById("neMain").textContent=data.b11_fracture.new_principal_NE_landforms.length;
+document.getElementById("seCount").textContent=data.b11_fracture.new_SE_fragment_shapes;
+document.getElementById("allCount").textContent=data.macro_landmasses.length+data.archipelago.length;
+document.getElementById("globeStatus").textContent="B11完整全球球面已载入；旋转查看新裂解陆块。这是暂定经纬球面，非真实地理测量。";render();
+}).catch(e=>{document.getElementById("globeStatus").textContent="球面源数据未加载："+e.message;});
+render();updateMap();
+fetch("../data/orbina-v225r-b12-fragment-ancestry-study.json").then(r=>{if(!r.ok)throw Error("B12来源研究数据不可用");return r.json();}).then(study=>{
+document.getElementById("b12Legend").innerHTML=study.families.map(f=>'<div class="stat"><div style="display:flex;align-items:center;gap:8px;margin-bottom:7px"><span style="display:inline-block;background:'+f.color+';width:15px;height:15px;border-radius:3px"></span><strong style="font-size:15px">'+f.label+'</strong></div><span>碎陆 '+f.member_count+' 片；配对线 '+f.neighborhood_links+' 条</span></div>').join("");
+document.getElementById("b12Summary").textContent="来源共 "+study.family_count+" 组，配对线 "+study.reassembly_links.length+" 条，全部采用图纸坐标距离，绝非海峡实际宽度。两片东北主体与东南斜向碎陆的形状继续保持B11；本阶段新增的是可核验的来源关系层。";
+}).catch(e=>{document.getElementById("b12Summary").textContent="研究表暂未载入："+e.message;});
+</script>
+</body></html>
