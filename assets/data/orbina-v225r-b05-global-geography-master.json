@@ -10355,7 +10355,7 @@
     "No countries, confirmed 25 sea names, or rivers are assigned new world coordinates.",
     "The calculated 360×180 sphere-weighted land fraction is a conditional proxy based on arbitrary candidate latitudes, not authoritative planetography."
   ],
-  "description": "Preserves the B04 landmass polygons, 13 candidate large land shapes and 55 candidate islands; verifies 3 SVG-unit globe-ocean connectivity and robustly relocates marginal anonymous sea probes; adds raster-generated water-only routes for selected rift, island-arc and inner-bay sites.",
+  "description": "Preserves the predecessor landmass polygons, 13 candidate large land shapes and 55 candidate islands; verifies 3 SVG-unit globe-ocean connectivity and robustly relocates marginal anonymous sea probes; adds raster-generated water-only routes for selected rift, island-arc and inner-bay sites.",
   "design_changes": [
     "fracture former southwest microcontinent into two disconnected terrestrial pieces with 28-unit diagonal seaway",
     "add seven nonuniform small candidate rift islets without coastline intersections",
@@ -10373,9 +10373,9 @@
   ],
   "macro_scale_policy_reference": "assets/data/orbina-global-continent-scale-principles.json",
   "canon_scope": "Only preexisting relative geographic relations are canon. All global continent polygons and hypothetical latitude coverage remain optional.",
-  "parent_generation": "B03 maintained in GitHub commit history, not duplicated as current atlas",
+  "parent_generation": "Previous coastline composition remains in the Git history; B05 is the current candidate and retains the same geometry.",
   "render_layers": {
-    "rift": "b04-rift-corridor-guides",
+    "rift": "b05-rift-corridor-guides",
     "water_sector_probes": "b04-ocean-allocations",
     "ocean_routes": "b05-water-connectivity-paths"
   },
