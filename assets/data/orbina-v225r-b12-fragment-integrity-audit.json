@@ -1,0 +1,78 @@
+{
+  "version": "V2.25-R-B12",
+  "state": "SOURCE_STATIC_QA_PASS; LIVE_PAGES_AND_MOBILE_RENDER_NOT_VERIFIED",
+  "geometry_lineage": {
+    "current_base": "assets/data/orbina-v225r-b11-fragmented-geography-master.json",
+    "base_sha": "be5a3ad96947ca5846a58cf93b58433f2d446f66",
+    "new_study": "assets/data/orbina-v225r-b12-fragment-ancestry-study.json",
+    "new_study_sha_at_initial_verification": "1f4d44b9d43550140f3b4bbd907691d59ff8fa0b",
+    "unchanged_B11_macro_count": 15,
+    "unchanged_B11_archipelago_count": 150,
+    "total_polygons": 165,
+    "fragment_NE": 20,
+    "fragment_SE": 45,
+    "existing_B09_islands": 93
+  },
+  "new_layers": {
+    "former_mother_land_groups": 6,
+    "group_sizes_by_region": {
+      "NE": [
+        3,
+        15,
+        2
+      ],
+      "SE": [
+        14,
+        19,
+        12
+      ]
+    },
+    "shortest_boundary_minimum_spanning_links": 59,
+    "data_classification": "Research presentation only, no ancient plate reconstruction validated",
+    "source_color_layer_visible_by_default": false,
+    "nearest_neighbor_layer_visible_by_default": false
+  },
+  "integrity": {
+    "b11_b12_working_svg_main_land_vector_equal": true,
+    "b11_b12_mollweide_land_vector_equal": true,
+    "all_65_new_land_parts_still_present": true,
+    "all_59_link_records_have_same_family_ends": true,
+    "all_family_mst_link_count_equals_group_size_minus_one": true,
+    "svg_g_open_close_balanced": true,
+    "svg_ids_unique": true,
+    "html_inline_javascript_static_syntax": "passed",
+    "wiki_current_B12": true,
+    "policy_current_B12": true
+  },
+  "hypothetical_land_coverage": {
+    "geometry_basis": "B11/B12 lonlat plate-carree work polygons, fixed 2400x1200 and assumed spherical metric; no real R",
+    "method": "Spherical area integral of filled land polygons, continuous longitude across seam",
+    "b09_previous_recomputed_percent": 42.3488462,
+    "b09_previous_stored_percent": 42.3478,
+    "b12_current_computed_percent": 40.9491744,
+    "difference_percentage_points": -1.3996718,
+    "real_planet_coverage_confirmed": false
+  },
+  "validation_limits": {
+    "github_repo_commits_done": true,
+    "browser_render_tested": false,
+    "mobile_render_tested": false,
+    "pages_online_access_confirmed": false,
+    "polygon_topological_overlap_exact_geometry_check": "not separately run; original B11 fragmentation validator remained unchanged",
+    "nearest_distance_planar_only": true,
+    "real_terrain_or_geology_confirmed": false
+  },
+  "canon_guardrails": [
+    "United City and People's Paradise same supercontinent",
+    "Qintang northwest of Sarila; Baitown north of Sarila",
+    "Tangxi and R1/R2 distinct water systems",
+    "Southward open central bay and northern headland relationship",
+    "25 official major water names remain unassigned to temporary study points",
+    "Shattered Sea established 32 island chains unaffected"
+  ],
+  "next_step": "After cartographic review, produce B13 regional elevation hypotheses and isolated basin routing only when terrain assumptions are defined. Do not draw streams across separate land polygons or falsely assert plate boundaries.",
+  "references": [
+    "https://pubs.usgs.gov/of/2012/1111/Sedimentary_Basins_of_the_United_States.html",
+    "https://water.usgs.gov/themes/hydrofabric/drainage-area/"
+  ]
+}
