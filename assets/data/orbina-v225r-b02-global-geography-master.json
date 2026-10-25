@@ -5847,5 +5847,58 @@
     "25个已录用海域名称不附会位置"
   ],
   "macro_scale_policy_reference": "assets/data/orbina-global-continent-scale-principles.json",
-  "canon_scope": "Only preexisting relative geographic relations are canon. All global continent polygons and hypothetical latitude coverage remain optional."
+  "canon_scope": "Only preexisting relative geographic relations are canon. All global continent polygons and hypothetical latitude coverage remain optional.",
+  "candidate_continental_area_hierarchy": {
+    "method": "Mollweide equal-area vector polygon area of current hypothetical 2400x1200 globe. Angles and fractional shares only; no kilometer / absolute size or number of official continents assumed.",
+    "status": "non-canonical illustration, geometrically tied to B02; alter freely when macro geography changes",
+    "share_of_planet_dryland_approx": 47.631,
+    "major_land_polygons": [
+      {
+        "id": "continental-nucleus",
+        "label": "核心超级大陆候选",
+        "planet_share_percent": 22.076,
+        "land_share_percent": 46.35
+      },
+      {
+        "id": "southeast-oblique-continent",
+        "label": "东南斜向大陆候选",
+        "planet_share_percent": 9.931,
+        "land_share_percent": 20.85
+      },
+      {
+        "id": "seam-crossing-western-long-continent",
+        "label": "跨界长形大陆候选",
+        "planet_share_percent": 9.876,
+        "land_share_percent": 20.74
+      },
+      {
+        "id": "north-east-lance",
+        "label": "东北狭长陆地候选",
+        "planet_share_percent": 2.027,
+        "land_share_percent": 4.26
+      },
+      {
+        "id": "southwestern-fractured-northern-block",
+        "label": "西南裂海北侧陆块",
+        "planet_share_percent": 1.393,
+        "land_share_percent": 2.92
+      },
+      {
+        "id": "subpolar-elongated-ridge",
+        "label": "南缘微大陆候选",
+        "planet_share_percent": 1.008,
+        "land_share_percent": 2.12
+      },
+      {
+        "id": "southwestern-fractured-southern-block",
+        "label": "西南裂海南侧陆块",
+        "planet_share_percent": 0.611,
+        "land_share_percent": 1.28
+      }
+    ],
+    "minor_candidate_islands_share_planet_percent": 0.71,
+    "relative_largest_to_smallest_major_ratio_approx": 36.1,
+    "design_interpretation": "The huge nucleus is ~46% of drawn land, two other large landmasses near ~21% each, but neither planet radius nor continent grouping fixed. Can change size, number, coastline and fragmentation independently.",
+    "scale_principle_ref": "assets/data/orbina-global-continent-scale-principles.json"
+  }
 }
