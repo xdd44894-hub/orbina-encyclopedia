@@ -27,6 +27,7 @@ ul{padding-left:20px}li{margin:8px 0}footer{border-top:1px solid #385e6b;color:#
 <span id="areaNote" style="font-size:13px;color:#b4d5d0">工作网格：用于检查海岸裂解细节</span>
 <label><strong>查看区域</strong><select id="focus"><option value="all">全球</option><option value="ne">东北裂解大陆（重点）</option><option value="se">东南斜向大陆（重点）</option><option value="sw">西南裂海</option><option value="bay">中央超级大陆</option></select></label>
 <label><input id="showShape" type="checkbox"/>高亮重新设计的两组海岸</label>
+<label><input id="showFragments" type="checkbox"/>高亮32处新增小微残岛</label>
 <label><input id="showWater" type="checkbox"/>显示25处匿名海域研究点</label>
 <label><input id="showSeaFloor" type="checkbox"/>显示陆架—海盆阶段推测（非水深）</label>
 <label><input id="showRiftAxes" type="checkbox"/>显示候选裂海轴线</label><label><input id="showTransects" type="checkbox"/>显示当前选择的剖面线（经纬工作图）</label>
@@ -70,11 +71,16 @@ ul{padding-left:20px}li{margin:8px 0}footer{border-top:1px solid #385e6b;color:#
 <span>■ 陆地</span><span style="color:#78c8b7">■ 候选陆架</span><span style="color:#e7c087">■ 陆坡带</span><span style="color:#77acd2">■ 过渡海盆</span><span style="color:#ac9dd9">■ 远洋阶段</span>
 </div>
 </section>
+<section class="panel notes" style="margin-top:18px" aria-label="碎陆识别辅助">
+<h2>新增碎陆辨识辅助（B09小更新）</h2>
+<p>此前B07为东北、东南裂解大陆增添了32处候选残岛，其中东北12处、东南20处。按当前SVG图纸上的平面面积暂分为小型17处、极小6处、微型9处；这些分级只是为了观察地图时区分大小，不代表正式岛屿分类。</p>
+<p>在「经纬工作网格」勾选「高亮32处新增小微残岛」，可显示对应的虚线定位圈：绿色为相对较大的碎屿，蓝色为极小碎屿，浅橙色为微型碎屿。<strong>虚线圈是查看标记，不是岛屿真正海岸线，也不占有额外陆地面积。</strong> 可以与东北／东南区域放大视图一起使用。</p>
+</section>
 </main><footer>ORBINA • V2.25-R-B09 GLOBAL SILHOUETTE / SPHERICAL PREVIEW • NON-CANON WORK IN PROGRESS</footer>
 <script>
 const transectCtrl=document.getElementById("showTransects"),sectionSelect=document.getElementById("sectionSelect");
 let loadedModel=null;
-const projection=document.getElementById("projection"),mapPreview=document.getElementById("mapPreview"),areaNote=document.getElementById("areaNote"),focus=document.getElementById("focus"),shapeCtrl=document.getElementById("showShape"),waterCtrl=document.getElementById("showWater"),seaCtrl=document.getElementById("showSeaFloor"),riftCtrl=document.getElementById("showRiftAxes");
+const projection=document.getElementById("projection"),mapPreview=document.getElementById("mapPreview"),areaNote=document.getElementById("areaNote"),focus=document.getElementById("focus"),shapeCtrl=document.getElementById("showShape"),waterCtrl=document.getElementById("showWater"),seaCtrl=document.getElementById("showSeaFloor"),riftCtrl=document.getElementById("showRiftAxes"),fragmentCtrl=document.getElementById("showFragments");
 const windows={all:"0 0 2400 1200",ne:"1330 14 760 365",se:"1480 474 875 650",sw:"206 742 476 405",bay:"620 196 1030 705"};
 function updateProjection(){const equal=projection.value==="equal";
  mapPreview.data=equal?"../images/orbina-v225r-b09-mollweide-equal-area.svg":"../images/orbina-v225r-b09-global-silhouette.svg";
@@ -83,6 +89,7 @@ function applyStudyLayers(){try{const doc=mapPreview.contentDocument,svg=doc?.do
  svg.setAttribute("viewBox",working?windows[focus.value]:"0 0 2400 1200");
  const shape=doc.getElementById("b09-coastal-shape-review"),water=doc.getElementById("b09-anonymous-water-markers"),sea=doc.getElementById("b09-seafloor-concept-zones"),rift=doc.getElementById("b09-hypothesized-rift-basin-lines"),transects=doc.getElementById("b09-schematic-transect-traces");
  if(shape)shape.style.display=working&&shapeCtrl.checked?"":"none";
+ const fragments=doc.getElementById("b09-added-fragment-locator");if(fragments)fragments.style.display=working&&fragmentCtrl.checked?"":"none";
  if(water)water.style.display=working&&waterCtrl.checked?"":"none";
  if(sea)sea.style.display=working&&seaCtrl.checked?"":"none";
  if(rift)rift.style.display=working&&riftCtrl.checked?"":"none";
@@ -92,6 +99,7 @@ function ensureWorking(){if(projection.value!=="working"){projection.value="work
 projection.addEventListener("change",()=>{updateProjection();applyStudyLayers()});
 focus.addEventListener("change",()=>{if(focus.value!=="all")ensureWorking();applyStudyLayers();});
 shapeCtrl.addEventListener("change",()=>{if(shapeCtrl.checked)ensureWorking();applyStudyLayers();});
+fragmentCtrl.addEventListener("change",()=>{if(fragmentCtrl.checked)ensureWorking();applyStudyLayers();});
 waterCtrl.addEventListener("change",()=>{if(waterCtrl.checked)ensureWorking();applyStudyLayers();});
 seaCtrl.addEventListener("change",()=>{if(seaCtrl.checked)ensureWorking();applyStudyLayers();});
 riftCtrl.addEventListener("change",()=>{if(riftCtrl.checked)ensureWorking();applyStudyLayers();});
