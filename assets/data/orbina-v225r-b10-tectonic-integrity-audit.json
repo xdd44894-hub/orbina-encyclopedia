@@ -1,0 +1,57 @@
+{
+  "version": "V2.25-R-B10",
+  "status": "STATIC_SOURCE_INTEGRITY_PASS_BROWSER_RENDER_UNVERIFIED",
+  "checked_at_utc_day": "2026-10-25",
+  "scope": "Compare A/B tectonic explanatory corridors against unchanged B09 map source; check published repository content, not actual planet geology.",
+  "baseline_refs": {
+    "master": "assets/data/orbina-v225r-b09-global-geography-master.json",
+    "master_blob_sha": "ec069e8a2f619fe8b749fbd58b499b6cc7690725",
+    "microisland_audit": "assets/data/orbina-v225r-b09-microisland-visibility-audit.json",
+    "microisland_audit_blob_sha": "3009c6943d262cd785e00a3a9ee4bcd1049b05f1"
+  },
+  "files": {
+    "new_atlas": "assets/maps/orbina-v225r-b10-tectonic-scenario-atlas.html",
+    "comparative_scenarios": "assets/data/orbina-v225r-b10-tectonic-hypotheses.json",
+    "active_atlas_policy": "assets/data/orbina-global-continent-scale-principles.json",
+    "canonical_article": "_articles/article-035.md"
+  },
+  "checks": {
+    "canonical_article_version": "B10",
+    "active_scale_policy_version": "B10",
+    "major_land_polygons_unchanged": 13,
+    "candidate_islands_unchanged": 93,
+    "earlier_added_small_micro_shapes_unchanged": 32,
+    "scenario_count": 2,
+    "regions_per_scenario": 3,
+    "baseline_sections_unchanged": 5,
+    "scenario_ids": [
+      "A",
+      "B"
+    ],
+    "scenario_regions": [
+      "NE",
+      "SE",
+      "SW"
+    ],
+    "atlas_inline_script_syntax": [
+      "passed",
+      "passed"
+    ],
+    "data_json_parse": "passed",
+    "map_viewer_still_loads_b09_coast_svg": true,
+    "map_viewer_still_loads_b09_geography_model": true,
+    "new_plate_axes_only_in_memory_overlay": true,
+    "new_permanent_coast_geometry": false,
+    "updated_existing_b09_svg": false,
+    "browser_render_verified": false,
+    "mobile_render_verified": false,
+    "pages_build_confirmed": false
+  },
+  "cautions": [
+    "Curve coordinates represent illustration study routes, not fixed geologic faults/real longitude and latitude.",
+    "Two hypotheses remain alternatives; no direct proof of tectonic age, motion, seismicity, sediment thickness, actual depth or relief.",
+    "Official 25 sea names not matched to 25 anonymous planning dots.",
+    "B09 geometries remain accessible as the unchanged B10 background dataset, although B10 is the active viewer."
+  ],
+  "next_work": "B11 should test plausible regional paleogeographic restoration and sediment/topographic constraints; do not automatically select plate scenario A or B from map appearance alone."
+}
