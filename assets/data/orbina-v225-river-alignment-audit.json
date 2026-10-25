@@ -1,0 +1,206 @@
+{
+  "version": "V2.25",
+  "pass": 4,
+  "status": "cartographic candidate, not ratified geography",
+  "source_map": "assets/images/orbina-v225-coast-hydrology-third-pass.svg",
+  "revised_map": "assets/images/orbina-v225-river-alignment-fourth-pass.svg",
+  "v224_source_river_model": "assets/data/orbina-v224-branching-river-model.json",
+  "goal": "Align river render transforms with the actual displayed land fragment transforms and remove land/ocean clipping discontinuities while preserving protected central geography.",
+  "fragment_alignment": [
+    {
+      "fragment": "1-1",
+      "river_before": [
+        -15,
+        0
+      ],
+      "land_and_river_after": [
+        -21,
+        -2
+      ]
+    },
+    {
+      "fragment": "1-2",
+      "river_before": [
+        0,
+        0
+      ],
+      "land_and_river_after": [
+        14,
+        2
+      ]
+    },
+    {
+      "fragment": "4-1",
+      "river_before": [
+        0,
+        -8
+      ],
+      "land_and_river_after": [
+        0,
+        -16
+      ]
+    },
+    {
+      "fragment": "4-2",
+      "river_before": [
+        15,
+        0
+      ],
+      "land_and_river_after": [
+        13,
+        1
+      ]
+    },
+    {
+      "fragment": "4-3",
+      "river_before": [
+        -15,
+        12
+      ],
+      "land_and_river_after": [
+        -7,
+        18
+      ]
+    }
+  ],
+  "local_cartographic_overrides": [
+    {
+      "river_id": "1-1-M2",
+      "change": "Shortened final visible river reach at the new shoreline; outlet separately connects last inland node to coast.",
+      "render_nodes": 14
+    },
+    {
+      "river_id": "1-1-M1-T1",
+      "change": "Rerouted short nearshore tributary bend around a newly intruding cove to prevent a hidden break.",
+      "render_nodes": 13
+    },
+    {
+      "river_id": "1-2-M1",
+      "change": "Rerouted the end of the candidate main river to an inland confluence at [725,405], upstream of new coastal exit.",
+      "render_nodes": 6
+    },
+    {
+      "river_id": "1-2-M1-T1",
+      "change": "Rerouted the final tributary section westward to the same confluence at [725,405].",
+      "render_nodes": 8
+    }
+  ],
+  "tributary_connections": {
+    "main_count": 8,
+    "tributary_count": 8,
+    "repaired_local_join": {
+      "main": "1-2-M1",
+      "tributary": "1-2-M1-T1",
+      "point_local": [
+        725,
+        405
+      ]
+    },
+    "unchanged_other_joins": 7
+  },
+  "main_outlets": [
+    {
+      "river_id": "1-1-M1",
+      "mouth": [
+        225.199,
+        560.295
+      ],
+      "bridge_length_svg": 11.139,
+      "boundary_type": "source-coast"
+    },
+    {
+      "river_id": "1-1-M2",
+      "mouth": [
+        177.019,
+        358.938
+      ],
+      "bridge_length_svg": 6.389,
+      "boundary_type": "source-coast"
+    },
+    {
+      "river_id": "1-2-M1",
+      "mouth": [
+        733.87,
+        415.05
+      ],
+      "bridge_length_svg": 13.404,
+      "boundary_type": "source-coast"
+    },
+    {
+      "river_id": "4-1-M1",
+      "mouth": [
+        298.67,
+        867.196
+      ],
+      "bridge_length_svg": 10.048,
+      "boundary_type": "source-coast"
+    },
+    {
+      "river_id": "4-1-M2",
+      "mouth": [
+        215.311,
+        1029.123
+      ],
+      "bridge_length_svg": 4.135,
+      "boundary_type": "fracture-coast"
+    },
+    {
+      "river_id": "4-2-M1",
+      "mouth": [
+        214.271,
+        1313.109
+      ],
+      "bridge_length_svg": 8.142,
+      "boundary_type": "fracture-coast"
+    },
+    {
+      "river_id": "4-2-M2",
+      "mouth": [
+        118.342,
+        1214.302
+      ],
+      "bridge_length_svg": 6.694,
+      "boundary_type": "source-coast"
+    },
+    {
+      "river_id": "4-3-M1",
+      "mouth": [
+        183.307,
+        1535.427
+      ],
+      "bridge_length_svg": 10.564,
+      "boundary_type": "source-coast"
+    }
+  ],
+  "validation": {
+    "actual_displayed_coast_mask": "Source SVG outline ∩ corresponding fracture clip, using identical group translations for visible land and river",
+    "examined_main_rivers": 8,
+    "examined_tributaries": 8,
+    "river_path_sample_points": 1708,
+    "curve_interpolation": "12 sampled interior positions per SVG polyline or cubic segment plus initial point of each path",
+    "river_path_sample_points_outside_visible_land": 0,
+    "individually_checked_mouths": 8,
+    "connector_inside_land_samples_each": 99,
+    "connector_sample_failures": 0,
+    "svg_xml_g_open_tags": 227,
+    "svg_xml_g_close_tags": 227,
+    "distinct_svg_element_ids": 151,
+    "duplicate_svg_element_ids": 0,
+    "undefined_svg_url_references": 0
+  },
+  "preserved": [
+    "Existing official and candidate central-supercontinent coastline and protected geography",
+    "8 peripheral mainland polygon shapes from V2.25 first pass",
+    "39 nearshore island candidates and 5 shape-only coast labels",
+    "Old V2.24 model and V2.25 earlier draft files",
+    "All previously confirmed state and region relative relationships"
+  ],
+  "limitations": [
+    "No real or synthetic calibrated digital elevation model used; river flow direction, catchment size, or gradients not physically established.",
+    "Finite polyline and Bezier samples do not formally guarantee all continuum positions lie on land, nor test whether coastline morphology is geologically plausible.",
+    "Four render paths changed from source candidate route geometry: V2.24 model stays unchanged and is a historical source, not the exact V2.25 fourth-pass drawing.",
+    "Mouth sites are cartographic outlets determined by proximity to coast and containment, not measured estuaries or deltas.",
+    "Browser rendering still needs user visual inspection at full zoom and phone viewport."
+  ],
+  "units": "SVG source-local cartographic units; not distance, real area, or planet projection"
+}
