@@ -1,0 +1,36 @@
+{
+  "status": "正式世界地图建设原则；不代表已确定行星参数",
+  "title": "俄庇娜巨行星与大陆独立尺度原则",
+  "approved_by_user_date": "2026-10-25",
+  "binding_principles": [
+    "在俄庇娜作为巨行星的前提下，全球陆地绝对总规模大概率大于地球，但这不是按半径固定比例放大的机械推论；仍取决于海陆比例及行星实际尺寸。",
+    "单个大陆的面积可以相对地球更大、更小或相近；大陆数目也可以更多、更少或相近，均不预设地球模板。",
+    "不得机械依据行星半径将地球大陆轮廓、长度、数量或面积同比例复制。",
+    "大陆本身与大陆地理单元可以部分接壤、裂解或隔海相望；实际大陆分类与当前草图7片分离多边形不是同一回事。",
+    "地图经纬度、陆海面积比例、板块结构、真正尺度未确认前，图纸中的公里数、星球半径和各大陆正式面积保持未定。",
+    "继续维护正史：联合城与人民天国同超级大陆，秦棠在萨瑞拉西北，棠溪及内海东岸R1/R2互相独立，南口内海、北冠半岛与25个正式海名不擅自更改。"
+  ],
+  "scale_mathematics": {
+    "note": "仅用来说明：当同一角度形态不变时，球面面积会随着真实半径平方改变；但真实大陆形态、数量和陆海比例可以随星球结构独立变化，不应固定使用这一缩放方式设计大陆。",
+    "formula": "A_land = f_land * 4 * pi * R^2; A_continent_i = f_i * 4 * pi * R^2",
+    "f_land": "全星陆地真实面积份额，未定",
+    "f_i": "第i个大陆真实面积份额，未定",
+    "R": "行星平均或采用的参考半径，未定",
+    "caveat": "本草案中的47.6%是假想纬度与假定球面下的几何比例，不等同已定f_land；真实椭球时公式还需修正。"
+  },
+  "active_atlas": {
+    "edition": "V2.25-R-B02",
+    "status": "候选、可编辑、不作为星球正史",
+    "working_map": "assets/images/orbina-v225r-b02-global-silhouette.svg",
+    "equal_area_map": "assets/images/orbina-v225r-b02-mollweide-equal-area.svg",
+    "viewer": "assets/maps/orbina-v225r-b02-planetary-atlas.html",
+    "data": "assets/data/orbina-v225r-b02-global-geography-master.json",
+    "geometry_model": {
+      "original_continental_profiles": 6,
+      "disconnected_primary_land_polygons": 7,
+      "candidate_islands": 50,
+      "numbers_not_canon": true
+    }
+  },
+  "following_work": "下一步依据巨行星尺度选择独立的大地块与小地块设计，不把现有七片候选陆块的数量、大小或跨度定格为地球尺度；在确立宏观构造之前不增加虚假精确的正式公里数。"
+}
