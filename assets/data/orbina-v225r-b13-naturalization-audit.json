@@ -1,0 +1,56 @@
+{
+  "version": "V2.25-R-B13",
+  "status": "STATIC_SOURCE_QA_PASS__VISUAL_BROWSER_MOBILE_NOT_TESTED",
+  "purpose": "Allow natural coastline morphology without fixing B11/B12 trial coast geometry; begin regional qualitative highland placement",
+  "current_files": {
+    "geo": "assets/data/orbina-v225r-b13-natural-coast-geography-master.json",
+    "map_svg": "assets/images/orbina-v225r-b13-global-coastline.svg",
+    "equal_area": "assets/images/orbina-v225r-b13-mollweide-equal-area.svg",
+    "viewer": "assets/maps/orbina-v225r-b13-natural-coast-atlas.html",
+    "relief": "assets/data/orbina-v225r-b13-relative-relief-seeds.json",
+    "encyclopedia": "_articles/article-035.md",
+    "policy": "assets/data/orbina-global-continent-scale-principles.json"
+  },
+  "source_blob_shas": {
+    "geo": "6525ea424b11eb07390348e44406057d77857657",
+    "map_svg": "d842b2cbd0d512d56799d131f91c9951233a55a3",
+    "equal_area": "d13aa01d283fd0fcf2f54a27f1cf84827c244e5d",
+    "viewer": "d5abc7e75288b73697f1273c4d7d939356aa8d93",
+    "relief": "dd8e34eb3483d00b3cf13637051afc2ecf06969a"
+  },
+  "results": {
+    "candidate_land_polygons": 165,
+    "NE_candidate_pieces": 20,
+    "NE_large_landforms": 2,
+    "SE_candidate_pieces": 45,
+    "original_piece_count_fixed_as_canon": false,
+    "coastline_displacement_model": "seeded spatially-correlated low/mid/high frequencies plus variable inward indentations",
+    "new_relief_seed_count": 8,
+    "global_svg_wrap_representations": 495,
+    "mollweide_visible_polygons_with_seam_duplicate": 166,
+    "assumed_spherical_land_coverage_percent": 38.8575,
+    "previous_B12_working_atlas_percent_approx": 40.95
+  },
+  "static_qa": {
+    "all_land_shapes_unique": true,
+    "all_shapes_in_global_svg": true,
+    "all_shapes_in_mollweide": true,
+    "periodic_world_polygon_collisions_found": 0,
+    "bounding_pairs_examined": 73,
+    "svg_ids_unique": true,
+    "svg_group_tags_balanced": true,
+    "viewer_script_static_parse": true,
+    "all_8_highland_seeds_inside_target_land": true,
+    "official_geo_relationships_preserved_in_article": true,
+    "old_B11_compare_layer_exists": true,
+    "old_B08_B09_water_sections_not_reused": true
+  },
+  "limitations": [
+    "Shape has plausible stochastic morphology but is NOT a physical erosion, coastal sediment, tectonic, bathymetric or river simulation.",
+    "No direct image raster preview or mobile browser run was successfully completed. Visual aesthetic still needs user review.",
+    "Legacy coast geometry is a loose ancestor, not a hard limiting silhouette.",
+    "The numerical drawing polygon identities and region island counts remain current implementation index counts, not canonical global numbers.",
+    "No actual planetary radius/longitudes, region extents, sea depths, geological ages, or real area percentages confirmed."
+  ],
+  "next_work": "Review B13 visual impression then optionally revise large-scale shape further; only after that establish relative elevation fields and inland drainage basins for separate landmasses. Avoid assigning exact country locations or all 25 named seas without evidence."
+}
