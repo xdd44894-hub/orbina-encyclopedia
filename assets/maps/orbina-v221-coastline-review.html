@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>俄庇娜 V2.21 · 裂海岸线精修查看器</title>
+<style>:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#092837;color:#eff5e9}header{padding:22px 25px;background:#123b4d;border-bottom:1px solid #558293}h1{font-size:clamp(22px,3vw,34px);margin:0}p{color:#bdd4d7;line-height:1.6}main{padding:22px;max-width:1650px;margin:auto}h2{font-size:21px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{border:1px solid #628798;background:#153d50;border-radius:12px;overflow:hidden}.card img,.card object{width:100%;height:auto;aspect-ratio:2400/2730;object-fit:contain;display:block}.card h3{margin:13px 15px}.card p{padding:0 15px 10px;font-size:13px}.controls{margin:13px 0 19px;padding:17px;background:#173d4e;border-radius:12px;border:1px solid #517b8b}.controls label{display:inline-flex;align-items:center;gap:9px;margin:6px 19px 6px 0;cursor:pointer}.controls input{accent-color:#90d3c1;width:19px;height:19px}a{color:#d5f0df}a.action{display:inline-block;padding:9px 14px;background:#23556b;border:1px solid #6292a3;border-radius:8px;text-decoration:none;margin:3px 10px 10px 0}.detail{border:1px solid #5d8c99;border-radius:13px;background:#123746;overflow:hidden}.detail img{width:100%;height:auto;display:block}footer{padding:22px;border-top:1px solid #476a7a;color:#a7c7d0}@media(max-width:900px){.cards{grid-template-columns:1fr}main{padding:12px}}</style>
+</head><body><header><h1>俄庇娜 V2.21 · 破碎海岸自然化</h1><p>同一裂缝的两岸彼此对应，海峡宽度不再均匀；近岸浅水光晕遵循裂开的新陆缘。以下均为候选设计。</p></header><main>
+<p><a class="action" href="../images/orbina-v221-coastline-refinement.svg" target="_blank" rel="noopener">查看新版完整SVG</a>
+<a class="action" href="../images/orbina-v221-fracture-closeups.svg" target="_blank" rel="noopener">查看三处局部放大图</a>
+<a class="action" href="../data/orbina-v221-coastline-refinement.json">查看修订参数</a></p>
+<div class="controls"><strong>新版主图可切换的图层</strong>
+<label><input type="checkbox" data-layer="shelf-glows" checked>近岸浅海效果</label>
+<label><input type="checkbox" data-layer="rift-water-shading" checked>裂海内部色调</label>
+<label><input type="checkbox" data-layer="island-arcs" checked>候选小岛群</label>
+<label><input type="checkbox" data-layer="original-outline-guides">裂解前旧海岸虚线</label>
+<label><input type="checkbox" data-layer="candidate-labels" checked>地理标签</label>
+<p id="status">载入 SVG 矢量地图…</p></div>
+<div class="cards">
+<div class="card"><h3>之前：V2.20</h3><img src="../images/orbina-v220-fractured-continents-world.svg" loading="lazy" alt="上一版破碎大陆草图"><p>破碎带相对均匀，浅海晕染沿旧完整岸线，没有完全跟随新裂口。</p></div>
+<div class="card"><h3>现在：V2.21</h3><object id="new-map" type="image/svg+xml" data="../images/orbina-v221-coastline-refinement.svg" aria-label="V2.21裂海岸线自然化世界地图"></object><p>弯曲、不等宽的裂海岸线；近岸视觉效果按陆地剪裁，岛链疏密重新调整。</p></div>
+</div>
+<section><h2>北部、东缘和南部的局部放大对照</h2>
+<div class="detail"><img src="../images/orbina-v221-fracture-closeups.svg" alt="V2.21三处破碎大陆近景，橙色虚线为原海岸" loading="lazy"></div></section>
+</main><footer>候选裂海并非岩石圈模型或真实海底测量。V2.18母版未改变，25个海洋名称未据此标注正式位置。</footer>
+<script>(function(){"use strict";var obj=document.getElementById("new-map"),doc=null,status=document.getElementById("status"),check=[...document.querySelectorAll("[data-layer]")];
+function apply(){if(!doc)return;check.forEach(function(input){var group=doc.getElementById(input.getAttribute("data-layer"));if(group)group.style.display=input.checked?"inline":"none";});}
+obj.addEventListener("load",function(){try{doc=obj.contentDocument;if(!doc)throw Error();apply();status.textContent="地图已载入，可控制独立图层。";}catch(e){status.textContent="当前浏览器无法直接控制 SVG，请打开原图。";}});
+check.forEach(function(input){input.addEventListener("change",apply);});})();</script></body></html>
