@@ -1,0 +1,164 @@
+{
+  "version": "V2.25-R-B06",
+  "status": "NON_CANON_GLOBAL_COASTLINE_SCULPTURE",
+  "priority": "Reduce schematic straight and parallel cracks in northeast long and southeast oblique continental complexes while retaining confirmed lore and giant-planet independent scales.",
+  "baseline_landshape_source": "B05 preserved in Git history; new coastline and island geometry contained in current B06 model",
+  "work_components": {
+    "candidate_disconnected_major_polygons": 15,
+    "candidate_islands": 63,
+    "new_tectonic_relict_islands": 8
+  },
+  "changes": {
+    "shoreline_bank_sculptures": [
+      {
+        "land": "northwest-lance-relict",
+        "seam": "NA",
+        "bank": "left-or-north",
+        "matched_shoreline_nodes": 31,
+        "gain": 1,
+        "max_recession_svg": 29.51
+      },
+      {
+        "land": "north-east-central-shelf-block",
+        "seam": "NA",
+        "bank": "right-or-south",
+        "matched_shoreline_nodes": 32,
+        "gain": 1,
+        "max_recession_svg": 23.71
+      },
+      {
+        "land": "north-east-central-shelf-block",
+        "seam": "NB",
+        "bank": "left-or-north",
+        "matched_shoreline_nodes": 26,
+        "gain": 1,
+        "max_recession_svg": 27.58
+      },
+      {
+        "land": "north-east-oceanward-shoulder",
+        "seam": "NB",
+        "bank": "right-or-south",
+        "matched_shoreline_nodes": 29,
+        "gain": 1,
+        "max_recession_svg": 34.66
+      },
+      {
+        "land": "southeast-north-coastal-crust",
+        "seam": "SA",
+        "bank": "left-or-north",
+        "matched_shoreline_nodes": 93,
+        "gain": 0.66,
+        "max_recession_svg": 29.17
+      },
+      {
+        "land": "southeast-central-transitional-block",
+        "seam": "SA",
+        "bank": "right-or-south",
+        "matched_shoreline_nodes": 96,
+        "gain": 1,
+        "max_recession_svg": 37.71
+      },
+      {
+        "land": "southeast-central-transitional-block",
+        "seam": "SB",
+        "bank": "left-or-north",
+        "matched_shoreline_nodes": 98,
+        "gain": 1,
+        "max_recession_svg": 35.78
+      },
+      {
+        "land": "southeast-southern-remnant",
+        "seam": "SB",
+        "bank": "right-or-south",
+        "matched_shoreline_nodes": 100,
+        "gain": 0.82,
+        "max_recession_svg": 29.98
+      }
+    ],
+    "transverse_seaway_splits": [
+      {
+        "source": "southeast-central-transitional-block",
+        "new_blocks": [
+          "southeast-central-west-riftblock",
+          "southeast-central-east-riftblock"
+        ],
+        "old_area_svg": 42971.2,
+        "water_opening_area_svg": 219.5
+      },
+      {
+        "source": "north-east-central-shelf-block",
+        "new_blocks": [
+          "northeast-mid-northern-splinter",
+          "northeast-mid-southern-splinter"
+        ],
+        "old_area_svg": 21567.9,
+        "water_opening_area_svg": 2915.7
+      }
+    ],
+    "southwest_existing_rift_preserved": true,
+    "core_supercontinent_coordinates_modified": false
+  },
+  "geometry_checks": {
+    "pair_polygon_overlaps_found": 0,
+    "self_intersecting_polygons_found": 0,
+    "dateline_wrap_sampling_errors_found": 0,
+    "svg_shape_triplicate_count": 234,
+    "water_marker_count": 25,
+    "svg_defined_id_count": 12,
+    "svg_id_duplicates": 0,
+    "undefined_svg_references": [],
+    "svg_group_tag_balance": {
+      "open": 35,
+      "close": 35
+    }
+  },
+  "conditional_area_estimates": {
+    "mollweide_equal_area_land_ratio": 0.426222,
+    "spherical_cos_lat_weighted_sample": 0.426367,
+    "flat_grid_land_ratio": 0.346574,
+    "difference_percentage_points": 0.0145,
+    "units": "conditional shares under unapproved latitude and spherical-map assumptions; never official planet parameters"
+  },
+  "water_connectivity_precheck": {
+    "raster_svg_unit_3": {
+      "main_component_water_cells": 209118,
+      "minor_single_cell_pocket_count": 1,
+      "location": [
+        1741.5,
+        892.5
+      ]
+    },
+    "raster_svg_unit_5": {
+      "main_component_water_cells": 75271,
+      "additional_components": 0
+    },
+    "analysis": "Fine 3-unit grid has one isolated sample water cell; 5-unit grid has one large connected component. Thus no claim that every water pixel is connected at all resolutions; further exact water topology validation remains needed."
+  },
+  "sea_naming_policy": "Existing 25 sea names approved; W-01...W-25 are anonymous design study dots, NOT assignments. W-05 moved because old position became land after coastline sculpting.",
+  "W05_relocated": {
+    "id": "W-05",
+    "old": [
+      1801.9,
+      170.3
+    ],
+    "new": [
+      1822.5,
+      166.2
+    ],
+    "move_svg": 21,
+    "clearance_neighborhood_svg": 24,
+    "still_unassigned": true
+  },
+  "caveats": [
+    "No true shoreline geology, plate reconstructions, ocean depth, currents or channel navigability yet",
+    "Two curved rifts connect fractured subcontinents at map-scale but are not evidence of physical tectonic origin",
+    "Actual browser visual QA is pending",
+    "Single-raster-component tests do not prove topological water connectivity at infinite resolution"
+  ],
+  "files": {
+    "working_svg": "assets/images/orbina-v225r-b06-global-silhouette.svg",
+    "mollweide_svg": "assets/images/orbina-v225r-b06-mollweide-equal-area.svg",
+    "master_data": "assets/data/orbina-v225r-b06-global-geography-master.json",
+    "viewer": "assets/maps/orbina-v225r-b06-planetary-atlas.html"
+  }
+}
