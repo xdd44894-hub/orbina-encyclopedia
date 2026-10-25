@@ -116,6 +116,12 @@
 <g data-ocean-route="W-11" aria-label="W-11·3个SVG工作坐标单位的采样连通折线（非真实距离）"><path d="M1852.5 1150.5 L1852.5 1153.5" fill="none" stroke="#042631" stroke-width="6" opacity=".86" stroke-linecap="round" stroke-linejoin="round"/><path d="M1852.5 1150.5 L1852.5 1153.5" fill="none" stroke="#f4d09a" stroke-width="2.8" stroke-dasharray="9 5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="1852.5" cy="1153.5" r="5.4" stroke="#0c4552" stroke-width="2" fill="#f4d09a"/></g>
 <g data-ocean-route="W-14" aria-label="W-14·0个SVG工作坐标单位的采样连通折线（非真实距离）"><path d="M1084.5 724.5" fill="none" stroke="#042631" stroke-width="6" opacity=".86" stroke-linecap="round" stroke-linejoin="round"/><path d="M1084.5 724.5" fill="none" stroke="#b6d3ee" stroke-width="2.8" stroke-dasharray="9 5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="1084.5" cy="724.5" r="5.4" stroke="#0c4552" stroke-width="2" fill="#b6d3ee"/></g>
 </g>
+<g id="b05-core-bay-ocean-link" style="display:none" aria-label="候选中央内湾观察点W14与南方外海观察点W12水面连通，仅证明工作地图局部样本网格可连通">
+<path d="M1084.5 724.5 L1123.5 724.5 L1123.5 898.5" fill="none" stroke="#093447" stroke-width="9" opacity=".8" stroke-linejoin="round"/>
+<path d="M1084.5 724.5 L1123.5 724.5 L1123.5 898.5" fill="none" stroke="#f2e5af" stroke-width="4" stroke-dasharray="11 7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1085" cy="725" r="8" fill="none" stroke="#f2e5af" stroke-width="3"/>
+<circle cx="1124" cy="899" r="8" fill="none" stroke="#f2e5af" stroke-width="3"/>
+</g>
 <g id="map-note-labels" style="pointer-events:none">
 <text class="tag" x="776" y="342">核心超级大陆</text><text class="subtag" x="780" y="372">旧版国家地理关系保留于独立锚点层</text>
 <text class="tag" x="1581" y="724">东南斜向大陆系</text><text class="subtag" x="1578" y="756">次级大陆 · 待定名</text>
