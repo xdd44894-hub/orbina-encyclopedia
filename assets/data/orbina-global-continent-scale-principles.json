@@ -19,18 +19,18 @@
     "caveat": "本草案中的47.6%是假想纬度与假定球面下的几何比例，不等同已定f_land；真实椭球时公式还需修正。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B02",
-    "status": "候选、可编辑、不作为星球正史",
-    "working_map": "assets/images/orbina-v225r-b02-global-silhouette.svg",
-    "equal_area_map": "assets/images/orbina-v225r-b02-mollweide-equal-area.svg",
-    "viewer": "assets/maps/orbina-v225r-b02-planetary-atlas.html",
-    "data": "assets/data/orbina-v225r-b02-global-geography-master.json",
+    "edition": "V2.25-R-B03",
+    "status": "候选、可编辑，不作为星球正史",
+    "working_map": "assets/images/orbina-v225r-b03-global-silhouette.svg",
+    "equal_area_map": "assets/images/orbina-v225r-b03-mollweide-equal-area.svg",
+    "viewer": "assets/maps/orbina-v225r-b03-planetary-atlas.html",
+    "data": "assets/data/orbina-v225r-b03-global-geography-master.json",
     "geometry_model": {
       "original_continental_profiles": 6,
       "disconnected_primary_land_polygons": 7,
-      "candidate_islands": 50,
+      "candidate_islands": 36,
       "numbers_not_canon": true
     }
   },
-  "following_work": "下一步依据巨行星尺度选择独立的大地块与小地块设计，不把现有七片候选陆块的数量、大小或跨度定格为地球尺度；在确立宏观构造之前不增加虚假精确的正式公里数。"
+  "following_work": "按球面整体审查不同大陆与海盆的构造关联，并根据需要修改大陆面积、数量、连接关系；先以海陆比例和宏观地形为标准，不为任何陆地填未经确定的公里数或正式经纬度。"
 }
