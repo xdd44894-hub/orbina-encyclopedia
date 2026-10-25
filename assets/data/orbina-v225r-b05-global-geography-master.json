@@ -12021,6 +12021,42 @@
       "All 25 probe positions remain anonymous concept pointers. No ocean naming, boundary, or area authorized.",
       "3-unit map coordinates are not kilometers; no water depth, tide or current has been estimated.",
       "A connected ocean does not imply all ocean names or 25 distinct marine basins are geographically validated."
-    ]
+    ],
+    "core_bay_to_outer_candidate": {
+      "from_id": "W-14",
+      "to_id": "W-12",
+      "from": [
+        1085,
+        725
+      ],
+      "to": [
+        1124,
+        899
+      ],
+      "note": "A path in the currently drawn global sea-water cells from the anonymous candidate core-bay probe to another southern coastal water probe. This DOES NOT independently verify placement or physical form of the canon inland sea; the established south opening is protected by canon text.",
+      "land_avoidance_cell_resolution_svg": 3,
+      "axis_aligned_polyline": [
+        [
+          1084.5,
+          724.5
+        ],
+        [
+          1123.5,
+          724.5
+        ],
+        [
+          1123.5,
+          898.5
+        ]
+      ],
+      "grid_route_cells": 72,
+      "grid_route_length_svg": 213,
+      "bounding_box_svg": [
+        1084.5,
+        724.5,
+        1123.5,
+        898.5
+      ]
+    }
   }
 }
