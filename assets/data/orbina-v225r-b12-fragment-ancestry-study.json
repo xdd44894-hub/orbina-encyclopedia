@@ -1,0 +1,1094 @@
+{
+  "version": "V2.25-R-B12",
+  "status": "NON_CANON_FRAGMENT_FAMILY_REASSEMBLY_AND_TOPOLOGY_REVIEW",
+  "active_coast_geometry": "assets/data/orbina-v225r-b11-fragmented-geography-master.json",
+  "source_geometry_sha": "be5a3ad96947ca5846a58cf93b58433f2d446f66",
+  "map_role": "Six fragment-source families and 59 short-gap candidate assembly hints; no new land/coast coordinates or confirmed plate boundaries.",
+  "family_count": 6,
+  "families": [
+    {
+      "origin": "northwest-lance-relict",
+      "label": "东北西段主陆来源",
+      "region": "NE",
+      "color": "#f3b879",
+      "member_count": 3,
+      "full_fragment_area_svg2": 22244,
+      "weighted_center_svg": [
+        1525.64,
+        163.51
+      ],
+      "neighborhood_links": 2,
+      "nearest_link_gap_svg_units": 7.85,
+      "longest_spanning_link_gap_svg_units": 8,
+      "geometry_source": "B11 revised fragments from one B09 parent polygon",
+      "geologic_identity_confirmed": false
+    },
+    {
+      "origin": "north-east-central-shelf-block",
+      "label": "东北中部碎陆来源",
+      "region": "NE",
+      "color": "#86c6aa",
+      "member_count": 15,
+      "full_fragment_area_svg2": 12628,
+      "weighted_center_svg": [
+        1709.81,
+        158
+      ],
+      "neighborhood_links": 14,
+      "nearest_link_gap_svg_units": 5.17,
+      "longest_spanning_link_gap_svg_units": 24.41,
+      "geometry_source": "B11 revised fragments from one B09 parent polygon",
+      "geologic_identity_confirmed": false
+    },
+    {
+      "origin": "north-east-oceanward-shoulder",
+      "label": "东北东段主陆来源",
+      "region": "NE",
+      "color": "#b5a8ed",
+      "member_count": 2,
+      "full_fragment_area_svg2": 11806,
+      "weighted_center_svg": [
+        1876.43,
+        184.3
+      ],
+      "neighborhood_links": 1,
+      "nearest_link_gap_svg_units": 3.77,
+      "longest_spanning_link_gap_svg_units": 3.77,
+      "geometry_source": "B11 revised fragments from one B09 parent polygon",
+      "geologic_identity_confirmed": false
+    },
+    {
+      "origin": "southeast-north-coastal-crust",
+      "label": "东南北部残陆来源",
+      "region": "SE",
+      "color": "#f0a7bc",
+      "member_count": 14,
+      "full_fragment_area_svg2": 40078,
+      "weighted_center_svg": [
+        1894.93,
+        653.86
+      ],
+      "neighborhood_links": 13,
+      "nearest_link_gap_svg_units": 6.55,
+      "longest_spanning_link_gap_svg_units": 12.37,
+      "geometry_source": "B11 revised fragments from one B09 parent polygon",
+      "geologic_identity_confirmed": false
+    },
+    {
+      "origin": "southeast-central-transitional-block",
+      "label": "东南中部断块来源",
+      "region": "SE",
+      "color": "#9ac8e0",
+      "member_count": 19,
+      "full_fragment_area_svg2": 26350,
+      "weighted_center_svg": [
+        1775.73,
+        813.93
+      ],
+      "neighborhood_links": 18,
+      "nearest_link_gap_svg_units": 5.66,
+      "longest_spanning_link_gap_svg_units": 20.93,
+      "geometry_source": "B11 revised fragments from one B09 parent polygon",
+      "geologic_identity_confirmed": false
+    },
+    {
+      "origin": "southeast-southern-remnant",
+      "label": "东南南部残陆来源",
+      "region": "SE",
+      "color": "#d3d191",
+      "member_count": 12,
+      "full_fragment_area_svg2": 32018,
+      "weighted_center_svg": [
+        1840.5,
+        936.26
+      ],
+      "neighborhood_links": 11,
+      "nearest_link_gap_svg_units": 5.74,
+      "longest_spanning_link_gap_svg_units": 12,
+      "geometry_source": "B11 revised fragments from one B09 parent polygon",
+      "geologic_identity_confirmed": false
+    }
+  ],
+  "reassembly_links": [
+    {
+      "id": "B12-1-1",
+      "origin": "northwest-lance-relict",
+      "from_fragment": "b11-ne-lance-relict-01",
+      "to_fragment": "b11-ne-lance-relict-03",
+      "from_svg": [
+        1588.17,
+        100.52
+      ],
+      "to_svg": [
+        1596,
+        100
+      ],
+      "gap_svg_units": 7.85,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-1-2",
+      "origin": "northwest-lance-relict",
+      "from_fragment": "b11-ne-lance-relict-01",
+      "to_fragment": "b11-ne-lance-relict-02",
+      "from_svg": [
+        1618,
+        272
+      ],
+      "to_svg": [
+        1626,
+        272
+      ],
+      "gap_svg_units": 8,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-1",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-02",
+      "to_fragment": "b11-ne-central-shelf-block-08",
+      "from_svg": [
+        1654.92,
+        178.95
+      ],
+      "to_svg": [
+        1656,
+        184
+      ],
+      "gap_svg_units": 5.17,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-2",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-09",
+      "to_fragment": "b11-ne-central-shelf-block-15",
+      "from_svg": [
+        1653.17,
+        251.93
+      ],
+      "to_svg": [
+        1648,
+        254
+      ],
+      "gap_svg_units": 5.57,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-3",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-02",
+      "to_fragment": "b11-ne-central-shelf-block-13",
+      "from_svg": [
+        1640,
+        182
+      ],
+      "to_svg": [
+        1634.05,
+        181.46
+      ],
+      "gap_svg_units": 5.98,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-4",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-02",
+      "to_fragment": "b11-ne-central-shelf-block-06",
+      "from_svg": [
+        1688,
+        132
+      ],
+      "to_svg": [
+        1688,
+        126
+      ],
+      "gap_svg_units": 6,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-5",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-03",
+      "to_fragment": "b11-ne-central-shelf-block-12",
+      "from_svg": [
+        1783.85,
+        116.68
+      ],
+      "to_svg": [
+        1790,
+        116
+      ],
+      "gap_svg_units": 6.18,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-6",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-01",
+      "to_fragment": "b11-ne-central-shelf-block-07",
+      "from_svg": [
+        1747.6,
+        223.9
+      ],
+      "to_svg": [
+        1754,
+        222
+      ],
+      "gap_svg_units": 6.68,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-7",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-05",
+      "to_fragment": "b11-ne-central-shelf-block-14",
+      "from_svg": [
+        1784.62,
+        132.92
+      ],
+      "to_svg": [
+        1792,
+        132
+      ],
+      "gap_svg_units": 7.44,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-8",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-06",
+      "to_fragment": "b11-ne-central-shelf-block-11",
+      "from_svg": [
+        1702,
+        94
+      ],
+      "to_svg": [
+        1709.6,
+        95.75
+      ],
+      "gap_svg_units": 7.8,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-9",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-03",
+      "to_fragment": "b11-ne-central-shelf-block-05",
+      "from_svg": [
+        1775.64,
+        120.11
+      ],
+      "to_svg": [
+        1776,
+        128
+      ],
+      "gap_svg_units": 7.9,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-10",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-04",
+      "to_fragment": "b11-ne-central-shelf-block-11",
+      "from_svg": [
+        1710,
+        132
+      ],
+      "to_svg": [
+        1710,
+        124
+      ],
+      "gap_svg_units": 8,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-11",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-04",
+      "to_fragment": "b11-ne-central-shelf-block-05",
+      "from_svg": [
+        1727.62,
+        159.12
+      ],
+      "to_svg": [
+        1736,
+        158
+      ],
+      "gap_svg_units": 8.46,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-12",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-01",
+      "to_fragment": "b11-ne-central-shelf-block-04",
+      "from_svg": [
+        1691.49,
+        181.45
+      ],
+      "to_svg": [
+        1690,
+        172
+      ],
+      "gap_svg_units": 9.57,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-13",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-06",
+      "to_fragment": "b11-ne-central-shelf-block-10",
+      "from_svg": [
+        1646,
+        88
+      ],
+      "to_svg": [
+        1636,
+        88
+      ],
+      "gap_svg_units": 10,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-2-14",
+      "origin": "north-east-central-shelf-block",
+      "from_fragment": "b11-ne-central-shelf-block-01",
+      "to_fragment": "b11-ne-central-shelf-block-09",
+      "from_svg": [
+        1692,
+        224
+      ],
+      "to_svg": [
+        1678,
+        244
+      ],
+      "gap_svg_units": 24.41,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-3-1",
+      "origin": "north-east-oceanward-shoulder",
+      "from_fragment": "b11-ne-oceanward-shoulder-01",
+      "to_fragment": "b11-ne-oceanward-shoulder-02",
+      "from_svg": [
+        1890.6,
+        155.62
+      ],
+      "to_svg": [
+        1894,
+        154
+      ],
+      "gap_svg_units": 3.77,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-1",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-01",
+      "to_fragment": "b11-se-north-coastal-crust-02",
+      "from_svg": [
+        1652,
+        597
+      ],
+      "to_svg": [
+        1651.64,
+        603.54
+      ],
+      "gap_svg_units": 6.55,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-2",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-04",
+      "to_fragment": "b11-se-north-coastal-crust-06",
+      "from_svg": [
+        2156,
+        741
+      ],
+      "to_svg": [
+        2148,
+        741
+      ],
+      "gap_svg_units": 8,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-3",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-05",
+      "to_fragment": "b11-se-north-coastal-crust-11",
+      "from_svg": [
+        1960.11,
+        661.62
+      ],
+      "to_svg": [
+        1952,
+        661
+      ],
+      "gap_svg_units": 8.13,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-4",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-03",
+      "to_fragment": "b11-se-north-coastal-crust-07",
+      "from_svg": [
+        1796,
+        619
+      ],
+      "to_svg": [
+        1787.84,
+        618.65
+      ],
+      "gap_svg_units": 8.17,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-5",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-10",
+      "to_fragment": "b11-se-north-coastal-crust-12",
+      "from_svg": [
+        1798.08,
+        606.62
+      ],
+      "to_svg": [
+        1790,
+        605
+      ],
+      "gap_svg_units": 8.24,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-6",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-05",
+      "to_fragment": "b11-se-north-coastal-crust-13",
+      "from_svg": [
+        2033.72,
+        635.32
+      ],
+      "to_svg": [
+        2034,
+        627
+      ],
+      "gap_svg_units": 8.33,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-7",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-09",
+      "to_fragment": "b11-se-north-coastal-crust-14",
+      "from_svg": [
+        2116,
+        637
+      ],
+      "to_svg": [
+        2117.26,
+        627.57
+      ],
+      "gap_svg_units": 9.52,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-8",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-05",
+      "to_fragment": "b11-se-north-coastal-crust-09",
+      "from_svg": [
+        2084,
+        637
+      ],
+      "to_svg": [
+        2093.65,
+        638.84
+      ],
+      "gap_svg_units": 9.82,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-9",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-02",
+      "to_fragment": "b11-se-north-coastal-crust-07",
+      "from_svg": [
+        1750,
+        703
+      ],
+      "to_svg": [
+        1759.87,
+        702.48
+      ],
+      "gap_svg_units": 9.88,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-10",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-06",
+      "to_fragment": "b11-se-north-coastal-crust-09",
+      "from_svg": [
+        2114,
+        691
+      ],
+      "to_svg": [
+        2114,
+        681
+      ],
+      "gap_svg_units": 10,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-11",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-07",
+      "to_fragment": "b11-se-north-coastal-crust-12",
+      "from_svg": [
+        1788,
+        615
+      ],
+      "to_svg": [
+        1790,
+        605
+      ],
+      "gap_svg_units": 10.2,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-12",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-03",
+      "to_fragment": "b11-se-north-coastal-crust-11",
+      "from_svg": [
+        1886,
+        689
+      ],
+      "to_svg": [
+        1898,
+        689
+      ],
+      "gap_svg_units": 12,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-4-13",
+      "origin": "southeast-north-coastal-crust",
+      "from_fragment": "b11-se-north-coastal-crust-05",
+      "to_fragment": "b11-se-north-coastal-crust-08",
+      "from_svg": [
+        1989.32,
+        676.93
+      ],
+      "to_svg": [
+        1992,
+        689
+      ],
+      "gap_svg_units": 12.37,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-1",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-01",
+      "to_fragment": "b11-se-central-transitional-block-03",
+      "from_svg": [
+        1682,
+        815
+      ],
+      "to_svg": [
+        1687.66,
+        815.19
+      ],
+      "gap_svg_units": 5.66,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-2",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-04",
+      "to_fragment": "b11-se-central-transitional-block-06",
+      "from_svg": [
+        1837.47,
+        771.38
+      ],
+      "to_svg": [
+        1836,
+        777
+      ],
+      "gap_svg_units": 5.81,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-3",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-04",
+      "to_fragment": "b11-se-central-transitional-block-11",
+      "from_svg": [
+        1898,
+        783
+      ],
+      "to_svg": [
+        1904,
+        783
+      ],
+      "gap_svg_units": 6,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-4",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-06",
+      "to_fragment": "b11-se-central-transitional-block-16",
+      "from_svg": [
+        1898,
+        797
+      ],
+      "to_svg": [
+        1904,
+        797
+      ],
+      "gap_svg_units": 6,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-5",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-09",
+      "to_fragment": "b11-se-central-transitional-block-10",
+      "from_svg": [
+        1682,
+        877
+      ],
+      "to_svg": [
+        1676,
+        877
+      ],
+      "gap_svg_units": 6,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-6",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-09",
+      "to_fragment": "b11-se-central-transitional-block-13",
+      "from_svg": [
+        1703.71,
+        892.1
+      ],
+      "to_svg": [
+        1704,
+        899
+      ],
+      "gap_svg_units": 6.91,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-7",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-02",
+      "to_fragment": "b11-se-central-transitional-block-14",
+      "from_svg": [
+        1798.29,
+        768.52
+      ],
+      "to_svg": [
+        1800,
+        761
+      ],
+      "gap_svg_units": 7.71,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-8",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-03",
+      "to_fragment": "b11-se-central-transitional-block-09",
+      "from_svg": [
+        1733.02,
+        870.88
+      ],
+      "to_svg": [
+        1732,
+        879
+      ],
+      "gap_svg_units": 8.19,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-9",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-08",
+      "to_fragment": "b11-se-central-transitional-block-18",
+      "from_svg": [
+        2166.12,
+        841.84
+      ],
+      "to_svg": [
+        2158,
+        843
+      ],
+      "gap_svg_units": 8.2,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-10",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-05",
+      "to_fragment": "b11-se-central-transitional-block-11",
+      "from_svg": [
+        1975.8,
+        778.4
+      ],
+      "to_svg": [
+        1968,
+        781
+      ],
+      "gap_svg_units": 8.22,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-11",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-05",
+      "to_fragment": "b11-se-central-transitional-block-07",
+      "from_svg": [
+        2018.69,
+        777.17
+      ],
+      "to_svg": [
+        2020,
+        787
+      ],
+      "gap_svg_units": 9.91,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-12",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-02",
+      "to_fragment": "b11-se-central-transitional-block-17",
+      "from_svg": [
+        1748,
+        871
+      ],
+      "to_svg": [
+        1748,
+        881
+      ],
+      "gap_svg_units": 10,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-13",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-02",
+      "to_fragment": "b11-se-central-transitional-block-03",
+      "from_svg": [
+        1756.37,
+        792.32
+      ],
+      "to_svg": [
+        1744,
+        791
+      ],
+      "gap_svg_units": 12.44,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-14",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-05",
+      "to_fragment": "b11-se-central-transitional-block-19",
+      "from_svg": [
+        2048.92,
+        772.38
+      ],
+      "to_svg": [
+        2062,
+        775
+      ],
+      "gap_svg_units": 13.34,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-15",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-02",
+      "to_fragment": "b11-se-central-transitional-block-06",
+      "from_svg": [
+        1823.03,
+        799.81
+      ],
+      "to_svg": [
+        1838,
+        797
+      ],
+      "gap_svg_units": 15.23,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-16",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-12",
+      "to_fragment": "b11-se-central-transitional-block-18",
+      "from_svg": [
+        2140,
+        831
+      ],
+      "to_svg": [
+        2150,
+        843
+      ],
+      "gap_svg_units": 15.62,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-17",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-12",
+      "to_fragment": "b11-se-central-transitional-block-19",
+      "from_svg": [
+        2090,
+        789
+      ],
+      "to_svg": [
+        2074,
+        779
+      ],
+      "gap_svg_units": 18.87,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-5-18",
+      "origin": "southeast-central-transitional-block",
+      "from_fragment": "b11-se-central-transitional-block-01",
+      "to_fragment": "b11-se-central-transitional-block-15",
+      "from_svg": [
+        1661.04,
+        749.72
+      ],
+      "to_svg": [
+        1664,
+        729
+      ],
+      "gap_svg_units": 20.93,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-6-1",
+      "origin": "southeast-southern-remnant",
+      "from_fragment": "b11-se-southern-remnant-02",
+      "to_fragment": "b11-se-southern-remnant-08",
+      "from_svg": [
+        1952,
+        947
+      ],
+      "to_svg": [
+        1950.56,
+        952.55
+      ],
+      "gap_svg_units": 5.74,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-6-2",
+      "origin": "southeast-southern-remnant",
+      "from_fragment": "b11-se-southern-remnant-04",
+      "to_fragment": "b11-se-southern-remnant-07",
+      "from_svg": [
+        1703.55,
+        987.35
+      ],
+      "to_svg": [
+        1698,
+        985
+      ],
+      "gap_svg_units": 6.02,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-6-3",
+      "origin": "southeast-southern-remnant",
+      "from_fragment": "b11-se-southern-remnant-03",
+      "to_fragment": "b11-se-southern-remnant-05",
+      "from_svg": [
+        2066,
+        879
+      ],
+      "to_svg": [
+        2074.09,
+        878.49
+      ],
+      "gap_svg_units": 8.11,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-6-4",
+      "origin": "southeast-southern-remnant",
+      "from_fragment": "b11-se-southern-remnant-01",
+      "to_fragment": "b11-se-southern-remnant-12",
+      "from_svg": [
+        1574.81,
+        905.91
+      ],
+      "to_svg": [
+        1576,
+        897
+      ],
+      "gap_svg_units": 8.99,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-6-5",
+      "origin": "southeast-southern-remnant",
+      "from_fragment": "b11-se-southern-remnant-01",
+      "to_fragment": "b11-se-southern-remnant-11",
+      "from_svg": [
+        1617.4,
+        1029.75
+      ],
+      "to_svg": [
+        1618,
+        1039
+      ],
+      "gap_svg_units": 9.27,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-6-6",
+      "origin": "southeast-southern-remnant",
+      "from_fragment": "b11-se-southern-remnant-02",
+      "to_fragment": "b11-se-southern-remnant-03",
+      "from_svg": [
+        2002,
+        941
+      ],
+      "to_svg": [
+        2011.29,
+        940.25
+      ],
+      "gap_svg_units": 9.32,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-6-7",
+      "origin": "southeast-southern-remnant",
+      "from_fragment": "b11-se-southern-remnant-01",
+      "to_fragment": "b11-se-southern-remnant-07",
+      "from_svg": [
+        1684.93,
+        987.34
+      ],
+      "to_svg": [
+        1694,
+        985
+      ],
+      "gap_svg_units": 9.37,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-6-8",
+      "origin": "southeast-southern-remnant",
+      "from_fragment": "b11-se-southern-remnant-06",
+      "to_fragment": "b11-se-southern-remnant-10",
+      "from_svg": [
+        1840,
+        917
+      ],
+      "to_svg": [
+        1840,
+        927
+      ],
+      "gap_svg_units": 10,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-6-9",
+      "origin": "southeast-southern-remnant",
+      "from_fragment": "b11-se-southern-remnant-09",
+      "to_fragment": "b11-se-southern-remnant-10",
+      "from_svg": [
+        1830,
+        927
+      ],
+      "to_svg": [
+        1840,
+        927
+      ],
+      "gap_svg_units": 10,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-6-10",
+      "origin": "southeast-southern-remnant",
+      "from_fragment": "b11-se-southern-remnant-02",
+      "to_fragment": "b11-se-southern-remnant-06",
+      "from_svg": [
+        1892.31,
+        924.1
+      ],
+      "to_svg": [
+        1882,
+        923
+      ],
+      "gap_svg_units": 10.37,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    },
+    {
+      "id": "B12-6-11",
+      "origin": "southeast-southern-remnant",
+      "from_fragment": "b11-se-southern-remnant-04",
+      "to_fragment": "b11-se-southern-remnant-09",
+      "from_svg": [
+        1778,
+        937
+      ],
+      "to_svg": [
+        1790,
+        937
+      ],
+      "gap_svg_units": 12,
+      "note": "minimum visible boundary gap heuristic; not proven former land bridge, navigation strait or actual distance"
+    }
+  ],
+  "methodology": {
+    "family_groups": "Exact B11 b11_fragment_parent provenance from the six B09 source polygons. This is digital genealogy, NOT proven plate history.",
+    "closest_pair": "For every polygon pair within one family, approximate nearest coastline via vertex-to-edge Euclidean distance, then derive a minimum spanning tree. Each family has member_count-1 links.",
+    "units": "local planar 2400x1200 SVG working coordinates; absolutely not km, ocean width, travel distance or physical geological age",
+    "caveats": [
+      "Some link segments may cross other features or water regions; they are pairing indicators, not sea routes.",
+      "A fragment family is not equal to a tectonic plate. Distinct families can later be found related.",
+      "No numerical elevation, rainfall, river routing, sediment thickness, seismic hazard, water depth or plate velocity can be inferred.",
+      "B11 shapes were computationally cut and require artistic cartographic validation at different zoom levels."
+    ]
+  },
+  "protected_canon": [
+    "United City and People's Paradise on the same supercontinent",
+    "Qintang northwest of Sarila; Baitown Sarila north neighbor",
+    "Tangxi, R1 and R2 watercourses independent",
+    "Southern-mouth inland bay, northern peninsula and resistance arc relations",
+    "All 25 named major seas preserved but no assigned new coordinates"
+  ],
+  "geologic_next_stage": {
+    "regional_models": [
+      "NE west/east principal blocks and central remnants: examine whether reassembly supports multiphase extension vs strike-slip offset",
+      "SE three ancestral polygons: compare hierarchical branching and later sedimentary shelf candidates instead of uniform grid fractures",
+      "SW remains unchanged, serving as the outside comparison"
+    ],
+    "hydrology": "Draw candidate watersheds only AFTER developing a relative elevation hypothesis for each isolated land polygon. Do not join freshwater streams across sea cuts.",
+    "references": [
+      {
+        "title": "USGS rift and transtensional basin classifications",
+        "url": "https://pubs.usgs.gov/of/2012/1111/Sedimentary_Basins_of_the_United_States.html"
+      },
+      {
+        "title": "USGS drainage areas and divides",
+        "url": "https://water.usgs.gov/themes/hydrofabric/drainage-area/"
+      }
+    ]
+  }
+}
