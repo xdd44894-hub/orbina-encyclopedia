@@ -291,7 +291,7 @@ text{font-family:"Noto Sans CJK SC","Noto Sans SC","Microsoft YaHei",sans-serif}
 <text x="1008" y="2503" font-size="18.5" fill="#d9e7e2">23. 内环海</text>
 <text x="1463" y="2503" font-size="18.5" fill="#d9e7e2">24. 双门海</text>
 <text x="1918" y="2503" font-size="18.5" fill="#d9e7e2">25. 赤湾海</text>
-<text x="95" y="2517" font-size="15.5" fill="#a6c4c9">SVG 分组：layer-land / layer-terrain / layer-hydrology / layer-climate / layer-polities / layer-candidates</text>
+<text x="95" y="2530" font-size="15.5" fill="#a6c4c9">SVG 分组：layer-land / layer-terrain / layer-hydrology / layer-climate / layer-polities / layer-candidates</text>
 </g>
 <text x="80" y="2580" class="tiny">状态：可编辑矢量研究母版 · 正史约束与几何候选分开管理 · 2026-10-25</text>
 </g>
