@@ -6,7 +6,7 @@
     "在俄庇娜作为巨行星的前提下，全球陆地绝对总规模大概率大于地球，但这不是按半径固定比例放大的机械推论；仍取决于海陆比例及行星实际尺寸。",
     "单个大陆的面积可以相对地球更大、更小或相近；大陆数目也可以更多、更少或相近，均不预设地球模板。",
     "不得机械依据行星半径将地球大陆轮廓、长度、数量或面积同比例复制。",
-    "大陆本身与大陆地理单元可以部分接壤、裂解或隔海相望；实际大陆分类与当前草图7片分离多边形不是同一回事。",
+    "大陆本身与大陆地理单元可以部分接壤、裂解或隔海相望；实际大陆分类与任一版本草图中的分离多边形片数不是同一回事。",
     "地图经纬度、陆海面积比例、板块结构、真正尺度未确认前，图纸中的公里数、星球半径和各大陆正式面积保持未定。",
     "继续维护正史：联合城与人民天国同超级大陆，秦棠在萨瑞拉西北，棠溪及内海东岸R1/R2互相独立，南口内海、北冠半岛与25个正式海名不擅自更改。"
   ],
@@ -16,29 +16,33 @@
     "f_land": "全星陆地真实面积份额，未定",
     "f_i": "第i个大陆真实面积份额，未定",
     "R": "行星平均或采用的参考半径，未定",
-    "caveat": "本草案中的47.6%是假想纬度与假定球面下的几何比例，不等同已定f_land；真实椭球时公式还需修正。"
+    "caveat": "目前约42.35%的数字仅为假想纬度与假定球面下的最新工作图几何比例，不等于已确定f_land；真实椭球时面积公式还需修正。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B08",
-    "status": "当前非正史全球工作图：保留B07海陆轮廓，新增可隐藏的海床地貌研究图层",
-    "working_map": "assets/images/orbina-v225r-b08-global-silhouette.svg",
-    "equal_area_map": "assets/images/orbina-v225r-b08-mollweide-equal-area.svg",
-    "viewer": "assets/maps/orbina-v225r-b08-planetary-atlas.html",
-    "data": "assets/data/orbina-v225r-b08-global-geography-master.json",
-    "audit": "assets/data/orbina-v225r-b08-marine-morphology-audit.json",
+    "edition": "V2.25-R-B09",
+    "status": "当前非正史全球地理候选，海陆轮廓继承B07/B08；海床类别剖面不等于实测水深",
+    "working_map": "assets/images/orbina-v225r-b09-global-silhouette.svg",
+    "equal_area_map": "assets/images/orbina-v225r-b09-mollweide-equal-area.svg",
+    "viewer": "assets/maps/orbina-v225r-b09-planetary-atlas.html",
+    "data": "assets/data/orbina-v225r-b09-global-geography-master.json",
+    "audit": "assets/data/orbina-v225r-b09-seabed-transects-audit.json",
     "geometry_model": {
       "continental_origin_groups": 6,
       "disconnected_major_land_polygons": 13,
       "candidate_islands": 93,
-      "new_recent_small_micro_land_shapes": 32,
-      "official_named_major_seas": 25,
+      "recent_small_micro_land_shapes": 32,
+      "approved_named_major_seas": 25,
       "numbers_not_canon": true
     },
-    "marine_morphology": {
-      "status": "only a map-distance-based illustrative hypothesis; no real bathymetry",
-      "north_east_shelf": "narrower",
-      "south_east_shelf": "wider and spatially varying"
+    "profile_layers": {
+      "count": 5,
+      "group_counts": {
+        "NE": 2,
+        "SE": 2,
+        "SW": 1
+      },
+      "interpretation": "relative bathymetry classification only, no official depth, gradients, coordinates or coast geology"
     }
   },
-  "following_work": "在B08候选地貌图层基础上，结合可见陆岸审查海盆形态与候选岸线，逐步补足板块结构、地形高差及海底剖面。海域研究色带不得直接转换成水深米数或正式地质/海名归属。"
+  "following_work": "先审查B09五条线穿越多个陆块、海峡和海床色带的阶段变化，之后依次建立可选择的板块构造、沉积和地形高程假设。不能由岸距推算真实水深，不能直接把25个海名定位到匿名点。"
 }
