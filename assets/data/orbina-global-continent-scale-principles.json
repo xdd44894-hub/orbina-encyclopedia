@@ -19,18 +19,19 @@
     "caveat": "本草案中的47.6%是假想纬度与假定球面下的几何比例，不等同已定f_land；真实椭球时公式还需修正。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B03",
-    "status": "候选、可编辑，不作为星球正史",
-    "working_map": "assets/images/orbina-v225r-b03-global-silhouette.svg",
-    "equal_area_map": "assets/images/orbina-v225r-b03-mollweide-equal-area.svg",
-    "viewer": "assets/maps/orbina-v225r-b03-planetary-atlas.html",
-    "data": "assets/data/orbina-v225r-b03-global-geography-master.json",
+    "edition": "V2.25-R-B04",
+    "status": "当前全球地图最新非正史候选；正式地理不变",
+    "working_map": "assets/images/orbina-v225r-b04-global-silhouette.svg",
+    "equal_area_map": "assets/images/orbina-v225r-b04-mollweide-equal-area.svg",
+    "viewer": "assets/maps/orbina-v225r-b04-planetary-atlas.html",
+    "data": "assets/data/orbina-v225r-b04-global-geography-master.json",
     "geometry_model": {
-      "original_continental_profiles": 6,
-      "disconnected_primary_land_polygons": 7,
-      "candidate_islands": 36,
+      "continental_origin_groups": 6,
+      "disconnected_major_land_polygons": 13,
+      "candidate_islands": 55,
+      "official_named_major_seas": 25,
       "numbers_not_canon": true
     }
   },
-  "following_work": "按球面整体审查不同大陆与海盆的构造关联，并根据需要修改大陆面积、数量、连接关系；先以海陆比例和宏观地形为标准，不为任何陆地填未经确定的公里数或正式经纬度。"
+  "following_work": "在B04尺度草图上检查海盆之间的自然连通、岛弧的构造起源、海底陆架与地形。保留25个正式海名，但不可用25个匿名研究点直接替代已审定的海域坐标或边界；不将行星半径与大陆数目作机械缩放关联。"
 }
