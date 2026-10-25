@@ -1,0 +1,218 @@
+{
+  "version": "V2.18",
+  "status": "EDITABLE_LAYERED_WORLD_MAP_CANDIDATE_WITH_CANON_RELATIONSHIPS",
+  "coordinate_system": {
+    "viewBox": [
+      0,
+      0,
+      2400,
+      2600
+    ],
+    "units": "SVG drawing units only",
+    "planetary_radius": "not established",
+    "latitude_longitude": "not established",
+    "map_orientation": "canvas only, not necessarily true north-east"
+  },
+  "source_geometry": {
+    "central": "assets/images/orbina-v19-continental-coastline-candidate.svg",
+    "outer_coasts_and_relief": "assets/images/orbina-v23-relative-elevation-relief.svg",
+    "coastal_candidate_test": "assets/data/orbina-v217-multiscale-coastal-validation.json"
+  },
+  "top_level_layers": {
+    "layer-land": {
+      "label": "海陆轮廓",
+      "status": "candidate_geometry_known_structure",
+      "default": true
+    },
+    "layer-terrain": {
+      "label": "地势与山脉",
+      "status": "mixed_fixed_relative_and_synthetic",
+      "default": true
+    },
+    "layer-hydrology": {
+      "label": "河网与湖泊",
+      "status": "central_known_structures_downstream_unknown",
+      "default": true
+    },
+    "layer-climate": {
+      "label": "气候与生态",
+      "status": "baishicheng_local_seasonality_only",
+      "default": false
+    },
+    "layer-polities": {
+      "label": "国家与聚落标签",
+      "status": "relative_position_fixed_labels_approximate",
+      "default": true
+    },
+    "layer-candidates": {
+      "label": "外围河口候选",
+      "status": "V2_17_alternative_geomorphology",
+      "default": true
+    }
+  },
+  "canonical_structure": [
+    {
+      "id": "supercontinent_shared",
+      "statement": "联合城与人民天国位于同一片超级大陆",
+      "geometry_status": "relative relationship official; central shoreline trial only"
+    },
+    {
+      "id": "southern_inner_sea",
+      "statement": "巨大内海的南部出口连接外洋，北冠半岛使北部海盆分支",
+      "geometry_status": "general arrangement official; coastline details candidate"
+    },
+    {
+      "id": "arc_passes",
+      "statement": "抵抗者之弧及三处主要通道",
+      "geometry_status": "structural presence official; exact position/cartographic ridge illustration provisional"
+    },
+    {
+      "id": "R1_R2",
+      "statement": "内海东岸R1与R2为彼此独立的入海水系",
+      "geometry_status": "separate drainage systems official, illustrated routes not surveyed"
+    },
+    {
+      "id": "tangxi",
+      "statement": "秦棠位于萨瑞拉西北，白石城在萨瑞拉北侧，棠溪经过新来戈坝区流入萨瑞拉",
+      "geometry_status": "geographic relationships official; final river mouth and Xire lake connectivity unknown"
+    },
+    {
+      "id": "baishicheng_climate",
+      "statement": "白石城夏季相对凉湿多云，秋季更热更干",
+      "geometry_status": "regional qualitative seasonality official; not a planet-wide climate raster"
+    }
+  ],
+  "unlocated_oceans_and_seas": [
+    "大西洋",
+    "太平洋",
+    "北白洋",
+    "洲间洋",
+    "中南洋",
+    "北西里",
+    "碎洋",
+    "南白洋",
+    "东陆洋",
+    "西陆洋",
+    "赤道洋",
+    "南环洋",
+    "远洲洋",
+    "双陆洋",
+    "长陆洋",
+    "深南洋",
+    "东赤洋",
+    "西赤洋",
+    "黑流洋",
+    "白潮海",
+    "千岛海",
+    "长峡海",
+    "内环海",
+    "双门海",
+    "赤湾海"
+  ],
+  "outer_candidate_landmasses": [
+    {
+      "id": "outer-landmass-1",
+      "position_on_canvas": "外围候选 01",
+      "status": "candidate shape, name NOT official",
+      "coastline_vertices_count": 332
+    },
+    {
+      "id": "outer-landmass-2",
+      "position_on_canvas": "外围候选 02",
+      "status": "candidate shape, name NOT official",
+      "coastline_vertices_count": 324
+    },
+    {
+      "id": "outer-landmass-3",
+      "position_on_canvas": "外围候选 03",
+      "status": "candidate shape, name NOT official",
+      "coastline_vertices_count": 263
+    },
+    {
+      "id": "outer-landmass-4",
+      "position_on_canvas": "外围候选 04",
+      "status": "candidate shape, name NOT official",
+      "coastline_vertices_count": 342
+    },
+    {
+      "id": "outer-landmass-5",
+      "position_on_canvas": "外围候选 05",
+      "status": "candidate shape, name NOT official",
+      "coastline_vertices_count": 406
+    },
+    {
+      "id": "outer-landmass-6",
+      "position_on_canvas": "外围候选 06",
+      "status": "candidate shape, name NOT official",
+      "coastline_vertices_count": 326
+    },
+    {
+      "id": "outer-landmass-7",
+      "position_on_canvas": "外围候选 07",
+      "status": "candidate shape, name NOT official",
+      "coastline_vertices_count": 306
+    },
+    {
+      "id": "outer-landmass-8",
+      "position_on_canvas": "外围候选 08",
+      "status": "candidate shape, name NOT official",
+      "coastline_vertices_count": 305
+    }
+  ],
+  "candidate_mouths": [
+    {
+      "site_id": "M11",
+      "geomorphology": "delta",
+      "source": "assets/data/orbina-v217-multiscale-coastal-validation.json",
+      "status": "candidate",
+      "continent": "outer-landmass-2"
+    },
+    {
+      "site_id": "M07",
+      "geomorphology": "spit",
+      "source": "assets/data/orbina-v217-multiscale-coastal-validation.json",
+      "status": "candidate",
+      "continent": "outer-landmass-2"
+    },
+    {
+      "site_id": "M01",
+      "geomorphology": "estuary",
+      "source": "assets/data/orbina-v217-multiscale-coastal-validation.json",
+      "status": "candidate",
+      "continent": "outer-landmass-2"
+    },
+    {
+      "site_id": "M10",
+      "geomorphology": "estuary",
+      "source": "assets/data/orbina-v217-multiscale-coastal-validation.json",
+      "status": "candidate",
+      "continent": "outer-landmass-2"
+    },
+    {
+      "site_id": "M08",
+      "geomorphology": "delta",
+      "source": "assets/data/orbina-v217-multiscale-coastal-validation.json",
+      "status": "candidate",
+      "continent": "outer-landmass-2"
+    },
+    {
+      "site_id": "M05",
+      "geomorphology": "delta",
+      "source": "assets/data/orbina-v217-multiscale-coastal-validation.json",
+      "status": "candidate",
+      "continent": "outer-landmass-2"
+    }
+  ],
+  "editing_rules": [
+    "Edit only the group that owns a feature, not the whole flattened picture.",
+    "Canonical relationships stay unchanged unless user explicitly revises lore; exact coastline of central continent remains a candidate even if displayed prominently.",
+    "If changing a land mask or heightmap, revalidate drainage divisions, rivers, coastal samples and geomorphology before exporting a new release.",
+    "Global oceans list 25 official names with no binding to specific water polygons until location is selected.",
+    "Keep independent R1/R2 river systems, do not connect Tangxi to either without explicit canon.",
+    "Candidate continent 2 river-mouth overlay is noncanonical and can be disabled independently.",
+    "Without a real orbital/climate model, do not introduce definitive planet-wide rainfall, latitude belts or administrative borders.",
+    "SVG is structurally editable in a vector editor; the companion HTML viewer only toggles layers and navigates and cannot directly move polygon vertices."
+  ],
+  "viewer_page": "assets/maps/orbina-v218-layer-viewer.html",
+  "notes": "Central polygon and settlement LABELS are inherited from V1.9: illustrated locations are NOT actual city coordinates. The 8 outer candidate masses follow the existing V2.3 L0-L4 design drawings. The terrain layer currently includes preserved relative elevation bands but no calibrated relief metric. Ocean and land are shape-based, not topological Earth projections."
+}
