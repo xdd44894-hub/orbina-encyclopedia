@@ -8,17 +8,7 @@
     "wrapX": true
   },
   "meaning": "Planetary framework as a full 360-by-180 angular draft. Aesthetic continent geometry is not fixed geology, established coordinates, plate tectonics or actual area.",
-  "approved_relationships_preserved_in_separate_v225_map": [
-    "联合城和人民天国同超级大陆",
-    "秦棠在萨瑞拉西北",
-    "棠溪、R1、R2相关既定河网",
-    "南开口巨大内湾",
-    "北冠半岛、抵抗者之弧三处山口",
-    "白石城、新来戈、溪热湖盆的已确认相对关系",
-    "25个已录用海域名称不附会位置"
-  ],
   "coordinate_note": "The small relationship marker is purely symbolic within a candidate supercontinent; it is not an official longitude, latitude, label position, border or coast.",
-  "original_detailed_map": "assets/images/orbina-v225-river-alignment-fourth-pass.svg",
   "macro_landmasses": [
     {
       "name": "continental-nucleus",
@@ -5812,7 +5802,6 @@
     "archipelago_candidate_islands": 50,
     "planar_grid_land_fraction_estimate": 0.38969,
     "spherical_surface_land_fraction_estimate": 0.47569,
-    "previous_spherical_surface_land_fraction_estimate": 0.47855,
     "estimates_based_on_assumed_equirectangular_latitudes": true,
     "area_method": "360x180 midpoint sample grid; area weighting by cos(latitude)",
     "grid_samples": 64800,
@@ -5839,15 +5828,24 @@
     "No scientific plate model has been constructed; arcuate ridges are speculative.",
     "Shoreline detail is draft-scale. Polar projection distortion not yet resolved.",
     "No countries, confirmed 25 sea names, or rivers are assigned new world coordinates.",
-    "Source V2.25 world-map drafts remain intact and separate.",
     "The calculated 360×180 sphere-weighted land fraction is a conditional proxy based on arbitrary candidate latitudes, not authoritative planetography."
   ],
-  "source_version": "V2.25-R-B candidate 01",
   "description": "Second-pass B-layout: previously coherent southwestern microcontinent is clipped into two staggered blocks with a diagonal opening and seven narrow rift islets. Macro planet layout and protected original country relationship anchors remain unchanged; revised data also includes unbiased sphere-area diagnostic as a draft, not official land fraction.",
   "design_changes": [
     "fracture former southwest microcontinent into two disconnected terrestrial pieces with 28-unit diagonal seaway",
     "add seven nonuniform small candidate rift islets without coastline intersections",
     "do not move core supercontinent or other established relative geography",
     "restore equal-area comparison for map-level proportion review"
-  ]
+  ],
+  "approved_relationships_preserved_in_canonical_geography_article": [
+    "联合城和人民天国同超级大陆",
+    "秦棠在萨瑞拉西北",
+    "棠溪、R1、R2相关既定河网",
+    "南开口巨大内湾",
+    "北冠半岛、抵抗者之弧三处山口",
+    "白石城、新来戈、溪热湖盆的已确认相对关系",
+    "25个已录用海域名称不附会位置"
+  ],
+  "macro_scale_policy_reference": "assets/data/orbina-global-continent-scale-principles.json",
+  "canon_scope": "Only preexisting relative geographic relations are canon. All global continent polygons and hypothetical latitude coverage remain optional."
 }
