@@ -1,0 +1,36 @@
+{
+  "version": "V2.25-R-B15",
+  "result": "Static geometry/SVG/JS checks passed. GitHub content committed. Live browser/mobile rendering not independently tested.",
+  "source_geometry": "assets/data/orbina-v225r-b15-coastal-geography-master.json",
+  "source_sha": "45a8815298f085ea694ae889001bb07105cd3f97",
+  "viewer": "assets/maps/orbina-v225r-b15-coastal-atlas.html",
+  "flat_map": "assets/images/orbina-v225r-b15-coastal-global.svg",
+  "equal_area_map": "assets/images/orbina-v225r-b15-mollweide.svg",
+  "study": "assets/data/orbina-v225r-b15-coastal-morphology-study.json",
+  "shapes": {
+    "global": 110,
+    "NE": 23,
+    "SE": 54,
+    "major_reworked": 9,
+    "satellites_elongated": 22,
+    "hypothetical_land_percent": 44.18505,
+    "not_actual_planet_coverage": true
+  },
+  "QA": {
+    "periodic_wrap_polygon_collisions": 0,
+    "overlapping_bounding_pairs_reviewed": 81,
+    "all_polygons_present_in_SVG_and_Mollweide": true,
+    "SVG_structures_balanced": true,
+    "SVG_ids_unique": true,
+    "viewer_inline_JS_parses": true,
+    "article_and_canonical_map_pointer_B15": true
+  },
+  "visual_diagnostic": "Small local software-rasterized polygon preview reviewed. Compared with hard cut polygons, shapes are smoother, but several large islands still look rounded; future B16 should emphasize structural peninsula and valley shapes rather than only smooth harmonic outlines.",
+  "limitations": [
+    "No actual browser visual QA on GitHub Pages or phone",
+    "Not a physics-based coast, sediment or tectonic simulation",
+    "Shelf-like illustrated bands do not imply measured shelves, depths or navigation",
+    "All national geography relationships, 25 confirmed major sea names and Shattered Sea 32 chains preserved without new coordinate assignments"
+  ],
+  "next": "B16: improve form hierarchy of inlets, resistant headland ridges, narrow coastal peninsulas, and asymmetric island chains after viewing region previews."
+}
