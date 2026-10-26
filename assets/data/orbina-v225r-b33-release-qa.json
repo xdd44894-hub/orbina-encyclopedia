@@ -1,0 +1,82 @@
+{
+  "edition": "V2.25-R-B33",
+  "status": "GITHUB_SOURCE_STATIC_CROSSFILE_CHECK_PASS__PUBLIC_PAGES_BROWSER_UNVERIFIED",
+  "date": "2026-10-26",
+  "source_commits": {
+    "B33_data": "d85c8c039a27539c84cab5863f1859bf04c2fd14",
+    "B33_interactive_atlas": "7db4be45779b7829cef48011be4ba7a9661515a9",
+    "B33_nearest_chord_display_fix": "f7edbca14500ac7217647a5a9396cf3184a48ffe",
+    "current_wiki": "174bde7e1219c7a1323cc6221ffa008e3dd5ab35",
+    "homepage": "d80629c4395a39b4b87b1ce8a8b73efd811c94dc",
+    "gallery": "496013b7403a1d197ef4f7b12ac3639e297cd213"
+  },
+  "source_sha": {
+    "B16": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "B32": "5885883b32fc97f74488db63cdb18d4d16a8313d",
+    "B33_data": "b15051464ec6bd23fa95a3143313e649f9a195c0",
+    "B33_atlas": "37eb0e78ae798477919bcfb03da8f538dd8f0ce2",
+    "wiki": "32e34bd58c0fe9997369b889d6af931552b9b981",
+    "homepage": "788511234a74c0d3544c8b2c233fc661c13c42a7",
+    "gallery": "3a24239b60f7c357ffa2f20a9add1e83a3182fd9"
+  },
+  "qa": {
+    "passed": 36,
+    "total": 36,
+    "failed": 0,
+    "checks": {
+      "filesReadable": true,
+      "B16Immutable": true,
+      "B32Immutable": true,
+      "sourceHashesMatch": true,
+      "nPolygons99": true,
+      "nOriginalVertices9621": true,
+      "auditCounts99": true,
+      "B33QualifyingPairs67": true,
+      "B33NineSites": true,
+      "allSitesDistinct": true,
+      "allPairsMapped": true,
+      "siteClasses6land3water": true,
+      "sourceEdgesValid": true,
+      "siteSourceEdgesValid": true,
+      "allGapsBelow12": true,
+      "allArcGapRatioGe4": true,
+      "allArcFloorSatisfied": true,
+      "allSiteMidpointsInFrame": true,
+      "sourceFull99Preserved": true,
+      "B32CountsHistorical": true,
+      "viewerFetchB16": true,
+      "viewerFetchB33": true,
+      "viewerChecksVersion": true,
+      "viewerUsesTrueClosestSegmentChords": true,
+      "viewerCanZoom": true,
+      "viewerCanPan": true,
+      "viewerHasSiteFilter": true,
+      "viewerJSSyntaxOK": true,
+      "viewerHTMLClosed": true,
+      "wikiCleanAndBrief": true,
+      "wikiB33Current": true,
+      "wikiRetains25Oceans": true,
+      "wikiRetainsCanonicalRelations": true,
+      "indexCurrentLink": true,
+      "galleryCurrentLink": true,
+      "noOriginFilesAltered": true
+    }
+  },
+  "counts": {
+    "polygons": 99,
+    "vertices": 9621,
+    "within_gap_edge_pairs": 95631,
+    "arc_filtered_edge_pairs": 67,
+    "site_clusters": 9,
+    "sites_with_continuous_land_chords": 6,
+    "sites_with_continuous_water_chords": 3,
+    "certified_real_isthmuses": 0
+  },
+  "publication": {
+    "GitHub_source_committed_and_refetched": true,
+    "HTML_script_syntax_compiled": true,
+    "public_GitHub_Pages_rendering_verified": false,
+    "mobile_interactive_behavior_verified": false
+  },
+  "source_guardrails": "B16 and B32 source hashes unchanged. Previous B18-B32 research kept in repository, canon geography remains concise. No confirmed country borders, ocean positions, actual land bridges or navigable straits from this exploratory survey."
+}
