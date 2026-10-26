@@ -19,9 +19,9 @@
     "caveat": "B19地图集延续B16暂定经纬制图的假设球面陆地比例约42.76%；所有模型0至100数值只表示相对地势，无法换算真实海拔米数、河流流量、实际国土面积或星球半径。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B19",
-    "status": "B19地理书式流域分区示范：保留B16全球工作海岸、B17十章及99档案、B18五幅地势与25水道候选，在H2东北西主陆单独新增可追溯汇水分区、8条出流模型路径和三种无量纲降水敏感性演示",
-    "viewer": "assets/maps/orbina-v225r-b19-h2-catchment-atlas.html",
+    "edition": "V2.25-R-B20",
+    "status": "V2.25-R-B20五区域汇水地理书专题：保留B16候选海岸、B17十章及99陆地档案、B18五幅地势和25研究流路，H2复用B19数据，新增其余4个区域并提供五幅同方法的模拟汇水与三种降水情景切换",
+    "viewer": "assets/maps/orbina-v225r-b20-five-region-atlas.html",
     "working_map": "assets/images/orbina-v225r-b18-relative-relief-hydrography.svg",
     "equal_area_map": "assets/images/orbina-v225r-b16-mollweide.svg",
     "unchanged_coast_geometry": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
@@ -29,7 +29,7 @@
     "named_geographic_canon": "assets/data/orbina-v225r-b17-confirmed-geographic-register.json",
     "B17_coast_shape_study": "assets/data/orbina-v225r-b17-physiography-study.json",
     "B18_relative_terrain_and_routing": "assets/data/orbina-v225r-b18-relative-elevation-hydrology.json",
-    "audit": "assets/data/orbina-v225r-b19-h2-catchments-audit.json",
+    "audit": "assets/data/orbina-v225r-b20-five-region-catchment-qa.json",
     "stats": {
       "unchanged_candidate_land_polygons": 99,
       "geography_chapters": 10,
@@ -47,9 +47,14 @@
       "B19_H2_four_neighbour_coastal_outlet_grids": 164,
       "B19_H2_routed_catchment_units": 164,
       "B19_H2_highlighted_subcatchments": 8,
-      "B19_precipitation_index_scenarios": 3
+      "B19_precipitation_index_scenarios": 3,
+      "B20_regions_with_model_catchments": 5,
+      "B20_total_valid_land_grid_cells": 8474,
+      "B20_independent_model_outlets": 854,
+      "B20_exemplar_basin_groups": 40,
+      "B20_relative_rainfall_test_scenarios": 3
     },
-    "scientific_disclaimer": "B19 is an independent H2 synthetic catchment partition over B18 quantized relative heights, not a measured DEM D8 steepest-descent hydrology product. Four-neighbor shoreline cells are model outlets, and each of the three 0.65–1.35 rainfall weight distributions is dimensionless. All real rivers, lakes, wetland location, area, weather, borders, and coordinates remain unverified.",
+    "scientific_disclaimer": "B20 uses B18 assumed relief and B16 draft coast. B19 H2 stays unchanged; four new sheets are four-neighbor shoreline rooted, eight-neighbor priority-flood catchment experiments. Neither real calibrated D8 slopes nor precipitation/weather was measured. Total of 854 coastal outlets is not official rivers; grid cell sizes and synthetic runoff weights do not represent comparable geographical km2 or m3.",
     "canon_guards": [
       "United City and People's Paradise same central supercontinent",
       "Southern outlet big inner sea, North Crown peninsula, eastern gate and Resistance Arc as previously established",
@@ -58,10 +63,13 @@
       "25 confirmed major seas names with unspecified exact world coordinates",
       "Shattered Sea canon 32 intertwined island chains and ~38% in tropical zone"
     ],
-    "version_dependency": "B16 candidate coastline -> B17 ten-chapter atlas and 99 records -> B18 five synthetic relief and flow grids -> B19 H2 catchment partition and precipitation sensitivity demonstration. Later change to coastline or H2 relief invalidates B19 runoff study.",
+    "version_dependency": "B16 draft coastline -> B17 10 textbook chapters & 99 land records -> B18 H1-H5 8474 hypothetical terrain cells -> B19 H2 164 synthetic catchments -> B20 H1/H3/H4/H5 studies plus reused H2, 854 outlet cells and 40 highlighted model catchments. Rebuild dependent studies if coast or underlying terrain changes.",
     "B19_H2_watershed_map": "assets/images/orbina-v225r-b19-h2-catchments.svg",
     "B18_full_viewer": "assets/maps/orbina-v225r-b18-relative-relief-atlas.html",
-    "B19_H2_catchment_and_precipitation_data": "assets/data/orbina-v225r-b19-h2-catchments.json"
+    "B19_H2_catchment_and_precipitation_data": "assets/data/orbina-v225r-b19-h2-catchments.json",
+    "B19_H2_viewer": "assets/maps/orbina-v225r-b19-h2-catchment-atlas.html",
+    "B20_five_region_overview": "assets/images/orbina-v225r-b20-five-region-catchments.svg",
+    "B20_five_region_catchment_catalog": "assets/data/orbina-v225r-b20-five-region-catchment-catalog.json"
   },
-  "following_work": "B20：先验证B19的H2出口定义和敏感性指标，基于已确认地理约束逐幅扩大到其他研究图H1/H3-H5；对地质构造、湿地积水条件、降水与植被只做依据充分的候选专题，不默认把模型流域当作正史。最终逐章丰富全球气候、生态、人口、交通与地方地理志。"
+  "following_work": "B21：在不把模型误当实测的前提下研究山地成因、岩性断裂与候选地势兼容性，再构建具备补水和排水依据的局部湖盆、湿地、冲积扇、河口沉积与气候雨影；暂不定星球公里半径、各国绝对经纬位置、流量和大陆正式面积。"
 }
