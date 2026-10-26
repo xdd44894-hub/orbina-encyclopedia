@@ -1,0 +1,71 @@
+{
+  "edition": "V2.25-R-B31",
+  "status": "GITHUB_SOURCE_CROSS_FILE_STATIC_QA_PASS__PAGES_RENDER_NOT_VERIFIED",
+  "date": "2026-10-26",
+  "source_commits": {
+    "B31_topology": "bed27dec3b7c0da79b335481e4ac166c74f72490",
+    "B31_draft": "985e0a50f4c5936d4f53fb44674666135cd36a1a",
+    "B31_atlas": "bd471573ab37e5c921dfb15b6f64160008254947",
+    "B31_wiki": "ccd1b6dabe97df780ec18bc9b5fdc340474fea20"
+  },
+  "source_blob_checksums": {
+    "B16": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "B30": "1902efacf168902b3633eb26c9f4790e244390d9",
+    "B31_audit": "f5401944d61a20a169d7c8c1f3f94d81e4e75d52",
+    "B31_draft": "d07ce2b8e300875747ddf7aeeb58523188992d44",
+    "B31_atlas": "4e89f8565951a0016ed485a1107826bc402e2fef",
+    "wiki": "a73dff1705cadcbf31afe11777681b6d4abceb06"
+  },
+  "test_total": 25,
+  "passed": 25,
+  "failed": 0,
+  "checks": {
+    "file_count_6": true,
+    "original_polygons_99": true,
+    "original_vertices_9621": true,
+    "B16_hash_preserved": true,
+    "B30_hash_preserved": true,
+    "source_hashes_match": true,
+    "zero_topology_events": true,
+    "zeroLength0": true,
+    "necks56": true,
+    "neckClassificationSums56": true,
+    "has20_B30issues": true,
+    "allIssueIdsUnique": true,
+    "proposalSourcePreserved": true,
+    "proposalChecksPass": true,
+    "proposal99pieces": true,
+    "proposal9619": true,
+    "HTML_has3data": true,
+    "HTML_hasCanvas": true,
+    "HTML_panAndZoom": true,
+    "HTML_draft": true,
+    "HTML_alignedIssueCounts": true,
+    "HTML_balanced_tags": true,
+    "wikiB31Current": true,
+    "wikiLinks": true,
+    "B30_history_retained": true
+  },
+  "noncanon_source_original_vertices": 9621,
+  "noncanon_original_land_polygons": 99,
+  "candidate_necks_screened": 56,
+  "neck_screening_categories": {
+    "land": 24,
+    "water": 11,
+    "mixed": 21
+  },
+  "priority_issues": 20,
+  "displayed_issues_total": 76,
+  "topology_special_cases": {
+    "endpoint_touch": 0,
+    "collinear_overlap": 0,
+    "zero_length": 0,
+    "strict_crossing": 0
+  },
+  "live_deployment": {
+    "github_source_fetched_and_verified": true,
+    "github_pages_online_http_unverified": true,
+    "browser_Javascript_interactivity_unverified": true
+  },
+  "note": "Static source checks only; GitHub Pages and mobile gestures have not been browser-tested. Report is not a proof of real-world map geography."
+}
