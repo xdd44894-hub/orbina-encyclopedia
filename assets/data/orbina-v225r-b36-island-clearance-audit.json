@@ -1,0 +1,162 @@
+{
+  "edition": "V2.25-R-B36",
+  "date": "2026-10-26",
+  "status": "STATIC_GEOMETRY_SCREEN_PASS_NO_COLLISIONS_AMONG_RELOCATED_ISLANDS",
+  "source_sha": {
+    "assets/data/orbina-v225r-b16-aesthetic-geography-master.json": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "assets/data/orbina-v225r-b34-reversible-coastline-layer.json": "cc35278c54ba12c2ebefecb7d97567110270e881",
+    "assets/data/orbina-v225r-b35-reversible-archipelago-layer.json": "28e6e8143aac255f9150904a9b8f2abc464585c0"
+  },
+  "qa": {
+    "sourcesExact": true,
+    "original99": true,
+    "sevenMoves": true,
+    "noMovedMainland": true,
+    "allDeltasFinite": true,
+    "polygonIDsPreserved": true,
+    "vertices9669": true,
+    "allOtherPolygonsIdentityPreserved": true,
+    "allClearancePositive": true,
+    "allClearancesImproved": true,
+    "allTranslationsNoWidthChange": true,
+    "noAdditionalIslandPolygon": true
+  },
+  "clearance": [
+    {
+      "polygon_id": 24,
+      "translation": [
+        -2,
+        -5
+      ],
+      "closest_baseline_gap_drawing": 47.740914,
+      "closest_B36_gap_drawing": 51.278724,
+      "before_neighbor": {
+        "polygon_id": 82,
+        "periodic_shift": 0
+      },
+      "after_neighbor": {
+        "polygon_id": 82,
+        "periodic_shift": 0
+      },
+      "delta_gap_drawing": 3.53781
+    },
+    {
+      "polygon_id": 25,
+      "translation": [
+        2,
+        4
+      ],
+      "closest_baseline_gap_drawing": 2.069502,
+      "closest_B36_gap_drawing": 8.535959,
+      "before_neighbor": {
+        "polygon_id": 28,
+        "periodic_shift": 0
+      },
+      "after_neighbor": {
+        "polygon_id": 26,
+        "periodic_shift": 0
+      },
+      "delta_gap_drawing": 6.466456
+    },
+    {
+      "polygon_id": 26,
+      "translation": [
+        4,
+        -2
+      ],
+      "closest_baseline_gap_drawing": 4.386307,
+      "closest_B36_gap_drawing": 8.535959,
+      "before_neighbor": {
+        "polygon_id": 25,
+        "periodic_shift": 0
+      },
+      "after_neighbor": {
+        "polygon_id": 25,
+        "periodic_shift": 0
+      },
+      "delta_gap_drawing": 4.149652
+    },
+    {
+      "polygon_id": 27,
+      "translation": [
+        -4,
+        3
+      ],
+      "closest_baseline_gap_drawing": 3.4963,
+      "closest_B36_gap_drawing": 8.038324,
+      "before_neighbor": {
+        "polygon_id": 23,
+        "periodic_shift": 0
+      },
+      "after_neighbor": {
+        "polygon_id": 23,
+        "periodic_shift": 0
+      },
+      "delta_gap_drawing": 4.542023
+    },
+    {
+      "polygon_id": 28,
+      "translation": [
+        -4,
+        -2
+      ],
+      "closest_baseline_gap_drawing": 2.069502,
+      "closest_B36_gap_drawing": 6.711211,
+      "before_neighbor": {
+        "polygon_id": 25,
+        "periodic_shift": 0
+      },
+      "after_neighbor": {
+        "polygon_id": 30,
+        "periodic_shift": 0
+      },
+      "delta_gap_drawing": 4.641708
+    },
+    {
+      "polygon_id": 29,
+      "translation": [
+        5,
+        -3
+      ],
+      "closest_baseline_gap_drawing": 9.442121,
+      "closest_B36_gap_drawing": 15.251981,
+      "before_neighbor": {
+        "polygon_id": 20,
+        "periodic_shift": 0
+      },
+      "after_neighbor": {
+        "polygon_id": 20,
+        "periodic_shift": 0
+      },
+      "delta_gap_drawing": 5.80986
+    },
+    {
+      "polygon_id": 30,
+      "translation": [
+        5,
+        5
+      ],
+      "closest_baseline_gap_drawing": 2.470046,
+      "closest_B36_gap_drawing": 6.711211,
+      "before_neighbor": {
+        "polygon_id": 23,
+        "periodic_shift": 0
+      },
+      "after_neighbor": {
+        "polygon_id": 28,
+        "periodic_shift": 0
+      },
+      "delta_gap_drawing": 4.241164
+    }
+  ],
+  "summary": {
+    "original_polygons": 99,
+    "B35_vertices": 9669,
+    "B36_vertices": 9669,
+    "moved_islands": 7,
+    "spatial_regions": 3,
+    "coastline_shape_edits_in_B36": 0,
+    "physical_sea_channel_certified": 0
+  },
+  "warning": "Geometric coast-to-coast clearance in drawing units, not validated water depth or navigation width."
+}
