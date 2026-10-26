@@ -1,0 +1,59 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>俄庇娜 B24 · 极端水文与地下水敏感性</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f5f3ec;color:#244450;font:15px/1.6 system-ui,"Microsoft YaHei",sans-serif}header{background:linear-gradient(120deg,#163d53,#266475);color:#f8faf2;padding:32px max(16px,calc((100% - 1200px)/2))}h1{font-size:clamp(25px,3.3vw,39px);margin:0 0 9px;line-height:1.3}header p{margin:0;max-width:1050px;color:#d5e7e2}main{max-width:1200px;margin:auto;padding:20px 16px 54px}nav{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:19px}nav a{font-size:13px;border:1px solid #c2d8d0;border-radius:8px;background:#fff;padding:9px 10px;text-decoration:none;color:#2d6577}.panel{background:#fffefa;border:1px solid #d1ded6;border-radius:13px;padding:18px;margin-bottom:20px}h2{margin:0 0 12px;font-size:21px}p{line-height:1.75}.muted{font-size:13px;color:#607b7e}.tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.tabs button{font:inherit;text-align:left;padding:13px;border-radius:9px;background:#f0f6f0;color:#33555c;border:1px solid #c8d9d0;cursor:pointer}.tabs button.on{border:2px solid #307e96;background:#e6f6f4}.tabs b,.tabs small{display:block}.tabs small{font-size:12px;color:#657f81;margin-top:5px}.controls{display:flex;flex-wrap:wrap;gap:15px;align-items:center;margin:12px 0}.controls input[type=range]{width:min(400px,58vw)}.cols{display:grid;grid-template-columns:minmax(0,1fr) 264px;gap:17px}canvas{width:100%;height:auto;display:block;touch-action:manipulation}.can{background:#1e546b;border-radius:10px;overflow:hidden}#caption{padding:11px;background:#eaf3ef;border-radius:7px;margin-top:11px}.stat{padding:10px 0;border-bottom:1px solid #d7e5db}.stat b{display:block;font-size:24px;font-variant-numeric:tabular-nums}.stat small{font-size:12px;color:#698082}.wind{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.wind article{border:1px solid #ccdbd4;background:#f2f7f2;border-radius:9px;padding:13px}.wind b{font-size:16px}.wind p{font-size:13px;color:#58767b;margin:8px 0}.five{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.five button{border:1px solid #c9d9d3;background:#f3f8f4;border-radius:8px;padding:9px;text-align:left;cursor:pointer;font:inherit;color:#305962}.five button.on{background:#e2f2f6;border:2px solid #458da1}.five b,.five small{display:block}.five small{font-size:12px;color:#668084}#gwInfo{padding:10px 0;color:#566f75;font-size:14px}@media(max-width:900px){.cols{grid-template-columns:1fr}.wind{grid-template-columns:1fr}.five{grid-template-columns:repeat(auto-fit,minmax(135px,1fr))}}@media(max-width:550px){.panel{padding:12px}.tabs button{padding:9px}.tabs small{font-size:11px}}
+footer{text-align:center;color:#74868a;font-size:12px;padding:18px}
+</style></head><body><header><h1>俄庇娜 · B24 极端水文专题实验室</h1><p>以B23的H4/S2非正史模型为研究基础：对比基线、连续干旱、单次强入流，另以五档地下水输入评价干期积水敏感性，并将风带与迎背风坡留为待证实的区域条件。</p></header><main>
+<nav><a href="../images/orbina-v225r-b24-extreme-groundwater-overview.svg" target="_blank">B24专题总图</a><a href="../data/orbina-v225r-b24-extreme-groundwater-climate.json" target="_blank">B24可复核模型JSON</a><a href="orbina-v225r-b23-h4-water-and-sediment-atlas.html">B23水量与沉积研究</a><a href="orbina-v225r-b22-h4-terrain-laboratory.html">B22地形模型</a><a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank">百科《海洋地理》</a></nav>
+<section class="panel"><h2>干旱和突发强入流：48期对照</h2><div class="tabs" id="tabs"></div>
+<div class="controls"><label>观测期 <input type="range" id="period" min="1" max="48" value="7" step="1"> <b id="periodText">07</b></label><label><input type="checkbox" id="showWater" checked>显示试验水面</label></div>
+<div class="cols"><div><div class="can"><canvas id="map" width="920" height="560" aria-label="H4/S2地形及模拟试验积水区"></canvas></div><div id="caption">加载试验图幅……</div></div><aside><h2>所选时刻</h2><div id="stats"></div><p class="muted">水位全部基于23个洼地格的无量纲高度计算。强入流被人为提高到能超过溢流门槛，绝非实际洪水重现期。</p></aside></div></section>
+<section class="panel"><h2>储水演化全周期曲线</h2><div class="can"><canvas id="curve" width="1160" height="400" aria-label="控制组、干旱冲击、强入流三条储水曲线"></canvas></div>
+<p class="muted">对照和冲击均从B23-B经过240期重复循环后的相同状态出发。干旱干预只在前两轮的第5–9期发生；极端入流只发生于第一轮第7期。冲击结束后观察恢复，不将48期视为实际年份。</p></section>
+<section class="panel"><h2>地下水补给的不确定性</h2><p class="muted">单独把地下补给每期设置为0、0.02、0.20、0.50、1.00，重复360个模型期后比较最后一轮。较高补给档可能尚未达到严格的周期稳态；这里只展示模拟终端状态，不将它写成长期气候平衡。</p><div class="five" id="gwTabs"></div><div id="gwInfo"></div><div class="can"><canvas id="gwCurve" width="1160" height="285" aria-label="不同地下水补给的末轮12期储水曲线"></canvas></div></section>
+<section class="panel"><h2>从局部湖盆连接到全球风带，需要哪些证据？</h2><div class="wind" id="wind"></div><p class="muted">真实地学中迎风坡增湿和背风坡雨影取决于水汽来源、风向、山体和地形抬升。可参照 <a href="https://oceanservice.noaa.gov/facts/windward-leeward.html" target="_blank">NOAA迎风与背风降水解释</a>以及 <a href="https://geology.utah.gov/water/groundwater/hydrologic-cycle/" target="_blank">地表及地下水量收支</a>。B24尚未确定俄庇娜行星的纬度风带、H4真实方位、各海洋洋流或确切山脉走向。</p></section>
+</main><footer>ORBINA / B24 CONDITIONAL HYDROLOGY ATLAS · NONCANON · NO ACTUAL CLIMATE EVENTS OR LAKES</footer>
+<script>
+"use strict";
+const $=i=>document.getElementById(i),names={control:"B23原始对照",drought:"持续干旱冲击",flood:"一次极端强入流"},palette={control:"#80d1b8",drought:"#e6a57e",flood:"#9abcf2"};
+let data=null,terrain=null,kind="flood",selectedGW="G0p02";
+const ctx=$("map").getContext("2d"),plot=$("curve").getContext("2d"),gwPlot=$("gwCurve").getContext("2d");
+function stage(vol){const z=terrain.scenarios.S2.raster.synthetic_height_rows,W=terrain.grid.columns,indices=terrain.scenarios.S2.metrics.pockets[0].all_potential_grid_indices;
+ const floor=data.geometry_unchanged.pocket_floor_index,spill=data.geometry_unchanged.spill_threshold_index;
+ if(vol<1e-8)return floor;
+ let a=floor,b=spill;for(let i=0;i<45;i++){let h=(a+b)/2,v=indices.reduce((s,n)=>s+Math.max(0,h-z[Math.floor(n/W)][n%W]),0);if(v<vol)a=h;else b=h}return(a+b)/2}
+function drawMap(){
+if(!data||!terrain)return;const g=terrain.grid,W=g.columns,H=g.rows,mask=g.original_mask_rows,z=terrain.scenarios.S2.raster.synthetic_height_rows,c=$("map"),s=Math.min((c.width-65)/W,(c.height-105)/H),ox=(c.width-W*s)/2,oy=52+(c.height-105-H*s)/2,t=Number($("period").value)-1,row=data.forecasts[kind][t],h=stage(row.storage);
+ctx.fillStyle="#1c5068";ctx.fillRect(0,0,c.width,c.height);ctx.fillStyle="#eaf5ef";ctx.font="bold 20px system-ui";ctx.fillText(names[kind]+" · 实验第"+String(t+1).padStart(2,"0")+"期",25,32);
+for(let y=0;y<H;y++)for(let x=0;x<W;x++)if(mask[y][x]==="1"){let a=z[y][x],cc=a<40?"#a3cfb3":a<70?"#c7c49d":"#aa916f";ctx.fillStyle=cc;ctx.fillRect(ox+x*s,oy+y*s,Math.ceil(s+.1),Math.ceil(s+.1))}
+if($("showWater").checked){const b=terrain.scenarios.S2.metrics.pockets[0];for(const idx of b.all_potential_grid_indices){let x=idx%W,y=Math.floor(idx/W);if(z[y][x]>=h-1e-8)continue;ctx.fillStyle="rgba(48,175,229,.87)";ctx.fillRect(ox+x*s,oy+y*s,s,s);ctx.strokeStyle="#e1fbff";ctx.lineWidth=.6;ctx.strokeRect(ox+x*s,oy+y*s,s,s)}}
+ctx.font="13px system-ui";ctx.fillStyle="#d4e7e8";ctx.fillText("非正史H4候选地势 · 蓝色是几何模拟水面，并非已确认湖泊",25,c.height-20);
+}
+function drawLine(context,canvas,series,maxY=70,marker=null){
+ context.fillStyle="#174a60";context.fillRect(0,0,canvas.width,canvas.height);
+ const x0=56,y0=31,w=canvas.width-97,h=canvas.height-101;
+ for(let k=0;k<=4;k++){let y=y0+h-k*h/4;context.strokeStyle="#446d7d";context.beginPath();context.moveTo(x0,y);context.lineTo(x0+w,y);context.stroke();context.fillStyle="#c6dce0";context.font="12px system-ui";context.fillText((maxY*k/4).toFixed(1),12,y+4)}
+ series.forEach((line,i)=>{context.beginPath();line.values.forEach((value,k)=>{let x=x0+k*w/(line.values.length-1),y=y0+h-Math.max(0,Math.min(maxY,value))/maxY*h;k?context.lineTo(x,y):context.moveTo(x,y)});context.strokeStyle=line.color;context.lineWidth=line.emphasize?3.8:1.8;context.stroke();
+ context.font="13px system-ui";context.fillStyle=line.color;context.fillText(line.label,x0+i*Math.min(290,(w/series.length)),canvas.height-22)});
+ if(marker!==null){let x=x0+marker*w/(series[0].values.length-1);context.setLineDash([5,6]);context.strokeStyle="#f9fcfa";context.lineWidth=1.5;context.beginPath();context.moveTo(x,y0);context.lineTo(x,y0+h);context.stroke();context.setLineDash([])}
+}
+function render(){
+if(!data||!terrain)return;const t=Number($("period").value)-1,row=data.forecasts[kind][t];
+$("periodText").textContent=String(t+1).padStart(2,"0");
+$("tabs").innerHTML=Object.entries(names).map(([key,name])=>"<button type='button' data-key='"+key+"' class='"+(kind===key?"on":"")+"'><b>"+name+"</b><small>"+(key==="control"?"周期对照":key==="drought"?"前两轮5至9期减少补水": "首轮第7期突发强入流")+"</small></button>").join("");
+document.querySelectorAll("[data-key]").forEach(b=>b.addEventListener("click",()=>{kind=b.dataset.key;render()}));
+$("stats").innerHTML=[["储水指数",row.storage.toFixed(2)],["潜在积水格",row.wet],["当前溢流指数",row.overflow.toFixed(2)],["模拟水面高度",row.level.toFixed(2)],["地下水补给",row.gw.toFixed(2)]].map(([k,v])=>"<div class='stat'><b>"+v+"</b><small>"+k+"</small></div>").join("");
+$("caption").textContent="第"+(t+1)+"期，"+names[kind]+"：储水"+row.storage.toFixed(3)+"、可能覆盖"+row.wet+"格、溢流"+row.overflow.toFixed(3)+"（均为数值研究指标）。";
+drawMap();
+drawLine(plot,$("curve"),Object.keys(names).map(key=>({label:names[key],color:palette[key],values:data.forecasts[key].map(v=>v.storage),emphasize:kind===key})),70,t);
+}
+function renderGW(){
+if(!data)return;const all=Object.entries(data.groundwater_sensitivity),g=data.groundwater_sensitivity[selectedGW];
+$("gwTabs").innerHTML=all.map(([id,v])=>"<button type='button' data-gw='"+id+"' class='"+(id===selectedGW?"on":"")+"'><b>GW "+v.groundwater_index_per_phase.toFixed(2)+"</b><small>末轮干涸"+v.dry_phases+"/12期</small></button>").join("");
+document.querySelectorAll("[data-gw]").forEach(b=>b.addEventListener("click",()=>{selectedGW=b.dataset.gw;renderGW()}));
+$("gwInfo").textContent="当前补给 "+g.groundwater_index_per_phase.toFixed(2)+"（每期无量纲）· 末轮最低储水 "+g.min_storage.toFixed(2)+" · 最高 "+g.max_storage.toFixed(2)+" · 末两轮周期末差 "+g.periodic_delta.toFixed(3)+"；仍可能未达周期平衡。";
+drawLine(gwPlot,$("gwCurve"),all.map(([id,v])=>({label:"GW="+v.groundwater_index_per_phase.toFixed(2),color:["#9ad0be","#dfbe83","#b5abd8","#7dc0e3","#edab9c"][all.findIndex(x=>x[0]===id)],values:v.last_cycle_storage,emphasize:id===selectedGW})),12,null);
+}
+$("period").addEventListener("input",render);$("showWater").addEventListener("change",drawMap);
+Promise.all([fetch("../data/orbina-v225r-b24-extreme-groundwater-climate.json").then(r=>{if(!r.ok)throw Error("B24 "+r.status);return r.json()}),fetch("../data/orbina-v225r-b22-h4-terrain-experiments.json").then(r=>{if(!r.ok)throw Error("B22 "+r.status);return r.json()})]).then(([a,b])=>{if(a.forecasts.flood.length!==48||b.scenarios.S2.metrics.pockets.length!==1)throw Error("模型不完整");data=a;terrain=b;
+$("wind").innerHTML=a.climate_geography_hypotheses.map(w=>"<article><b>"+w.scenario+" · "+w.name+"</b><p>成立条件："+w.require+"</p><p>可能作用："+w.impact+"</p></article>").join("");
+render();renderGW();}).catch(e=>$("caption").textContent="数据读取失败："+e.message+"；可查看顶部静态专题图与JSON。");
+</script></body></html>
