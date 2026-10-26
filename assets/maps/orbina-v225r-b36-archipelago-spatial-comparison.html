@@ -1,0 +1,54 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>俄庇娜 B36｜群岛空间布局前后对照</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f3f5ee;color:#263e4c;font:15px/1.55 system-ui,"Microsoft YaHei",sans-serif}header{background:linear-gradient(110deg,#163d52,#32716d);color:#fff;padding:25px max(16px,calc((100vw - 1380px)/2))}h1{font-size:clamp(24px,3vw,38px);margin:0 0 9px}header p{margin:0;max-width:1020px;color:#d3e7e1}main{max-width:1380px;margin:auto;padding:18px 15px 52px}nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}nav a{background:#fff;border:1px solid #caddd3;border-radius:7px;padding:8px 10px;color:#246373;text-decoration:none;font-size:13px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:16px}.stats>div{background:#e7f1eb;border:1px solid #d0dfd5;border-radius:9px;padding:13px}.stats b{display:block;font-size:27px;color:#256573}.stats small{color:#5e7679}.panel{background:#fffefa;border:1px solid #d2ddd5;border-radius:11px;margin-bottom:16px;padding:18px}h2{font-size:20px;margin:0 0 9px}h3{font-size:16px;margin:0 0 8px}.controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:11px 0}.controls label{display:flex;align-items:center;gap:7px;font-size:13px}select,button,input{font:inherit;accent-color:#2c877f;color:#24515d}select,button{border:1px solid #b6d1c7;border-radius:7px;padding:8px 10px;background:#f4f8f4}button{cursor:pointer;background:#e0eee7}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #2b869b}.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.mapcard{background:#e6eee7;border:1px solid #ceddd3;border-radius:9px;padding:10px}.mapcard h3{margin:0 0 8px}.canvasbox{border:1px solid #acc4c5;border-radius:6px;background:#1b4d64;overflow:hidden}canvas{display:block;width:100%;height:auto;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}.muted{font-size:13px;color:#61787a}.mapcard p{font-size:12px;color:#58757a;margin:8px 2px 0}#status{border:1px solid #cedfd6;border-radius:7px;padding:10px;margin:10px 0;background:#edf5ee;font-size:13px}table{border-collapse:collapse;width:100%;font-size:13px}td,th{border-bottom:1px solid #dce9e2;text-align:left;padding:9px 6px}th{color:#617b7e}p{max-width:1050px}@media(max-width:920px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}}</style>
+</head><body><header><h1>俄庇娜 · B36 群岛空间关系修订</h1><p>这次移动七座已有小岛，不增删任何岛屿，也不更改海岸形状。借助实际边段最近距离比较，打开原本局促的短水道，并保留三组区域的断裂式岛链节奏。B16、B34和B35继续原样保留。</p></header>
+<main><nav><a href="../data/orbina-v225r-b36-island-spacing-layer.json">B36七岛平移数据</a><a href="../data/orbina-v225r-b36-island-clearance-audit.json">全部最近岸线距离核查</a><a href="orbina-v225r-b35-island-coast-before-after.html">B35海岸轮廓对照</a><a href="orbina-v225r-b34-before-after-coastline.html">B34大陆精修对照</a></nav>
+<div class="stats"><div><b>7</b><small>调整位置的小岛</small></div><div><b>3</b><small>涉及空间区域</small></div><div><b>99</b><small>原始陆块／岛屿全保留</small></div><div><b>9,669</b><small>修订前后海岸顶点不变</small></div></div>
+<section class="panel"><h2>原布局／新布局：左右相机同步</h2>
+<div class="controls">
+<label>查看区域 <select id="region"><option value="west">西部裂谷与陆架岛链（5岛移动）</option><option value="south">南部陆架残岛（1岛移动）</option><option value="north">北部海沟岛弧（1岛移动）</option><option value="global">全球99片候选陆地</option></select></label>
+<label>缩放 <input id="zoom" type="range" min=".7" max="8" step=".1" value="1"><b id="zoomLabel">1×</b></label>
+<label><input id="ghost" type="checkbox" checked>右图保留原岛粉红虚线轮廓</label>
+<label><input id="arrows" type="checkbox" checked>显示移动方向及编号</label>
+<button id="reset" type="button">恢复默认视角</button>
+</div>
+<div class="two">
+<div class="mapcard"><h3>基线 · B35</h3><div class="canvasbox"><canvas id="before" width="770" height="560" aria-label="B35群岛布局可平移的矢量地图"></canvas></div><p>灰绿色为原始候选地貌；琥珀色为本轮需要调整位置的七座岛屿。</p></div>
+<div class="mapcard"><h3>候选布局 · B36</h3><div class="canvasbox"><canvas id="after" width="770" height="560" aria-label="B36群岛布局修订地图，同步显示旧岸位置"></canvas></div><p>青绿色为重新定位的岛屿，粉红虚线为B35位置。箭头指示平移，不代表洋流。</p></div></div>
+<div id="status">正在读取三层原始地貌数据和B36位置叠加层……</div>
+</section>
+<section class="panel"><h2>七座岛屿的最近海岸距离变化</h2>
+<table><thead><tr><th>岛屿编号</th><th>移动（图纸单位）</th><th>B35最近岸距</th><th>B36最近岸距</th></tr></thead><tbody id="rows"></tbody></table>
+<p class="muted">间距由七座被移动岛屿与全图其他98片候选陆块的矢量线段和内部包含关系计算，并检验横向±2400单位周期副本。由于最近邻可能发生变化，表中只比较各岛自身最小岸距。改善间距不意味着已确认可通航海峡或实际海水深度。</p></section>
+<section class="panel"><h2>制图原则</h2>
+<p>这里改动的是岛链<strong>整体排列节奏与局部水道留白</strong>，不是增加岛屿数量、在海上撒随机碎块或重新绘制官方国家位置。西部裂谷群岛依然保持大体斜向延伸的破碎结构；南部陆架残岛仍有各自独立的海湾；北部海沟岛弧的局部成员向外错开。地质断裂的真实年代、海峡深度和地理尺度均尚未确认。</p></section>
+</main>
+<script>
+"use strict";
+const $=x=>document.getElementById(x),W=770,H=560,group={west:[16,19,21,22,23,25,26,27,28,30],south:[17,20,29],north:[24,94,93]};
+let source=null,B34=null,B35=null,B36=null,original=[],draft=[],moved={},center=[550,690],baseScale=1,pan=[0,0],active=null;
+function merge(){let p=[...source.macro_landmasses,...source.archipelago];original=p.map((z,i)=>({...z,coordinates:B35.polygon_replacements.find(r=>r.polygon_id===i)?.revised_coordinates||B34.geometry_changes.polygon_replacements.find(r=>r.polygon_id===i)?.revised_coordinates||z.coordinates}));moved=Object.fromEntries(B36.island_translations.map(x=>[x.id,x.delta]));draft=original.map((z,i)=>{let v=moved[i];return {...z,coordinates:v?z.coordinates.map(p=>[p[0]+v[0],p[1]+v[1]]):z.coordinates}})}
+function viewport(){let ids=$("region").value==="global"?Array.from({length:99},(_,i)=>i):(group[$("region").value]||[]);let all=ids.flatMap(id=>original[id].coordinates),xs=all.map(p=>p[0]),ys=all.map(p=>p[1]),xmin=Math.min(...xs),xmax=Math.max(...xs),ymin=Math.min(...ys),ymax=Math.max(...ys);center=[(xmin+xmax)/2,(ymin+ymax)/2];baseScale=Math.min((W-120)/Math.max(xmax-xmin,10),(H-105)/Math.max(ymax-ymin,10))*.85;pan=[0,0];$("zoom").value="1";$("zoomLabel").textContent="1×";draw()}
+function project(p){let s=baseScale*Number($("zoom").value);return[W/2+(p[0]-center[0])*s+pan[0],H/2+(p[1]-center[1])*s+pan[1]]}
+function bounds(pts){return[Math.min(...pts.map(p=>p[0])),Math.min(...pts.map(p=>p[1])),Math.max(...pts.map(p=>p[0])),Math.max(...pts.map(p=>p[1]))]}
+function visible(pts){let b=bounds(pts),a=project([b[0],b[1]]),c=project([b[2],b[3]]);return!(c[0]<-12||a[0]>W+12||c[1]<-12||a[1]>H+12)}
+function path(ctx,pts){ctx.beginPath();pts.forEach((p,i)=>{let q=project(p);if(i===0)ctx.moveTo(...q);else ctx.lineTo(...q)});ctx.closePath()}
+function mid(pts){return[pts.reduce((s,p)=>s+p[0],0)/pts.length,pts.reduce((s,p)=>s+p[1],0)/pts.length]}
+function arrow(ctx,p,q){const a=project(p),b=project(q),dx=b[0]-a[0],dy=b[1]-a[1],l=Math.hypot(dx,dy);if(l<2)return;let ux=dx/l,uy=dy/l;ctx.beginPath();ctx.moveTo(...a);ctx.lineTo(...b);ctx.strokeStyle="#fff6b0";ctx.lineWidth=2.2;ctx.stroke();ctx.beginPath();ctx.moveTo(b[0]-ux*7-uy*4,b[1]-uy*7+ux*4);ctx.lineTo(...b);ctx.lineTo(b[0]-ux*7+uy*4,b[1]-uy*7-ux*4);ctx.stroke();}
+function render(canvas,shapes,isAfter){let ctx=canvas.getContext("2d");ctx.fillStyle="#1e4e63";ctx.fillRect(0,0,W,H);
+for(let i=0;i<shapes.length;i++){let p=shapes[i].coordinates;if(!visible(p))continue;let isMoved=!!moved[i];path(ctx,p);ctx.fillStyle=isMoved?(isAfter?"#9ad8b9":"#dbcc9f"):(shapes[i].color||"#c9d2b0");ctx.fill();ctx.lineWidth=isMoved?2.1:.8;ctx.strokeStyle=isMoved?(isAfter?"#51e2af":"#ffe2aa"):"#e1e8c9";ctx.stroke();if(isAfter&&isMoved&&$("ghost").checked){path(ctx,original[i].coordinates);ctx.strokeStyle="#ed83bc";ctx.lineWidth=1.8;ctx.setLineDash([6,4]);ctx.stroke();ctx.setLineDash([])}}
+if($("arrows").checked){for(let x of B36.island_translations){let p=mid(original[x.id].coordinates),q=mid(draft[x.id].coordinates),vis=visible([p,q]);if(!vis)continue;if(isAfter)arrow(ctx,p,q);let labelAt=project(isAfter?q:p);ctx.font="bold 14px system-ui";ctx.fillStyle="#f6ffed";ctx.strokeStyle="#1d4757";ctx.lineWidth=3;ctx.strokeText("#"+x.id,labelAt[0]+6,labelAt[1]-7);ctx.fillText("#"+x.id,labelAt[0]+6,labelAt[1]-7);}}
+ctx.strokeStyle="#9ebec5";ctx.lineWidth=1.2;ctx.strokeRect(.5,.5,W-1,H-1)}
+function draw(){if(!B36)return;render($("before"),original,false);render($("after"),draft,true)}
+$("region").onchange=viewport;$("zoom").oninput=()=>{$("zoomLabel").textContent=$("zoom").value+"×";draw()};$("ghost").onchange=draw;$("arrows").onchange=draw;$("reset").onclick=viewport;
+for(let name of ["before","after"]){let c=$(name);c.onpointerdown=e=>{active={id:e.pointerId,x:e.clientX,y:e.clientY,p:[...pan]};c.setPointerCapture(e.pointerId)};c.onpointermove=e=>{if(!active||e.pointerId!==active.id)return;let f=W/c.getBoundingClientRect().width;pan=[active.p[0]+(e.clientX-active.x)*f,active.p[1]+(e.clientY-active.y)*f];draw()};c.onpointerup=()=>active=null;c.onpointercancel=()=>active=null;}
+Promise.all([
+fetch("../data/orbina-v225r-b16-aesthetic-geography-master.json").then(r=>{if(!r.ok)throw Error("B16 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b34-reversible-coastline-layer.json").then(r=>{if(!r.ok)throw Error("B34 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b35-reversible-archipelago-layer.json").then(r=>{if(!r.ok)throw Error("B35 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b36-island-spacing-layer.json").then(r=>{if(!r.ok)throw Error("B36 HTTP "+r.status);return r.json()})
+]).then(([b,c,d,e])=>{source=b;B34=c;B35=d;B36=e;merge();let n=original.reduce((a,p)=>a+p.coordinates.length,0),m=draft.reduce((a,p)=>a+p.coordinates.length,0);
+if(original.length!==99||draft.length!==99||n!==9669||m!==9669||B36.island_translations.length!==7||B36.clearance_analysis.results.length!==7)throw Error("B36源数据版次或总数不符");
+for(let q of B36.clearance_analysis.results){let row=document.createElement("tr");let cols=["#"+q.polygon_id,q.translation.map(v=>(v>0?"+":"")+v).join(", "),q.closest_baseline_gap_drawing.toFixed(2),q.closest_B36_gap_drawing.toFixed(2)];for(let x of cols){let td=document.createElement("td");td.textContent=x;row.append(td)}$("rows").append(row)}
+viewport();$("status").textContent="B16、B34、B35和B36四层数据已通过浏览器端计数检查。右图平移了七座岛屿；源海岸轮廓、99片陆块及9,669个顶点保持不变。";
+}).catch(err=>$("status").textContent="数据加载失败："+err.message+"。请从页面上方链接检查对应数据文件。");
+</script></body></html>
