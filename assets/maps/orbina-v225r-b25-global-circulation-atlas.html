@@ -1,0 +1,63 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>俄庇娜 B25 全球大气环流参数图集</title>
+<style>
+:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color:#244753;background:#f5f2e9;color-scheme:light}*{box-sizing:border-box}body{margin:0}header{background:linear-gradient(120deg,#163d53,#286571);color:#f6faf4;padding:32px max(16px,calc((100vw - 1210px)/2))}header h1{font-size:clamp(26px,3vw,41px);margin:0 0 11px}header p{max-width:1040px;line-height:1.7;margin:0;color:#cde4df}main{max-width:1210px;margin:auto;padding:22px 16px 48px}nav{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 20px}nav a{background:#fff;border:1px solid #c1d5ce;border-radius:7px;padding:9px 11px;color:#26697a;text-decoration:none;font-size:13px}.panel{background:#fffefa;border:1px solid #d3ded6;border-radius:13px;padding:20px;margin:0 0 20px}h2{margin:0 0 11px;font-size:21px}h3{margin:10px 0;font-size:17px}.muted{font-size:13px;color:#617b7d;line-height:1.75}.filters{display:flex;flex-wrap:wrap;gap:13px;align-items:center;margin:14px 0}.filters label{display:flex;align-items:center;gap:7px;font-size:14px}select,input[type=range]{accent-color:#287a94}select{background:white;color:#275462;border-radius:7px;border:1px solid #b2c9c1;padding:9px;font:inherit}.cols{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:15px}.can{border:1px solid #a8c6c4;border-radius:9px;overflow:hidden;background:#1a5369}canvas{width:100%;height:auto;display:block;touch-action:manipulation}.stat{border-bottom:1px solid #dde7e0;padding:10px 0}.stat b{font-size:23px;display:block;font-variant-numeric:tabular-nums}.stat small{font-size:12px;color:#698083}#gridInfo{background:#edf5f1;border:1px solid #cddcd5;border-radius:8px;padding:11px;margin-top:10px;min-height:48px}.gategrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.gate{border:1px solid #d1dfd6;background:#f1f6f1;padding:11px;border-radius:9px;font-size:12px;line-height:1.6}.gate b{font-size:14px;display:block;margin:0 0 6px}.minicards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.mini{background:#f1f7f2;border:1px solid #cadbd1;border-radius:9px;padding:14px}.mini b{font-size:17px;display:block}.mini small{color:#617c81}.legend{display:flex;gap:15px;flex-wrap:wrap;font-size:13px;margin:9px 0;color:#617a7c}.legend span{display:flex;align-items:center;gap:5px}.legend i{display:inline-block;width:15px;height:15px;border-radius:2px}footer{text-align:center;color:#688082;font-size:12px;padding:16px}@media(max-width:860px){.cols{grid-template-columns:1fr}.gategrid{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}.minicards{grid-template-columns:1fr}}@media(max-width:520px){.panel{padding:12px}.filters label{flex-direction:column;align-items:flex-start}header{padding:20px 15px}}
+</style></head><body>
+<header><h1>俄庇娜 B25 · 全球大气环流研究</h1><p>三个相对自转水平 × 三个轴倾角假设，九组正交参数试验；比较12个假设公转相位和37个纬度采样点的日照、海陆热响应、湿润潜势与纬向气流。没有确定任何正式国家的位置、全球风带或真实气候。</p></header><main>
+<nav><a href="../images/orbina-v225r-b25-global-circulation-overview.svg" target="_blank" rel="noopener">三组代表情景专题总图</a><a href="../data/orbina-v225r-b25-global-circulation-factorial.json" target="_blank" rel="noopener">九组合原始数值格网</a><a href="orbina-v225r-b24-extreme-hydrology-atlas.html">B24 局地水文实验</a><a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank" rel="noopener">百科《海洋地理》</a></nav>
+<section class="panel"><h2>可独立调节的两项假设参数</h2><div class="filters">
+<label>相对角速度<select id="rot"><option value="F">F · 较快（1.60）</option><option value="M" selected>M · 中间（1.00）</option><option value="S">S · 较慢（0.55）</option></select></label>
+<label>轴倾角<select id="tilt"><option value="L">L · 10°</option><option value="M" selected>M · 24°</option><option value="H">H · 42°</option></select></label>
+<label>假设地表类型<select id="surface"><option value="ocean">海洋型水汽源</option><option value="land">陆地型热响应</option></select></label>
+<label>图层<select id="layer"><option value="rain">湿润／降水潜势（0–1）</option><option value="solar">太阳辐照日均比例 Q/S₀</option><option value="thermal">相对季节热异常</option><option value="wind">纬向气流倾向（有符号）</option></select></label></div>
+<div class="cols"><div><div class="can"><canvas id="field" width="970" height="590" aria-label="全球纬度季节假设气候格网"></canvas></div>
+<div class="legend"><span><i style="background:#35789d"></i>低日照／偏低湿润</span><span><i style="background:#e2c78d"></i>高日照</span><span><i style="background:#76aac0"></i>偏湿潜势</span><span><i style="background:#c9b69b"></i>相对干燥</span></div><p id="gridInfo">加载模型数据……</p></div>
+<aside><h3>当前方案</h3><div id="stats"></div><p class="muted">低纬环流带范围是人为近似，不是正式哈德莱环流宽度，更不能将雨影或季风直接配给已知城市。</p></aside></div>
+<div class="filters"><label>观察一个假设公转相位（01为几何春分，04为北至日）<input id="phase" type="range" min="1" max="12" step="1" value="4"><b id="phaseText">04</b></label></div>
+<div class="can"><canvas id="profile" width="1150" height="320" aria-label="选定相位沿纬度的季节与风场剖面"></canvas></div>
+<p class="muted">上图横轴为12个等分的公转角相位，纵轴为纬度（90°N至90°S）；下图是所选相位沿纬度方向的相同专题剖面。12期并非俄庇娜正式月份。</p></section>
+<section class="panel"><h2>为什么必须分开考虑自转与轴倾？</h2><div class="minicards">
+<div class="mini"><b>轴倾角：日照几何</b><small>太阳直射点与极昼极夜范围的季节变化，可以使用天文几何演算；实际恒星通量仍未知。</small></div>
+<div class="mini"><b>自转：环流组织</b><small>旋转速度影响行星尺度环流与涡旋，但本图中低纬带半宽只是透明的教学参数化。</small></div>
+<div class="mini"><b>海陆：热与水汽</b><small>海洋型与陆地型仅是两种抽象响应端元。没有给全球海岸线配准，因此不是实际气候分布图。</small></div></div></section>
+<section class="panel"><h2>正式全球气候制图还缺少的五道门槛</h2><div class="gategrid" id="gates"></div>
+<p class="muted">真实大气环流比单纯的三胞模型更复杂。现实研究可参考 <a href="https://www.noaa.gov/jetstream/global/global-atmospheric-circulations" target="_blank" rel="noopener">NOAA全球环流概述</a>、<a href="https://science.nasa.gov/science-research/earth-science/climate-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank" rel="noopener">NASA轴倾角与季节</a>和<a href="https://journals.ametsoc.org/view/journals/clim/34/9/JCLI-D-20-0533.1.xml" target="_blank" rel="noopener">行星自转影响研究</a>。这些参考仅提供方法，不是俄庇娜已确认的大气观测。</p></section>
+</main><footer>ORBINA · V2.25-R-B25 · ATMOSPHERIC CIRCULATION PARAMETER STUDY / NONCANON</footer>
+<script>
+"use strict";
+const $=id=>document.getElementById(id),field=$("field"),fctx=field.getContext("2d"),profile=$("profile"),pctx=profile.getContext("2d");
+let data=null,selected={season:3,latIndex:18};
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+function mix(a,b,t){const rgb=c=>[1,3,5].map(i=>parseInt(c.slice(i,i+2),16)),x=rgb(a),y=rgb(b);return "#"+x.map((v,i)=>Math.round(v+(y[i]-v)*clamp(t,0,1)).toString(16).padStart(2,"0")).join("")}
+function variant(){return data.variants[$("rot").value+$("tilt").value]}
+function values(){const v=variant(),layer=$("layer").value,surface=$("surface").value;
+return layer==="solar"?v.solar_q_over_stellar_flux_rows:layer==="wind"?v.zonal_wind_tendency_rows:layer==="rain"?(surface==="ocean"?v.rain_potential_ocean_rows:v.rain_potential_land_rows):(surface==="ocean"?v.thermal_anomaly_ocean_rows:v.thermal_anomaly_land_rows)}
+function shade(v){const layer=$("layer").value;if(layer==="solar")return mix("#205373","#e4c88d",v/.68);if(layer==="rain")return mix("#c9b69e","#3d91ba",v);return v<0?mix("#e2e6df","#729ec7",Math.abs(v)/(layer==="wind"?1:.6)):mix("#e2e6df","#d0936c",v/(layer==="wind"?1:.6))}
+function drawHeat(){
+if(!data)return;const c=field,w=c.width,h=c.height,ox=85,oy=60,cw=68,ch=13,arr=values(),v=variant();
+fctx.fillStyle="#1a5269";fctx.fillRect(0,0,w,h);fctx.fillStyle="#f1f6ef";fctx.font="bold 20px system-ui";fctx.fillText("研究方案 "+v.id+" · 自转倍率 "+v.omega_ratio+" · 轴倾 "+v.tilt_degrees+"°",30,32);
+for(let row=0;row<37;row++)for(let t=0;t<12;t++){const ix=36-row,cur=arr[t][ix];fctx.fillStyle=shade(cur);fctx.fillRect(ox+t*cw,oy+row*ch,cw+.2,ch+.15)}
+for(const [i,t] of [[0,"90°N"],[9,"45°N"],[18,"0°"],[27,"45°S"],[36,"90°S"]]){fctx.fillStyle="#e0eded";fctx.font="13px system-ui";fctx.fillText(t,22,oy+(i+.5)*ch+5)}
+for(let t=0;t<12;t++){fctx.font="12px system-ui";fctx.fillStyle="#d9e9eb";fctx.fillText(String(t+1).padStart(2,"0"),ox+t*cw+25,oy+37*ch+22)}
+const ph=Number($("phase").value)-1;fctx.strokeStyle="#fff";fctx.lineWidth=3;fctx.strokeRect(ox+ph*cw,oy,cw,37*ch);
+fctx.font="13px system-ui";fctx.fillStyle="#d9e9e8";fctx.fillText("纵：纬度　横：假想公转相位（非正式月份）",31,h-14)}
+function drawProfile(){
+if(!data)return;const c=profile,rows=values(),ph=Number($("phase").value)-1,arr=rows[ph],max=Math.max(...arr.map(Math.abs),0.01),signed=["wind","thermal"].includes($("layer").value);
+pctx.fillStyle="#1a5269";pctx.fillRect(0,0,c.width,c.height);const ox=68,oy=31,w=c.width-115,h=c.height-90;
+for(let i=0;i<=4;i++){let y=oy+i*h/4;pctx.strokeStyle="#4b7383";pctx.lineWidth=1;pctx.beginPath();pctx.moveTo(ox,y);pctx.lineTo(ox+w,y);pctx.stroke()}
+const mn=signed?-max:0,mx=signed?max:Math.max(.01,max),Y=v=>oy+h-(v-mn)/(mx-mn)*h;
+pctx.beginPath();arr.forEach((v,i)=>{const x=ox+i*w/36; i?pctx.lineTo(x,Y(v)):pctx.moveTo(x,Y(v))});pctx.lineWidth=3;pctx.strokeStyle="#99dfd6";pctx.stroke();
+if(signed){pctx.setLineDash([6,4]);pctx.beginPath();pctx.moveTo(ox,Y(0));pctx.lineTo(ox+w,Y(0));pctx.strokeStyle="#dfd0ac";pctx.stroke();pctx.setLineDash([])}
+for(const [i,t] of [[0,"90°S"],[9,"45°S"],[18,"0°"],[27,"45°N"],[36,"90°N"]]){pctx.fillStyle="#d7e8eb";pctx.font="13px system-ui";pctx.fillText(t,ox+i*w/36-18,c.height-29)}
+pctx.fillStyle="#ecf7ef";pctx.font="bold 17px system-ui";pctx.fillText("第 "+String(ph+1).padStart(2,"0")+" 期 · 当前图层的纬向剖面（研究指数）",31,22)}
+function refresh(){
+if(!data)return;const v=variant(),phase=Number($("phase").value)-1,arr=values();
+$("phaseText").textContent=String(phase+1).padStart(2,"0");
+$("stats").innerHTML=[["低纬带半宽（近似）",v.heuristic_hadley_extent_deg+"°"],["高纬带开始（近似）",v.heuristic_polar_edge_deg+"°"],["上升带中心纬度",v.ascent_latitudes_deg[phase]+"°"],["北夏至北极日照比",v.diagnostics.north_summer_polar_solar_fraction.toFixed(3)],["赤道全年平均日照比",v.diagnostics.equator_annual_solar_fraction.toFixed(3)]].map(([name,n])=>"<div class='stat'><b>"+n+"</b><small>"+name+"</small></div>").join("");
+$("gridInfo").textContent="当前参数 "+v.id+"；第"+(phase+1)+"相位，赤道采样值 "+arr[phase][18].toFixed(3)+"。日照Q/S₀仅有几何意义，其它颜色是研究指数；点击格网查看数值。";
+drawHeat();drawProfile();}
+field.addEventListener("pointerdown",e=>{if(!data)return;let rect=field.getBoundingClientRect(),X=(e.clientX-rect.left)*field.width/rect.width,Y=(e.clientY-rect.top)*field.height/rect.height,ix=Math.floor((X-85)/68),row=Math.floor((Y-60)/13);
+if(ix<0||ix>=12||row<0||row>=37)return;selected={season:ix,latIndex:36-row};$("phase").value=String(ix+1);refresh();let la=data.grid.latitude_degrees[36-row],value=values()[ix][36-row];$("gridInfo").textContent="方案"+variant().id+" · 纬度"+la+"° · 第"+(ix+1)+"相位 · 当前图层："+value.toFixed(4)+"。该点不代表任何已命名国家的实际经纬度。"});
+for(const id of ["rot","tilt","surface","layer","phase"])$(id).addEventListener(id==="phase"?"input":"change",refresh);
+fetch("../data/orbina-v225r-b25-global-circulation-factorial.json").then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(d=>{if(Object.keys(d.variants).length!==9||d.grid.latitude_degrees.length!==37)throw Error("九组合网格缺失");data=d;
+$("gates").innerHTML=d.region_mapping_gates.map(g=>"<div class='gate'><b>"+g.id+" · "+g.name+"</b>"+g.requirements+"<p>"+g.status+"</p></div>").join("");refresh();}).catch(e=>$("gridInfo").textContent="无法读取图集："+e.message+"。可通过上方SVG或JSON链接查看源数据。");
+</script></body></html>
