@@ -19,9 +19,9 @@
     "caveat": "B19地图集延续B16暂定经纬制图的假设球面陆地比例约42.76%；所有模型0至100数值只表示相对地势，无法换算真实海拔米数、河流流量、实际国土面积或星球半径。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B25",
-    "status": "B25全球纬向日照与大气环流基础研究：3档自转强度×3档轴倾角，共9正交实验、37纬度采样、12个假想公转角相位，海洋型/陆地型热力和湿润潜势。日照为球面几何，纬向风与环流及降水为明确标注的教学代理，不为已知大陆或国家赋实际纬度和气候。",
-    "viewer": "assets/maps/orbina-v225r-b25-global-circulation-atlas.html",
+    "edition": "V2.25-R-B26",
+    "status": "B26在不改动B16 99片原候选海岸/正式世界地理关系的前提下，叠加B25 9组纬向季节气候潜势，比较候选纬度N(+18)、C(0)、S(-18)三档注册；16主陆地+83海岛原始轮廓完整展示，240×120抽样格仅为研究单位，未赋任何正式国家或海域地理坐标。",
+    "viewer": "assets/maps/orbina-v225r-b26-coast-climate-overlay.html",
     "working_map": "assets/images/orbina-v225r-b18-relative-relief-hydrography.svg",
     "equal_area_map": "assets/images/orbina-v225r-b16-mollweide.svg",
     "unchanged_coast_geometry": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
@@ -29,7 +29,7 @@
     "named_geographic_canon": "assets/data/orbina-v225r-b17-confirmed-geographic-register.json",
     "B17_coast_shape_study": "assets/data/orbina-v225r-b17-physiography-study.json",
     "B18_relative_terrain_and_routing": "assets/data/orbina-v225r-b18-relative-elevation-hydrology.json",
-    "audit": "assets/data/orbina-v225r-b25-circulation-audit.json",
+    "audit": "assets/data/orbina-v225r-b26-registration-audit.json",
     "stats": {
       "unchanged_candidate_land_polygons": 99,
       "geography_chapters": 10,
@@ -94,9 +94,17 @@
       "B25_solar_geometry_grid_values": 3996,
       "B25_ocean_land_climate_proxy_cells": 7992,
       "B25_country_coordinates_mapped": 0,
-      "B25_official_climate_belts_adopted": 0
+      "B25_official_climate_belts_adopted": 0,
+      "B26_B16_candidate_land_polygons": 99,
+      "B26_major_candidate_regions": 16,
+      "B26_candidate_islands": 83,
+      "B26_latitude_registration_scenarios": 3,
+      "B26_angular_spin_tilt_climate_options": 9,
+      "B26_land_sampling_cells": 9996,
+      "B26_full_mask_cells": 28800,
+      "B26_canonical_country_coordinates_created": 0
     },
-    "scientific_disclaimer": "B25 is anonymous latitudinal circular-orbit insolation Q/S0 plus synthetic W(omega) Hadley-width, zonal winds, rain-potential and ocean/land thermal lag proxies; it is NOT a GCM, an actual Orbina spin/tilt parameter selection, rainfall observation, wind measurement or official country/sea latitude mapping. Unknown actual radius/gravity/atmosphere/stellar irradiance.",
+    "scientific_disclaimer": "B26's latitude-registration formula reassigns screen-row latitudes and is NOT a physically confirmed continental translation or a validated equal-area globe projection; retains B16 unsanctioned coastline geometry. B25 solar geometry remains idealized, rainfall/thermal/zonal wind purely heuristic. No planet size, official spin, tilt, state/sea coordinates, real precipitation, continent area km2 or true wind established.",
     "canon_guards": [
       "United City and People's Paradise same central supercontinent",
       "Southern outlet big inner sea, North Crown peninsula, eastern gate and Resistance Arc as previously established",
@@ -105,7 +113,7 @@
       "25 confirmed major seas names with unspecified exact world coordinates",
       "Shattered Sea canon 32 intertwined island chains and ~38% in tropical zone"
     ],
-    "version_dependency": "B16 draft coast -> B17 atlas -> B18 terrain -> B19–B20 drainage -> B21 morphology -> B22 H4 terrain -> B23 seasonal water proxy -> B24 extremes and conditional wind assumptions -> B25 independent 3×3 spin/tilt global latitude-season potential fields (do NOT assign to continents).",
+    "version_dependency": "B16 99 draft coast shapes (unchanged) -> B25 anonymous global 9-factorial zonal climate fields -> B26 3 latitude relabeling overlays × 9 climate cases × land/ocean endmembers, without assigning any official nation's position. B17-B24 source geographic and hydrologic studies preserved.",
     "B19_H2_watershed_map": "assets/images/orbina-v225r-b19-h2-catchments.svg",
     "B18_full_viewer": "assets/maps/orbina-v225r-b18-relative-relief-atlas.html",
     "B19_H2_catchment_and_precipitation_data": "assets/data/orbina-v225r-b19-h2-catchments.json",
@@ -127,7 +135,10 @@
     "B23_full_viewer": "assets/maps/orbina-v225r-b23-h4-water-and-sediment-atlas.html",
     "B25_global_circulation_overview": "assets/images/orbina-v225r-b25-global-circulation-overview.svg",
     "B25_factorial_model": "assets/data/orbina-v225r-b25-global-circulation-factorial.json",
-    "B24_previous_viewer": "assets/maps/orbina-v225r-b24-extreme-hydrology-atlas.html"
+    "B24_previous_viewer": "assets/maps/orbina-v225r-b24-extreme-hydrology-atlas.html",
+    "B26_three_scenario_overview": "assets/images/orbina-v225r-b26-three-latitude-overlays.svg",
+    "B26_coast_climate_data": "assets/data/orbina-v225r-b26-coast-climate-registration.json",
+    "B25_previous_viewer": "assets/maps/orbina-v225r-b25-global-circulation-atlas.html"
   },
-  "following_work": "B26：先制作海陆球面投影候选方案与九组全球纬向气候数据的独立叠合检验，保护已确定国家及水系相对位置。不批准任一真实行星角速度/轴倾角、纬度带、山系高度和降水实测参数以前，气候只用于条件性分析。"
+  "following_work": "B27检查全球候选大陆的球面投影连续性与极地形态，通过条件性海陆源区及相对山脉走向探索可证伪的雨影/河流补给模型。不得在正式国家位置、星球半径和真实风场确认前定稿经纬与降水。"
 }
