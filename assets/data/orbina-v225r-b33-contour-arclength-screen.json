@@ -1,0 +1,2063 @@
+{
+  "edition": "V2.25-R-B33",
+  "status": "NONCANON_GLOBAL_CONTOUR_ARC_SCREEN_WITHOUT_SOURCE_GEOMETRY_MODIFICATION",
+  "date": "2026-10-26",
+  "sources": {
+    "B16": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+    "B32": "assets/data/orbina-v225r-b32-exact-chord-shoreline-audit.json",
+    "blob_sha": {
+      "B16": "d580bd5d0410b1c533acfe9709e99092d302584c",
+      "B32": "5885883b32fc97f74488db63cdb18d4d16a8313d"
+    }
+  },
+  "frame": {
+    "x_units": 2400,
+    "y_units": 1200,
+    "source": "B16 original planar noncanon coordinates",
+    "distance_unit": "drawing units, not kilometers",
+    "global_wrap": "Longitude wrap remains a rendering property; within-polygon edge screening here uses the original unwrapped B16 coordinates."
+  },
+  "algorithm": {
+    "scope": "All polygon edge pairs after only cyclic immediate-adjacency rejection. Perimeter/shorter arc from segment interpolation, independent of vertex index distance.",
+    "global_proximity_hash_cell_drawing": 16,
+    "maximum_cross_section_gap_drawing": 12,
+    "minimum_contour_arc_drawing": "max(10, 0.03 × source polygon perimeter)",
+    "minimum_shorter_arc_to_chord_ratio": 4,
+    "site_cluster_midpoint_radius_drawing": 10,
+    "within_polygon_land_water": "Representative chord intersected with every source polygon boundary edge; midpoint of intersection-separated open intervals is tested for land/water parity.",
+    "warning": "All thresholds are exploratory heuristics, not geologic measurements. Candidate completeness is limited to gap <12 in B16 planar drawing units. Islands smaller than thresholds or wider isthmuses may be missed. Clustering based on midpoint radius can merge separate nearby features."
+  },
+  "summary": {
+    "original_polygons": 99,
+    "original_vertices": 9621,
+    "edge_pairs_examined_after_bbox": 109007,
+    "edge_pairs_with_gap_below12": 95631,
+    "qualifying_edge_pairs": 67,
+    "qualifying_polygon_count": 8,
+    "site_clusters": 9,
+    "site_classes": {
+      "continuous_land": 6,
+      "continuous_water": 3
+    },
+    "extreme_tip_regions": [
+      "S01",
+      "S06"
+    ],
+    "original_geography_source_unchanged": true,
+    "physical_isthmuses_confirmed": 0,
+    "physical_straits_confirmed": 0
+  },
+  "original_B32_prior": {
+    "same_polygon_screened": 56,
+    "previous_classes": {
+      "uninterrupted_land_cross_section": 21,
+      "uninterrupted_water_cross_section": 9,
+      "crosses_land_water_boundary": 26,
+      "crossing_count_histogram": {
+        "0": 30,
+        "1": 21,
+        "2": 4,
+        "3": 1
+      },
+      "previous_B31_ambiguous": 21,
+      "previous_B31_misclassified_by_four_sample": 5,
+      "all_B31_previous_ambiguous_cross_land_water_boundary": true,
+      "multi_crossing_candidates": [
+        "N12",
+        "N28",
+        "N48",
+        "N49",
+        "N53"
+      ],
+      "zero_coincident_boundary_overlap": true,
+      "near_index_separation_threshold_count": 53
+    },
+    "explanation": "B32 used index-separated alert candidates; B33 re-screens all same-polygon edge pairs with contour arclength and arc/chord ratio. Counts and candidate IDs are not one-to-one comparable."
+  },
+  "per_polygon": [
+    {
+      "id": 0,
+      "name": "continental-nucleus",
+      "vertices": 143,
+      "perimeter": 3567.47182,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 1,
+      "name": "seam-crossing-western-long-continent",
+      "vertices": 79,
+      "perimeter": 2013.32403,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 2,
+      "name": "southern-ocean-west-ridge",
+      "vertices": 23,
+      "perimeter": 678.42253,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 3,
+      "name": "southern-ocean-east-ridge",
+      "vertices": 25,
+      "perimeter": 522.81238,
+      "candidate_pairs": 1
+    },
+    {
+      "id": 4,
+      "name": "southwestern-fractured-northern-block",
+      "vertices": 43,
+      "perimeter": 901.88264,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 5,
+      "name": "southwest-southern-west-subcontinent",
+      "vertices": 17,
+      "perimeter": 430.04102,
+      "candidate_pairs": 1
+    },
+    {
+      "id": 6,
+      "name": "southwest-southern-east-subcontinent",
+      "vertices": 20,
+      "perimeter": 465.0696,
+      "candidate_pairs": 3
+    },
+    {
+      "id": 7,
+      "name": "b14-ne-001",
+      "vertices": 400,
+      "perimeter": 787.47101,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 8,
+      "name": "b14-ne-002",
+      "vertices": 400,
+      "perimeter": 628.0869,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 9,
+      "name": "b14-se-001",
+      "vertices": 400,
+      "perimeter": 732.54471,
+      "candidate_pairs": 30
+    },
+    {
+      "id": 10,
+      "name": "b14-se-002",
+      "vertices": 400,
+      "perimeter": 554.75334,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 11,
+      "name": "b14-se-003",
+      "vertices": 400,
+      "perimeter": 610.2301,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 12,
+      "name": "b14-se-004",
+      "vertices": 400,
+      "perimeter": 517.49013,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 13,
+      "name": "b14-se-005",
+      "vertices": 400,
+      "perimeter": 415.47324,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 14,
+      "name": "b14-se-006",
+      "vertices": 400,
+      "perimeter": 535.85797,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 15,
+      "name": "b14-se-007",
+      "vertices": 400,
+      "perimeter": 358.61519,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 16,
+      "name": "western-rift-and-shelf-islands-3-0",
+      "vertices": 8,
+      "perimeter": 102.6715,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 17,
+      "name": "southern-shelf-remnants-1-0",
+      "vertices": 7,
+      "perimeter": 117.85628,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 18,
+      "name": "lower-ocean-island-arc-1-1",
+      "vertices": 7,
+      "perimeter": 82.94025,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 19,
+      "name": "western-rift-and-shelf-islands-2-1",
+      "vertices": 8,
+      "perimeter": 86.62863,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 20,
+      "name": "southern-shelf-remnants-3-0",
+      "vertices": 8,
+      "perimeter": 81.68137,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 21,
+      "name": "western-rift-and-shelf-islands-3-4",
+      "vertices": 8,
+      "perimeter": 76.48999,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 22,
+      "name": "western-rift-and-shelf-islands-1-0",
+      "vertices": 7,
+      "perimeter": 73.39679,
+      "candidate_pairs": 1
+    },
+    {
+      "id": 23,
+      "name": "western-rift-and-shelf-islands-2-2",
+      "vertices": 8,
+      "perimeter": 53.30588,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 24,
+      "name": "northern-trench-island-arc-3-2",
+      "vertices": 7,
+      "perimeter": 62.42974,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 25,
+      "name": "western-rift-and-shelf-islands-2-3",
+      "vertices": 6,
+      "perimeter": 55.05098,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 26,
+      "name": "western-rift-and-shelf-islands-1-4",
+      "vertices": 7,
+      "perimeter": 53.23388,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 27,
+      "name": "western-rift-and-shelf-islands-1-2",
+      "vertices": 5,
+      "perimeter": 55.64032,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 28,
+      "name": "western-rift-and-shelf-islands-1-3",
+      "vertices": 6,
+      "perimeter": 48.44948,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 29,
+      "name": "southern-shelf-remnants-1-1",
+      "vertices": 6,
+      "perimeter": 46.23369,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 30,
+      "name": "western-rift-and-shelf-islands-3-2",
+      "vertices": 4,
+      "perimeter": 30.5204,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 31,
+      "name": "southwestern-rift-islet-6",
+      "vertices": 4,
+      "perimeter": 35.00662,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 32,
+      "name": "southwestern-rift-islet-2",
+      "vertices": 4,
+      "perimeter": 32.05222,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 33,
+      "name": "southwestern-rift-islet-3",
+      "vertices": 3,
+      "perimeter": 34.44188,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 34,
+      "name": "southwestern-rift-islet-4",
+      "vertices": 4,
+      "perimeter": 21.91172,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 35,
+      "name": "southwestern-rift-islet-5",
+      "vertices": 4,
+      "perimeter": 28.1102,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 36,
+      "name": "southwestern-rift-islet-1",
+      "vertices": 3,
+      "perimeter": 25.21173,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 37,
+      "name": "southwestern-rift-islet-7",
+      "vertices": 3,
+      "perimeter": 29.41248,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 38,
+      "name": "b04-rift-sr-a-1",
+      "vertices": 5,
+      "perimeter": 29.15303,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 39,
+      "name": "b04-rift-sr-a-2",
+      "vertices": 6,
+      "perimeter": 40.99992,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 40,
+      "name": "b04-rift-sr-a-3",
+      "vertices": 7,
+      "perimeter": 36.82968,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 41,
+      "name": "b04-rift-sw-c-2",
+      "vertices": 6,
+      "perimeter": 40.58044,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 42,
+      "name": "b14-ne-003",
+      "vertices": 88,
+      "perimeter": 201.06233,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 43,
+      "name": "b14-ne-004",
+      "vertices": 130,
+      "perimeter": 251.0864,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 44,
+      "name": "b14-ne-005",
+      "vertices": 88,
+      "perimeter": 58.27742,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 45,
+      "name": "b14-ne-006",
+      "vertices": 88,
+      "perimeter": 268.66642,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 46,
+      "name": "b14-ne-007",
+      "vertices": 130,
+      "perimeter": 225.53266,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 47,
+      "name": "b14-ne-008",
+      "vertices": 130,
+      "perimeter": 239.74119,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 48,
+      "name": "b14-ne-010",
+      "vertices": 88,
+      "perimeter": 241.46518,
+      "candidate_pairs": 3
+    },
+    {
+      "id": 49,
+      "name": "b14-ne-011",
+      "vertices": 88,
+      "perimeter": 191.25191,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 50,
+      "name": "b14-ne-012",
+      "vertices": 88,
+      "perimeter": 109.33871,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 51,
+      "name": "b14-ne-013",
+      "vertices": 88,
+      "perimeter": 83.79347,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 52,
+      "name": "b14-ne-014",
+      "vertices": 88,
+      "perimeter": 103.42892,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 53,
+      "name": "b14-ne-015",
+      "vertices": 88,
+      "perimeter": 74.23441,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 54,
+      "name": "b14-ne-017",
+      "vertices": 88,
+      "perimeter": 193.14208,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 55,
+      "name": "b14-ne-018",
+      "vertices": 88,
+      "perimeter": 73.45432,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 56,
+      "name": "b14-ne-019",
+      "vertices": 88,
+      "perimeter": 53.27947,
+      "candidate_pairs": 27
+    },
+    {
+      "id": 57,
+      "name": "b14-ne-020",
+      "vertices": 88,
+      "perimeter": 103.56574,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 58,
+      "name": "b14-ne-021",
+      "vertices": 88,
+      "perimeter": 116.87239,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 59,
+      "name": "b14-ne-023",
+      "vertices": 88,
+      "perimeter": 233.07928,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 60,
+      "name": "b14-se-009",
+      "vertices": 88,
+      "perimeter": 109.38951,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 61,
+      "name": "b14-se-010",
+      "vertices": 88,
+      "perimeter": 123.61356,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 62,
+      "name": "b14-se-011",
+      "vertices": 130,
+      "perimeter": 346.46486,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 63,
+      "name": "b14-se-012",
+      "vertices": 88,
+      "perimeter": 129.84837,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 64,
+      "name": "b14-se-013",
+      "vertices": 88,
+      "perimeter": 120.41084,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 65,
+      "name": "b14-se-014",
+      "vertices": 130,
+      "perimeter": 305.9271,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 66,
+      "name": "b14-se-016",
+      "vertices": 88,
+      "perimeter": 131.59463,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 67,
+      "name": "b14-se-017",
+      "vertices": 88,
+      "perimeter": 118.00697,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 68,
+      "name": "b14-se-018",
+      "vertices": 130,
+      "perimeter": 270.63295,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 69,
+      "name": "b14-se-019",
+      "vertices": 88,
+      "perimeter": 106.27307,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 70,
+      "name": "b14-se-020",
+      "vertices": 130,
+      "perimeter": 332.70559,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 71,
+      "name": "b14-se-021",
+      "vertices": 130,
+      "perimeter": 227.61819,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 72,
+      "name": "b14-se-022",
+      "vertices": 88,
+      "perimeter": 214.07471,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 73,
+      "name": "b14-se-023",
+      "vertices": 88,
+      "perimeter": 143.96393,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 74,
+      "name": "b14-se-024",
+      "vertices": 88,
+      "perimeter": 109.71048,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 75,
+      "name": "b14-se-025",
+      "vertices": 130,
+      "perimeter": 215.31315,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 76,
+      "name": "b14-se-026",
+      "vertices": 88,
+      "perimeter": 114.52723,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 77,
+      "name": "b14-se-027",
+      "vertices": 88,
+      "perimeter": 41.70627,
+      "candidate_pairs": 1
+    },
+    {
+      "id": 78,
+      "name": "b14-se-029",
+      "vertices": 88,
+      "perimeter": 98.03249,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 79,
+      "name": "b14-se-030",
+      "vertices": 88,
+      "perimeter": 46.12599,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 80,
+      "name": "b14-se-031",
+      "vertices": 88,
+      "perimeter": 291.92625,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 81,
+      "name": "b14-se-032",
+      "vertices": 88,
+      "perimeter": 83.99165,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 82,
+      "name": "b14-se-034",
+      "vertices": 130,
+      "perimeter": 272.89624,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 83,
+      "name": "b14-se-035",
+      "vertices": 88,
+      "perimeter": 44.23444,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 84,
+      "name": "b14-se-036",
+      "vertices": 88,
+      "perimeter": 86.88869,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 85,
+      "name": "b14-se-038",
+      "vertices": 88,
+      "perimeter": 189.68641,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 86,
+      "name": "b14-se-039",
+      "vertices": 88,
+      "perimeter": 203.91949,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 87,
+      "name": "b14-se-040",
+      "vertices": 88,
+      "perimeter": 126.00012,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 88,
+      "name": "b14-se-041",
+      "vertices": 88,
+      "perimeter": 187.52999,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 89,
+      "name": "b14-se-042",
+      "vertices": 88,
+      "perimeter": 142.67701,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 90,
+      "name": "b14-se-043",
+      "vertices": 88,
+      "perimeter": 63.89782,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 91,
+      "name": "b14-se-045",
+      "vertices": 88,
+      "perimeter": 101.99952,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 92,
+      "name": "b14-se-047",
+      "vertices": 130,
+      "perimeter": 207.64282,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 93,
+      "name": "b14-se-048",
+      "vertices": 88,
+      "perimeter": 147.85047,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 94,
+      "name": "b14-se-049",
+      "vertices": 88,
+      "perimeter": 187.63616,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 95,
+      "name": "b14-se-050",
+      "vertices": 88,
+      "perimeter": 31.03943,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 96,
+      "name": "b14-se-051",
+      "vertices": 88,
+      "perimeter": 125.71286,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 97,
+      "name": "b14-se-052",
+      "vertices": 130,
+      "perimeter": 277.80002,
+      "candidate_pairs": 0
+    },
+    {
+      "id": 98,
+      "name": "b14-se-053",
+      "vertices": 88,
+      "perimeter": 63.12954,
+      "candidate_pairs": 0
+    }
+  ],
+  "qualifying_edge_pairs": [
+    {
+      "polygon_id": 6,
+      "source_edges": [
+        1,
+        19
+      ],
+      "gap_drawing": 0.291714,
+      "shorter_contour_arc_drawing": 33.78818,
+      "arc_to_gap_ratio": 115.8263,
+      "midpoint": [
+        516.92945589,
+        983.86296678
+      ]
+    },
+    {
+      "polygon_id": 48,
+      "source_edges": [
+        20,
+        24
+      ],
+      "gap_drawing": 2.149581,
+      "shorter_contour_arc_drawing": 14.14707,
+      "arc_to_gap_ratio": 6.58131,
+      "midpoint": [
+        1715.97688662,
+        228.80922806
+      ]
+    },
+    {
+      "polygon_id": 48,
+      "source_edges": [
+        19,
+        24
+      ],
+      "gap_drawing": 2.845975,
+      "shorter_contour_arc_drawing": 15.41197,
+      "arc_to_gap_ratio": 5.41536,
+      "midpoint": [
+        1715.99561802,
+        229.3706107
+      ]
+    },
+    {
+      "polygon_id": 5,
+      "source_edges": [
+        2,
+        16
+      ],
+      "gap_drawing": 3.410463,
+      "shorter_contour_arc_drawing": 34.62808,
+      "arc_to_gap_ratio": 10.15348,
+      "midpoint": [
+        341.34724061,
+        1054.12872425
+      ]
+    },
+    {
+      "polygon_id": 48,
+      "source_edges": [
+        18,
+        24
+      ],
+      "gap_drawing": 3.498092,
+      "shorter_contour_arc_drawing": 15.98509,
+      "arc_to_gap_ratio": 4.56966,
+      "midpoint": [
+        1716.30816893,
+        229.49613009
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        358,
+        371
+      ],
+      "gap_drawing": 4.836733,
+      "shorter_contour_arc_drawing": 22.62793,
+      "arc_to_gap_ratio": 4.67835,
+      "midpoint": [
+        1743.54165939,
+        554.13009041
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        358,
+        370
+      ],
+      "gap_drawing": 4.844258,
+      "shorter_contour_arc_drawing": 22.35803,
+      "arc_to_gap_ratio": 4.61537,
+      "midpoint": [
+        1743.407,
+        554.139
+      ]
+    },
+    {
+      "polygon_id": 77,
+      "source_edges": [
+        21,
+        64
+      ],
+      "gap_drawing": 5.184255,
+      "shorter_contour_arc_drawing": 20.81993,
+      "arc_to_gap_ratio": 4.01599,
+      "midpoint": [
+        1517.36,
+        1085.345
+      ]
+    },
+    {
+      "polygon_id": 3,
+      "source_edges": [
+        1,
+        23
+      ],
+      "gap_drawing": 5.239003,
+      "shorter_contour_arc_drawing": 23.73096,
+      "arc_to_gap_ratio": 4.52967,
+      "midpoint": [
+        1064.63970086,
+        989.72527398
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        358,
+        372
+      ],
+      "gap_drawing": 5.494881,
+      "shorter_contour_arc_drawing": 25.7725,
+      "arc_to_gap_ratio": 4.69027,
+      "midpoint": [
+        1745.08344705,
+        553.92939299
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        359,
+        372
+      ],
+      "gap_drawing": 5.516783,
+      "shorter_contour_arc_drawing": 25.2814,
+      "arc_to_gap_ratio": 4.58264,
+      "midpoint": [
+        1744.8655,
+        554.0425
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        357,
+        371
+      ],
+      "gap_drawing": 5.884941,
+      "shorter_contour_arc_drawing": 27.63617,
+      "arc_to_gap_ratio": 4.69608,
+      "midpoint": [
+        1745.89626049,
+        553.44905099
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        357,
+        372
+      ],
+      "gap_drawing": 5.89064,
+      "shorter_contour_arc_drawing": 27.89522,
+      "arc_to_gap_ratio": 4.73552,
+      "midpoint": [
+        1746.0255,
+        553.4405
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        21,
+        65
+      ],
+      "gap_drawing": 6.032181,
+      "shorter_contour_arc_drawing": 26.53722,
+      "arc_to_gap_ratio": 4.39927,
+      "midpoint": [
+        1939.60117697,
+        35.77399661
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        21,
+        66
+      ],
+      "gap_drawing": 6.032181,
+      "shorter_contour_arc_drawing": 26.53722,
+      "arc_to_gap_ratio": 4.39927,
+      "midpoint": [
+        1939.60117697,
+        35.77399661
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        20,
+        65
+      ],
+      "gap_drawing": 6.036191,
+      "shorter_contour_arc_drawing": 26.31723,
+      "arc_to_gap_ratio": 4.35991,
+      "midpoint": [
+        1939.71,
+        35.79
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        20,
+        66
+      ],
+      "gap_drawing": 6.036191,
+      "shorter_contour_arc_drawing": 26.31723,
+      "arc_to_gap_ratio": 4.35991,
+      "midpoint": [
+        1939.71,
+        35.79
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        22,
+        65
+      ],
+      "gap_drawing": 6.036791,
+      "shorter_contour_arc_drawing": 25.8715,
+      "arc_to_gap_ratio": 4.28564,
+      "midpoint": [
+        1939.17075676,
+        35.70854054
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        21,
+        64
+      ],
+      "gap_drawing": 6.039288,
+      "shorter_contour_arc_drawing": 25.69786,
+      "arc_to_gap_ratio": 4.25511,
+      "midpoint": [
+        1939.085,
+        35.695
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        22,
+        64
+      ],
+      "gap_drawing": 6.039288,
+      "shorter_contour_arc_drawing": 25.69786,
+      "arc_to_gap_ratio": 4.25511,
+      "midpoint": [
+        1939.085,
+        35.695
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        22,
+        66
+      ],
+      "gap_drawing": 6.050256,
+      "shorter_contour_arc_drawing": 26.27492,
+      "arc_to_gap_ratio": 4.34278,
+      "midpoint": [
+        1939.37,
+        35.74
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        23,
+        64
+      ],
+      "gap_drawing": 6.090074,
+      "shorter_contour_arc_drawing": 24.9933,
+      "arc_to_gap_ratio": 4.10394,
+      "midpoint": [
+        1938.735,
+        35.655
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        23,
+        65
+      ],
+      "gap_drawing": 6.090074,
+      "shorter_contour_arc_drawing": 24.9933,
+      "arc_to_gap_ratio": 4.10394,
+      "midpoint": [
+        1938.735,
+        35.655
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        20,
+        64
+      ],
+      "gap_drawing": 6.090665,
+      "shorter_contour_arc_drawing": 26.38517,
+      "arc_to_gap_ratio": 4.33207,
+      "midpoint": [
+        1939.425,
+        35.745
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        20,
+        67
+      ],
+      "gap_drawing": 6.099202,
+      "shorter_contour_arc_drawing": 25.41539,
+      "arc_to_gap_ratio": 4.167,
+      "midpoint": [
+        1940.15864865,
+        35.82810811
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        19,
+        66
+      ],
+      "gap_drawing": 6.10286,
+      "shorter_contour_arc_drawing": 25.35283,
+      "arc_to_gap_ratio": 4.15425,
+      "midpoint": [
+        1940.18747729,
+        35.852136
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        21,
+        67
+      ],
+      "gap_drawing": 6.105678,
+      "shorter_contour_arc_drawing": 25.69651,
+      "arc_to_gap_ratio": 4.20863,
+      "midpoint": [
+        1940.02,
+        35.805
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        19,
+        65
+      ],
+      "gap_drawing": 6.11,
+      "shorter_contour_arc_drawing": 25.64813,
+      "arc_to_gap_ratio": 4.19773,
+      "midpoint": [
+        1940.04,
+        35.845
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        22,
+        63
+      ],
+      "gap_drawing": 6.1318,
+      "shorter_contour_arc_drawing": 24.58665,
+      "arc_to_gap_ratio": 4.0097,
+      "midpoint": [
+        1938.54187752,
+        35.58607172
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        21,
+        63
+      ],
+      "gap_drawing": 6.152934,
+      "shorter_contour_arc_drawing": 25.09619,
+      "arc_to_gap_ratio": 4.07874,
+      "midpoint": [
+        1938.795,
+        35.615
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        23,
+        66
+      ],
+      "gap_drawing": 6.167171,
+      "shorter_contour_arc_drawing": 25.57036,
+      "arc_to_gap_ratio": 4.14621,
+      "midpoint": [
+        1939.02,
+        35.7
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        22,
+        67
+      ],
+      "gap_drawing": 6.188578,
+      "shorter_contour_arc_drawing": 26.38382,
+      "arc_to_gap_ratio": 4.26331,
+      "midpoint": [
+        1939.68,
+        35.755
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        18,
+        65
+      ],
+      "gap_drawing": 6.194199,
+      "shorter_contour_arc_drawing": 24.99621,
+      "arc_to_gap_ratio": 4.03542,
+      "midpoint": [
+        1940.365,
+        35.87
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        21,
+        68
+      ],
+      "gap_drawing": 6.220265,
+      "shorter_contour_arc_drawing": 25.03379,
+      "arc_to_gap_ratio": 4.02455,
+      "midpoint": [
+        1940.35,
+        35.835
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        19,
+        64
+      ],
+      "gap_drawing": 6.226146,
+      "shorter_contour_arc_drawing": 26.22519,
+      "arc_to_gap_ratio": 4.21211,
+      "midpoint": [
+        1939.755,
+        35.8
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        20,
+        63
+      ],
+      "gap_drawing": 6.269179,
+      "shorter_contour_arc_drawing": 25.78351,
+      "arc_to_gap_ratio": 4.11274,
+      "midpoint": [
+        1939.135,
+        35.665
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        18,
+        64
+      ],
+      "gap_drawing": 6.367959,
+      "shorter_contour_arc_drawing": 25.57327,
+      "arc_to_gap_ratio": 4.01593,
+      "midpoint": [
+        1940.08,
+        35.825
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        23,
+        67
+      ],
+      "gap_drawing": 6.371789,
+      "shorter_contour_arc_drawing": 26.19109,
+      "arc_to_gap_ratio": 4.11048,
+      "midpoint": [
+        1939.33,
+        35.715
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        22,
+        68
+      ],
+      "gap_drawing": 6.373421,
+      "shorter_contour_arc_drawing": 25.7211,
+      "arc_to_gap_ratio": 4.03568,
+      "midpoint": [
+        1940.01,
+        35.785
+      ]
+    },
+    {
+      "polygon_id": 56,
+      "source_edges": [
+        19,
+        63
+      ],
+      "gap_drawing": 6.463134,
+      "shorter_contour_arc_drawing": 26.45261,
+      "arc_to_gap_ratio": 4.09285,
+      "midpoint": [
+        1939.465,
+        35.72
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        357,
+        373
+      ],
+      "gap_drawing": 6.729949,
+      "shorter_contour_arc_drawing": 31.07485,
+      "arc_to_gap_ratio": 4.6174,
+      "midpoint": [
+        1747.59648899,
+        553.30625131
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        358,
+        373
+      ],
+      "gap_drawing": 6.73502,
+      "shorter_contour_arc_drawing": 30.81353,
+      "arc_to_gap_ratio": 4.57512,
+      "midpoint": [
+        1747.483,
+        553.371
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        356,
+        372
+      ],
+      "gap_drawing": 6.956574,
+      "shorter_contour_arc_drawing": 32.01969,
+      "arc_to_gap_ratio": 4.6028,
+      "midpoint": [
+        1747.93067176,
+        552.81033949
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        356,
+        373
+      ],
+      "gap_drawing": 7.054109,
+      "shorter_contour_arc_drawing": 33.18867,
+      "arc_to_gap_ratio": 4.70487,
+      "midpoint": [
+        1748.5145,
+        552.7825
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        356,
+        371
+      ],
+      "gap_drawing": 7.17315,
+      "shorter_contour_arc_drawing": 30.27036,
+      "arc_to_gap_ratio": 4.21995,
+      "midpoint": [
+        1747.057,
+        552.852
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        355,
+        373
+      ],
+      "gap_drawing": 8.026969,
+      "shorter_contour_arc_drawing": 35.91785,
+      "arc_to_gap_ratio": 4.47465,
+      "midpoint": [
+        1749.71327424,
+        552.19952884
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        355,
+        372
+      ],
+      "gap_drawing": 8.047525,
+      "shorter_contour_arc_drawing": 35.34302,
+      "arc_to_gap_ratio": 4.39179,
+      "midpoint": [
+        1749.426,
+        552.2085
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        356,
+        374
+      ],
+      "gap_drawing": 8.107389,
+      "shorter_contour_arc_drawing": 36.21373,
+      "arc_to_gap_ratio": 4.46676,
+      "midpoint": [
+        1750.01788833,
+        552.70778782
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        357,
+        374
+      ],
+      "gap_drawing": 8.10813,
+      "shorter_contour_arc_drawing": 36.10409,
+      "arc_to_gap_ratio": 4.45283,
+      "midpoint": [
+        1749.9715,
+        552.737
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        355,
+        374
+      ],
+      "gap_drawing": 8.361256,
+      "shorter_contour_arc_drawing": 38.25844,
+      "arc_to_gap_ratio": 4.57568,
+      "midpoint": [
+        1750.883,
+        552.163
+      ]
+    },
+    {
+      "polygon_id": 22,
+      "source_edges": [
+        0,
+        4
+      ],
+      "gap_drawing": 8.477919,
+      "shorter_contour_arc_drawing": 34.85708,
+      "arc_to_gap_ratio": 4.11151,
+      "midpoint": [
+        428.27905774,
+        559.93701639
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        354,
+        373
+      ],
+      "gap_drawing": 9.07371,
+      "shorter_contour_arc_drawing": 39.36094,
+      "arc_to_gap_ratio": 4.33791,
+      "midpoint": [
+        1751.25861038,
+        551.62764446
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        354,
+        374
+      ],
+      "gap_drawing": 9.107016,
+      "shorter_contour_arc_drawing": 40.1391,
+      "arc_to_gap_ratio": 4.40749,
+      "midpoint": [
+        1751.6475,
+        551.6155
+      ]
+    },
+    {
+      "polygon_id": 6,
+      "source_edges": [
+        1,
+        18
+      ],
+      "gap_drawing": 9.369137,
+      "shorter_contour_arc_drawing": 45.50558,
+      "arc_to_gap_ratio": 4.85697,
+      "midpoint": [
+        512.13259138,
+        981.94128364
+      ]
+    },
+    {
+      "polygon_id": 6,
+      "source_edges": [
+        0,
+        18
+      ],
+      "gap_drawing": 9.605242,
+      "shorter_contour_arc_drawing": 43.38899,
+      "arc_to_gap_ratio": 4.51722,
+      "midpoint": [
+        512.91583174,
+        981.22958187
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        355,
+        375
+      ],
+      "gap_drawing": 9.61365,
+      "shorter_contour_arc_drawing": 41.12969,
+      "arc_to_gap_ratio": 4.27826,
+      "midpoint": [
+        1752.3185,
+        552.144
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        356,
+        375
+      ],
+      "gap_drawing": 9.61365,
+      "shorter_contour_arc_drawing": 41.12969,
+      "arc_to_gap_ratio": 4.27826,
+      "midpoint": [
+        1752.3185,
+        552.144
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        354,
+        375
+      ],
+      "gap_drawing": 9.827852,
+      "shorter_contour_arc_drawing": 43.01035,
+      "arc_to_gap_ratio": 4.37637,
+      "midpoint": [
+        1753.083,
+        551.5965
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        353,
+        374
+      ],
+      "gap_drawing": 10.093125,
+      "shorter_contour_arc_drawing": 42.16096,
+      "arc_to_gap_ratio": 4.1772,
+      "midpoint": [
+        1752.47078947,
+        551.08712034
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        353,
+        373
+      ],
+      "gap_drawing": 10.099529,
+      "shorter_contour_arc_drawing": 41.80135,
+      "arc_to_gap_ratio": 4.13894,
+      "midpoint": [
+        1752.291,
+        551.0895
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        353,
+        375
+      ],
+      "gap_drawing": 10.400938,
+      "shorter_contour_arc_drawing": 44.6726,
+      "arc_to_gap_ratio": 4.29505,
+      "midpoint": [
+        1753.7265,
+        551.0705
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        352,
+        374
+      ],
+      "gap_drawing": 11.088822,
+      "shorter_contour_arc_drawing": 44.72254,
+      "arc_to_gap_ratio": 4.03312,
+      "midpoint": [
+        1753.55137832,
+        550.5749255
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        352,
+        375
+      ],
+      "gap_drawing": 11.179929,
+      "shorter_contour_arc_drawing": 46.1469,
+      "arc_to_gap_ratio": 4.12766,
+      "midpoint": [
+        1754.2635,
+        550.5655
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        354,
+        376
+      ],
+      "gap_drawing": 11.272001,
+      "shorter_contour_arc_drawing": 45.83838,
+      "arc_to_gap_ratio": 4.06657,
+      "midpoint": [
+        1754.497,
+        551.603
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        355,
+        376
+      ],
+      "gap_drawing": 11.272001,
+      "shorter_contour_arc_drawing": 45.83838,
+      "arc_to_gap_ratio": 4.06657,
+      "midpoint": [
+        1754.497,
+        551.603
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        353,
+        376
+      ],
+      "gap_drawing": 11.462936,
+      "shorter_contour_arc_drawing": 47.50063,
+      "arc_to_gap_ratio": 4.14384,
+      "midpoint": [
+        1755.1405,
+        551.077
+      ]
+    },
+    {
+      "polygon_id": 9,
+      "source_edges": [
+        352,
+        376
+      ],
+      "gap_drawing": 11.923168,
+      "shorter_contour_arc_drawing": 48.97493,
+      "arc_to_gap_ratio": 4.10754,
+      "midpoint": [
+        1755.6775,
+        550.572
+      ]
+    }
+  ],
+  "site_candidates": [
+    {
+      "id": "S01",
+      "polygon_id": 6,
+      "polygon_name": "southwest-southern-east-subcontinent",
+      "source_edges": [
+        1,
+        19
+      ],
+      "contributing_edge_pairs": 3,
+      "gap_drawing": 0.291714,
+      "shorter_contour_arc_drawing": 33.78818,
+      "arc_to_gap_ratio": 115.8263,
+      "coordinate_midpoint": [
+        516.92945589,
+        983.86296678
+      ],
+      "coast_a": [
+        516.84944225,
+        983.98491807
+      ],
+      "coast_b": [
+        517.00946953,
+        983.7410155
+      ],
+      "class": "continuous_land",
+      "crossings": 0,
+      "land_fraction": 1,
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "closest_B32_candidate": null,
+      "review_hint": "Near an A01/A02 extreme tip area; test spur topology before any isthmus interpretation."
+    },
+    {
+      "id": "S02",
+      "polygon_id": 48,
+      "polygon_name": "b14-ne-010",
+      "source_edges": [
+        20,
+        24
+      ],
+      "contributing_edge_pairs": 3,
+      "gap_drawing": 2.149581,
+      "shorter_contour_arc_drawing": 14.14707,
+      "arc_to_gap_ratio": 6.58131,
+      "coordinate_midpoint": [
+        1715.97688662,
+        228.80922806
+      ],
+      "coast_a": [
+        1716.842,
+        229.447
+      ],
+      "coast_b": [
+        1715.11177323,
+        228.17145613
+      ],
+      "class": "continuous_water",
+      "crossings": 0,
+      "land_fraction": 0,
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "closest_B32_candidate": {
+        "id": "N16",
+        "distance_drawing": 2.86224
+      },
+      "review_hint": "Local geometric site only, geological origin and physical width not verified."
+    },
+    {
+      "id": "S03",
+      "polygon_id": 5,
+      "polygon_name": "southwest-southern-west-subcontinent",
+      "source_edges": [
+        2,
+        16
+      ],
+      "contributing_edge_pairs": 1,
+      "gap_drawing": 3.410463,
+      "shorter_contour_arc_drawing": 34.62808,
+      "arc_to_gap_ratio": 10.15348,
+      "coordinate_midpoint": [
+        341.34724061,
+        1054.12872425
+      ],
+      "coast_a": [
+        339.73898622,
+        1054.69558617
+      ],
+      "coast_b": [
+        342.95549499,
+        1053.56186233
+      ],
+      "class": "continuous_land",
+      "crossings": 0,
+      "land_fraction": 1,
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "closest_B32_candidate": null,
+      "review_hint": "Local geometric site only, geological origin and physical width not verified."
+    },
+    {
+      "id": "S04",
+      "polygon_id": 9,
+      "polygon_name": "b14-se-001",
+      "source_edges": [
+        358,
+        371
+      ],
+      "contributing_edge_pairs": 23,
+      "gap_drawing": 4.836733,
+      "shorter_contour_arc_drawing": 22.62793,
+      "arc_to_gap_ratio": 4.67835,
+      "coordinate_midpoint": [
+        1743.54165939,
+        554.13009041
+      ],
+      "coast_a": [
+        1743.382,
+        551.717
+      ],
+      "coast_b": [
+        1743.70131879,
+        556.54318083
+      ],
+      "class": "continuous_water",
+      "crossings": 0,
+      "land_fraction": 0,
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "closest_B32_candidate": {
+        "id": "N56",
+        "distance_drawing": 12.64668
+      },
+      "review_hint": "Local geometric site only, geological origin and physical width not verified."
+    },
+    {
+      "id": "S05",
+      "polygon_id": 77,
+      "polygon_name": "b14-se-027",
+      "source_edges": [
+        21,
+        64
+      ],
+      "contributing_edge_pairs": 1,
+      "gap_drawing": 5.184255,
+      "shorter_contour_arc_drawing": 20.81993,
+      "arc_to_gap_ratio": 4.01599,
+      "coordinate_midpoint": [
+        1517.36,
+        1085.345
+      ],
+      "coast_a": [
+        1518.83,
+        1087.48
+      ],
+      "coast_b": [
+        1515.89,
+        1083.21
+      ],
+      "class": "continuous_land",
+      "crossings": 0,
+      "land_fraction": 1,
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "closest_B32_candidate": {
+        "id": "N01",
+        "distance_drawing": 7.03466
+      },
+      "review_hint": "Local geometric site only, geological origin and physical width not verified."
+    },
+    {
+      "id": "S06",
+      "polygon_id": 3,
+      "polygon_name": "southern-ocean-east-ridge",
+      "source_edges": [
+        1,
+        23
+      ],
+      "contributing_edge_pairs": 1,
+      "gap_drawing": 5.239003,
+      "shorter_contour_arc_drawing": 23.73096,
+      "arc_to_gap_ratio": 4.52967,
+      "coordinate_midpoint": [
+        1064.63970086,
+        989.72527398
+      ],
+      "coast_a": [
+        1065.66419223,
+        987.31442238
+      ],
+      "coast_b": [
+        1063.61520948,
+        992.13612558
+      ],
+      "class": "continuous_land",
+      "crossings": 0,
+      "land_fraction": 1,
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "closest_B32_candidate": null,
+      "review_hint": "Near an A01/A02 extreme tip area; test spur topology before any isthmus interpretation."
+    },
+    {
+      "id": "S07",
+      "polygon_id": 56,
+      "polygon_name": "b14-ne-019",
+      "source_edges": [
+        21,
+        65
+      ],
+      "contributing_edge_pairs": 27,
+      "gap_drawing": 6.032181,
+      "shorter_contour_arc_drawing": 26.53722,
+      "arc_to_gap_ratio": 4.39927,
+      "coordinate_midpoint": [
+        1939.60117697,
+        35.77399661
+      ],
+      "coast_a": [
+        1939.16235394,
+        38.75799323
+      ],
+      "coast_b": [
+        1940.04,
+        32.79
+      ],
+      "class": "continuous_land",
+      "crossings": 0,
+      "land_fraction": 1,
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "closest_B32_candidate": {
+        "id": "N03",
+        "distance_drawing": 8.42879
+      },
+      "review_hint": "Local geometric site only, geological origin and physical width not verified."
+    },
+    {
+      "id": "S08",
+      "polygon_id": 22,
+      "polygon_name": "western-rift-and-shelf-islands-1-0",
+      "source_edges": [
+        0,
+        4
+      ],
+      "contributing_edge_pairs": 1,
+      "gap_drawing": 8.477919,
+      "shorter_contour_arc_drawing": 34.85708,
+      "arc_to_gap_ratio": 4.11151,
+      "coordinate_midpoint": [
+        428.27905774,
+        559.93701639
+      ],
+      "coast_a": [
+        425.06884493,
+        562.7052853
+      ],
+      "coast_b": [
+        431.48927056,
+        557.16874749
+      ],
+      "class": "continuous_land",
+      "crossings": 0,
+      "land_fraction": 1,
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "closest_B32_candidate": null,
+      "review_hint": "Local geometric site only, geological origin and physical width not verified."
+    },
+    {
+      "id": "S09",
+      "polygon_id": 9,
+      "polygon_name": "b14-se-001",
+      "source_edges": [
+        353,
+        375
+      ],
+      "contributing_edge_pairs": 7,
+      "gap_drawing": 10.400938,
+      "shorter_contour_arc_drawing": 44.6726,
+      "arc_to_gap_ratio": 4.29505,
+      "coordinate_midpoint": [
+        1753.7265,
+        551.0705
+      ],
+      "coast_a": [
+        1752.404,
+        546.041
+      ],
+      "coast_b": [
+        1755.049,
+        556.1
+      ],
+      "class": "continuous_water",
+      "crossings": 0,
+      "land_fraction": 0,
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "closest_B32_candidate": {
+        "id": "N56",
+        "distance_drawing": 2.01368
+      },
+      "review_hint": "Local geometric site only, geological origin and physical width not verified."
+    }
+  ],
+  "next": "Zoom review all nine geometric sites, prioritize extreme-tip adjacent sites and natural bay mouths, then test shoreline parallel orientation, local width profiles and true topology in a separately reversible draft."
+}
