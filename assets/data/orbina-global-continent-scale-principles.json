@@ -19,9 +19,9 @@
     "caveat": "B19地图集延续B16暂定经纬制图的假设球面陆地比例约42.76%；所有模型0至100数值只表示相对地势，无法换算真实海拔米数、河流流量、实际国土面积或星球半径。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B29",
-    "status": "B29完整矢量海岸浏览研究：保持B16源99多边形/9621顶点、完整恢复B27/B28粗格网漏采8小岛，比较全240显示接缝的矢量分割与裁剪面积。第57列较小碎片面积最低356.682绘图平方单位但仍切3个多边形。仅为非正史候选地图视觉精修，不赋官方坐标。",
-    "viewer": "assets/maps/orbina-v225r-b29-complete-vector-atlas.html",
+    "edition": "V2.25-R-B30",
+    "status": "B30对B16未修改的99片矢量海岸与9621原始顶点进行严格线段自交、夹角和跨陆块距离质量诊断：严格自交0处、夹角<30°十处（<1°两处）、不同海岸间距<2绘图单位三组；20项重要问题可放大点选，不等于真实海峡或正式陆桥判定。所有地理国界、海岸源文件不动。",
+    "viewer": "assets/maps/orbina-v225r-b30-geometry-quality-atlas.html",
     "working_map": "assets/images/orbina-v225r-b18-relative-relief-hydrography.svg",
     "equal_area_map": "assets/images/orbina-v225r-b16-mollweide.svg",
     "unchanged_coast_geometry": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
@@ -29,7 +29,7 @@
     "named_geographic_canon": "assets/data/orbina-v225r-b17-confirmed-geographic-register.json",
     "B17_coast_shape_study": "assets/data/orbina-v225r-b17-physiography-study.json",
     "B18_relative_terrain_and_routing": "assets/data/orbina-v225r-b18-relative-elevation-hydrology.json",
-    "audit": "assets/data/orbina-v225r-b29-vector-quality-audit.json",
+    "audit": "assets/data/orbina-v225r-b30-geometry-quality-audit.json",
     "stats": {
       "unchanged_candidate_land_polygons": 99,
       "geography_chapters": 10,
@@ -129,9 +129,20 @@
       "B29_small_fragment_area_best_candidate": 356.682,
       "B29_best_display_seam_shift_cells": 57,
       "B29_source_polygon_changes": 0,
-      "B29_canonical_global_coordinates_created": 0
+      "B29_canonical_global_coordinates_created": 0,
+      "B30_original_polygons": 99,
+      "B30_source_vertices": 9621,
+      "B30_strict_self_intersection_count": 0,
+      "B30_angles_under30": 10,
+      "B30_angles_under1": 2,
+      "B30_close_independent_polygon_pairs_lt2": 3,
+      "B30_close_independent_polygon_pairs_lt5": 10,
+      "B30_close_independent_polygon_pairs_lt12": 34,
+      "B30_review_queue_count": 20,
+      "B30_source_geometry_edits": 0,
+      "B30_official_geographic_coordinates_added": 0
     },
-    "scientific_disclaimer": "B29 vectors restore all 99 original B16 candidate polygons to the interactive view, including 8 tiny islands the B27 240x120 raster missed. No source geometry edits, measured coast data, or official longitude/latitude, country borders, ocean position, tectonic and climate assumptions are introduced. Dynamic projections and marker rings are display aids. Coarse B27 mask may omit tiny islands.",
+    "scientific_disclaimer": "B30 is a coordinate-geometry screen of original noncanonical 2400x1200 B16 vector coast. Segment crossings are proper-only, no exhaustive collinear/tangency topology check. Acute vertex angles and cross-polygon nearest distances are drawing indices not natural coast defects, real strait widths, navigable channels or real km. No reliable narrow land bridge is confirmed. No original source geometry or canon geography changed.",
     "canon_guards": [
       "United City and People's Paradise same central supercontinent",
       "Southern outlet big inner sea, North Crown peninsula, eastern gate and Resistance Arc as previously established",
@@ -140,7 +151,7 @@
       "25 confirmed major seas names with unspecified exact world coordinates",
       "Shattered Sea canon 32 intertwined island chains and ~38% in tropical zone"
     ],
-    "version_dependency": "B16 original 99-vector polygons/9621 vertices (untouched) -> B27/B28 sampled coarse raster with 91 polygon IDs -> B29 full vector global presentation, 8 missed islets recovered and all 240 display seam shifts rechecked by polygon clipping. B17-B28 documents/canon remain preserved.",
+    "version_dependency": "B16 original 99 polygons/9621 vertices -> B29 all-vector coastline browser -> B30 geometry QA for acute corners/proper crossings, same and cross-polygon proximity, 20-item inspect-only queue. All earlier B17-B29 archives and canon geography relationships unchanged.",
     "B19_H2_watershed_map": "assets/images/orbina-v225r-b19-h2-catchments.svg",
     "B18_full_viewer": "assets/maps/orbina-v225r-b18-relative-relief-atlas.html",
     "B19_H2_catchment_and_precipitation_data": "assets/data/orbina-v225r-b19-h2-catchments.json",
@@ -174,7 +185,10 @@
     "B27_previous_viewer": "assets/maps/orbina-v225r-b27-projection-orography-atlas.html",
     "B29_full_vector_overview": "assets/images/orbina-v225r-b29-complete-vector-coast-overview.svg",
     "B29_vector_quality_model": "assets/data/orbina-v225r-b29-full-vector-coast-audit.json",
-    "B28_previous_viewer": "assets/maps/orbina-v225r-b28-meridian-polar-atlas.html"
+    "B28_previous_viewer": "assets/maps/orbina-v225r-b28-meridian-polar-atlas.html",
+    "B30_review_map": "assets/images/orbina-v225r-b30-geometry-review-map.svg",
+    "B30_geometry_screen": "assets/data/orbina-v225r-b30-vector-coast-geometry-screen.json",
+    "B29_previous_viewer": "assets/maps/orbina-v225r-b29-complete-vector-atlas.html"
   },
-  "following_work": "B30：分析矢量候选全球地图的自交、尖角、细颈连陆、岛链间隙及海峡几何尺度；经审核的高分辨率海岸细节修订应做可回退候选版本，不擅自确定真实星球比例、山脉、国家坐标或删去原始岛屿。"
+  "following_work": "B31先验证B30优先问题 A01/A02、G01-G03，再检验端点接触、共线重叠与有意义的地峡截面测量；需要修海岸时建立可逆的候选新图文件，不能擅自覆盖B16和已确认的国家/水系正史。"
 }
