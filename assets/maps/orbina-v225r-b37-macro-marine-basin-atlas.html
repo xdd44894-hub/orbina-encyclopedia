@@ -1,0 +1,61 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>俄庇娜 B37 · 大陆海盆与整体留白对照</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f2f4ef;color:#24404c;font:15px/1.55 system-ui,"Microsoft YaHei",sans-serif}header{padding:26px max(15px,calc((100vw - 1360px)/2));background:linear-gradient(112deg,#153d53,#33736c);color:#f8fcf6}h1{font-size:clamp(24px,3.2vw,39px);margin:0 0 7px}header p{max-width:1050px;color:#d5e9e2;margin:0}main{max-width:1360px;margin:auto;padding:18px 15px 50px}nav{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:17px}nav a{background:white;border:1px solid #c9dcd2;padding:8px 11px;color:#2b6674;border-radius:7px;text-decoration:none;font-size:13px}.numbers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:17px}.numbers>div{background:#e6f1e9;border:1px solid #d1dfd7;border-radius:9px;padding:12px}.numbers b{display:block;color:#276778;font-size:28px;font-variant-numeric:tabular-nums}.numbers small{color:#617d7e}.panel{background:#fffefa;border:1px solid #d2ded6;border-radius:11px;margin-bottom:17px;padding:17px}h2{font-size:20px;margin:0 0 10px}h3{font-size:17px;margin:0 0 7px}.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0}.controls label{font-size:13px;display:flex;align-items:center;gap:6px}button,select,input{font:inherit;accent-color:#288c84;color:#254e60}select,button{padding:7px 10px;background:#f5f9f5;border:1px solid #bad1c8;border-radius:7px}button{background:#e5f1e9;cursor:pointer}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #2791a6}.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.mapcard{background:#e6eee8;padding:10px;border:1px solid #cfddd3;border-radius:9px}.mapcard p{font-size:12px;color:#667f83;margin:8px 0 0}.canvasbox{background:#194f66;border-radius:7px;overflow:hidden;border:1px solid #a7c6c7}canvas{display:block;width:100%;height:auto;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}#status{background:#edf5ee;border:1px solid #d1dfd5;border-radius:8px;padding:11px;margin-top:12px;font-size:13px}.muted{color:#647d80;font-size:13px}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;border-bottom:1px solid #e1ebe4;padding:10px 6px}th{color:#5b757b}.legend{display:flex;gap:16px;flex-wrap:wrap;color:#56767c;font-size:13px;margin:10px 0}@media(max-width:960px){.two{grid-template-columns:1fr}.numbers{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style></head><body><header><h1>俄庇娜 · B37 大陆海盆与整体留白</h1><p>从岛链布局扩大到大陆间的海洋留白：把东南部的匿名候选陆块 #12 整体向东16、向北10个绘图单位，避免与相邻陆块 #11 的岸缘几乎贴合。左右同步查看全球全图和东南部海盆；所有海岸与岛屿形状均未修改。</p></header><main>
+<nav><a href="../data/orbina-v225r-b37-macro-basin-composition-layer.json">查看B37大陆位置修订数据</a><a href="../data/orbina-v225r-b37-macro-clearance-qa.json">海盆岸线间距几何核查</a><a href="orbina-v225r-b36-archipelago-spatial-comparison.html">回看B36七岛布局</a><a href="orbina-v225r-b35-island-coast-before-after.html">回看B35群岛海岸</a></nav>
+<div class="numbers"><div><b>99</b><small>候选大陆与岛屿保持不变</small></div><div><b>9,669</b><small>前后海岸顶点总数</small></div><div><b>1.31 → 17.81</b><small>#11–#12 最近岸距（绘图单位）</small></div><div><b>0</b><small>新发现的边界相交</small></div></div>
+<section class="panel"><h2>宏观与局部海盆的同范围对照</h2>
+<div class="controls">
+<label>观察范围 <select id="region"><option value="basin">东南部海盆：#11、#12、#71</option><option value="southeast">东南部大陆与相邻岛弧</option><option value="world">全球99片陆地</option></select></label>
+<label>缩放 <input type="range" min=".65" max="8" step=".05" id="zoom" value="1"><b id="zoomLabel">1×</b></label>
+<label><input type="checkbox" id="ghost" checked>右图叠加修订前旧岸虚线</label>
+<label><input type="checkbox" id="distance" checked>显示最近岸距线段</label>
+<button id="reset" type="button">恢复当前范围视角</button>
+</div>
+<div class="two">
+<div class="mapcard"><h3>基线 · B36</h3><div class="canvasbox"><canvas id="before" width="760" height="540" aria-label="B36原始大陆空间排列"></canvas></div><p>琥珀岸线：位于修订前位置的候选大陆#12；亮色短线：与#11最近的海岸距离。</p></div>
+<div class="mapcard"><h3>候选 · B37</h3><div class="canvasbox"><canvas id="after" width="760" height="540" aria-label="B37大陆间海盆放大与全图对照"></canvas></div><p>青绿色岸线：平移后的#12；粉红虚线：修订前轮廓；亮色短线：新的两陆块最近岸距。</p></div>
+</div>
+<div class="legend"><span>🟨 原海岸#12</span><span>🟩 平移后海岸#12</span><span>🌸 B36旧位置</span><span>📏 最近岸距线不是航道</span></div>
+<div id="status">正在读取原始海岸和B34、B35、B36、B37图层……</div>
+</section>
+<section class="panel"><h2>重点海盆间距对照</h2>
+<table><thead><tr><th>对照对象</th><th>B36 最近岸距</th><th>B37 最近岸距</th><th>解释</th></tr></thead><tbody id="metrics"></tbody></table>
+<p class="muted">数据来自同一平面矢量图纸，对所有必要岸段进行最近点测量，并检查水平周期副本。陆块形状与绘图面积完全不变。绘图单位不等于公里，最短海岸距离亦不代表可航行的完整通道宽度、海底水深或海流。</p>
+</section>
+<section class="panel"><h2>正式设定不变</h2><p>已确认的联合城—人民天国同超级大陆、北冠半岛与南部敞口内海、秦棠位于萨瑞拉西北、棠溪以及东岸R1/R2等关系均不受此研究图调整影响。B37仅移动匿名绘图陆块 #12，还没有确定任何正式国家、洋盆名称的全球坐标。取消B37叠加层可立即恢复B36。</p></section>
+</main>
+<script>
+"use strict";
+const $=s=>document.getElementById(s),W=760,H=540;
+let B=null,A=null,C=null,D=null,E=null,before=[],after=[],scale=1,zoom=1,center=[1890,835],pan=[0,0],drag=null;
+const viewGroups={basin:[11,12,71],southeast:[9,10,11,12,13,14,15,64,69,70,71,75,82,89],world:Array.from({length:99},(_,i)=>i)};
+function compose(){const ps=[...B.macro_landmasses,...B.archipelago];before=ps.map((p,id)=>{let v=C.polygon_replacements.find(r=>r.polygon_id===id)?.revised_coordinates||A.geometry_changes.polygon_replacements.find(r=>r.polygon_id===id)?.revised_coordinates||p.coordinates;let shift=D.island_translations.find(r=>r.id===id)?.delta;return{...p,coordinates:shift?v.map(q=>[q[0]+shift[0],q[1]+shift[1]]):v}});
+after=before.map((p,id)=>({...p,coordinates:id===E.proposal.polygon_id?p.coordinates.map(q=>[q[0]+E.proposal.translation_drawing[0],q[1]+E.proposal.translation_drawing[1]]):p.coordinates}));}
+function frame(){let ids=viewGroups[$("region").value],all=ids.flatMap(id=>[...before[id].coordinates,...after[id].coordinates]);let minX=Math.min(...all.map(v=>v[0])),minY=Math.min(...all.map(v=>v[1])),maxX=Math.max(...all.map(v=>v[0])),maxY=Math.max(...all.map(v=>v[1]));if($("region").value==="world"){minX=0;maxX=2400;minY=0;maxY=1200}
+center=[(minX+maxX)/2,(minY+maxY)/2];scale=Math.min((W-90)/(maxX-minX+30),(H-110)/(maxY-minY+30));pan=[0,0];zoom=1;$("zoom").value="1";$("zoomLabel").textContent="1×";draw()}
+function point(p,shift=0){return[W/2+(p[0]+shift-center[0])*scale*zoom+pan[0],H/2+(p[1]-center[1])*scale*zoom+pan[1]]}
+function box(p){return[Math.min(...p.map(z=>z[0])),Math.min(...p.map(z=>z[1])),Math.max(...p.map(z=>z[0])),Math.max(...p.map(z=>z[1]))]}
+function visible(p,shift){let a=box(p),x=point([a[0],a[1]],shift),y=point([a[2],a[3]],shift);return !(y[0]<-25||x[0]>W+25||y[1]<-25||x[1]>H+25)}
+function drawPath(ctx,p,shift){ctx.beginPath();p.forEach((q,i)=>{let a=point(q,shift);if(i===0)ctx.moveTo(...a);else ctx.lineTo(...a)});ctx.closePath()}
+function segment(ctx,raw,color,thick,shift){if(!raw||!raw.points)return;ctx.beginPath();ctx.moveTo(...point(raw.points[0],shift));ctx.lineTo(...point(raw.points[1],shift));ctx.lineWidth=thick;ctx.strokeStyle=color;ctx.stroke();for(let q of raw.points){let p=point(q,shift);ctx.beginPath();ctx.arc(...p,3,0,2*Math.PI);ctx.fillStyle="#fff7d1";ctx.fill()}}
+function paint(canvas,shapes,newVersion){let ctx=canvas.getContext("2d");ctx.fillStyle="#1e5166";ctx.fillRect(0,0,W,H);
+for(let id=0;id<shapes.length;id++)for(let k of [-2400,0,2400]){let p=shapes[id].coordinates;if(!visible(p,k))continue;drawPath(ctx,p,k);ctx.fillStyle=id===12?(newVersion?"#a1d3af":"#dbc998"):(shapes[id].color||"#cad3b2");ctx.fill();ctx.strokeStyle=id===12?(newVersion?"#5bdfa7":"#f0d596"):"#e2e8c5";ctx.lineWidth=id===12?2.2:.7;ctx.lineJoin="round";ctx.stroke();}
+if(newVersion&&$("ghost").checked)for(let k of [-2400,0,2400]){let p=before[12].coordinates;if(!visible(p,k))continue;drawPath(ctx,p,k);ctx.lineWidth=2;ctx.strokeStyle="#f28cbd";ctx.setLineDash([7,5]);ctx.stroke();ctx.setLineDash([])}
+if($("distance").checked){let comp=E.neighbor_comparison.polygon_11,entry=newVersion?comp.B37:comp.baseline;for(let k of [-2400,0,2400])segment(ctx,entry,"#fff4a8",3,k);}
+let labelPoly=shapes[12].coordinates,p=[labelPoly.reduce((s,q)=>s+q[0],0)/labelPoly.length,labelPoly.reduce((s,q)=>s+q[1],0)/labelPoly.length];for(let k of [-2400,0,2400]){let t=point(p,k);if(t[0]<0||t[0]>W||t[1]<0||t[1]>H)continue;ctx.fillStyle="#fff7d1";ctx.strokeStyle="#1b5061";ctx.lineWidth=4;ctx.font="bold 18px system-ui";ctx.strokeText("#12",t[0],t[1]);ctx.fillText("#12",t[0],t[1])}
+ctx.strokeStyle="#a7c6c9";ctx.lineWidth=1.2;ctx.strokeRect(.5,.5,W-1,H-1)}
+function draw(){if(!E)return;paint($("before"),before,false);paint($("after"),after,true)}
+$("region").onchange=frame;$("zoom").oninput=()=>{zoom=Number($("zoom").value);$("zoomLabel").textContent=zoom+"×";draw()};$("ghost").onchange=draw;$("distance").onchange=draw;$("reset").onclick=frame;
+for(let id of ["before","after"]){let c=$(id);c.onpointerdown=e=>{drag={id:e.pointerId,x:e.clientX,y:e.clientY,p:[...pan]};c.setPointerCapture(e.pointerId)};c.onpointermove=e=>{if(!drag||drag.id!==e.pointerId)return;let f=W/c.getBoundingClientRect().width;pan=[drag.p[0]+(e.clientX-drag.x)*f,drag.p[1]+(e.clientY-drag.y)*f];draw()};c.onpointerup=()=>drag=null;c.onpointercancel=()=>drag=null}
+Promise.all([
+fetch("../data/orbina-v225r-b16-aesthetic-geography-master.json").then(r=>{if(!r.ok)throw Error("B16 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b34-reversible-coastline-layer.json").then(r=>{if(!r.ok)throw Error("B34 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b35-reversible-archipelago-layer.json").then(r=>{if(!r.ok)throw Error("B35 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b36-island-spacing-layer.json").then(r=>{if(!r.ok)throw Error("B36 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b37-macro-basin-composition-layer.json").then(r=>{if(!r.ok)throw Error("B37 HTTP "+r.status);return r.json()})
+]).then(([b,a,c,d,e])=>{B=b;A=a;C=c;D=d;E=e;compose();if(before.length!==99||after.length!==99||before.reduce((n,p)=>n+p.coordinates.length,0)!==9669||after.reduce((n,p)=>n+p.coordinates.length,0)!==9669||e.proposal.polygon_id!==12)throw Error("B37地图版本或坐标结构不匹配");
+const metrics=[["#11 与 #12 的海盆入口",e.neighbor_comparison.polygon_11,"候选两块较大陆地之间的最窄局部岸距"],["#12 与岛屿 #71",e.neighbor_comparison.polygon_71,"新位置与周围岛弧之间仍保留清晰海水间隔"]];
+for(let [title,v,note] of metrics){let row=document.createElement("tr");for(let x of [title,v.baseline.gap.toFixed(2),v.B37.gap.toFixed(2),note]){let td=document.createElement("td");td.textContent=x;row.append(td)}$("metrics").append(row)}
+frame();$("status").textContent="五层矢量数据成功加载：B16原版→B34海岸→B35岛岸→B36群岛→B37海盆。两种地图各99片陆块、9,669个顶点；修订稿整体移动#12，没有改变它的形状。";
+}).catch(e=>$("status").textContent="地图加载失败："+e.message+"；请通过上方数据链接检查文件。");
+</script></body></html>
