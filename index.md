@@ -7,7 +7,7 @@ permalink: /
 <h1>俄庇娜百科</h1>
 {% assign current_articles = site.articles | where_exp: "article", "article.archived != true" %}
 <p>收录 {{ current_articles | size }} 个公开条目。可按主题浏览，也可以直接检索人物、国家、地理、战争、装备及日常生活。</p>
-<p><a href="{{ '/assets/maps/orbina-v225r-b33-coast-arc-site-atlas.html' | relative_url }}">查看最新世界地图研究图册（B33）</a></p>
+<p><a href="{{ '/assets/maps/orbina-v225r-b34-before-after-coastline.html' | relative_url }}">查看最新世界地图海岸精修对照（B34）</a></p>
 <label class="searchbox"><span>全文检索</span><input id="wiki-search" type="search" placeholder="输入人物、地点、术语或事件" autocomplete="off"></label>
 <div id="search-results" class="search-results" hidden></div>
 <h2>分类目录</h2>
