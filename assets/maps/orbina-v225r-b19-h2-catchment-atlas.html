@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 · B19 H2流域与降水敏感性地理地图集</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#0b2735;color:#edf4ef}*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#113a48,#0b2634 260px)}
+header{padding:33px max(18px,calc((100% - 1240px)/2));background:linear-gradient(115deg,#174957,#133c4d);border-bottom:1px solid #597c86}
+header h1{font-size:clamp(25px,3.2vw,39px);line-height:1.25;margin:0 0 10px}
+header p{line-height:1.75;margin:0;max-width:950px;color:#d3e5e4}
+main{max-width:1240px;margin:auto;padding:22px 16px 50px}
+a{color:#cbebe3}
+nav{display:flex;flex-wrap:wrap;gap:10px;padding:0 0 18px}
+nav a{border:1px solid #568291;background:#1d4958;padding:10px 13px;border-radius:8px;text-decoration:none;font-size:14px}
+.panel{background:#163c4c;border:1px solid #4c7280;border-radius:14px;padding:18px;margin:14px 0 20px}
+h2{font-size:21px;margin:0 0 14px}
+.muted{color:#b9cfd0;line-height:1.75}
+.controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 14px}
+label{font-size:14px;color:#ecf3ed}
+select,button{background:#245365;border:1px solid #7b9fa8;border-radius:7px;color:#f5f8f0;padding:10px;font:inherit}
+button{cursor:pointer}
+.canvas-wrap{position:relative;overflow:hidden;border:1px solid #58818b;border-radius:12px;background:#143c52}
+canvas{width:100%;height:auto;display:block;touch-action:manipulation}
+#pointer{background:#0e2d3b;border:1px solid #7ca0a9;padding:9px 12px;margin:12px 0;border-radius:8px;min-height:42px;line-height:1.5}
+.statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:11px}
+.stat{background:#0d2e3d;border:1px solid #375f6c;border-radius:10px;padding:13px}.stat b{display:block;font-size:27px}.stat span{font-size:13px;color:#c8d7d8}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;margin:11px 0;font-size:13px}.legend span{display:flex;gap:6px;align-items:center}.legend i{width:13px;height:13px;border-radius:2px;display:block}
+table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;border-bottom:1px solid #436a77;padding:11px 8px}th{color:#d7eae4}td.num{text-align:right;font-variant-numeric:tabular-nums}
+footer{text-align:center;padding:22px;color:#bad4d5}
+@media(max-width:650px){.panel{padding:12px}header{padding:24px 17px}table{font-size:12px}td,th{padding:9px 5px}}
+</style></head><body>
+<header><h1>俄庇娜 · B19 流域与降水敏感性</h1>
+<p><strong>V2.25-R-B19</strong> · 以东北西主陆 H2 作为无正式国家定位的试验区域。在 B18 的相对高程格网上构造沿海汇水出口、分水单元与三种无量纲降水情景。<strong>所有色彩与路径仅是模型，不是已确认的山川、气候或国界。</strong></p></header>
+<main>
+<nav>
+<a href="../images/orbina-v225r-b19-h2-catchments.svg" target="_blank" rel="noopener">H2流域研究静态地图</a>
+<a href="../data/orbina-v225r-b19-h2-catchments.json" target="_blank" rel="noopener">完整可追溯网格数据</a>
+<a href="orbina-v225r-b18-relative-relief-atlas.html">返回B18五幅地势地图</a>
+<a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank" rel="noopener">百科《海洋地理》</a>
+</nav>
+<section class="panel"><h2>H2：流域识别专题图</h2>
+<div class="controls">
+<label>专题图层 <select id="mode"><option value="watershed">8大研究流域</option><option value="height">相对高程</option><option value="shore">距岸网格步数</option><option value="rain">降水情景指数</option></select></label>
+<label>降水情景 <select id="rain"><option value="uniform">A 均匀假设</option><option value="coastal_moist">B 沿海偏湿</option><option value="interior_moist">C 内陆偏湿</option></select></label>
+<label><input type="checkbox" id="threads" checked> 显示8条模型主路径</label>
+<label><input type="checkbox" id="cellgrid"> 格网轮廓</label>
+</div>
+<div class="canvas-wrap"><canvas id="map" width="1120" height="770" aria-label="东北西主陆H2汇水区域格网模型"></canvas></div>
+<div id="pointer">读取模型数据……</div>
+<div class="legend" id="legend"></div>
+<p class="muted">交互说明：点击或触摸陆地格可查看编号、相对高程与其所属汇水区域。色彩只是研究类别；8条线是分别从内部代表格指向沿海出口格的示范路径，不能直接当作永久河流。每个沿岸格是一个暂设出口，因此剩余小流域数量可能很多。</p>
+</section>
+<section class="panel"><h2>模型的实际覆盖</h2><div id="stats" class="statgrid"></div></section>
+<section class="panel"><h2>八个较大汇水研究单元</h2>
+<p class="muted">按汇入同一沿岸出口的有效陆地网格数排序。这种格数只表示试验网格内部大小，不是实际平方公里。三种降水情景均不改变出口位置，仅改变假设的供水权重。</p>
+<div style="overflow-x:auto"><table><thead><tr><th>模型编号</th><th>网格数</th><th>最长展示路径</th><th>当前汇水指数</th><th>全图指数占比</th></tr></thead><tbody id="tableRows"></tbody></table></div>
+</section>
+<section class="panel"><h2>下一步需要什么才能把地图写进正式地理书？</h2>
+<p class="muted">目前仍缺少板块演化与山脉成因、可解释的高程关系、季节盛行风、降雨分布、地下水与蒸散发、湖泊水量收支，以及正史国家和海域的精确空间位置。只有在这些设定彼此一致后，才有依据正式确认河流、湖泊、湿地与三角洲。已确认的南口内海、北冠半岛、R1/R2、棠溪以及抵抗者之弧，均不由 H2 试验网格推导或改写。</p>
+<p class="muted">完整的10章教科书目录、99片候选陆地档案及B18另外4幅地势试验图仍保存在 <a href="orbina-v225r-b18-relative-relief-atlas.html">B18地理地图集</a>。这次B19专项只增加H2独立研究，不缩减其它地区内容。</p>
+</section>
+</main><footer>ORBINA · B19 HYDROLOGIC SCENARIO ATLAS · STUDY ONLY · NO REAL-WORLD SCALE</footer>
+<script>
+"use strict";
+const palette=["#91a7a1","#e5ba73","#b3d9ad","#df91a2","#96b9e5","#c6afdf","#f1d889","#86d0c8","#d0c6a2"];
+const el=id=>document.getElementById(id);
+const c=el("map"),ctx=c.getContext("2d"),mode=el("mode"),rain=el("rain"),threads=el("threads"),cellgrid=el("cellgrid");
+let data=null,selected=-1;
+function rainfallWeight(distance,max,kind){const t=distance/Math.max(1,max);return kind==="uniform"?1:kind==="coastal_moist"?1.35-0.7*t:0.65+0.7*t}
+function colorMix(a,b,t){function toRGB(h){return [1,3,5].map(i=>parseInt(h.slice(i,i+2),16))};let A=toRGB(a),B=toRGB(b);return "#"+A.map((x,i)=>Math.round(x+(B[i]-x)*Math.max(0,Math.min(1,t))).toString(16).padStart(2,"0")).join("")}
+function geometry(){const W=data.grid.columns,H=data.grid.rows,s=Math.min((c.width-140)/W,(c.height-128)/H);return {x:60,y:50,s,W,H}}
+function isLand(x,y){return data.model.mask_rows[y]?.[x]==="1"}
+function render(){
+if(!data)return;let {x:ox,y:oy,s,W,H}=geometry();ctx.clearRect(0,0,c.width,c.height);ctx.fillStyle="#123e54";ctx.fillRect(0,0,c.width,c.height);
+ctx.fillStyle="#e8f0e5";ctx.font="bold 19px system-ui";ctx.fillText("H2 / NE-WEST · B19 工作格网",60,27);
+let category=mode.value;
+for(let y=0;y<H;y++)for(let x=0;x<W;x++){if(!isLand(x,y))continue;let k=data.model.basin_rank_rows[y][x],e=data.model.relative_elevation_rows[y][x],d=data.model.shore_distance_cells_rows[y][x];
+ let fill=palette[k];
+ if(category==="height")fill=colorMix("#b6d9c1","#b58156",e/100);
+ if(category==="shore")fill=colorMix("#c8dcd1","#9b81bd",d/Math.max(1,data.grid.max_shore_distance_cells));
+ if(category==="rain")fill=colorMix("#d9caa8","#6ab7c5",(rainfallWeight(d,data.grid.max_shore_distance_cells,rain.value)-0.65)/0.7);
+ ctx.globalAlpha=(category==="watershed"&&!k)?0.72:1;ctx.fillStyle=fill;ctx.fillRect(ox+x*s,oy+y*s,Math.ceil(s+.1),Math.ceil(s+.1));ctx.globalAlpha=1;
+ if(cellgrid.checked){ctx.strokeStyle="rgba(5,36,50,.23)";ctx.lineWidth=.6;ctx.strokeRect(ox+x*s,oy+y*s,s,s)}
+}
+if(threads.checked){data.top_basins.forEach((b,k)=>{
+ctx.beginPath();b.representative_inland_to_coast_path_cells.forEach(([x,y],i)=>{const X=ox+(x+.5)*s,Y=oy+(y+.5)*s;i?ctx.lineTo(X,Y):ctx.moveTo(X,Y)});
+ctx.strokeStyle="#083247";ctx.lineWidth=7;ctx.lineJoin="round";ctx.stroke();ctx.strokeStyle="#eef7f1";ctx.lineWidth=2.8;ctx.stroke();
+const X=ox+(b.outlet_col+.5)*s,Y=oy+(b.outlet_row+.5)*s;ctx.beginPath();ctx.arc(X,Y,5,0,2*Math.PI);ctx.fillStyle=palette[k+1];ctx.fill();ctx.strokeStyle="#fff";ctx.lineWidth=1.2;ctx.stroke();
+})}
+if(selected>=0){const x=selected%W,y=Math.floor(selected/W);ctx.strokeStyle="#fff";ctx.lineWidth=2.5;ctx.strokeRect(ox+x*s,oy+y*s,s,s)}
+ctx.fillStyle="#d1e3dd";ctx.font="16px system-ui";ctx.fillText("研究坐标：格网列 0–"+(W-1)+" / 行 0–"+(H-1)+" · 无实际比例尺",60,c.height-28);
+}
+function updateTable(){if(!data)return;const sc=data.rainfall_sensitivity_scenarios[rain.value];const map=Object.fromEntries(sc.by_top_basins.map(v=>[v.id,v]));
+el("tableRows").innerHTML=data.top_basins.map(b=>"<tr><td><b>"+b.id+"</b></td><td>"+b.grid_cell_count+"</td><td>"+b.longest_path_cells+"格</td><td class=\"num\">"+map[b.id].runoff_index.toFixed(2)+"</td><td class=\"num\">"+map[b.id].share_percent.toFixed(2)+"%</td></tr>").join("");
+el("stats").innerHTML=[["1,285","研究陆地网格"],[data.grid.coastal_outlet_cells.toLocaleString(),"沿岸模型出口格"],[data.grid.all_outlet_root_count.toLocaleString(),"独立模型汇水区"],[data.grid.max_shore_distance_cells.toLocaleString(),"最长距岸格数"],[sc.total_model_runoff_index.toFixed(2),"全图假设汇水指数"],["8","重点专题流域"]].map(([v,l])=>"<div class=\"stat\"><b>"+v+"</b><span>"+l+"</span></div>").join("");
+}
+function updateLegend(){let r=mode.value;let lbl=r==="watershed"?["其余汇水区",...data.top_basins.map(b=>b.id)]:r==="height"?["近岸较低","中间相对高地","高地候选"]:r==="shore"?["沿岸格","内陆较远格"]:["降水指数较低","降水指数较高"];
+let colors=r==="watershed"?palette:r==="height"?["#b6d9c1","#d2b99b","#b58156"]:r==="shore"?["#c8dcd1","#9b81bd"]:["#d9caa8","#6ab7c5"];
+el("legend").innerHTML=lbl.map((l,i)=>"<span><i style=\"background:"+colors[i]+"\"></i>"+l+"</span>").join("")}
+function readCell(event){if(!data)return;let box=c.getBoundingClientRect(),px=(event.clientX-box.left)*c.width/box.width,py=(event.clientY-box.top)*c.height/box.height,{x:ox,y:oy,s,W,H}=geometry(),x=Math.floor((px-ox)/s),y=Math.floor((py-oy)/s);
+if(x<0||x>=W||y<0||y>=H||!isLand(x,y)){selected=-1;el("pointer").textContent="点击陆地格可查看相对高度、汇流出口和情景权重；深蓝区域为海。";render();return}
+selected=y*W+x;let d=data.model.shore_distance_cells_rows[y][x],r=data.model.basin_rank_rows[y][x],e=data.model.relative_elevation_rows[y][x],w=rainfallWeight(d,data.grid.max_shore_distance_cells,rain.value);
+el("pointer").textContent="H2 格 ("+x+", "+y+") · 相对高程 "+e+"/100 · 距岸 "+d+" 格 · 汇水区 "+(r?"H2-W"+String(r).padStart(2,"0"):"其他细分出口区")+" · 情景降水权重 "+w.toFixed(2)+"（非毫米）";
+render()
+}
+for(const i of [mode,rain,threads,cellgrid])i.addEventListener("change",()=>{render();updateTable();updateLegend()});
+c.addEventListener("pointerdown",readCell);
+fetch("../data/orbina-v225r-b19-h2-catchments.json").then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(j=>{data=j;render();updateTable();updateLegend();el("pointer").textContent="模型已加载。点击或触摸地图内的陆地格，查询该格的相对地势和汇水研究信息。"}).catch(err=>{el("pointer").textContent="数据尚未加载成功："+err.message+"。可打开顶部的JSON或SVG静态地图。"});
+</script></body></html>
