@@ -1,0 +1,66 @@
+{
+  "edition": "V2.25-R-B16",
+  "status": "COMMITTED_STATIC_GEOMETRY_AND_JS_CHECK_PASSED",
+  "live_github_pages_render_test": "NOT_CONFIRMED",
+  "mobile_visual_test": "NOT_TESTED",
+  "source": {
+    "geometry": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+    "source_sha": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "world_svg": "assets/images/orbina-v225r-b16-aesthetic-world.svg",
+    "equal_area_svg": "assets/images/orbina-v225r-b16-mollweide.svg",
+    "interact_viewer": "assets/maps/orbina-v225r-b16-aesthetic-atlas.html",
+    "encyclopedia": "_articles/article-035.md",
+    "active_atlas_pointer": "assets/data/orbina-global-continent-scale-principles.json"
+  },
+  "counts": {
+    "global_land_polygon_drawings": 99,
+    "macro_layer": 16,
+    "archipelago_layer": 83,
+    "NE_region_candidate_polygons": 20,
+    "SE_region_candidate_polygons": 46,
+    "nine_mainlands_restylized": 9,
+    "secondary_shapes_resized": 12,
+    "minor_clutter_polygons_retired": 11,
+    "islands_moved": 19,
+    "arc_guide_groups": 4
+  },
+  "topology": {
+    "world_seam_shift_tests": [
+      -2400,
+      0,
+      2400
+    ],
+    "bbox_pairs_rechecked": 49,
+    "intersecting_candidate_pairs_found": 0,
+    "all_99_land_polygons_in_flat_svg_three_wraps_each": true,
+    "all_99_land_polygons_in_Mollweide": true,
+    "svg_groups_balanced": true,
+    "svg_ids_unique": true,
+    "web_viewer_script_static_syntax_passed": true,
+    "no_obsolete_B15_shelf_layer": true
+  },
+  "geometry_stats": {
+    "hypothetical_sphere_area_percent": 42.757,
+    "planar_working_map_area_fraction": 0.3474171,
+    "these_are_drawing_area_metrics_not_official_planet_stats": true
+  },
+  "qualitative_visual_check": {
+    "source": "local rasterized northeast and southeast candidate shape previews",
+    "observation": "Two northeast mainlands have distinct visual axes, and SE two primary land polygons now stand out from substantially smaller supporting polygons. Less cluttered outer arcs and clearer blue-water gaps. Some smooth blob-shaped coasts persist and would require further geology-grounded visual iteration.",
+    "not_a_browser_screenshot": true
+  },
+  "canon_protection": [
+    "United City and People's Paradise on same central supercontinent",
+    "Qintang NW of Sarila and Baitown north of Sarila",
+    "Southward huge inner-sea outlet; northern peninsula and resistance arc relationships preserved",
+    "Tangxi and R1/R2 remain distinct river systems",
+    "25 approved named large seas retained; no arbitrary new coordinate placement",
+    "Shattered Sea 32 confirmed island chains unaffected, not tied to draft polygon count"
+  ],
+  "limits": [
+    "Polygon aesthetic edits do not establish rock hardness, glacier erosion, tidal dynamics, shelf bathymetry, rivers or plate tectonics.",
+    "Candidate shapes and numbers remain mutable.",
+    "Real online Github Pages and mobile visual rendering not verified."
+  ],
+  "next_stage": "After user visual feedback, B17 can begin regionally consistent relative relief, valley networks and varied coast-type rules on B16 base, avoiding new random blobs. Maintain visual primacy of macro silhouettes."
+}
