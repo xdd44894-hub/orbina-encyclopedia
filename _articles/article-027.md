@@ -1,6 +1,6 @@
 ---
 title: "联合城住宅与居住分层"
-category: "势力与军事"
+category: "地点与社会"
 ai_search: true
 ---
 
