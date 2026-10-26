@@ -1,0 +1,635 @@
+{
+  "edition": "V2.25-R-B37",
+  "date": "2026-10-27",
+  "status": "REVERSIBLE_NONCANON_MACRO_NEGATIVE_SPACE_EDIT",
+  "source": {
+    "files": [
+      "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+      "assets/data/orbina-v225r-b34-reversible-coastline-layer.json",
+      "assets/data/orbina-v225r-b35-reversible-archipelago-layer.json",
+      "assets/data/orbina-v225r-b36-island-spacing-layer.json"
+    ],
+    "sha": [
+      "d580bd5d0410b1c533acfe9709e99092d302584c",
+      "cc35278c54ba12c2ebefecb7d97567110270e881",
+      "28e6e8143aac255f9150904a9b8f2abc464585c0",
+      "c54a08165caba6f1a978465a3cb6221560f140f5"
+    ]
+  },
+  "proposal": {
+    "polygon_id": 12,
+    "polygon_name": "b14-se-004",
+    "translation_drawing": [
+      16,
+      -10
+    ],
+    "operation": "Translate all vertices rigidly; preserve original shape and all islands.",
+    "rationale": "B36 polygon 11–12 channel has 1.314 drawing units of coastal gap; reposition #12 to open its distinct marine basin corridor without colliding with #71.",
+    "selection": "Among exploratory [dx,dy] alternatives, [16,-10] yields a >=17 drawing unit clearance both to #11 and nearby island #71.",
+    "official_geography_change": false
+  },
+  "neighbor_comparison": {
+    "prior_nearest": [
+      {
+        "other_polygon_id": 11,
+        "periodic_shift": 0,
+        "baseline": {
+          "gap": 1.31434971,
+          "intersection": false,
+          "points": [
+            [
+              1885.424623,
+              825.008135
+            ],
+            [
+              1884.128,
+              824.793
+            ]
+          ],
+          "edge_ids": [
+            202,
+            371
+          ]
+        },
+        "B37": {
+          "gap": 17.813353,
+          "intersection": false,
+          "points": [
+            [
+              1901.55,
+              819.461
+            ],
+            [
+              1883.946,
+              822.184
+            ]
+          ],
+          "edge_ids": [
+            199,
+            369
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 71,
+        "periodic_shift": 0,
+        "baseline": {
+          "gap": 26.23553568,
+          "intersection": false,
+          "points": [
+            [
+              2037.824754,
+              908.221828
+            ],
+            [
+              2062.451,
+              917.269
+            ]
+          ],
+          "edge_ids": [
+            357,
+            88
+          ]
+        },
+        "B37": {
+          "gap": 17.46762191,
+          "intersection": false,
+          "points": [
+            [
+              2051.852,
+              901.72
+            ],
+            [
+              2065.125946,
+              913.074302
+            ]
+          ],
+          "edge_ids": [
+            359,
+            91
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 89,
+        "periodic_shift": 0,
+        "baseline": {
+          "gap": 30.83017811,
+          "intersection": false,
+          "points": [
+            [
+              1905.301,
+              915.771
+            ],
+            [
+              1875.34,
+              923.04
+            ]
+          ],
+          "edge_ids": [
+            117,
+            75
+          ]
+        },
+        "B37": {
+          "gap": 49.0573844,
+          "intersection": false,
+          "points": [
+            [
+              1921.582,
+              906.66
+            ],
+            [
+              1875.34,
+              923.04
+            ]
+          ],
+          "edge_ids": [
+            116,
+            75
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 64,
+        "periodic_shift": 0,
+        "baseline": {
+          "gap": 41.14390154,
+          "intersection": false,
+          "points": [
+            [
+              1925.204,
+              957.174
+            ],
+            [
+              1935.65036,
+              996.969656
+            ]
+          ],
+          "edge_ids": [
+            76,
+            71
+          ]
+        },
+        "B37": {
+          "gap": 48.26219741,
+          "intersection": false,
+          "points": [
+            [
+              1935.728504,
+              948.03167
+            ],
+            [
+              1940.05,
+              996.1
+            ]
+          ],
+          "edge_ids": [
+            80,
+            73
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 70,
+        "periodic_shift": 0,
+        "baseline": {
+          "gap": 44.52990939,
+          "intersection": false,
+          "points": [
+            [
+              1988.712,
+              849.391
+            ],
+            [
+              2015.230247,
+              813.618169
+            ]
+          ],
+          "edge_ids": [
+            296,
+            51
+          ]
+        },
+        "B37": {
+          "gap": 26.97537746,
+          "intersection": false,
+          "points": [
+            [
+              2004.712,
+              839.391
+            ],
+            [
+              2020.366072,
+              817.422363
+            ]
+          ],
+          "edge_ids": [
+            296,
+            49
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 74,
+        "periodic_shift": 0,
+        "baseline": {
+          "gap": 61.24629974,
+          "intersection": false,
+          "points": [
+            [
+              1913.995113,
+              957.286132
+            ],
+            [
+              1880.36,
+              1008.47
+            ]
+          ],
+          "edge_ids": [
+            85,
+            55
+          ]
+        },
+        "B37": {
+          "gap": 78.65998134,
+          "intersection": false,
+          "points": [
+            [
+              1928.986,
+              946.623
+            ],
+            [
+              1881.51,
+              1009.34
+            ]
+          ],
+          "edge_ids": [
+            85,
+            56
+          ]
+        }
+      }
+    ],
+    "revised_nearest": [
+      {
+        "other_polygon_id": 71,
+        "periodic_shift": 0,
+        "baseline": {
+          "gap": 26.23553568,
+          "intersection": false,
+          "points": [
+            [
+              2037.824754,
+              908.221828
+            ],
+            [
+              2062.451,
+              917.269
+            ]
+          ],
+          "edge_ids": [
+            357,
+            88
+          ]
+        },
+        "B37": {
+          "gap": 17.46762191,
+          "intersection": false,
+          "points": [
+            [
+              2051.852,
+              901.72
+            ],
+            [
+              2065.125946,
+              913.074302
+            ]
+          ],
+          "edge_ids": [
+            359,
+            91
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 11,
+        "periodic_shift": 0,
+        "baseline": {
+          "gap": 1.31434971,
+          "intersection": false,
+          "points": [
+            [
+              1885.424623,
+              825.008135
+            ],
+            [
+              1884.128,
+              824.793
+            ]
+          ],
+          "edge_ids": [
+            202,
+            371
+          ]
+        },
+        "B37": {
+          "gap": 17.813353,
+          "intersection": false,
+          "points": [
+            [
+              1901.55,
+              819.461
+            ],
+            [
+              1883.946,
+              822.184
+            ]
+          ],
+          "edge_ids": [
+            199,
+            369
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 70,
+        "periodic_shift": 0,
+        "baseline": {
+          "gap": 44.52990939,
+          "intersection": false,
+          "points": [
+            [
+              1988.712,
+              849.391
+            ],
+            [
+              2015.230247,
+              813.618169
+            ]
+          ],
+          "edge_ids": [
+            296,
+            51
+          ]
+        },
+        "B37": {
+          "gap": 26.97537746,
+          "intersection": false,
+          "points": [
+            [
+              2004.712,
+              839.391
+            ],
+            [
+              2020.366072,
+              817.422363
+            ]
+          ],
+          "edge_ids": [
+            296,
+            49
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 64,
+        "periodic_shift": 0,
+        "baseline": {
+          "gap": 41.14390154,
+          "intersection": false,
+          "points": [
+            [
+              1925.204,
+              957.174
+            ],
+            [
+              1935.65036,
+              996.969656
+            ]
+          ],
+          "edge_ids": [
+            76,
+            71
+          ]
+        },
+        "B37": {
+          "gap": 48.26219741,
+          "intersection": false,
+          "points": [
+            [
+              1935.728504,
+              948.03167
+            ],
+            [
+              1940.05,
+              996.1
+            ]
+          ],
+          "edge_ids": [
+            80,
+            73
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 89,
+        "periodic_shift": 0,
+        "baseline": {
+          "gap": 30.83017811,
+          "intersection": false,
+          "points": [
+            [
+              1905.301,
+              915.771
+            ],
+            [
+              1875.34,
+              923.04
+            ]
+          ],
+          "edge_ids": [
+            117,
+            75
+          ]
+        },
+        "B37": {
+          "gap": 49.0573844,
+          "intersection": false,
+          "points": [
+            [
+              1921.582,
+              906.66
+            ],
+            [
+              1875.34,
+              923.04
+            ]
+          ],
+          "edge_ids": [
+            116,
+            75
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 69,
+        "periodic_shift": 0,
+        "baseline": {
+          "gap": 84.11649309,
+          "intersection": false,
+          "points": [
+            [
+              2042.443,
+              888.454
+            ],
+            [
+              2121.632,
+              860.087
+            ]
+          ],
+          "edge_ids": [
+            342,
+            40
+          ]
+        },
+        "B37": {
+          "gap": 65.74775624,
+          "intersection": false,
+          "points": [
+            [
+              2058.443,
+              878.454
+            ],
+            [
+              2121.252,
+              859.017
+            ]
+          ],
+          "edge_ids": [
+            342,
+            41
+          ]
+        }
+      }
+    ],
+    "polygon_11": {
+      "other_polygon_id": 11,
+      "periodic_shift": 0,
+      "baseline": {
+        "gap": 1.31434971,
+        "intersection": false,
+        "points": [
+          [
+            1885.424623,
+            825.008135
+          ],
+          [
+            1884.128,
+            824.793
+          ]
+        ],
+        "edge_ids": [
+          202,
+          371
+        ]
+      },
+      "B37": {
+        "gap": 17.813353,
+        "intersection": false,
+        "points": [
+          [
+            1901.55,
+            819.461
+          ],
+          [
+            1883.946,
+            822.184
+          ]
+        ],
+        "edge_ids": [
+          199,
+          369
+        ]
+      }
+    },
+    "polygon_71": {
+      "other_polygon_id": 71,
+      "periodic_shift": 0,
+      "baseline": {
+        "gap": 26.23553568,
+        "intersection": false,
+        "points": [
+          [
+            2037.824754,
+            908.221828
+          ],
+          [
+            2062.451,
+            917.269
+          ]
+        ],
+        "edge_ids": [
+          357,
+          88
+        ]
+      },
+      "B37": {
+        "gap": 17.46762191,
+        "intersection": false,
+        "points": [
+          [
+            2051.852,
+            901.72
+          ],
+          [
+            2065.125946,
+            913.074302
+          ]
+        ],
+        "edge_ids": [
+          359,
+          91
+        ]
+      }
+    }
+  },
+  "totals": {
+    "global_candidate_polygon_count": 99,
+    "vertices_B36": 9669,
+    "vertices_B37": 9669,
+    "modified_macro_polygons": 1,
+    "translated_polygon_id": 12,
+    "delta_drawing": [
+      16,
+      -10
+    ],
+    "closest_border_pre_drawing": 1.31434971,
+    "closest_border_after_drawing": 17.46762191,
+    "macro_11_12_gap_pre_drawing": 1.31434971,
+    "macro_11_12_gap_B37_drawing": 17.813353,
+    "neighbor_71_after_drawing": 17.46762191,
+    "all_changed_polygon_identity_retained": true
+  },
+  "qa": {
+    "allSourcesUnchanged": true,
+    "baseline99": true,
+    "baseline9669": true,
+    "oneMacroMoved": true,
+    "allOriginalVerticesKept": true,
+    "translationExactly": true,
+    "areaUnchanged": true,
+    "baselineNarrowGap": true,
+    "afterNearestGapOver17": true,
+    "B37Macro11GapOver17": true,
+    "B37Macro71GapOver17": true,
+    "noNewExternalIntersections": true,
+    "noTopologicalSourceChange": true
+  },
+  "limitations": [
+    "Study uses noncanon B16 planar drawing units and periodic x ±2400 copies; not real longitude or sea-level elevation.",
+    "The sea gap is an edge-to-edge Euclidean geometric gap, not a bathymetric or navigability test.",
+    "Other unchanged seas and continent positions are not validated as canonical by this local motion.",
+    "Moving one anonymous macro landmass is a candidate composition tweak; cannot assign official nation or ocean placement."
+  ]
+}
