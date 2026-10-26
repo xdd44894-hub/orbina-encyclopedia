@@ -1,0 +1,98 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜世界地图 B35 · 群岛海岸精修对照</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f5ef;color:#213e4b;font:15px/1.55 system-ui,"Microsoft YaHei",sans-serif}
+header{padding:26px max(16px,calc((100vw - 1370px)/2));background:linear-gradient(110deg,#174253,#2d716e);color:#f5fbf6}
+h1{margin:0 0 8px;font-size:clamp(24px,3.1vw,37px)}header p{max-width:1050px;color:#d5e8e1;margin:0}
+main{max-width:1370px;margin:auto;padding:17px 15px 46px}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:15px}nav a{background:white;border:1px solid #cbddd4;border-radius:6px;color:#276375;padding:8px 11px;text-decoration:none;font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-bottom:17px}.stat{background:#e6efe8;border:1px solid #cddcd5;border-radius:9px;padding:13px}.stat b{display:block;font-size:27px;color:#226476}.stat small{color:#637b7c}
+.panel{background:#fffefa;border-radius:11px;border:1px solid #cfddd5;padding:18px;margin-bottom:17px}
+h2{font-size:20px;margin:0 0 9px}h3{font-size:16px;margin:0 0 7px}
+.controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:10px 0}
+.controls label{display:flex;align-items:center;gap:6px;font-size:13px}button,select,input{font:inherit;accent-color:#2e8c84;color:#254e5d}select,button{padding:7px 10px;border:1px solid #c0d4cc;border-radius:7px;background:#f3f8f4}button{cursor:pointer;background:#e0f1e7}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #288ba6}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.mapbox{background:#e8f1e9;padding:10px;border:1px solid #cfdfd6;border-radius:9px}
+.canvasbox{background:#21516a;border:1px solid #a7c5c5;border-radius:8px;overflow:hidden}
+canvas{display:block;width:100%;height:auto;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}
+.muted{font-size:13px;color:#5c7b7d}.mapbox p{font-size:12px;margin:7px 0 0;color:#5c7b7d}
+#details,#status{background:#ebf3ee;border:1px solid #cbdcd2;border-radius:8px;padding:11px 13px;margin-top:12px;font-size:13px}
+#details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:9px 6px;border-bottom:1px solid #deebe4;font-size:13px}th{color:#587a7f}
+@media(max-width:920px){.two{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}#details{grid-template-columns:1fr}}
+</style></head><body>
+<header><h1>俄庇娜 · B35 群岛海岸实际精修</h1><p>8座岛屿分布于西部裂谷岛群、南部陆架残岛和北部海沟岛弧。以B34为左侧基线，右侧为B35独立可回退矢量草稿；不移动岛屿中心、不填平岛间水道，也不改变既有的大陆、国家及正式海域名称。</p></header>
+<main><nav><a href="../data/orbina-v225r-b35-reversible-archipelago-layer.json">B35实际海岸顶点修订层</a>
+<a href="../data/orbina-v225r-b35-archipelago-topology-qa.json">岛岸碰撞与几何核查</a>
+<a href="orbina-v225r-b34-before-after-coastline.html">上一版B34大陆海岸对照</a>
+<a href="orbina-v225r-b33-coast-arc-site-atlas.html">B33几何地峡候选图</a></nav>
+<div class="stats"><div class="stat"><b>8</b><small>局部精修的岛屿</small></div><div class="stat"><b>12</b><small>修订的海岸边段</small></div><div class="stat"><b>36</b><small>新的人工控制顶点</small></div><div class="stat"><b>9,669</b><small>B35总海岸顶点；99片陆块不变</small></div></div>
+<section class="panel"><h2>左旧右新：同步缩放、拖动与海岸重叠比对</h2>
+<div class="controls">
+<label>查看对象 <select id="target">
+<option value="22">西部裂谷岛屿 #22 · 狭长岩岛</option>
+<option value="16">西部裂谷岛屿 #16 · 大型岛</option>
+<option value="19">西部裂谷岛屿 #19 · 岛弧</option>
+<option value="23">西部裂谷岛屿 #23 · 小型岛</option>
+<option value="17">南部陆架岛屿 #17 · 大型残岛</option>
+<option value="20">南部陆架岛屿 #20 · 残岛</option>
+<option value="29">南部陆架岛屿 #29 · 小岛</option>
+<option value="24">北部海沟岛弧 #24 · 岩岛</option>
+<option value="west">西部裂谷四岛整体</option>
+<option value="south">南部陆架三岛整体</option>
+<option value="north">北部海沟岛弧整体</option>
+<option value="world">完整全球</option>
+</select></label>
+<label>比例 <input type="range" id="zoom" min=".6" max="7" step=".1" value="1"><b id="zoomText">1×</b></label>
+<label><input type="checkbox" id="overlay" checked>在B35图上叠加B34旧岸粉红虚线</label>
+<button type="button" id="center">重新居中</button>
+</div>
+<div class="two">
+<div class="mapbox"><h3>基线 · B34</h3><div class="canvasbox"><canvas id="before" width="760" height="540" aria-label="B34海岸轮廓交互图"></canvas></div><p>保留B34三片大陆修订，所有群岛沿用B16原始岛岸。</p></div>
+<div class="mapbox"><h3>试修 · B35</h3><div class="canvasbox"><canvas id="after" width="760" height="540" aria-label="B35八座岛屿局部矢量修订交互图"></canvas></div><p>青绿轮廓为B35；粉红虚线可显示旧岸对照。两个视角完全同步。</p></div>
+</div>
+<div id="status">正在载入 B16、B34 和 B35 三层矢量文件……</div><div id="details"></div>
+</section>
+<section class="panel"><h2>八座岛屿的原岸与新岸数据</h2>
+<table><thead><tr><th>岛屿编号</th><th>所属群岛</th><th>顶点变化</th><th>平面面积变化</th></tr></thead><tbody id="tableBody"></tbody></table>
+<p class="muted">选择的曲线具有统一的外海岬角与背风海湾方向，新增控制点沿长岸线渐变分布，不采用随机抖动。面积变化均小于5%，既有海水分隔、99片陆块身份及此前B34的大陆精修不变。真实海浪、洋流、海拔、断裂带和风向尚未定稿。</p>
+</section></main>
+<script>
+"use strict";
+const $=s=>document.getElementById(s),W=760,H=540,groups={west:[16,19,22,23],south:[17,20,29],north:[24]};
+let B=null,B34=null,B35=null,base=[],draft=[],selected=[],scale=1,center=[429,559],offset=[0,0],drag=null;
+const displayNames={western_rift_shelf:"西部裂谷／陆架",southern_shelf_remnants:"南部陆架残岛",northern_trench_arc:"北部海沟岛弧"};
+function merged(){const b=[...B.macro_landmasses,...B.archipelago];base=b.map((p,i)=>({...p,coordinates:B34.geometry_changes.polygon_replacements.find(x=>x.polygon_id===i)?.revised_coordinates||p.coordinates}));draft=base.map((p,i)=>({...p,coordinates:B35.polygon_replacements.find(x=>x.polygon_id===i)?.revised_coordinates||p.coordinates}));}
+function viewRegion(){let key=$("target").value;selected=key==="world"?Array.from({length:99},(_,i)=>i):groups[key]||[Number(key)];const all=selected.flatMap(i=>base[i].coordinates);
+let xs=all.map(p=>p[0]),ys=all.map(p=>p[1]),xmin=Math.min(...xs),xmax=Math.max(...xs),ymin=Math.min(...ys),ymax=Math.max(...ys);
+center=[(xmin+xmax)/2,(ymin+ymax)/2];scale=Math.min((W-105)/Math.max(8,xmax-xmin),(H-115)/Math.max(8,ymax-ymin))*.78;
+offset=[0,0];$("zoom").value="1";$("zoomText").textContent="1×";draw();detail()}
+function viewPoint(pt){return [W/2+(pt[0]-center[0])*scale*Number($("zoom").value)+offset[0],H/2+(pt[1]-center[1])*scale*Number($("zoom").value)+offset[1]]}
+function inView(points){const s=scale*Number($("zoom").value);let mx=100/s,my=100/s,xMin=center[0]+(-W/2-offset[0])/s-mx,xMax=center[0]+(W/2-offset[0])/s+mx,yMin=center[1]+(-H/2-offset[1])/s-my,yMax=center[1]+(H/2-offset[1])/s+my;return points.some(p=>p[0]>=xMin&&p[0]<=xMax&&p[1]>=yMin&&p[1]<=yMax)||points.some(p=>p[0]<xMin&&p[1]<yMin)&&points.some(p=>p[0]>xMax&&p[1]>yMax)}
+function polygonPath(ctx,poly){ctx.beginPath();poly.forEach((p,i)=>{const q=viewPoint(p);if(i===0)ctx.moveTo(...q);else ctx.lineTo(...q)});ctx.closePath()}
+function paint(canvas,shapes,isNew){let ctx=canvas.getContext("2d");ctx.fillStyle="#1e4b64";ctx.fillRect(0,0,W,H);const pxUnit=scale*Number($("zoom").value);
+for(let id=0;id<shapes.length;id++){const poly=shapes[id].coordinates;if(!inView(poly))continue;const isEdited=B35.polygon_replacements.some(z=>z.polygon_id===id);
+polygonPath(ctx,poly);ctx.fillStyle=isEdited?(isNew?"#93c9b1":"#d6cca3"):(shapes[id].color||"#c7d2b2");ctx.fill();ctx.strokeStyle=isEdited?(isNew?"#60e2ac":"#f3d7a2"):"#e4e8c9";ctx.lineWidth=isEdited?2.1:1;ctx.lineJoin="round";ctx.stroke();
+if(isNew&&isEdited&&$("overlay").checked){polygonPath(ctx,base[id].coordinates);ctx.strokeStyle="#ef7dba";ctx.lineWidth=2.2;ctx.setLineDash([7,5]);ctx.stroke();ctx.setLineDash([])}}
+ctx.lineWidth=1;ctx.strokeStyle="#91b8bf";ctx.strokeRect(.5,.5,W-1,H-1);
+}
+function draw(){if(!B35)return;paint($("before"),base,false);paint($("after"),draft,true)}
+function detail(){if(!B35)return;const target=$("target").value,items=B35.polygon_replacements.filter(x=>selected.includes(x.polygon_id));$("details").textContent=target==="world"?"正在浏览全球99片候选陆地；B35仍只有八座岛屿的岸线与B34不同。":"当前区域："+items.map(x=>"#"+x.polygon_id).join("、")+"。红紫虚线表示旧岸，青绿色表示修订岸。所示是图纸单位，不是公里。"}
+$("target").onchange=viewRegion;
+$("zoom").oninput=()=>{$("zoomText").textContent=$("zoom").value+"×";draw()};
+$("overlay").onchange=draw;$("center").onclick=viewRegion;
+for(const id of ["before","after"]){const c=$(id);c.onpointerdown=e=>{drag={pointer:e.pointerId,x:e.clientX,y:e.clientY,old:[...offset]};c.setPointerCapture(e.pointerId)};
+c.onpointermove=e=>{if(!drag||drag.pointer!==e.pointerId)return;const unit=W/c.getBoundingClientRect().width;offset=[drag.old[0]+(e.clientX-drag.x)*unit,drag.old[1]+(e.clientY-drag.y)*unit];draw()};
+c.onpointerup=()=>drag=null;c.onpointercancel=()=>drag=null}
+Promise.all([
+fetch("../data/orbina-v225r-b16-aesthetic-geography-master.json").then(r=>{if(!r.ok)throw Error("B16 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b34-reversible-coastline-layer.json").then(r=>{if(!r.ok)throw Error("B34 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b35-reversible-archipelago-layer.json").then(r=>{if(!r.ok)throw Error("B35 HTTP "+r.status);return r.json()})
+]).then(([b,b34,b35])=>{B=b;B34=b34;B35=b35;merged();
+if(base.length!==99||draft.length!==99||base.reduce((n,p)=>n+p.coordinates.length,0)!==9633||draft.reduce((n,p)=>n+p.coordinates.length,0)!==9669||b35.polygon_replacements.length!==8)throw Error("B35版本或数据总数不匹配");
+const rows=$("tableBody");for(const r of b35.polygon_replacements){let row=document.createElement("tr");let v=["#"+r.polygon_id+" · "+r.name,displayNames[r.region]||r.region,r.original_vertex_count+" → "+r.revised_vertex_count,(r.relative_area_delta_pct>=0?"+":"")+r.relative_area_delta_pct.toFixed(3)+"%"];
+for(const t of v){let cell=document.createElement("td");cell.textContent=t;row.append(cell)}rows.append(row)}
+viewRegion();$("status").textContent="成功载入三层源数据：B16保留9,621个顶点；B34有9,633个；B35草稿有9,669个。8岛的原岸与修订岸可分别放大比较。";
+}).catch(e=>$("status").textContent="读取地图数据失败："+e.message+"。可用顶部源文件链接检查具体数据。");
+</script></body></html>
