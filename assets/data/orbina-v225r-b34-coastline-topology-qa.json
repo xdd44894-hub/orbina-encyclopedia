@@ -1,0 +1,58 @@
+{
+  "edition": "V2.25-R-B34",
+  "date": "2026-10-26",
+  "status": "STATIC_GEOMETRY_TOPOLOGY_AUDIT_PASS__LIVE_PAGES_RENDER_NOT_YET_VERIFIED",
+  "baseline_sha": "d580bd5d0410b1c533acfe9709e99092d302584c",
+  "checks": {
+    "source_polygons99": true,
+    "source_vertices9621": true,
+    "source_sha_verified": true,
+    "exact_two_extreme_tips": true,
+    "five_targeted_long_edges": true,
+    "inserted14_vertices": true,
+    "three_replacement_polygons": true,
+    "revised_vertex_count9633": true,
+    "zero_new_self_intersections": true,
+    "zero_new_polygon_collisions": true,
+    "zero_zero_length_edges": true,
+    "area_change_each_under_half_percent": true,
+    "all_min_angles_at_least30deg": true,
+    "source_not_overwritten": true
+  },
+  "changed_polygons": [
+    {
+      "polygon_id": 3,
+      "name": "southern-ocean-east-ridge",
+      "original_vertices": 25,
+      "revised_vertices": 30,
+      "relative_area_change_pct": -0.436016,
+      "minimum_angle_deg": 35.979733
+    },
+    {
+      "polygon_id": 5,
+      "name": "southwest-southern-west-subcontinent",
+      "original_vertices": 17,
+      "revised_vertices": 20,
+      "relative_area_change_pct": -0.055656,
+      "minimum_angle_deg": 47.55677
+    },
+    {
+      "polygon_id": 6,
+      "name": "southwest-southern-east-subcontinent",
+      "original_vertices": 20,
+      "revised_vertices": 24,
+      "relative_area_change_pct": 0.004946,
+      "minimum_angle_deg": 48.484277
+    }
+  ],
+  "new_total_vertices": 9633,
+  "site_priority": [
+    "A01",
+    "A02",
+    "S01",
+    "S03",
+    "S06"
+  ],
+  "comments": "B34 curates two extreme tips and five long coastal edges. All untouched polygons and island IDs remain from original B16. Segments tested against each other and all other polygons with x-periodic copies at ±2400. Strict and touch contacts tested within 1e-7 drawing coordinate tolerance.",
+  "commit_note": "Source B16 is preserved unchanged; B34 is an overlay of three polygon coordinate replacements."
+}
