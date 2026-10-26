@@ -1,0 +1,112 @@
+{
+  "edition": "V2.25-R-B35",
+  "status": "STATIC_GEOMETRY_SCREEN_PASS",
+  "source_sha": {
+    "B16": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "B34": "cc35278c54ba12c2ebefecb7d97567110270e881"
+  },
+  "checks": {
+    "B16_hash_unchanged": true,
+    "B34_hash_unchanged": true,
+    "baseline99": true,
+    "baseline9633": true,
+    "edited8": true,
+    "groups3": true,
+    "refined12edges": true,
+    "added36": true,
+    "final9669": true,
+    "no_crossings": true,
+    "no_zero_edges": true,
+    "areaChangesEachUnder5Pct": true,
+    "noNewAnglesUnder15Deg": true,
+    "original99preserved": true,
+    "allOriginalIslandIDsUnchanged": true
+  },
+  "modified": [
+    {
+      "polygon_id": 16,
+      "name": "western-rift-and-shelf-islands-3-0",
+      "group": "western_rift_shelf",
+      "source_vertices": 8,
+      "revised_vertices": 14,
+      "area_change_pct": -1.148474,
+      "min_angle_before_deg": 68.468131,
+      "min_angle_after_deg": 72.488299
+    },
+    {
+      "polygon_id": 19,
+      "name": "western-rift-and-shelf-islands-2-1",
+      "group": "western_rift_shelf",
+      "source_vertices": 8,
+      "revised_vertices": 14,
+      "area_change_pct": 0.584623,
+      "min_angle_before_deg": 110.267175,
+      "min_angle_after_deg": 110.267175
+    },
+    {
+      "polygon_id": 22,
+      "name": "western-rift-and-shelf-islands-1-0",
+      "group": "western_rift_shelf",
+      "source_vertices": 7,
+      "revised_vertices": 10,
+      "area_change_pct": -3.733261,
+      "min_angle_before_deg": 32.230338,
+      "min_angle_after_deg": 32.230338
+    },
+    {
+      "polygon_id": 23,
+      "name": "western-rift-and-shelf-islands-2-2",
+      "group": "western_rift_shelf",
+      "source_vertices": 8,
+      "revised_vertices": 11,
+      "area_change_pct": 2.70242,
+      "min_angle_before_deg": 61.324067,
+      "min_angle_after_deg": 61.324067
+    },
+    {
+      "polygon_id": 17,
+      "name": "southern-shelf-remnants-1-0",
+      "group": "southern_shelf_remnants",
+      "source_vertices": 7,
+      "revised_vertices": 13,
+      "area_change_pct": 1.645438,
+      "min_angle_before_deg": 44.551751,
+      "min_angle_after_deg": 47.684535
+    },
+    {
+      "polygon_id": 20,
+      "name": "southern-shelf-remnants-3-0",
+      "group": "southern_shelf_remnants",
+      "source_vertices": 8,
+      "revised_vertices": 14,
+      "area_change_pct": -0.573751,
+      "min_angle_before_deg": 73.298488,
+      "min_angle_after_deg": 73.298488
+    },
+    {
+      "polygon_id": 29,
+      "name": "southern-shelf-remnants-1-1",
+      "group": "southern_shelf_remnants",
+      "source_vertices": 6,
+      "revised_vertices": 9,
+      "area_change_pct": -2.762283,
+      "min_angle_before_deg": 52.722729,
+      "min_angle_after_deg": 48.807147
+    },
+    {
+      "polygon_id": 24,
+      "name": "northern-trench-island-arc-3-2",
+      "group": "northern_trench_arc",
+      "source_vertices": 7,
+      "revised_vertices": 10,
+      "area_change_pct": 2.759326,
+      "min_angle_before_deg": 71.910102,
+      "min_angle_after_deg": 71.910102
+    }
+  ],
+  "self_intersection": 0,
+  "inter_polygon_crossing_or_touch": 0,
+  "degenerate_edges": 0,
+  "original99pieces_preserved": true,
+  "comment": "End-to-end planar edge tests for 8 revised islands, against all original B34 polygons and periodic shifts (-2400,0,+2400). This does not certify wet/dry topology after other transformations."
+}
