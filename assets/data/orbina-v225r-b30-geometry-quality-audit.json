@@ -1,1 +1,346 @@
-{"edition":"V2.25-R-B30","status":"B30_MODEL_STATIC_GEOMETRY_QA_PASS","QA":{"no_strict_polygon_self_intersections":true,"no_detected_interpolygon_strict_crossings":true,"no_test_point_containment":true,"all_original_polygons":true,"source_original_vertex_count":true,"sharp_under30_count":true,"tight_between_polygons_less2_count":true,"tight_between_polygons_less5_count":true,"all_lt12_pair_distances_sorted":true},"raw_source_sha":"d580bd5d0410b1c533acfe9709e99092d302584c","summary":{"vector_polygons":99,"original_vertices":9621,"self_crossings_strict":0,"cross_polygon_segment_crossings_strict":0,"polygon_testpoint_containments":0,"sharp_vertices_under30":10,"sharp_vertices_under40":16,"ultra_acute_under1":2,"cross_polygon_pairs_with_min_gap_under2":3,"cross_polygon_pairs_with_min_gap_under5":10,"cross_polygon_pairs_with_min_gap_under8":21,"cross_polygon_pairs_with_min_gap_under12":34,"nonlocal_same_polygon_boundary_distance_under12":56},"candidate_queue_size":20,"severe_acute_vertices":[{"id":3,"polygon_name":"southern-ocean-east-ridge","vertex_index":0,"interior_candidate_angle_deg":0.623,"prev_edge_length":12.716,"next_edge_length":3.799,"location_drawing":[1057.016,981.267],"note":"Unsigned vertex angle only; may represent legitimate sharp natural terrain or source simplification"},{"id":6,"polygon_name":"southwest-southern-east-subcontinent","vertex_index":0,"interior_candidate_angle_deg":0.989,"prev_edge_length":26.494,"next_edge_length":16.895,"location_drawing":[531.134,993.008],"note":"Unsigned vertex angle only; may represent legitimate sharp natural terrain or source simplification"}],"nearest_distinct_polygon_pairs":[{"polygon_a":82,"polygon_b":83,"edge_a":129,"edge_b":41,"min_boundary_distance_drawing":1.29801,"position_a_drawing":[1844.641,614.586],"position_b_drawing":[1845.51,615.55],"shifted_copy_a":0,"shifted_copy_b":0,"strict_crossing":false},{"polygon_a":11,"polygon_b":12,"edge_a":372,"edge_b":202,"min_boundary_distance_drawing":1.31435,"position_a_drawing":[1884.128,824.793],"position_b_drawing":[1885.425,825.008],"shifted_copy_a":0,"shifted_copy_b":0,"strict_crossing":false},{"polygon_a":93,"polygon_b":94,"edge_a":64,"edge_b":45,"min_boundary_distance_drawing":1.43574,"position_a_drawing":[1968.04,554.547],"position_b_drawing":[1967.44,553.243],"shifted_copy_a":0,"shifted_copy_b":0,"strict_crossing":false},{"polygon_a":25,"polygon_b":28,"edge_a":2,"edge_b":5,"min_boundary_distance_drawing":2.0695,"position_a_drawing":[575.122,731.861],"position_b_drawing":[573.253,730.972],"shifted_copy_a":0,"shifted_copy_b":0,"strict_crossing":false},{"polygon_a":23,"polygon_b":30,"edge_a":1,"edge_b":2,"min_boundary_distance_drawing":2.47005,"position_a_drawing":[537.036,693.318],"position_b_drawing":[537.83,695.657],"shifted_copy_a":0,"shifted_copy_b":0,"strict_crossing":false},{"polygon_a":1,"polygon_b":81,"edge_a":60,"edge_b":2,"min_boundary_distance_drawing":2.63069,"position_a_drawing":[2222.201,600.57],"position_b_drawing":[2219.64,601.17],"shifted_copy_a":1,"shifted_copy_b":0,"strict_crossing":false},{"polygon_a":9,"polygon_b":82,"edge_a":16,"edge_b":20,"min_boundary_distance_drawing":3.46245,"position_a_drawing":[1831.158,588.186],"position_b_drawing":[1834.519,589.018],"shifted_copy_a":0,"shifted_copy_b":0,"strict_crossing":false},{"polygon_a":23,"polygon_b":27,"edge_a":2,"edge_b":4,"min_boundary_distance_drawing":3.4963,"position_a_drawing":[520.836,683.36],"position_b_drawing":[517.418,684.096],"shifted_copy_a":0,"shifted_copy_b":0,"strict_crossing":false},{"polygon_a":18,"polygon_b":73,"edge_a":5,"edge_b":31,"min_boundary_distance_drawing":4.03582,"position_a_drawing":[1789.719,1114.699],"position_b_drawing":[1789.392,1110.676],"shifted_copy_a":0,"shifted_copy_b":0,"strict_crossing":false},{"polygon_a":25,"polygon_b":26,"edge_a":5,"edge_b":2,"min_boundary_distance_drawing":4.38631,"position_a_drawing":[598.082,741.313],"position_b_drawing":[602.456,741.636],"shifted_copy_a":0,"shifted_copy_b":0,"strict_crossing":false},{"polygon_a":8,"polygon_b":53,"edge_a":303,"edge_b":50,"min_boundary_distance_drawing":5.24731,"position_a_drawing":[1909.628,85.337],"position_b_drawing":[1912.71,81.09],"shifted_copy_a":0,"shifted_copy_b":0,"strict_crossing":false},{"polygon_a":44,"polygon_b":46,"edge_a":5,"edge_b":91,"min_boundary_distance_drawing":5.43558,"position_a_drawing":[1614.54,315.82],"position_b_drawing":[1619.96,316.229],"shifted_copy_a":0,"shifted_copy_b":0,"strict_crossing":false}],"limitations":["A segment crossing detector limited to proper intersections is not sufficient to rule out all touching/collinear nonmanifold geometry.","No reliable narrow land bridge is confirmed; nonlocal within-polygon proximity is only an exploratory geometry signal.","Near coast pair does not imply a land bridge or a navigable strait. Width at map coordinates cannot be converted to km.","Many B16 polygons contain numerous closely spaced vertices (e.g. 88/400) as a deliberate aesthetic coast treatment; smoothing indiscriminately would destroy source detail.","Do not automatically repair acute tips, close sea gaps, delete islands, shift approved countries or replace original B16 polygons.","Map is candidate noncanonical geography; no official global continent latitudes, geologic mechanism or local names assigned."]}
+{
+  "edition": "V2.25-R-B30",
+  "status": "GITHUB_SOURCE_STATIC_QA_PASS__PUBLIC_PAGES_AND_MOBILE_UNVERIFIED",
+  "QA": {
+    "no_strict_polygon_self_intersections": true,
+    "no_detected_interpolygon_strict_crossings": true,
+    "no_test_point_containment": true,
+    "all_original_polygons": true,
+    "source_original_vertex_count": true,
+    "sharp_under30_count": true,
+    "tight_between_polygons_less2_count": true,
+    "tight_between_polygons_less5_count": true,
+    "all_lt12_pair_distances_sorted": true
+  },
+  "raw_source_sha": "d580bd5d0410b1c533acfe9709e99092d302584c",
+  "summary": {
+    "vector_polygons": 99,
+    "original_vertices": 9621,
+    "self_crossings_strict": 0,
+    "cross_polygon_segment_crossings_strict": 0,
+    "polygon_testpoint_containments": 0,
+    "sharp_vertices_under30": 10,
+    "sharp_vertices_under40": 16,
+    "ultra_acute_under1": 2,
+    "cross_polygon_pairs_with_min_gap_under2": 3,
+    "cross_polygon_pairs_with_min_gap_under5": 10,
+    "cross_polygon_pairs_with_min_gap_under8": 21,
+    "cross_polygon_pairs_with_min_gap_under12": 34,
+    "nonlocal_same_polygon_boundary_distance_under12": 56
+  },
+  "candidate_queue_size": 20,
+  "severe_acute_vertices": [
+    {
+      "id": 3,
+      "polygon_name": "southern-ocean-east-ridge",
+      "vertex_index": 0,
+      "interior_candidate_angle_deg": 0.623,
+      "prev_edge_length": 12.716,
+      "next_edge_length": 3.799,
+      "location_drawing": [
+        1057.016,
+        981.267
+      ],
+      "note": "Unsigned vertex angle only; may represent legitimate sharp natural terrain or source simplification"
+    },
+    {
+      "id": 6,
+      "polygon_name": "southwest-southern-east-subcontinent",
+      "vertex_index": 0,
+      "interior_candidate_angle_deg": 0.989,
+      "prev_edge_length": 26.494,
+      "next_edge_length": 16.895,
+      "location_drawing": [
+        531.134,
+        993.008
+      ],
+      "note": "Unsigned vertex angle only; may represent legitimate sharp natural terrain or source simplification"
+    }
+  ],
+  "nearest_distinct_polygon_pairs": [
+    {
+      "polygon_a": 82,
+      "polygon_b": 83,
+      "edge_a": 129,
+      "edge_b": 41,
+      "min_boundary_distance_drawing": 1.29801,
+      "position_a_drawing": [
+        1844.641,
+        614.586
+      ],
+      "position_b_drawing": [
+        1845.51,
+        615.55
+      ],
+      "shifted_copy_a": 0,
+      "shifted_copy_b": 0,
+      "strict_crossing": false
+    },
+    {
+      "polygon_a": 11,
+      "polygon_b": 12,
+      "edge_a": 372,
+      "edge_b": 202,
+      "min_boundary_distance_drawing": 1.31435,
+      "position_a_drawing": [
+        1884.128,
+        824.793
+      ],
+      "position_b_drawing": [
+        1885.425,
+        825.008
+      ],
+      "shifted_copy_a": 0,
+      "shifted_copy_b": 0,
+      "strict_crossing": false
+    },
+    {
+      "polygon_a": 93,
+      "polygon_b": 94,
+      "edge_a": 64,
+      "edge_b": 45,
+      "min_boundary_distance_drawing": 1.43574,
+      "position_a_drawing": [
+        1968.04,
+        554.547
+      ],
+      "position_b_drawing": [
+        1967.44,
+        553.243
+      ],
+      "shifted_copy_a": 0,
+      "shifted_copy_b": 0,
+      "strict_crossing": false
+    },
+    {
+      "polygon_a": 25,
+      "polygon_b": 28,
+      "edge_a": 2,
+      "edge_b": 5,
+      "min_boundary_distance_drawing": 2.0695,
+      "position_a_drawing": [
+        575.122,
+        731.861
+      ],
+      "position_b_drawing": [
+        573.253,
+        730.972
+      ],
+      "shifted_copy_a": 0,
+      "shifted_copy_b": 0,
+      "strict_crossing": false
+    },
+    {
+      "polygon_a": 23,
+      "polygon_b": 30,
+      "edge_a": 1,
+      "edge_b": 2,
+      "min_boundary_distance_drawing": 2.47005,
+      "position_a_drawing": [
+        537.036,
+        693.318
+      ],
+      "position_b_drawing": [
+        537.83,
+        695.657
+      ],
+      "shifted_copy_a": 0,
+      "shifted_copy_b": 0,
+      "strict_crossing": false
+    },
+    {
+      "polygon_a": 1,
+      "polygon_b": 81,
+      "edge_a": 60,
+      "edge_b": 2,
+      "min_boundary_distance_drawing": 2.63069,
+      "position_a_drawing": [
+        2222.201,
+        600.57
+      ],
+      "position_b_drawing": [
+        2219.64,
+        601.17
+      ],
+      "shifted_copy_a": 1,
+      "shifted_copy_b": 0,
+      "strict_crossing": false
+    },
+    {
+      "polygon_a": 9,
+      "polygon_b": 82,
+      "edge_a": 16,
+      "edge_b": 20,
+      "min_boundary_distance_drawing": 3.46245,
+      "position_a_drawing": [
+        1831.158,
+        588.186
+      ],
+      "position_b_drawing": [
+        1834.519,
+        589.018
+      ],
+      "shifted_copy_a": 0,
+      "shifted_copy_b": 0,
+      "strict_crossing": false
+    },
+    {
+      "polygon_a": 23,
+      "polygon_b": 27,
+      "edge_a": 2,
+      "edge_b": 4,
+      "min_boundary_distance_drawing": 3.4963,
+      "position_a_drawing": [
+        520.836,
+        683.36
+      ],
+      "position_b_drawing": [
+        517.418,
+        684.096
+      ],
+      "shifted_copy_a": 0,
+      "shifted_copy_b": 0,
+      "strict_crossing": false
+    },
+    {
+      "polygon_a": 18,
+      "polygon_b": 73,
+      "edge_a": 5,
+      "edge_b": 31,
+      "min_boundary_distance_drawing": 4.03582,
+      "position_a_drawing": [
+        1789.719,
+        1114.699
+      ],
+      "position_b_drawing": [
+        1789.392,
+        1110.676
+      ],
+      "shifted_copy_a": 0,
+      "shifted_copy_b": 0,
+      "strict_crossing": false
+    },
+    {
+      "polygon_a": 25,
+      "polygon_b": 26,
+      "edge_a": 5,
+      "edge_b": 2,
+      "min_boundary_distance_drawing": 4.38631,
+      "position_a_drawing": [
+        598.082,
+        741.313
+      ],
+      "position_b_drawing": [
+        602.456,
+        741.636
+      ],
+      "shifted_copy_a": 0,
+      "shifted_copy_b": 0,
+      "strict_crossing": false
+    },
+    {
+      "polygon_a": 8,
+      "polygon_b": 53,
+      "edge_a": 303,
+      "edge_b": 50,
+      "min_boundary_distance_drawing": 5.24731,
+      "position_a_drawing": [
+        1909.628,
+        85.337
+      ],
+      "position_b_drawing": [
+        1912.71,
+        81.09
+      ],
+      "shifted_copy_a": 0,
+      "shifted_copy_b": 0,
+      "strict_crossing": false
+    },
+    {
+      "polygon_a": 44,
+      "polygon_b": 46,
+      "edge_a": 5,
+      "edge_b": 91,
+      "min_boundary_distance_drawing": 5.43558,
+      "position_a_drawing": [
+        1614.54,
+        315.82
+      ],
+      "position_b_drawing": [
+        1619.96,
+        316.229
+      ],
+      "shifted_copy_a": 0,
+      "shifted_copy_b": 0,
+      "strict_crossing": false
+    }
+  ],
+  "limitations": [
+    "A segment crossing detector limited to proper intersections is not sufficient to rule out all touching/collinear nonmanifold geometry.",
+    "No reliable narrow land bridge is confirmed; nonlocal within-polygon proximity is only an exploratory geometry signal.",
+    "Near coast pair does not imply a land bridge or a navigable strait. Width at map coordinates cannot be converted to km.",
+    "Many B16 polygons contain numerous closely spaced vertices (e.g. 88/400) as a deliberate aesthetic coast treatment; smoothing indiscriminately would destroy source detail.",
+    "Do not automatically repair acute tips, close sea gaps, delete islands, shift approved countries or replace original B16 polygons.",
+    "Map is candidate noncanonical geography; no official global continent latitudes, geologic mechanism or local names assigned."
+  ],
+  "cross_file_checks": {
+    "all_files_exist": true,
+    "B16_source_unchanged": true,
+    "B29_reference_unchanged": true,
+    "B30_source_blob_matches": true,
+    "active_version_B30": true,
+    "active_viewer_file_matches": true,
+    "latest_wiki_B30": true,
+    "historic_B18_to_B29_retained": true,
+    "original_B16_has_99": true,
+    "original_vertex_count_9621": true,
+    "per_polygon_vertex_counts_match": true,
+    "intersection_count_zero": true,
+    "distinct_polygon_intersections_zero": true,
+    "angles_under30_ten": true,
+    "angles_under1_two": true,
+    "cross_polygon_near2_three": true,
+    "cross_polygon_near5_ten": true,
+    "cross_polygon_near8_twentyone": true,
+    "cross_polygon_near12_thirtyfour": true,
+    "first_gap_id_pair": true,
+    "A01_original_angle": true,
+    "A02_original_angle": true,
+    "twenty_review_issues": true,
+    "issue_ids_ordered": true,
+    "polygon_ids_valid": true,
+    "sharp_coords_match_original": true,
+    "issue_metrics_within_priority": true,
+    "B29_islets_eight": true,
+    "SVG_tag_balance": true,
+    "SVG_draws_many_source_paths": true,
+    "SVG_highlights_3_key_positions": true,
+    "SVG_end_tag": true,
+    "HTML_Javascript_valid": true,
+    "HTML_correct_B16_fetch": true,
+    "HTML_correct_B30_fetch": true,
+    "HTML_correct_B29_fetch": true,
+    "HTML_schema_fields": true,
+    "HTML_queue_count_check": true,
+    "HTML_original_coast_draw": true,
+    "HTML_pan_zoom": true,
+    "HTML_navigation": true,
+    "HTML_issue_filters": true,
+    "wiki_links_correct": true,
+    "no_official_geography_assigned": true,
+    "no_coast_geometry_edits": true
+  },
+  "deliverables": {
+    "interactive_atlas": "assets/maps/orbina-v225r-b30-geometry-quality-atlas.html",
+    "full_static_map": "assets/images/orbina-v225r-b30-geometry-review-map.svg",
+    "full_data": "assets/data/orbina-v225r-b30-vector-coast-geometry-screen.json",
+    "encyclopedia": "_articles/article-035.md",
+    "active_atlas_index": "assets/data/orbina-global-continent-scale-principles.json"
+  },
+  "source_preservation": {
+    "B16": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "B29": "87e81795f603943b63972ec90c16f929f69a76fa"
+  },
+  "test_limit": "GitHub source re-fetched, JS syntax and referential schema checked, no actual public Pages/browser/mobile rendering executed.",
+  "topology_limit": "No strict crossings found, but tangencies, collinear overlaps, and actual land bridge / navigational straits remain unverified. Coordinate distances have no world-unit scale."
+}
