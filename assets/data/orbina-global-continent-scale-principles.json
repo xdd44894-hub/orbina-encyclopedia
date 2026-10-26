@@ -16,43 +16,50 @@
     "f_land": "全星陆地真实面积份额，未定",
     "f_i": "第i个大陆真实面积份额，未定",
     "R": "行星平均或采用的参考半径，未定",
-    "caveat": "B15按暂定2400×1200假设经纬网格球面积分为约44.19%绘图候选陆地，不等于俄庇娜正式海陆面积、星球半径、实测海深或真实大陆规模。"
+    "caveat": "B16工作草图沿暂定2400x1200经纬网投影的假设球面陆地比例约42.76%，并非正式俄庇娜海陆覆盖率、实际星球半径和大陆公里面积。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B15",
-    "status": "现行非正史全球工作地图：B14的独立不规则群岛基础上修正岬角与分叉海湾，并对22座候选岛屿进行狭长变化",
-    "working_map": "assets/images/orbina-v225r-b15-coastal-global.svg",
-    "equal_area_map": "assets/images/orbina-v225r-b15-mollweide.svg",
-    "viewer": "assets/maps/orbina-v225r-b15-coastal-atlas.html",
-    "data": "assets/data/orbina-v225r-b15-coastal-geography-master.json",
-    "coastal_morphology_study": "assets/data/orbina-v225r-b15-coastal-morphology-study.json",
-    "audit": "assets/data/orbina-v225r-b15-coastal-integrity-audit.json",
-    "polygon_inventory": {
-      "major_layer": 16,
-      "island_and_small_land_layer": 94,
-      "NE_candidate": 23,
-      "NE_dominant": 2,
-      "SE_candidate": 54,
-      "SE_major": 7,
-      "global_total": 110,
-      "counts_are_not_canon": true
+    "edition": "V2.25-R-B16",
+    "status": "当前现行非正史全球世界地图候选：九主陆宏观审美修形、东北两主陆与东南两主角层次、岛链错列、清理拥挤小岛、保留海面留白",
+    "working_map": "assets/images/orbina-v225r-b16-aesthetic-world.svg",
+    "equal_area_map": "assets/images/orbina-v225r-b16-mollweide.svg",
+    "viewer": "assets/maps/orbina-v225r-b16-aesthetic-atlas.html",
+    "data": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+    "audit": "assets/data/orbina-v225r-b16-cartographic-integrity-audit.json",
+    "visual_changes": {
+      "nine_primary_land_shaping": 9,
+      "secondary_and_large_islands_rescaled": 12,
+      "retired_small_noncanon_land_drawings": 11,
+      "relocated_noncanon_satellite_islands": 19,
+      "NE_dominant_mainlands": 2,
+      "NE_land_polygon_count": 20,
+      "SE_two_primary_visual_lands": 2,
+      "SE_seven_larger_remnants": 7,
+      "SE_land_polygon_count": 46,
+      "large_land_layer": 16,
+      "small_land_layer": 83,
+      "total_noncanon_land_drawings": 99
     },
-    "revision_summary": {
-      "major_coastlines_refined": 9,
-      "satellite_coastlines_elongated": 22,
-      "illustrative_shelf_nearshore_polygons": 9,
-      "strictly_non_bathymetric_shelf_layer": true,
-      "old_B14_coast_comparison_hidden_by_default": true,
-      "all_25_approved_major_seas_preserved": true,
-      "shattered_sea_32_chains_preserved": true
+    "study_overlays": {
+      "previous_B15_coast_outline": "hidden by default",
+      "aesthetic_island_arc_guides": 4,
+      "arc_guides_hypothetical_visual_only": true
     },
     "hypothetical_sphere": {
-      "land_fraction": 0.4418505,
-      "land_percent_approx": 44.19,
-      "not_actual_land_coverage": true
+      "land_fraction": 0.42757,
+      "land_percent_approx": 42.76,
+      "not_actual_planet_land_coverage": true
     },
-    "geographic_guards": "central supercontinent states and Qintang/Sarila/Baitown and Tangxi/R1/R2 independent watersheds remain protected, no officially mapped global coordinates",
-    "geomorphology_status": "shape experiments only; no physical shore process, sediment budget, ice age, real sea level, actual shelf bathymetry or global scale confirmed"
+    "official_constraints": [
+      "United City and People's Paradise on the same central supercontinent",
+      "Qintang NW of Sarila; Baitown north adjacent",
+      "Southern opening of the huge inner bay, northern peninsula and resistance arc preserve relations",
+      "Tangxi and R1/R2 independent river systems",
+      "25 official named large oceans/seas preserved without arbitrary pin assignment",
+      "Shattered Sea established 32 island chains preserved as canon, not mapped to anonymous diagram polygons"
+    ],
+    "revision_context": "B16 prioritizes large-scale landform silhouettes, editorial visual hierarchy and sea-space negative areas rather than proliferation of fragments or indiscriminate noise",
+    "visual_validation": "Offline software-rendered B15 vs B16 local polygon snapshots inspected. Further browser/mobile review still needed; geometry should not be declared final."
   },
-  "following_work": "下一轮应先开展地图大/小比例视觉审核，随后以B15海岸为基础研究相对山地与河谷、海湾沉积候选，以及陆地独立分水岭；不可把九组示意近岸环当成测深数据。继续允许自然尺度变动，不锁死陆块/岛数。"
+  "following_work": "对B16全球海岸线做实际浏览器/手机视觉审核，特别是东南主陆仍可能存在团块感；继续修自然骨架时先确定山脊与原有河谷候选，再根据沉积、侵蚀机制确定海湾与岛链，避免机械增加碎岛数量。"
 }
