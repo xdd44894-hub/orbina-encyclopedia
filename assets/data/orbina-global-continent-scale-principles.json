@@ -19,9 +19,9 @@
     "caveat": "B19地图集延续B16暂定经纬制图的假设球面陆地比例约42.76%；所有模型0至100数值只表示相对地势，无法换算真实海拔米数、河流流量、实际国土面积或星球半径。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B27",
-    "status": "B27使用B26全99片候选陆海抽样格研究球面面积与三投影视觉差异，计算N/C/S三候选纬度方案球面陆地比例38.087/42.704/46.447%，并在未配准全球海岸的H4独立地势研究四向来风的单格升坡/降坡。所有正式国家水系相对位置不动，未录用真实纬度、气候、山脉或行星半径。",
-    "viewer": "assets/maps/orbina-v225r-b27-projection-orography-atlas.html",
+    "edition": "V2.25-R-B28",
+    "status": "B28在B16原99片候选矢量海岸和B27已有240×120陆海格网上扫描240个中央显示切图，检查同ID跨地图接缝、东西周期拓扑连通性及N/C/S候选±75°极区轮廓；第57列最低跨缝2行，仅作可撤回显示方案，无正式经度、国界与极区气候。",
+    "viewer": "assets/maps/orbina-v225r-b28-meridian-polar-atlas.html",
     "working_map": "assets/images/orbina-v225r-b18-relative-relief-hydrography.svg",
     "equal_area_map": "assets/images/orbina-v225r-b16-mollweide.svg",
     "unchanged_coast_geometry": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
@@ -29,7 +29,7 @@
     "named_geographic_canon": "assets/data/orbina-v225r-b17-confirmed-geographic-register.json",
     "B17_coast_shape_study": "assets/data/orbina-v225r-b17-physiography-study.json",
     "B18_relative_terrain_and_routing": "assets/data/orbina-v225r-b18-relative-elevation-hydrology.json",
-    "audit": "assets/data/orbina-v225r-b27-projection-audit.json",
+    "audit": "assets/data/orbina-v225r-b28-meridian-polar-audit.json",
     "stats": {
       "unchanged_candidate_land_polygons": 99,
       "geography_chapters": 10,
@@ -110,9 +110,18 @@
       "B27_spherical_land_fraction_central_candidate_percent": 42.704,
       "B27_spherical_land_fraction_south_candidate_percent": 46.447,
       "B27_H4_wind_sensitivity_directions": 4,
-      "B27_canonical_land_area_or_national_coordinates_assigned": 0
+      "B27_canonical_land_area_or_national_coordinates_assigned": 0,
+      "B28_candidate_seam_positions_tested": 240,
+      "B28_original_seam_land_crossing_rows": 51,
+      "B28_lowest_crossing_rows": 2,
+      "B28_low_crossing_example_shift": 57,
+      "B28_periodic_land_component_count": 90,
+      "B28_B16_polygon_source_count": 99,
+      "B28_distinct_polygon_owners_sampled": 91,
+      "B28_small_polygon_without_raster_center_hit": 8,
+      "B28_canonical_longitudes_approved": 0
     },
-    "scientific_disclaimer": "B27 globe projection and sphere area are measured only on the 240x120 grid of B16 NONCANON coastline after B26 candidate latitude registration. Lambert CEA/Mollweide retain area within a given hypothetical spherical coordinate reference, while Plate Carree visually exaggerates high-latitude coverage. Four H4 one-cell rise/descent windward measures are synthetic height slopes, not climate or winds. No physical scales, orbit, official nation positions or permanent climate decided.",
+    "scientific_disclaimer": "B28 shifts only visual seam position on B27/B26 240x120 coastline occupancy mask. Lower same-owner seam crossing score (2 at shift 57 versus 51 original) does not prove a canon prime meridian or no other cartographic defects. 99 source polygons remain, only 91 sampled by coarse raster. Polar N/C/S labels and all globe climate/radius/rotation data noncanonical.",
     "canon_guards": [
       "United City and People's Paradise same central supercontinent",
       "Southern outlet big inner sea, North Crown peninsula, eastern gate and Resistance Arc as previously established",
@@ -121,7 +130,7 @@
       "25 confirmed major seas names with unspecified exact world coordinates",
       "Shattered Sea canon 32 intertwined island chains and ~38% in tropical zone"
     ],
-    "version_dependency": "B16 99 draft coast shapes -> B26 three noncanonical candidate latitude registrations and wrapped 240x120 occupancy grid -> B27 area accounting and 3 map projections. Separately B20 H4 synthetic terrain -> B27 4 wind-direction slope indices. B17-B25 studies preserved as-is.",
+    "version_dependency": "B16 all 99 original candidate polygons -> B26 240x120 raster and three hypothetical latitude registrations -> B27 projected globe + periodic land area -> B28 240 candidate display seams, periodic-vs-flat connected component checks and ±75° polar screening. All B17-B25 sources retained.",
     "B19_H2_watershed_map": "assets/images/orbina-v225r-b19-h2-catchments.svg",
     "B18_full_viewer": "assets/maps/orbina-v225r-b18-relative-relief-atlas.html",
     "B19_H2_catchment_and_precipitation_data": "assets/data/orbina-v225r-b19-h2-catchments.json",
@@ -149,7 +158,10 @@
     "B25_previous_viewer": "assets/maps/orbina-v225r-b25-global-circulation-atlas.html",
     "B27_static_projection_overview": "assets/images/orbina-v225r-b27-projection-orography-overview.svg",
     "B27_spherical_and_orography_data": "assets/data/orbina-v225r-b27-globe-projection-orography.json",
-    "B26_previous_viewer": "assets/maps/orbina-v225r-b26-coast-climate-overlay.html"
+    "B26_previous_viewer": "assets/maps/orbina-v225r-b26-coast-climate-overlay.html",
+    "B28_seam_polar_overview": "assets/images/orbina-v225r-b28-seam-polar-comparison.svg",
+    "B28_seam_diagnostic_data": "assets/data/orbina-v225r-b28-meridian-polar-seam-study.json",
+    "B27_previous_viewer": "assets/maps/orbina-v225r-b27-projection-orography-atlas.html"
   },
-  "following_work": "B28：检查候选球面中央经线旋转、跨缝稳定性与极区形态；补齐H1-H5局部山系与可信水汽源的可证伪联系，但不能给正式国家固定坐标、实测降雨或行星半径。"
+  "following_work": "B29：将完整B16原始99片矢量海岸直接显示在可切换投影的全球图中，并核查8片栅格漏采小岛及接缝两侧的海岸细节。此时仍不得固定正式经线、国家坐标、半径和极地气候。"
 }
