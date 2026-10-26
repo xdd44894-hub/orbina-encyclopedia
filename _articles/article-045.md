@@ -1,5 +1,6 @@
 ---
 archived: true
+published: false
 ai_search: false
 title: "藏朔原人文"
 category: "势力与军事"
