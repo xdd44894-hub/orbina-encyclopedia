@@ -16,50 +16,41 @@
     "f_land": "全星陆地真实面积份额，未定",
     "f_i": "第i个大陆真实面积份额，未定",
     "R": "行星平均或采用的参考半径，未定",
-    "caveat": "B16工作草图沿暂定2400x1200经纬网投影的假设球面陆地比例约42.76%，并非正式俄庇娜海陆覆盖率、实际星球半径和大陆公里面积。"
+    "caveat": "现行B17地理书地图集仍使用B16暂定经纬工作图，假设球面陆地比例约42.76%，不得推定实际面积、真实海深、全球经纬坐标或星球半径。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B16",
-    "status": "当前现行非正史全球世界地图候选：九主陆宏观审美修形、东北两主陆与东南两主角层次、岛链错列、清理拥挤小岛、保留海面留白",
-    "working_map": "assets/images/orbina-v225r-b16-aesthetic-world.svg",
+    "edition": "V2.25-R-B17",
+    "status": "现行地理书式地图集第一卷：海陆沿用B16修形轮廓，新增99候选陆地档案、26相对地形研究单位、78潜在向海研究扇区与10章地图图层目录",
+    "viewer": "assets/maps/orbina-v225r-b17-geography-atlas.html",
+    "working_map": "assets/images/orbina-v225r-b17-physical-geography.svg",
     "equal_area_map": "assets/images/orbina-v225r-b16-mollweide.svg",
-    "viewer": "assets/maps/orbina-v225r-b16-aesthetic-atlas.html",
-    "data": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
-    "audit": "assets/data/orbina-v225r-b16-cartographic-integrity-audit.json",
-    "visual_changes": {
-      "nine_primary_land_shaping": 9,
-      "secondary_and_large_islands_rescaled": 12,
-      "retired_small_noncanon_land_drawings": 11,
-      "relocated_noncanon_satellite_islands": 19,
-      "NE_dominant_mainlands": 2,
-      "NE_land_polygon_count": 20,
-      "SE_two_primary_visual_lands": 2,
-      "SE_seven_larger_remnants": 7,
-      "SE_land_polygon_count": 46,
-      "large_land_layer": 16,
-      "small_land_layer": 83,
-      "total_noncanon_land_drawings": 99
+    "coast_geometry_data": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+    "geography_layer_catalog": "assets/data/orbina-v225r-b17-atlas-layer-catalog.json",
+    "relative_relief_study": "assets/data/orbina-v225r-b17-physiography-study.json",
+    "confirmed_geography_register": "assets/data/orbina-v225r-b17-confirmed-geographic-register.json",
+    "audit": "assets/data/orbina-v225r-b17-textbook-atlas-integrity-audit.json",
+    "geometry_unchanged_from_B16": true,
+    "stats": {
+      "candidate_land_polygons": 99,
+      "indexed_land_polygons": 99,
+      "first_pass_land_studies": 26,
+      "relative_ridge_axial_studies": 26,
+      "possible_shoreward_sector_traces": 78,
+      "confirmed_named_major_seas": 25,
+      "confirmed_geo_relation_entries": 10,
+      "atlas_chapters": 10,
+      "hypothetical_spherical_land_percent": 42.76
     },
-    "study_overlays": {
-      "previous_B15_coast_outline": "hidden by default",
-      "aesthetic_island_arc_guides": 4,
-      "arc_guides_hypothetical_visual_only": true
-    },
-    "hypothetical_sphere": {
-      "land_fraction": 0.42757,
-      "land_percent_approx": 42.76,
-      "not_actual_planet_land_coverage": true
-    },
-    "official_constraints": [
-      "United City and People's Paradise on the same central supercontinent",
-      "Qintang NW of Sarila; Baitown north adjacent",
-      "Southern opening of the huge inner bay, northern peninsula and resistance arc preserve relations",
-      "Tangxi and R1/R2 independent river systems",
-      "25 official named large oceans/seas preserved without arbitrary pin assignment",
-      "Shattered Sea established 32 island chains preserved as canon, not mapped to anonymous diagram polygons"
+    "canon_protections": [
+      "同一中央超级大陆的联合城与人民天国",
+      "超级大陆南部外口连接的大内海，北冠半岛、东门地峡及抵抗者之弧",
+      "秦棠西北于萨瑞拉，白石城北邻萨瑞拉",
+      "棠溪与内海东岸R1/R2独立水系",
+      "碎洋32条岛链和约38%热带面积",
+      "25个正式海域名称位置尚不按工作经纬图擅自确定"
     ],
-    "revision_context": "B16 prioritizes large-scale landform silhouettes, editorial visual hierarchy and sea-space negative areas rather than proliferation of fragments or indiscriminate noise",
-    "visual_validation": "Offline software-rendered B15 vs B16 local polygon snapshots inspected. Further browser/mobile review still needed; geometry should not be declared final."
+    "academic_standard": "Canonical named facts, draft geometries, shape-derived research and missing values occupy distinct data states. Map study ridges are NOT actual mountains; possible shoreward traces are NOT rivers. Do not assign fictional weather observation series, true kilometers, absolute terrain altitudes or tectonic ages.",
+    "next_step": "Build genuine relative elevation grid and conditional drainage derivation for a selected major area, with hydrogeological consistency and coastline morphology review, then gradually link national geography and cities to verified positions."
   },
-  "following_work": "对B16全球海岸线做实际浏览器/手机视觉审核，特别是东南主陆仍可能存在团块感；继续修自然骨架时先确定山脊与原有河谷候选，再根据沉积、侵蚀机制确定海湾与岛链，避免机械增加碎岛数量。"
+  "following_work": "B18起开展先地势后水文的可验证流程：区域分层相对地形—分水岭—河流源汇—河湖湿地—降水及气候—生态—国家聚落—经济专题；优先完成一个充分校核的示范图幅，再用同一规范推进99陆地档案；不把B17研究向海线认定为正式河流。"
 }
