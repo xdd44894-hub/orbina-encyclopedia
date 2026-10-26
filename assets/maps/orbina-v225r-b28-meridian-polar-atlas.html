@@ -65,7 +65,6 @@ if(proj==="plate")return [frame.x+u*frame.w,frame.y+(90-latitude)/180*frame.h];
 if(proj==="cea")return [frame.x+u*frame.w,frame.y+(1-Math.sin(latitude*RAD))/2*frame.h];
 const t=theta(latitude);
 return [frame.x+frame.w*(.5+(u-.5)*Math.cos(t)),frame.y+frame.h*(1-Math.sin(t))/2]}
-function climateShift(){return study.polar_silhouette.scenario_stats[$("placement").value],study?({N:18,C:0,S:-18}[$("placement").value]):0}
 function drawMap(){
 if(!study||!sphere)return;
 const shift=Number($("shift").value),A={N:18,C:0,S:-18}[$("placement").value],projection=$("projection").value;
