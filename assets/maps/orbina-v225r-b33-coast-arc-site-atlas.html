@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 V2.25-R-B33｜海岸弧长与地峡候选图册</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f1f3ed;color:#223e4b;font:15px/1.6 system-ui,"Microsoft YaHei",sans-serif}
+header{background:linear-gradient(105deg,#183b52,#36736f);color:#fcfdf9;padding:26px max(16px,calc((100vw - 1230px)/2))}
+header h1{font-size:clamp(23px,3vw,39px);margin:0 0 8px}header p{color:#d2e6e2;margin:0;max-width:960px}
+main{max-width:1230px;margin:auto;padding:17px 15px 38px}nav{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:15px}
+nav a{border-radius:7px;background:#fff;padding:8px 11px;text-decoration:none;color:#23626c;font-size:13px;border:1px solid #cee0d8}
+.statline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:15px}
+.stat{background:#e7f0e8;border:1px solid #d1ddd4;border-radius:10px;padding:12px}.stat b{display:block;font-size:27px;font-variant-numeric:tabular-nums;color:#296576}.stat small{color:#607b7e}
+.panel{background:#fffefa;border:1px solid #d3ded6;padding:18px;border-radius:11px;margin-bottom:16px}
+h2{font-size:20px;margin:0 0 10px}h3{font-size:16px;margin:5px 0}
+.control{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:10px 0}.control label{font-size:13px;display:flex;gap:6px;align-items:center}
+select,button,input{font:inherit;color:#28505d;accent-color:#2c8a8b}select,button{border:1px solid #b8ceca;padding:7px 9px;border-radius:7px;background:#f5f8f3}
+button{cursor:pointer;background:#e5f0ea}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #2587a1}
+.mainarea{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:14px}
+.canvasbox{border:1px solid #aec4c6;border-radius:9px;overflow:hidden;background:#204d64}
+canvas{display:block;width:100%;height:auto;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}
+#status,#detail{padding:12px;background:#eef5f0;border:1px solid #cbdcd3;border-radius:8px;font-size:13px;margin:10px 0;overflow-wrap:anywhere}
+#detail p{margin:7px 0}#detail h3{margin:0 0 10px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;color:#5d7780;font-size:12px;margin:10px 0}
+.color{display:inline-block;width:11px;height:11px;border-radius:50%;vertical-align:middle;margin-right:5px}
+.queue{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.queue button{text-align:left;background:#f5f8f2;font-size:13px;padding:11px;min-height:72px}
+.queue button.active{background:#e0f4ec;outline:2px solid #32869a}.queue button b,.queue button small{display:block}.queue small{color:#667d82}
+.muted{font-size:13px;color:#5e7a81}
+@media(max-width:900px){.mainarea{grid-template-columns:1fr}.statline{grid-template-columns:repeat(2,minmax(0,1fr))}.queue{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style></head>
+<body>
+<header><h1>俄庇娜 · B33 海岸弧长与地形细颈复核</h1>
+<p>原始99片陆地轮廓完整保留。抛弃“相隔多少个顶点才算两段独立海岸”的旧门槛，以沿轮廓弧长及其与横向距离的关系重新筛选全球候选海岸。以下全部是绘图几何，不是已确认的地峡或海峡。</p></header>
+<main><nav>
+<a href="../data/orbina-v225r-b33-contour-arclength-screen.json">查看B33完整几何数据</a>
+<a href="orbina-v225r-b32-exact-shoreline-intersection-atlas.html">对照B32旧56处截线</a>
+<a href="orbina-v225r-b29-complete-vector-atlas.html">查看完整矢量全球地图</a>
+<a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md">海洋地理百科</a>
+</nav>
+<div class="statline"><div class="stat"><b>99</b><small>保留的候选陆块</small></div><div class="stat"><b>67</b><small>通过弧长筛选的边段组合</small></div><div class="stat"><b>9</b><small>聚合后的放大审查位置</small></div><div class="stat"><b>0</b><small>获证实的真实地峡数量</small></div></div>
+<section class="panel"><h2>全球海岸与九处几何候选</h2>
+<div class="control">
+<label>选择位置 <select id="pick"><option value="">选择S编号</option></select></label>
+<label>类型 <select id="filter"><option value="all">全部9处</option><option value="land">6条陆地截线</option><option value="water">3条水面截线</option><option value="tip">A01/A02附近的两处</option></select></label>
+<label>显示切图 <select id="seam"><option value="57">第57列·推荐显示</option><option value="55">第55列</option><option value="0">B16原始图幅</option></select></label>
+<label><input id="allEdges" type="checkbox">显示67条候选短截线</label>
+</div>
+<div class="control"><label>放大倍率 <input id="zoom" type="range" min="1" max="40" step=".5" value="1"><b id="zoomShow">1×</b></label>
+<button id="focus">定位当前</button><button id="prev">上一处</button><button id="next">下一处</button><button id="reset">复位地图</button>
+</div>
+<div class="mainarea"><div>
+<div class="canvasbox"><canvas id="map" width="1280" height="665" aria-label="俄庇娜海岸弧长专题交互地图，可以拖动及缩放"></canvas></div>
+<div class="legend">
+<span><i class="color" style="background:#c9d8b2"></i>B16原始陆地</span>
+<span><i class="color" style="background:#54daa6"></i>陆地候选截线</span>
+<span><i class="color" style="background:#ffe195"></i>水面候选截线</span>
+<span><i class="color" style="background:#ff889f"></i>尖角邻近优先核查</span>
+</div><div id="status">正在读取B16海岸及B33审查数据……</div>
+</div><aside><div id="detail"><h3>地图尚未选择位置</h3><p>选择S01至S09，查看候选短截线、沿岸弧长和地图来源。</p></div>
+<p class="muted">B33的判据为：海岸候选两点相距不足12图纸单位；沿轮廓的较短弧长至少为max(10,该陆块周长的3%)；弧长/截线距离不少于4。按相隔10图纸单位的候选中点聚类。这些阈值仍是候选模型参数，并非真实星球尺寸。</p>
+</aside></div></section>
+<section class="panel"><h2>九处详细审查位置</h2><p class="muted">S01和S06靠近此前异常尖角A02和A01，优先检查是否是绘图针尖或假细颈，不能直接视作新的陆桥。剩余七处分别在局部海湾、岩岬或岛缘等待进一步地貌审查。</p>
+<div class="queue" id="queue"></div></section>
+<section class="panel"><h2>为什么B33不直接修改大陆？</h2>
+<p>原版B16部分海岸轮廓具有88或400个密集顶点，沿顶点序号测量容易把普通的曲折海湾误称为狭窄地峡。B33采用沿海岸的实际矢量长度、两段边最短连线和陆海交点，重新建立较稳定的局部候选清单。它虽然减少了很多旧的近岸报警，却<strong>不保证找齐全球全部地峡</strong>：宽于12绘图单位的真实地峡可能遗漏，较小岛屿也可能受阈值影响。没有海拔、成因、海底地形、公里比例和区域水系证据前，任何候选不直接转为正史。</p></section>
+</main><script>
+"use strict";
+const $=s=>document.getElementById(s),canvas=$("map"),ctx=canvas.getContext("2d");
+const CX=640,CY=332.5,FX=28,FY=22,FW=1224,FH=612;
+let B=null,D=null,polygons=[],sites=[],chosen=null,zoom=1,panX=0,panY=0,drag=null;
+function wrap(x){return(x%2400+2400)%2400}
+function basePoint(p,k){return[FX+(p[0]-Number($("seam").value)*10+2400*k)/2400*FW,FY+p[1]/1200*FH]}
+function normPoint(p){return[FX+wrap(p[0]-Number($("seam").value)*10)/2400*FW,FY+p[1]/1200*FH]}
+function groupOf(x){return x.class==="continuous_land"?"land":"water"}
+function visible(){return sites.filter(s=>$("filter").value==="all"||$("filter").value===groupOf(s)||$("filter").value==="tip"&&[3,6].includes(s.polygon_id))}
+function strokeSegment(a,b,color,width,dash=[]){for(let k=-1;k<=2;k++){const p=basePoint(a,k),q=basePoint(b,k);ctx.beginPath();ctx.moveTo(...p);ctx.lineTo(...q);ctx.strokeStyle=color;ctx.lineWidth=width/zoom;ctx.setLineDash(dash.map(x=>x/zoom));ctx.stroke();ctx.setLineDash([])}}
+function dot(p,color,r){for(let k=-1;k<=2;k++){const q=basePoint(p,k);ctx.beginPath();ctx.arc(q[0],q[1],r/zoom,0,2*Math.PI);ctx.fillStyle=color;ctx.fill();ctx.strokeStyle="#183e4e";ctx.lineWidth=.8/zoom;ctx.stroke()}}
+function draw(){ctx.clearRect(0,0,1280,665);ctx.fillStyle="#1e4e66";ctx.fillRect(0,0,1280,665);
+ctx.save();ctx.translate(CX+panX,CY+panY);ctx.scale(zoom,zoom);ctx.translate(-CX,-CY);
+ctx.strokeStyle="rgba(211,233,234,.18)";ctx.lineWidth=1/zoom;for(let i=0;i<=12;i++){let x=FX+i*FW/12;ctx.beginPath();ctx.moveTo(x,FY);ctx.lineTo(x,FY+FH);ctx.stroke()}for(let j=0;j<=6;j++){let y=FY+j*FH/6;ctx.beginPath();ctx.moveTo(FX,y);ctx.lineTo(FX+FW,y);ctx.stroke()}
+if(B){polygons.forEach(p=>{for(let k=-1;k<=2;k++){ctx.beginPath();p.coordinates.forEach((v,i)=>{let q=basePoint(v,k);if(i===0)ctx.moveTo(...q);else ctx.lineTo(...q)});ctx.closePath();ctx.fillStyle=p.color||"#c2cda9";ctx.fill();ctx.strokeStyle="#d6dfbb";ctx.lineWidth=.75/zoom;ctx.stroke()}})}
+if(D){if($("allEdges").checked){D.qualifying_edge_pairs.forEach(z=>{let poly=polygons[z.polygon_id],a=poly.coordinates[z.source_edges[0]],b=poly.coordinates[(z.source_edges[0]+1)%poly.coordinates.length],c=poly.coordinates[z.source_edges[1]],d=poly.coordinates[(z.source_edges[1]+1)%poly.coordinates.length];let h=[(a[0]+b[0])/2,(a[1]+b[1])/2],t=[(c[0]+d[0])/2,(c[1]+d[1])/2];strokeSegment(h,t,"#d3f3ea",.6,[2,2])})}
+visible().forEach(s=>{dot(s.coordinate_midpoint,[3,6].includes(s.polygon_id)?"#ff889f":s.class==="continuous_land"?"#54daa6":"#ffe195",s===chosen?7:4);if(s===chosen){strokeSegment(s.coast_a,s.coast_b,s.class==="continuous_land"?"#54daa6":"#ffe195",6);dot(s.coast_a,"#fff",5);dot(s.coast_b,"#fff",5)}})}
+ctx.restore();ctx.lineWidth=2;ctx.strokeStyle="#aecace";ctx.strokeRect(FX,FY,FW,FH);}
+function inspect(s){const pane=$("detail");pane.innerHTML="";if(!s){pane.textContent="从候选列表选择S编号查看位置和测量值。";return;}
+let h=document.createElement("h3");h.textContent=s.id+" · "+(s.class==="continuous_land"?"候选短截线在陆地内":"候选短截线在水面侧");pane.append(h);
+let p=document.createElement("p");p.textContent="原始陆块 #"+s.polygon_id+"（"+s.polygon_name+"）。边段索引 "+s.source_edges.join(" / ")+"。";pane.append(p);
+let metric=document.createElement("p");metric.textContent="海岸间隔："+s.gap_drawing.toFixed(3)+" 绘图单位；较短沿岸弧长："+s.shorter_contour_arc_drawing.toFixed(3)+"；弧长／间隔："+s.arc_to_gap_ratio.toFixed(2)+"；局部边段候选 "+s.contributing_edge_pairs+"组。";pane.append(metric);
+let hint=document.createElement("p");hint.textContent=[3,6].includes(s.polygon_id)?"注意：接近B30极尖角。此处首先应排查异常针尖，不应直接认定狭窄地峡。":"该位置属于图纸局部几何候选，并非已证明的地峡或可通航海峡。";pane.append(hint);
+if(s.closest_B32_candidate){let old=document.createElement("p");old.textContent="靠近B32提示："+s.closest_B32_candidate.id+"（中点相距约"+s.closest_B32_candidate.distance_drawing.toFixed(2)+"图纸单位）。";pane.append(old)}}
+function focus(s){if(!s)return;zoom=18;let p=normPoint(s.coordinate_midpoint);panX=-zoom*(p[0]-CX);panY=-zoom*(p[1]-CY);$("zoom").value=String(zoom);$("zoomShow").textContent=zoom+"×";draw()}
+function choose(id){chosen=sites.find(z=>z.id===id)||null;$("pick").value=chosen?chosen.id:"";for(let e of document.querySelectorAll("#queue button"))e.classList.toggle("active",e.dataset.id===id);inspect(chosen);focus(chosen)}
+function queue(){let f=visible();$("queue").innerHTML="";$("pick").innerHTML="<option value=''>选择S编号</option>";for(const s of f){const o=document.createElement("option");o.value=s.id;o.textContent=s.id+" · 陆块#"+s.polygon_id;$("pick").append(o);
+let b=document.createElement("button");b.dataset.id=s.id;b.type="button";let name=document.createElement("b"),desc=document.createElement("small");name.textContent=s.id+" · #"+s.polygon_id+([3,6].includes(s.polygon_id)?" ⚠ 尖角附近":"");desc.textContent=(s.class==="continuous_land"?"陆地":"水面")+"截线 · 间隙"+s.gap_drawing.toFixed(2);b.append(name,desc);b.onclick=()=>choose(s.id);$("queue").append(b)}
+if(chosen&&!f.includes(chosen)){chosen=null;inspect(null)}if(chosen)$("pick").value=chosen.id;draw()}
+function step(delta){let a=visible(),i=a.indexOf(chosen);if(a.length)choose(a[(i+delta+a.length)%a.length].id)}
+$("pick").onchange=()=>choose($("pick").value);$("filter").onchange=queue;$("allEdges").onchange=draw;$("seam").onchange=draw;
+$("zoom").oninput=()=>{zoom=Number($("zoom").value);$("zoomShow").textContent=zoom+"×";draw()};
+$("focus").onclick=()=>focus(chosen);$("prev").onclick=()=>step(-1);$("next").onclick=()=>step(1);
+$("reset").onclick=()=>{zoom=1;panX=0;panY=0;$("zoom").value="1";$("zoomShow").textContent="1×";draw()};
+canvas.onpointerdown=e=>{drag={id:e.pointerId,startX:e.clientX,startY:e.clientY,panX,panY};canvas.setPointerCapture(e.pointerId)};
+canvas.onpointermove=e=>{if(!drag||drag.id!==e.pointerId)return;let f=1280/canvas.getBoundingClientRect().width;panX=drag.panX+(e.clientX-drag.startX)*f;panY=drag.panY+(e.clientY-drag.startY)*f;draw()};
+canvas.onpointerup=()=>{drag=null};canvas.onpointercancel=()=>{drag=null};
+Promise.all([
+fetch("../data/orbina-v225r-b16-aesthetic-geography-master.json").then(r=>{if(!r.ok)throw Error("B16 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b33-contour-arclength-screen.json").then(r=>{if(!r.ok)throw Error("B33 HTTP "+r.status);return r.json()})
+]).then(([b,d])=>{B=b;D=d;polygons=[...b.macro_landmasses,...b.archipelago];sites=d.site_candidates;
+if(polygons.length!==99||polygons.reduce((sum,p)=>sum+p.coordinates.length,0)!==9621||sites.length!==9||d.qualifying_edge_pairs.length!==67)throw Error("B33数据版次或计数不符合要求");queue();$("status").textContent="原始B16的99片陆块与B33的67条候选边段、9个审查位置均已载入。可点选S编号，放大查看原始矢量岸线。";
+}).catch(e=>$("status").textContent="地图数据读取失败："+e.message+"，请使用上方源文件链接。");
+</script></body></html>
