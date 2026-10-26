@@ -1,1 +1,133 @@
-{"edition":"V2.25-R-B28","status":"B28_NUMERICAL_SOURCE_QA_PASS","checks":{"all_possible_seams_tested":true,"periodic_land_topology_invariant":true,"periodic_owner_topology_invariant":true,"no_negative_cut_fragments":true,"baseline_51_land_bridge_rows":true,"minimum_s57_2_rows":true,"vector_99_vs_center_sample_91":true,"polar_ends_are_ocean":true,"no_official_meridian_or_latitude_chosen":true},"baseline":{"shift_cells":0,"relative_seam_shift_degrees":0,"same_id_crossing_rows":51,"both_land_rows":51,"one_land_one_sea_rows":1,"edge_contact_rows":52,"bounded_land_components":91,"periodic_land_components":90,"split_added_land_components":1,"bounded_owner_components":97,"periodic_owner_components":96,"affected_owner_ids":[1]},"best":{"shift_cells":57,"relative_seam_shift_degrees":85.5,"same_id_crossing_rows":2,"both_land_rows":2,"one_land_one_sea_rows":15,"edge_contact_rows":17,"bounded_land_components":91,"periodic_land_components":90,"split_added_land_components":1,"bounded_owner_components":97,"periodic_owner_components":96,"affected_owner_ids":[4]},"topology":{"occupied_land_components":90,"owner_specific_components":96},"polar":{"N":{"candidate_land_percent":38.087,"candidate_north_75_land_samples":264,"candidate_south_75_land_samples":2,"top_row_land_cells":0,"bottom_row_land_cells":0},"C":{"candidate_land_percent":42.704,"candidate_north_75_land_samples":86,"candidate_south_75_land_samples":40,"top_row_land_cells":0,"bottom_row_land_cells":0},"S":{"candidate_land_percent":46.447,"candidate_north_75_land_samples":33,"candidate_south_75_land_samples":206,"top_row_land_cells":0,"bottom_row_land_cells":0}},"caveat":["Shifting central-meridian display changes what is cut at the left/right boundary but never moves actual source land.","99 B16 polygons exist; 91 have at least one hit in coarse raster and the remaining 8 are not deleted.","Area and climate fields from B25/B26 remain conditional, and a screen projection cannot fix physically unlikely coast shape.","The 57-cell shift is an illustration chosen by a one-dimensional seam score, not a verified optimal or official planetary center.","No national location, radius, axial tilt, prime meridian, polar ice or physical scale inferred."]}
+{
+  "edition": "V2.25-R-B28",
+  "status": "GITHUB_SOURCE_STATIC_QA_PASS__LIVE_PAGES_AND_MOBILE_UNVERIFIED",
+  "checks": {
+    "all_possible_seams_tested": true,
+    "periodic_land_topology_invariant": true,
+    "periodic_owner_topology_invariant": true,
+    "no_negative_cut_fragments": true,
+    "baseline_51_land_bridge_rows": true,
+    "minimum_s57_2_rows": true,
+    "vector_99_vs_center_sample_91": true,
+    "polar_ends_are_ocean": true,
+    "no_official_meridian_or_latitude_chosen": true
+  },
+  "baseline": {
+    "shift_cells": 0,
+    "relative_seam_shift_degrees": 0,
+    "same_id_crossing_rows": 51,
+    "both_land_rows": 51,
+    "one_land_one_sea_rows": 1,
+    "edge_contact_rows": 52,
+    "bounded_land_components": 91,
+    "periodic_land_components": 90,
+    "split_added_land_components": 1,
+    "bounded_owner_components": 97,
+    "periodic_owner_components": 96,
+    "affected_owner_ids": [
+      1
+    ]
+  },
+  "best": {
+    "shift_cells": 57,
+    "relative_seam_shift_degrees": 85.5,
+    "same_id_crossing_rows": 2,
+    "both_land_rows": 2,
+    "one_land_one_sea_rows": 15,
+    "edge_contact_rows": 17,
+    "bounded_land_components": 91,
+    "periodic_land_components": 90,
+    "split_added_land_components": 1,
+    "bounded_owner_components": 97,
+    "periodic_owner_components": 96,
+    "affected_owner_ids": [
+      4
+    ]
+  },
+  "topology": {
+    "occupied_land_components": 90,
+    "owner_specific_components": 96
+  },
+  "polar": {
+    "N": {
+      "candidate_land_percent": 38.087,
+      "candidate_north_75_land_samples": 264,
+      "candidate_south_75_land_samples": 2,
+      "top_row_land_cells": 0,
+      "bottom_row_land_cells": 0
+    },
+    "C": {
+      "candidate_land_percent": 42.704,
+      "candidate_north_75_land_samples": 86,
+      "candidate_south_75_land_samples": 40,
+      "top_row_land_cells": 0,
+      "bottom_row_land_cells": 0
+    },
+    "S": {
+      "candidate_land_percent": 46.447,
+      "candidate_north_75_land_samples": 33,
+      "candidate_south_75_land_samples": 206,
+      "top_row_land_cells": 0,
+      "bottom_row_land_cells": 0
+    }
+  },
+  "caveat": [
+    "Shifting central-meridian display changes what is cut at the left/right boundary but never moves actual source land.",
+    "99 B16 polygons exist; 91 have at least one hit in coarse raster and the remaining 8 are not deleted.",
+    "Area and climate fields from B25/B26 remain conditional, and a screen projection cannot fix physically unlikely coast shape.",
+    "The 57-cell shift is an illustration chosen by a one-dimensional seam score, not a verified optimal or official planetary center.",
+    "No national location, radius, axial tilt, prime meridian, polar ice or physical scale inferred."
+  ],
+  "final_cross_file_checks": {
+    "all_sources_present": true,
+    "edition_B28": true,
+    "viewer_matches": true,
+    "B28_article_is_first": true,
+    "earlier_atlas_sections": true,
+    "old_B27_model_unchanged": true,
+    "old_B26_model_unchanged": true,
+    "old_B16_vectors_unchanged": true,
+    "source_B16_polygons_99": true,
+    "raster_120_by_240": true,
+    "land_cell_count_9996": true,
+    "raster_owner_ids_91": true,
+    "eight_unseen_islands": true,
+    "all_240_positions": true,
+    "positions_are_ordered": true,
+    "baseline_51": true,
+    "min_shift_57_two_rows": true,
+    "cyclic_land_topology_invariant": true,
+    "cyclic_owner_topology_invariant": true,
+    "bounded_not_fewer_components": true,
+    "polar_matches_original": true,
+    "polar_first_last_grid_rows_ocean": true,
+    "wiki_links_actual_viewer": true,
+    "wiki_links_actual_svg": true,
+    "wiki_keeps_small_islands": true,
+    "svg_closed": true,
+    "svg_has_shifts": true,
+    "svg_has_score_chart": true,
+    "html_script_compiles": true,
+    "html_fetches_B28": true,
+    "html_fetches_B27": true,
+    "html_correct_B27_field": true,
+    "html_correct_B28_field": true,
+    "html_wraps_display_x": true,
+    "html_slider_has_240_positions": true,
+    "no_canonical_meridian": true
+  },
+  "committed_deliverables": {
+    "model": "assets/data/orbina-v225r-b28-meridian-polar-seam-study.json",
+    "interactive_atlas": "assets/maps/orbina-v225r-b28-meridian-polar-atlas.html",
+    "static_svg": "assets/images/orbina-v225r-b28-seam-polar-comparison.svg",
+    "encyclopedia": "_articles/article-035.md",
+    "active_config": "assets/data/orbina-global-continent-scale-principles.json"
+  },
+  "source_shas_unmodified": {
+    "B16": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "B26": "7ba1e5a66391e335661d4932a72a5318a6ba3ecf",
+    "B27": "44f70d053ecb840df8ebec3c7a4c3e79e339a51a"
+  },
+  "external_rendering": "No independent public Pages/mobile browser rendering confirmed. Source contents and script syntax verified.",
+  "scientific_limits": "240x120 sampled raster preserves original B16 99-polygon source separately. Relative meridian offset 57 is only a visual candidate, not official planet geography."
+}
