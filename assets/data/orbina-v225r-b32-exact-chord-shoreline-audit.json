@@ -1,0 +1,2696 @@
+{
+  "edition": "V2.25-R-B32",
+  "status": "NONCANON_FULL_CHORD_BOUNDARY_CROSSING_DIAGNOSTIC__NO_SOURCE_GEOMETRY_EDITS",
+  "date": "2026-10-26",
+  "source": {
+    "B16": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+    "B31": "assets/data/orbina-v225r-b31-topology-neck-audit.json",
+    "source_blob_shas": {
+      "B16": "d580bd5d0410b1c533acfe9709e99092d302584c",
+      "B31": "f5401944d61a20a169d7c8c1f3f94d81e4e75d52"
+    }
+  },
+  "source_integrity": {
+    "original_polygon_count": 99,
+    "original_vertex_count": 9621,
+    "B16_untouched": true,
+    "B31_untouched": true,
+    "screened_same_polygon_alerts": 56
+  },
+  "method": {
+    "endpoint_reconstruction": "B31 alerts provide source polygon and edge indices. For each non-crossing pair of original 2D segments, compute minimum among four endpoint-to-other-segment projections; replace B30 rounded endpoints by full-precision B16 closest-point geometry.",
+    "cross_section": "Intersect the exact nearest-point connector against ALL boundary segments of its source B16 polygon, sort parameter t=0..1, sample midpoint of each open interval using even-odd point-in-polygon, merge consecutive same-medium intervals.",
+    "tolerance": "Floating-point planar candidate coordinates. Parametric interior t>1e-8 and t<1-1e-8; deduplicate intersections by t at 1e-7; near-parallel determinant <1e-10. Collinear overlaps are recorded separately.",
+    "coastal_arc": "For orientation only, compute the shorter of the two polygon-boundary arc lengths between closest segment positions. Arc/gap ratio is NOT a certified isthmus score.",
+    "limits": [
+      "This screen examines ONLY B31's 56 original candidates, not a global search for all narrow isthmuses.",
+      "The candidate endpoint selection is limited by B31's 10-or-more-index separation rule, which is sensitive to the nonuniform vertex density.",
+      "Crossing fractions are drawing-space fractions on each short connector, not real-world sea/land area or width.",
+      "A connector spanning land does not prove a land bridge whose smallest width has been accurately measured.",
+      "The source polygons are not official planetary latitude/longitude or terrain/sea-level data."
+    ]
+  },
+  "summary": {
+    "uninterrupted_land_cross_section": 21,
+    "uninterrupted_water_cross_section": 9,
+    "crosses_land_water_boundary": 26,
+    "crossing_count_histogram": {
+      "0": 30,
+      "1": 21,
+      "2": 4,
+      "3": 1
+    },
+    "previous_B31_ambiguous": 21,
+    "previous_B31_misclassified_by_four_sample": 5,
+    "all_B31_previous_ambiguous_cross_land_water_boundary": true,
+    "multi_crossing_candidates": [
+      "N12",
+      "N28",
+      "N48",
+      "N49",
+      "N53"
+    ],
+    "zero_coincident_boundary_overlap": true,
+    "near_index_separation_threshold_count": 53
+  },
+  "changed_classifications": [
+    {
+      "id": "N05",
+      "previous": "land_interior_candidate",
+      "new": "crosses_land_water_boundary",
+      "land_fraction": 0.83773312
+    },
+    {
+      "id": "N06",
+      "previous": "land_interior_candidate",
+      "new": "crosses_land_water_boundary",
+      "land_fraction": 0.87998817
+    },
+    {
+      "id": "N09",
+      "previous": "land_interior_candidate",
+      "new": "crosses_land_water_boundary",
+      "land_fraction": 0.84024473
+    },
+    {
+      "id": "N15",
+      "previous": "water_interior_candidate",
+      "new": "crosses_land_water_boundary",
+      "land_fraction": 0.16022099
+    },
+    {
+      "id": "N29",
+      "previous": "water_interior_candidate",
+      "new": "crosses_land_water_boundary",
+      "land_fraction": 0.12293144
+    }
+  ],
+  "priority_visual_review": [
+    {
+      "id": "N12",
+      "polygon_id": 55,
+      "boundary_crossings": 2,
+      "signature": "W-L-W",
+      "reason": "Multiple line/country shoreline crossings in a nonlocal chord; review locally to avoid false isthmus interpretation."
+    },
+    {
+      "id": "N28",
+      "polygon_id": 68,
+      "boundary_crossings": 2,
+      "signature": "W-L-W",
+      "reason": "Multiple line/country shoreline crossings in a nonlocal chord; review locally to avoid false isthmus interpretation."
+    },
+    {
+      "id": "N48",
+      "polygon_id": 59,
+      "boundary_crossings": 2,
+      "signature": "L-W-L",
+      "reason": "Multiple line/country shoreline crossings in a nonlocal chord; review locally to avoid false isthmus interpretation."
+    },
+    {
+      "id": "N49",
+      "polygon_id": 89,
+      "boundary_crossings": 3,
+      "signature": "W-L-W-L",
+      "reason": "Multiple line/country shoreline crossings in a nonlocal chord; review locally to avoid false isthmus interpretation."
+    },
+    {
+      "id": "N53",
+      "polygon_id": 49,
+      "boundary_crossings": 2,
+      "signature": "L-W-L",
+      "reason": "Multiple line/country shoreline crossings in a nonlocal chord; review locally to avoid false isthmus interpretation."
+    }
+  ],
+  "items": [
+    {
+      "id": "N01",
+      "polygon_id": 77,
+      "polygon_name": "b14-se-027",
+      "source_edges": [
+        37,
+        47
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 1.63600122,
+      "exact_coast_a": [
+        1511.45,
+        1088.92
+      ],
+      "exact_coast_b": [
+        1510.47,
+        1087.61
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 1.636,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 3.846953,
+      "arc_to_chord_ratio": 2.35144,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N02",
+      "polygon_id": 95,
+      "polygon_name": "b14-se-050",
+      "source_edges": [
+        5,
+        83
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 1.76776695,
+      "exact_coast_a": [
+        2238.61,
+        740.72
+      ],
+      "exact_coast_b": [
+        2236.86,
+        740.47
+      ],
+      "closest_point_segment_parameters": [
+        0,
+        1
+      ],
+      "source_B30_rounded_gap_drawing": 1.76777,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 3.636039,
+      "arc_to_chord_ratio": 2.05685,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N03",
+      "polygon_id": 56,
+      "polygon_name": "b14-ne-019",
+      "source_edges": [
+        34,
+        44
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 2.06118898,
+      "exact_coast_a": [
+        1931.28,
+        35.7
+      ],
+      "exact_coast_b": [
+        1931.21,
+        33.64
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 2.06119,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 4.881353,
+      "arc_to_chord_ratio": 2.36822,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N04",
+      "polygon_id": 83,
+      "polygon_name": "b14-se-035",
+      "source_edges": [
+        21,
+        31
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 1,
+      "exact_boundary_gap_drawing": 2.97929522,
+      "exact_coast_a": [
+        1845.7,
+        623.2
+      ],
+      "exact_coast_b": [
+        1844.71,
+        620.39
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 2.9793,
+      "signature": "W-L",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.60320926
+        },
+        {
+          "medium": "land",
+          "from": 0.60320926,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.39679074,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 3.410234,
+      "arc_to_chord_ratio": 1.14464,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N05",
+      "polygon_id": 81,
+      "polygon_name": "b14-se-032",
+      "source_edges": [
+        35,
+        45
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 3.10639663,
+      "exact_coast_a": [
+        2204.85,
+        628.05
+      ],
+      "exact_coast_b": [
+        2202.44,
+        626.09
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 3.1064,
+      "signature": "L-W",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 0.83773312
+        },
+        {
+          "medium": "water",
+          "from": 0.83773312,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.83773312,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 4.908681,
+      "arc_to_chord_ratio": 1.58018,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": true,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N06",
+      "polygon_id": 92,
+      "polygon_name": "b14-se-047",
+      "source_edges": [
+        63,
+        73
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 3.32231756,
+      "exact_coast_a": [
+        2228.941,
+        963.306
+      ],
+      "exact_coast_b": [
+        2226.854,
+        960.721
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 3.32232,
+      "signature": "W-L",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.12001183
+        },
+        {
+          "medium": "land",
+          "from": 0.12001183,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.87998817,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 6.156572,
+      "arc_to_chord_ratio": 1.8531,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": true,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N07",
+      "polygon_id": 79,
+      "polygon_name": "b14-se-030",
+      "source_edges": [
+        54,
+        64
+      ],
+      "previous_B31_four_sample_interpretation": "water_interior_candidate",
+      "previous_B31_four_sample_land_votes": 0,
+      "exact_boundary_gap_drawing": 3.78375475,
+      "exact_coast_a": [
+        1876.78,
+        1084.1
+      ],
+      "exact_coast_b": [
+        1877.66,
+        1080.42
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 3.78375,
+      "signature": "W",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 4.025328,
+      "arc_to_chord_ratio": 1.06384,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_water_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N08",
+      "polygon_id": 98,
+      "polygon_name": "b14-se-053",
+      "source_edges": [
+        73,
+        83
+      ],
+      "previous_B31_four_sample_interpretation": "water_interior_candidate",
+      "previous_B31_four_sample_land_votes": 0,
+      "exact_boundary_gap_drawing": 4.22291369,
+      "exact_coast_a": [
+        1951.91,
+        613.74
+      ],
+      "exact_coast_b": [
+        1952.24,
+        617.95
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 4.22291,
+      "signature": "W",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 4.470702,
+      "arc_to_chord_ratio": 1.05868,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_water_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N09",
+      "polygon_id": 44,
+      "polygon_name": "b14-ne-005",
+      "source_edges": [
+        12,
+        22
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 4.31802038,
+      "exact_coast_a": [
+        1613.24,
+        320
+      ],
+      "exact_coast_b": [
+        1609.97,
+        322.82
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 4.31802,
+      "signature": "L-W",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 0.84024473
+        },
+        {
+          "medium": "water",
+          "from": 0.84024473,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.84024473,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 4.552339,
+      "arc_to_chord_ratio": 1.05427,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": true,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N10",
+      "polygon_id": 90,
+      "polygon_name": "b14-se-043",
+      "source_edges": [
+        36,
+        46
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 3,
+      "exact_boundary_gap_drawing": 4.32649974,
+      "exact_coast_a": [
+        1565.01,
+        696.71
+      ],
+      "exact_coast_b": [
+        1564.2,
+        692.46
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 4.3265,
+      "signature": "L-W",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 0.69893729
+        },
+        {
+          "medium": "water",
+          "from": 0.69893729,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.69893729,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 4.66934,
+      "arc_to_chord_ratio": 1.07924,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N11",
+      "polygon_id": 75,
+      "polygon_name": "b14-se-025",
+      "source_edges": [
+        62,
+        72
+      ],
+      "previous_B31_four_sample_interpretation": "water_interior_candidate",
+      "previous_B31_four_sample_land_votes": 0,
+      "exact_boundary_gap_drawing": 4.39232899,
+      "exact_coast_a": [
+        1599.578,
+        685.302
+      ],
+      "exact_coast_b": [
+        1602.401,
+        681.937
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 4.39233,
+      "signature": "W",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 9.971088,
+      "arc_to_chord_ratio": 2.27011,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_water_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N12",
+      "polygon_id": 55,
+      "polygon_name": "b14-ne-018",
+      "source_edges": [
+        70,
+        80
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 1,
+      "exact_boundary_gap_drawing": 5.12409992,
+      "exact_coast_a": [
+        1760.84,
+        208.9
+      ],
+      "exact_coast_b": [
+        1764.14,
+        212.82
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 5.1241,
+      "signature": "W-L-W",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.35827465
+        },
+        {
+          "medium": "land",
+          "from": 0.35827465,
+          "to": 0.48359807
+        },
+        {
+          "medium": "water",
+          "from": 0.48359807,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.12532342,
+      "boundary_crossings": 2,
+      "interior_intersection_count": 2,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 5.162932,
+      "arc_to_chord_ratio": 1.00758,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N13",
+      "polygon_id": 51,
+      "polygon_name": "b14-ne-013",
+      "source_edges": [
+        60,
+        70
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 3,
+      "exact_boundary_gap_drawing": 5.12913248,
+      "exact_coast_a": [
+        1678.62,
+        131.86
+      ],
+      "exact_coast_b": [
+        1683.56,
+        130.48
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 5.12913,
+      "signature": "L-W",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 0.77966102
+        },
+        {
+          "medium": "water",
+          "from": 0.77966102,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.77966102,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 5.654907,
+      "arc_to_chord_ratio": 1.10251,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N14",
+      "polygon_id": 78,
+      "polygon_name": "b14-se-029",
+      "source_edges": [
+        41,
+        51
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 2,
+      "exact_boundary_gap_drawing": 5.71777929,
+      "exact_coast_a": [
+        2073.16,
+        511.04
+      ],
+      "exact_coast_b": [
+        2067.87,
+        508.87
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 5.71778,
+      "signature": "W-L",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.58894675
+        },
+        {
+          "medium": "land",
+          "from": 0.58894675,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.41105325,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 5.979681,
+      "arc_to_chord_ratio": 1.0458,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N15",
+      "polygon_id": 53,
+      "polygon_name": "b14-ne-015",
+      "source_edges": [
+        61,
+        71
+      ],
+      "previous_B31_four_sample_interpretation": "water_interior_candidate",
+      "previous_B31_four_sample_land_votes": 0,
+      "exact_boundary_gap_drawing": 5.80280105,
+      "exact_coast_a": [
+        1913.56,
+        71.16
+      ],
+      "exact_coast_b": [
+        1915.38,
+        65.65
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 5.8028,
+      "signature": "W-L",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.83977901
+        },
+        {
+          "medium": "land",
+          "from": 0.83977901,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.16022099,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 5.980917,
+      "arc_to_chord_ratio": 1.03069,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": true,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N16",
+      "polygon_id": 48,
+      "polygon_name": "b14-ne-010",
+      "source_edges": [
+        14,
+        24
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 3,
+      "exact_boundary_gap_drawing": 5.92761611,
+      "exact_coast_a": [
+        1721.159,
+        229.958
+      ],
+      "exact_coast_b": [
+        1716.387780917,
+        226.440600215
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0.13394349
+      ],
+      "source_B30_rounded_gap_drawing": 5.92762,
+      "signature": "L-W",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 0.7440106
+        },
+        {
+          "medium": "water",
+          "from": 0.7440106,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.7440106,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 17.240916,
+      "arc_to_chord_ratio": 2.90858,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N17",
+      "polygon_id": 84,
+      "polygon_name": "b14-se-036",
+      "source_edges": [
+        5,
+        83
+      ],
+      "previous_B31_four_sample_interpretation": "water_interior_candidate",
+      "previous_B31_four_sample_land_votes": 0,
+      "exact_boundary_gap_drawing": 6.04305386,
+      "exact_coast_a": [
+        1992.78,
+        664.81
+      ],
+      "exact_coast_b": [
+        1989.57,
+        659.69
+      ],
+      "closest_point_segment_parameters": [
+        0,
+        1
+      ],
+      "source_B30_rounded_gap_drawing": 6.04305,
+      "signature": "W",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 6.274098,
+      "arc_to_chord_ratio": 1.03823,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_water_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N18",
+      "polygon_id": 50,
+      "polygon_name": "b14-ne-012",
+      "source_edges": [
+        25,
+        35
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 1,
+      "exact_boundary_gap_drawing": 6.5330085,
+      "exact_coast_a": [
+        1842.85,
+        63.38
+      ],
+      "exact_coast_b": [
+        1837.34,
+        59.87
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 6.53301,
+      "signature": "W-L",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.7010551
+        },
+        {
+          "medium": "land",
+          "from": 0.7010551,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.2989449,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 6.864308,
+      "arc_to_chord_ratio": 1.05071,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N19",
+      "polygon_id": 60,
+      "polygon_name": "b14-se-009",
+      "source_edges": [
+        18,
+        28
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 6.56048779,
+      "exact_coast_a": [
+        1896.18,
+        568.62
+      ],
+      "exact_coast_b": [
+        1896.1,
+        562.06
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 6.56049,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 8.080221,
+      "arc_to_chord_ratio": 1.23165,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N20",
+      "polygon_id": 76,
+      "polygon_name": "b14-se-026",
+      "source_edges": [
+        60,
+        70
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 6.6527964,
+      "exact_coast_a": [
+        1781.865,
+        1033.156
+      ],
+      "exact_coast_b": [
+        1788.325,
+        1031.566
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 6.6528,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 9.080694,
+      "arc_to_chord_ratio": 1.36494,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N21",
+      "polygon_id": 67,
+      "polygon_name": "b14-se-017",
+      "source_edges": [
+        37,
+        47
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 6.7488073,
+      "exact_coast_a": [
+        2086.68,
+        754.7
+      ],
+      "exact_coast_b": [
+        2080.38,
+        752.28
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 6.74881,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 9.921516,
+      "arc_to_chord_ratio": 1.47011,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N22",
+      "polygon_id": 74,
+      "polygon_name": "b14-se-024",
+      "source_edges": [
+        42,
+        52
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 2,
+      "exact_boundary_gap_drawing": 6.79011782,
+      "exact_coast_a": [
+        1870.24,
+        1011.08
+      ],
+      "exact_coast_b": [
+        1876.65,
+        1008.84
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 6.79012,
+      "signature": "L-W",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 0.44201885
+        },
+        {
+          "medium": "water",
+          "from": 0.44201885,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.44201885,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 7.368622,
+      "arc_to_chord_ratio": 1.0852,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N23",
+      "polygon_id": 52,
+      "polygon_name": "b14-ne-014",
+      "source_edges": [
+        63,
+        73
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 3,
+      "exact_boundary_gap_drawing": 6.79674187,
+      "exact_coast_a": [
+        1845.62,
+        230.61
+      ],
+      "exact_coast_b": [
+        1852.03,
+        232.87
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 6.79674,
+      "signature": "L-W",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 0.74355717
+        },
+        {
+          "medium": "water",
+          "from": 0.74355717,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.74355717,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 7.271013,
+      "arc_to_chord_ratio": 1.06978,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N24",
+      "polygon_id": 61,
+      "polygon_name": "b14-se-010",
+      "source_edges": [
+        38,
+        48
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 7.16299518,
+      "exact_coast_a": [
+        2211.876,
+        831.305
+      ],
+      "exact_coast_b": [
+        2209.536,
+        824.535
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 7.163,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 8.089319,
+      "arc_to_chord_ratio": 1.12932,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N25",
+      "polygon_id": 58,
+      "polygon_name": "b14-ne-021",
+      "source_edges": [
+        61,
+        71
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 3,
+      "exact_boundary_gap_drawing": 7.22695648,
+      "exact_coast_a": [
+        1803.436,
+        332.439
+      ],
+      "exact_coast_b": [
+        1810.516,
+        333.889
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 7.22696,
+      "signature": "L-W",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 0.65189968
+        },
+        {
+          "medium": "water",
+          "from": 0.65189968,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.65189968,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 9.104194,
+      "arc_to_chord_ratio": 1.25975,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N26",
+      "polygon_id": 64,
+      "polygon_name": "b14-se-013",
+      "source_edges": [
+        8,
+        86
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 7.2723105,
+      "exact_coast_a": [
+        1951.94,
+        1009.92
+      ],
+      "exact_coast_b": [
+        1949.47,
+        1003.08
+      ],
+      "closest_point_segment_parameters": [
+        0,
+        1
+      ],
+      "source_B30_rounded_gap_drawing": 7.27231,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 10.132709,
+      "arc_to_chord_ratio": 1.39333,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N27",
+      "polygon_id": 57,
+      "polygon_name": "b14-ne-020",
+      "source_edges": [
+        46,
+        56
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 7.58620458,
+      "exact_coast_a": [
+        1744.646,
+        355.339
+      ],
+      "exact_coast_b": [
+        1750.316,
+        350.299
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 7.5862,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 8.555732,
+      "arc_to_chord_ratio": 1.1278,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N28",
+      "polygon_id": 68,
+      "polygon_name": "b14-se-018",
+      "source_edges": [
+        102,
+        112
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 3,
+      "exact_boundary_gap_drawing": 7.74663721,
+      "exact_coast_a": [
+        2012.297,
+        508.968
+      ],
+      "exact_coast_b": [
+        2020.039,
+        509.236
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 7.74664,
+      "signature": "W-L-W",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.37573982
+        },
+        {
+          "medium": "land",
+          "from": 0.37573982,
+          "to": 0.86413213
+        },
+        {
+          "medium": "water",
+          "from": 0.86413213,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.4883923,
+      "boundary_crossings": 2,
+      "interior_intersection_count": 2,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 8.571107,
+      "arc_to_chord_ratio": 1.10643,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N29",
+      "polygon_id": 91,
+      "polygon_name": "b14-se-045",
+      "source_edges": [
+        16,
+        26
+      ],
+      "previous_B31_four_sample_interpretation": "water_interior_candidate",
+      "previous_B31_four_sample_land_votes": 0,
+      "exact_boundary_gap_drawing": 7.76547487,
+      "exact_coast_a": [
+        2050.937,
+        1050.93
+      ],
+      "exact_coast_b": [
+        2048.887,
+        1058.42
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 7.76547,
+      "signature": "W-L",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.87706856
+        },
+        {
+          "medium": "land",
+          "from": 0.87706856,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.12293144,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 8.147609,
+      "arc_to_chord_ratio": 1.04921,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": true,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N30",
+      "polygon_id": 69,
+      "polygon_name": "b14-se-019",
+      "source_edges": [
+        39,
+        49
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 7.82626987,
+      "exact_coast_a": [
+        2122.112,
+        861.117
+      ],
+      "exact_coast_b": [
+        2125.592,
+        854.107
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 7.82627,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 9.913674,
+      "arc_to_chord_ratio": 1.26672,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N31",
+      "polygon_id": 43,
+      "polygon_name": "b14-ne-004",
+      "source_edges": [
+        0,
+        10
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 8.16512321,
+      "exact_coast_a": [
+        2083.261,
+        175.25
+      ],
+      "exact_coast_b": [
+        2087.095,
+        182.459
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 8.16512,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 13.480586,
+      "arc_to_chord_ratio": 1.651,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N32",
+      "polygon_id": 63,
+      "polygon_name": "b14-se-012",
+      "source_edges": [
+        0,
+        78
+      ],
+      "previous_B31_four_sample_interpretation": "water_interior_candidate",
+      "previous_B31_four_sample_land_votes": 0,
+      "exact_boundary_gap_drawing": 8.51977699,
+      "exact_coast_a": [
+        1538.4,
+        849.03
+      ],
+      "exact_coast_b": [
+        1530.61,
+        845.58
+      ],
+      "closest_point_segment_parameters": [
+        0,
+        1
+      ],
+      "source_B30_rounded_gap_drawing": 8.51978,
+      "signature": "W",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 10.342768,
+      "arc_to_chord_ratio": 1.21397,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_water_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N33",
+      "polygon_id": 87,
+      "polygon_name": "b14-se-040",
+      "source_edges": [
+        50,
+        60
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 3,
+      "exact_boundary_gap_drawing": 8.59253746,
+      "exact_coast_a": [
+        2262.787,
+        886.634
+      ],
+      "exact_coast_b": [
+        2271.077,
+        888.894
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 8.59254,
+      "signature": "W-L",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.29624775
+        },
+        {
+          "medium": "land",
+          "from": 0.29624775,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.70375225,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 9.44725,
+      "arc_to_chord_ratio": 1.09947,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N34",
+      "polygon_id": 97,
+      "polygon_name": "b14-se-052",
+      "source_edges": [
+        6,
+        126
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 8.69353214,
+      "exact_coast_a": [
+        2199.926,
+        479.483
+      ],
+      "exact_coast_b": [
+        2195.841,
+        471.809
+      ],
+      "closest_point_segment_parameters": [
+        0,
+        1
+      ],
+      "source_B30_rounded_gap_drawing": 8.69353,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 15.620881,
+      "arc_to_chord_ratio": 1.79684,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N35",
+      "polygon_id": 96,
+      "polygon_name": "b14-se-051",
+      "source_edges": [
+        59,
+        69
+      ],
+      "previous_B31_four_sample_interpretation": "water_interior_candidate",
+      "previous_B31_four_sample_land_votes": 0,
+      "exact_boundary_gap_drawing": 8.70014368,
+      "exact_coast_a": [
+        1622.33,
+        642.65
+      ],
+      "exact_coast_b": [
+        1630.19,
+        638.92
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 8.70014,
+      "signature": "W",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 8.989442,
+      "arc_to_chord_ratio": 1.03325,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_water_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N36",
+      "polygon_id": 85,
+      "polygon_name": "b14-se-038",
+      "source_edges": [
+        16,
+        26
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 8.80508881,
+      "exact_coast_a": [
+        1765.722,
+        971.759
+      ],
+      "exact_coast_b": [
+        1759.905,
+        978.369
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 8.80509,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 13.914932,
+      "arc_to_chord_ratio": 1.58033,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N37",
+      "polygon_id": 66,
+      "polygon_name": "b14-se-016",
+      "source_edges": [
+        51,
+        61
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 8.85280746,
+      "exact_coast_a": [
+        1723.472,
+        1107.188
+      ],
+      "exact_coast_b": [
+        1725.162,
+        1098.498
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 8.85281,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 12.37161,
+      "arc_to_chord_ratio": 1.39748,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N38",
+      "polygon_id": 93,
+      "polygon_name": "b14-se-048",
+      "source_edges": [
+        57,
+        67
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 8.86526931,
+      "exact_coast_a": [
+        1963.56,
+        560.08
+      ],
+      "exact_coast_b": [
+        1970.15,
+        554.15
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 8.86527,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 9.572004,
+      "arc_to_chord_ratio": 1.07972,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N39",
+      "polygon_id": 15,
+      "polygon_name": "b14-se-007",
+      "source_edges": [
+        86,
+        110
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 9.09922068,
+      "exact_coast_a": [
+        1923.256,
+        692.2
+      ],
+      "exact_coast_b": [
+        1914.432,
+        694.421
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 9.09922,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 21.780063,
+      "arc_to_chord_ratio": 2.39362,
+      "is_near_sampling_threshold": false,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N40",
+      "polygon_id": 72,
+      "polygon_name": "b14-se-022",
+      "source_edges": [
+        12,
+        22
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 9.24842485,
+      "exact_coast_a": [
+        1534.009,
+        716.325
+      ],
+      "exact_coast_b": [
+        1524.771628694,
+        716.777032669
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0.367459749
+      ],
+      "source_B30_rounded_gap_drawing": 9.24842,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 17.567048,
+      "arc_to_chord_ratio": 1.89946,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N41",
+      "polygon_id": 13,
+      "polygon_name": "b14-se-005",
+      "source_edges": [
+        256,
+        280
+      ],
+      "previous_B31_four_sample_interpretation": "water_interior_candidate",
+      "previous_B31_four_sample_land_votes": 0,
+      "exact_boundary_gap_drawing": 9.29781743,
+      "exact_coast_a": [
+        2144.897,
+        742.044
+      ],
+      "exact_coast_b": [
+        2149.8,
+        734.144
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 9.29782,
+      "signature": "W",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 25.115026,
+      "arc_to_chord_ratio": 2.70117,
+      "is_near_sampling_threshold": false,
+      "classification": "uninterrupted_water_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N42",
+      "polygon_id": 82,
+      "polygon_name": "b14-se-034",
+      "source_edges": [
+        9,
+        129
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 9.33915912,
+      "exact_coast_a": [
+        1834.656,
+        612.641
+      ],
+      "exact_coast_b": [
+        1843.513,
+        615.603
+      ],
+      "closest_point_segment_parameters": [
+        0,
+        1
+      ],
+      "source_B30_rounded_gap_drawing": 9.33916,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 14.770964,
+      "arc_to_chord_ratio": 1.58162,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N43",
+      "polygon_id": 86,
+      "polygon_name": "b14-se-039",
+      "source_edges": [
+        12,
+        22
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 3,
+      "exact_boundary_gap_drawing": 9.63754123,
+      "exact_coast_a": [
+        1949.415,
+        1102.106
+      ],
+      "exact_coast_b": [
+        1940.516,
+        1098.406
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 9.63754,
+      "signature": "L-W",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 0.71572908
+        },
+        {
+          "medium": "water",
+          "from": 0.71572908,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.71572908,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 13.946985,
+      "arc_to_chord_ratio": 1.44715,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N44",
+      "polygon_id": 94,
+      "polygon_name": "b14-se-049",
+      "source_edges": [
+        47,
+        57
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 1,
+      "exact_boundary_gap_drawing": 9.64024419,
+      "exact_coast_a": [
+        1963.813,
+        553.87
+      ],
+      "exact_coast_b": [
+        1954.245,
+        555.048
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 9.64024,
+      "signature": "W-L",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.69308798
+        },
+        {
+          "medium": "land",
+          "from": 0.69308798,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.30691202,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 10.980866,
+      "arc_to_chord_ratio": 1.13907,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N45",
+      "polygon_id": 80,
+      "polygon_name": "b14-se-031",
+      "source_edges": [
+        59,
+        69
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 9.78912769,
+      "exact_coast_a": [
+        2293.164,
+        710.449
+      ],
+      "exact_coast_b": [
+        2302.953,
+        710.499
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 9.78913,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 15.896231,
+      "arc_to_chord_ratio": 1.62387,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N46",
+      "polygon_id": 73,
+      "polygon_name": "b14-se-023",
+      "source_edges": [
+        0,
+        78
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 3,
+      "exact_boundary_gap_drawing": 9.85507483,
+      "exact_coast_a": [
+        1826.709,
+        1102.129
+      ],
+      "exact_coast_b": [
+        1822.519,
+        1093.209
+      ],
+      "closest_point_segment_parameters": [
+        0,
+        1
+      ],
+      "source_B30_rounded_gap_drawing": 9.85507,
+      "signature": "W-L",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.23887018
+        },
+        {
+          "medium": "land",
+          "from": 0.23887018,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.76112982,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 11.042323,
+      "arc_to_chord_ratio": 1.12047,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N47",
+      "polygon_id": 46,
+      "polygon_name": "b14-ne-007",
+      "source_edges": [
+        22,
+        32
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 10.08698617,
+      "exact_coast_a": [
+        1679.11,
+        369.282
+      ],
+      "exact_coast_b": [
+        1673.491,
+        377.659
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 10.08699,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 10.752062,
+      "arc_to_chord_ratio": 1.06593,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N48",
+      "polygon_id": 59,
+      "polygon_name": "b14-ne-023",
+      "source_edges": [
+        23,
+        33
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 2,
+      "exact_boundary_gap_drawing": 10.14507023,
+      "exact_coast_a": [
+        2036.437,
+        367.429
+      ],
+      "exact_coast_b": [
+        2027.352,
+        362.914
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 10.14507,
+      "signature": "L-W-L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 0.38144349
+        },
+        {
+          "medium": "water",
+          "from": 0.38144349,
+          "to": 0.63205465
+        },
+        {
+          "medium": "land",
+          "from": 0.63205465,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.74938884,
+      "boundary_crossings": 2,
+      "interior_intersection_count": 2,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 12.535297,
+      "arc_to_chord_ratio": 1.2356,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N49",
+      "polygon_id": 89,
+      "polygon_name": "b14-se-042",
+      "source_edges": [
+        8,
+        18
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 2,
+      "exact_boundary_gap_drawing": 10.16608086,
+      "exact_coast_a": [
+        1861.5,
+        953.66
+      ],
+      "exact_coast_b": [
+        1852.56,
+        958.5
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 10.16608,
+      "signature": "W-L-W-L",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.2423889
+        },
+        {
+          "medium": "land",
+          "from": 0.2423889,
+          "to": 0.59658247
+        },
+        {
+          "medium": "water",
+          "from": 0.59658247,
+          "to": 0.69302949
+        },
+        {
+          "medium": "land",
+          "from": 0.69302949,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.66116408,
+      "boundary_crossings": 3,
+      "interior_intersection_count": 3,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 10.350703,
+      "arc_to_chord_ratio": 1.01816,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N50",
+      "polygon_id": 88,
+      "polygon_name": "b14-se-041",
+      "source_edges": [
+        57,
+        67
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 3,
+      "exact_boundary_gap_drawing": 10.28968901,
+      "exact_coast_a": [
+        1541.357,
+        1026.284
+      ],
+      "exact_coast_b": [
+        1551.631,
+        1025.716
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 10.28969,
+      "signature": "W-L",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.28989146
+        },
+        {
+          "medium": "land",
+          "from": 0.28989146,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.71010854,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 12.639529,
+      "arc_to_chord_ratio": 1.22837,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N51",
+      "polygon_id": 71,
+      "polygon_name": "b14-se-021",
+      "source_edges": [
+        112,
+        122
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 1,
+      "exact_boundary_gap_drawing": 10.37364569,
+      "exact_coast_a": [
+        2091.306,
+        884.594
+      ],
+      "exact_coast_b": [
+        2101.565,
+        886.132
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 10.37365,
+      "signature": "L-W",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 0.32585924
+        },
+        {
+          "medium": "water",
+          "from": 0.32585924,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.32585924,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 10.757956,
+      "arc_to_chord_ratio": 1.03705,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N52",
+      "polygon_id": 47,
+      "polygon_name": "b14-ne-008",
+      "source_edges": [
+        36,
+        46
+      ],
+      "previous_B31_four_sample_interpretation": "water_interior_candidate",
+      "previous_B31_four_sample_land_votes": 0,
+      "exact_boundary_gap_drawing": 10.98126887,
+      "exact_coast_a": [
+        1657.846,
+        249.166
+      ],
+      "exact_coast_b": [
+        1649.451,
+        242.087
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 10.98127,
+      "signature": "W",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 12.082526,
+      "arc_to_chord_ratio": 1.10029,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_water_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N53",
+      "polygon_id": 49,
+      "polygon_name": "b14-ne-011",
+      "source_edges": [
+        7,
+        85
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 3,
+      "exact_boundary_gap_drawing": 11.13535864,
+      "exact_coast_a": [
+        1584.787,
+        305.802
+      ],
+      "exact_coast_b": [
+        1582.841,
+        294.838
+      ],
+      "closest_point_segment_parameters": [
+        0,
+        1
+      ],
+      "source_B30_rounded_gap_drawing": 11.13536,
+      "signature": "L-W-L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 0.28126999
+        },
+        {
+          "medium": "water",
+          "from": 0.28126999,
+          "to": 0.58180615
+        },
+        {
+          "medium": "land",
+          "from": 0.58180615,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.69946384,
+      "boundary_crossings": 2,
+      "interior_intersection_count": 2,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 15.569466,
+      "arc_to_chord_ratio": 1.3982,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N54",
+      "polygon_id": 42,
+      "polygon_name": "b14-ne-003",
+      "source_edges": [
+        17,
+        27
+      ],
+      "previous_B31_four_sample_interpretation": "land_interior_candidate",
+      "previous_B31_four_sample_land_votes": 4,
+      "exact_boundary_gap_drawing": 11.14526415,
+      "exact_coast_a": [
+        2021.443,
+        145.625
+      ],
+      "exact_coast_b": [
+        2011.98,
+        151.513
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 11.14526,
+      "signature": "L",
+      "runs": [
+        {
+          "medium": "land",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 1,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 19.482949,
+      "arc_to_chord_ratio": 1.74809,
+      "is_near_sampling_threshold": true,
+      "classification": "uninterrupted_land_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N55",
+      "polygon_id": 54,
+      "polygon_name": "b14-ne-017",
+      "source_edges": [
+        58,
+        68
+      ],
+      "previous_B31_four_sample_interpretation": "mixed_or_unresolved",
+      "previous_B31_four_sample_land_votes": 3,
+      "exact_boundary_gap_drawing": 11.58171611,
+      "exact_coast_a": [
+        1989.06,
+        268.133
+      ],
+      "exact_coast_b": [
+        1999.592,
+        263.315
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 11.58172,
+      "signature": "W-L",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 0.2304577
+        },
+        {
+          "medium": "land",
+          "from": 0.2304577,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0.7695423,
+      "boundary_crossings": 1,
+      "interior_intersection_count": 1,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 12.163443,
+      "arc_to_chord_ratio": 1.05023,
+      "is_near_sampling_threshold": true,
+      "classification": "crosses_land_water_boundary",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    },
+    {
+      "id": "N56",
+      "polygon_id": 9,
+      "polygon_name": "b14-se-001",
+      "source_edges": [
+        352,
+        376
+      ],
+      "previous_B31_four_sample_interpretation": "water_interior_candidate",
+      "previous_B31_four_sample_land_votes": 0,
+      "exact_boundary_gap_drawing": 11.92316757,
+      "exact_coast_a": [
+        1753.478,
+        545.031
+      ],
+      "exact_coast_b": [
+        1757.877,
+        556.113
+      ],
+      "closest_point_segment_parameters": [
+        1,
+        0
+      ],
+      "source_B30_rounded_gap_drawing": 11.92317,
+      "signature": "W",
+      "runs": [
+        {
+          "medium": "water",
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "land_fraction": 0,
+      "boundary_crossings": 0,
+      "interior_intersection_count": 0,
+      "coincident_edge_count": 0,
+      "shorter_coast_arc_drawing": 48.974935,
+      "arc_to_chord_ratio": 4.10754,
+      "is_near_sampling_threshold": false,
+      "classification": "uninterrupted_water_cross_section",
+      "requires_revision_of_B31_label": false,
+      "interpretation_status": "CANDIDATE_DRAWING_GEOMETRY_ONLY_NOT_A_REAL_WORLD_ISTHMUS_OR_STRAIT"
+    }
+  ],
+  "next": "Visually inspect the five multi-crossing cases, then test sampling-density-independent width metrics on chosen candidate coast segments. Keep B16 unchanged."
+}
