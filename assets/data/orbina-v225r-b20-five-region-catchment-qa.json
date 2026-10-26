@@ -1,6 +1,6 @@
 {
   "edition": "V2.25-R-B20",
-  "status": "GRID_AND_CATCHMENT_SOURCE_QA_PASS__NO_REAL_WORLD_CALIBRATION",
+  "status": "B20_GITHUB_SOURCE_STATIC_QA_PASS__PAGES_AND_MOBILE_UNVERIFIED",
   "data_source": "assets/data/orbina-v225r-b18-relative-elevation-hydrology.json",
   "modelled_sheets": [
     {
@@ -45,5 +45,108 @@
   "completeness": "All 5 research regions now have catchment/rain sensitivity research; four are new B20 datasets",
   "outlet_count": 854,
   "physical_science_caveat": "coast cells are not proved real river mouths; no geospatial scale, precipitation, real DEM or tectonic validation",
-  "browser_mobile": "NOT_TESTED"
+  "browser_mobile": "NOT_TESTED",
+  "cross_file_checks": {
+    "atlas_matches": true,
+    "article_points_to_B20": true,
+    "viewer_present": true,
+    "js_parse_success": true,
+    "viewer_json_path_project_subdirectory_safe": true,
+    "svg_ends_cleanly": true,
+    "maps_include_five_panels": true,
+    "models_covered": true,
+    "original_H2_file_reused": true,
+    "global_terrain_grid_unchanged": true,
+    "all_five_sheets_acyclic": true,
+    "total_outlet_count_matches": true,
+    "all_five_scenarios_present": true,
+    "B18_atlas_retained": true
+  },
+  "model_region_checks": [
+    {
+      "sheet": "H1",
+      "land": 3800,
+      "exits": 274,
+      "expected_land": 3800,
+      "expected_outlets": 274,
+      "paths_valid": true,
+      "cycles": 0,
+      "oceanParent": 0,
+      "top_basins": 8,
+      "rain_scenarios_ok": true,
+      "shape_ok": true,
+      "source_status": "B20_COMPUTED"
+    },
+    {
+      "sheet": "H2",
+      "land": 1285,
+      "exits": 164,
+      "expected_land": 1285,
+      "expected_outlets": 164,
+      "paths_valid": true,
+      "cycles": 0,
+      "oceanParent": 0,
+      "top_basins": 8,
+      "rain_scenarios_ok": true,
+      "shape_ok": true,
+      "source_status": "B19_REUSED_UNCHANGED"
+    },
+    {
+      "sheet": "H3",
+      "land": 1043,
+      "exits": 131,
+      "expected_land": 1043,
+      "expected_outlets": 131,
+      "paths_valid": true,
+      "cycles": 0,
+      "oceanParent": 0,
+      "top_basins": 8,
+      "rain_scenarios_ok": true,
+      "shape_ok": true,
+      "source_status": "B20_COMPUTED"
+    },
+    {
+      "sheet": "H4",
+      "land": 1234,
+      "exits": 157,
+      "expected_land": 1234,
+      "expected_outlets": 157,
+      "paths_valid": true,
+      "cycles": 0,
+      "oceanParent": 0,
+      "top_basins": 8,
+      "rain_scenarios_ok": true,
+      "shape_ok": true,
+      "source_status": "B20_COMPUTED"
+    },
+    {
+      "sheet": "H5",
+      "land": 1112,
+      "exits": 128,
+      "expected_land": 1112,
+      "expected_outlets": 128,
+      "paths_valid": true,
+      "cycles": 0,
+      "oceanParent": 0,
+      "top_basins": 8,
+      "rain_scenarios_ok": true,
+      "shape_ok": true,
+      "source_status": "B20_COMPUTED"
+    }
+  ],
+  "published_files": {
+    "active_viewer": "assets/maps/orbina-v225r-b20-five-region-atlas.html",
+    "all_five_overview_svg": "assets/images/orbina-v225r-b20-five-region-catchments.svg",
+    "data_catalog": "assets/data/orbina-v225r-b20-five-region-catchment-catalog.json",
+    "historical_B19_H2_source": "assets/data/orbina-v225r-b19-h2-catchments.json",
+    "geography_article": "_articles/article-035.md",
+    "active_config": "assets/data/orbina-global-continent-scale-principles.json"
+  },
+  "publication_limits": [
+    "Connected GitHub source files can be read at current HEAD",
+    "Public GitHub Pages web load not verified by independent reader",
+    "Mobile touch UI, canvas rendering and browser networking not verified",
+    "No true physical coastline/real geodata/calibrated DEM or precipitation inferred"
+  ],
+  "next_work": "B21 study physical geomorphology and climatic plausibility before real river names or lake basins; do not treat H1 graphical terrain as canonical location of the inner sea, Resistance Arc or R1/R2"
 }
