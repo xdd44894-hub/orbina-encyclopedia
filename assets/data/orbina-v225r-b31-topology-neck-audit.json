@@ -1,0 +1,1625 @@
+{
+  "edition": "V2.25-R-B31",
+  "status": "NONCANON_TOPOLOGY_AUDIT_WITH_REVERSIBLE_DRAFT_ONLY",
+  "date": "2026-10-26",
+  "coordinate_space": "B16 planar candidate drawing (2400x1200); x periodic modulo 2400; drawing units not km.",
+  "source": {
+    "B16": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+    "B30": "assets/data/orbina-v225r-b30-vector-coast-geometry-screen.json",
+    "source_shas": {
+      "B16": "d580bd5d0410b1c533acfe9709e99092d302584c",
+      "B30": "1902efacf168902b3633eb26c9f4790e244390d9"
+    }
+  },
+  "method": {
+    "topology": "Pairwise nonadjacent segment tests indexed via 24-drawing-unit spatial hash, with x-shifts -2400/0/+2400; scale-relative point-to-segment epsilon 1e-6 drawing units. Crossings, endpoint-on-segment touching, collinear overlap; adjacency excluded for the same polygon.",
+    "nonlocal": "Rechecks ONLY B30's 56 within-polygon nearest-edge alerts using four interior point samples (20%,40%,60%,80% along B30 rounded shortest connector). This is a screening heuristic: source positions are rounded, connector may traverse bays, and local boundary concavity can confound votes. No global search for all true narrow necks."
+  },
+  "source_integrity": {
+    "original_polygons": 99,
+    "original_vertices": 9621,
+    "B16_unmodified": true,
+    "B29_and_B30_unmodified": true
+  },
+  "topology_results": {
+    "proper_crossing": 0,
+    "nonadjacent_endpoint_touch": 0,
+    "collinear_overlap": 0,
+    "degenerate_edge": 0,
+    "zero_length_edge_count": 0,
+    "zero_length_edges": [],
+    "contact_alerts": []
+  },
+  "nonlocal_boundary_candidates": {
+    "total": 56,
+    "classification_counts": {
+      "land_interior_candidate": 24,
+      "water_interior_candidate": 11,
+      "mixed_or_unresolved": 21
+    },
+    "items": [
+      {
+        "id": "N01",
+        "polygon_id": 77,
+        "polygon_name": "b14-se-027",
+        "source_edges": [
+          37,
+          47
+        ],
+        "boundary_gap_drawing": 1.636,
+        "coast_a": [
+          1511.45,
+          1088.92
+        ],
+        "coast_b": [
+          1510.47,
+          1087.61
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N02",
+        "polygon_id": 95,
+        "polygon_name": "b14-se-050",
+        "source_edges": [
+          5,
+          83
+        ],
+        "boundary_gap_drawing": 1.76777,
+        "coast_a": [
+          2238.61,
+          740.72
+        ],
+        "coast_b": [
+          2236.86,
+          740.47
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N03",
+        "polygon_id": 56,
+        "polygon_name": "b14-ne-019",
+        "source_edges": [
+          34,
+          44
+        ],
+        "boundary_gap_drawing": 2.06119,
+        "coast_a": [
+          1931.28,
+          35.7
+        ],
+        "coast_b": [
+          1931.21,
+          33.64
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N04",
+        "polygon_id": 83,
+        "polygon_name": "b14-se-035",
+        "source_edges": [
+          21,
+          31
+        ],
+        "boundary_gap_drawing": 2.9793,
+        "coast_a": [
+          1845.7,
+          623.2
+        ],
+        "coast_b": [
+          1844.71,
+          620.39
+        ],
+        "interior_votes": 1,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N05",
+        "polygon_id": 81,
+        "polygon_name": "b14-se-032",
+        "source_edges": [
+          35,
+          45
+        ],
+        "boundary_gap_drawing": 3.1064,
+        "coast_a": [
+          2204.85,
+          628.05
+        ],
+        "coast_b": [
+          2202.44,
+          626.09
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N06",
+        "polygon_id": 92,
+        "polygon_name": "b14-se-047",
+        "source_edges": [
+          63,
+          73
+        ],
+        "boundary_gap_drawing": 3.32232,
+        "coast_a": [
+          2228.941,
+          963.306
+        ],
+        "coast_b": [
+          2226.854,
+          960.721
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N07",
+        "polygon_id": 79,
+        "polygon_name": "b14-se-030",
+        "source_edges": [
+          54,
+          64
+        ],
+        "boundary_gap_drawing": 3.78375,
+        "coast_a": [
+          1876.78,
+          1084.1
+        ],
+        "coast_b": [
+          1877.66,
+          1080.42
+        ],
+        "interior_votes": 0,
+        "total_votes": 4,
+        "interpretation": "water_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N08",
+        "polygon_id": 98,
+        "polygon_name": "b14-se-053",
+        "source_edges": [
+          73,
+          83
+        ],
+        "boundary_gap_drawing": 4.22291,
+        "coast_a": [
+          1951.91,
+          613.74
+        ],
+        "coast_b": [
+          1952.24,
+          617.95
+        ],
+        "interior_votes": 0,
+        "total_votes": 4,
+        "interpretation": "water_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N09",
+        "polygon_id": 44,
+        "polygon_name": "b14-ne-005",
+        "source_edges": [
+          12,
+          22
+        ],
+        "boundary_gap_drawing": 4.31802,
+        "coast_a": [
+          1613.24,
+          320
+        ],
+        "coast_b": [
+          1609.97,
+          322.82
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N10",
+        "polygon_id": 90,
+        "polygon_name": "b14-se-043",
+        "source_edges": [
+          36,
+          46
+        ],
+        "boundary_gap_drawing": 4.3265,
+        "coast_a": [
+          1565.01,
+          696.71
+        ],
+        "coast_b": [
+          1564.2,
+          692.46
+        ],
+        "interior_votes": 3,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N11",
+        "polygon_id": 75,
+        "polygon_name": "b14-se-025",
+        "source_edges": [
+          62,
+          72
+        ],
+        "boundary_gap_drawing": 4.39233,
+        "coast_a": [
+          1599.578,
+          685.302
+        ],
+        "coast_b": [
+          1602.401,
+          681.937
+        ],
+        "interior_votes": 0,
+        "total_votes": 4,
+        "interpretation": "water_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N12",
+        "polygon_id": 55,
+        "polygon_name": "b14-ne-018",
+        "source_edges": [
+          70,
+          80
+        ],
+        "boundary_gap_drawing": 5.1241,
+        "coast_a": [
+          1760.84,
+          208.9
+        ],
+        "coast_b": [
+          1764.14,
+          212.82
+        ],
+        "interior_votes": 1,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N13",
+        "polygon_id": 51,
+        "polygon_name": "b14-ne-013",
+        "source_edges": [
+          60,
+          70
+        ],
+        "boundary_gap_drawing": 5.12913,
+        "coast_a": [
+          1678.62,
+          131.86
+        ],
+        "coast_b": [
+          1683.56,
+          130.48
+        ],
+        "interior_votes": 3,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N14",
+        "polygon_id": 78,
+        "polygon_name": "b14-se-029",
+        "source_edges": [
+          41,
+          51
+        ],
+        "boundary_gap_drawing": 5.71778,
+        "coast_a": [
+          2073.16,
+          511.04
+        ],
+        "coast_b": [
+          2067.87,
+          508.87
+        ],
+        "interior_votes": 2,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N15",
+        "polygon_id": 53,
+        "polygon_name": "b14-ne-015",
+        "source_edges": [
+          61,
+          71
+        ],
+        "boundary_gap_drawing": 5.8028,
+        "coast_a": [
+          1913.56,
+          71.16
+        ],
+        "coast_b": [
+          1915.38,
+          65.65
+        ],
+        "interior_votes": 0,
+        "total_votes": 4,
+        "interpretation": "water_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N16",
+        "polygon_id": 48,
+        "polygon_name": "b14-ne-010",
+        "source_edges": [
+          14,
+          24
+        ],
+        "boundary_gap_drawing": 5.92762,
+        "coast_a": [
+          1721.159,
+          229.958
+        ],
+        "coast_b": [
+          1716.388,
+          226.441
+        ],
+        "interior_votes": 3,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N17",
+        "polygon_id": 84,
+        "polygon_name": "b14-se-036",
+        "source_edges": [
+          5,
+          83
+        ],
+        "boundary_gap_drawing": 6.04305,
+        "coast_a": [
+          1992.78,
+          664.81
+        ],
+        "coast_b": [
+          1989.57,
+          659.69
+        ],
+        "interior_votes": 0,
+        "total_votes": 4,
+        "interpretation": "water_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N18",
+        "polygon_id": 50,
+        "polygon_name": "b14-ne-012",
+        "source_edges": [
+          25,
+          35
+        ],
+        "boundary_gap_drawing": 6.53301,
+        "coast_a": [
+          1842.85,
+          63.38
+        ],
+        "coast_b": [
+          1837.34,
+          59.87
+        ],
+        "interior_votes": 1,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N19",
+        "polygon_id": 60,
+        "polygon_name": "b14-se-009",
+        "source_edges": [
+          18,
+          28
+        ],
+        "boundary_gap_drawing": 6.56049,
+        "coast_a": [
+          1896.18,
+          568.62
+        ],
+        "coast_b": [
+          1896.1,
+          562.06
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N20",
+        "polygon_id": 76,
+        "polygon_name": "b14-se-026",
+        "source_edges": [
+          60,
+          70
+        ],
+        "boundary_gap_drawing": 6.6528,
+        "coast_a": [
+          1781.865,
+          1033.156
+        ],
+        "coast_b": [
+          1788.325,
+          1031.566
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N21",
+        "polygon_id": 67,
+        "polygon_name": "b14-se-017",
+        "source_edges": [
+          37,
+          47
+        ],
+        "boundary_gap_drawing": 6.74881,
+        "coast_a": [
+          2086.68,
+          754.7
+        ],
+        "coast_b": [
+          2080.38,
+          752.28
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N22",
+        "polygon_id": 74,
+        "polygon_name": "b14-se-024",
+        "source_edges": [
+          42,
+          52
+        ],
+        "boundary_gap_drawing": 6.79012,
+        "coast_a": [
+          1870.24,
+          1011.08
+        ],
+        "coast_b": [
+          1876.65,
+          1008.84
+        ],
+        "interior_votes": 2,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N23",
+        "polygon_id": 52,
+        "polygon_name": "b14-ne-014",
+        "source_edges": [
+          63,
+          73
+        ],
+        "boundary_gap_drawing": 6.79674,
+        "coast_a": [
+          1845.62,
+          230.61
+        ],
+        "coast_b": [
+          1852.03,
+          232.87
+        ],
+        "interior_votes": 3,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N24",
+        "polygon_id": 61,
+        "polygon_name": "b14-se-010",
+        "source_edges": [
+          38,
+          48
+        ],
+        "boundary_gap_drawing": 7.163,
+        "coast_a": [
+          2211.876,
+          831.305
+        ],
+        "coast_b": [
+          2209.536,
+          824.535
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N25",
+        "polygon_id": 58,
+        "polygon_name": "b14-ne-021",
+        "source_edges": [
+          61,
+          71
+        ],
+        "boundary_gap_drawing": 7.22696,
+        "coast_a": [
+          1803.436,
+          332.439
+        ],
+        "coast_b": [
+          1810.516,
+          333.889
+        ],
+        "interior_votes": 3,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N26",
+        "polygon_id": 64,
+        "polygon_name": "b14-se-013",
+        "source_edges": [
+          8,
+          86
+        ],
+        "boundary_gap_drawing": 7.27231,
+        "coast_a": [
+          1951.94,
+          1009.92
+        ],
+        "coast_b": [
+          1949.47,
+          1003.08
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N27",
+        "polygon_id": 57,
+        "polygon_name": "b14-ne-020",
+        "source_edges": [
+          46,
+          56
+        ],
+        "boundary_gap_drawing": 7.5862,
+        "coast_a": [
+          1744.646,
+          355.339
+        ],
+        "coast_b": [
+          1750.316,
+          350.299
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N28",
+        "polygon_id": 68,
+        "polygon_name": "b14-se-018",
+        "source_edges": [
+          102,
+          112
+        ],
+        "boundary_gap_drawing": 7.74664,
+        "coast_a": [
+          2012.297,
+          508.968
+        ],
+        "coast_b": [
+          2020.039,
+          509.236
+        ],
+        "interior_votes": 3,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N29",
+        "polygon_id": 91,
+        "polygon_name": "b14-se-045",
+        "source_edges": [
+          16,
+          26
+        ],
+        "boundary_gap_drawing": 7.76547,
+        "coast_a": [
+          2050.937,
+          1050.93
+        ],
+        "coast_b": [
+          2048.887,
+          1058.42
+        ],
+        "interior_votes": 0,
+        "total_votes": 4,
+        "interpretation": "water_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N30",
+        "polygon_id": 69,
+        "polygon_name": "b14-se-019",
+        "source_edges": [
+          39,
+          49
+        ],
+        "boundary_gap_drawing": 7.82627,
+        "coast_a": [
+          2122.112,
+          861.117
+        ],
+        "coast_b": [
+          2125.592,
+          854.107
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N31",
+        "polygon_id": 43,
+        "polygon_name": "b14-ne-004",
+        "source_edges": [
+          0,
+          10
+        ],
+        "boundary_gap_drawing": 8.16512,
+        "coast_a": [
+          2083.261,
+          175.25
+        ],
+        "coast_b": [
+          2087.095,
+          182.459
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N32",
+        "polygon_id": 63,
+        "polygon_name": "b14-se-012",
+        "source_edges": [
+          0,
+          78
+        ],
+        "boundary_gap_drawing": 8.51978,
+        "coast_a": [
+          1538.4,
+          849.03
+        ],
+        "coast_b": [
+          1530.61,
+          845.58
+        ],
+        "interior_votes": 0,
+        "total_votes": 4,
+        "interpretation": "water_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N33",
+        "polygon_id": 87,
+        "polygon_name": "b14-se-040",
+        "source_edges": [
+          50,
+          60
+        ],
+        "boundary_gap_drawing": 8.59254,
+        "coast_a": [
+          2262.787,
+          886.634
+        ],
+        "coast_b": [
+          2271.077,
+          888.894
+        ],
+        "interior_votes": 3,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N34",
+        "polygon_id": 97,
+        "polygon_name": "b14-se-052",
+        "source_edges": [
+          6,
+          126
+        ],
+        "boundary_gap_drawing": 8.69353,
+        "coast_a": [
+          2199.926,
+          479.483
+        ],
+        "coast_b": [
+          2195.841,
+          471.809
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N35",
+        "polygon_id": 96,
+        "polygon_name": "b14-se-051",
+        "source_edges": [
+          59,
+          69
+        ],
+        "boundary_gap_drawing": 8.70014,
+        "coast_a": [
+          1622.33,
+          642.65
+        ],
+        "coast_b": [
+          1630.19,
+          638.92
+        ],
+        "interior_votes": 0,
+        "total_votes": 4,
+        "interpretation": "water_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N36",
+        "polygon_id": 85,
+        "polygon_name": "b14-se-038",
+        "source_edges": [
+          16,
+          26
+        ],
+        "boundary_gap_drawing": 8.80509,
+        "coast_a": [
+          1765.722,
+          971.759
+        ],
+        "coast_b": [
+          1759.905,
+          978.369
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N37",
+        "polygon_id": 66,
+        "polygon_name": "b14-se-016",
+        "source_edges": [
+          51,
+          61
+        ],
+        "boundary_gap_drawing": 8.85281,
+        "coast_a": [
+          1723.472,
+          1107.188
+        ],
+        "coast_b": [
+          1725.162,
+          1098.498
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N38",
+        "polygon_id": 93,
+        "polygon_name": "b14-se-048",
+        "source_edges": [
+          57,
+          67
+        ],
+        "boundary_gap_drawing": 8.86527,
+        "coast_a": [
+          1963.56,
+          560.08
+        ],
+        "coast_b": [
+          1970.15,
+          554.15
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N39",
+        "polygon_id": 15,
+        "polygon_name": "b14-se-007",
+        "source_edges": [
+          86,
+          110
+        ],
+        "boundary_gap_drawing": 9.09922,
+        "coast_a": [
+          1923.256,
+          692.2
+        ],
+        "coast_b": [
+          1914.432,
+          694.421
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N40",
+        "polygon_id": 72,
+        "polygon_name": "b14-se-022",
+        "source_edges": [
+          12,
+          22
+        ],
+        "boundary_gap_drawing": 9.24842,
+        "coast_a": [
+          1534.009,
+          716.325
+        ],
+        "coast_b": [
+          1524.772,
+          716.777
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N41",
+        "polygon_id": 13,
+        "polygon_name": "b14-se-005",
+        "source_edges": [
+          256,
+          280
+        ],
+        "boundary_gap_drawing": 9.29782,
+        "coast_a": [
+          2144.897,
+          742.044
+        ],
+        "coast_b": [
+          2149.8,
+          734.144
+        ],
+        "interior_votes": 0,
+        "total_votes": 4,
+        "interpretation": "water_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N42",
+        "polygon_id": 82,
+        "polygon_name": "b14-se-034",
+        "source_edges": [
+          9,
+          129
+        ],
+        "boundary_gap_drawing": 9.33916,
+        "coast_a": [
+          1834.656,
+          612.641
+        ],
+        "coast_b": [
+          1843.513,
+          615.603
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N43",
+        "polygon_id": 86,
+        "polygon_name": "b14-se-039",
+        "source_edges": [
+          12,
+          22
+        ],
+        "boundary_gap_drawing": 9.63754,
+        "coast_a": [
+          1949.415,
+          1102.106
+        ],
+        "coast_b": [
+          1940.516,
+          1098.406
+        ],
+        "interior_votes": 3,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N44",
+        "polygon_id": 94,
+        "polygon_name": "b14-se-049",
+        "source_edges": [
+          47,
+          57
+        ],
+        "boundary_gap_drawing": 9.64024,
+        "coast_a": [
+          1963.813,
+          553.87
+        ],
+        "coast_b": [
+          1954.245,
+          555.048
+        ],
+        "interior_votes": 1,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N45",
+        "polygon_id": 80,
+        "polygon_name": "b14-se-031",
+        "source_edges": [
+          59,
+          69
+        ],
+        "boundary_gap_drawing": 9.78913,
+        "coast_a": [
+          2293.164,
+          710.449
+        ],
+        "coast_b": [
+          2302.953,
+          710.499
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N46",
+        "polygon_id": 73,
+        "polygon_name": "b14-se-023",
+        "source_edges": [
+          0,
+          78
+        ],
+        "boundary_gap_drawing": 9.85507,
+        "coast_a": [
+          1826.709,
+          1102.129
+        ],
+        "coast_b": [
+          1822.519,
+          1093.209
+        ],
+        "interior_votes": 3,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N47",
+        "polygon_id": 46,
+        "polygon_name": "b14-ne-007",
+        "source_edges": [
+          22,
+          32
+        ],
+        "boundary_gap_drawing": 10.08699,
+        "coast_a": [
+          1679.11,
+          369.282
+        ],
+        "coast_b": [
+          1673.491,
+          377.659
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N48",
+        "polygon_id": 59,
+        "polygon_name": "b14-ne-023",
+        "source_edges": [
+          23,
+          33
+        ],
+        "boundary_gap_drawing": 10.14507,
+        "coast_a": [
+          2036.437,
+          367.429
+        ],
+        "coast_b": [
+          2027.352,
+          362.914
+        ],
+        "interior_votes": 2,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N49",
+        "polygon_id": 89,
+        "polygon_name": "b14-se-042",
+        "source_edges": [
+          8,
+          18
+        ],
+        "boundary_gap_drawing": 10.16608,
+        "coast_a": [
+          1861.5,
+          953.66
+        ],
+        "coast_b": [
+          1852.56,
+          958.5
+        ],
+        "interior_votes": 2,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N50",
+        "polygon_id": 88,
+        "polygon_name": "b14-se-041",
+        "source_edges": [
+          57,
+          67
+        ],
+        "boundary_gap_drawing": 10.28969,
+        "coast_a": [
+          1541.357,
+          1026.284
+        ],
+        "coast_b": [
+          1551.631,
+          1025.716
+        ],
+        "interior_votes": 3,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N51",
+        "polygon_id": 71,
+        "polygon_name": "b14-se-021",
+        "source_edges": [
+          112,
+          122
+        ],
+        "boundary_gap_drawing": 10.37365,
+        "coast_a": [
+          2091.306,
+          884.594
+        ],
+        "coast_b": [
+          2101.565,
+          886.132
+        ],
+        "interior_votes": 1,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N52",
+        "polygon_id": 47,
+        "polygon_name": "b14-ne-008",
+        "source_edges": [
+          36,
+          46
+        ],
+        "boundary_gap_drawing": 10.98127,
+        "coast_a": [
+          1657.846,
+          249.166
+        ],
+        "coast_b": [
+          1649.451,
+          242.087
+        ],
+        "interior_votes": 0,
+        "total_votes": 4,
+        "interpretation": "water_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N53",
+        "polygon_id": 49,
+        "polygon_name": "b14-ne-011",
+        "source_edges": [
+          7,
+          85
+        ],
+        "boundary_gap_drawing": 11.13536,
+        "coast_a": [
+          1584.787,
+          305.802
+        ],
+        "coast_b": [
+          1582.841,
+          294.838
+        ],
+        "interior_votes": 3,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N54",
+        "polygon_id": 42,
+        "polygon_name": "b14-ne-003",
+        "source_edges": [
+          17,
+          27
+        ],
+        "boundary_gap_drawing": 11.14526,
+        "coast_a": [
+          2021.443,
+          145.625
+        ],
+        "coast_b": [
+          2011.98,
+          151.513
+        ],
+        "interior_votes": 4,
+        "total_votes": 4,
+        "interpretation": "land_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N55",
+        "polygon_id": 54,
+        "polygon_name": "b14-ne-017",
+        "source_edges": [
+          58,
+          68
+        ],
+        "boundary_gap_drawing": 11.58172,
+        "coast_a": [
+          1989.06,
+          268.133
+        ],
+        "coast_b": [
+          1999.592,
+          263.315
+        ],
+        "interior_votes": 3,
+        "total_votes": 4,
+        "interpretation": "mixed_or_unresolved",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      },
+      {
+        "id": "N56",
+        "polygon_id": 9,
+        "polygon_name": "b14-se-001",
+        "source_edges": [
+          352,
+          376
+        ],
+        "boundary_gap_drawing": 11.92317,
+        "coast_a": [
+          1753.478,
+          545.031
+        ],
+        "coast_b": [
+          1757.877,
+          556.113
+        ],
+        "interior_votes": 0,
+        "total_votes": 4,
+        "interpretation": "water_interior_candidate",
+        "conclusion": "Diagnostic only; not a verified isthmus or navigable channel."
+      }
+    ]
+  },
+  "existing_B30_priority_issues": [
+    {
+      "id": "A01",
+      "type": "acute_vertex",
+      "priority": "very_high_inspection",
+      "polygon_ids": [
+        3
+      ],
+      "coordinate": [
+        1057.016,
+        981.267
+      ],
+      "measured_angle": 0.623,
+      "source_vertex_index": 0,
+      "disposition": "inspect_only_do_not_modify"
+    },
+    {
+      "id": "A02",
+      "type": "acute_vertex",
+      "priority": "very_high_inspection",
+      "polygon_ids": [
+        6
+      ],
+      "coordinate": [
+        531.134,
+        993.008
+      ],
+      "measured_angle": 0.989,
+      "source_vertex_index": 0,
+      "disposition": "inspect_only_do_not_modify"
+    },
+    {
+      "id": "A03",
+      "type": "acute_vertex",
+      "priority": "visual_review",
+      "polygon_ids": [
+        48
+      ],
+      "coordinate": [
+        1719.361,
+        222.691
+      ],
+      "measured_angle": 18.034,
+      "source_vertex_index": 23,
+      "disposition": "inspect_only_do_not_modify"
+    },
+    {
+      "id": "A04",
+      "type": "acute_vertex",
+      "priority": "visual_review",
+      "polygon_ids": [
+        37
+      ],
+      "coordinate": [
+        523.672,
+        957.656
+      ],
+      "measured_angle": 18.14,
+      "source_vertex_index": 0,
+      "disposition": "inspect_only_do_not_modify"
+    },
+    {
+      "id": "A05",
+      "type": "acute_vertex",
+      "priority": "visual_review",
+      "polygon_ids": [
+        35
+      ],
+      "coordinate": [
+        442.086,
+        952.028
+      ],
+      "measured_angle": 19.038,
+      "source_vertex_index": 2,
+      "disposition": "inspect_only_do_not_modify"
+    },
+    {
+      "id": "A06",
+      "type": "acute_vertex",
+      "priority": "visual_review",
+      "polygon_ids": [
+        33
+      ],
+      "coordinate": [
+        384.702,
+        956.993
+      ],
+      "measured_angle": 19.863,
+      "source_vertex_index": 0,
+      "disposition": "inspect_only_do_not_modify"
+    },
+    {
+      "id": "A07",
+      "type": "acute_vertex",
+      "priority": "visual_review",
+      "polygon_ids": [
+        36
+      ],
+      "coordinate": [
+        300.815,
+        923.293
+      ],
+      "measured_angle": 19.877,
+      "source_vertex_index": 2,
+      "disposition": "inspect_only_do_not_modify"
+    },
+    {
+      "id": "A08",
+      "type": "acute_vertex",
+      "priority": "visual_review",
+      "polygon_ids": [
+        33
+      ],
+      "coordinate": [
+        368.134,
+        956.3
+      ],
+      "measured_angle": 23.894,
+      "source_vertex_index": 2,
+      "disposition": "inspect_only_do_not_modify"
+    },
+    {
+      "id": "A09",
+      "type": "acute_vertex",
+      "priority": "visual_review",
+      "polygon_ids": [
+        37
+      ],
+      "coordinate": [
+        512.406,
+        949.012
+      ],
+      "measured_angle": 24.343,
+      "source_vertex_index": 1,
+      "disposition": "inspect_only_do_not_modify"
+    },
+    {
+      "id": "A10",
+      "type": "acute_vertex",
+      "priority": "visual_review",
+      "polygon_ids": [
+        36
+      ],
+      "coordinate": [
+        311.595,
+        928.849
+      ],
+      "measured_angle": 24.408,
+      "source_vertex_index": 0,
+      "disposition": "inspect_only_do_not_modify"
+    },
+    {
+      "id": "G01",
+      "type": "near_independent_coasts",
+      "priority": "high_cartographic_review",
+      "polygon_ids": [
+        82,
+        83
+      ],
+      "coordinate": [
+        1844.641,
+        614.586
+      ],
+      "other_coordinate": [
+        1845.51,
+        615.55
+      ],
+      "measured_gap": 1.29801,
+      "disposition": "inspect_only_dont_assume_strait_or_land_bridge"
+    },
+    {
+      "id": "G02",
+      "type": "near_independent_coasts",
+      "priority": "high_cartographic_review",
+      "polygon_ids": [
+        11,
+        12
+      ],
+      "coordinate": [
+        1884.128,
+        824.793
+      ],
+      "other_coordinate": [
+        1885.425,
+        825.008
+      ],
+      "measured_gap": 1.31435,
+      "disposition": "inspect_only_dont_assume_strait_or_land_bridge"
+    },
+    {
+      "id": "G03",
+      "type": "near_independent_coasts",
+      "priority": "high_cartographic_review",
+      "polygon_ids": [
+        93,
+        94
+      ],
+      "coordinate": [
+        1968.04,
+        554.547
+      ],
+      "other_coordinate": [
+        1967.44,
+        553.243
+      ],
+      "measured_gap": 1.43574,
+      "disposition": "inspect_only_dont_assume_strait_or_land_bridge"
+    },
+    {
+      "id": "G04",
+      "type": "near_independent_coasts",
+      "priority": "visual_review",
+      "polygon_ids": [
+        25,
+        28
+      ],
+      "coordinate": [
+        575.122,
+        731.861
+      ],
+      "other_coordinate": [
+        573.253,
+        730.972
+      ],
+      "measured_gap": 2.0695,
+      "disposition": "inspect_only_dont_assume_strait_or_land_bridge"
+    },
+    {
+      "id": "G05",
+      "type": "near_independent_coasts",
+      "priority": "visual_review",
+      "polygon_ids": [
+        23,
+        30
+      ],
+      "coordinate": [
+        537.036,
+        693.318
+      ],
+      "other_coordinate": [
+        537.83,
+        695.657
+      ],
+      "measured_gap": 2.47005,
+      "disposition": "inspect_only_dont_assume_strait_or_land_bridge"
+    },
+    {
+      "id": "G06",
+      "type": "near_independent_coasts",
+      "priority": "visual_review",
+      "polygon_ids": [
+        1,
+        81
+      ],
+      "coordinate": [
+        2222.201,
+        600.57
+      ],
+      "other_coordinate": [
+        2219.64,
+        601.17
+      ],
+      "measured_gap": 2.63069,
+      "disposition": "inspect_only_dont_assume_strait_or_land_bridge"
+    },
+    {
+      "id": "G07",
+      "type": "near_independent_coasts",
+      "priority": "visual_review",
+      "polygon_ids": [
+        9,
+        82
+      ],
+      "coordinate": [
+        1831.158,
+        588.186
+      ],
+      "other_coordinate": [
+        1834.519,
+        589.018
+      ],
+      "measured_gap": 3.46245,
+      "disposition": "inspect_only_dont_assume_strait_or_land_bridge"
+    },
+    {
+      "id": "G08",
+      "type": "near_independent_coasts",
+      "priority": "visual_review",
+      "polygon_ids": [
+        23,
+        27
+      ],
+      "coordinate": [
+        520.836,
+        683.36
+      ],
+      "other_coordinate": [
+        517.418,
+        684.096
+      ],
+      "measured_gap": 3.4963,
+      "disposition": "inspect_only_dont_assume_strait_or_land_bridge"
+    },
+    {
+      "id": "G09",
+      "type": "near_independent_coasts",
+      "priority": "visual_review",
+      "polygon_ids": [
+        18,
+        73
+      ],
+      "coordinate": [
+        1789.719,
+        1114.699
+      ],
+      "other_coordinate": [
+        1789.392,
+        1110.676
+      ],
+      "measured_gap": 4.03582,
+      "disposition": "inspect_only_dont_assume_strait_or_land_bridge"
+    },
+    {
+      "id": "G10",
+      "type": "near_independent_coasts",
+      "priority": "visual_review",
+      "polygon_ids": [
+        25,
+        26
+      ],
+      "coordinate": [
+        598.082,
+        741.313
+      ],
+      "other_coordinate": [
+        602.456,
+        741.636
+      ],
+      "measured_gap": 4.38631,
+      "disposition": "inspect_only_dont_assume_strait_or_land_bridge"
+    }
+  ],
+  "limitations": [
+    "No proof of global topology under geographic re-projection or future map scaling.",
+    "No physical width, ocean depth, or navigability inferred.",
+    "B30 near-distinct pairs unchanged; no automatically connected islands.",
+    "Neck sample classifications are candidate screening not geological determination.",
+    "Canonical geography relationships and 25 official ocean names stay unchanged."
+  ],
+  "next": "Visually inspect ambiguous connectors and optionally preview A01/A02 proposal before any new geometry approval."
+}
