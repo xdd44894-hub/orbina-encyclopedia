@@ -1,0 +1,203 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 B27 · 球面投影与山地风向实验室</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f2eb;color:#234351;font:15px/1.65 system-ui,"Microsoft YaHei",sans-serif}
+header{background:linear-gradient(120deg,#173c52,#2c626c);color:#f7f9f3;padding:30px max(16px,calc((100vw - 1180px)/2))}
+h1{margin:0 0 10px;font-size:clamp(26px,3.2vw,40px)}header p{max-width:1000px;color:#d6e6e0;margin:0}
+main{max-width:1180px;margin:auto;padding:20px 15px 50px}
+nav{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 21px}
+nav a{padding:9px 11px;border:1px solid #bcd0c7;color:#276474;background:#fff;border-radius:7px;text-decoration:none;font-size:13px}
+section{border:1px solid #d1ddd3;background:#fffefa;border-radius:13px;padding:19px;margin-bottom:20px}
+h2{font-size:21px;margin:0 0 12px}h3{font-size:17px;margin:0 0 10px}
+.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0}
+.controls label{font-size:14px;display:flex;align-items:center;gap:7px}
+select{padding:8px 9px;border-radius:7px;background:#fff;border:1px solid #aec8be;color:#244a59;font:inherit;max-width:100%}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 253px;gap:17px}
+.can{background:#20566c;border-radius:10px;overflow:hidden;border:1px solid #a9c5bf}
+canvas{width:100%;height:auto;display:block;touch-action:manipulation}
+.note{color:#637d7e;font-size:13px;line-height:1.75}
+.info{padding:11px;border-radius:8px;background:#eff5f0;border:1px solid #cfddd4;margin-top:10px;min-height:43px}
+.stat{padding:10px 0;border-bottom:1px solid #dbe4df}.stat b{font-size:23px;display:block;font-variant-numeric:tabular-nums}.stat small{color:#627d7d;font-size:12px}
+.compare{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.comp{background:#f2f6f0;border-radius:10px;border:1px solid #d1ddd0;padding:12px}
+.comp b{display:block;font-size:22px;color:#205f71}.comp small{font-size:12px;color:#667e7b}
+.legend{display:flex;gap:13px;flex-wrap:wrap;font-size:12px;color:#5e777d;margin-top:9px}
+.legend i{display:inline-block;width:13px;height:13px;border-radius:2px;margin-right:5px}
+.note strong{color:#365d66}
+footer{text-align:center;color:#718485;font-size:12px;padding:15px}
+@media(max-width:840px){.cols{grid-template-columns:1fr}.controls label{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){section{padding:12px}.compare{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header><h1>俄庇娜 · B27 球面地图与山地风向试验室</h1>
+<p>同一套B16的99片候选海岸，在普通经纬图、兰伯特圆柱等面积和摩尔威德椭圆全球投影下会呈现不同形状。配合B25纬向气候代理值，检验极区失真与候选球面陆地占比；局部H4山地坡向另外作为独立实验，绝不冒充已经配准的实际风带。</p>
+</header><main>
+<nav>
+<a href="../images/orbina-v225r-b27-projection-orography-overview.svg" target="_blank" rel="noopener">B27静态全球投影与四向坡面总图</a>
+<a href="../data/orbina-v225r-b27-globe-projection-orography.json" target="_blank" rel="noopener">B27计算与验证数据</a>
+<a href="orbina-v225r-b26-coast-climate-overlay.html">B26纬度气候地图</a>
+<a href="orbina-v225r-b25-global-circulation-atlas.html">B25环流参数研究</a>
+<a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank" rel="noopener">百科《海洋地理》</a>
+</nav>
+<section><h2>第一部分 · 同一候选地形的三种全球投影</h2>
+<div class="controls">
+<label>地图投影<select id="projection"><option value="plate">普通经纬矩形（非等面积）</option><option value="cea">兰伯特圆柱等面积</option><option value="moll" selected>摩尔威德椭圆等面积</option></select></label>
+<label>候选纬度标注<select id="placement"><option value="N">N · 偏北 +18°</option><option value="C" selected>C · 中性</option><option value="S">S · 偏南 −18°</option></select></label>
+<label>气候研究图层<select id="layer"><option value="terrain">陆地和海洋</option><option value="rain" selected>相对湿润潜势</option><option value="solar">日照几何 Q/S₀</option><option value="wind">纬向气流倾向</option></select></label></div>
+<div class="controls">
+<label>自转研究档<select id="spin"><option value="F">快自转1.6</option><option value="M" selected>中自转1</option><option value="S">慢自转0.55</option></select></label>
+<label>轴倾假设<select id="tilt"><option value="L">10°</option><option value="M" selected>24°</option><option value="H">42°</option></select></label>
+<label>人工季节相位<select id="phase"><option value="0">01 · 几何春分</option><option value="3" selected>04 · 北半球夏至</option><option value="6">07 · 几何秋分</option><option value="9">10 · 北半球冬至</option></select></label>
+<label><input type="checkbox" id="grid" checked>显示经纬网</label></div>
+<div class="cols">
+<div><div class="can"><canvas id="globe" width="1130" height="620" aria-label="全球候选陆地在三种投影中的可交互地图"></canvas></div>
+<p id="mapInfo" class="info">读取候选陆块与气候矩阵中……</p>
+<div class="legend"><span><i style="background:#becaa5"></i>候选陆地</span><span><i style="background:#d7c592"></i>小岛候选</span><span><i style="background:#23556e"></i>海洋背景</span></div></div>
+<aside><h3>地图指标</h3><div id="globalStats"></div><p class="note">同一纬度标注方案内，球面陆地比例在不同投影之间必须保持一致；形状的可视差异不意味着陆地面积真的发生变化。</p></aside>
+</div>
+<h3>三种候选纬度下的陆地占比</h3><div class="compare" id="compare"></div>
+</section>
+<section><h2>第二部分 · H4 山地坡面朝向实验</h2>
+<p class="note">H4是另一套独立的假设地势格网，**没有与全球B16地图完成地理配准**。仅考察给定来风方向前方一格是否地势上升或下降。上升坡面的存在，并不能直接证明有降雨；下坡也不等于正式雨影气候。</p>
+<div class="controls"><label>假设来风<select id="windDirection"><option value="W" selected>自西向东</option><option value="E">自东向西</option><option value="N">自北向南</option><option value="S">自南向北</option></select></label>
+<label>坡面指标<select id="slopeLayer"><option value="rise">朝来风方向升坡</option><option value="descent">朝来风方向降坡</option></select></label></div>
+<div class="cols">
+<div><div class="can"><canvas id="slope" width="830" height="430" aria-label="H4假设地势不同来风方向下的上升坡指数"></canvas></div><div id="windInfo" class="info">正在加载坡面试验数据……</div></div>
+<aside><h3>所选坡面条件</h3><div id="windStats"></div><p class="note">所有高差均为B18/B20人工相对地势单位，不能解释为真实海拔米、坡度百分比或风速。</p></aside>
+</div></section>
+<section><h2>第三部分 · 从地图试验迈向地理正史的门槛</h2>
+<p>**全球候选陆地比例并非定稿。** 当前的N、C、S是三种可逆纬度配准；虽然摩尔威德和兰伯特圆柱能保留假设球面面积，仍需要先确定星球半径、大气与自转、经纬坐标、大陆高分辨率海岸，以及哪些山系与风场真正重合。</p>
+<p class="note">普通经纬网图的高纬像素表现会夸大地图上的土地面积；等面积地图保住面积比例，却改变外形。参考 <a href="https://www.usgs.gov/publications/map-projections-a-working-manual" target="_blank" rel="noopener">USGS《地图投影工作手册》</a>与 <a href="https://mathworld.wolfram.com/MollweideProjection.html" target="_blank" rel="noopener">摩尔威德投影方程</a>。这些是地图方法的科学依据，不是已批准的俄庇娜地理事实。</p>
+<p>正式关系仍优先保护：联合城与人民天国位于同一超级大陆、巨型内海南口通外洋、内海R1/R2与棠溪独立、抵抗者之弧、秦棠位于萨瑞拉西北等。**不能从匿名陆块像素反推这些国家的实际位置。**</p>
+</section></main><footer>ORBINA / V2.25-R-B27 · NONCANON SPHERICAL PROJECTION AND H4 DIRECTIONAL TOPOGRAPHY STUDY</footer>
+<script>
+"use strict";
+const $=id=>document.getElementById(id),RAD=Math.PI/180,PI=Math.PI;
+let model=null,climate=null,selected={region:-1};
+const M=$("globe"),ctx=M.getContext("2d"),L=$("slope"),lctx=L.getContext("2d");
+const globe={x:39,y:28,width:1052,height:526};
+function rgb(h){return [1,3,5].map(i=>parseInt(h.slice(i,i+2),16))}
+function mix(a,b,t){const A=rgb(a),B=rgb(b),q=Math.max(0,Math.min(1,t));return "#"+A.map((v,i)=>Math.round(v+(B[i]-v)*q).toString(16).padStart(2,"0")).join("")}
+function latitude(y,A){return 90-180*y/1200+A*Math.sin(PI*y/1200)}
+function yFromLatitude(lat,A){let a=0,b=1200;for(let i=0;i<44;i++){let m=(a+b)/2;if(latitude(m,A)>lat)a=m;else b=m}return(a+b)/2}
+function theta(lat){let l=lat*RAD,t=l;for(let i=0;i<26;i++){let den=2+2*Math.cos(2*t);if(den<1e-10)break;let d=(2*t+Math.sin(2*t)-PI*Math.sin(l))/den;t=Math.max(-PI/2,Math.min(PI/2,t-d));if(Math.abs(d)<1e-12)break}return t}
+function projection(){
+return $("projection").value;
+}
+function xy(x,lat){
+let kind=projection(),u=x/2400;
+if(kind==="plate")return [globe.x+u*globe.width,globe.y+(90-lat)/180*globe.height];
+if(kind==="cea")return [globe.x+u*globe.width,globe.y+(1-Math.sin(lat*RAD))*.5*globe.height];
+const t=theta(lat);
+return [globe.x+globe.width/2+(u-.5)*globe.width*Math.cos(t),globe.y+(1-Math.sin(t))*.5*globe.height];
+}
+function indexField(){
+const v=climate.variants[$("spin").value+$("tilt").value],p=Number($("phase").value),layer=$("layer").value;
+return layer==="solar"?v.solar_q_over_stellar_flux_rows[p]:layer==="wind"?v.zonal_wind_tendency_rows[p]:v.rain_potential_land_rows[p];
+}
+function readField(row,lat){
+const u=(Math.max(-90,Math.min(90,lat))+90)/5,k=Math.min(36,Math.floor(u)),n=Math.min(36,k+1);
+return row[k]*(1-(u-k))+row[n]*(u-k);
+}
+function landColor(kind,value){
+if(kind==="terrain")return "#becaa5";
+if(kind==="solar")return mix("#8cb4b2","#edd094",value/.58);
+if(kind==="rain")return mix("#d4be95","#4f9fc2",value);
+return value<0?mix("#c5d2b2","#78a5cd",-value):mix("#c5d2b2","#ce936c",value);
+}
+function drawGlobe(){
+if(!model||!climate)return;
+const proj=projection(),scenario=$("placement").value,A=model.sphere.latitude_cases[scenario].latitude_offset;
+const owner=model.sphere.owner_region_rows.map(r=>r.split(",").map(Number)),frame=globe,width=240,height=120,layer=$("layer").value,row=indexField();
+ctx.clearRect(0,0,M.width,M.height);ctx.fillStyle="#19495e";ctx.fillRect(0,0,M.width,M.height);
+ctx.save();
+if(proj==="moll"){ctx.beginPath();ctx.ellipse(frame.x+frame.width/2,frame.y+frame.height/2,frame.width/2,frame.height/2,0,0,2*PI);ctx.clip();}
+ctx.fillStyle="#21586f";ctx.fillRect(frame.x,frame.y,frame.width,frame.height);
+for(let j=0;j<height;j++){
+ const north=latitude(j*10,A),south=latitude((j+1)*10,A),mid=latitude(j*10+5,A),v=readField(row,mid);
+ let i=0;
+ while(i<width){
+  if(owner[j][i]<0){i++;continue}
+  const klass=owner[j][i]<16?"major":"island";let end=i+1;
+  while(end<width&&owner[j][end]>=0&&(owner[j][end]<16?"major":"island")===klass)end++;
+  const shade=layer==="terrain"?(klass==="major"?"#c2cda9":"#d6c493"):landColor(layer,v);
+  const p0=xy(i*10,north),p1=xy(end*10,north),p2=xy(end*10,south),p3=xy(i*10,south);
+  ctx.beginPath();ctx.moveTo(p0[0],p0[1]);ctx.lineTo(p1[0],p1[1]);ctx.lineTo(p2[0],p2[1]);ctx.lineTo(p3[0],p3[1]);ctx.closePath();ctx.fillStyle=shade;ctx.fill();i=end;
+ }
+}
+if($("grid").checked){
+ ctx.lineWidth=1;ctx.strokeStyle="rgba(219,238,241,.4)";ctx.setLineDash([4,5]);
+ for(let lat=-75;lat<=75;lat+=15){
+  let a=xy(0,lat),b=xy(2400,lat);ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke();
+ }
+ for(let lon=0;lon<=2400;lon+=300){
+  ctx.beginPath();for(let lat=-88;lat<=88;lat+=4){let a=xy(lon,lat);if(lat===-88)ctx.moveTo(a[0],a[1]);else ctx.lineTo(a[0],a[1]);}ctx.stroke();
+ }
+ ctx.setLineDash([]);
+}
+ctx.restore();
+if(proj==="moll"){ctx.beginPath();ctx.ellipse(frame.x+frame.width/2,frame.y+frame.height/2,frame.width/2,frame.height/2,0,0,2*PI);ctx.strokeStyle="#d8e9e8";ctx.lineWidth=2;ctx.stroke()}
+ctx.fillStyle="#f0f8ef";ctx.font="bold 16px system-ui";ctx.fillText("全球候选海岸（栅格近似） · "+$("placement").value+" / "+$("spin").value+$("tilt").value,20,18);
+ctx.fillStyle="#cce0e0";ctx.font="13px system-ui";ctx.fillText("非正史：投影会改变地图外观，却不改变同一球面方案的陆地面积。",21,M.height-29);
+}
+function decodeClick(px,py){
+let v=(py-globe.y)/globe.height,u=(px-globe.x)/globe.width,lat;
+if(v<0||v>1)return null;
+if(projection()==="plate")lat=90-180*v;
+else if(projection()==="cea")lat=Math.asin(Math.max(-1,Math.min(1,1-2*v)))/RAD;
+else{
+ let t=Math.asin(Math.max(-1,Math.min(1,1-2*v))),factor=Math.cos(t);
+ if(factor<1e-8)return null;
+ u=.5+(u-.5)/factor;
+ lat=Math.asin(Math.max(-1,Math.min(1,(2*t+Math.sin(2*t))/PI)))/RAD;
+}
+if(u<0||u>=1)return null;
+const A=model.sphere.latitude_cases[$("placement").value].latitude_offset,sourceY=yFromLatitude(lat,A);
+return{x:Math.floor(u*240),y:Math.max(0,Math.min(119,Math.floor(sourceY/10))),lat};
+}
+function updateStats(){
+if(!model||!climate)return;
+const v=model.sphere.latitude_cases[$("placement").value],infl=model.sphere.equirectangular_visual_area_inflation.find(r=>r.lat===75);
+$("globalStats").innerHTML=[
+ ["候选球面陆地",v.land_percent.toFixed(3)+"%"],
+ ["陆地抽样格",model.sphere.base_owner_grid.land_cells.toLocaleString()],
+ ["纬度配准偏移",v.latitude_offset+"°"],
+ ["北纬75°以上格",v.north_of_75_land_cells],
+ ["南纬75°以下格",v.south_of_minus_75_land_cells],
+ ["经纬图75°面积夸大",infl.relative_pixel_area_exaggeration+"倍"]
+].map(([name,value])=>"<div class='stat'><b>"+value+"</b><small>"+name+"</small></div>").join("");
+$("compare").innerHTML=["N","C","S"].map(key=>{let x=model.sphere.latitude_cases[key];return "<div class='comp'><b>"+key+" · "+x.land_percent.toFixed(3)+"%</b><small>同样的海岸，球面纬度标注不同；极区陆地像素："+(x.north_of_75_land_cells+x.south_of_minus_75_land_cells)+"格</small></div>"}).join("");
+drawGlobe();
+}
+function slopeRender(){
+if(!model)return;
+const direction=$("windDirection").value,l=$("slopeLayer").value,g=model.H4_orographic_screen.grid,v=model.H4_orographic_screen.incoming_winds[direction],rows=l==="rise"?v.rise_rows:v.descent_rows,mask=g.original_mask_rows;
+lctx.fillStyle="#205c74";lctx.fillRect(0,0,L.width,L.height);
+let cell=Math.min((L.width-50)/g.width,(L.height-100)/g.height),ox=(L.width-g.width*cell)/2,oy=42+(L.height-100-g.height*cell)/2;
+for(let y=0;y<g.height;y++)for(let x=0;x<g.width;x++){
+  if(mask[y][x]!=="1")continue;let val=rows[y][x];
+  const c=val===null?"#b7cdb6":val===0?"#80b0aa":val<5?"#d9d5a7":val<12?"#dfa571":"#f3c26b";
+  lctx.fillStyle=c;lctx.fillRect(ox+x*cell,oy+y*cell,Math.ceil(cell+.1),Math.ceil(cell+.1));
+}
+lctx.fillStyle="#f2f7ef";lctx.font="bold 19px system-ui";lctx.fillText(v.label+" · "+(l==="rise"?"升坡":"降坡")+"相对指数",24,29);
+lctx.fillStyle="#d6e8e7";lctx.font="13px system-ui";lctx.fillText("孤立的人工地势 H4 · 不代表真实的雨影或地理方位",24,L.height-21);
+$("windStats").innerHTML=[["有效方向相邻陆地格对",v.valid_land_pairs],["局部升坡指数≥5",v.positive_rise_ge5],["局部降坡指数≥5",v.positive_descent_ge5],["平均正升坡指数",v.mean_rise.toFixed(3)],["极端单格升坡指数",v.max_rise.toFixed(2)]].map(([k,z])=>"<div class='stat'><b>"+z+"</b><small>"+k+"</small></div>").join("");
+$("windInfo").textContent="当前假设："+v.label+"。每个格子仅与其上风侧紧邻的一个陆地格比较相对高度；不涉及全球B16地图上的国家或真实山脉位置。";
+}
+function refresh(){updateStats();slopeRender()}
+for(const id of ["projection","placement","layer","spin","tilt","phase","grid"])$(id).addEventListener("change",updateStats);
+for(const id of ["windDirection","slopeLayer"])$(id).addEventListener("change",slopeRender);
+M.addEventListener("pointerdown",e=>{if(!model)return;const r=M.getBoundingClientRect(),px=(e.clientX-r.left)*M.width/r.width,py=(e.clientY-r.top)*M.height/r.height,t=decodeClick(px,py);
+if(!t){$("mapInfo").textContent="当前位置在投影图外、椭圆形轮廓外或极点附近；不能反推候选陆地编号。";return;}
+const owner=model.sphere.base_owner_grid.owner_region_rows[t.y].split(",").map(Number)[t.x];
+$("mapInfo").textContent=owner<0?"该处为候选海域：计算纬度"+t.lat.toFixed(2)+"°。真实洋流与海名位置未确定。":"陆地格("+t.x+","+t.y+") · 原B16轮廓编号 "+(owner+1)+" · 模型候选纬度"+t.lat.toFixed(2)+"°。不代表任何正式国家的经纬度。";
+});
+Promise.all([
+ fetch("../data/orbina-v225r-b27-globe-projection-orography.json").then(r=>{if(!r.ok)throw Error("B27 "+r.status);return r.json()}),
+ fetch("../data/orbina-v225r-b25-global-circulation-factorial.json").then(r=>{if(!r.ok)throw Error("B25 "+r.status);return r.json()})
+]).then(([a,c])=>{
+ if(a.sphere.base_owner_grid.owner_region_rows.length!==120||Object.keys(a.H4_orographic_screen.incoming_winds).length!==4||Object.keys(c.variants).length!==9)throw Error("图集源文件验证失败");
+ model=a;climate=c;refresh();$("mapInfo").textContent="已载入：投影坐标格为B16/B26候选像素栅格。点击陆地查看非正史网格编号。";
+}).catch(e=>$("mapInfo").textContent="数据加载失败："+e.message+"；请使用顶部静态总图。");
+</script>
+</body></html>
