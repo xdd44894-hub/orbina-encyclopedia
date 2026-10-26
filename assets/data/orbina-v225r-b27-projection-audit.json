@@ -1,1 +1,114 @@
-{"edition":"V2.25-R-B27","status":"B27_NUMERIC_GEOMETRY_QA_PASS","checks":{"all_ninety_nine_polygon_mask_cells_present":true,"global_area_integrates_to_one":true,"all_latitude_mappings_invert":true,"mollweide_forward_inverse":true,"wind_directions_four":true,"h4_grids_valid":true,"no_official_geography_mapping":true},"areas":{"N":{"land_percent":38.087,"high_latitude_land_fraction":0.034442,"north75":264,"south75":2},"C":{"land_percent":42.704,"high_latitude_land_fraction":0.028244,"north75":86,"south75":40},"S":{"land_percent":46.447,"high_latitude_land_fraction":0.020189,"north75":33,"south75":206}},"orography":{"W":{"valid_pairs":1196,"asc_ge5":137,"des_ge5":121,"mean_rise":1.318},"E":{"valid_pairs":1196,"asc_ge5":121,"des_ge5":137,"mean_rise":1.354},"N":{"valid_pairs":1164,"asc_ge5":413,"des_ge5":452,"mean_rise":2.803},"S":{"valid_pairs":1164,"asc_ge5":452,"des_ge5":413,"mean_rise":2.804}},"limits":["Projection choice changes a picture's shapes/area distortion, not its accepted geography.","B26 ±18 degree latitude-registration options are not actual tectonic drifts or official planet coordinates.","Mollweide and Lambert equal-area properties apply to sphere only; physical ellipsoid is unknown.","No official country/ocean coastline, spin, axial tilt, planetary radius, annual rainfall or river source is set.","The candidate map may be visibly over-spread around polar latitudes; testing it does not approve it.","H4 synthetic slopes cannot be placed on B16 global candidate continents without explicit terrain registration."]}
+{
+  "edition": "V2.25-R-B27",
+  "status": "GITHUB_SOURCE_STATIC_QA_PASS__PUBLIC_PAGES_AND_MOBILE_UNVERIFIED",
+  "checks": {
+    "all_ninety_nine_polygon_mask_cells_present": true,
+    "global_area_integrates_to_one": true,
+    "all_latitude_mappings_invert": true,
+    "mollweide_forward_inverse": true,
+    "wind_directions_four": true,
+    "h4_grids_valid": true,
+    "no_official_geography_mapping": true
+  },
+  "areas": {
+    "N": {
+      "land_percent": 38.087,
+      "high_latitude_land_fraction": 0.034442,
+      "north75": 264,
+      "south75": 2
+    },
+    "C": {
+      "land_percent": 42.704,
+      "high_latitude_land_fraction": 0.028244,
+      "north75": 86,
+      "south75": 40
+    },
+    "S": {
+      "land_percent": 46.447,
+      "high_latitude_land_fraction": 0.020189,
+      "north75": 33,
+      "south75": 206
+    }
+  },
+  "orography": {
+    "W": {
+      "valid_pairs": 1196,
+      "asc_ge5": 137,
+      "des_ge5": 121,
+      "mean_rise": 1.318
+    },
+    "E": {
+      "valid_pairs": 1196,
+      "asc_ge5": 121,
+      "des_ge5": 137,
+      "mean_rise": 1.354
+    },
+    "N": {
+      "valid_pairs": 1164,
+      "asc_ge5": 413,
+      "des_ge5": 452,
+      "mean_rise": 2.803
+    },
+    "S": {
+      "valid_pairs": 1164,
+      "asc_ge5": 452,
+      "des_ge5": 413,
+      "mean_rise": 2.804
+    }
+  },
+  "limits": [
+    "Projection choice changes a picture's shapes/area distortion, not its accepted geography.",
+    "B26 ±18 degree latitude-registration options are not actual tectonic drifts or official planet coordinates.",
+    "Mollweide and Lambert equal-area properties apply to sphere only; physical ellipsoid is unknown.",
+    "No official country/ocean coastline, spin, axial tilt, planetary radius, annual rainfall or river source is set.",
+    "The candidate map may be visibly over-spread around polar latitudes; testing it does not approve it.",
+    "H4 synthetic slopes cannot be placed on B16 global candidate continents without explicit terrain registration."
+  ],
+  "checks_verified_against_latest_files": {
+    "committed_files_complete": true,
+    "current_edition_B27": true,
+    "page_is_current_viewer": true,
+    "article_current_B27": true,
+    "B18_to_B26_retained": true,
+    "original_B26_landmask_unchanged": true,
+    "sample_dimensions_240x120": true,
+    "owner_grid_cells_all_valid": true,
+    "land_cells_9996": true,
+    "three_candidate_lats": true,
+    "spherical_total_area_closure": true,
+    "three_areas_match": true,
+    "projection_types_correct": true,
+    "equidistant_high_lat_inflation": true,
+    "H4_grid_source_honored": true,
+    "four_winds_present": true,
+    "wind_pair_counts_correct": true,
+    "reversal_symmetry": true,
+    "H4_grid_shape": true,
+    "B25_nine_models_preserved": true,
+    "wiki_links_current_map": true,
+    "SVG_is_closed": true,
+    "SVG_projection_sections": true,
+    "SVG_wind_sections": true,
+    "HTML_Javascript_parses": true,
+    "HTML_real_sphere_schema": true,
+    "HTML_projection_options": true,
+    "HTML_inverse_projection_logic": true,
+    "HTML_fetches_actual_JSON": true,
+    "H4_kept_anonymous": true,
+    "no_new_canon_coordinates": true
+  },
+  "published": {
+    "viewer": "assets/maps/orbina-v225r-b27-projection-orography-atlas.html",
+    "static_svg": "assets/images/orbina-v225r-b27-projection-orography-overview.svg",
+    "model_data": "assets/data/orbina-v225r-b27-globe-projection-orography.json",
+    "encyclopedia": "_articles/article-035.md",
+    "current_version_index": "assets/data/orbina-global-continent-scale-principles.json"
+  },
+  "historic_sources_preserved": [
+    "assets/data/orbina-v225r-b26-coast-climate-registration.json",
+    "assets/data/orbina-v225r-b20-h4-catchments.json",
+    "assets/data/orbina-v225r-b25-global-circulation-factorial.json"
+  ],
+  "test_boundary": "No actual browser execution, live public Pages HTTP response or mobile touch and canvas rendering was tested, despite source/JS/schema consistency.",
+  "geographic_boundary": "All global mapping based on noncanonical B16/B26 candidate, physical planet dimensions unknown. H4 direction slopes are distinct unregistered model."
+}
