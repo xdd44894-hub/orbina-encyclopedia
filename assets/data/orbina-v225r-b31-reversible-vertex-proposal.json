@@ -1,0 +1,81 @@
+{
+  "edition": "V2.25-R-B31",
+  "status": "INDEPENDENT_OPTIONAL_REVERSIBLE_GEOMETRY_DRAFT_NOT_APPLIED",
+  "source_original_B16_sha": "d580bd5d0410b1c533acfe9709e99092d302584c",
+  "how_to_apply": "Copy B16 into a new draft, then for each proposed_edit delete only vertex index 0 of specified polygon id. NEVER overwrite B16. Preserve order: polygon ids 0..15 macro_landmasses, 16..98 archipelago.",
+  "how_to_rollback": "Discard draft; the original B16 JSON and all earlier atlases are unchanged.",
+  "proposed_edits": [
+    {
+      "id": "A01",
+      "polygon_id": 3,
+      "polygon_name": "southern-ocean-east-ridge",
+      "operation": "delete_original_vertex_0_only_in_optional_draft",
+      "source_vertex_index": 0,
+      "source_coordinate": [
+        1057.016173207085,
+        981.2665463939203
+      ],
+      "after_neighbor_angles_deg": [
+        162.116505,
+        35.979733
+      ],
+      "before_tip_angle_deg": 0.622502,
+      "area_before_drawing": 15016.57571258815,
+      "area_after_drawing": 15016.313307035598,
+      "relative_area_change_pct": -0.00174744,
+      "new_edge": [
+        [
+          1063.6152094832942,
+          992.1361255800625
+        ],
+        [
+          1059.0227481543416,
+          984.4921407513616
+        ]
+      ],
+      "new_edge_contacts": [],
+      "delta_vertices": -1,
+      "approved_for_canonical_source": false
+    },
+    {
+      "id": "A02",
+      "polygon_id": 6,
+      "polygon_name": "southwest-southern-east-subcontinent",
+      "operation": "delete_original_vertex_0_only_in_optional_draft",
+      "source_vertex_index": 0,
+      "source_coordinate": [
+        531.1335836019737,
+        993.0080089898692
+      ],
+      "after_neighbor_angles_deg": [
+        131.915875,
+        77.269971
+      ],
+      "before_tip_angle_deg": 0.989315,
+      "area_before_drawing": 8316.039743218542,
+      "area_after_drawing": 8312.175456741854,
+      "relative_area_change_pct": -0.04646787,
+      "new_edge": [
+        [
+          508.98222123677175,
+          978.4742456763163
+        ],
+        [
+          516.8494422504912,
+          983.9849180715211
+        ]
+      ],
+      "new_edge_contacts": [],
+      "delta_vertices": -1,
+      "approved_for_canonical_source": false
+    }
+  ],
+  "proposed_total_polygons": 99,
+  "proposed_total_vertices": 9619,
+  "checks": {
+    "no_new_edge_touches_or_crossings": true,
+    "both_new_neighbor_angles_at_least30": true,
+    "all_relative_area_changes_under_0p1pct": true
+  },
+  "disclaimer": "Only a removable what-if edit for two needle tips. Actual coastline changed ONLY if a future approved draft becomes a new version. Neighbor-area preservation is measured in planar drawing units, not physical area."
+}
