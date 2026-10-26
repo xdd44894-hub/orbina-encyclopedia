@@ -1,41 +1,39 @@
 # 俄庇娜百科
 
-俄庇娜世界观资料站。正文以独立 Markdown 条目维护，页面模板、样式、搜索脚本和图片分开放置，更新设定无需编辑整份 HTML。
+俄庇娜世界观公开百科。条目按主题维护；已确认的补充直接整合到对应正文，不把聊天来源、资料文件名及逐次修订记录混入网站展示。
 
-## 网站与仓库
+## 网站
 
-- 网站：<https://xdd44894-hub.github.io/orbina-encyclopedia/>
-- GitHub 仓库：<https://github.com/xdd44894-hub/orbina-encyclopedia>
-- Pages 从 `main` 分支根目录发布。提交到 `main` 后，GitHub Pages 会自动重新构建。
+- 百科：<https://xdd44894-hub.github.io/orbina-encyclopedia/>
+- 仓库：<https://github.com/xdd44894-hub/orbina-encyclopedia>
+- 托管：GitHub Pages，`main` 分支根目录
 
-## 修改或添加条目
+## 编辑规范
 
-1. 在仓库打开 `_articles/`。
-2. 编辑现有 `article-XXX.md`，或新建一个 Markdown 文件，例如 `article-057.md`。
-3. 在文件开头填写标题、分类和来源，然后用 Markdown 编写正文：
+1. 已存在的事物或设定：直接编辑 `_articles/` 内现有文件，替换过时段落。
+2. 独立的新主题：再建立新条目，只填写必要的标题、分类和正文。
+3. 尚未确认的内容按需要与正式设定区分，不要把内部工作记录当作百科主体。
+4. 重要旧版地图数据虽然不进入首页或插画图库，但如果仍被现行地图研究使用，就不能删除。
 
-```yaml
+示例条目：
+
+```markdown
 ---
 title: 新条目标题
 category: 地理与生态
-source: 原始资料文件名.txt
+ai_search: true
 ---
 
-## 小节标题
-
-在这里写正文。
+正文内容。
 ```
 
-4. 提交到 `main`。分类会自动出现在目录和搜索中。
+## 项目文件
 
-## 项目结构
-
-- `_articles/`：独立百科条目与来源标记。
-- `_layouts/`：共享页面布局。
-- `assets/css/site.css`：视觉样式。
-- `assets/js/search.js`：站内搜索。
-- `assets/images/`：归档配图。
-- `index.md`、`catalog.md`、`gallery.md`、`about.md`：首页、目录、图片档案和编辑说明。
-- `_config.yml`、`Gemfile`：Jekyll 与 GitHub Pages 配置。
-
-初始条目整理自 2026-10-02 提供的俄庇娜归档包。人物私档和跨作品材料未并入核心百科。不同稿件发生冲突时，优先核对明确标注的覆盖修正和来源日期。
+- `_articles/`：百科正文
+- `_layouts/`：网站页面模板
+- `assets/images/`：插画及专题图
+- `assets/maps/`：交互地图研究图册
+- `assets/data/`：研究数据与结构化资料
+- `assets/js/search.js`、`search.json`：站内搜索
+- `ai-search-index.json`、`worker.js`：自动检索服务
+- `index.md`、`catalog.md`、`gallery.md`、`about.md`：主要页面
