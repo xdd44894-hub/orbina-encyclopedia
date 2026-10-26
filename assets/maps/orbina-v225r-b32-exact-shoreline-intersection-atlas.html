@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>俄庇娜 V2.25-R-B32｜陆海截线几何复核</title>
+<style>
+*{box-sizing:border-box}body{font:15px/1.6 system-ui,"Microsoft YaHei",sans-serif;background:#f2f3ec;color:#234252;margin:0}
+header{background:linear-gradient(110deg,#15394e,#30696f);color:#f6f8f3;padding:25px max(16px,calc((100vw - 1280px)/2))}
+h1{font-size:clamp(24px,3vw,38px);margin:0}header p{margin:7px 0 0;max-width:980px;color:#d6e7e4}
+main{max-width:1280px;margin:auto;padding:20px 16px 50px}h2{font-size:20px;margin:0 0 12px}
+nav{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 16px}nav a{background:white;padding:8px 11px;border-radius:7px;border:1px solid #c7d8d3;color:#195467;text-decoration:none;font-size:13px}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 15px}
+.metrics div{border-radius:10px;padding:12px;background:#e5efe9;border:1px solid #cbdcd3}.metrics b{font-size:27px;display:block;color:#226170}.metrics small{color:#54737d}
+.panel{background:#fffefa;border:1px solid #d5ded6;border-radius:10px;margin-bottom:16px;padding:19px}
+.tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:9px 0}
+.tools label{display:flex;align-items:center;gap:6px;font-size:13px}select,button,input{font:inherit;accent-color:#2b7d87}
+select,button{padding:7px 9px;border-radius:6px;background:#f4f8f5;border:1px solid #aec6c3;color:#244959}button{cursor:pointer;background:#e8f0ed}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #168da6}
+.columns{display:grid;grid-template-columns:minmax(0,1fr) 305px;gap:16px}
+.canvas{background:#1e4e67;border:1px solid #abc9cc;border-radius:8px;overflow:hidden}canvas{display:block;width:100%;height:auto;touch-action:none;cursor:grab}
+.legend{display:flex;flex-wrap:wrap;gap:13px;font-size:12px;color:#54747c;margin:9px 0}.mark{display:inline-block;width:11px;height:11px;vertical-align:middle;margin-right:4px;border-radius:50%}
+#detail,#status{background:#edf4ee;border:1px solid #cadbd3;border-radius:8px;padding:12px;font-size:13px;margin:9px 0;overflow-wrap:anywhere}
+#detail h3{margin:0 0 6px;font-size:18px}#detail p{margin:5px 0}
+.bar{display:flex;height:14px;overflow:hidden;border-radius:6px;border:1px solid #bbcfbf;margin:11px 0}.bar div{height:100%}
+.queue{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;max-height:420px;overflow:auto}
+.queue button{text-align:left;padding:9px;font-size:12px;background:#f5f7f2}.queue button.active{outline:2px solid #287e96;background:#e0f1ed}
+.queue b,.queue small{display:block}small,.muted{color:#668084;font-size:12px}
+footer{color:#627e7f;font-size:12px;margin-top:22px}
+@media(max-width:920px){.columns{grid-template-columns:1fr}.queue{grid-template-columns:repeat(2,minmax(0,1fr))}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style></head>
+<body><header><h1>俄庇娜 · B32 陆海截线复核图册</h1><p>保留99片候选原始陆块与9,621个顶点。通过精确连接线和全岸线交点，将原B31的56处近岸候选重新判为连续陆地、连续水面或多次跨越海岸的混合截线。所有检测仅是图纸几何，不是实际地峡认定。</p></header>
+<main><nav>
+<a href="orbina-v225r-b31-topology-neck-atlas.html">回看 B31 原始取样结果</a>
+<a href="../data/orbina-v225r-b32-exact-chord-shoreline-audit.json">B32 全部56条精确截线数据</a>
+<a href="orbina-v225r-b29-complete-vector-atlas.html">B29 完整矢量世界地图</a>
+<a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md">《海洋地理》百科</a></nav>
+<div class="metrics"><div><b>21</b><small>全程通过陆地的截线</small></div><div><b>9</b><small>全程通过水面的截线</small></div><div><b>26</b><small>穿过至少一道陆海边界</small></div><div><b>5</b><small>修正B31四点取样分类</small></div></div>
+<section class="panel"><h2>原始地图、精确短截线与交点放大</h2>
+<div class="tools">
+<label>筛选 <select id="filter"><option value="all">全部56条</option><option value="land">21条连续陆地</option><option value="water">9条连续水面</option><option value="mixed">26条跨越岸线</option><option value="multi">5条多次跨越</option><option value="corrected">5条与B31分类不同</option></select></label>
+<label>位置 <select id="choose"><option value="">选择N编号</option></select></label>
+<label>显示切图 <select id="seam"><option value="57">B29第57列</option><option value="0">B16原始画幅</option><option value="55">第55列</option></select></label>
+<label><input id="showAll" type="checkbox">显示筛选内全部截线（缩略）</label>
+</div>
+<div class="tools">
+<label>缩放倍数 <input id="zoom" type="range" min="1" max="45" step=".5" value="1"><strong id="zoomText">1×</strong></label>
+<button id="focus">放大选定位置</button><button id="reset">重置</button><button id="prev">上一个</button><button id="next">下一个</button>
+</div>
+<div class="columns"><div><div class="canvas"><canvas id="map" width="1300" height="690" aria-label="俄庇娜B32海岸候选截线交互地图，可触屏拖动和缩放"></canvas></div>
+<div class="legend"><span><i class="mark" style="background:#b2d1a0"></i>候选陆地</span><span><i class="mark" style="background:#48d39b"></i>连接线内陆段</span><span><i class="mark" style="background:#ffe18e"></i>连接线水面段</span><span><i class="mark" style="background:#fc7d97"></i>岸线穿越点</span></div><div id="status">正在读取源地图与B32精确截线数据……</div></div>
+<aside><div id="detail"><h3>尚未选中点位</h3><p>点击编号后，可放大显示陆地、水域及精确交点；此处无需修改原岸线。</p></div>
+<p class="muted">本阶段的“连续陆地”只指这一条局部截线的几何归属，不代表已获得海拔、真正最窄地峡宽度或正式陆桥。若截线包含陆海混合，应避免拿总长度作为“地峡宽度”。</p></aside></div></section>
+<section class="panel"><h2>56处近岸问题的复核列表</h2>
+<p class="muted">特别标记B31四点取样误归类的 N05、N06、N09、N15、N29；N12、N28、N48、N49、N53 具有2次或3次海岸穿越，更不适合直接充当狭窄陆桥。</p>
+<div class="queue" id="queue"></div></section>
+<section class="panel"><h2>本阶段不能推导的内容</h2>
+<p>源数据仍是B16的非正史平面工作地图；尚未确定真实的海拔、海平面、星球经纬度、板块边界、峡湾深度、真实水道或地峡长度。56个提示点中的53个处于原筛选算法按顶点序号设置的近距离排除阈值附近（两个边段在环形顶点序列上的间隔不超过12），提示<strong>原算法受到海岸线顶点密度的明显影响</strong>。下一阶段应该重新设计不依赖顶点序号的岸线筛选，而非直接移动海岸、删岛或在地图上画出正式航道。</p></section>
+<footer>ORBINA WORLD MAP · V2.25-R-B32 · NONCANON GEOMETRY SCREEN · ORIGINAL B16 PRESERVED</footer></main>
+<script>
+"use strict";
+const $=x=>document.getElementById(x),canvas=$("map"),ctx=canvas.getContext("2d");
+const W=1300,H=690,fx=28,fy=27,fw=1244,fh=622,cx=W/2,cy=H/2;
+let b=null,d=null,polys=[],items=[],chosen=null,zoom=1,panX=0,panY=0,drag=null;
+function wrap(x){return(x%2400+2400)%2400}
+function basePoint(p,k=0){return[fx+(p[0]-Number($("seam").value)*10+2400*k)/2400*fw,fy+p[1]/1200*fh]}
+function display(p){let x=wrap(p[0]-Number($("seam").value)*10);return[fx+x/2400*fw,fy+p[1]/1200*fh]}
+function focusItem(x){if(!x)return;zoom=18;const p=display([(x.exact_coast_a[0]+x.exact_coast_b[0])/2,(x.exact_coast_a[1]+x.exact_coast_b[1])/2]);panX=-zoom*(p[0]-cx);panY=-zoom*(p[1]-cy);$("zoom").value=String(zoom);$("zoomText").textContent=zoom+"×";draw()}
+function kind(x){return x.classification==="uninterrupted_land_cross_section"?"land":x.classification==="uninterrupted_water_cross_section"?"water":"mixed"}
+function label(x){return kind(x)==="land"?"全程陆地":kind(x)==="water"?"全程水面":"混合："+x.boundary_crossings+"次穿岸"}
+function subset(){return items.filter(x=>$("filter").value==="all"||$("filter").value===kind(x)||$("filter").value==="multi"&&x.boundary_crossings>=2||$("filter").value==="corrected"&&x.requires_revision_of_B31_label)}
+function drawSegment(a,b,color,width=2,dash=[]){for(let k=-1;k<=2;k++){let p=basePoint(a,k),q=basePoint(b,k);ctx.beginPath();ctx.moveTo(...p);ctx.lineTo(...q);ctx.strokeStyle=color;ctx.lineWidth=width/zoom;ctx.setLineDash(dash.map(v=>v/zoom));ctx.stroke();ctx.setLineDash([])}}
+function mark(p,color,r){for(let k=-1;k<=2;k++){let q=basePoint(p,k);ctx.beginPath();ctx.arc(q[0],q[1],r/zoom,0,2*Math.PI);ctx.fillStyle=color;ctx.fill();ctx.strokeStyle="#193d50";ctx.lineWidth=.8/zoom;ctx.stroke()}}
+function draw(){ctx.clearRect(0,0,W,H);ctx.fillStyle="#1e5066";ctx.fillRect(0,0,W,H);
+ctx.save();ctx.translate(cx+panX,cy+panY);ctx.scale(zoom,zoom);ctx.translate(-cx,-cy);
+ctx.strokeStyle="#ffffff25";ctx.lineWidth=1/zoom;for(let i=0;i<=12;i++){let x=fx+i*fw/12;ctx.beginPath();ctx.moveTo(x,fy);ctx.lineTo(x,fy+fh);ctx.stroke()}
+for(let j=0;j<=6;j++){let y=fy+j*fh/6;ctx.beginPath();ctx.moveTo(fx,y);ctx.lineTo(fx+fw,y);ctx.stroke()}
+if(b){polys.forEach(p=>{for(let k=-1;k<=2;k++){ctx.beginPath();p.coordinates.forEach((v,i)=>{const pt=basePoint(v,k);if(i===0)ctx.moveTo(...pt);else ctx.lineTo(...pt)});ctx.closePath();ctx.fillStyle=p.color||"#bacaa5";ctx.fill();ctx.strokeStyle="#d5e2c1";ctx.lineWidth=.7/zoom;ctx.stroke()}})}
+if($("showAll").checked){subset().forEach(x=>drawSegment(x.exact_coast_a,x.exact_coast_b,kind(x)==="land"?"#47c996":kind(x)==="water"?"#ffe18e":"#f29c91",1.1))}
+if(chosen){let a=chosen.exact_coast_a,e=chosen.exact_coast_b;chosen.runs.forEach(run=>{let p=[a[0]+(e[0]-a[0])*run.from,a[1]+(e[1]-a[1])*run.from],q=[a[0]+(e[0]-a[0])*run.to,a[1]+(e[1]-a[1])*run.to];drawSegment(p,q,run.medium==="land"?"#48d39b":"#ffe18e",5.5)});
+mark(a,"#ffffff",5);mark(e,"#ffffff",5);
+for(let i=0;i<chosen.runs.length-1;i++){let t=chosen.runs[i].to,p=[a[0]+(e[0]-a[0])*t,a[1]+(e[1]-a[1])*t];mark(p,"#fc7d97",6.5)}
+}
+ctx.restore();ctx.strokeStyle="#b6d0d2";ctx.lineWidth=2;ctx.strokeRect(fx,fy,fw,fh);
+}
+function inspect(x){if(!x){$("detail").textContent="请选择N编号以显示精确岸线截线。";return;}
+$("detail").innerHTML="";let h=document.createElement("h3");h.textContent=x.id+" · "+label(x);$("detail").appendChild(h);
+let p=document.createElement("p");p.textContent="候选陆块 #"+x.polygon_id+"（"+x.polygon_name+"）；原始两段边索引："+x.source_edges.join("、");$("detail").appendChild(p);
+let z=document.createElement("p");z.textContent="截线长度："+x.exact_boundary_gap_drawing.toFixed(5)+" 绘图单位；陆域截线占比："+(x.land_fraction*100).toFixed(2)+"%；真实宽度未知。";$("detail").appendChild(z);
+let bar=document.createElement("div");bar.className="bar";x.runs.forEach(run=>{let seg=document.createElement("div");seg.style.width=((run.to-run.from)*100).toFixed(3)+"%";seg.style.background=run.medium==="land"?"#48b990":"#f1d27b";bar.append(seg)});$("detail").append(bar);
+let info=document.createElement("p");info.textContent="穿过海岸："+x.boundary_crossings+"次；较短岸线沿边弧长："+x.shorter_coast_arc_drawing.toFixed(3)+"绘图单位（受顶点密度影响）。"+(x.requires_revision_of_B31_label?" ⚠ B31四点取样分类需要修正。":"");$("detail").append(info);}
+function choose(id){chosen=items.find(x=>x.id===id)||null;$("choose").value=chosen?chosen.id:"";document.querySelectorAll("#queue button").forEach(el=>el.classList.toggle("active",el.dataset.id===id));inspect(chosen);focusItem(chosen);}
+function updateList(){let selection=subset();$("queue").innerHTML="";$("choose").innerHTML="<option value=''>选择N编号</option>";
+selection.forEach(x=>{let option=document.createElement("option");option.value=x.id;option.textContent=x.id+" · "+label(x);$("choose").append(option);
+let btn=document.createElement("button");btn.type="button";btn.dataset.id=x.id;let h=document.createElement("b"),small=document.createElement("small");h.textContent=x.id+" "+(x.requires_revision_of_B31_label?"⚠ ":"")+label(x);small.textContent="陆地"+(x.land_fraction*100).toFixed(1)+"% · "+x.exact_boundary_gap_drawing.toFixed(2)+"绘图单位";btn.append(h,small);btn.onclick=()=>choose(x.id);$("queue").append(btn)});
+if(chosen&&!selection.some(x=>x.id===chosen.id)){chosen=null;inspect(null)}if(chosen)$("choose").value=chosen.id;draw()}
+function step(s){let v=subset(),i=v.indexOf(chosen);if(v.length)choose(v[(i+s+v.length)%v.length].id)}
+$("filter").onchange=updateList;$("choose").onchange=()=>choose($("choose").value);
+$("showAll").onchange=draw;$("seam").onchange=draw;
+$("zoom").oninput=()=>{zoom=Number($("zoom").value);$("zoomText").textContent=zoom+"×";draw()};
+$("reset").onclick=()=>{zoom=1;panX=panY=0;$("zoom").value="1";$("zoomText").textContent="1×";draw()};
+$("focus").onclick=()=>focusItem(chosen);$("next").onclick=()=>step(1);$("prev").onclick=()=>step(-1);
+canvas.onpointerdown=e=>{drag={id:e.pointerId,startX:e.clientX,startY:e.clientY,x:panX,y:panY};canvas.setPointerCapture(e.pointerId)};
+canvas.onpointermove=e=>{if(!drag||drag.id!==e.pointerId)return;let unit=W/canvas.getBoundingClientRect().width;panX=drag.x+(e.clientX-drag.startX)*unit;panY=drag.y+(e.clientY-drag.startY)*unit;draw()};
+canvas.onpointerup=()=>{drag=null};canvas.onpointercancel=()=>{drag=null};
+Promise.all([
+fetch("../data/orbina-v225r-b16-aesthetic-geography-master.json").then(r=>{if(!r.ok)throw Error("B16 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b32-exact-chord-shoreline-audit.json").then(r=>{if(!r.ok)throw Error("B32 HTTP "+r.status);return r.json()})
+]).then(([B32b,B32d])=>{b=B32b;d=B32d;polys=[...b.macro_landmasses,...b.archipelago];items=d.items;
+if(polys.length!==99||polys.reduce((s,p)=>s+p.coordinates.length,0)!==9621||items.length!==56||d.summary.crosses_land_water_boundary!==26||d.summary.previous_B31_misclassified_by_four_sample!==5)throw Error("B16与B32源字段不一致");
+updateList();$("status").textContent="已载入B16原始99片海岸与B32的56条精确截线。可通过分类筛选，放大和拖动查看海陆交界。地图是非正史工作图，并非真实地形比例。";
+}).catch(e=>$("status").textContent="图册数据读取失败："+e.message+"；请使用上方源文件链接。");
+</script></body></html>
