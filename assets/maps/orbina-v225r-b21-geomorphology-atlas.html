@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>俄庇娜地理书 B21 · 地质地貌假设与盆地条件</title>
+<style>
+:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color:#294551;background:#f6f4ec;color-scheme:light}
+*{box-sizing:border-box}body{margin:0}
+header{background:linear-gradient(115deg,#15394d,#265762);color:#f5f7ef;padding:33px max(16px,calc((100vw - 1210px)/2))}
+h1{font-size:clamp(27px,3vw,40px);margin:0 0 10px}
+header p{line-height:1.7;color:#d4e6e0;max-width:970px;margin:0}
+main{max-width:1210px;padding:20px 15px 48px;margin:auto}
+nav{display:flex;gap:9px;flex-wrap:wrap;padding:0 0 20px}
+nav a{padding:9px 11px;border:1px solid #b4c8c2;background:white;border-radius:7px;text-decoration:none;color:#265f6b;font-size:13px}
+.section{background:#fffefa;border:1px solid #d5dcd2;border-radius:13px;padding:20px;margin-bottom:20px}
+h2{font-size:22px;margin:0 0 12px}h3{font-size:17px;margin:16px 0 9px}
+.muted{font-size:14px;color:#677d7e;line-height:1.8}
+.controls{display:flex;gap:13px;flex-wrap:wrap;align-items:center;margin:12px 0}
+.controls label{display:flex;align-items:center;gap:8px;font-size:14px}
+select{padding:9px 11px;border:1px solid #a8c0b9;border-radius:7px;background:white;color:#264754;max-width:100%}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:16px}
+canvas{display:block;width:100%;height:auto;touch-action:manipulation}
+.canvas{border:1px solid #7299a3;border-radius:10px;overflow:hidden;background:#255c74}
+.sideStat{padding:10px 0;border-bottom:1px solid #dce4dd}.sideStat b{font-size:23px;display:block}.sideStat small{color:#657f7d}
+#cellInfo{min-height:45px;background:#f1f5f0;border:1px solid #d4e3d9;border-radius:7px;padding:12px;margin:12px 0}
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0}.legend span{font-size:12px;display:flex;align-items:center;gap:6px}.legend i{display:block;width:14px;height:14px;border-radius:3px}
+.hypotheses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.hyp{border:1px solid #c5d6cd;border-radius:10px;background:#fafaf6;text-align:left;padding:15px;font:inherit;cursor:pointer;line-height:1.5}
+.hyp.active{border:2px solid #39798a;background:#eaf4ef}
+.hyp b{font-size:16px}.hyp small{display:block;color:#688080;margin-top:7px}
+p{line-height:1.75}#hypDetail{padding:14px 17px;border-radius:10px;background:#eff5f1;margin-top:14px;border:1px solid #cee0d4}
+#hypDetail ul{padding-left:20px;line-height:1.8}
+table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;border-bottom:1px solid #dbe4dd;padding:12px 9px;vertical-align:top}th{color:#607a7d}
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.step{padding:12px;border-radius:9px;background:#e8efea;border:1px solid #c7d7cc}
+.step b{display:block;font-size:15px}.step span{font-size:13px;color:#5c7074;line-height:1.5}
+footer{text-align:center;color:#6b7c7e;font-size:12px;padding:20px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.hypotheses{grid-template-columns:1fr}.flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:570px){.section{padding:13px}.flow{grid-template-columns:1fr}td,th{padding:9px 5px;font-size:12px}}
+</style></head><body>
+<header><h1>俄庇娜 · B21 地质与地貌证据图册</h1>
+<p><strong>V2.25-R-B21</strong> · 五区域相对高地、沿海低地、内陆低地与相邻网格高差的专题初筛。首次将“地形长什么样”与“为何形成”分离，提出三套需要后续证据检验的地质演化假设。全部为研究用途；没有确定板块、断层、盆地或湖泊的实际坐标。</p></header>
+<main>
+<nav><a href="../images/orbina-v225r-b21-landform-screening.svg" target="_blank" rel="noopener">五区域静态地貌图</a>
+<a href="../data/orbina-v225r-b21-landform-screening.json" target="_blank" rel="noopener">完整分格数据</a>
+<a href="../data/orbina-v225r-b21-tectonic-scenario-register.json" target="_blank" rel="noopener">地质假说原始登记</a>
+<a href="orbina-v225r-b20-five-region-atlas.html">B20 汇水与降水图</a>
+<a href="orbina-v225r-b18-relative-relief-atlas.html">B18 五幅地势与99片陆地</a>
+<a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank" rel="noopener">百科《海洋地理》</a></nav>
+<section class="section"><h2>五区域地貌分类研究</h2>
+<div class="controls">
+<label>研究图幅 <select id="sheet"></select></label>
+<label>查看图层 <select id="layer"><option value="landform">地貌初筛分类</option><option value="elevation">相对高度分层</option><option value="contrast">相邻高差（图内分位）</option></select></label>
+<label><input id="grid" type="checkbox"/> 显示格网</label>
+</div>
+<div class="layout">
+<div><div class="canvas"><canvas id="map" width="960" height="650" aria-label="俄庇娜B21地貌筛选研究格网"></canvas></div>
+<div id="legend" class="legend"></div><div id="cellInfo">正在载入模型……</div></div>
+<div><h3>当前图幅筛选结果</h3><div id="sheetStats"></div><p class="muted">相对高地大于等于70；近岸低地不高于30且距岸不超过两格；内陆低地不高于30且距岸至少三格。这里的30和70不是海拔米数。</p></div>
+</div>
+</section>
+<section class="section"><h2>地貌成因不能由颜色自动得出</h2>
+<p class="muted">以下以H4东南北主角陆地为匿名研究案例，提供三种彼此可能竞争的构造与地貌演化机制。它们没有对应正式断层线或已批准的地质年代。</p>
+<div class="hypotheses" id="hypotheses"></div><div id="hypDetail"></div></section>
+<section class="section"><h2>从低地到真正湖泊：必须跨过的证据门槛</h2>
+<div class="flow"><div class="step"><b>① 局部相对低地</b><span>B21能够识别模型低值区域，但不能证明盆地封闭</span></div>
+<div class="step"><b>② 地形是否闭合</b><span>需高程剖面、最低溢流口与湖盆边界；目前缺失</span></div>
+<div class="step"><b>③ 是否有稳定补给</b><span>河流、降水、地下水、冰雪融水等，均需要独立设定</span></div>
+<div class="step"><b>④ 水量及沉积收支</b><span>与蒸发、渗漏、溢流、季节变化比较，才可讨论永久湖与湿地</span></div></div>
+<p class="muted">在已使用的B18地形模型中，排水方向本就由海岸向内进行水文条件化，故当前地形筛选得到零个内陆局部封闭低点，并不能用来推断俄庇娜真实地表没有内流盆地。永久湖、盐湖、沼泽、三角洲、山麓冲积扇均没有在B21正式指定坐标。</p>
+<h3>四种地貌名称的最低确认条件</h3><div style="overflow-x:auto"><table><thead><tr><th>地貌</th><th>所需证据</th><th>B21状态</th></tr></thead><tbody id="featureRows"></tbody></table></div></section>
+<section class="section"><h2>本轮科学边界与后续作图</h2>
+<p class="muted">所有五幅研究图的陆地外形仍取自B16候选全球轮廓；B17的10章地理图书与99片陆地档案、B18地势网格、B19–B20汇水研究均保留。B21不能用格网分类或假说覆盖正式的南口内海、北冠半岛、抵抗者之弧、两条内海东岸主河R1/R2、棠溪以及既有国家相对位置。</p>
+<p class="muted">地质参考基础：<a href="https://pubs.usgs.gov/ha/ha730/ch_c/C-text3.html" target="_blank" rel="noopener">USGS断块盆地与冲积扇</a>、
+<a href="https://geology.utah.gov/water/groundwater/hydrologic-cycle/" target="_blank" rel="noopener">Utah Geological Survey水量平衡</a>与
+<a href="https://pubs.usgs.gov/circ/circ1139/htdocs/natural_processes_of_ground.htm" target="_blank" rel="noopener">USGS湖泊地下水交换</a>。这些是现实地学方法的参考，不能被当作俄庇娜世界观已存在的证据。</p>
+</section></main><footer>ORBINA / B21 GEOLOGICAL HYPOTHESES AND PHYSICAL-GEOGRAPHY SCREENING / NON-CANON</footer>
+<script>
+"use strict";
+const el=id=>document.getElementById(id),colors={"0":"#27607b","1":"#8fc6b2","2":"#d8c17f","3":"#ba8267","4":"#9e8eaf","5":"#c3d1b1"},names={"0":"海洋","1":"近岸相对低地","2":"内陆相对低地","3":"相对高地核心","4":"局部高差前25%（剩余格）","5":"其它陆地"};
+const c=el("map"),ctx=c.getContext("2d");let data=null,selected=null,index=0,hyp=null,currentHyp=0;
+function geometry(){let g=data.sheets[index].grid,W=g.columns,H=g.rows,s=Math.min(880/W,520/H);return{x:(c.width-W*s)/2,y:76+(530-H*s)/2,s,W,H}}
+function draw(){
+if(!data)return;const d=data.sheets[index],g=geometry(),layer=el("layer").value,grid=el("grid").checked;
+ctx.clearRect(0,0,c.width,c.height);ctx.fillStyle="#27607b";ctx.fillRect(0,0,c.width,c.height);
+ctx.fillStyle="#eff9ef";ctx.font="bold 21px system-ui";ctx.fillText(d.sheet+" · "+d.name+" / 地貌研究",35,37);
+let rows=layer==="landform"?d.terrain_screen_class_rows:layer==="elevation"?d.elevation_quintile_rows:d.relative_contrast_class_rows;
+const c1=layer==="landform"?colors:layer==="elevation"?{"0":"#27607b","1":"#aed6bc","2":"#c6d5aa","3":"#d7c59a","4":"#c3a284","5":"#a67768"}:{"0":"#27607b","1":"#c7d5c1","2":"#c9bea3","3":"#c1a1a1","4":"#a27b8e"};
+for(let y=0;y<g.H;y++)for(let x=0;x<g.W;x++){const cl=rows[y][x];if(cl==="0")continue;
+ ctx.fillStyle=c1[cl];ctx.fillRect(g.x+x*g.s,g.y+y*g.s,Math.ceil(g.s+.15),Math.ceil(g.s+.15));
+ if(grid){ctx.strokeStyle="rgba(21,54,69,.21)";ctx.lineWidth=.5;ctx.strokeRect(g.x+x*g.s,g.y+y*g.s,g.s,g.s)}
+}
+if(selected){ctx.strokeStyle="#fff";ctx.lineWidth=2.6;ctx.strokeRect(g.x+selected.x*g.s,g.y+selected.y*g.s,g.s,g.s)}
+ctx.fillStyle="#d9e9e5";ctx.font="14px system-ui";ctx.fillText("源数据是相对地势格网，不对应实际公里、海拔或地质年代",36,c.height-24);
+let map=layer==="landform"?["1","2","3","4","5"].map(k=>[colors[k],names[k]]):layer==="elevation"?[["#aed6bc","最低级"],["#c6d5aa","较低"],["#d7c59a","中等"],["#c3a284","较高"],["#a67768","最高级"]]:[["#c7d5c1","图内低对比"],["#c9bea3","中低"],["#c1a1a1","较高"],["#a27b8e","最高10%"]];
+el("legend").innerHTML=map.map(([color,name])=>"<span><i style='background:"+color+"'></i>"+name+"</span>").join("");
+}
+function stats(){
+const m=data.sheets[index].model_descriptors,values=[["有效陆地格",data.sheets[index].grid.land_cells],["相对高地格",m.relative_highland_cells],["沿岸低地格",m.coastal_lowland_cells],["内陆低地格",m.inland_lowland_cells],["局部封闭低点初筛",m.eight_neighbour_interior_equal_or_lower_sinks]];
+el("sheetStats").innerHTML=values.map(([n,v])=>"<div class='sideStat'><b>"+v.toLocaleString()+"</b><small>"+n+"</small></div>").join("");
+}
+function selectSheet(k){index=k;selected=null;el("sheet").value=String(k);el("cellInfo").textContent="点击陆地格查询类别与当前图层；本图幅的模型格距不是实际公里。";draw();stats()}
+function applyHyp(k){
+currentHyp=k;
+el("hypotheses").innerHTML=hyp.scenarios.map((h,i)=>"<button type='button' class='hyp "+(k===i?"active":"")+"' data-index='"+i+"'><b>"+h.id+" · "+h.name+"</b><small>"+h.verdict+"</small></button>").join("");
+document.querySelectorAll(".hyp[data-index]").forEach(b=>b.addEventListener("click",()=>applyHyp(Number(b.dataset.index))));
+const h=hyp.scenarios[k];el("hypDetail").innerHTML="<b>"+h.name+"</b><p>"+h.cause+"</p><h3>需要获得的地形地质证据</h3><ul>"+h.compatible_if.map(t=>"<li>"+t+"</li>").join("")+"</ul><h3>不能直接下的结论</h3><ul>"+h.cannot_infer.map(t=>"<li>"+t+"</li>").join("")+"</ul><p class='muted'>"+h.verdict+"，不记录为正式地理正史。</p>";
+}
+c.addEventListener("pointerdown",event=>{if(!data)return;const rect=c.getBoundingClientRect(),pX=(event.clientX-rect.left)*c.width/rect.width,pY=(event.clientY-rect.top)*c.height/rect.height,g=geometry(),x=Math.floor((pX-g.x)/g.s),y=Math.floor((pY-g.y)/g.s);
+const d=data.sheets[index];if(x<0||y<0||x>=g.W||y>=g.H||d.terrain_screen_class_rows[y][x]==="0"){selected=null;el("cellInfo").textContent="该位置为海域或图幅边缘，研究网格不代表真实海岸测量。";draw();return}
+selected={x,y};const cls=d.terrain_screen_class_rows[y][x],ht=d.elevation_quintile_rows[y][x],contrast=d.relative_contrast_class_rows[y][x];
+el("cellInfo").textContent=d.sheet+"格("+x+","+y+") · "+names[cls]+" · 高度五级分类 "+ht+" · 邻格高差四级分类 "+contrast+"。不能据此确定断层、湖泊或实际高程。";draw()});
+el("sheet").addEventListener("change",()=>selectSheet(Number(el("sheet").value)));
+el("layer").addEventListener("change",draw);el("grid").addEventListener("change",draw);
+Promise.all([fetch("../data/orbina-v225r-b21-landform-screening.json").then(r=>{if(!r.ok)throw Error("数据HTTP "+r.status);return r.json()}),fetch("../data/orbina-v225r-b21-tectonic-scenario-register.json").then(r=>{if(!r.ok)throw Error("假说HTTP "+r.status);return r.json()})]).then(([d,h])=>{
+if(d.sheets.length!==5)throw Error("图幅数据不完整");data=d;hyp=h;
+el("sheet").innerHTML=d.sheets.map((s,i)=>"<option value='"+i+"'>"+s.sheet+" · "+s.name+"</option>").join("");
+el("featureRows").innerHTML=h.conditional_features.map(x=>"<tr><td><b>"+x.name+"</b></td><td>"+x.needs+"</td><td>"+x.current+"</td></tr>").join("");
+selectSheet(0);applyHyp(0);
+}).catch(err=>{el("cellInfo").textContent="数据加载未完成："+err.message+"；请使用顶部静态SVG与数据链接。"});
+</script></body></html>
