@@ -1,0 +1,114 @@
+{
+  "edition": "V2.25-R-B18",
+  "status": "GITHUB_SOURCE_COMMITTED_AND_STATIC_QA_PASSED",
+  "public_github_pages_load": "NOT_INDEPENDENTLY_VERIFIED; PUBLIC WEB READER COULD NOT ACCESS NEW VIEWER",
+  "mobile_touch_and_browser_canvas": "NOT_TESTED",
+  "deliverables": {
+    "atlas": "assets/maps/orbina-v225r-b18-relative-relief-atlas.html",
+    "global_physical_svg": "assets/images/orbina-v225r-b18-relative-relief-hydrography.svg",
+    "five_region_model": "assets/data/orbina-v225r-b18-relative-elevation-hydrology.json",
+    "encyclopedia": "_articles/article-035.md",
+    "active_config": "assets/data/orbina-global-continent-scale-principles.json"
+  },
+  "source_lineage": [
+    "B16: 99 draft land polygons (unchanged in B18)",
+    "B17: ten atlas chapters, 99 archive records, 26 ridge study points and 78 coastal study vectors",
+    "B18: five grid-based relative relief models and 25 numerical drainage trials"
+  ],
+  "model_coverage": [
+    {
+      "sheet": "H1",
+      "candidate_land": "continental-nucleus",
+      "land_cells": 3800,
+      "grid": [
+        92,
+        67
+      ],
+      "outlet_cells": 404,
+      "trial_flow_lines": 5
+    },
+    {
+      "sheet": "H2",
+      "candidate_land": "b14-ne-001",
+      "land_cells": 1285,
+      "grid": [
+        67,
+        45
+      ],
+      "outlet_cells": 230,
+      "trial_flow_lines": 5
+    },
+    {
+      "sheet": "H3",
+      "candidate_land": "b14-ne-002",
+      "land_cells": 1043,
+      "grid": [
+        47,
+        45
+      ],
+      "outlet_cells": 182,
+      "trial_flow_lines": 5
+    },
+    {
+      "sheet": "H4",
+      "candidate_land": "b14-se-001",
+      "land_cells": 1234,
+      "grid": [
+        69,
+        36
+      ],
+      "outlet_cells": 212,
+      "trial_flow_lines": 5
+    },
+    {
+      "sheet": "H5",
+      "candidate_land": "b14-se-003",
+      "land_cells": 1112,
+      "grid": [
+        52,
+        39
+      ],
+      "outlet_cells": 177,
+      "trial_flow_lines": 5
+    }
+  ],
+  "measurements": {
+    "sampled_land_cells_total": 8474,
+    "trial_channel_lines": 25,
+    "shoreline_pit_fill_cells_total": 0,
+    "relative_elevation_range": "integer 0..100 dimensionless",
+    "real_meters": "unknown",
+    "real_cell_size_km": "unknown",
+    "model_runoff_volume": "not inferred",
+    "official_stream_count": "not inferred"
+  },
+  "static_checks": {
+    "all_model_grid_dimensions_and_null_ocean_cells_valid": true,
+    "all_stream_vertices_fall_inside_corresponding_land_masks": true,
+    "SVG_groups_balanced": true,
+    "SVG_ids_unique": true,
+    "global_continent_polygon_draw_instances": 297,
+    "all_25_candidate_routes_have_svg_vectors": true,
+    "all_five_sheet_index_markers_exist": true,
+    "all_5_region_models_accessible_via_viewer_controls": true,
+    "viewer_relative_elevation_accumulation_slope_views_present": true,
+    "viewer_inline_javascript_syntax_pass": true,
+    "viewer_retains_chapters_and_99_land_archive": true,
+    "article_and_active_config_target_B18": true
+  },
+  "method_note": "Coastal distance and B17 shape-derived ridge studies make a synthetic height field; priority-flood directed eight-neighbor drainage tree to guarantee ocean outlets and upslope accumulation. It is NOT official D8 steepest-descent stream extraction, NOT tectonic or orographic geospatial measurement, and NOT an approved river network.",
+  "canon_note": "Confirmed 25 seas names and Shattered Sea 32 island chains remain independent of the candidate map. Resistance Arc/central inner-sea structure, Qintang northwest of Sarila, Baitown north and Tangxi versus R1/R2 hydrological independence remain valid, and no global coordinates were invented.",
+  "qa_limits": [
+    "No actual GitHub Pages website response verified",
+    "No Android/iOS rendering verified",
+    "No calibrated elevation, geology, climate, precipitation, river discharge or drainage basin polygons",
+    "No attempt to conflate numerical channels with the previously confirmed real R1/R2/Tangxi names",
+    "Current synthetic model has no internally filled depressions; this is an artifact of simplistic elevation construction, not evidence of natural lake absence"
+  ],
+  "reference_links": [
+    "https://www.usgs.gov/data/hydrologic-derivatives-modeling-and-applications-hdma-data",
+    "https://ghsc.code-pages.usgs.gov/users/jking/pfdf/guide/watershed/watershed.html",
+    "https://www.usgs.gov/ngp-standards-and-specifications/elevation-derived-hydrography-data-acquisition-specifications-15"
+  ],
+  "recommended_B19": "Choose one reference region and develop relative terrain refinements permitting verified interior basins and rain-dependent runoff scenarios; generate traceable catchment identities only when hydroconditioning and canon constraints are met. Produce thematic atlas map for watersheds/wetlands without asserting measurements or exact country positions."
+}
