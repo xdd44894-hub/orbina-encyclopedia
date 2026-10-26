@@ -1,6 +1,6 @@
 {
   "edition": "V2.25-R-B24",
-  "status": "MODEL_NUMERIC_QA_PASS__NO_PUBLIC_RENDERING_VERIFIED",
+  "status": "GITHUB_SOURCE_STATIC_QA_PASSED__PUBLIC_PAGES_AND_MOBILE_UNVERIFIED",
   "checks": {
     "baseline_reproduces_B23": true,
     "all_forecast_timesteps_accounted": true,
@@ -53,5 +53,43 @@
       "dry": 0
     }
   ],
-  "notice": "Synthetic sensitivity only. No observed meteorology or official Orbina climate."
+  "notice": "Synthetic sensitivity only. No observed meteorology or official Orbina climate.",
+  "cross_file_checks": {
+    "eight_required_sources_exist": true,
+    "active_version_B24": true,
+    "article_B24_is_first_topic": true,
+    "article_retains_all_previous_versions": true,
+    "viewer_link_points_to_real_file": true,
+    "links_to_prior_atlases": true,
+    "model_same_source": true,
+    "original_23_cells": true,
+    "spill_and_capacity_unchanged": true,
+    "exact_scenarios": true,
+    "exactly_48_periods": true,
+    "all_water_ledgers_close": true,
+    "flood_definitely_spills": true,
+    "drought_is_drier_than_control": true,
+    "five_groundwater_groups": true,
+    "all_groundwater_12_periods": true,
+    "conditional_climate_not_canon": true,
+    "svg_root_closed": true,
+    "svg_three_lines": true,
+    "viewer_js_compiles": true,
+    "viewer_paths_relative_correct": true,
+    "copy_exact_source_numbers": true,
+    "no_official_lakes": true
+  },
+  "linked_deliverables": {
+    "viewer": "assets/maps/orbina-v225r-b24-extreme-hydrology-atlas.html",
+    "overview": "assets/images/orbina-v225r-b24-extreme-groundwater-overview.svg",
+    "model": "assets/data/orbina-v225r-b24-extreme-groundwater-climate.json",
+    "encyclopedia": "_articles/article-035.md",
+    "active_map_config": "assets/data/orbina-global-continent-scale-principles.json",
+    "original_B23": "assets/data/orbina-v225r-b23-h4-water-budget-scenarios.json",
+    "original_B22": "assets/data/orbina-v225r-b22-h4-terrain-experiments.json"
+  },
+  "source_compatibility": "B23 and B22 original source content fetched without edits; B24 reads from these source files at runtime.",
+  "publication_status": "Public Pages URL attempted via web reader but inaccessible; not evidence of a site outage, and no browser/mobile render tested.",
+  "groundwater_caveat": "GW=0.50 and 1.00 360-period tests have nonzero end-of-cycle drift. Last-cycle comparison is not guaranteed periodic equilibrium.",
+  "physical_limit": "No real Orbina location, rain data, annual frequency, physical river flow, lake water volume, or approved climate/tectonic labels."
 }
