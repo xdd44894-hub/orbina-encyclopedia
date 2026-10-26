@@ -1,0 +1,962 @@
+{
+  "edition": "V2.25-R-B35",
+  "status": "REVERSIBLE_NONCANON_ARCHIPELAGO_COASTAL_REFINEMENT_LAYER",
+  "date": "2026-10-26",
+  "baseline": {
+    "B16_path": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+    "B16_sha": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "B34_layer_path": "assets/data/orbina-v225r-b34-reversible-coastline-layer.json",
+    "B34_layer_sha": "cc35278c54ba12c2ebefecb7d97567110270e881",
+    "B34_vertices": 9633
+  },
+  "rules": {
+    "merging": "Apply B34 three source polygon replacements to B16, then replace eight B35 island polygon coordinate arrays by polygon_id.",
+    "rollback": "Remove B35 overlay to return to B34, or remove both overlays to return to B16.",
+    "units": "B16 original 2400×1200 planar drawing units, NOT km",
+    "polygon_order": "0–15 macro landmasses, 16–98 archipelago",
+    "canon": "Not approved official planetary coastline, oceans, borders or hydrology"
+  },
+  "design": {
+    "weatherward_vs_lee": "Use mild concave inset curves for protected lee sides and limited convex capes on exposed coasts. Never fill the gaps between islands.",
+    "shore_normal": "For source CCW polygon edge, positive left-normal means landward inset (cove), negative means seaward cape.",
+    "curve_knots_per_edge": 3,
+    "parameter_t": [
+      0.24,
+      0.5,
+      0.76
+    ],
+    "knot_magnitude_profile": [
+      0.42,
+      1,
+      0.42
+    ],
+    "selected_groups": [
+      {
+        "id": "western_rift_shelf",
+        "polygons": [
+          16,
+          19,
+          22,
+          23
+        ]
+      },
+      {
+        "id": "southern_shelf_remnants",
+        "polygons": [
+          17,
+          20,
+          29
+        ]
+      },
+      {
+        "id": "northern_trench_arc",
+        "polygons": [
+          24
+        ]
+      }
+    ],
+    "not_random_noise": true
+  },
+  "totals": {
+    "original_B16_polygons": 99,
+    "B34_polygons": 99,
+    "B35_polygons": 99,
+    "original_B16_vertices": 9621,
+    "B34_vertices": 9633,
+    "B35_vertices": 9669,
+    "changed_archipelago_polygons": 8,
+    "edited_coast_segments": 12,
+    "added_coastal_vertices": 36,
+    "canonical_changes": 0
+  },
+  "edited_segments": [
+    {
+      "polygon_id": 16,
+      "source_edge_index": 2,
+      "source_edge": [
+        [
+          467.30012834383695,
+          614.2039251565733
+        ],
+        [
+          449.69104037756904,
+          593.9946034895938
+        ]
+      ],
+      "curve_points": [
+        [
+          463.438102,
+          609.036387
+        ],
+        [
+          459.36262,
+          603.343785
+        ],
+        [
+          454.281377,
+          598.52754
+        ]
+      ],
+      "intent": "lee inlet along extended sloping shore",
+      "side": "concave_inlet",
+      "maximum_signed_inward_offset_drawing": 1.15
+    },
+    {
+      "polygon_id": 16,
+      "source_edge_index": 5,
+      "source_edge": [
+        [
+          450.43485734299793,
+          582.4485295165545
+        ],
+        [
+          468.73441385893574,
+          593.0829597946047
+        ]
+      ],
+      "curve_points": [
+        [
+          455.006125,
+          584.692128
+        ],
+        [
+          460.011718,
+          587.030829
+        ],
+        [
+          464.521895,
+          590.222032
+        ]
+      ],
+      "intent": "weathered outer rocky cape",
+      "side": "convex_cape",
+      "maximum_signed_inward_offset_drawing": -0.85
+    },
+    {
+      "polygon_id": 19,
+      "source_edge_index": 1,
+      "source_edge": [
+        [
+          500.098948035915,
+          659.8021122344935
+        ],
+        [
+          482.567082243728,
+          650.5108139213063
+        ]
+      ],
+      "curve_points": [
+        [
+          496.068306,
+          657.238205
+        ],
+        [
+          491.754459,
+          654.361236
+        ],
+        [
+          486.951736,
+          652.40673
+        ]
+      ],
+      "intent": "setback between island shoulders",
+      "side": "concave_inlet",
+      "maximum_signed_inward_offset_drawing": 0.9
+    },
+    {
+      "polygon_id": 19,
+      "source_edge_index": 5,
+      "source_edge": [
+        [
+          481.17149073632896,
+          632.0802829480531
+        ],
+        [
+          500.49379316113465,
+          644.881568822718
+        ]
+      ],
+      "curve_points": [
+        [
+          486.04081,
+          634.802461
+        ],
+        [
+          491.384943,
+          637.647281
+        ],
+        [
+          496.088407,
+          641.459129
+        ]
+      ],
+      "intent": "opposite exposed cape",
+      "side": "convex_cape",
+      "maximum_signed_inward_offset_drawing": -1
+    },
+    {
+      "polygon_id": 22,
+      "source_edge_index": 0,
+      "source_edge": [
+        [
+          436.8907531671326,
+          576.4145175409622
+        ],
+        [
+          424.14481105827196,
+          561.6337328280146
+        ]
+      ],
+      "curve_points": [
+        [
+          434.07028,
+          572.661417
+        ],
+        [
+          431.085766,
+          568.534335
+        ],
+        [
+          427.44239,
+          564.975409
+        ]
+      ],
+      "intent": "slight stepped inner bight",
+      "side": "concave_inlet",
+      "maximum_signed_inward_offset_drawing": 0.75
+    },
+    {
+      "polygon_id": 23,
+      "source_edge_index": 2,
+      "source_edge": [
+        [
+          531.8190446623222,
+          692.1234730120431
+        ],
+        [
+          520.8360409582366,
+          683.3602203367794
+        ]
+      ],
+      "curve_points": [
+        [
+          529.025954,
+          690.217274
+        ],
+        [
+          525.953329,
+          688.21085
+        ],
+        [
+          523.314792,
+          685.660382
+        ]
+      ],
+      "intent": "fractured shelf-side headland",
+      "side": "convex_cape",
+      "maximum_signed_inward_offset_drawing": -0.6
+    },
+    {
+      "polygon_id": 17,
+      "source_edge_index": 1,
+      "source_edge": [
+        [
+          1404.0882353363943,
+          866.0140919682958
+        ],
+        [
+          1373.6242612397702,
+          863.9901195337249
+        ]
+      ],
+      "curve_points": [
+        [
+          1396.803332,
+          865.130216
+        ],
+        [
+          1388.919226,
+          864.054196
+        ],
+        [
+          1380.962066,
+          864.077751
+        ]
+      ],
+      "intent": "long lee-side embayment",
+      "side": "concave_inlet",
+      "maximum_signed_inward_offset_drawing": 0.95
+    },
+    {
+      "polygon_id": 17,
+      "source_edge_index": 5,
+      "source_edge": [
+        [
+          1355.588704689199,
+          846.1270731957079
+        ],
+        [
+          1395.208355250307,
+          851.3886494417482
+        ]
+      ],
+      "curve_points": [
+        [
+          1365.166535,
+          846.869421
+        ],
+        [
+          1375.563088,
+          847.51874
+        ],
+        [
+          1385.768753,
+          849.60544
+        ]
+      ],
+      "intent": "coastal promontory facing open sea",
+      "side": "convex_cape",
+      "maximum_signed_inward_offset_drawing": -1.25
+    },
+    {
+      "polygon_id": 20,
+      "source_edge_index": 2,
+      "source_edge": [
+        [
+          1417.290659695294,
+          894.8517453375614
+        ],
+        [
+          1411.0237724213482,
+          880.384119549889
+        ]
+      ],
+      "curve_points": [
+        [
+          1415.497559,
+          891.504721
+        ],
+        [
+          1413.469007,
+          887.916041
+        ],
+        [
+          1412.238778,
+          883.981555
+        ]
+      ],
+      "intent": "broken coastal cape",
+      "side": "convex_cape",
+      "maximum_signed_inward_offset_drawing": -0.75
+    },
+    {
+      "polygon_id": 20,
+      "source_edge_index": 5,
+      "source_edge": [
+        [
+          1418.2219933952326,
+          875.0010576381292
+        ],
+        [
+          1432.6173466934429,
+          886.3186129728856
+        ]
+      ],
+      "curve_points": [
+        [
+          1421.443253,
+          878.01443
+        ],
+        [
+          1424.86342,
+          881.367357
+        ],
+        [
+          1428.928837,
+          883.899559
+        ]
+      ],
+      "intent": "gentle lee-side inlet",
+      "side": "concave_inlet",
+      "maximum_signed_inward_offset_drawing": 0.9
+    },
+    {
+      "polygon_id": 29,
+      "source_edge_index": 0,
+      "source_edge": [
+        [
+          1458.6482914408055,
+          890.8992083904868
+        ],
+        [
+          1446.346277461365,
+          887.4228976307438
+        ]
+      ],
+      "curve_points": [
+        [
+          1455.752914,
+          889.862807
+        ],
+        [
+          1452.63325,
+          888.679895
+        ],
+        [
+          1449.355867,
+          888.055126
+        ]
+      ],
+      "intent": "small inset coastal bight",
+      "side": "concave_inlet",
+      "maximum_signed_inward_offset_drawing": 0.5
+    },
+    {
+      "polygon_id": 24,
+      "source_edge_index": 1,
+      "source_edge": [
+        [
+          1917.2774414662385,
+          466.44955171113475
+        ],
+        [
+          1903.093505945057,
+          460.7496427522343
+        ]
+      ],
+      "curve_points": [
+        [
+          1913.755841,
+          465.373856
+        ],
+        [
+          1909.905817,
+          464.295508
+        ],
+        [
+          1906.380195,
+          462.409904
+        ]
+      ],
+      "intent": "ridgeward pointed promontory",
+      "side": "convex_cape",
+      "maximum_signed_inward_offset_drawing": -0.75
+    }
+  ],
+  "polygon_replacements": [
+    {
+      "polygon_id": 16,
+      "name": "western-rift-and-shelf-islands-3-0",
+      "region": "western_rift_shelf",
+      "original_vertex_count": 8,
+      "revised_vertex_count": 14,
+      "source_area_drawing": 525.26148,
+      "revised_area_drawing": 519.228988,
+      "relative_area_delta_pct": -1.148474,
+      "minimum_angle_before_deg": 68.468131,
+      "minimum_angle_after_deg": 72.488299,
+      "revised_coordinates": [
+        [
+          480.38150834303207,
+          617.9909008622536
+        ],
+        [
+          475.65409622519934,
+          618.8655959813036
+        ],
+        [
+          467.30012834383695,
+          614.2039251565733
+        ],
+        [
+          463.438102,
+          609.036387
+        ],
+        [
+          459.36262,
+          603.343785
+        ],
+        [
+          454.281377,
+          598.52754
+        ],
+        [
+          449.69104037756904,
+          593.9946034895938
+        ],
+        [
+          449.61710110474525,
+          587.8364125540095
+        ],
+        [
+          450.43485734299793,
+          582.4485295165545
+        ],
+        [
+          455.006125,
+          584.692128
+        ],
+        [
+          460.011718,
+          587.030829
+        ],
+        [
+          464.521895,
+          590.222032
+        ],
+        [
+          468.73441385893574,
+          593.0829597946047
+        ],
+        [
+          478.118935156287,
+          603.3716363283952
+        ]
+      ]
+    },
+    {
+      "polygon_id": 19,
+      "name": "western-rift-and-shelf-islands-2-1",
+      "region": "western_rift_shelf",
+      "original_vertex_count": 8,
+      "revised_vertex_count": 14,
+      "source_area_drawing": 427.737313,
+      "revised_area_drawing": 430.237963,
+      "relative_area_delta_pct": 0.584623,
+      "minimum_angle_before_deg": 110.267175,
+      "minimum_angle_after_deg": 110.267175,
+      "revised_coordinates": [
+        [
+          503.8744215472754,
+          657.626774797749
+        ],
+        [
+          500.098948035915,
+          659.8021122344935
+        ],
+        [
+          496.068306,
+          657.238205
+        ],
+        [
+          491.754459,
+          654.361236
+        ],
+        [
+          486.951736,
+          652.40673
+        ],
+        [
+          482.567082243728,
+          650.5108139213063
+        ],
+        [
+          474.92552464877343,
+          641.7579477282848
+        ],
+        [
+          473.9697240892869,
+          636.2598898494699
+        ],
+        [
+          481.17149073632896,
+          632.0802829480531
+        ],
+        [
+          486.04081,
+          634.802461
+        ],
+        [
+          491.384943,
+          637.647281
+        ],
+        [
+          496.088407,
+          641.459129
+        ],
+        [
+          500.49379316113465,
+          644.881568822718
+        ],
+        [
+          504.41283074555037,
+          652.4745844362966
+        ]
+      ]
+    },
+    {
+      "polygon_id": 22,
+      "name": "western-rift-and-shelf-islands-1-0",
+      "region": "western_rift_shelf",
+      "original_vertex_count": 7,
+      "revised_vertex_count": 10,
+      "source_area_drawing": 184.2866,
+      "revised_area_drawing": 177.406701,
+      "relative_area_delta_pct": -3.733261,
+      "minimum_angle_before_deg": 32.230338,
+      "minimum_angle_after_deg": 32.230338,
+      "revised_coordinates": [
+        [
+          436.8907531671326,
+          576.4145175409622
+        ],
+        [
+          434.07028,
+          572.661417
+        ],
+        [
+          431.085766,
+          568.534335
+        ],
+        [
+          427.44239,
+          564.975409
+        ],
+        [
+          424.14481105827196,
+          561.6337328280146
+        ],
+        [
+          418.1116165325418,
+          547.5581607651756
+        ],
+        [
+          422.5494243622459,
+          550.6159766993808
+        ],
+        [
+          425.59799925835637,
+          549.6601853674348
+        ],
+        [
+          431.4892705577291,
+          557.168747488608
+        ],
+        [
+          436.24978751272585,
+          566.2577893933565
+        ]
+      ]
+    },
+    {
+      "polygon_id": 23,
+      "name": "western-rift-and-shelf-islands-2-2",
+      "region": "western_rift_shelf",
+      "original_vertex_count": 8,
+      "revised_vertex_count": 11,
+      "source_area_drawing": 146.619921,
+      "revised_area_drawing": 150.582207,
+      "relative_area_delta_pct": 2.70242,
+      "minimum_angle_before_deg": 61.324067,
+      "minimum_angle_after_deg": 61.324067,
+      "revised_coordinates": [
+        [
+          538.4140053641571,
+          691.3851460616039
+        ],
+        [
+          537.03565584612,
+          693.3176225863508
+        ],
+        [
+          531.8190446623222,
+          692.1234730120431
+        ],
+        [
+          529.025954,
+          690.217274
+        ],
+        [
+          525.953329,
+          688.21085
+        ],
+        [
+          523.314792,
+          685.660382
+        ],
+        [
+          520.8360409582366,
+          683.3602203367794
+        ],
+        [
+          520.4599845038236,
+          680.1605693727275
+        ],
+        [
+          519.6890313427083,
+          677.3912089880588
+        ],
+        [
+          529.5688958567462,
+          679.6938588244778
+        ],
+        [
+          538.0359253228487,
+          687.9259922234022
+        ]
+      ]
+    },
+    {
+      "polygon_id": 17,
+      "name": "southern-shelf-remnants-1-0",
+      "region": "southern_shelf_remnants",
+      "original_vertex_count": 7,
+      "revised_vertex_count": 13,
+      "source_area_drawing": 598.549472,
+      "revised_area_drawing": 608.398234,
+      "relative_area_delta_pct": 1.645438,
+      "minimum_angle_before_deg": 44.551751,
+      "minimum_angle_after_deg": 47.684535,
+      "revised_coordinates": [
+        [
+          1406.455207731227,
+          862.6722253961572
+        ],
+        [
+          1404.0882353363943,
+          866.0140919682958
+        ],
+        [
+          1396.803332,
+          865.130216
+        ],
+        [
+          1388.919226,
+          864.054196
+        ],
+        [
+          1380.962066,
+          864.077751
+        ],
+        [
+          1373.6242612397702,
+          863.9901195337249
+        ],
+        [
+          1360.175038592566,
+          856.8415183937618
+        ],
+        [
+          1359.514017724747,
+          851.1723551095702
+        ],
+        [
+          1355.588704689199,
+          846.1270731957079
+        ],
+        [
+          1365.166535,
+          846.869421
+        ],
+        [
+          1375.563088,
+          847.51874
+        ],
+        [
+          1385.768753,
+          849.60544
+        ],
+        [
+          1395.208355250307,
+          851.3886494417482
+        ]
+      ]
+    },
+    {
+      "polygon_id": 20,
+      "name": "southern-shelf-remnants-3-0",
+      "region": "southern_shelf_remnants",
+      "original_vertex_count": 8,
+      "revised_vertex_count": 14,
+      "source_area_drawing": 381.36112,
+      "revised_area_drawing": 379.173055,
+      "relative_area_delta_pct": -0.573751,
+      "minimum_angle_before_deg": 73.298488,
+      "minimum_angle_after_deg": 73.298488,
+      "revised_coordinates": [
+        [
+          1440.2338575128013,
+          898.4869348414541
+        ],
+        [
+          1426.9896977392784,
+          898.2274679032815
+        ],
+        [
+          1417.290659695294,
+          894.8517453375614
+        ],
+        [
+          1415.497559,
+          891.504721
+        ],
+        [
+          1413.469007,
+          887.916041
+        ],
+        [
+          1412.238778,
+          883.981555
+        ],
+        [
+          1411.0237724213482,
+          880.384119549889
+        ],
+        [
+          1413.5141672703564,
+          876.9284975484414
+        ],
+        [
+          1418.2219933952326,
+          875.0010576381292
+        ],
+        [
+          1421.443253,
+          878.01443
+        ],
+        [
+          1424.86342,
+          881.367357
+        ],
+        [
+          1428.928837,
+          883.899559
+        ],
+        [
+          1432.6173466934429,
+          886.3186129728856
+        ],
+        [
+          1438.6895752293728,
+          892.9481642998127
+        ]
+      ]
+    },
+    {
+      "polygon_id": 29,
+      "name": "southern-shelf-remnants-1-1",
+      "region": "southern_shelf_remnants",
+      "original_vertex_count": 6,
+      "revised_vertex_count": 9,
+      "source_area_drawing": 108.757179,
+      "revised_area_drawing": 105.752998,
+      "relative_area_delta_pct": -2.762283,
+      "minimum_angle_before_deg": 52.722729,
+      "minimum_angle_after_deg": 48.807147,
+      "revised_coordinates": [
+        [
+          1458.6482914408055,
+          890.8992083904868
+        ],
+        [
+          1455.752914,
+          889.862807
+        ],
+        [
+          1452.63325,
+          888.679895
+        ],
+        [
+          1449.355867,
+          888.055126
+        ],
+        [
+          1446.346277461365,
+          887.4228976307438
+        ],
+        [
+          1441.0572082620345,
+          880.099801804093
+        ],
+        [
+          1445.9517398679366,
+          877.8953777678425
+        ],
+        [
+          1451.3941415590166,
+          880.8755400499097
+        ],
+        [
+          1456.117722527787,
+          884.4743295671509
+        ]
+      ]
+    },
+    {
+      "polygon_id": 24,
+      "name": "northern-trench-island-arc-3-2",
+      "region": "northern_trench_arc",
+      "original_vertex_count": 7,
+      "revised_vertex_count": 10,
+      "source_area_drawing": 195.281145,
+      "revised_area_drawing": 200.669589,
+      "relative_area_delta_pct": 2.759326,
+      "minimum_angle_before_deg": 71.910102,
+      "minimum_angle_after_deg": 71.910102,
+      "revised_coordinates": [
+        [
+          1920.117850435729,
+          465.5462304268842
+        ],
+        [
+          1917.2774414662385,
+          466.44955171113475
+        ],
+        [
+          1913.755841,
+          465.373856
+        ],
+        [
+          1909.905817,
+          464.295508
+        ],
+        [
+          1906.380195,
+          462.409904
+        ],
+        [
+          1903.093505945057,
+          460.7496427522343
+        ],
+        [
+          1896.4412571275127,
+          450.8318428045052
+        ],
+        [
+          1903.4983815117505,
+          448.84001527050964
+        ],
+        [
+          1915.5416938855856,
+          457.44788783176256
+        ],
+        [
+          1920.56698778997,
+          462.9577045869236
+        ]
+      ]
+    }
+  ],
+  "static_qa": {
+    "B16_hash_unchanged": true,
+    "B34_hash_unchanged": true,
+    "baseline99": true,
+    "baseline9633": true,
+    "edited8": true,
+    "groups3": true,
+    "refined12edges": true,
+    "added36": true,
+    "final9669": true,
+    "no_crossings": true,
+    "no_zero_edges": true,
+    "areaChangesEachUnder5Pct": true,
+    "noNewAnglesUnder15Deg": true,
+    "original99preserved": true,
+    "allOriginalIslandIDsUnchanged": true
+  },
+  "limitations": [
+    "The morphology is aesthetic/geometric, not verified geology, erosion, storm direction, historical tectonics, or sea level.",
+    "No geographic real-world dimension inferred; B35 modifies no source land identity, island group count, national positions, or officially named oceans.",
+    "All original island-to-island gaps remain separate at chosen floating tolerance but waterway navigability and bathymetry remain undetermined."
+  ]
+}
