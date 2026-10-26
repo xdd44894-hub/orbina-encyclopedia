@@ -160,7 +160,7 @@ if(!model||!climate)return;
 const v=model.sphere.latitude_cases[$("placement").value],infl=model.sphere.equirectangular_visual_area_inflation.find(r=>r.lat===75);
 $("globalStats").innerHTML=[
  ["候选球面陆地",v.land_percent.toFixed(3)+"%"],
- ["陆地抽样格",model.sphere.base_owner_grid.land_cells.toLocaleString()],
+ ["陆地抽样格",model.sphere.owner_region_rows.reduce((sum,r)=>sum+r.split(',').filter(x=>Number(x)>=0).length,0).toLocaleString()],
  ["纬度配准偏移",v.latitude_offset+"°"],
  ["北纬75°以上格",v.north_of_75_land_cells],
  ["南纬75°以下格",v.south_of_minus_75_land_cells],
@@ -189,14 +189,14 @@ for(const id of ["projection","placement","layer","spin","tilt","phase","grid"])
 for(const id of ["windDirection","slopeLayer"])$(id).addEventListener("change",slopeRender);
 M.addEventListener("pointerdown",e=>{if(!model)return;const r=M.getBoundingClientRect(),px=(e.clientX-r.left)*M.width/r.width,py=(e.clientY-r.top)*M.height/r.height,t=decodeClick(px,py);
 if(!t){$("mapInfo").textContent="当前位置在投影图外、椭圆形轮廓外或极点附近；不能反推候选陆地编号。";return;}
-const owner=model.sphere.base_owner_grid.owner_region_rows[t.y].split(",").map(Number)[t.x];
+const owner=model.sphere.owner_region_rows[t.y].split(",").map(Number)[t.x];
 $("mapInfo").textContent=owner<0?"该处为候选海域：计算纬度"+t.lat.toFixed(2)+"°。真实洋流与海名位置未确定。":"陆地格("+t.x+","+t.y+") · 原B16轮廓编号 "+(owner+1)+" · 模型候选纬度"+t.lat.toFixed(2)+"°。不代表任何正式国家的经纬度。";
 });
 Promise.all([
  fetch("../data/orbina-v225r-b27-globe-projection-orography.json").then(r=>{if(!r.ok)throw Error("B27 "+r.status);return r.json()}),
  fetch("../data/orbina-v225r-b25-global-circulation-factorial.json").then(r=>{if(!r.ok)throw Error("B25 "+r.status);return r.json()})
 ]).then(([a,c])=>{
- if(a.sphere.base_owner_grid.owner_region_rows.length!==120||Object.keys(a.H4_orographic_screen.incoming_winds).length!==4||Object.keys(c.variants).length!==9)throw Error("图集源文件验证失败");
+ if(a.sphere.owner_region_rows.length!==120||Object.keys(a.H4_orographic_screen.incoming_winds).length!==4||Object.keys(c.variants).length!==9)throw Error("图集源文件验证失败");
  model=a;climate=c;refresh();$("mapInfo").textContent="已载入：投影坐标格为B16/B26候选像素栅格。点击陆地查看非正史网格编号。";
 }).catch(e=>$("mapInfo").textContent="数据加载失败："+e.message+"；请使用顶部静态总图。");
 </script>
