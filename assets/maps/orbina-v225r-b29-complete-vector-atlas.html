@@ -94,7 +94,7 @@ function theta(degrees){if(Math.abs(degrees)>89.99999)return Math.sign(degrees)*
 function project(x,y){const latitude=lat(y,shifts[$("lat").value]),u=x/2400,mode=$("projection").value;
 if(mode==="plate")return [view.x+u*view.w,view.y+(90-latitude)/180*view.h];
 if(mode==="cea")return [view.x+u*view.w,view.y+(1-Math.sin(latitude*RAD))/2*view.h];
-const t=theta(latitude);return [view.x+view.w*(.5+(u-.5)*Math.cos(t)),view.y+view.h*(1-Math.sin(t))/2]}
+if(mode==="moll"){const t=theta(latitude);return [view.x+view.w*(.5+(u-.5)*Math.cos(t)),view.y+view.h*(1-Math.sin(t))/2]}throw Error("Unsupported projection: "+mode)}
 function clipVertical(p,edge,keepAbove){const ret=[];for(let i=0;i<p.length;i++){const a=p[i],b=p[(i+1)%p.length],insideA=keepAbove?a[0]>=edge-1e-9:a[0]<=edge+1e-9,insideB=keepAbove?b[0]>=edge-1e-9:b[0]<=edge+1e-9;
 if(insideA&&insideB)ret.push(b);else if(insideA!==insideB){let t=(edge-a[0])/(b[0]-a[0]);ret.push([edge,a[1]+t*(b[1]-a[1])]);if(insideB)ret.push(b)}}return ret}
 function clipPolygon(p){let a=clipVertical(p,0,true);return a.length?clipVertical(a,2400,false):a}
