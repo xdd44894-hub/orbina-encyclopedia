@@ -1,0 +1,547 @@
+{
+  "edition": "V2.25-R-B34",
+  "date": "2026-10-26",
+  "status": "INDEPENDENT_EDITABLE_NONCANON_COASTLINE_REVISION_DRAFT__B16_PRESERVED",
+  "baseline": {
+    "repo_path": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+    "source_blob_sha": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "original_land_polygons": 99,
+    "original_vertices": 9621
+  },
+  "coordinates": {
+    "units": "B16 drawing units; NOT km",
+    "frame": [
+      2400,
+      1200
+    ],
+    "source_polygon_indexing": "0..15 macro_landmasses; 16..98 archipelago",
+    "replacement_rule": "Preserve B16 polygons except replace coordinates for polygon_id 3, 5, 6 with revised_coordinates below."
+  },
+  "policy": {
+    "canonical_geography_untouched": true,
+    "original_B16_untouched": true,
+    "national_borders_not_placed": true,
+    "no_new_land_polygons": true,
+    "no_deleted_islands": true,
+    "not_approved_as_final_canonical_coast": true,
+    "coastline_edits_are_hand_curated_not_random_noise": true
+  },
+  "geometry_changes": {
+    "deleted_tip_vertices": [
+      {
+        "polygon_id": 3,
+        "source_vertex_index": 0,
+        "issue": "A01",
+        "previous_angle_deg": 0.622502
+      },
+      {
+        "polygon_id": 6,
+        "source_vertex_index": 0,
+        "issue": "A02",
+        "previous_angle_deg": 0.989315
+      }
+    ],
+    "inserted_shoreline_knots": [
+      {
+        "polygon_id": 3,
+        "source_edge_index": 15,
+        "source_edge_start": [
+          1212.0771880380028,
+          1075.9322484094146
+        ],
+        "source_edge_end": [
+          1137.2638740029313,
+          1098.5227184705898
+        ],
+        "new_vertices": [
+          [
+            1195.011218,
+            1078.891803
+          ],
+          [
+            1177.178532,
+            1090.126255
+          ],
+          [
+            1155.215628,
+            1090.386098
+          ]
+        ],
+        "curve_intent": "Outer south-facing shore: a slight bight-headland-bight sequence, retaining the principal coastal axis."
+      },
+      {
+        "polygon_id": 3,
+        "source_edge_index": 22,
+        "source_edge_start": [
+          1060.8894625162561,
+          1055.0233463530853
+        ],
+        "source_edge_end": [
+          1066.4243495755068,
+          1004.1946180522395
+        ],
+        "new_vertices": [
+          [
+            1063.720306,
+            1041.959431
+          ],
+          [
+            1067.401797,
+            1028.473831
+          ],
+          [
+            1063.461316,
+            1015.701196
+          ]
+        ],
+        "curve_intent": "Steep western shore: small inward recess and low outward cape."
+      },
+      {
+        "polygon_id": 5,
+        "source_edge_index": 3,
+        "source_edge_start": [
+          315.3019692649892,
+          1045.792758897752
+        ],
+        "source_edge_end": [
+          271.85741642191954,
+          998.7604882071246
+        ],
+        "new_vertices": [
+          [
+            304.495401,
+            1036.599168
+          ],
+          [
+            296.077226,
+            1019.969607
+          ],
+          [
+            279.585092,
+            1009.92648
+          ]
+        ],
+        "curve_intent": "Western fractured coast: two low capes and one recessed bight."
+      },
+      {
+        "polygon_id": 6,
+        "source_edge_index": 4,
+        "source_edge_start": [
+          477.13037534412723,
+          1043.9016470066267
+        ],
+        "source_edge_end": [
+          399.55558795696413,
+          1036.5172937018783
+        ],
+        "new_vertices": [
+          [
+            458.294474,
+            1044.419052
+          ],
+          [
+            437.851519,
+            1037.149127
+          ],
+          [
+            415.704151,
+            1039.561258
+          ]
+        ],
+        "curve_intent": "Eastern southwest land's long outer shore: uneven cliff edge and small cove."
+      },
+      {
+        "polygon_id": 6,
+        "source_edge_index": 18,
+        "source_edge_start": [
+          467.3002680987102,
+          988.1543296647893
+        ],
+        "source_edge_end": [
+          508.98222123677175,
+          978.4742456763163
+        ],
+        "new_vertices": [
+          [
+            479.772603,
+            987.003036
+          ],
+          [
+            494.538897,
+            980.596582
+          ]
+        ],
+        "curve_intent": "Northern seaward fringe: modest coastal inflections away from needle tip."
+      }
+    ],
+    "polygon_replacements": [
+      {
+        "polygon_id": 3,
+        "source_polygon_name": "southern-ocean-east-ridge",
+        "original_vertices": 25,
+        "revised_vertices": 30,
+        "source_signed_area_drawing": 15016.575713,
+        "revised_signed_area_drawing": 14951.101101,
+        "relative_area_change_pct": -0.436016,
+        "minimum_unsigned_turn_angle_deg": 35.979733,
+        "revised_coordinates": [
+          [
+            1059.0227481543416,
+            984.4921407513616
+          ],
+          [
+            1087.9196436104612,
+            996.7718763323626
+          ],
+          [
+            1105.878863687956,
+            992.2821790889554
+          ],
+          [
+            1121.551938671925,
+            983.8517709848047
+          ],
+          [
+            1151.3220579692065,
+            977.0438148893811
+          ],
+          [
+            1164.2879500616093,
+            983.8544629235066
+          ],
+          [
+            1175.7960236029169,
+            993.5840532843507
+          ],
+          [
+            1206.2540810951734,
+            1004.075371245393
+          ],
+          [
+            1224.9045235960602,
+            1025.4680002452503
+          ],
+          [
+            1229.9260981688158,
+            1041.4540456229192
+          ],
+          [
+            1239.1114103126245,
+            1052.6475012760666
+          ],
+          [
+            1233.5033187377605,
+            1062.1727266754233
+          ],
+          [
+            1218.2313896053302,
+            1063.270229073633
+          ],
+          [
+            1214.736062402912,
+            1070.2015545952793
+          ],
+          [
+            1212.0771880380028,
+            1075.9322484094146
+          ],
+          [
+            1195.011218,
+            1078.891803
+          ],
+          [
+            1177.178532,
+            1090.126255
+          ],
+          [
+            1155.215628,
+            1090.386098
+          ],
+          [
+            1137.2638740029313,
+            1098.5227184705898
+          ],
+          [
+            1124.7611701387625,
+            1090.9569263463486
+          ],
+          [
+            1111.5491786382638,
+            1088.3983263454497
+          ],
+          [
+            1087.8137262542127,
+            1074.5290864709216
+          ],
+          [
+            1077.2547312184233,
+            1084.6740009365496
+          ],
+          [
+            1064.4905208726184,
+            1066.1919831999637
+          ],
+          [
+            1060.8894625162561,
+            1055.0233463530853
+          ],
+          [
+            1063.720306,
+            1041.959431
+          ],
+          [
+            1067.401797,
+            1028.473831
+          ],
+          [
+            1063.461316,
+            1015.701196
+          ],
+          [
+            1066.4243495755068,
+            1004.1946180522395
+          ],
+          [
+            1063.6152094832942,
+            992.1361255800625
+          ]
+        ]
+      },
+      {
+        "polygon_id": 5,
+        "source_polygon_name": "southwest-southern-west-subcontinent",
+        "original_vertices": 17,
+        "revised_vertices": 20,
+        "source_signed_area_drawing": 7937.825285,
+        "revised_signed_area_drawing": 7933.407423,
+        "relative_area_change_pct": -0.055656,
+        "minimum_unsigned_turn_angle_deg": 47.55677,
+        "revised_coordinates": [
+          [
+            348.51113231376274,
+            1069.3238633071617
+          ],
+          [
+            345.1570429160469,
+            1067.898258036861
+          ],
+          [
+            339.7389862202517,
+            1054.6955861680035
+          ],
+          [
+            315.3019692649892,
+            1045.792758897752
+          ],
+          [
+            304.495401,
+            1036.599168
+          ],
+          [
+            296.077226,
+            1019.969607
+          ],
+          [
+            279.585092,
+            1009.92648
+          ],
+          [
+            271.85741642191954,
+            998.7604882071246
+          ],
+          [
+            266.5430655791117,
+            984.715965051262
+          ],
+          [
+            258.44295077575384,
+            973.6096902156957
+          ],
+          [
+            247.80319746635408,
+            949.8450565560408
+          ],
+          [
+            260.53328169095323,
+            913.0506398212007
+          ],
+          [
+            265.75688160589937,
+            904.9323128098798
+          ],
+          [
+            276.82971986621624,
+            915.987544397495
+          ],
+          [
+            298.01485689795436,
+            937.9476400596292
+          ],
+          [
+            333.0840873234089,
+            953.2520103913275
+          ],
+          [
+            356.71365294299744,
+            977.1276932977843
+          ],
+          [
+            338.7727405472027,
+            1003.540612174621
+          ],
+          [
+            333.9912879100096,
+            1020.882365775536
+          ],
+          [
+            335.4674116866044,
+            1032.3172832654304
+          ]
+        ]
+      },
+      {
+        "polygon_id": 6,
+        "source_polygon_name": "southwest-southern-east-subcontinent",
+        "original_vertices": 20,
+        "revised_vertices": 24,
+        "source_signed_area_drawing": 8316.039743,
+        "revised_signed_area_drawing": 8316.451028,
+        "relative_area_change_pct": 0.004946,
+        "minimum_unsigned_turn_angle_deg": 48.484277,
+        "revised_coordinates": [
+          [
+            516.8494422504912,
+            983.9849180715211
+          ],
+          [
+            502.9908767151416,
+            996.5776878809257
+          ],
+          [
+            487.7375263011891,
+            1029.1783475169311
+          ],
+          [
+            477.13037534412723,
+            1043.9016470066267
+          ],
+          [
+            458.294474,
+            1044.419052
+          ],
+          [
+            437.851519,
+            1037.149127
+          ],
+          [
+            415.704151,
+            1039.561258
+          ],
+          [
+            399.55558795696413,
+            1036.5172937018783
+          ],
+          [
+            386.13660200444747,
+            1043.1477044060641
+          ],
+          [
+            377.136761269588,
+            1053.9357525194257
+          ],
+          [
+            364.67048862500434,
+            1060.6891270656643
+          ],
+          [
+            361.85614844989334,
+            1064.7365783395783
+          ],
+          [
+            354.92547244270435,
+            1036.2452602120743
+          ],
+          [
+            355.4187477283847,
+            1025.005673444609
+          ],
+          [
+            362.9275910315728,
+            1008.3617026666687
+          ],
+          [
+            380.0034217531885,
+            986.8008533956346
+          ],
+          [
+            387.1936877615065,
+            987.3712123991462
+          ],
+          [
+            405.95699673601615,
+            977.881525087293
+          ],
+          [
+            417.98671274795464,
+            975.6371474213504
+          ],
+          [
+            445.36438576506276,
+            974.6360206497139
+          ],
+          [
+            467.3002680987102,
+            988.1543296647893
+          ],
+          [
+            479.772603,
+            987.003036
+          ],
+          [
+            494.538897,
+            980.596582
+          ],
+          [
+            508.98222123677175,
+            978.4742456763163
+          ]
+        ]
+      }
+    ]
+  },
+  "totals": {
+    "original_polygons": 99,
+    "revised_polygons": 99,
+    "original_vertices": 9621,
+    "revised_vertices": 9633,
+    "removed_vertices": 2,
+    "added_vertices": 14,
+    "polygons_modified": 3
+  },
+  "qa": {
+    "source_polygons99": true,
+    "source_vertices9621": true,
+    "source_sha_verified": true,
+    "exact_two_extreme_tips": true,
+    "five_targeted_long_edges": true,
+    "inserted14_vertices": true,
+    "three_replacement_polygons": true,
+    "revised_vertex_count9633": true,
+    "zero_new_self_intersections": true,
+    "zero_new_polygon_collisions": true,
+    "zero_zero_length_edges": true,
+    "area_change_each_under_half_percent": true,
+    "all_min_angles_at_least30deg": true,
+    "source_not_overwritten": true,
+    "self_intersections": 0,
+    "external_collisions": 0,
+    "zero_length": 0
+  },
+  "rollback": "Discard B34 overlay; reload B16 original unchanged.",
+  "limitations": [
+    "Relative signed area change uses planar drawing units only.",
+    "A contour that looks more realistic at B16 scale is not a verified tectonic or geologic feature.",
+    "No terrain elevations, current shoreline erosion, sea depth, hydrologic connectivity, or navigation inferred.",
+    "No assertion of actual km lengths, global exact coast mapping, official 25 named ocean allocation."
+  ]
+}
