@@ -1,6 +1,6 @@
 {
   "edition": "V2.25-R-B21",
-  "status": "GRID_SOURCE_STATIC_QA_PASS__PUBLIC_VIEWER_NOT_TESTED",
+  "status": "GITHUB_SOURCE_STATIC_QA_PASS__WEB_AND_MOBILE_UNVERIFIED",
   "checks": [
     {
       "sheet": "H1",
@@ -42,5 +42,37 @@
   },
   "source_B20": "assets/data/orbina-v225r-b20-five-region-catchment-catalog.json",
   "assurance": "Models have zero candidate sinks under the defined pre-screen, but this proves nothing about true Orbina endorheic geology.",
-  "browser": "NOT_TESTED"
+  "browser": "NOT_TESTED",
+  "cross_file_checks": {
+    "version_in_config": true,
+    "version_in_article": true,
+    "b21_data_5_regions": true,
+    "html_javascript_syntax": true,
+    "html_data_paths_match": true,
+    "svg_tag_closed": true,
+    "svg_five_panels": true,
+    "correct_hypothesis_count": true,
+    "no_lake_canon_claim": true,
+    "grid_total_matches": true,
+    "terrain_classes_do_not_enter_ocean": true,
+    "stats_exact": true,
+    "legacy_link_kept": true,
+    "sensitive_canon_kept": true
+  },
+  "committed_delivery": {
+    "interactive_viewer": "assets/maps/orbina-v225r-b21-geomorphology-atlas.html",
+    "five_panel_svg": "assets/images/orbina-v225r-b21-landform-screening.svg",
+    "classified_terrain_grid": "assets/data/orbina-v225r-b21-landform-screening.json",
+    "tectonic_hypotheses": "assets/data/orbina-v225r-b21-tectonic-scenario-register.json",
+    "encyclopedia": "_articles/article-035.md",
+    "active_config": "assets/data/orbina-global-continent-scale-principles.json"
+  },
+  "public_site_open_result": "UNAVAILABLE_BY_WEB_READER",
+  "mobile_touch_canvas": "NOT_TESTED",
+  "scientific_limits": [
+    "B18 source DEM-like model derived from candidate geometry, not measured heights",
+    "B21 zero detected interior sinks is an artifact-sensitive conditional screening result, not proof no real inland lakes",
+    "Hypotheses S1-S3 remain alternative explanations, not factual geologic map",
+    "No country, tectonic plate, real river discharge or geography coordinates claimed"
+  ]
 }
