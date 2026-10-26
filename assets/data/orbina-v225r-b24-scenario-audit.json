@@ -1,0 +1,57 @@
+{
+  "edition": "V2.25-R-B24",
+  "status": "MODEL_NUMERIC_QA_PASS__NO_PUBLIC_RENDERING_VERIFIED",
+  "checks": {
+    "baseline_reproduces_B23": true,
+    "all_forecast_timesteps_accounted": true,
+    "storm_triggers_positive_spill": true,
+    "event_drought_lowers_storage": true,
+    "original_B23_parameters_not_modified": true,
+    "finite_bounded_storage": true,
+    "groundwater_is_monotone_in_longrun": true,
+    "no_real_world_units_claimed": true
+  },
+  "keypoints": {
+    "initial_storage": 0.7211,
+    "control_first_cycle_min": 0,
+    "drought_first_two_cycles_dry_phases": 22,
+    "flood_first_cycle_max": 63.53,
+    "flood_first_cycle_total_overflow": 31.19634,
+    "flood_overflow_spike_phase": 7,
+    "drought_vs_control_end_cycle2": -0.7211,
+    "drought_vs_control_end_cycle4": 0
+  },
+  "groundwater": [
+    {
+      "GW": 0,
+      "min": 0,
+      "max": 5.28545,
+      "dry": 4
+    },
+    {
+      "GW": 0.02,
+      "min": 0,
+      "max": 5.34545,
+      "dry": 3
+    },
+    {
+      "GW": 0.2,
+      "min": 0,
+      "max": 6.03976,
+      "dry": 1
+    },
+    {
+      "GW": 0.5,
+      "min": 0.79922,
+      "max": 7.61467,
+      "dry": 0
+    },
+    {
+      "GW": 1,
+      "min": 5.02203,
+      "max": 10.79853,
+      "dry": 0
+    }
+  ],
+  "notice": "Synthetic sensitivity only. No observed meteorology or official Orbina climate."
+}
