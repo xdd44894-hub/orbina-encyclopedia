@@ -1,0 +1,73 @@
+{
+  "edition": "V2.25-R-B32",
+  "status": "GITHUB_SOURCE_CROSS_FILE_STATIC_QA_PASS__PUBLIC_BROWSER_RENDER_UNVERIFIED",
+  "date": "2026-10-26",
+  "commits": {
+    "geometry_audit": "816fd2e306f2bd94de1505adde35613ff3292b6a",
+    "interactive_atlas": "45600bbd2b33abd9de7b27b3774364719a65d850",
+    "wiki": "d5f79587a1c42876a1f3274f97971eb85ad90cc3"
+  },
+  "source_blobs": {
+    "B16": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "B31": "f5401944d61a20a169d7c8c1f3f94d81e4e75d52",
+    "B32": "5885883b32fc97f74488db63cdb18d4d16a8313d",
+    "viewer": "467146b5e1090a2c276f08a5c7f661eec3412f94",
+    "wiki": "326c80e14edec3bc0907cecd92e6762afbff9df3"
+  },
+  "static_qa": {
+    "passed": 32,
+    "total": 32,
+    "failed": 0,
+    "checks": {
+      "fiveFilesReadable": true,
+      "B16_unchanged_sha": true,
+      "B31_unchanged_sha": true,
+      "landPolygon99": true,
+      "originalVertexCount9621": true,
+      "all56Candidates": true,
+      "allIdsUnique": true,
+      "B31_list_consistent": true,
+      "newland21": true,
+      "newwater9": true,
+      "newmixed26": true,
+      "mixedB31_21": true,
+      "changed5": true,
+      "changedIdsCorrect": true,
+      "changedClassIDsExhaustive": true,
+      "multicross5": true,
+      "sumDistribution": true,
+      "eachRunPartitions01": true,
+      "fractionsAgree": true,
+      "zeroCoincidentEdges": true,
+      "consistentSummaryCrossing": true,
+      "wikiB32First": true,
+      "wikiCorrectsB31": true,
+      "wikiPageHref": true,
+      "wikiJsonHref": true,
+      "wikiB31History": true,
+      "viewerHasCorrectSources": true,
+      "viewerDrawsSegmentRuns": true,
+      "viewerSupportsPanZoom": true,
+      "viewerFiltersMisclassified": true,
+      "viewerValidScriptSyntax": true,
+      "htmlBalanced": true
+    }
+  },
+  "verified_counts": {
+    "original_polygons": 99,
+    "original_vertices": 9621,
+    "screened_candidates": 56,
+    "pure_land": 21,
+    "pure_water": 9,
+    "mixed": 26,
+    "misclassified_in_previous_B31_four_point_method": 5,
+    "visual_priority_multicrossing": 5,
+    "near_vertex_index_threshold_12": 53
+  },
+  "deployment_claims": {
+    "repo_source_committed_and_verified": true,
+    "HTML_script_syntax_compiled": true,
+    "GitHub_Pages_rendering_or_mobile_touch_verified": false
+  },
+  "disclaimer": "This file reports reproducible static source checks, not a completed real-browser or independent geomorphological validation. Previous B31 reports remain historical snapshots, not silently overwritten."
+}
