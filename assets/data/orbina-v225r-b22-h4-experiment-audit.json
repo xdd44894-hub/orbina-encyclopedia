@@ -1,6 +1,6 @@
 {
   "edition": "V2.25-R-B22",
-  "status": "NUMERICAL_SOURCE_QA_PASS__BROWSER_NOT_TESTED",
+  "status": "GITHUB_SOURCE_STATIC_QA_PASS__LIVE_PAGES_AND_MOBILE_NOT_TESTED",
   "checks": {
     "source_land_cells_match": true,
     "source_coast_cells_match": true,
@@ -71,5 +71,38 @@
       "pockets": []
     }
   ],
-  "physical_realism": "No proof of persistent lake or real geology."
+  "physical_realism": "No proof of persistent lake or real geology.",
+  "final_cross_file_checks": {
+    "version_is_B22": true,
+    "source_grid_mask_unchanged": true,
+    "source_land_cell_count": true,
+    "source_coastal_count": true,
+    "all_four_cases": true,
+    "numeric_grid_dimensions": true,
+    "baseline_exactly_matches_B20": true,
+    "all_scenarios_have_coast_outlet": true,
+    "exactly_one_S2_pocket": true,
+    "other_scenarios_no_qualifying_pocket": true,
+    "S2_10_and_23": true,
+    "viewer_script_valid": true,
+    "viewer_data_path_valid": true,
+    "svg_four_panels": true,
+    "svg_closed": true,
+    "article_link_to_viewer": true,
+    "config_points_to_new_viewer": true,
+    "B21_remains_covered": true
+  },
+  "sources_verified_on_main": [
+    "assets/data/orbina-v225r-b22-h4-terrain-experiments.json",
+    "assets/data/orbina-v225r-b22-h4-experiment-audit.json",
+    "assets/images/orbina-v225r-b22-h4-geomorphology-comparison.svg",
+    "assets/maps/orbina-v225r-b22-h4-terrain-laboratory.html",
+    "_articles/article-035.md",
+    "assets/data/orbina-global-continent-scale-principles.json",
+    "assets/data/orbina-v225r-b20-h4-catchments.json"
+  ],
+  "viewer": "assets/maps/orbina-v225r-b22-h4-terrain-laboratory.html",
+  "svg": "assets/images/orbina-v225r-b22-h4-geomorphology-comparison.svg",
+  "live_publication_status": "No actual GitHub Pages rendering response or mobile touch/canvas test was verified",
+  "scientific_limitation": "One H4 noncanonical grid depression can be geometrically filled to threshold 20.12 but no water balance or lake permanency asserted"
 }
