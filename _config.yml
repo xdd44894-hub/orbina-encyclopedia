@@ -1,6 +1,6 @@
-title: 资料档案库
-name: 资料档案库
-description: 按来源、分类与条目检索的资料档案库。
+title: 俄庇娜百科
+name: 俄庇娜百科
+description: 俄庇娜世界观百科，涵盖人物、地理、历史、文明与技术。
 url: https://xdd44894-hub.github.io
 baseurl: /orbina-encyclopedia
 markdown: kramdown
