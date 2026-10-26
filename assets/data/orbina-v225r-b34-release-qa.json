@@ -1,0 +1,105 @@
+{
+  "edition": "V2.25-R-B34",
+  "date": "2026-10-26",
+  "status": "SOURCE_STATIC_CHECKS_PASSED__PAGES_PUBLIC_RENDER_UNVERIFIED",
+  "source_commit_history": {
+    "coast": "5a4af8df19ede51bc36388c10cf5577601edd8c5",
+    "geometry_qa": "7f2e1d2e77e5108ad7abd8d12a09a3ab7c6e9fe8",
+    "intercomparison": "bf6db8eeef12850cf684bc35dcd9288e20c4a957",
+    "static_svg": "5d204f3c8d2918b14e32b3cb0c3a64ba7da2a368",
+    "wiki_image_link": "cf6b6d1772a412553d6accd0cb5a85a5e88e0184"
+  },
+  "source_blob_shas": {
+    "assets/data/orbina-v225r-b16-aesthetic-geography-master.json": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "assets/data/orbina-v225r-b34-reversible-coastline-layer.json": "cc35278c54ba12c2ebefecb7d97567110270e881",
+    "assets/data/orbina-v225r-b34-coastline-topology-qa.json": "5d6399eb2c841f27995e8731b58d1ea4386d6560",
+    "assets/maps/orbina-v225r-b34-before-after-coastline.html": "985745b32a9da2081da0e42fa3838bb93609b2a9",
+    "assets/images/orbina-v225r-b34-coastline-comparison.svg": "579a8a1fc6c589caa3cc2f38333468425be7ef1f",
+    "_articles/article-035.md": "667cfb36cd9904037c216d24a9286e0f170846ad",
+    "index.md": "dfe26af15ce37aa65be77cd8a3efbff797d67733",
+    "gallery.md": "90c0981f14088877ce11c619bf3795c2dab73941"
+  },
+  "qa": {
+    "checks": {
+      "allEightFilesReadable": true,
+      "B16SourceSHAUnchanged": true,
+      "sourceSHAReused": true,
+      "originalPolygons99": true,
+      "revisedPolygons99": true,
+      "sourceVertices9621": true,
+      "revisedVertices9633": true,
+      "modifiedExactly3Ids": true,
+      "unchangedOther96": true,
+      "removalsExactly2": true,
+      "editedEdgesExactly5": true,
+      "insertedVerticesExactly14": true,
+      "sourceUnmodified": true,
+      "allOriginalIslandsRetained": true,
+      "topologyNoSelfCross": true,
+      "topologyNoInterpolygonCross": true,
+      "topologyNoDegenerateEdges": true,
+      "areaChangesBelowPoint5": true,
+      "minimumAnglesAtLeast30": true,
+      "notCanonicalMap": true,
+      "geometryLayerAndQAAgree": true,
+      "viewerReferencesSource": true,
+      "viewerReferencesB34": true,
+      "viewerHasTwoCanvases": true,
+      "viewerHasActualLinkedPanHandler": true,
+      "viewerHasZoom": true,
+      "viewerHasOverlay": true,
+      "viewerSupportsThreeRegions": true,
+      "viewerScriptValid": true,
+      "svgComplete": true,
+      "svgHasSixViews": true,
+      "svgOverlays3": true,
+      "shortGeographyPage": true,
+      "wikiPreserves25OceanNames": true,
+      "wikiPreservesKnownRelations": true,
+      "wikiEmbedsSVG": true,
+      "wikiLinksB34Viewer": true,
+      "homeB34Current": true,
+      "galleryB34Link": true
+    },
+    "passed": 39,
+    "total": 39,
+    "failed": 0
+  },
+  "result": {
+    "original_polygons": 99,
+    "revised_polygons": 99,
+    "baseline_vertices": 9621,
+    "B34_vertices": 9633,
+    "edited_polygons": [
+      3,
+      5,
+      6
+    ],
+    "modified_coast_segments": 5,
+    "removed_needle_vertices": 2,
+    "inserted_controlled_shoreline_knots": 14,
+    "area_changes_pct": [
+      {
+        "polygon": 3,
+        "value": -0.436016
+      },
+      {
+        "polygon": 5,
+        "value": -0.055656
+      },
+      {
+        "polygon": 6,
+        "value": 0.004946
+      }
+    ],
+    "new_intersections": 0,
+    "real_geographic_scale_or_final_canon_approved": false
+  },
+  "deployment": {
+    "github_repo_fetched_and_verified": true,
+    "html_script_syntax_compiled": true,
+    "public_GitHub_Pages_HTTP_available_to_checker": false,
+    "mobile_interactions_not_live_tested": true
+  },
+  "safety": "Original B16 geometry never overwritten; B34 changed polygons saved in standalone patch layer only; all original islands, ocean names, river and national geographical relations held."
+}
