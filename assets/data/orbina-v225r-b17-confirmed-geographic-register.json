@@ -1,0 +1,372 @@
+{
+  "edition": "V2.25-R-B17",
+  "status": "CANONICAL_RELATION_AND_NAME_REGISTER__NO_GLOBAL_COORDINATES",
+  "source_reference": "百科《海洋地理》_articles/article-035.md中已确认海名与相对自然地理关系（2026-10-26读取）",
+  "important": "This is not the candidate geometry catalog. Canonical proper names and relational facts remain true regardless of B16/B17 drawing shape. Do not attach latitudes or create measured values.",
+  "approved_oceans_and_major_seas": [
+    {
+      "name": "大西洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "太平洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "北白洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": [
+        "地理印象与旧地球北冰洋有相似之处",
+        "记载有北白洋鳞鲑鱼"
+      ]
+    },
+    {
+      "name": "洲间洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "中南洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "北西里",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": [
+        "类似旧地球地中海型的大型海域"
+      ]
+    },
+    {
+      "name": "碎洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": [
+        "由32条彼此交错的岛链构成",
+        "约38%区域位于热带"
+      ]
+    },
+    {
+      "name": "南白洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "东陆洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "西陆洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "赤道洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "南环洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "远洲洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "双陆洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "长陆洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "深南洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "东赤洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "西赤洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "黑流洋",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "白潮海",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "千岛海",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "长峡海",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "内环海",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "双门海",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    },
+    {
+      "name": "赤湾海",
+      "status": "APPROVED_CANON_NAME",
+      "known_global_position": null,
+      "exact_polygon_id": null,
+      "real_ocean_area_km2": null,
+      "confirmed_current_direction": null,
+      "special_documented_characteristics": []
+    }
+  ],
+  "confirmed_physical_geography": [
+    {
+      "id": "CG-001",
+      "label": "联合城、人民天国所在中央超级大陆",
+      "facts": [
+        "两方位于同一片超级大陆",
+        "双方具体东西南北方位未确定"
+      ],
+      "coordinates": null,
+      "linked_current_polygon_id": null
+    },
+    {
+      "id": "CG-002",
+      "label": "超级大陆南口巨型内海",
+      "facts": [
+        "海域从超级大陆南部外口通向外洋",
+        "南部外口宽阔、进入内门处向内收窄、腹地再扩大为内海",
+        "该内海具体正式名称未确定，不能自动认作北西里"
+      ],
+      "coordinates": null,
+      "linked_current_polygon_id": null
+    },
+    {
+      "id": "CG-003",
+      "label": "北冠半岛及宽地峡",
+      "facts": [
+        "从内海北部向南伸出",
+        "内海北部因半岛分为东西两个次级海盆，两盆保持同主海盆连通",
+        "通过宽阔陆地颈部与北部腹地相连",
+        "北冠为当前制图工作称呼"
+      ],
+      "coordinates": null,
+      "linked_current_polygon_id": null
+    },
+    {
+      "id": "CG-004",
+      "label": "抵抗者之弧／弧脊山系",
+      "facts": [
+        "起始于内海西北侧附近、向中央超级大陆中部延伸",
+        "不可表现为横贯整块大陆的完全封闭直线山墙",
+        "弧脊山系为制图工作称呼，尚未确定正式山脉名和海拔"
+      ],
+      "coordinates": null,
+      "linked_current_polygon_id": null,
+      "warning": "B17基于多边形得出的候选脊线不得覆盖、替代、错误附会本正史地形"
+    },
+    {
+      "id": "CG-005",
+      "label": "内海南口东门地峡及两岸港湾条件",
+      "facts": [
+        "南口东侧东门半岛根部为陆地相连的收束部分，不是已确认天然运河",
+        "东岸低地和较浅海湾具大型商业航运港区潜力",
+        "西岸山地深湾适合舰艇泊驻与防卫，不意味着港口已建成"
+      ],
+      "coordinates": null,
+      "linked_current_polygon_id": null
+    },
+    {
+      "id": "CG-006",
+      "label": "内海东岸主河R1",
+      "facts": [
+        "北侧河总体从东北内陆高地或丘陵汇水",
+        "汇入北部东侧次级海盆",
+        "图纸临时代号R1，不代表河长流量与确切源头已知"
+      ],
+      "coordinates": null,
+      "linked_current_polygon_id": null
+    },
+    {
+      "id": "CG-007",
+      "label": "内海东岸主河R2",
+      "facts": [
+        "南侧主河总体从南方东部内陆汇水",
+        "流入中东部内海主海盆或东岸河口区域",
+        "R2与R1分离，东侧更远存在高地分水岭"
+      ],
+      "coordinates": null,
+      "linked_current_polygon_id": null
+    },
+    {
+      "id": "CG-008",
+      "label": "秦棠—萨瑞拉—白石城地区",
+      "facts": [
+        "秦棠位于萨瑞拉西北",
+        "白石城位于萨瑞拉北面且毗邻",
+        "三者所属大陆地理单元在分类上有别于联合城/人民天国超级大陆单元",
+        "不能未经确认就断定两大陆一定被连续大洋完全分隔"
+      ],
+      "coordinates": null,
+      "linked_current_polygon_id": null
+    },
+    {
+      "id": "CG-009",
+      "label": "棠溪水系",
+      "facts": [
+        "涉及秦棠与萨瑞拉的已确认跨境水系",
+        "与内海东岸R1、R2各自独立",
+        "不得通过海峡将陆地表面河流硬接成同一河道"
+      ],
+      "coordinates": null,
+      "linked_current_polygon_id": null
+    },
+    {
+      "id": "CG-010",
+      "label": "区域性气候及相容性约束",
+      "facts": [
+        "行星环流、海洋水汽、地形抬升、雨影和季节变化需要共同建模",
+        "风带和洋流尚非实际数值或已确认地图位置",
+        "秦棠上游、峰岭侧谷、溪热湖盆、白石城雨影斑块等现有局部气候机制，应保留来源层级而非混为行政区平均值"
+      ],
+      "coordinates": null,
+      "linked_current_polygon_id": null
+    }
+  ],
+  "data_boundaries": {
+    "names_as_status": "confirmed",
+    "names_as_polygon_positions": "unknown",
+    "relative_country_location": "confirmed",
+    "global_land_shape": "current draft B16",
+    "ridge_model": "B17 generated study, not canonical",
+    "climate_numbers": "not observed and not authoritative without previously approved records",
+    "any_new_official_city_position": "not assigned"
+  },
+  "consistency_rules": [
+    "Never use a relative geocultural descriptor as a measured latitude",
+    "Do not designate B17 model-generated ridges as the Resistance Arc",
+    "R1/R2/Tangxi distinct watersheds",
+    "Shattered Sea has 32 island chains and approximately 38% tropical area in documented world lore, regardless of anonymous draft polygon count",
+    "Ocean name never implies Earth-identical ocean position",
+    "Keep published encyclopedia's named-feature facts in place and update existing entries rather than creating duplicate articles"
+  ]
+}
