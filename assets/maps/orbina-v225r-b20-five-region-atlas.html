@@ -110,7 +110,7 @@ $("legend").innerHTML=names.map((name,k)=>"<span><i style='background:"+colors[k
 }
 async function choose(i){
 if(!catalog)return;index=i;record=null;selected=null;const token=++loadTicket;const s=catalog.sheets[i];$("pointInfo").textContent="正在读取 "+s.sheet+" 的网格……";
-try{const response=await fetch("../../../"+s.data_path);if(!response.ok)throw Error("HTTP "+response.status);const raw=await response.json();
+try{const response=await fetch("../data/"+s.data_path.replace(/^assets\/data\//,""));if(!response.ok)throw Error("HTTP "+response.status);const raw=await response.json();
  if(loadTicket!==token)return;
  if(raw.grid.land_cells!==s.grid.land_cells||raw.model.mask_rows.length!==raw.grid.rows||raw.top_basins.length!==8)throw Error("图幅校验不一致");
  record=raw;$("pointInfo").textContent="已载入 "+s.sheet+"。点击或触摸陆地格可查看本格的研究分类与情景权重。";
