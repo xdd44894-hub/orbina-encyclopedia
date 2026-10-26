@@ -1,1 +1,135 @@
-{"edition":"V2.25-R-B25","status":"NINE_FACTORIAL_GLOBAL_LATITUDE_SEASON_SOURCE_QA_PASS","checks":{"nine_independent_spin_tilt_combinations":true,"latitudes_37":true,"season_phases_12":true,"solar_dimensions":true,"nonnegative_solar":true,"rain_bounded":true,"all_thermal_finite":true,"equinox_symmetry":true,"solstice_hemisphere_symmetry":true,"no_metric_climatology":true},"grid_latitude_cells":37,"phase_cells":12,"parameter_cases":9,"surface_archetypes":2,"annual_solar_geometry_samples":3996,"summary":[{"id":"FL","rotation_index":1.6,"obliquity_deg":10,"heuristic_low_latitude_boundary":26.88,"summer_north_polar_q":0.173648,"midlat_land_thermal_anomaly_span":0.1494},{"id":"FM","rotation_index":1.6,"obliquity_deg":24,"heuristic_low_latitude_boundary":26.88,"summer_north_polar_q":0.406737,"midlat_land_thermal_anomaly_span":0.35},{"id":"FH","rotation_index":1.6,"obliquity_deg":42,"heuristic_low_latitude_boundary":26.88,"summer_north_polar_q":0.669131,"midlat_land_thermal_anomaly_span":0.5757},{"id":"ML","rotation_index":1,"obliquity_deg":10,"heuristic_low_latitude_boundary":34,"summer_north_polar_q":0.173648,"midlat_land_thermal_anomaly_span":0.1494},{"id":"MM","rotation_index":1,"obliquity_deg":24,"heuristic_low_latitude_boundary":34,"summer_north_polar_q":0.406737,"midlat_land_thermal_anomaly_span":0.35},{"id":"MH","rotation_index":1,"obliquity_deg":42,"heuristic_low_latitude_boundary":34,"summer_north_polar_q":0.669131,"midlat_land_thermal_anomaly_span":0.5757},{"id":"SL","rotation_index":0.55,"obliquity_deg":10,"heuristic_low_latitude_boundary":45.85,"summer_north_polar_q":0.173648,"midlat_land_thermal_anomaly_span":0.1494},{"id":"SM","rotation_index":0.55,"obliquity_deg":24,"heuristic_low_latitude_boundary":45.85,"summer_north_polar_q":0.406737,"midlat_land_thermal_anomaly_span":0.35},{"id":"SH","rotation_index":0.55,"obliquity_deg":42,"heuristic_low_latitude_boundary":45.85,"summer_north_polar_q":0.669131,"midlat_land_thermal_anomaly_span":0.5757}],"warning":"Solar Q/S0 has geometry basis; moisture/wind and width do NOT have verified physical calibration. No official planet mapping."}
+{
+  "edition": "V2.25-R-B25",
+  "status": "GITHUB_SOURCE_STATIC_QA_PASS__PUBLIC_PAGES_AND_MOBILE_UNVERIFIED",
+  "checks": {
+    "nine_independent_spin_tilt_combinations": true,
+    "latitudes_37": true,
+    "season_phases_12": true,
+    "solar_dimensions": true,
+    "nonnegative_solar": true,
+    "rain_bounded": true,
+    "all_thermal_finite": true,
+    "equinox_symmetry": true,
+    "solstice_hemisphere_symmetry": true,
+    "no_metric_climatology": true
+  },
+  "grid_latitude_cells": 37,
+  "phase_cells": 12,
+  "parameter_cases": 9,
+  "surface_archetypes": 2,
+  "annual_solar_geometry_samples": 3996,
+  "summary": [
+    {
+      "id": "FL",
+      "rotation_index": 1.6,
+      "obliquity_deg": 10,
+      "heuristic_low_latitude_boundary": 26.88,
+      "summer_north_polar_q": 0.173648,
+      "midlat_land_thermal_anomaly_span": 0.1494
+    },
+    {
+      "id": "FM",
+      "rotation_index": 1.6,
+      "obliquity_deg": 24,
+      "heuristic_low_latitude_boundary": 26.88,
+      "summer_north_polar_q": 0.406737,
+      "midlat_land_thermal_anomaly_span": 0.35
+    },
+    {
+      "id": "FH",
+      "rotation_index": 1.6,
+      "obliquity_deg": 42,
+      "heuristic_low_latitude_boundary": 26.88,
+      "summer_north_polar_q": 0.669131,
+      "midlat_land_thermal_anomaly_span": 0.5757
+    },
+    {
+      "id": "ML",
+      "rotation_index": 1,
+      "obliquity_deg": 10,
+      "heuristic_low_latitude_boundary": 34,
+      "summer_north_polar_q": 0.173648,
+      "midlat_land_thermal_anomaly_span": 0.1494
+    },
+    {
+      "id": "MM",
+      "rotation_index": 1,
+      "obliquity_deg": 24,
+      "heuristic_low_latitude_boundary": 34,
+      "summer_north_polar_q": 0.406737,
+      "midlat_land_thermal_anomaly_span": 0.35
+    },
+    {
+      "id": "MH",
+      "rotation_index": 1,
+      "obliquity_deg": 42,
+      "heuristic_low_latitude_boundary": 34,
+      "summer_north_polar_q": 0.669131,
+      "midlat_land_thermal_anomaly_span": 0.5757
+    },
+    {
+      "id": "SL",
+      "rotation_index": 0.55,
+      "obliquity_deg": 10,
+      "heuristic_low_latitude_boundary": 45.85,
+      "summer_north_polar_q": 0.173648,
+      "midlat_land_thermal_anomaly_span": 0.1494
+    },
+    {
+      "id": "SM",
+      "rotation_index": 0.55,
+      "obliquity_deg": 24,
+      "heuristic_low_latitude_boundary": 45.85,
+      "summer_north_polar_q": 0.406737,
+      "midlat_land_thermal_anomaly_span": 0.35
+    },
+    {
+      "id": "SH",
+      "rotation_index": 0.55,
+      "obliquity_deg": 42,
+      "heuristic_low_latitude_boundary": 45.85,
+      "summer_north_polar_q": 0.669131,
+      "midlat_land_thermal_anomaly_span": 0.5757
+    }
+  ],
+  "warning": "Solar Q/S0 has geometry basis; moisture/wind and width do NOT have verified physical calibration. No official planet mapping.",
+  "checks_on_retrieved_files": {
+    "all_source_files": true,
+    "current_edition": true,
+    "active_viewer": true,
+    "article_latest": true,
+    "all_seven_previous_sections": true,
+    "nine_scenarios": true,
+    "three_spin_choices": true,
+    "three_tilt_choices": true,
+    "full_factorial": true,
+    "phases_12": true,
+    "latitudes_37": true,
+    "lat_poles_correct": true,
+    "every_matrix_12_by_37": true,
+    "solar_fraction_bounded": true,
+    "rain_index_bounded": true,
+    "equinox_hemispheres_symmetric": true,
+    "opposite_solstice_symmetric": true,
+    "north_pole_solstice_sin_tilt": true,
+    "equatorial_equinox_one_over_pi": true,
+    "svg_closed_and_single": true,
+    "svg_three_comparisons": true,
+    "javascript_compiles": true,
+    "relative_json_fetch": true,
+    "article_link_to_map": true,
+    "b24_source_unchanged": true,
+    "no_canonical_country_or_latitude_assignments": true
+  },
+  "published": {
+    "json": "assets/data/orbina-v225r-b25-global-circulation-factorial.json",
+    "atlas": "assets/maps/orbina-v225r-b25-global-circulation-atlas.html",
+    "overview": "assets/images/orbina-v225r-b25-global-circulation-overview.svg",
+    "encyclopedia": "_articles/article-035.md",
+    "active_config": "assets/data/orbina-global-continent-scale-principles.json",
+    "audit": "assets/data/orbina-v225r-b25-circulation-audit.json"
+  },
+  "live_Pages": "Not independently loaded: public URL inaccessible to web reader; does not prove the website is down",
+  "mobile_canvas": "NOT_TESTED",
+  "scientific_limit": "Q/S0 is idealized solar geometry with assumed circular orbit. Width/precipitation/wind/thermal proxies are synthetic uncalibrated heuristics, no climate or planet physical parameters are officially set."
+}
