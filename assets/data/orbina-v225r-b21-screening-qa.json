@@ -1,0 +1,46 @@
+{
+  "edition": "V2.25-R-B21",
+  "status": "GRID_SOURCE_STATIC_QA_PASS__PUBLIC_VIEWER_NOT_TESTED",
+  "checks": [
+    {
+      "sheet": "H1",
+      "grid_land_count_matches": true,
+      "zero_offshore_classes": true,
+      "single_cell_minimum_screen_conforms": true
+    },
+    {
+      "sheet": "H2",
+      "grid_land_count_matches": true,
+      "zero_offshore_classes": true,
+      "single_cell_minimum_screen_conforms": true
+    },
+    {
+      "sheet": "H3",
+      "grid_land_count_matches": true,
+      "zero_offshore_classes": true,
+      "single_cell_minimum_screen_conforms": true
+    },
+    {
+      "sheet": "H4",
+      "grid_land_count_matches": true,
+      "zero_offshore_classes": true,
+      "single_cell_minimum_screen_conforms": true
+    },
+    {
+      "sheet": "H5",
+      "grid_land_count_matches": true,
+      "zero_offshore_classes": true,
+      "single_cell_minimum_screen_conforms": true
+    }
+  ],
+  "screened_counts": {
+    "coastal_lowlands": 3030,
+    "inland_lowlands": 1318,
+    "relative_highlands": 608,
+    "interior_closed_sink_screen": 0,
+    "land_cells": 8474
+  },
+  "source_B20": "assets/data/orbina-v225r-b20-five-region-catchment-catalog.json",
+  "assurance": "Models have zero candidate sinks under the defined pre-screen, but this proves nothing about true Orbina endorheic geology.",
+  "browser": "NOT_TESTED"
+}
