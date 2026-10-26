@@ -1,0 +1,3705 @@
+{
+  "version": "V2.25-R-B17",
+  "basis": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+  "basis_sha": "d580bd5d0410b1c533acfe9709e99092d302584c",
+  "kind": "RELATIVE_PHYSIOGRAPHY_AND_SHOREWARD_SECTOR_HYPOTHESIS",
+  "status": "NON_CANON_TEACHING_ATLAS_RESEARCH",
+  "land_registry_source": "assets/data/orbina-v225r-b17-atlas-layer-catalog.json",
+  "unit_count": 26,
+  "trace_count": 78,
+  "units": [
+    {
+      "study_id": "B17-PHYS-001",
+      "land_uid": "ORB-L-001",
+      "land_polygon_id": "continental-nucleus",
+      "region": "CORE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        817.87,
+        464.86
+      ],
+      "interior_clearance_svg_units": 212.69,
+      "qualitative_ridge_axis": [
+        [
+          605.56,
+          464.86
+        ],
+        [
+          740.67,
+          464.86
+        ],
+        [
+          895.07,
+          464.86
+        ],
+        [
+          1030.17,
+          464.86
+        ],
+        [
+          1165.27,
+          464.86
+        ],
+        [
+          1319.68,
+          464.86
+        ],
+        [
+          1454.78,
+          464.86
+        ]
+      ],
+      "axis_orientation_drawing_deg": 0,
+      "axis_extent_drawing_units": 849.22,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1523.97,
+            585.11
+          ],
+          "inland_shoreward_trace": [
+            [
+              817.87,
+              464.86
+            ],
+            [
+              995.81,
+              495.16
+            ],
+            [
+              1224.58,
+              534.13
+            ],
+            [
+              1453.36,
+              573.09
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            859.38,
+            845.35
+          ],
+          "inland_shoreward_trace": [
+            [
+              817.87,
+              464.86
+            ],
+            [
+              828.33,
+              560.74
+            ],
+            [
+              841.78,
+              684.02
+            ],
+            [
+              855.22,
+              807.3
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1103.84,
+            216.32
+          ],
+          "inland_shoreward_trace": [
+            [
+              817.87,
+              464.86
+            ],
+            [
+              889.93,
+              402.23
+            ],
+            [
+              982.59,
+              321.7
+            ],
+            [
+              1075.25,
+              241.18
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-002",
+      "land_uid": "ORB-L-002",
+      "land_polygon_id": "seam-crossing-western-long-continent",
+      "region": "WEST",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        55.28,
+        358.05
+      ],
+      "interior_clearance_svg_units": 215.81,
+      "qualitative_ridge_axis": [
+        [
+          169.91,
+          159.51
+        ],
+        [
+          124.06,
+          238.92
+        ],
+        [
+          78.21,
+          318.34
+        ],
+        [
+          24.72,
+          410.99
+        ],
+        [
+          -21.13,
+          490.4
+        ],
+        [
+          -66.98,
+          569.82
+        ],
+        [
+          -112.83,
+          649.23
+        ]
+      ],
+      "axis_orientation_drawing_deg": 120,
+      "axis_extent_drawing_units": 565.49,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            -113.5,
+            659.35
+          ],
+          "inland_shoreward_trace": [
+            [
+              55.28,
+              358.05
+            ],
+            [
+              12.75,
+              433.97
+            ],
+            [
+              -41.93,
+              531.6
+            ],
+            [
+              -96.62,
+              629.22
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            396.6,
+            371.48
+          ],
+          "inland_shoreward_trace": [
+            [
+              55.28,
+              358.05
+            ],
+            [
+              141.3,
+              361.43
+            ],
+            [
+              251.88,
+              365.79
+            ],
+            [
+              362.47,
+              370.14
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            -169.03,
+            157.43
+          ],
+          "inland_shoreward_trace": [
+            [
+              55.28,
+              358.05
+            ],
+            [
+              -1.24,
+              307.49
+            ],
+            [
+              -73.92,
+              242.49
+            ],
+            [
+              -146.6,
+              177.49
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-003",
+      "land_uid": "ORB-L-003",
+      "land_polygon_id": "southern-ocean-west-ridge",
+      "region": "SOUTH",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        918.02,
+        1054.04
+      ],
+      "interior_clearance_svg_units": 65.95,
+      "qualitative_ridge_axis": [
+        [
+          842.24,
+          1010.29
+        ],
+        [
+          872.56,
+          1027.79
+        ],
+        [
+          902.87,
+          1045.29
+        ],
+        [
+          936.97,
+          1064.98
+        ],
+        [
+          967.28,
+          1082.48
+        ],
+        [
+          997.59,
+          1099.98
+        ],
+        [
+          1027.91,
+          1117.48
+        ]
+      ],
+      "axis_orientation_drawing_deg": 30,
+      "axis_extent_drawing_units": 214.39,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1060.58,
+            1104.74
+          ],
+          "inland_shoreward_trace": [
+            [
+              918.02,
+              1054.04
+            ],
+            [
+              953.95,
+              1066.82
+            ],
+            [
+              1000.14,
+              1083.24
+            ],
+            [
+              1046.33,
+              1099.67
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1013.06,
+            967.79
+          ],
+          "inland_shoreward_trace": [
+            [
+              918.02,
+              1054.04
+            ],
+            [
+              941.97,
+              1032.31
+            ],
+            [
+              972.76,
+              1004.36
+            ],
+            [
+              1003.55,
+              976.41
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            821.08,
+            1071
+          ],
+          "inland_shoreward_trace": [
+            [
+              918.02,
+              1054.04
+            ],
+            [
+              893.6,
+              1058.32
+            ],
+            [
+              862.19,
+              1063.81
+            ],
+            [
+              830.78,
+              1069.31
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-004",
+      "land_uid": "ORB-L-004",
+      "land_polygon_id": "southern-ocean-east-ridge",
+      "region": "SOUTH",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        1139.39,
+        1037.78
+      ],
+      "interior_clearance_svg_units": 55.15,
+      "qualitative_ridge_axis": [
+        [
+          1066.33,
+          995.6
+        ],
+        [
+          1089.71,
+          1009.1
+        ],
+        [
+          1113.09,
+          1022.6
+        ],
+        [
+          1136.47,
+          1036.1
+        ],
+        [
+          1159.85,
+          1049.59
+        ],
+        [
+          1183.23,
+          1063.09
+        ],
+        [
+          1206.61,
+          1076.59
+        ]
+      ],
+      "axis_orientation_drawing_deg": 30,
+      "axis_extent_drawing_units": 161.97,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1239.11,
+            1052.65
+          ],
+          "inland_shoreward_trace": [
+            [
+              1139.39,
+              1037.78
+            ],
+            [
+              1164.52,
+              1041.53
+            ],
+            [
+              1196.83,
+              1046.35
+            ],
+            [
+              1229.14,
+              1051.16
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1059.02,
+            984.49
+          ],
+          "inland_shoreward_trace": [
+            [
+              1139.39,
+              1037.78
+            ],
+            [
+              1119.14,
+              1024.35
+            ],
+            [
+              1093.1,
+              1007.09
+            ],
+            [
+              1067.06,
+              989.82
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1064.49,
+            1066.19
+          ],
+          "inland_shoreward_trace": [
+            [
+              1139.39,
+              1037.78
+            ],
+            [
+              1120.52,
+              1044.94
+            ],
+            [
+              1096.25,
+              1054.15
+            ],
+            [
+              1071.98,
+              1063.35
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-005",
+      "land_uid": "ORB-L-005",
+      "land_polygon_id": "southwestern-fractured-northern-block",
+      "region": "SW",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        363.64,
+        860.72
+      ],
+      "interior_clearance_svg_units": 53.63,
+      "qualitative_ridge_axis": [
+        [
+          278.22,
+          860.72
+        ],
+        [
+          323.78,
+          860.72
+        ],
+        [
+          363.64,
+          860.72
+        ],
+        [
+          409.19,
+          860.72
+        ],
+        [
+          454.75,
+          860.72
+        ],
+        [
+          494.61,
+          860.72
+        ],
+        [
+          540.16,
+          860.72
+        ]
+      ],
+      "axis_orientation_drawing_deg": 0,
+      "axis_extent_drawing_units": 261.94,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            576.93,
+            937.53
+          ],
+          "inland_shoreward_trace": [
+            [
+              363.64,
+              860.72
+            ],
+            [
+              417.39,
+              880.07
+            ],
+            [
+              486.49,
+              904.96
+            ],
+            [
+              555.6,
+              929.85
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            266.81,
+            849.11
+          ],
+          "inland_shoreward_trace": [
+            [
+              363.64,
+              860.72
+            ],
+            [
+              339.24,
+              857.79
+            ],
+            [
+              307.87,
+              854.03
+            ],
+            [
+              276.5,
+              850.27
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            427.16,
+            798.97
+          ],
+          "inland_shoreward_trace": [
+            [
+              363.64,
+              860.72
+            ],
+            [
+              379.64,
+              845.16
+            ],
+            [
+              400.22,
+              825.15
+            ],
+            [
+              420.8,
+              805.15
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-006",
+      "land_uid": "ORB-L-006",
+      "land_polygon_id": "southwest-southern-west-subcontinent",
+      "region": "SW",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        302.26,
+        979.3
+      ],
+      "interior_clearance_svg_units": 35.32,
+      "qualitative_ridge_axis": [
+        [
+          262.93,
+          911.18
+        ],
+        [
+          275.03,
+          932.14
+        ],
+        [
+          288.64,
+          955.72
+        ],
+        [
+          300.75,
+          976.68
+        ],
+        [
+          312.85,
+          997.64
+        ],
+        [
+          326.46,
+          1021.22
+        ],
+        [
+          338.56,
+          1042.18
+        ]
+      ],
+      "axis_orientation_drawing_deg": 60,
+      "axis_extent_drawing_units": 151.26,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            348.51,
+            1069.32
+          ],
+          "inland_shoreward_trace": [
+            [
+              302.26,
+              979.3
+            ],
+            [
+              313.91,
+              1001.99
+            ],
+            [
+              328.9,
+              1031.15
+            ],
+            [
+              343.89,
+              1060.32
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            265.76,
+            904.93
+          ],
+          "inland_shoreward_trace": [
+            [
+              302.26,
+              979.3
+            ],
+            [
+              293.06,
+              960.56
+            ],
+            [
+              281.23,
+              936.46
+            ],
+            [
+              269.41,
+              912.37
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            356.71,
+            977.13
+          ],
+          "inland_shoreward_trace": [
+            [
+              302.26,
+              979.3
+            ],
+            [
+              315.98,
+              978.75
+            ],
+            [
+              333.62,
+              978.05
+            ],
+            [
+              351.27,
+              977.34
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-007",
+      "land_uid": "ORB-L-007",
+      "land_polygon_id": "southwest-southern-east-subcontinent",
+      "region": "SW",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        434.64,
+        1006.81
+      ],
+      "interior_clearance_svg_units": 31.77,
+      "qualitative_ridge_axis": [
+        [
+          364.56,
+          1006.81
+        ],
+        [
+          387.09,
+          1006.81
+        ],
+        [
+          409.61,
+          1006.81
+        ],
+        [
+          432.14,
+          1006.81
+        ],
+        [
+          452.16,
+          1006.81
+        ],
+        [
+          474.68,
+          1006.81
+        ],
+        [
+          497.21,
+          1006.81
+        ]
+      ],
+      "axis_orientation_drawing_deg": 0,
+      "axis_extent_drawing_units": 132.65,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            516.85,
+            983.98
+          ],
+          "inland_shoreward_trace": [
+            [
+              434.64,
+              1006.81
+            ],
+            [
+              455.36,
+              1001.06
+            ],
+            [
+              481.99,
+              993.66
+            ],
+            [
+              508.63,
+              986.27
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            354.93,
+            1036.25
+          ],
+          "inland_shoreward_trace": [
+            [
+              434.64,
+              1006.81
+            ],
+            [
+              414.55,
+              1014.23
+            ],
+            [
+              388.72,
+              1023.77
+            ],
+            [
+              362.9,
+              1033.3
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            477.13,
+            1043.9
+          ],
+          "inland_shoreward_trace": [
+            [
+              434.64,
+              1006.81
+            ],
+            [
+              445.35,
+              1016.16
+            ],
+            [
+              459.11,
+              1028.18
+            ],
+            [
+              472.88,
+              1040.19
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-008",
+      "land_uid": "ORB-L-008",
+      "land_polygon_id": "b14-ne-001",
+      "region": "NE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        1557.73,
+        134.85
+      ],
+      "interior_clearance_svg_units": 49.03,
+      "qualitative_ridge_axis": [
+        [
+          1642.45,
+          85.93
+        ],
+        [
+          1610.18,
+          104.57
+        ],
+        [
+          1581.93,
+          120.87
+        ],
+        [
+          1549.66,
+          139.51
+        ],
+        [
+          1517.38,
+          158.14
+        ],
+        [
+          1489.14,
+          174.45
+        ],
+        [
+          1456.86,
+          193.08
+        ]
+      ],
+      "axis_orientation_drawing_deg": 150,
+      "axis_extent_drawing_units": 214.3,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1712.87,
+            72.34
+          ],
+          "inland_shoreward_trace": [
+            [
+              1557.73,
+              134.85
+            ],
+            [
+              1596.82,
+              119.1
+            ],
+            [
+              1647.09,
+              98.84
+            ],
+            [
+              1697.36,
+              78.59
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1456.62,
+            213.15
+          ],
+          "inland_shoreward_trace": [
+            [
+              1557.73,
+              134.85
+            ],
+            [
+              1532.25,
+              154.58
+            ],
+            [
+              1499.49,
+              179.95
+            ],
+            [
+              1466.73,
+              205.32
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1577.93,
+            52.57
+          ],
+          "inland_shoreward_trace": [
+            [
+              1557.73,
+              134.85
+            ],
+            [
+              1562.82,
+              114.11
+            ],
+            [
+              1569.37,
+              87.46
+            ],
+            [
+              1575.91,
+              60.8
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-009",
+      "land_uid": "ORB-L-009",
+      "land_polygon_id": "b14-ne-002",
+      "region": "NE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        1861.57,
+        144.38
+      ],
+      "interior_clearance_svg_units": 43.24,
+      "qualitative_ridge_axis": [
+        [
+          1795.54,
+          106.25
+        ],
+        [
+          1820.3,
+          120.55
+        ],
+        [
+          1845.07,
+          134.85
+        ],
+        [
+          1869.83,
+          149.14
+        ],
+        [
+          1894.59,
+          163.44
+        ],
+        [
+          1919.35,
+          177.74
+        ],
+        [
+          1944.11,
+          192.03
+        ]
+      ],
+      "axis_orientation_drawing_deg": 30,
+      "axis_extent_drawing_units": 171.56,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1957.37,
+            243.72
+          ],
+          "inland_shoreward_trace": [
+            [
+              1861.57,
+              144.38
+            ],
+            [
+              1885.71,
+              169.41
+            ],
+            [
+              1916.75,
+              201.6
+            ],
+            [
+              1947.79,
+              233.79
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1781.01,
+            174.39
+          ],
+          "inland_shoreward_trace": [
+            [
+              1861.57,
+              144.38
+            ],
+            [
+              1841.27,
+              151.94
+            ],
+            [
+              1815.17,
+              161.66
+            ],
+            [
+              1789.06,
+              171.39
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1794.14,
+            105
+          ],
+          "inland_shoreward_trace": [
+            [
+              1861.57,
+              144.38
+            ],
+            [
+              1844.58,
+              134.45
+            ],
+            [
+              1822.74,
+              121.69
+            ],
+            [
+              1800.89,
+              108.93
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-010",
+      "land_uid": "ORB-L-010",
+      "land_polygon_id": "b14-se-001",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        1659.51,
+        567.09
+      ],
+      "interior_clearance_svg_units": 51.49,
+      "qualitative_ridge_axis": [
+        [
+          1582.97,
+          567.09
+        ],
+        [
+          1619.42,
+          567.09
+        ],
+        [
+          1655.86,
+          567.09
+        ],
+        [
+          1695.95,
+          567.09
+        ],
+        [
+          1732.39,
+          567.09
+        ],
+        [
+          1768.84,
+          567.09
+        ],
+        [
+          1805.28,
+          567.09
+        ]
+      ],
+      "axis_orientation_drawing_deg": 0,
+      "axis_extent_drawing_units": 222.3,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1831.16,
+            588.19
+          ],
+          "inland_shoreward_trace": [
+            [
+              1659.51,
+              567.09
+            ],
+            [
+              1702.76,
+              572.41
+            ],
+            [
+              1758.38,
+              579.24
+            ],
+            [
+              1813.99,
+              586.08
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1565.28,
+            615.51
+          ],
+          "inland_shoreward_trace": [
+            [
+              1659.51,
+              567.09
+            ],
+            [
+              1635.76,
+              579.3
+            ],
+            [
+              1605.23,
+              594.98
+            ],
+            [
+              1574.7,
+              610.67
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1716.77,
+            509.98
+          ],
+          "inland_shoreward_trace": [
+            [
+              1659.51,
+              567.09
+            ],
+            [
+              1673.94,
+              552.7
+            ],
+            [
+              1692.49,
+              534.2
+            ],
+            [
+              1711.05,
+              515.7
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-011",
+      "land_uid": "ORB-L-011",
+      "land_polygon_id": "b14-se-002",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        1600.89,
+        801
+      ],
+      "interior_clearance_svg_units": 47.76,
+      "qualitative_ridge_axis": [
+        [
+          1600.89,
+          738.82
+        ],
+        [
+          1600.89,
+          767.84
+        ],
+        [
+          1600.89,
+          796.85
+        ],
+        [
+          1600.89,
+          825.87
+        ],
+        [
+          1600.89,
+          850.74
+        ],
+        [
+          1600.89,
+          879.76
+        ],
+        [
+          1600.89,
+          908.77
+        ]
+      ],
+      "axis_orientation_drawing_deg": 90,
+      "axis_extent_drawing_units": 169.95,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1608.83,
+            917.28
+          ],
+          "inland_shoreward_trace": [
+            [
+              1600.89,
+              801
+            ],
+            [
+              1602.89,
+              830.3
+            ],
+            [
+              1605.46,
+              867.98
+            ],
+            [
+              1608.04,
+              905.65
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1528.8,
+            766.99
+          ],
+          "inland_shoreward_trace": [
+            [
+              1600.89,
+              801
+            ],
+            [
+              1582.72,
+              792.43
+            ],
+            [
+              1559.37,
+              781.41
+            ],
+            [
+              1536.01,
+              770.39
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1674.7,
+            821.31
+          ],
+          "inland_shoreward_trace": [
+            [
+              1600.89,
+              801
+            ],
+            [
+              1619.49,
+              806.12
+            ],
+            [
+              1643.4,
+              812.7
+            ],
+            [
+              1667.32,
+              819.28
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-012",
+      "land_uid": "ORB-L-012",
+      "land_polygon_id": "b14-se-003",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        1755.83,
+        830.72
+      ],
+      "interior_clearance_svg_units": 50.05,
+      "qualitative_ridge_axis": [
+        [
+          1703.03,
+          830.72
+        ],
+        [
+          1731.46,
+          830.72
+        ],
+        [
+          1759.89,
+          830.72
+        ],
+        [
+          1792.38,
+          830.72
+        ],
+        [
+          1820.81,
+          830.72
+        ],
+        [
+          1849.25,
+          830.72
+        ],
+        [
+          1877.68,
+          830.72
+        ]
+      ],
+      "axis_orientation_drawing_deg": 0,
+      "axis_extent_drawing_units": 174.65,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1884.13,
+            824.79
+          ],
+          "inland_shoreward_trace": [
+            [
+              1755.83,
+              830.72
+            ],
+            [
+              1788.16,
+              829.23
+            ],
+            [
+              1829.73,
+              827.31
+            ],
+            [
+              1871.3,
+              825.39
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1685.92,
+            755.54
+          ],
+          "inland_shoreward_trace": [
+            [
+              1755.83,
+              830.72
+            ],
+            [
+              1738.21,
+              811.77
+            ],
+            [
+              1715.56,
+              787.42
+            ],
+            [
+              1692.91,
+              763.06
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1810.96,
+            755.71
+          ],
+          "inland_shoreward_trace": [
+            [
+              1755.83,
+              830.72
+            ],
+            [
+              1769.72,
+              811.82
+            ],
+            [
+              1787.59,
+              787.52
+            ],
+            [
+              1805.45,
+              763.21
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-013",
+      "land_uid": "ORB-L-013",
+      "land_polygon_id": "b14-se-004",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        1949,
+        884.18
+      ],
+      "interior_clearance_svg_units": 37.85,
+      "qualitative_ridge_axis": [
+        [
+          1899.72,
+          884.18
+        ],
+        [
+          1924.36,
+          884.18
+        ],
+        [
+          1944.89,
+          884.18
+        ],
+        [
+          1969.53,
+          884.18
+        ],
+        [
+          1994.16,
+          884.18
+        ],
+        [
+          2014.7,
+          884.18
+        ],
+        [
+          2039.33,
+          884.18
+        ]
+      ],
+      "axis_orientation_drawing_deg": 0,
+      "axis_extent_drawing_units": 139.61,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            2042.65,
+            889.95
+          ],
+          "inland_shoreward_trace": [
+            [
+              1949,
+              884.18
+            ],
+            [
+              1972.6,
+              885.63
+            ],
+            [
+              2002.94,
+              887.5
+            ],
+            [
+              2033.29,
+              889.37
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1897.18,
+            811.82
+          ],
+          "inland_shoreward_trace": [
+            [
+              1949,
+              884.18
+            ],
+            [
+              1935.94,
+              865.94
+            ],
+            [
+              1919.15,
+              842.5
+            ],
+            [
+              1902.37,
+              819.05
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1915.3,
+            957.8
+          ],
+          "inland_shoreward_trace": [
+            [
+              1949,
+              884.18
+            ],
+            [
+              1940.5,
+              902.73
+            ],
+            [
+              1929.59,
+              926.58
+            ],
+            [
+              1918.67,
+              950.43
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-014",
+      "land_uid": "ORB-L-014",
+      "land_polygon_id": "b14-se-005",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        2172.39,
+        775.3
+      ],
+      "interior_clearance_svg_units": 33.97,
+      "qualitative_ridge_axis": [
+        [
+          2172.39,
+          689.04
+        ],
+        [
+          2172.39,
+          709.95
+        ],
+        [
+          2172.39,
+          733.48
+        ],
+        [
+          2172.39,
+          754.39
+        ],
+        [
+          2172.39,
+          775.3
+        ],
+        [
+          2172.39,
+          798.83
+        ],
+        [
+          2172.39,
+          819.74
+        ]
+      ],
+      "axis_orientation_drawing_deg": 90,
+      "axis_extent_drawing_units": 130.71,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            2173.18,
+            687.3
+          ],
+          "inland_shoreward_trace": [
+            [
+              2172.39,
+              775.3
+            ],
+            [
+              2172.59,
+              753.13
+            ],
+            [
+              2172.84,
+              724.62
+            ],
+            [
+              2173.1,
+              696.1
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            2226.06,
+            794.02
+          ],
+          "inland_shoreward_trace": [
+            [
+              2172.39,
+              775.3
+            ],
+            [
+              2185.92,
+              780.02
+            ],
+            [
+              2203.3,
+              786.09
+            ],
+            [
+              2220.69,
+              792.15
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            2156.15,
+            823.11
+          ],
+          "inland_shoreward_trace": [
+            [
+              2172.39,
+              775.3
+            ],
+            [
+              2168.3,
+              787.35
+            ],
+            [
+              2163.03,
+              802.84
+            ],
+            [
+              2157.77,
+              818.32
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-015",
+      "land_uid": "ORB-L-015",
+      "land_polygon_id": "b14-se-006",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        1613.45,
+        990.76
+      ],
+      "interior_clearance_svg_units": 36.9,
+      "qualitative_ridge_axis": [
+        [
+          1526.13,
+          990.76
+        ],
+        [
+          1554.2,
+          990.76
+        ],
+        [
+          1582.27,
+          990.76
+        ],
+        [
+          1613.45,
+          990.76
+        ],
+        [
+          1641.52,
+          990.76
+        ],
+        [
+          1669.59,
+          990.76
+        ],
+        [
+          1697.65,
+          990.76
+        ]
+      ],
+      "axis_orientation_drawing_deg": 0,
+      "axis_extent_drawing_units": 171.52,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1707.85,
+            955.09
+          ],
+          "inland_shoreward_trace": [
+            [
+              1613.45,
+              990.76
+            ],
+            [
+              1637.24,
+              981.77
+            ],
+            [
+              1667.82,
+              970.21
+            ],
+            [
+              1698.41,
+              958.66
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1518.3,
+            975.96
+          ],
+          "inland_shoreward_trace": [
+            [
+              1613.45,
+              990.76
+            ],
+            [
+              1589.47,
+              987.03
+            ],
+            [
+              1558.64,
+              982.23
+            ],
+            [
+              1527.81,
+              977.44
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1579.57,
+            1048.19
+          ],
+          "inland_shoreward_trace": [
+            [
+              1613.45,
+              990.76
+            ],
+            [
+              1604.91,
+              1005.23
+            ],
+            [
+              1593.93,
+              1023.84
+            ],
+            [
+              1582.96,
+              1042.44
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-016",
+      "land_uid": "ORB-L-016",
+      "land_polygon_id": "b14-se-007",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "major-landmass-study",
+      "interior_highland_seed": [
+        1905.71,
+        661.04
+      ],
+      "interior_clearance_svg_units": 31.53,
+      "qualitative_ridge_axis": [
+        [
+          1905.71,
+          607.78
+        ],
+        [
+          1905.71,
+          627.15
+        ],
+        [
+          1905.71,
+          644.09
+        ],
+        [
+          1905.71,
+          663.46
+        ],
+        [
+          1905.71,
+          680.4
+        ],
+        [
+          1905.71,
+          699.76
+        ],
+        [
+          1905.71,
+          716.71
+        ]
+      ],
+      "axis_orientation_drawing_deg": 90,
+      "axis_extent_drawing_units": 108.92,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1955.9,
+            692.67
+          ],
+          "inland_shoreward_trace": [
+            [
+              1905.71,
+              661.04
+            ],
+            [
+              1918.36,
+              669.01
+            ],
+            [
+              1934.62,
+              679.26
+            ],
+            [
+              1950.88,
+              689.51
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1913.62,
+            605.2
+          ],
+          "inland_shoreward_trace": [
+            [
+              1905.71,
+              661.04
+            ],
+            [
+              1907.7,
+              646.96
+            ],
+            [
+              1910.27,
+              628.87
+            ],
+            [
+              1912.83,
+              610.78
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1904.05,
+            717.24
+          ],
+          "inland_shoreward_trace": [
+            [
+              1905.71,
+              661.04
+            ],
+            [
+              1905.29,
+              675.2
+            ],
+            [
+              1904.75,
+              693.41
+            ],
+            [
+              1904.21,
+              711.62
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-017",
+      "land_uid": "ORB-L-046",
+      "land_polygon_id": "b14-ne-006",
+      "region": "NE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "large-island-study",
+      "interior_highland_seed": [
+        1698.56,
+        274.56
+      ],
+      "interior_clearance_svg_units": 14.97,
+      "qualitative_ridge_axis": [
+        [
+          1641.37,
+          274.56
+        ],
+        [
+          1657.26,
+          274.56
+        ],
+        [
+          1673.14,
+          274.56
+        ],
+        [
+          1689.03,
+          274.56
+        ],
+        [
+          1704.92,
+          274.56
+        ],
+        [
+          1720.8,
+          274.56
+        ],
+        [
+          1736.69,
+          274.56
+        ]
+      ],
+      "axis_orientation_drawing_deg": 0,
+      "axis_extent_drawing_units": 95.32,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1625.28,
+            287.1
+          ],
+          "inland_shoreward_trace": [
+            [
+              1698.56,
+              274.56
+            ],
+            [
+              1680.1,
+              277.72
+            ],
+            [
+              1656.35,
+              281.78
+            ],
+            [
+              1632.61,
+              285.85
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1748.48,
+            264.54
+          ],
+          "inland_shoreward_trace": [
+            [
+              1698.56,
+              274.56
+            ],
+            [
+              1711.14,
+              272.03
+            ],
+            [
+              1727.31,
+              268.79
+            ],
+            [
+              1743.48,
+              265.54
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1687.73,
+            293.81
+          ],
+          "inland_shoreward_trace": [
+            [
+              1698.56,
+              274.56
+            ],
+            [
+              1695.83,
+              279.41
+            ],
+            [
+              1692.33,
+              285.65
+            ],
+            [
+              1688.82,
+              291.89
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-018",
+      "land_uid": "ORB-L-047",
+      "land_polygon_id": "b14-ne-007",
+      "region": "NE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "large-island-study",
+      "interior_highland_seed": [
+        1661.36,
+        353
+      ],
+      "interior_clearance_svg_units": 20.19,
+      "qualitative_ridge_axis": [
+        [
+          1637.95,
+          312.45
+        ],
+        [
+          1644.25,
+          323.36
+        ],
+        [
+          1650.56,
+          334.28
+        ],
+        [
+          1656.86,
+          345.2
+        ],
+        [
+          1662.26,
+          354.56
+        ],
+        [
+          1668.57,
+          365.48
+        ],
+        [
+          1674.87,
+          376.39
+        ]
+      ],
+      "axis_orientation_drawing_deg": 60,
+      "axis_extent_drawing_units": 73.84,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1621.71,
+            310.3
+          ],
+          "inland_shoreward_trace": [
+            [
+              1661.36,
+              353
+            ],
+            [
+              1651.37,
+              342.24
+            ],
+            [
+              1638.52,
+              328.4
+            ],
+            [
+              1625.67,
+              314.57
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1666.98,
+            389.45
+          ],
+          "inland_shoreward_trace": [
+            [
+              1661.36,
+              353
+            ],
+            [
+              1662.78,
+              362.18
+            ],
+            [
+              1664.6,
+              373.99
+            ],
+            [
+              1666.42,
+              385.8
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1631.87,
+            355.3
+          ],
+          "inland_shoreward_trace": [
+            [
+              1661.36,
+              353
+            ],
+            [
+              1653.93,
+              353.58
+            ],
+            [
+              1644.38,
+              354.33
+            ],
+            [
+              1634.82,
+              355.07
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-019",
+      "land_uid": "ORB-L-048",
+      "land_polygon_id": "b14-ne-008",
+      "region": "NE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "large-island-study",
+      "interior_highland_seed": [
+        1662.29,
+        222.85
+      ],
+      "interior_clearance_svg_units": 21.6,
+      "qualitative_ridge_axis": [
+        [
+          1687.19,
+          179.72
+        ],
+        [
+          1680.97,
+          190.5
+        ],
+        [
+          1675.63,
+          199.74
+        ],
+        [
+          1669.41,
+          210.53
+        ],
+        [
+          1663.18,
+          221.31
+        ],
+        [
+          1657.85,
+          230.55
+        ],
+        [
+          1651.62,
+          241.33
+        ]
+      ],
+      "axis_orientation_drawing_deg": 120,
+      "axis_extent_drawing_units": 71.14,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1676.45,
+            166.91
+          ],
+          "inland_shoreward_trace": [
+            [
+              1662.29,
+              222.85
+            ],
+            [
+              1665.86,
+              208.75
+            ],
+            [
+              1670.45,
+              190.63
+            ],
+            [
+              1675.03,
+              172.5
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1697.05,
+            206.63
+          ],
+          "inland_shoreward_trace": [
+            [
+              1662.29,
+              222.85
+            ],
+            [
+              1671.05,
+              218.76
+            ],
+            [
+              1682.31,
+              213.51
+            ],
+            [
+              1693.58,
+              208.26
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1673.54,
+            252.57
+          ],
+          "inland_shoreward_trace": [
+            [
+              1662.29,
+              222.85
+            ],
+            [
+              1665.13,
+              230.34
+            ],
+            [
+              1668.77,
+              239.97
+            ],
+            [
+              1672.41,
+              249.6
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-020",
+      "land_uid": "ORB-L-063",
+      "land_polygon_id": "b14-se-011",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "large-island-study",
+      "interior_highland_seed": [
+        2109.68,
+        646.8
+      ],
+      "interior_clearance_svg_units": 31.05,
+      "qualitative_ridge_axis": [
+        [
+          2149.48,
+          577.86
+        ],
+        [
+          2138.63,
+          596.66
+        ],
+        [
+          2127.77,
+          615.47
+        ],
+        [
+          2116.92,
+          634.27
+        ],
+        [
+          2106.06,
+          653.07
+        ],
+        [
+          2095.21,
+          671.87
+        ],
+        [
+          2084.35,
+          690.67
+        ]
+      ],
+      "axis_orientation_drawing_deg": 120,
+      "axis_extent_drawing_units": 130.26,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            2136.78,
+            563.42
+          ],
+          "inland_shoreward_trace": [
+            [
+              2109.68,
+              646.8
+            ],
+            [
+              2116.51,
+              625.79
+            ],
+            [
+              2125.29,
+              598.78
+            ],
+            [
+              2134.07,
+              571.76
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            2072.27,
+            691.96
+          ],
+          "inland_shoreward_trace": [
+            [
+              2109.68,
+              646.8
+            ],
+            [
+              2100.25,
+              658.18
+            ],
+            [
+              2088.13,
+              672.81
+            ],
+            [
+              2076.01,
+              687.45
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            2145.89,
+            633.71
+          ],
+          "inland_shoreward_trace": [
+            [
+              2109.68,
+              646.8
+            ],
+            [
+              2118.8,
+              643.5
+            ],
+            [
+              2130.54,
+              639.26
+            ],
+            [
+              2142.27,
+              635.02
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-021",
+      "land_uid": "ORB-L-066",
+      "land_polygon_id": "b14-se-014",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "large-island-study",
+      "interior_highland_seed": [
+        1794.37,
+        678.46
+      ],
+      "interior_clearance_svg_units": 31.03,
+      "qualitative_ridge_axis": [
+        [
+          1825.19,
+          660.66
+        ],
+        [
+          1809.78,
+          669.56
+        ],
+        [
+          1794.37,
+          678.46
+        ],
+        [
+          1778.96,
+          687.35
+        ],
+        [
+          1763.55,
+          696.25
+        ],
+        [
+          1748.14,
+          705.15
+        ],
+        [
+          1732.73,
+          714.04
+        ]
+      ],
+      "axis_orientation_drawing_deg": 150,
+      "axis_extent_drawing_units": 106.76,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1727.2,
+            708.71
+          ],
+          "inland_shoreward_trace": [
+            [
+              1794.37,
+              678.46
+            ],
+            [
+              1777.44,
+              686.08
+            ],
+            [
+              1755.68,
+              695.88
+            ],
+            [
+              1733.92,
+              705.68
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1841.7,
+            672.07
+          ],
+          "inland_shoreward_trace": [
+            [
+              1794.37,
+              678.46
+            ],
+            [
+              1806.29,
+              676.85
+            ],
+            [
+              1821.63,
+              674.78
+            ],
+            [
+              1836.97,
+              672.71
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1813.9,
+            644.42
+          ],
+          "inland_shoreward_trace": [
+            [
+              1794.37,
+              678.46
+            ],
+            [
+              1799.29,
+              669.88
+            ],
+            [
+              1805.62,
+              658.85
+            ],
+            [
+              1811.95,
+              647.82
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-022",
+      "land_uid": "ORB-L-069",
+      "land_polygon_id": "b14-se-018",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "large-island-study",
+      "interior_highland_seed": [
+        2017.59,
+        530.35
+      ],
+      "interior_clearance_svg_units": 19.26,
+      "qualitative_ridge_axis": [
+        [
+          1998.27,
+          496.89
+        ],
+        [
+          2006.32,
+          510.83
+        ],
+        [
+          2013.57,
+          523.38
+        ],
+        [
+          2021.62,
+          537.32
+        ],
+        [
+          2028.86,
+          549.87
+        ],
+        [
+          2036.91,
+          563.81
+        ],
+        [
+          2044.16,
+          576.36
+        ]
+      ],
+      "axis_orientation_drawing_deg": 60,
+      "axis_extent_drawing_units": 91.77,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            2038.44,
+            605.88
+          ],
+          "inland_shoreward_trace": [
+            [
+              2017.59,
+              530.35
+            ],
+            [
+              2022.85,
+              549.38
+            ],
+            [
+              2029.6,
+              573.86
+            ],
+            [
+              2036.35,
+              598.33
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1996.93,
+            496.71
+          ],
+          "inland_shoreward_trace": [
+            [
+              2017.59,
+              530.35
+            ],
+            [
+              2012.39,
+              521.87
+            ],
+            [
+              2005.69,
+              510.98
+            ],
+            [
+              1999,
+              500.08
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1993.8,
+            528.04
+          ],
+          "inland_shoreward_trace": [
+            [
+              2017.59,
+              530.35
+            ],
+            [
+              2011.6,
+              529.77
+            ],
+            [
+              2003.89,
+              529.02
+            ],
+            [
+              1996.18,
+              528.27
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-023",
+      "land_uid": "ORB-L-071",
+      "land_polygon_id": "b14-se-020",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "large-island-study",
+      "interior_highland_seed": [
+        2017.71,
+        765.37
+      ],
+      "interior_clearance_svg_units": 36.61,
+      "qualitative_ridge_axis": [
+        [
+          1989.59,
+          716.66
+        ],
+        [
+          1999.82,
+          734.38
+        ],
+        [
+          2010.04,
+          752.09
+        ],
+        [
+          2020.27,
+          769.8
+        ],
+        [
+          2029.22,
+          785.3
+        ],
+        [
+          2039.45,
+          803.01
+        ],
+        [
+          2049.67,
+          820.72
+        ]
+      ],
+      "axis_orientation_drawing_deg": 60,
+      "axis_extent_drawing_units": 120.16,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            2045.96,
+            827.24
+          ],
+          "inland_shoreward_trace": [
+            [
+              2017.71,
+              765.37
+            ],
+            [
+              2024.83,
+              780.96
+            ],
+            [
+              2033.99,
+              801.01
+            ],
+            [
+              2043.14,
+              821.05
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1971.23,
+            722.31
+          ],
+          "inland_shoreward_trace": [
+            [
+              2017.71,
+              765.37
+            ],
+            [
+              2006,
+              754.52
+            ],
+            [
+              1990.94,
+              740.57
+            ],
+            [
+              1975.88,
+              726.62
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            2021.52,
+            716.13
+          ],
+          "inland_shoreward_trace": [
+            [
+              2017.71,
+              765.37
+            ],
+            [
+              2018.67,
+              752.96
+            ],
+            [
+              2019.91,
+              737.01
+            ],
+            [
+              2021.14,
+              721.05
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-024",
+      "land_uid": "ORB-L-081",
+      "land_polygon_id": "b14-se-031",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "large-island-study",
+      "interior_highland_seed": [
+        2289.39,
+        763.79
+      ],
+      "interior_clearance_svg_units": 17.61,
+      "qualitative_ridge_axis": [
+        [
+          2289.39,
+          721.58
+        ],
+        [
+          2289.39,
+          736.93
+        ],
+        [
+          2289.39,
+          752.28
+        ],
+        [
+          2289.39,
+          768.91
+        ],
+        [
+          2289.39,
+          784.26
+        ],
+        [
+          2289.39,
+          799.61
+        ],
+        [
+          2289.39,
+          814.96
+        ]
+      ],
+      "axis_orientation_drawing_deg": 90,
+      "axis_extent_drawing_units": 93.38,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            2268.83,
+            833.16
+          ],
+          "inland_shoreward_trace": [
+            [
+              2289.39,
+              763.79
+            ],
+            [
+              2284.21,
+              781.27
+            ],
+            [
+              2277.55,
+              803.75
+            ],
+            [
+              2270.89,
+              826.22
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            2301.69,
+            706.46
+          ],
+          "inland_shoreward_trace": [
+            [
+              2289.39,
+              763.79
+            ],
+            [
+              2292.49,
+              749.35
+            ],
+            [
+              2296.47,
+              730.77
+            ],
+            [
+              2300.46,
+              712.19
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            2273.33,
+            745.11
+          ],
+          "inland_shoreward_trace": [
+            [
+              2289.39,
+              763.79
+            ],
+            [
+              2285.34,
+              759.09
+            ],
+            [
+              2280.14,
+              753.03
+            ],
+            [
+              2274.94,
+              746.98
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-025",
+      "land_uid": "ORB-L-083",
+      "land_polygon_id": "b14-se-034",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "large-island-study",
+      "interior_highland_seed": [
+        1856.8,
+        583.24
+      ],
+      "interior_clearance_svg_units": 18.08,
+      "qualitative_ridge_axis": [
+        [
+          1881.04,
+          541.26
+        ],
+        [
+          1873.69,
+          553.98
+        ],
+        [
+          1866.34,
+          566.7
+        ],
+        [
+          1859,
+          579.42
+        ],
+        [
+          1851.65,
+          592.15
+        ],
+        [
+          1844.31,
+          604.87
+        ],
+        [
+          1836.96,
+          617.59
+        ]
+      ],
+      "axis_orientation_drawing_deg": 120,
+      "axis_extent_drawing_units": 88.15,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            1880.06,
+            502.57
+          ],
+          "inland_shoreward_trace": [
+            [
+              1856.8,
+              583.24
+            ],
+            [
+              1862.66,
+              562.91
+            ],
+            [
+              1870.2,
+              536.78
+            ],
+            [
+              1877.73,
+              510.64
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            1837.63,
+            619.22
+          ],
+          "inland_shoreward_trace": [
+            [
+              1856.8,
+              583.24
+            ],
+            [
+              1851.97,
+              592.31
+            ],
+            [
+              1845.76,
+              603.96
+            ],
+            [
+              1839.55,
+              615.62
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            1877.11,
+            575.72
+          ],
+          "inland_shoreward_trace": [
+            [
+              1856.8,
+              583.24
+            ],
+            [
+              1861.91,
+              581.34
+            ],
+            [
+              1868.5,
+              578.91
+            ],
+            [
+              1875.08,
+              576.47
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    },
+    {
+      "study_id": "B17-PHYS-026",
+      "land_uid": "ORB-L-098",
+      "land_polygon_id": "b14-se-052",
+      "region": "SE",
+      "provenance": "model generated from B16 polygon only",
+      "area_class": "large-island-study",
+      "interior_highland_seed": [
+        2158.6,
+        492.27
+      ],
+      "interior_clearance_svg_units": 19.54,
+      "qualitative_ridge_axis": [
+        [
+          2192.8,
+          472.52
+        ],
+        [
+          2175.7,
+          482.4
+        ],
+        [
+          2160.15,
+          491.37
+        ],
+        [
+          2143.05,
+          501.24
+        ],
+        [
+          2127.51,
+          510.22
+        ],
+        [
+          2110.41,
+          520.09
+        ],
+        [
+          2094.87,
+          529.06
+        ]
+      ],
+      "axis_orientation_drawing_deg": 150,
+      "axis_extent_drawing_units": 113.08,
+      "potential_shoreward_sectors": [
+        {
+          "sector_id": 1,
+          "outlet_candidate": [
+            2092.99,
+            528.25
+          ],
+          "inland_shoreward_trace": [
+            [
+              2158.6,
+              492.27
+            ],
+            [
+              2142.07,
+              501.33
+            ],
+            [
+              2120.81,
+              512.99
+            ],
+            [
+              2099.55,
+              524.65
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 2,
+          "outlet_candidate": [
+            2203.21,
+            472.44
+          ],
+          "inland_shoreward_trace": [
+            [
+              2158.6,
+              492.27
+            ],
+            [
+              2169.84,
+              487.27
+            ],
+            [
+              2184.3,
+              480.84
+            ],
+            [
+              2198.75,
+              474.42
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        },
+        {
+          "sector_id": 3,
+          "outlet_candidate": [
+            2164.94,
+            466.18
+          ],
+          "inland_shoreward_trace": [
+            [
+              2158.6,
+              492.27
+            ],
+            [
+              2160.2,
+              485.69
+            ],
+            [
+              2162.25,
+              477.24
+            ],
+            [
+              2164.3,
+              468.79
+            ]
+          ],
+          "validated_inland_trace": true,
+          "interpretation": "possible downslope corridor, NOT a river, not a confirmed drainage basin, no flow rate"
+        }
+      ],
+      "relative_relief_note": "H=potential interior high ground around ridge; L=potential coastward lower belts; exact mountains/valleys remain unassigned.",
+      "crest_altitude_m": null,
+      "river_names": [],
+      "drainage_basin_polygons": [],
+      "mean_annual_precipitation_mm": null,
+      "climate_classification": null,
+      "lithology": null,
+      "coast_type": null,
+      "tectonic_age_mya": null,
+      "settlement_locations": [],
+      "assigned_canonical_nation": null,
+      "status": "cartographic-hypothesis-only",
+      "risk": "ridge line is drawn through interior by shape geometry, not derived from DEM; shoreward arrows indicate candidate paths not actual water flow"
+    }
+  ],
+  "legend": {
+    "ridge_line": "虚线棕：仅依据陆地形状计算的候选内陆高地轴，非正式山脉",
+    "highland_point": "棕圆：远离海岸的研究点，未设实测海拔",
+    "shoreward_arrows": "浅蓝：内陆指向岸边的候选径流扇区，尚未通过坡降验证、不是河流",
+    "edge_outline": "现行B16候选海陆轮廓，非正式经纬海图"
+  },
+  "research_conventions": [
+    "WGS84-like work longitude and latitude not accepted as official coordinates",
+    "Ridge candidate = maximal interior distance and longest interior ray along sampled angles; NOT measured geomorphology",
+    "Potential shoreward corridors = straight interior traces to distinct coastal sectors; NOT rivers or certified divides",
+    "Separate islands have no cross-strait overland flow",
+    "Fields for true altitude, river names, basin area, precipitation, soil, city positions remain null until world canon explicitly determined"
+  ],
+  "references": [
+    {
+      "title": "USGS Watersheds and drainage basins",
+      "url": "https://www.usgs.gov/water-science-school/science/watersheds-and-drainage-basins"
+    },
+    {
+      "title": "USGS Topographic maps",
+      "url": "https://www.usgs.gov/educational-resources/27-ideas-teaching-topographic-maps-0"
+    },
+    {
+      "title": "USGS Watersheds and drainage networks",
+      "url": "https://www.usgs.gov/publications/watersheds-and-drainage-networks"
+    }
+  ]
+}
