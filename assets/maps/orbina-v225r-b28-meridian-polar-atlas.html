@@ -1,0 +1,158 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 B28 · 中央经线与极区轮廓检查</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f2e9;color:#274757;font:15px/1.65 system-ui,"Microsoft YaHei",sans-serif}
+header{padding:31px max(15px,calc((100% - 1220px)/2));background:linear-gradient(120deg,#173d53,#276474);color:#f8f9f3}
+h1{font-size:clamp(27px,3.2vw,41px);line-height:1.3;margin:0 0 9px}header p{max-width:990px;color:#cde6df;margin:0}
+main{max-width:1220px;margin:auto;padding:21px 15px 49px}nav{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:18px}
+nav a{border:1px solid #c6d8d0;background:#fff;color:#2e6978;padding:8px 10px;border-radius:7px;text-decoration:none;font-size:13px}
+.panel{border:1px solid #d2ded6;background:#fffefa;border-radius:12px;padding:18px;margin-bottom:19px}h2{font-size:21px;margin:0 0 12px}
+h3{font-size:17px;margin:12px 0 9px}.controls{display:flex;flex-wrap:wrap;align-items:center;gap:15px;margin:12px 0}
+.controls label{display:flex;align-items:center;gap:8px;font-size:14px}select{background:white;color:#285160;font:inherit;border:1px solid #aec8c1;padding:8px;border-radius:7px}
+input[type=range]{accent-color:#2a8395;max-width:72vw}.switches{display:flex;flex-wrap:wrap;gap:9px;margin:10px 0}
+.switches button{cursor:pointer;font:inherit;padding:8px 12px;color:#2b6778;background:#eaf4ef;border:1px solid #bed3cb;border-radius:7px}
+.switches button.opt{background:#dcf0ec;border:2px solid #368b8f}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 274px;gap:16px}.canvas{border-radius:9px;overflow:hidden;background:#1e5268;border:1px solid #a1bec0}
+canvas{width:100%;height:auto;display:block;touch-action:manipulation}.stats{border-bottom:1px solid #d9e7df;padding:10px 0}
+.stats b{font-size:24px;display:block;font-variant-numeric:tabular-nums}.stats small{font-size:12px;color:#688081}
+.note{font-size:13px;color:#617c80;line-height:1.8}.read{padding:12px;border:1px solid #d0dcd3;background:#eff6ef;border-radius:8px;margin-top:11px;min-height:43px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.card{border:1px solid #d1ddd3;border-radius:9px;background:#f1f7f1;padding:14px}
+.card strong{font-size:22px;display:block;color:#316e81}.card small{color:#69817f}.explain{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.explain div{background:#f2f6f2;border:1px solid #d1ded5;border-radius:9px;padding:12px}
+.explain b{display:block;margin-bottom:7px}.explain p{margin:0;font-size:13px;color:#637b7b}
+footer{text-align:center;padding:18px;color:#748689;font-size:12px}
+@media(max-width:850px){.cols{grid-template-columns:1fr}.cards,.explain{grid-template-columns:1fr}}
+@media(max-width:500px){.panel{padding:12px}.controls label{flex-direction:column;align-items:flex-start}h2{font-size:19px}}
+</style></head><body>
+<header><h1>俄庇娜 · B28 全球接缝与极区轮廓</h1><p>在原有99片候选陆块的格网基础上扫描全部240个相对中央经线切图位置；通过周期性连通性检查，区分画面切断与真正的大陆分离。三档纬度配准和多种全球投影均为研究方案，不修改世界正史。</p></header>
+<main><nav>
+<a href="../images/orbina-v225r-b28-seam-polar-comparison.svg" target="_blank" rel="noopener">B28静态地图与接缝曲线</a>
+<a href="../data/orbina-v225r-b28-meridian-polar-seam-study.json" target="_blank" rel="noopener">全部240档量化数据</a>
+<a href="orbina-v225r-b27-projection-orography-atlas.html">B27全球球面投影</a>
+<a href="orbina-v225r-b26-coast-climate-overlay.html">B26候选海岸图</a>
+<a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank" rel="noopener">百科《海洋地理》</a>
+</nav>
+<section class="panel"><h2>切换地图的左右接缝</h2>
+<div class="controls"><label>相对切图位置 <input id="shift" type="range" min="0" max="239" value="57" step="1"><strong id="shiftValue">第57列</strong></label>
+<label>投影<select id="projection"><option value="plate" selected>普通经纬矩形</option><option value="cea">兰伯特圆柱等面积</option><option value="moll">摩尔威德等面积</option></select></label>
+<label>候选纬度<select id="placement"><option value="N">N · 偏北</option><option value="C" selected>C · 中性</option><option value="S">S · 偏南</option></select></label>
+<label><input id="polar" type="checkbox" checked>绘出候选75°高纬界线</label></div>
+<div class="switches"><button type="button" data-offset="0">原始切图 · 0</button><button type="button" data-offset="57" class="opt">最少穿陆 · 57</button><button type="button" data-offset="40">60°候选</button><button type="button" data-offset="80">120°候选</button><button type="button" data-offset="120">180°候选</button><button type="button" data-offset="180">270°候选</button></div>
+<div class="cols"><div><div class="canvas"><canvas id="map" width="1150" height="620" aria-label="切换相对中央经线的全球候选陆海图"></canvas></div>
+<p id="read" class="read">正在加载B28候选全球陆地……</p></div>
+<aside><h3>当前显示</h3><div id="stats"></div><p class="note">地图左右边界位置只是一种切图选择。所有大陆和岛屿的源文件不发生位移，真实本初子午线尚未确定。</p></aside></div>
+</section>
+<section class="panel"><h2>完整240档接缝评分</h2><div class="canvas"><canvas id="score" width="1150" height="320" aria-label="240个相对接缝位置的连续陆地穿越评分"></canvas></div>
+<p class="note">纵轴为“同一陆地多边形在左右两侧都有格网的行数”，越低意味着画面边缘穿越同一陆块的格网行越少。点击折线图可以选择切图位置；低分不等于源海岸已经得到物理验证。</p></section>
+<section class="panel"><h2>三档候选纬度下的极区陆地</h2><div class="cards" id="polarCards"></div>
+<p class="note">这里的北纬75°和南纬75°仍是候选的球面配准，不代表俄庇娜实际高纬极地范围。现有240×120格网在最北和最南的极端行都没有采样到陆地，这也不意味着可以据此正式确认极点是海洋。</p></section>
+<section class="panel"><h2>哪些事情仍未确定？</h2><div class="explain">
+<div><b>1. 原始矢量海岸</b><p>99片候选轮廓保持原样；在目前分辨率的栅格中只有91片得到采样，其余8片仍在原数据里。</p></div>
+<div><b>2. 球面与大陆的关系</b><p>相对中央经线不等于经度原点，地表形状也可能在极区发生投影压缩。需要更高分辨率矢量投影检查。</p></div>
+<div><b>3. 已确认地理正史</b><p>联合城与人民天国同大陆、内海南口、抵抗者之弧、R1/R2、秦棠在萨瑞拉西北及棠溪独立水系不因切图变化而改变。</p></div></div>
+<p class="note">球面投影的数学性质可参照 <a href="https://www.usgs.gov/publications/map-projections-a-working-manual" target="_blank" rel="noopener">USGS《地图投影工作手册》</a>。B28只是编辑与诊断工具，不添加正式国家坐标或新的地理事实。</p></section>
+</main><footer>ORBINA / V2.25-R-B28 · NONCANON CENTRAL MERIDIAN AND POLAR SILHOUETTE STUDY</footer>
+<script>
+"use strict";
+const $=id=>document.getElementById(id),PI=Math.PI,RAD=PI/180;
+let study=null,sphere=null,owners=null;
+const map=$("map"),ctx=map.getContext("2d"),score=$("score"),sctx=score.getContext("2d");
+const frame={x:34,y:26,w:1082,h:542};
+function guessLat(y,A){return 90-180*y/1200+A*Math.sin(PI*y/1200)}
+function theta(lat){if(Math.abs(lat)>=89.999999)return Math.sign(lat)*PI/2;let t=lat*RAD;for(let n=0;n<35;n++){const div=2+2*Math.cos(2*t);if(div<1e-11)break;const delta=(2*t+Math.sin(2*t)-PI*Math.sin(lat*RAD))/div;t=Math.max(-PI/2,Math.min(PI/2,t-delta));if(Math.abs(delta)<1e-12)break}return t}
+function screenPoint(x,latitude){const proj=$("projection").value,u=x/240;
+if(proj==="plate")return [frame.x+u*frame.w,frame.y+(90-latitude)/180*frame.h];
+if(proj==="cea")return [frame.x+u*frame.w,frame.y+(1-Math.sin(latitude*RAD))/2*frame.h];
+const t=theta(latitude);
+return [frame.x+frame.w*(.5+(u-.5)*Math.cos(t)),frame.y+frame.h*(1-Math.sin(t))/2]}
+function climateShift(){return study.polar_silhouette.scenario_stats[$("placement").value],study?({N:18,C:0,S:-18}[$("placement").value]):0}
+function drawMap(){
+if(!study||!sphere)return;
+const shift=Number($("shift").value),A={N:18,C:0,S:-18}[$("placement").value],projection=$("projection").value;
+ctx.clearRect(0,0,map.width,map.height);ctx.fillStyle="#1c4b63";ctx.fillRect(0,0,map.width,map.height);
+ctx.save();
+if(projection==="moll"){ctx.beginPath();ctx.ellipse(frame.x+frame.w/2,frame.y+frame.h/2,frame.w/2,frame.h/2,0,0,2*PI);ctx.clip()}
+ctx.fillStyle="#286780";ctx.fillRect(frame.x,frame.y,frame.w,frame.h);
+for(let y=0;y<120;y++){
+const north=guessLat(y*10,A),south=guessLat((y+1)*10,A),line=owners[y];
+for(let x=0;x<240;){
+ const id=line[(x+shift)%240];
+ if(id<0){x++;continue}
+ let end=x+1;
+ while(end<240&&line[(end+shift)%240]===id)end++;
+ const a=screenPoint(x,north),b=screenPoint(end,north),c=screenPoint(end,south),d=screenPoint(x,south);
+ ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.lineTo(c[0],c[1]);ctx.lineTo(d[0],d[1]);ctx.closePath();
+ ctx.fillStyle=id<16?(id%2?"#b5c9aa":"#d0d1a8"):(id%2?"#d8c49a":"#c8b88e");
+ ctx.fill();x=end;
+}
+}
+if($("polar").checked){
+ctx.lineWidth=1.6;ctx.strokeStyle="rgba(247,250,246,.82)";ctx.setLineDash([8,7]);
+for(const lat of [-75,75]){
+let first=true;ctx.beginPath();
+for(let x=0;x<=240;x+=2){const a=screenPoint(x,lat);if(first){ctx.moveTo(a[0],a[1]);first=false}else ctx.lineTo(a[0],a[1])}ctx.stroke()
+}
+ctx.setLineDash([]);
+}
+ctx.restore();
+if(projection==="moll"){ctx.beginPath();ctx.ellipse(frame.x+frame.w/2,frame.y+frame.h/2,frame.w/2,frame.h/2,0,0,2*PI);ctx.strokeStyle="#d8ece7";ctx.lineWidth=1.6;ctx.stroke()}
+ctx.font="bold 16px system-ui";ctx.fillStyle="#f5f9ef";ctx.fillText("B16 原始候选陆地 · 切图第"+shift+"列 · 纬度方案"+$("placement").value,26,19);
+ctx.font="13px system-ui";ctx.fillStyle="#cee4e3";ctx.fillText("仅切换显示边界；无官方本初子午线、国家坐标或正式极地大陆",28,map.height-20);
+}
+function drawScores(){
+if(!study)return;const scores=study.metrics_for_all_240_shifts,c=score,OX=49,OY=27,PW=c.width-93,PH=c.height-81,max=80;
+sctx.fillStyle="#204f67";sctx.fillRect(0,0,c.width,c.height);
+for(let n=0;n<=4;n++){let val=n*20,y=OY+PH-n*PH/4;sctx.strokeStyle="#47748a";sctx.beginPath();sctx.moveTo(OX,y);sctx.lineTo(OX+PW,y);sctx.stroke();sctx.fillStyle="#e1efed";sctx.font="12px system-ui";sctx.fillText(String(val),15,y+4)}
+sctx.beginPath();
+for(let n=0;n<240;n++){let v=scores[n].same_id_crossing_rows,x=OX+n*PW/239,y=OY+PH-v/max*PH;n?sctx.lineTo(x,y):sctx.moveTo(x,y)}
+sctx.strokeStyle="#8cd1c9";sctx.lineWidth=2.6;sctx.stroke();
+let n=Number($("shift").value),v=scores[n].same_id_crossing_rows,X=OX+n*PW/239,Y=OY+PH-v/max*PH;
+sctx.beginPath();sctx.arc(X,Y,6,0,2*PI);sctx.fillStyle="#f3b886";sctx.fill();sctx.strokeStyle="#fff";sctx.lineWidth=1.6;sctx.stroke();
+for(const [pos,label] of [[0,"0"],[57,"57"],[120,"120"],[180,"180"],[239,"239"]]){
+sctx.fillStyle="#d2e6e4";sctx.font="13px system-ui";sctx.fillText(label,OX+pos*PW/239-7,OY+PH+24)}
+sctx.fillStyle="#dcebe8";sctx.fillText("跨同一陆块的接缝行数",18,20);
+}
+function update(){
+if(!study)return;
+let s=Number($("shift").value),row=study.metrics_for_all_240_shifts[s],polar=study.polar_silhouette.scenario_stats[$("placement").value];
+$("shiftValue").textContent="第"+s+"列 · 相对"+(s*1.5).toFixed(1)+"°";
+$("stats").innerHTML=[
+["接缝跨同一陆块行数",row.same_id_crossing_rows],
+["相邻两侧均为陆地的行数",row.both_land_rows],
+["切图导致额外可见碎片数",row.split_added_land_components],
+["真实周期陆地连通组",row.periodic_land_components],
+["当前纬度候选球面陆地",polar.candidate_land_percent.toFixed(3)+"%"],
+["南北±75°采样陆地格",polar.candidate_north_75_land_samples+" / "+polar.candidate_south_75_land_samples]
+].map(([k,v])=>"<div class='stats'><b>"+v+"</b><small>"+k+"</small></div>").join("");
+$("polarCards").innerHTML=["N","C","S"].map(id=>{const p=study.polar_silhouette.scenario_stats[id];return "<div class='card'><strong>"+id+" · "+p.candidate_land_percent.toFixed(3)+"%</strong><small>纬度候选球面陆地比例</small><p>北纬≥75°：<b>"+p.candidate_north_75_land_samples+"</b>格<br>南纬≤−75°：<b>"+p.candidate_south_75_land_samples+"</b>格</p></div>"}).join("");
+document.querySelectorAll("[data-offset]").forEach(b=>b.classList.toggle("opt",Number(b.dataset.offset)===s));
+drawMap();drawScores();}
+$("shift").addEventListener("input",update);
+for(const key of ["projection","placement","polar"])$(key).addEventListener("change",update);
+document.querySelectorAll("[data-offset]").forEach(b=>b.addEventListener("click",()=>{$("shift").value=b.dataset.offset;update()}));
+score.addEventListener("pointerdown",e=>{if(!study)return;const r=score.getBoundingClientRect(),x=(e.clientX-r.left)*score.width/r.width,idx=Math.round((x-49)*239/(score.width-93));$("shift").value=String(Math.max(0,Math.min(239,idx)));update()});
+map.addEventListener("pointerdown",e=>{if(!study||!owners)return;const r=map.getBoundingClientRect(),X=(e.clientX-r.left)*map.width/r.width,Y=(e.clientY-r.top)*map.height/r.height,v=(Y-frame.y)/frame.h;
+if(v<0||v>1){$("read").textContent="此位置不在候选全球地图内。";return}
+let u=(X-frame.x)/frame.w,lat;const p=$("projection").value;
+if(p==="plate")lat=90-180*v;
+else if(p==="cea")lat=Math.asin(Math.max(-1,Math.min(1,1-2*v)))/RAD;
+else{
+ let t=Math.asin(Math.max(-1,Math.min(1,1-2*v))),c=Math.cos(t);
+ if(c<1e-7)return;
+ u=.5+(u-.5)/c;lat=Math.asin(Math.max(-1,Math.min(1,(2*t+Math.sin(2*t))/PI)))/RAD;
+}
+if(u<0||u>=1)return;const A={N:18,C:0,S:-18}[$("placement").value];let low=0,high=1200;
+for(let i=0;i<42;i++){let mid=(low+high)/2;if(guessLat(mid,A)>lat)low=mid;else high=mid}
+const y=Math.max(0,Math.min(119,Math.floor(((low+high)/2)/10))),x=Math.min(239,Math.floor(u*240));
+const owner=owners[y][(x+Number($("shift").value))%240];
+$("read").textContent=owner<0?"此处为候选海域。相对纬度"+lat.toFixed(1)+"°，尚未对应任何正式海名。":"抽样陆块编号 "+owner+"；显示格("+x+","+y+")；候选纬度"+lat.toFixed(1)+"°。地图切换不影响原始陆块ID。";
+});
+Promise.all([
+fetch("../data/orbina-v225r-b28-meridian-polar-seam-study.json").then(r=>{if(!r.ok)throw Error("B28 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b27-globe-projection-orography.json").then(r=>{if(!r.ok)throw Error("B27 HTTP "+r.status);return r.json()})
+]).then(([a,b])=>{
+if(a.metrics_for_all_240_shifts.length!==240||b.sphere.owner_region_rows.length!==120)throw Error("源数据缺失或字段错误");
+study=a;sphere=b;owners=b.sphere.owner_region_rows.map(r=>r.split(",").map(Number));
+update();$("read").textContent="选择切图位置，或点击地图查看原始候选陆地编号。切图不会移动陆块。";
+}).catch(err=>$("read").textContent="图层加载失败："+err.message+"。可打开上方静态专题总图。");
+</script></body></html>
