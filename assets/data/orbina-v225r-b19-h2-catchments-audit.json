@@ -1,0 +1,29 @@
+{
+  "edition": "V2.25-R-B19",
+  "status": "DERIVED_H2_BASIN_MODEL_STATIC_QA_PASS__BROWSER_NOT_VERIFIED",
+  "from": "assets/data/orbina-v225r-b18-relative-elevation-hydrology.json",
+  "land_cells": 1285,
+  "reachable_cells": 1285,
+  "shore_outlets": 164,
+  "distinct_outlet_basins": 164,
+  "shown_largest_basins": 8,
+  "shown_largest_total_cells": 369,
+  "other_basin_cells": 916,
+  "source_top_land_cell_count": 1285,
+  "checks": {
+    "mask_and_elevation_dimensions_valid": true,
+    "all_land_cells_reach_a_shore_root": true,
+    "all_child_parents_are_in_the_same_landmass": true,
+    "source_land_cell_count_preserved": true,
+    "sum_of_basin_sizes_equals_land_cells": true,
+    "no_grid_cell_assigned_to_ocean": true,
+    "all_three_rain_scenarios_have_finite_sums": true
+  },
+  "known_limits": [
+    "Future map coastline revisions will invalidate this study",
+    "B19 basin identifiers are model IDs, not official names",
+    "Each shoreline cell is treated as separate model outlet; small basins are abundant",
+    "Simulated rainfall weights do not model evapotranspiration, snowmelt, soil or real climate",
+    "Browser and mobile interaction untested"
+  ]
+}
