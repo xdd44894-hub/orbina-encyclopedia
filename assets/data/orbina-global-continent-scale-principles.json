@@ -19,9 +19,9 @@
     "caveat": "B19地图集延续B16暂定经纬制图的假设球面陆地比例约42.76%；所有模型0至100数值只表示相对地势，无法换算真实海拔米数、河流流量、实际国土面积或星球半径。"
   },
   "active_atlas": {
-    "edition": "V2.25-R-B21",
-    "status": "B21完整地理教科书地貌证据专题：继承B16候选海岸、B17十章与99陆地登记、B18五幅地势、B19/B20的8474格水文数据；新建五区高地/近岸低地/内陆低地筛选与H4的三组非正史地质成因假说。未指定永久湖泊或板块断层坐标。",
-    "viewer": "assets/maps/orbina-v225r-b21-geomorphology-atlas.html",
+    "edition": "V2.25-R-B22",
+    "status": "H4隔离式地质演化试验：保持B16-B21全部底图与既有正史不变，研究S1挤压造山/S2张裂断块/S3侵蚀及BASE的原始地势；S2出现一处局部闭合洼地核心与23格潜在几何填水区，尚未录用湖泊、断层或真实板块。",
+    "viewer": "assets/maps/orbina-v225r-b22-h4-terrain-laboratory.html",
     "working_map": "assets/images/orbina-v225r-b18-relative-relief-hydrography.svg",
     "equal_area_map": "assets/images/orbina-v225r-b16-mollweide.svg",
     "unchanged_coast_geometry": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
@@ -29,7 +29,7 @@
     "named_geographic_canon": "assets/data/orbina-v225r-b17-confirmed-geographic-register.json",
     "B17_coast_shape_study": "assets/data/orbina-v225r-b17-physiography-study.json",
     "B18_relative_terrain_and_routing": "assets/data/orbina-v225r-b18-relative-elevation-hydrology.json",
-    "audit": "assets/data/orbina-v225r-b21-screening-qa.json",
+    "audit": "assets/data/orbina-v225r-b22-h4-experiment-audit.json",
     "stats": {
       "unchanged_candidate_land_polygons": 99,
       "geography_chapters": 10,
@@ -58,9 +58,18 @@
       "B21_coastal_lowland_cells": 3030,
       "B21_interior_lowland_cells": 1318,
       "B21_synthetic_interior_pit_prescreen_matches": 0,
-      "B21_competing_geological_mechanisms": 3
+      "B21_competing_geological_mechanisms": 3,
+      "B22_H4_land_cells": 1234,
+      "B22_H4_coastal_outlets": 157,
+      "B22_competing_scenario_count": 3,
+      "B22_baseline_and_scenario_count": 4,
+      "B22_S2_deep_depression_core_cells": 10,
+      "B22_S2_possible_pocket_cells": 23,
+      "B22_S2_spill_height_relative": 20.12,
+      "B22_S2_max_potential_fill_depth_relative": 6.33,
+      "B22_new_canonical_lakes": 0
     },
-    "scientific_disclaimer": "B21 classifies the existing artificial terrain heights and B20 shoreline hop distances, not actual geological structures. Zero screened interior sinks follows from coast-draining model and does NOT prove real Orbina is lake-free. S1-S3 are hypotheses requiring independent tectonic and sedimentological constraints. No plate boundary, lithology, altitude meters, rainfall observations, country coordinates, official basin or fault assigned.",
+    "scientific_disclaimer": "B22's four H4 relief variants are strictly controlled, noncanonical numerical perturbations to B20. Minimax eight-neighbor spill threshold (priority flood) is not actual lake existence, D8 certified hydrology, metric elevation, geological verification, or calculated water volume. S2 one qualifying synthetic depression only; all canon and original geography unchanged.",
     "canon_guards": [
       "United City and People's Paradise same central supercontinent",
       "Southern outlet big inner sea, North Crown peninsula, eastern gate and Resistance Arc as previously established",
@@ -69,7 +78,7 @@
       "25 confirmed major seas names with unspecified exact world coordinates",
       "Shattered Sea canon 32 intertwined island chains and ~38% in tropical zone"
     ],
-    "version_dependency": "B16 draft coast -> B17 10 chapters/99 land archives -> B18 five 0-100 noncanonical relief grids -> B19/B20 8,474 grid catchments and 854 coastal outlets -> B21 five-sheet landform screening and H4 geological alternative hypotheses. Changing any source geometry invalidates dependent classification.",
+    "version_dependency": "B16 draft coast -> B17 atlas -> B18 synthetic heights -> B19–B20 drainage research -> B21 landform screening and tectonic hypotheses -> B22 four isolated H4 topographic experiments, noncanonical, original data retained.",
     "B19_H2_watershed_map": "assets/images/orbina-v225r-b19-h2-catchments.svg",
     "B18_full_viewer": "assets/maps/orbina-v225r-b18-relative-relief-atlas.html",
     "B19_H2_catchment_and_precipitation_data": "assets/data/orbina-v225r-b19-h2-catchments.json",
@@ -79,7 +88,10 @@
     "B21_landform_overview": "assets/images/orbina-v225r-b21-landform-screening.svg",
     "B21_screening_data": "assets/data/orbina-v225r-b21-landform-screening.json",
     "B21_tectonic_scenarios": "assets/data/orbina-v225r-b21-tectonic-scenario-register.json",
-    "B20_five_region_viewer": "assets/maps/orbina-v225r-b20-five-region-atlas.html"
+    "B20_five_region_viewer": "assets/maps/orbina-v225r-b20-five-region-atlas.html",
+    "B22_four_scenario_overview": "assets/images/orbina-v225r-b22-h4-geomorphology-comparison.svg",
+    "B22_H4_scenario_data": "assets/data/orbina-v225r-b22-h4-terrain-experiments.json",
+    "B21_full_viewer": "assets/maps/orbina-v225r-b21-geomorphology-atlas.html"
   },
-  "following_work": "B22应选H4做隔离式地形演化样本，明确S1/S2/S3需要证明的证据，测试真正局部封闭洼地是否可能与坡度、海口、补给相容；不得向B16母海岸或H1正式地理关系直接写入虚构断层、湖泊或国界。"
+  "following_work": "B23研究H4水量平衡结局的判定框架与构造层序相容性，按少量气候补给情景解释季节性干涸、暂时蓄水或可能稳定湖泊，但须清楚标注未测降雨与蒸发，只有用户审议后方可转为正史。不破坏H1南口内海、R1/R2和棠溪。"
 }
