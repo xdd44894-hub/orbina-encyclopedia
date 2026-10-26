@@ -1,0 +1,79 @@
+{
+  "edition": "V2.25-R-B21",
+  "status": "EDITORIAL_NONCANON_COMPETING_GEOLOGY_HYPOTHESES",
+  "featured_sheet": "H4 · 东南北主角",
+  "selection_reason": "Use an anonymous fragmented-landmasses study rather than artificially mapping confirmed central supercontinent R1/R2 or Resistance Arc",
+  "scenarios": [
+    {
+      "id": "S1",
+      "name": "挤压造山与山前沉积",
+      "cause": "假设大陆碰撞或汇聚缩短，使褶皱/逆断层隆升形成一侧山带与山前低地",
+      "compatible_if": [
+        "后续发现连续指向一致的高地带和对应山前侵蚀阶地",
+        "存在由山带向邻近低地搬运碎屑的合理坡度和季节补给",
+        "构造年代、沉积层序和山体剥蚀过程相互一致"
+      ],
+      "cannot_infer": [
+        "由B18高值网格就认定是碰撞山脉",
+        "认定岩性或古海成沉积",
+        "认定一定有冲积扇和河流三角洲"
+      ],
+      "verdict": "备选机制，地质证据空缺"
+    },
+    {
+      "id": "S2",
+      "name": "张裂断块与构造凹陷",
+      "cause": "假设地壳发生伸展正断层错动，抬升断块与沉降断块形成狭长山地和凹陷谷地",
+      "compatible_if": [
+        "可提出具有延续性、明确几何约束的断层带假说",
+        "沿断裂两侧高低地势与沉积盆地形状相容",
+        "地下水出露/阻挡和盆地碎屑搬运位置有可追溯解释"
+      ],
+      "cannot_infer": [
+        "根据岸线或色彩自动生成活动断裂线",
+        "自动把低地判为永久湖或盐湖",
+        "以格网单位确定断层落差"
+      ],
+      "verdict": "备选机制，无法从数值高程独立证明"
+    },
+    {
+      "id": "S3",
+      "name": "古老高地侵蚀与河谷切割",
+      "cause": "假设古老隆起经历长时间风化、流水侵蚀和坡地退缩，保留不同程度的剥蚀高地",
+      "compatible_if": [
+        "相对高地与谷地在多尺度地形中具有连续性",
+        "侵蚀基准面、物源和季节径流不自相矛盾",
+        "盆地充填和海岸冲积地貌具有合理的供沙通路"
+      ],
+      "cannot_infer": [
+        "把模型八邻汇水树称为经过真实河蚀产生的河谷",
+        "凭地形色块判断地层年代",
+        "把全部海峡解释为河流侵蚀"
+      ],
+      "verdict": "备选机制，仍需物源与演化约束"
+    }
+  ],
+  "conditional_features": [
+    {
+      "name": "封闭盆地或盐湖",
+      "needs": "地形闭合、地表径流出口关系、降水蒸发及地下水水量收支",
+      "current": "未满足，禁止指定实际湖泊坐标"
+    },
+    {
+      "name": "山麓冲积扇",
+      "needs": "明确山前坡折、间歇或持续水流、碎屑物源、沉积空间",
+      "current": "只能标为待检验地貌过程"
+    },
+    {
+      "name": "河口三角洲",
+      "needs": "已确认入海河道、泥沙供应、波浪潮汐与陆架水深",
+      "current": "未满足；不由模型沿岸出口直接生成"
+    },
+    {
+      "name": "山地雨影",
+      "needs": "主导来风、山带方位、抬升凝结及下沉增温条件",
+      "current": "风带尚未建立，无正式干旱/湿润分界"
+    }
+  ],
+  "canon_guard": "No global tectonic plate name or coordinates accepted; H4 does not map named states or officially named seas."
+}
