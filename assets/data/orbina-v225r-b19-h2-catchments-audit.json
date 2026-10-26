@@ -1,6 +1,6 @@
 {
   "edition": "V2.25-R-B19",
-  "status": "DERIVED_H2_BASIN_MODEL_STATIC_QA_PASS__BROWSER_NOT_VERIFIED",
+  "status": "GITHUB_SOURCE_COMMITTED__B19_SOURCE_STATIC_QA_PASS__PUBLIC_RENDERING_NOT_VERIFIED",
   "from": "assets/data/orbina-v225r-b18-relative-elevation-hydrology.json",
   "land_cells": 1285,
   "reachable_cells": 1285,
@@ -25,5 +25,24 @@
     "Each shoreline cell is treated as separate model outlet; small basins are abundant",
     "Simulated rainfall weights do not model evapotranspiration, snowmelt, soil or real climate",
     "Browser and mobile interaction untested"
-  ]
+  ],
+  "delivery_files": {
+    "atlas": "assets/maps/orbina-v225r-b19-h2-catchment-atlas.html",
+    "illustration": "assets/images/orbina-v225r-b19-h2-catchments.svg",
+    "source_grid": "assets/data/orbina-v225r-b19-h2-catchments.json",
+    "encyclopedia": "_articles/article-035.md",
+    "active_config": "assets/data/orbina-global-continent-scale-principles.json"
+  },
+  "final_source_checks": {
+    "page_inline_javascript_parses": true,
+    "page_json_relative_asset_path_exists_in_repository": true,
+    "svg_has_closing_root_tag": true,
+    "all_1285_parent_paths_end_without_cycle_or_ocean": true,
+    "longest_model_parent_path_cells": 12,
+    "B18_atlas_still_linked": true,
+    "current_edition_register_points_to_B19": true,
+    "canonical_geography_and_B16_coast_unchanged": true
+  },
+  "public_web_validation": "NOT_VERIFIED: public Pages URL was inaccessible to the available web reader, not sufficient evidence of site failure",
+  "mobile_validation": "NOT_TESTED"
 }
