@@ -1,0 +1,69 @@
+{
+  "edition": "V2.25-R-B23",
+  "status": "MASS_BALANCE_SOURCE_QA_PASS__PUBLIC_SITE_NOT_TESTED",
+  "residual_absolute_max": 0,
+  "source_capacity_matches": true,
+  "checks": {
+    "scenario_count": true,
+    "twenty_hypothetical_cycles": true,
+    "mass_balance_closed": true,
+    "dry_more_zero_periods_than_seasonal": true,
+    "wet_nonzero": true,
+    "sediment_capacity_decreases": true
+  },
+  "summaries": {
+    "A": {
+      "min_storage": 0,
+      "max_storage": 0.8516,
+      "dry_periods": 10,
+      "min_wet_cells": 0,
+      "max_wet_cells": 2,
+      "max_cyclic_drift": 0,
+      "overflow_last_cycle": 0
+    },
+    "B": {
+      "min_storage": 0,
+      "max_storage": 5.3455,
+      "dry_periods": 3,
+      "min_wet_cells": 0,
+      "max_wet_cells": 5,
+      "max_cyclic_drift": 0,
+      "overflow_last_cycle": 0
+    },
+    "C": {
+      "min_storage": 32.7995,
+      "max_storage": 36.3196,
+      "dry_periods": 0,
+      "min_wet_cells": 13,
+      "max_wet_cells": 15,
+      "max_cyclic_drift": 0.0214,
+      "overflow_last_cycle": 0
+    }
+  },
+  "sediment": [
+    {
+      "uniform_floor_rise_relative": 0,
+      "remaining_geometry_capacity": 63.53,
+      "loss_capacity": 0,
+      "fraction_remaining": 1
+    },
+    {
+      "uniform_floor_rise_relative": 0.5,
+      "remaining_geometry_capacity": 52.49,
+      "loss_capacity": 11.04,
+      "fraction_remaining": 0.8262
+    },
+    {
+      "uniform_floor_rise_relative": 1.5,
+      "remaining_geometry_capacity": 33.99,
+      "loss_capacity": 29.54,
+      "fraction_remaining": 0.535
+    }
+  ],
+  "limits": [
+    "Source terrain is B22 S2 hypothesis, not real planet geology",
+    "Dry/wet labels are conditional on deliberately chosen parameters",
+    "Sustained nonzero model storage cannot confirm real lake permanence",
+    "No new official lake, tectonic fault, nation, river or global coordinate assigned"
+  ]
+}
