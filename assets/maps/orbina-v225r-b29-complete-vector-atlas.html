@@ -1,0 +1,200 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 B29 · 99片原始矢量海岸交互图</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f2eb;color:#244754;font:15px/1.65 system-ui,"Microsoft YaHei",sans-serif}
+header{background:linear-gradient(122deg,#163b51,#2a6570);color:#f7faf5;padding:30px max(16px,calc((100vw - 1260px)/2))}
+h1{margin:0 0 10px;font-size:clamp(27px,3.4vw,41px);line-height:1.3}header p{max-width:1050px;color:#d1e4df;margin:0}
+main{max-width:1260px;margin:auto;padding:20px 15px 50px}nav{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 20px}
+nav a{font-size:13px;border:1px solid #bfd4cb;background:#fff;color:#29677b;padding:9px 11px;border-radius:7px;text-decoration:none}
+.panel{background:#fffefb;border:1px solid #d0ddd4;border-radius:13px;padding:18px;margin-bottom:20px}
+h2{font-size:21px;margin:0 0 14px}h3{font-size:17px;margin:9px 0}
+.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:12px 0}
+.controls label{display:flex;align-items:center;gap:7px;font-size:14px}
+select,input[type=range]{accent-color:#32869b}select{color:#285565;border:1px solid #bdd2c8;background:#fff;border-radius:7px;padding:9px;max-width:100%;font:inherit}
+button{cursor:pointer;font:inherit;color:#266477;border:1px solid #b9d1c9;background:#edf6f1;padding:8px 11px;border-radius:7px}
+button.active{background:#dcf2ed;border-color:#33879a;border-width:2px}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:16px}
+.canvas{background:#20526b;border:1px solid #b1cbcc;border-radius:10px;overflow:hidden;position:relative}
+canvas{width:100%;height:auto;display:block;touch-action:none;cursor:grab}
+canvas:active{cursor:grabbing}.muted{font-size:13px;color:#647d82;line-height:1.8}
+.stat{padding:9px 0;border-bottom:1px solid #d8e6df}.stat b{display:block;font-size:22px;font-variant-numeric:tabular-nums}.stat small{color:#628084;font-size:12px}
+#info{border:1px solid #ccded5;border-radius:8px;background:#edf5f1;padding:12px;margin-top:11px;min-height:44px}
+.feature{background:#f1f7f2;border:1px solid #d5e4d8;border-radius:10px;padding:12px;margin-bottom:12px}
+.feature b{display:block;font-size:17px}.feature small{font-size:12px;color:#5b777a}
+table{border-collapse:collapse;width:100%;font-size:13px}th,td{text-align:left;border-bottom:1px solid #d9e7df;padding:9px 8px}td:last-child,th:last-child{text-align:right}
+.gridcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+.card{padding:13px;background:#f0f6f2;border:1px solid #cdded4;border-radius:9px}
+.card b{display:block;font-size:20px;color:#326d7e}.card small{font-size:12px;color:#647d7e}
+.legend{display:flex;flex-wrap:wrap;gap:13px;font-size:12px;color:#648084;margin:10px 0}
+.legend i{width:13px;height:13px;border-radius:3px;display:inline-block;margin-right:6px}
+footer{text-align:center;padding:20px;font-size:12px;color:#718789}
+@media(max-width:890px){.cols{grid-template-columns:1fr}.gridcards{grid-template-columns:1fr}}
+@media(max-width:520px){.panel{padding:12px}.controls label{flex-direction:column;align-items:flex-start}}
+</style></head><body>
+<header><h1>俄庇娜 · B29 完整矢量世界地图</h1><p>直接绘制B16的16片主陆地与83片岛屿的9,621个原始海岸顶点，恢复粗格网遗漏的8片小岛；支持三种地图投影、240档接缝显示、放大拖动、原始海岸与粗格网对照，并可单独定位每片岛屿。全部地理位置仍为候选。</p></header><main>
+<nav>
+<a href="../images/orbina-v225r-b29-complete-vector-coast-overview.svg" target="_blank" rel="noopener">完整99片海岸及8小岛放大图</a>
+<a href="../data/orbina-v225r-b29-full-vector-coast-audit.json" target="_blank" rel="noopener">B29矢量质量与接缝数据</a>
+<a href="orbina-v225r-b28-meridian-polar-atlas.html">B28粗格网地图</a>
+<a href="orbina-v225r-b27-projection-orography-atlas.html">B27球面投影</a>
+<a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank" rel="noopener">百科《海洋地理》</a></nav>
+<section class="panel"><h2>全球海岸 · 交互矢量地图</h2>
+<div class="controls">
+<label>海岸绘制<select id="renderMode"><option value="vector" selected>原始99片矢量海岸</option><option value="raster">旧240×120抽样格（对照）</option></select></label>
+<label>相对地图接缝<input id="shift" type="range" min="0" max="239" step="1" value="57"><b id="shiftLabel">57</b></label>
+<label>投影<select id="projection"><option value="plate" selected>经纬矩形</option><option value="cea">兰伯特圆柱等面积</option><option value="moll">摩尔威德椭圆等面积</option></select></label>
+<label>候选纬度<select id="lat"><option value="N">N · 偏北</option><option value="C" selected>C · 中性</option><option value="S">S · 偏南</option></select></label>
+</div>
+<div class="controls">
+<label><input type="checkbox" id="missed" checked>标出8片原粗格网漏采小岛</label>
+<label><input type="checkbox" id="lines">候选纬线</label>
+<label>放大<input type="range" id="zoom" min="1" max="12" step=".25" value="1"><span id="zoomLabel">1.00×</span></label>
+<button id="reset" type="button">重置视野</button><button id="best" type="button">切到第57列</button>
+</div>
+<div class="cols">
+<div>
+<div class="canvas"><canvas width="1440" height="744" id="world" aria-label="全99片可缩放可点选的候选矢量大陆海岸地图"></canvas></div>
+<div class="legend"><span><i style="background:#b8cbb4"></i>主陆地</span><span><i style="background:#e4cda5"></i>小岛</span><span><i style="background:#ffba7f"></i>定位环（非海岸大小）</span></div>
+<div id="info">正在读取B16原始矢量海岸与B29分析数据……</div>
+</div>
+<aside>
+<h3>当前视图</h3><div id="stats"></div>
+<div class="feature"><b id="featureName">请选择陆块或小岛</b><small id="featureDetail">地图点击、列表选择或下方岛屿按钮均可定位真实矢量多边形。</small></div>
+<label for="features" class="muted">选择原始矢量多边形（99片）</label>
+<select id="features" style="width:100%;margin:8px 0"><option value="-1">选择原始陆块或岛屿</option></select>
+<button id="focus" type="button">放大选中的轮廓</button>
+<p class="muted">触屏可拖动地图，使用放大滑块近看海岸；点击或选择岛屿可定位。原始图仍未批准为星球的正式经纬地图。</p>
+</aside></div>
+</section>
+<section class="panel"><h2>恢复显示的八片小岛</h2>
+<p class="muted">这些岛屿在B16原始数据中一直存在，只是B27/B28粗格网中心没有命中。下方直接选择原始编号即可定位与放大，不会为了方便观看而增大其地理形状。</p>
+<div id="isletButtons" class="controls"></div>
+<div class="gridcards">
+<div class="card"><b>99 / 99</b><small>全部原始候选多边形均能通过矢量裁剪显示</small></div>
+<div class="card"><b>91 / 99</b><small>旧240×120格网可采样的源多边形数量</small></div>
+<div class="card"><b>9,621</b><small>完整B16原始海岸顶点，不含屏幕投影辅助点</small></div>
+</div></section>
+<section class="panel"><h2>精细海岸再次验证接缝位置</h2>
+<div style="overflow-x:auto"><table><thead><tr><th>相对切图列</th><th>粗格网跨同ID行数</th><th>矢量轮廓被分割数</th><th>较小碎片面积之和（绘图平方单位）</th></tr></thead><tbody id="cutTable"></tbody></table></div>
+<p class="muted">第57列在本轮按“被切出的较小面积之和”也取得最小值，但仍切到3片原始多边形，包括候选中央超级大陆一段很小的突出海岸。面积单位只是原图绘图单位的平方，不是平方公里。单靠一个评分不能判定地图已经达到正式地貌质量。</p>
+</section>
+<section class="panel"><h2>尚未确定的正式地理条件</h2>
+<p>全球海岸的物理合理性还需要球面面积、地质构造、山脉形成、风带与水汽来源、盆地和河流连接等多重检验。改用矢量显示可以解决小岛漏采和阶梯边缘，但不能自动修正原始候选海岸的地质缺陷。</p>
+<p class="muted">联合城与人民天国同属一片超级大陆、内海南口接外洋、抵抗者之弧、R1/R2与棠溪水系彼此独立、秦棠位于萨瑞拉西北等既有设定不受任何显示变化影响。这里的陆块编号只是B16的源数据序号，绝非国家或海域坐标。</p>
+</section>
+</main><footer>ORBINA / V2.25-R-B29 · FULL VECTOR CANDIDATE COAST · NONCANON</footer>
+<script>
+"use strict";
+const $=id=>document.getElementById(id),PI=Math.PI,RAD=PI/180;
+let b16=null,model=null,b27=null,polys=[],owners=[],selected=-1,zoom=1,panX=0,panY=0,drag=null;
+const canvas=$("world"),ctx=canvas.getContext("2d"),view={x:40,y:28,w:1360,h:684},cX=canvas.width/2,cY=canvas.height/2;
+const shifts={N:18,C:0,S:-18};
+function lat(y,A){return 90-180*y/1200+A*Math.sin(PI*y/1200)}
+function theta(degrees){if(Math.abs(degrees)>89.99999)return Math.sign(degrees)*PI/2;const p=degrees*RAD;let t=p;for(let i=0;i<35;i++){let derivative=2+2*Math.cos(2*t);if(derivative<1e-10)break;const d=(2*t+Math.sin(2*t)-PI*Math.sin(p))/derivative;t=Math.max(-PI/2,Math.min(PI/2,t-d));if(Math.abs(d)<1e-12)break;}return t}
+function project(x,y){const latitude=lat(y,shifts[$("lat").value]),u=x/2400,mode=$("projection").value;
+if(mode==="plate")return [view.x+u*view.w,view.y+(90-latitude)/180*view.h];
+if(mode==="cea")return [view.x+u*view.w,view.y+(1-Math.sin(latitude*RAD))/2*view.h];
+const t=theta(latitude);return [view.x+view.w*(.5+(u-.5)*Math.cos(t)),view.y+view.h*(1-Math.sin(t))/2]}
+function clipVertical(p,edge,keepAbove){const ret=[];for(let i=0;i<p.length;i++){const a=p[i],b=p[(i+1)%p.length],insideA=keepAbove?a[0]>=edge-1e-9:a[0]<=edge+1e-9,insideB=keepAbove?b[0]>=edge-1e-9:b[0]<=edge+1e-9;
+if(insideA&&insideB)ret.push(b);else if(insideA!==insideB){let t=(edge-a[0])/(b[0]-a[0]);ret.push([edge,a[1]+t*(b[1]-a[1])]);if(insideB)ret.push(b)}}return ret}
+function clipPolygon(p){let a=clipVertical(p,0,true);return a.length?clipVertical(a,2400,false):a}
+function fragments(id,s){const poly=polys[id],meta=model.metadata[id],first=Math.ceil((s*10-meta.bbox[2]-.01)/2400),last=Math.floor((s*10+2400-meta.bbox[0]+.01)/2400),pieces=[];
+for(let n=first;n<=last;n++){const part=clipPolygon(poly.coordinates.map(([x,y])=>[x-s*10+n*2400,y]));if(part.length>=3)pieces.push(part)}return pieces}
+function trace(piece){
+ctx.beginPath();let first=true;
+for(let i=0;i<piece.length;i++){let a=piece[i],b=piece[(i+1)%piece.length],dist=Math.hypot(a[0]-b[0],a[1]-b[1]),steps=$("projection").value==="moll"?Math.max(1,Math.ceil(dist/16)):1;
+for(let k=0;k<steps;k++){let t=k/steps,pos=project(a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t);if(first){ctx.moveTo(pos[0],pos[1]);first=false}else ctx.lineTo(pos[0],pos[1])}}
+ctx.closePath()}
+function shade(id){return id<16?["#bbcab0","#b3ceb9","#cbd3ac","#c5bfa4"][id%4]:["#e4cba4","#d6bc91"][id%2]}
+function drawCoarse(s){
+for(let y=0;y<120;y++){let row=owners[y],x=0;while(x<240){const id=row[(x+s)%240];if(id<0){x++;continue}let end=x+1;while(end<240&&row[(end+s)%240]===id)end++;
+const rect=[[x*10,y*10],[end*10,y*10],[end*10,(y+1)*10],[x*10,(y+1)*10]];trace(rect);ctx.fillStyle=shade(id);ctx.fill();x=end;}}
+}
+function drawVector(s){
+for(let id=0;id<polys.length;id++){const pieces=fragments(id,s);
+for(const part of pieces){trace(part);ctx.fillStyle=shade(id);ctx.fill();ctx.strokeStyle=id<16?"rgba(79,96,81,.65)":"rgba(154,124,83,.65)";ctx.lineWidth=id<16?.65:.45;ctx.stroke();}}
+}
+function transformX(x){return cX+zoom*(x-cX)+panX}
+function transformY(y){return cY+zoom*(y-cY)+panY}
+function projectCentroid(id){const m=model.metadata[id],shift=Number($("shift").value),x=((m.centroid[0]-shift*10)%2400+2400)%2400;return project(x,m.centroid[1])}
+function draw(){
+if(!model||!b16||!b27)return;
+const s=Number($("shift").value),projection=$("projection").value;
+ctx.clearRect(0,0,canvas.width,canvas.height);ctx.fillStyle="#193f55";ctx.fillRect(0,0,canvas.width,canvas.height);
+ctx.save();ctx.translate(cX+panX,cY+panY);ctx.scale(zoom,zoom);ctx.translate(-cX,-cY);
+ctx.save();if(projection==="moll"){ctx.beginPath();ctx.ellipse(view.x+view.w/2,view.y+view.h/2,view.w/2,view.h/2,0,0,2*PI);ctx.clip()}
+ctx.fillStyle="#23617b";ctx.fillRect(view.x,view.y,view.w,view.h);
+if($("renderMode").value==="vector")drawVector(s);else drawCoarse(s);
+if($("lines").checked){ctx.strokeStyle="rgba(228,241,239,.45)";ctx.lineWidth=1/zoom;ctx.setLineDash([5/zoom,7/zoom]);
+for(let degree=-75;degree<=75;degree+=15){ctx.beginPath();let first=true;for(let x=0;x<=2400;x+=25){let top=0,bottom=1200,A=shifts[$("lat").value];for(let j=0;j<24;j++){let y=(top+bottom)/2;if(lat(y,A)>degree)top=y;else bottom=y}let pt=project(x,(top+bottom)/2);if(first){ctx.moveTo(pt[0],pt[1]);first=false}else ctx.lineTo(pt[0],pt[1])}ctx.stroke()}ctx.setLineDash([])}
+ctx.restore();
+if(projection==="moll"){ctx.beginPath();ctx.ellipse(view.x+view.w/2,view.y+view.h/2,view.w/2,view.h/2,0,0,2*PI);ctx.strokeStyle="#e0efeb";ctx.lineWidth=1.6/zoom;ctx.stroke()}
+ctx.restore();
+const missing=$("missed").checked;
+if(missing&&$("renderMode").value==="vector"){for(const id of model.metadata.filter(x=>!x.coarse_grid_hit).map(x=>x.id)){let q=projectCentroid(id),px=transformX(q[0]),py=transformY(q[1]);ctx.beginPath();ctx.arc(px,py,8,0,2*PI);ctx.strokeStyle="#ffbb79";ctx.lineWidth=2.5;ctx.stroke()}}
+if(selected>=0){const pt=projectCentroid(selected);ctx.beginPath();ctx.arc(transformX(pt[0]),transformY(pt[1]),12,0,2*PI);ctx.strokeStyle="#fff5c0";ctx.lineWidth=3;ctx.stroke();}
+ctx.font="bold 18px system-ui";ctx.fillStyle="#f7faf1";ctx.fillText("矢量海岸 / "+$("renderMode").value+" · 切图第"+s+"列 · "+projection,22,23);
+ctx.font="13px system-ui";ctx.fillStyle="#cee4e5";ctx.fillText("B16候选海岸；颜色、经线和纬度均非正式正史。",25,canvas.height-21);
+}
+function pointInPolygon(point,poly){let inside=false,x=point[0],y=point[1];for(let i=0,j=poly.length-1;i<poly.length;j=i++){const a=poly[i],b=poly[j],test=((a[1]>y)!==(b[1]>y))&&(x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0]);if(test)inside=!inside}return inside}
+function unproject(x,y){
+const proj=$("projection").value,ux=(x-view.x)/view.w,vy=(y-view.y)/view.h;let u=ux,L;
+if(vy<0||vy>1)return null;
+if(proj==="plate")L=90-180*vy;
+else if(proj==="cea")L=Math.asin(Math.max(-1,Math.min(1,1-2*vy)))/RAD;
+else{const t=Math.asin(Math.max(-1,Math.min(1,1-2*vy))),c=Math.cos(t);if(c<1e-9)return null;u=.5+(ux-.5)/c;L=Math.asin(Math.max(-1,Math.min(1,(2*t+Math.sin(2*t))/PI)))/RAD;}
+if(u<0||u>=1)return null;
+let lo=0,hi=1200,A=shifts[$("lat").value];for(let j=0;j<48;j++){let y=(lo+hi)/2;if(lat(y,A)>L)lo=y;else hi=y}const drawX=(u*2400+Number($("shift").value)*10)%2400;
+return [drawX,(lo+hi)/2];
+}
+function select(id,focus){
+selected=id;$("features").value=String(id);const m=model.metadata[id];
+$("featureName").textContent="#"+id+" · "+m.name;
+$("featureDetail").textContent=(id<16?"主要候选陆块":"候选小岛")+" · "+m.vertices+"个原始顶点 · 图纸面积"+m.area.toFixed(2)+"平方单位 · "+(m.coarse_grid_hit?"粗格网有采样":"粗格网漏采，B29矢量已恢复");
+if(focus){zoom=Math.max(5,Number($("zoom").value));zoom=Math.min(12,zoom);$("zoom").value=String(zoom);$("zoomLabel").textContent=zoom.toFixed(2)+"×";const center=projectCentroid(id);panX=zoom*(cX-center[0]);panY=zoom*(cY-center[1]);}
+refresh();
+}
+function refresh(){
+if(!model)return;
+$("shiftLabel").textContent=$("shift").value+" · "+(Number($("shift").value)*1.5).toFixed(1)+"°";
+$("zoomLabel").textContent=zoom.toFixed(2)+"×";
+const z=model.vector_seam_scores[Number($("shift").value)];
+$("stats").innerHTML=[["原始轮廓",model.counts.all],["矢量源顶点",model.counts.original_vertices],["当前切图矢量分割数",z.split_count],["较小侧总面积",z.small_side_area.toFixed(2)],["旧格网跨缝行数",z.coarse_crossing_rows],["当前放大倍数",zoom.toFixed(2)+"×"]].map(([k,v])=>"<div class='stat'><b>"+v+"</b><small>"+k+"</small></div>").join("");
+draw();}
+function screenCoord(e){const r=canvas.getBoundingClientRect();return[(e.clientX-r.left)*canvas.width/r.width,(e.clientY-r.top)*canvas.height/r.height]}
+function pointerSelect(e){
+const xy=screenCoord(e);
+for(const m of model.metadata.filter(x=>!x.coarse_grid_hit)){
+ const c=projectCentroid(m.id);if(Math.hypot(xy[0]-transformX(c[0]),xy[1]-transformY(c[1]))<12){select(m.id,false);return}
+}
+const x=cX+(xy[0]-cX-panX)/zoom,y=cY+(xy[1]-cY-panY)/zoom,geo=unproject(x,y);
+if(!geo){$("info").textContent="点击位置位于地图外或未能反算候选坐标。";return}
+for(let id=polys.length-1;id>=0;id--)for(let dx of [0,-2400,2400]){
+ if(pointInPolygon([geo[0]+dx,geo[1]],polys[id].coordinates)){select(id,false);$("info").textContent="定位B16原始矢量多边形 #"+id+"。放大可检查实际海岸细节；并未更改轮廓。";return}
+}
+$("info").textContent="当前位置为候选海洋。尚无正式海名或经纬坐标。";
+}
+canvas.addEventListener("pointerdown",e=>{if(!model)return;const [x,y]=screenCoord(e);drag={pointer:e.pointerId,x,y,startX:x,startY:y,pX:panX,pY:panY};canvas.setPointerCapture(e.pointerId)});
+canvas.addEventListener("pointermove",e=>{if(!drag||drag.pointer!==e.pointerId)return;const [x,y]=screenCoord(e);panX=drag.pX+x-drag.x;panY=drag.pY+y-drag.y;draw()});
+canvas.addEventListener("pointerup",e=>{if(!drag||drag.pointer!==e.pointerId)return;const [x,y]=screenCoord(e),moved=Math.hypot(x-drag.startX,y-drag.startY);drag=null;if(moved<8)pointerSelect(e)});
+canvas.addEventListener("pointercancel",()=>{drag=null});
+$("zoom").addEventListener("input",v=>{zoom=Number($("zoom").value);refresh()});
+for(const k of ["renderMode","shift","projection","lat","missed","lines"])$(k).addEventListener(k==="shift"?"input":"change",refresh);
+$("features").addEventListener("change",()=>{const id=Number($("features").value);if(id>=0)select(id,false)});
+$("focus").addEventListener("click",()=>{if(selected>=0)select(selected,true)});
+$("reset").addEventListener("click",()=>{zoom=1;panX=0;panY=0;$("zoom").value="1";refresh()});
+$("best").addEventListener("click",()=>{$("shift").value="57";refresh()});
+Promise.all([
+fetch("../data/orbina-v225r-b16-aesthetic-geography-master.json").then(r=>{if(!r.ok)throw Error("B16 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b29-full-vector-coast-audit.json").then(r=>{if(!r.ok)throw Error("B29 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b27-globe-projection-orography.json").then(r=>{if(!r.ok)throw Error("B27 HTTP "+r.status);return r.json()})
+]).then(([b,m,d])=>{
+if(b.macro_landmasses.length+b.archipelago.length!==99||m.metadata.length!==99||m.vector_seam_scores.length!==240||d.sphere.owner_region_rows.length!==120)throw Error("源海岸或元数据字段不匹配");
+b16=b;model=m;b27=d;polys=[...b.macro_landmasses,...b.archipelago];owners=d.sphere.owner_region_rows.map(row=>row.split(",").map(Number));
+$("features").innerHTML="<option value='-1'>全部原始海岸 · 点选或选择</option>"+m.metadata.map(v=>"<option value='"+v.id+"'>#"+v.id+" · "+v.name+(v.coarse_grid_hit?"":"（粗格网漏采）")+"</option>").join("");
+$("isletButtons").innerHTML=m.metadata.filter(v=>!v.coarse_grid_hit).map(v=>"<button type='button' data-islet='"+v.id+"'>#"+v.id+" · "+v.name+"</button>").join("");
+document.querySelectorAll("[data-islet]").forEach(button=>button.addEventListener("click",()=>select(Number(button.dataset.islet),true)));
+$("cutTable").innerHTML=[0,55,57,58,206].map(s=>{const v=m.vector_seam_scores[s];return "<tr><td>第"+s+"列</td><td>"+v.coarse_crossing_rows+"</td><td>"+v.split_count+"</td><td>"+v.small_side_area.toFixed(3)+"</td></tr>"}).join("");
+refresh();$("info").textContent="完整99片原始矢量海岸已加载，包含8片低分辨率格网漏采小岛。可切换到旧格网模式对照。";
+}).catch(e=>$("info").textContent="图册载入失败："+e.message+"。可通过顶部静态总图查看。");
+</script></body></html>
