@@ -141,7 +141,7 @@ B31新增一份**不覆盖源数据的独立候选修订说明**：如果复制B
 
 在B31交互图中，可勾选“**预览A01/A02删除尖端顶点**”比较原岸与试验岸，关闭即可恢复原稿显示；源B16、本图册的99片基础档案和所有既定地理关系保持不变。未来如果采用，须另立可回退的正式草稿版本并完整复核其局部海岬、海湾形态与全局拓扑。
 
-[查看B31拓扑与56处同岸筛选数据]({{ '/assets/data/orbina-v225r-b31-topology-neck-audit.json' | relative_url }}) · [查看两处尖角可撤回改动方案]({{ '/assets/data/orbina-v225r-b31-reversible-vertex-proposal.json' | relative_url }}) · [回看B30原始诊断]({{ '/assets/maps/orbina-v225r-b30-geometry-quality-atlas.html' | relative_url }})
+[查看B31拓扑与56处同岸筛选数据]({{ '/assets/data/orbina-v225r-b31-topology-neck-audit.json' | relative_url }}) · [查看两处尖角可撤回改动方案]({{ '/assets/data/orbina-v225r-b31-reversible-vertex-proposal.json' | relative_url }}) · [查看B31最终源文件静态核查（25项通过）]({{ '/assets/data/orbina-v225r-b31-release-qa.json' | relative_url }}) · [回看B30原始诊断]({{ '/assets/maps/orbina-v225r-b30-geometry-quality-atlas.html' | relative_url }})
 
 **正式地理设定没有变化：**联合城与人民天国位于同一超级大陆，内海南口向外洋开放，北冠/东门地峡、抵抗者之弧及内海东岸R1/R2的已确认关系继续保留；秦棠—萨瑞拉—白石城相对位置与棠溪关系不改变。25个已录用海域名称、其他国家和陆地间尚未定稿的世界坐标也不借此自动确定。
 
