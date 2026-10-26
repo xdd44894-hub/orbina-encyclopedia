@@ -1,0 +1,1175 @@
+{
+  "edition": "V2.25-R-B20",
+  "status": "FIVE_REGIONS_CATCHMENT_COMPARATIVE_MODEL_NOT_CANON",
+  "base_global_coast": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+  "basis_terrain": "assets/data/orbina-v225r-b18-relative-elevation-hydrology.json",
+  "reused_H2_B19": "assets/data/orbina-v225r-b19-h2-catchments.json",
+  "atlas_source_status": "4 B20 grid studies plus unchanged H2 B19 study",
+  "sheets": [
+    {
+      "sheet": "H1",
+      "sheet_name": "中央超级大陆",
+      "land_polygon_id": "continental-nucleus",
+      "source_B18_model_id": "B18-SHEET-1",
+      "data_path": "assets/data/orbina-v225r-b20-h1-catchments.json",
+      "grid": {
+        "columns": 92,
+        "rows": 67,
+        "bbox_drawing": [
+          539,
+          132,
+          1012,
+          737
+        ],
+        "cell_size_drawing_units": 11,
+        "land_cells": 3800,
+        "coastal_outlet_cells": 274,
+        "all_outlet_root_count": 274,
+        "max_shore_distance_cells": 16
+      },
+      "top_basins": [
+        {
+          "id": "H1-W01",
+          "grid_cell_count": 160,
+          "grid_cell_percent": 4.21,
+          "longest_path_cells": 14,
+          "outlet_col": 49,
+          "outlet_row": 8
+        },
+        {
+          "id": "H1-W02",
+          "grid_cell_count": 149,
+          "grid_cell_percent": 3.92,
+          "longest_path_cells": 14,
+          "outlet_col": 49,
+          "outlet_row": 35
+        },
+        {
+          "id": "H1-W03",
+          "grid_cell_count": 122,
+          "grid_cell_percent": 3.21,
+          "longest_path_cells": 17,
+          "outlet_col": 12,
+          "outlet_row": 15
+        },
+        {
+          "id": "H1-W04",
+          "grid_cell_count": 115,
+          "grid_cell_percent": 3.03,
+          "longest_path_cells": 15,
+          "outlet_col": 59,
+          "outlet_row": 8
+        },
+        {
+          "id": "H1-W05",
+          "grid_cell_count": 96,
+          "grid_cell_percent": 2.53,
+          "longest_path_cells": 16,
+          "outlet_col": 82,
+          "outlet_row": 20
+        },
+        {
+          "id": "H1-W06",
+          "grid_cell_count": 92,
+          "grid_cell_percent": 2.42,
+          "longest_path_cells": 14,
+          "outlet_col": 30,
+          "outlet_row": 5
+        },
+        {
+          "id": "H1-W07",
+          "grid_cell_count": 90,
+          "grid_cell_percent": 2.37,
+          "longest_path_cells": 14,
+          "outlet_col": 84,
+          "outlet_row": 30
+        },
+        {
+          "id": "H1-W08",
+          "grid_cell_count": 76,
+          "grid_cell_percent": 2,
+          "longest_path_cells": 16,
+          "outlet_col": 19,
+          "outlet_row": 6
+        }
+      ],
+      "rainfall_sensitivity_scenarios": {
+        "uniform": {
+          "total_model_runoff_index": 3800,
+          "by_top_basins": [
+            {
+              "id": "H1-W01",
+              "runoff_index": 160,
+              "share_percent": 4.21
+            },
+            {
+              "id": "H1-W02",
+              "runoff_index": 149,
+              "share_percent": 3.92
+            },
+            {
+              "id": "H1-W03",
+              "runoff_index": 122,
+              "share_percent": 3.21
+            },
+            {
+              "id": "H1-W04",
+              "runoff_index": 115,
+              "share_percent": 3.03
+            },
+            {
+              "id": "H1-W05",
+              "runoff_index": 96,
+              "share_percent": 2.53
+            },
+            {
+              "id": "H1-W06",
+              "runoff_index": 92,
+              "share_percent": 2.42
+            },
+            {
+              "id": "H1-W07",
+              "runoff_index": 90,
+              "share_percent": 2.37
+            },
+            {
+              "id": "H1-W08",
+              "runoff_index": 76,
+              "share_percent": 2
+            }
+          ],
+          "other_outlets_index": 2900
+        },
+        "coastal_moist": {
+          "total_model_runoff_index": 4155.34,
+          "by_top_basins": [
+            {
+              "id": "H1-W01",
+              "runoff_index": 157.16,
+              "share_percent": 3.78
+            },
+            {
+              "id": "H1-W02",
+              "runoff_index": 145.63,
+              "share_percent": 3.5
+            },
+            {
+              "id": "H1-W03",
+              "runoff_index": 119.59,
+              "share_percent": 2.88
+            },
+            {
+              "id": "H1-W04",
+              "runoff_index": 116.05,
+              "share_percent": 2.79
+            },
+            {
+              "id": "H1-W05",
+              "runoff_index": 99.06,
+              "share_percent": 2.38
+            },
+            {
+              "id": "H1-W06",
+              "runoff_index": 98.04,
+              "share_percent": 2.36
+            },
+            {
+              "id": "H1-W07",
+              "runoff_index": 94.81,
+              "share_percent": 2.28
+            },
+            {
+              "id": "H1-W08",
+              "runoff_index": 80.86,
+              "share_percent": 1.95
+            }
+          ],
+          "other_outlets_index": 3244.14
+        },
+        "interior_moist": {
+          "total_model_runoff_index": 3444.66,
+          "by_top_basins": [
+            {
+              "id": "H1-W01",
+              "runoff_index": 162.84,
+              "share_percent": 4.73
+            },
+            {
+              "id": "H1-W02",
+              "runoff_index": 152.37,
+              "share_percent": 4.42
+            },
+            {
+              "id": "H1-W03",
+              "runoff_index": 124.41,
+              "share_percent": 3.61
+            },
+            {
+              "id": "H1-W04",
+              "runoff_index": 113.95,
+              "share_percent": 3.31
+            },
+            {
+              "id": "H1-W05",
+              "runoff_index": 92.94,
+              "share_percent": 2.7
+            },
+            {
+              "id": "H1-W06",
+              "runoff_index": 85.96,
+              "share_percent": 2.5
+            },
+            {
+              "id": "H1-W07",
+              "runoff_index": 85.19,
+              "share_percent": 2.47
+            },
+            {
+              "id": "H1-W08",
+              "runoff_index": 71.14,
+              "share_percent": 2.07
+            }
+          ],
+          "other_outlets_index": 2555.86
+        }
+      },
+      "model_status": "B20_COMPUTED",
+      "note": "grid cells are neither actual area nor real flow"
+    },
+    {
+      "sheet": "H2",
+      "sheet_name": "东北西主陆",
+      "land_polygon_id": "b14-ne-001",
+      "source_B18_model_id": "B18-SHEET-2",
+      "data_path": "assets/data/orbina-v225r-b19-h2-catchments.json",
+      "grid": {
+        "columns": 67,
+        "rows": 45,
+        "bbox_drawing": [
+          1444.8,
+          42,
+          281.4,
+          189
+        ],
+        "cell_size_drawing_units": 4.2,
+        "land_cells": 1285,
+        "coastal_outlet_cells": 164,
+        "all_outlet_root_count": 164,
+        "max_shore_distance_cells": 11
+      },
+      "top_basins": [
+        {
+          "id": "H2-W01",
+          "grid_cell_count": 89,
+          "grid_cell_percent": 6.93,
+          "longest_path_cells": 12,
+          "outlet_col": 16,
+          "outlet_row": 25
+        },
+        {
+          "id": "H2-W02",
+          "grid_cell_count": 77,
+          "grid_cell_percent": 5.99,
+          "longest_path_cells": 13,
+          "outlet_col": 40,
+          "outlet_row": 23
+        },
+        {
+          "id": "H2-W03",
+          "grid_cell_count": 61,
+          "grid_cell_percent": 4.75,
+          "longest_path_cells": 10,
+          "outlet_col": 24,
+          "outlet_row": 39
+        },
+        {
+          "id": "H2-W04",
+          "grid_cell_count": 42,
+          "grid_cell_percent": 3.27,
+          "longest_path_cells": 7,
+          "outlet_col": 14,
+          "outlet_row": 39
+        },
+        {
+          "id": "H2-W05",
+          "grid_cell_count": 37,
+          "grid_cell_percent": 2.88,
+          "longest_path_cells": 13,
+          "outlet_col": 40,
+          "outlet_row": 26
+        },
+        {
+          "id": "H2-W06",
+          "grid_cell_count": 23,
+          "grid_cell_percent": 1.79,
+          "longest_path_cells": 7,
+          "outlet_col": 41,
+          "outlet_row": 8
+        },
+        {
+          "id": "H2-W07",
+          "grid_cell_count": 21,
+          "grid_cell_percent": 1.63,
+          "longest_path_cells": 11,
+          "outlet_col": 37,
+          "outlet_row": 37
+        },
+        {
+          "id": "H2-W08",
+          "grid_cell_count": 19,
+          "grid_cell_percent": 1.48,
+          "longest_path_cells": 10,
+          "outlet_col": 18,
+          "outlet_row": 12
+        }
+      ],
+      "rainfall_sensitivity_scenarios": {
+        "uniform": {
+          "total_model_runoff_index": 1285,
+          "by_top_basins": [
+            {
+              "id": "H2-W01",
+              "runoff_index": 89,
+              "share_percent": 6.93
+            },
+            {
+              "id": "H2-W02",
+              "runoff_index": 77,
+              "share_percent": 5.99
+            },
+            {
+              "id": "H2-W03",
+              "runoff_index": 61,
+              "share_percent": 4.75
+            },
+            {
+              "id": "H2-W04",
+              "runoff_index": 42,
+              "share_percent": 3.27
+            },
+            {
+              "id": "H2-W05",
+              "runoff_index": 37,
+              "share_percent": 2.88
+            },
+            {
+              "id": "H2-W06",
+              "runoff_index": 23,
+              "share_percent": 1.79
+            },
+            {
+              "id": "H2-W07",
+              "runoff_index": 21,
+              "share_percent": 1.63
+            },
+            {
+              "id": "H2-W08",
+              "runoff_index": 19,
+              "share_percent": 1.48
+            }
+          ],
+          "other_outlets_index": 916
+        },
+        "coastal_moist": {
+          "total_model_runoff_index": 1464.17,
+          "by_top_basins": [
+            {
+              "id": "H2-W01",
+              "runoff_index": 87.38,
+              "share_percent": 5.97
+            },
+            {
+              "id": "H2-W02",
+              "runoff_index": 74.61,
+              "share_percent": 5.1
+            },
+            {
+              "id": "H2-W03",
+              "runoff_index": 63.26,
+              "share_percent": 4.32
+            },
+            {
+              "id": "H2-W04",
+              "runoff_index": 47.22,
+              "share_percent": 3.22
+            },
+            {
+              "id": "H2-W05",
+              "runoff_index": 37.16,
+              "share_percent": 2.54
+            },
+            {
+              "id": "H2-W06",
+              "runoff_index": 25.9,
+              "share_percent": 1.77
+            },
+            {
+              "id": "H2-W07",
+              "runoff_index": 21.35,
+              "share_percent": 1.46
+            },
+            {
+              "id": "H2-W08",
+              "runoff_index": 19.92,
+              "share_percent": 1.36
+            }
+          ],
+          "other_outlets_index": 1087.37
+        },
+        "interior_moist": {
+          "total_model_runoff_index": 1105.83,
+          "by_top_basins": [
+            {
+              "id": "H2-W01",
+              "runoff_index": 90.62,
+              "share_percent": 8.19
+            },
+            {
+              "id": "H2-W02",
+              "runoff_index": 79.39,
+              "share_percent": 7.18
+            },
+            {
+              "id": "H2-W03",
+              "runoff_index": 58.74,
+              "share_percent": 5.31
+            },
+            {
+              "id": "H2-W04",
+              "runoff_index": 36.78,
+              "share_percent": 3.33
+            },
+            {
+              "id": "H2-W05",
+              "runoff_index": 36.84,
+              "share_percent": 3.33
+            },
+            {
+              "id": "H2-W06",
+              "runoff_index": 20.1,
+              "share_percent": 1.82
+            },
+            {
+              "id": "H2-W07",
+              "runoff_index": 20.65,
+              "share_percent": 1.87
+            },
+            {
+              "id": "H2-W08",
+              "runoff_index": 18.08,
+              "share_percent": 1.63
+            }
+          ],
+          "other_outlets_index": 744.63
+        }
+      },
+      "model_status": "B19_REUSED_UNCHANGED",
+      "note": "grid cells are neither actual area nor real flow"
+    },
+    {
+      "sheet": "H3",
+      "sheet_name": "东北东主陆",
+      "land_polygon_id": "b14-ne-002",
+      "source_B18_model_id": "B18-SHEET-3",
+      "data_path": "assets/data/orbina-v225r-b20-h3-catchments.json",
+      "grid": {
+        "columns": 47,
+        "rows": 45,
+        "bbox_drawing": [
+          1772.4,
+          67.2,
+          197.4,
+          189
+        ],
+        "cell_size_drawing_units": 4.2,
+        "land_cells": 1043,
+        "coastal_outlet_cells": 131,
+        "all_outlet_root_count": 131,
+        "max_shore_distance_cells": 10
+      },
+      "top_basins": [
+        {
+          "id": "H3-W01",
+          "grid_cell_count": 87,
+          "grid_cell_percent": 8.34,
+          "longest_path_cells": 11,
+          "outlet_col": 18,
+          "outlet_row": 28
+        },
+        {
+          "id": "H3-W02",
+          "grid_cell_count": 71,
+          "grid_cell_percent": 6.81,
+          "longest_path_cells": 10,
+          "outlet_col": 15,
+          "outlet_row": 8
+        },
+        {
+          "id": "H3-W03",
+          "grid_cell_count": 54,
+          "grid_cell_percent": 5.18,
+          "longest_path_cells": 10,
+          "outlet_col": 4,
+          "outlet_row": 18
+        },
+        {
+          "id": "H3-W04",
+          "grid_cell_count": 48,
+          "grid_cell_percent": 4.6,
+          "longest_path_cells": 10,
+          "outlet_col": 31,
+          "outlet_row": 21
+        },
+        {
+          "id": "H3-W05",
+          "grid_cell_count": 28,
+          "grid_cell_percent": 2.68,
+          "longest_path_cells": 10,
+          "outlet_col": 31,
+          "outlet_row": 19
+        },
+        {
+          "id": "H3-W06",
+          "grid_cell_count": 21,
+          "grid_cell_percent": 2.01,
+          "longest_path_cells": 7,
+          "outlet_col": 33,
+          "outlet_row": 14
+        },
+        {
+          "id": "H3-W07",
+          "grid_cell_count": 18,
+          "grid_cell_percent": 1.73,
+          "longest_path_cells": 7,
+          "outlet_col": 19,
+          "outlet_row": 29
+        },
+        {
+          "id": "H3-W08",
+          "grid_cell_count": 18,
+          "grid_cell_percent": 1.73,
+          "longest_path_cells": 7,
+          "outlet_col": 21,
+          "outlet_row": 33
+        }
+      ],
+      "rainfall_sensitivity_scenarios": {
+        "uniform": {
+          "total_model_runoff_index": 1043,
+          "by_top_basins": [
+            {
+              "id": "H3-W01",
+              "runoff_index": 87,
+              "share_percent": 8.34
+            },
+            {
+              "id": "H3-W02",
+              "runoff_index": 71,
+              "share_percent": 6.81
+            },
+            {
+              "id": "H3-W03",
+              "runoff_index": 54,
+              "share_percent": 5.18
+            },
+            {
+              "id": "H3-W04",
+              "runoff_index": 48,
+              "share_percent": 4.6
+            },
+            {
+              "id": "H3-W05",
+              "runoff_index": 28,
+              "share_percent": 2.68
+            },
+            {
+              "id": "H3-W06",
+              "runoff_index": 21,
+              "share_percent": 2.01
+            },
+            {
+              "id": "H3-W07",
+              "runoff_index": 18,
+              "share_percent": 1.73
+            },
+            {
+              "id": "H3-W08",
+              "runoff_index": 18,
+              "share_percent": 1.73
+            }
+          ],
+          "other_outlets_index": 698
+        },
+        "coastal_moist": {
+          "total_model_runoff_index": 1176.84,
+          "by_top_basins": [
+            {
+              "id": "H3-W01",
+              "runoff_index": 81.19,
+              "share_percent": 6.9
+            },
+            {
+              "id": "H3-W02",
+              "runoff_index": 68.34,
+              "share_percent": 5.81
+            },
+            {
+              "id": "H3-W03",
+              "runoff_index": 55.05,
+              "share_percent": 4.68
+            },
+            {
+              "id": "H3-W04",
+              "runoff_index": 50.94,
+              "share_percent": 4.33
+            },
+            {
+              "id": "H3-W05",
+              "runoff_index": 27.37,
+              "share_percent": 2.33
+            },
+            {
+              "id": "H3-W06",
+              "runoff_index": 23.73,
+              "share_percent": 2.02
+            },
+            {
+              "id": "H3-W07",
+              "runoff_index": 20.31,
+              "share_percent": 1.73
+            },
+            {
+              "id": "H3-W08",
+              "runoff_index": 20.31,
+              "share_percent": 1.73
+            }
+          ],
+          "other_outlets_index": 829.6
+        },
+        "interior_moist": {
+          "total_model_runoff_index": 909.16,
+          "by_top_basins": [
+            {
+              "id": "H3-W01",
+              "runoff_index": 92.81,
+              "share_percent": 10.21
+            },
+            {
+              "id": "H3-W02",
+              "runoff_index": 73.66,
+              "share_percent": 8.1
+            },
+            {
+              "id": "H3-W03",
+              "runoff_index": 52.95,
+              "share_percent": 5.82
+            },
+            {
+              "id": "H3-W04",
+              "runoff_index": 45.06,
+              "share_percent": 4.96
+            },
+            {
+              "id": "H3-W05",
+              "runoff_index": 28.63,
+              "share_percent": 3.15
+            },
+            {
+              "id": "H3-W06",
+              "runoff_index": 18.27,
+              "share_percent": 2.01
+            },
+            {
+              "id": "H3-W07",
+              "runoff_index": 15.69,
+              "share_percent": 1.73
+            },
+            {
+              "id": "H3-W08",
+              "runoff_index": 15.69,
+              "share_percent": 1.73
+            }
+          ],
+          "other_outlets_index": 566.4
+        }
+      },
+      "model_status": "B20_COMPUTED",
+      "note": "grid cells are neither actual area nor real flow"
+    },
+    {
+      "sheet": "H4",
+      "sheet_name": "东南北主角",
+      "land_polygon_id": "b14-se-001",
+      "source_B18_model_id": "B18-SHEET-4",
+      "data_path": "assets/data/orbina-v225r-b20-h4-catchments.json",
+      "grid": {
+        "columns": 69,
+        "rows": 36,
+        "bbox_drawing": [
+          1554,
+          487.2,
+          289.8,
+          151.2
+        ],
+        "cell_size_drawing_units": 4.2,
+        "land_cells": 1234,
+        "coastal_outlet_cells": 157,
+        "all_outlet_root_count": 157,
+        "max_shore_distance_cells": 10
+      },
+      "top_basins": [
+        {
+          "id": "H4-W01",
+          "grid_cell_count": 73,
+          "grid_cell_percent": 5.92,
+          "longest_path_cells": 11,
+          "outlet_col": 42,
+          "outlet_row": 16
+        },
+        {
+          "id": "H4-W02",
+          "grid_cell_count": 59,
+          "grid_cell_percent": 4.78,
+          "longest_path_cells": 11,
+          "outlet_col": 33,
+          "outlet_row": 27
+        },
+        {
+          "id": "H4-W03",
+          "grid_cell_count": 41,
+          "grid_cell_percent": 3.32,
+          "longest_path_cells": 11,
+          "outlet_col": 35,
+          "outlet_row": 5
+        },
+        {
+          "id": "H4-W04",
+          "grid_cell_count": 38,
+          "grid_cell_percent": 3.08,
+          "longest_path_cells": 7,
+          "outlet_col": 43,
+          "outlet_row": 17
+        },
+        {
+          "id": "H4-W05",
+          "grid_cell_count": 31,
+          "grid_cell_percent": 2.51,
+          "longest_path_cells": 9,
+          "outlet_col": 38,
+          "outlet_row": 5
+        },
+        {
+          "id": "H4-W06",
+          "grid_cell_count": 27,
+          "grid_cell_percent": 2.19,
+          "longest_path_cells": 8,
+          "outlet_col": 35,
+          "outlet_row": 27
+        },
+        {
+          "id": "H4-W07",
+          "grid_cell_count": 23,
+          "grid_cell_percent": 1.86,
+          "longest_path_cells": 9,
+          "outlet_col": 13,
+          "outlet_row": 14
+        },
+        {
+          "id": "H4-W08",
+          "grid_cell_count": 22,
+          "grid_cell_percent": 1.78,
+          "longest_path_cells": 10,
+          "outlet_col": 32,
+          "outlet_row": 28
+        }
+      ],
+      "rainfall_sensitivity_scenarios": {
+        "uniform": {
+          "total_model_runoff_index": 1234,
+          "by_top_basins": [
+            {
+              "id": "H4-W01",
+              "runoff_index": 73,
+              "share_percent": 5.92
+            },
+            {
+              "id": "H4-W02",
+              "runoff_index": 59,
+              "share_percent": 4.78
+            },
+            {
+              "id": "H4-W03",
+              "runoff_index": 41,
+              "share_percent": 3.32
+            },
+            {
+              "id": "H4-W04",
+              "runoff_index": 38,
+              "share_percent": 3.08
+            },
+            {
+              "id": "H4-W05",
+              "runoff_index": 31,
+              "share_percent": 2.51
+            },
+            {
+              "id": "H4-W06",
+              "runoff_index": 27,
+              "share_percent": 2.19
+            },
+            {
+              "id": "H4-W07",
+              "runoff_index": 23,
+              "share_percent": 1.86
+            },
+            {
+              "id": "H4-W08",
+              "runoff_index": 22,
+              "share_percent": 1.78
+            }
+          ],
+          "other_outlets_index": 920
+        },
+        "coastal_moist": {
+          "total_model_runoff_index": 1383.59,
+          "by_top_basins": [
+            {
+              "id": "H4-W01",
+              "runoff_index": 73.56,
+              "share_percent": 5.32
+            },
+            {
+              "id": "H4-W02",
+              "runoff_index": 55.5,
+              "share_percent": 4.01
+            },
+            {
+              "id": "H4-W03",
+              "runoff_index": 40.58,
+              "share_percent": 2.93
+            },
+            {
+              "id": "H4-W04",
+              "runoff_index": 41.5,
+              "share_percent": 3
+            },
+            {
+              "id": "H4-W05",
+              "runoff_index": 34.01,
+              "share_percent": 2.46
+            },
+            {
+              "id": "H4-W06",
+              "runoff_index": 29.1,
+              "share_percent": 2.1
+            },
+            {
+              "id": "H4-W07",
+              "runoff_index": 24.61,
+              "share_percent": 1.78
+            },
+            {
+              "id": "H4-W08",
+              "runoff_index": 23.33,
+              "share_percent": 1.69
+            }
+          ],
+          "other_outlets_index": 1061.4
+        },
+        "interior_moist": {
+          "total_model_runoff_index": 1084.41,
+          "by_top_basins": [
+            {
+              "id": "H4-W01",
+              "runoff_index": 72.44,
+              "share_percent": 6.68
+            },
+            {
+              "id": "H4-W02",
+              "runoff_index": 62.5,
+              "share_percent": 5.76
+            },
+            {
+              "id": "H4-W03",
+              "runoff_index": 41.42,
+              "share_percent": 3.82
+            },
+            {
+              "id": "H4-W04",
+              "runoff_index": 34.5,
+              "share_percent": 3.18
+            },
+            {
+              "id": "H4-W05",
+              "runoff_index": 27.99,
+              "share_percent": 2.58
+            },
+            {
+              "id": "H4-W06",
+              "runoff_index": 24.9,
+              "share_percent": 2.3
+            },
+            {
+              "id": "H4-W07",
+              "runoff_index": 21.39,
+              "share_percent": 1.97
+            },
+            {
+              "id": "H4-W08",
+              "runoff_index": 20.67,
+              "share_percent": 1.91
+            }
+          ],
+          "other_outlets_index": 778.6
+        }
+      },
+      "model_status": "B20_COMPUTED",
+      "note": "grid cells are neither actual area nor real flow"
+    },
+    {
+      "sheet": "H5",
+      "sheet_name": "东南中主角",
+      "land_polygon_id": "b14-se-003",
+      "source_B18_model_id": "B18-SHEET-5",
+      "data_path": "assets/data/orbina-v225r-b20-h5-catchments.json",
+      "grid": {
+        "columns": 52,
+        "rows": 39,
+        "bbox_drawing": [
+          1675.8,
+          743.4,
+          218.4,
+          163.8
+        ],
+        "cell_size_drawing_units": 4.2,
+        "land_cells": 1112,
+        "coastal_outlet_cells": 128,
+        "all_outlet_root_count": 128,
+        "max_shore_distance_cells": 10
+      },
+      "top_basins": [
+        {
+          "id": "H5-W01",
+          "grid_cell_count": 108,
+          "grid_cell_percent": 9.71,
+          "longest_path_cells": 11,
+          "outlet_col": 23,
+          "outlet_row": 9
+        },
+        {
+          "id": "H5-W02",
+          "grid_cell_count": 89,
+          "grid_cell_percent": 8,
+          "longest_path_cells": 11,
+          "outlet_col": 30,
+          "outlet_row": 30
+        },
+        {
+          "id": "H5-W03",
+          "grid_cell_count": 41,
+          "grid_cell_percent": 3.69,
+          "longest_path_cells": 11,
+          "outlet_col": 27,
+          "outlet_row": 30
+        },
+        {
+          "id": "H5-W04",
+          "grid_cell_count": 30,
+          "grid_cell_percent": 2.7,
+          "longest_path_cells": 9,
+          "outlet_col": 42,
+          "outlet_row": 25
+        },
+        {
+          "id": "H5-W05",
+          "grid_cell_count": 27,
+          "grid_cell_percent": 2.43,
+          "longest_path_cells": 8,
+          "outlet_col": 6,
+          "outlet_row": 19
+        },
+        {
+          "id": "H5-W06",
+          "grid_cell_count": 19,
+          "grid_cell_percent": 1.71,
+          "longest_path_cells": 10,
+          "outlet_col": 9,
+          "outlet_row": 28
+        },
+        {
+          "id": "H5-W07",
+          "grid_cell_count": 18,
+          "grid_cell_percent": 1.62,
+          "longest_path_cells": 10,
+          "outlet_col": 38,
+          "outlet_row": 10
+        },
+        {
+          "id": "H5-W08",
+          "grid_cell_count": 18,
+          "grid_cell_percent": 1.62,
+          "longest_path_cells": 10,
+          "outlet_col": 39,
+          "outlet_row": 12
+        }
+      ],
+      "rainfall_sensitivity_scenarios": {
+        "uniform": {
+          "total_model_runoff_index": 1112,
+          "by_top_basins": [
+            {
+              "id": "H5-W01",
+              "runoff_index": 108,
+              "share_percent": 9.71
+            },
+            {
+              "id": "H5-W02",
+              "runoff_index": 89,
+              "share_percent": 8
+            },
+            {
+              "id": "H5-W03",
+              "runoff_index": 41,
+              "share_percent": 3.69
+            },
+            {
+              "id": "H5-W04",
+              "runoff_index": 30,
+              "share_percent": 2.7
+            },
+            {
+              "id": "H5-W05",
+              "runoff_index": 27,
+              "share_percent": 2.43
+            },
+            {
+              "id": "H5-W06",
+              "runoff_index": 19,
+              "share_percent": 1.71
+            },
+            {
+              "id": "H5-W07",
+              "runoff_index": 18,
+              "share_percent": 1.62
+            },
+            {
+              "id": "H5-W08",
+              "runoff_index": 18,
+              "share_percent": 1.62
+            }
+          ],
+          "other_outlets_index": 762
+        },
+        "coastal_moist": {
+          "total_model_runoff_index": 1223.58,
+          "by_top_basins": [
+            {
+              "id": "H5-W01",
+              "runoff_index": 99.25,
+              "share_percent": 8.11
+            },
+            {
+              "id": "H5-W02",
+              "runoff_index": 81.37,
+              "share_percent": 6.65
+            },
+            {
+              "id": "H5-W03",
+              "runoff_index": 41.07,
+              "share_percent": 3.36
+            },
+            {
+              "id": "H5-W04",
+              "runoff_index": 32.31,
+              "share_percent": 2.64
+            },
+            {
+              "id": "H5-W05",
+              "runoff_index": 29.73,
+              "share_percent": 2.43
+            },
+            {
+              "id": "H5-W06",
+              "runoff_index": 19.35,
+              "share_percent": 1.58
+            },
+            {
+              "id": "H5-W07",
+              "runoff_index": 18.63,
+              "share_percent": 1.52
+            },
+            {
+              "id": "H5-W08",
+              "runoff_index": 18.63,
+              "share_percent": 1.52
+            }
+          ],
+          "other_outlets_index": 883.24
+        },
+        "interior_moist": {
+          "total_model_runoff_index": 1000.42,
+          "by_top_basins": [
+            {
+              "id": "H5-W01",
+              "runoff_index": 116.75,
+              "share_percent": 11.67
+            },
+            {
+              "id": "H5-W02",
+              "runoff_index": 96.63,
+              "share_percent": 9.66
+            },
+            {
+              "id": "H5-W03",
+              "runoff_index": 40.93,
+              "share_percent": 4.09
+            },
+            {
+              "id": "H5-W04",
+              "runoff_index": 27.69,
+              "share_percent": 2.77
+            },
+            {
+              "id": "H5-W05",
+              "runoff_index": 24.27,
+              "share_percent": 2.43
+            },
+            {
+              "id": "H5-W06",
+              "runoff_index": 18.65,
+              "share_percent": 1.86
+            },
+            {
+              "id": "H5-W07",
+              "runoff_index": 17.37,
+              "share_percent": 1.74
+            },
+            {
+              "id": "H5-W08",
+              "runoff_index": 17.37,
+              "share_percent": 1.74
+            }
+          ],
+          "other_outlets_index": 640.76
+        }
+      },
+      "model_status": "B20_COMPUTED",
+      "note": "grid cells are neither actual area nor real flow"
+    }
+  ],
+  "totals": {
+    "regions": 5,
+    "land_cells": 8474,
+    "model_coastal_outlets": 854,
+    "independent_model_outlet_basins": 854,
+    "featured_model_basins": 40,
+    "scenario_count": 3
+  },
+  "caveats": [
+    "No model stream, rainfall scenario or tiny coastal outlet proves a real hydrographic network",
+    "Cell sizes differ among H1–H5; DO NOT compare runoff indices as physical volumes",
+    "H1 is not assigned canonical states, R1/R2 or Resistance Arc at specific grid positions",
+    "Schematic atlas outlines stay B16 candidate; formally named seas, cities and rivers remain separate canon",
+    "B19 H2 data reused rather than silently regenerated"
+  ]
+}
