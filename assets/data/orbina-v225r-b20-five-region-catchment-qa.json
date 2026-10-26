@@ -1,0 +1,49 @@
+{
+  "edition": "V2.25-R-B20",
+  "status": "GRID_AND_CATCHMENT_SOURCE_QA_PASS__NO_REAL_WORLD_CALIBRATION",
+  "data_source": "assets/data/orbina-v225r-b18-relative-elevation-hydrology.json",
+  "modelled_sheets": [
+    {
+      "sheet": "H1",
+      "grid_compatible": true,
+      "all_land_reaches_coast": true,
+      "no_interisland_parent": true,
+      "area_sum": true,
+      "each_basins_path_valid": true,
+      "rainfall_weights_finite": true
+    },
+    {
+      "sheet": "H3",
+      "grid_compatible": true,
+      "all_land_reaches_coast": true,
+      "no_interisland_parent": true,
+      "area_sum": true,
+      "each_basins_path_valid": true,
+      "rainfall_weights_finite": true
+    },
+    {
+      "sheet": "H4",
+      "grid_compatible": true,
+      "all_land_reaches_coast": true,
+      "no_interisland_parent": true,
+      "area_sum": true,
+      "each_basins_path_valid": true,
+      "rainfall_weights_finite": true
+    },
+    {
+      "sheet": "H5",
+      "grid_compatible": true,
+      "all_land_reaches_coast": true,
+      "no_interisland_parent": true,
+      "area_sum": true,
+      "each_basins_path_valid": true,
+      "rainfall_weights_finite": true
+    }
+  ],
+  "unchanged_B19_H2_file": true,
+  "land_cells": 8474,
+  "completeness": "All 5 research regions now have catchment/rain sensitivity research; four are new B20 datasets",
+  "outlet_count": 854,
+  "physical_science_caveat": "coast cells are not proved real river mouths; no geospatial scale, precipitation, real DEM or tectonic validation",
+  "browser_mobile": "NOT_TESTED"
+}
