@@ -1,0 +1,78 @@
+{
+  "edition": "V2.25-R-B37",
+  "date": "2026-10-27",
+  "status": "STATIC_SOURCE_CROSSFILE_TOPOLOGY_QA_PASS",
+  "source_sha": [
+    "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "cc35278c54ba12c2ebefecb7d97567110270e881",
+    "28e6e8143aac255f9150904a9b8f2abc464585c0",
+    "c54a08165caba6f1a978465a3cb6221560f140f5"
+  ],
+  "summary": {
+    "global_candidate_polygon_count": 99,
+    "vertices_B36": 9669,
+    "vertices_B37": 9669,
+    "modified_macro_polygons": 1,
+    "translated_polygon_id": 12,
+    "delta_drawing": [
+      16,
+      -10
+    ],
+    "closest_border_pre_drawing": 1.31434971,
+    "closest_border_after_drawing": 17.46762191,
+    "macro_11_12_gap_pre_drawing": 1.31434971,
+    "macro_11_12_gap_B37_drawing": 17.813353,
+    "neighbor_71_after_drawing": 17.46762191,
+    "all_changed_polygon_identity_retained": true
+  },
+  "qa": {
+    "allSourcesUnchanged": true,
+    "baseline99": true,
+    "baseline9669": true,
+    "oneMacroMoved": true,
+    "allOriginalVerticesKept": true,
+    "translationExactly": true,
+    "areaUnchanged": true,
+    "baselineNarrowGap": true,
+    "afterNearestGapOver17": true,
+    "B37Macro11GapOver17": true,
+    "B37Macro71GapOver17": true,
+    "noNewExternalIntersections": true,
+    "noTopologicalSourceChange": true
+  },
+  "closest_before": [
+    {
+      "id": 11,
+      "shift": 0,
+      "gap": 1.31434971
+    },
+    {
+      "id": 71,
+      "shift": 0,
+      "gap": 26.23553568
+    },
+    {
+      "id": 89,
+      "shift": 0,
+      "gap": 30.83017811
+    }
+  ],
+  "closest_after": [
+    {
+      "id": 71,
+      "shift": 0,
+      "gap": 17.46762191
+    },
+    {
+      "id": 11,
+      "shift": 0,
+      "gap": 17.813353
+    },
+    {
+      "id": 70,
+      "shift": 0,
+      "gap": 26.97537746
+    }
+  ],
+  "notes": "A single complete rigid macro-land translation keeps vertex count, island count, area, coast curvature and canonical geography unchanged; checked exact segment clearance for candidate neighbors with ±2400 horizontal periodic copies."
+}
