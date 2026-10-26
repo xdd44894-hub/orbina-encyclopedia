@@ -1,0 +1,106 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 B34 · 海岸精修前后对照</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f5ee;color:#263f4a;font:15px/1.58 system-ui,"Microsoft YaHei",sans-serif}
+header{background:linear-gradient(115deg,#183c51,#276e75);color:#fbfff9;padding:26px max(16px,calc((100vw - 1340px)/2))}
+header h1{font-size:clamp(23px,3vw,38px);margin:0 0 7px}header p{color:#d6ede8;max-width:1050px;margin:0}
+main{max-width:1340px;margin:auto;padding:18px 16px 60px}
+nav{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:16px}nav a{display:inline-block;text-decoration:none;color:#265b6b;font-size:13px;background:#fff;border:1px solid #cbdbd5;border-radius:7px;padding:9px 11px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:16px}
+.stats>div{border-radius:9px;background:#e9f1eb;border:1px solid #d1dfd7;padding:12px}.stats b{display:block;font-size:27px;color:#286675}.stats small{color:#5b7b7f}
+.panel{background:#fffefa;border:1px solid #d3ddd7;border-radius:12px;margin-bottom:16px;padding:17px}
+h2{font-size:20px;margin:0 0 11px}h3{font-size:17px;margin:5px 0}.controls{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin:12px 0}
+.controls label{font-size:13px;display:flex;gap:7px;align-items:center}
+select,button,input{font:inherit;accent-color:#327f84;color:#244f59}select,button{border:1px solid #bad2cc;background:#f2f8f3;border-radius:7px;padding:7px 10px}
+button{cursor:pointer;background:#e6f1eb}select:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid #1e8694}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.canvasPanel{background:#e2eae2;border:1px solid #cadae1;border-radius:10px;padding:10px}
+.canvasPanel h3{font-size:16px;margin:0 0 8px}.canvasbox{background:#204c62;border-radius:6px;overflow:hidden;border:1px solid #9bbfc1}
+canvas{display:block;width:100%;height:auto;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}
+.key{color:#516d78;font-size:12px;margin:8px 1px 0}
+#details,#status{background:#edf5ef;border:1px solid #d1dfd5;border-radius:8px;padding:12px;margin:10px 0;font-size:13px}
+#details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+#details>div{border-right:1px solid #c9d8cf;padding-right:10px}#details>div:last-child{border:0}
+.muted{color:#617d7f;font-size:13px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid #dfebe4;text-align:left;padding:8px 5px}th{color:#5e7980}
+@media(max-width:930px){.two{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}#details{grid-template-columns:1fr}#details>div{border-right:0;border-bottom:1px solid #c9d8cf;padding-bottom:8px}}
+</style></head><body>
+<header><h1>俄庇娜 · B34 海岸线实际精修</h1>
+<p>左右对照同一地理位置：左侧为B16原始海岸，右侧为B34可回退修订稿。清除两个几乎重合的极端针尖，沿三片候选陆块的五段较直海岸绘制自然的局部湾口和海岬，不合并陆块、不删除岛屿、不改变任何正式国界或海域名称。</p></header>
+<main><nav>
+<a href="../data/orbina-v225r-b34-reversible-coastline-layer.json">下载B34实际修订顶点与原岸数据</a>
+<a href="../data/orbina-v225r-b34-coastline-topology-qa.json">查看B34几何质量检查</a>
+<a href="orbina-v225r-b33-coast-arc-site-atlas.html">返回B33地峡候选图</a>
+<a href="orbina-v225r-b29-complete-vector-atlas.html">全99片原始全球地图</a>
+</nav>
+<div class="stats"><div><b>99</b><small>修订前后陆块数不变</small></div><div><b>3</b><small>局部海岸实际修订的陆块</small></div><div><b>5</b><small>有控制的海岸细化边段</small></div><div><b>9,633</b><small>修订图总顶点（原9,621）</small></div></div>
+<section class="panel"><h2>原始轮廓／修订轮廓实时对照</h2>
+<div class="controls">
+<label>对照地区 <select id="region"><option value="3">A01 · 南部东侧山脊陆块 · 海岸精修</option><option value="5">西南西侧次大陆 · 海湾与岬角</option><option value="6">A02 · 西南东侧次大陆 · 消除针尖</option><option value="all">完整全球对照</option></select></label>
+<label>放大倍率 <input id="zoom" type="range" min="1" max="35" step=".5" value="8"><b id="zoomTxt">8×</b></label>
+<label>显示切图 <select id="seam"><option value="0">B16原始图幅</option><option value="57">第57列</option><option value="55">第55列</option></select></label>
+<label><input type="checkbox" id="overlay" checked>右图以虚线叠加原海岸（仅高亮区）</label>
+<button type="button" id="reset">恢复当前区域居中</button>
+</div>
+<div class="two">
+<div class="canvasPanel"><h3>原始 · B16</h3><div class="canvasbox"><canvas id="before" width="740" height="520" aria-label="B16原始海岸地图，可拖动缩放"></canvas></div><div class="key">琥珀色：即将修订的局部原始陆块岸线。</div></div>
+<div class="canvasPanel"><h3>候选修订 · B34</h3><div class="canvasbox"><canvas id="after" width="740" height="520" aria-label="B34修订矢量岸线，可拖动缩放"></canvas></div><div class="key">青绿色：B34实线。粉红色虚线：B16原岸在相同位置的投影。</div></div>
+</div>
+<div id="status">载入B16完整矢量世界地图及B34独立修订数据……</div>
+<div id="details"><div>正在计算……</div></div>
+</section>
+<section class="panel"><h2>对原始地图修改了哪些部位？</h2>
+<table><thead><tr><th>陆块</th><th>原始顶点</th><th>B34顶点</th><th>图纸面积变化</th></tr></thead><tbody id="changeRows"></tbody></table>
+<p class="muted">B34将A01/A02的近零角尖端顶点各删除一个，并在五段相对笔直的海岸上人工构造14个局部转折点。海岸微形态不是随机抖动。所有99片陆块继续保留；三片被修订陆块的面积变化均不到0.5%。这只能代表绘图质量改进，不能证实真实地质过程或海岸侵蚀史。</p>
+</section>
+<section class="panel"><h2>使用注意</h2>
+<p>可以在左右两张地图上拖动、缩放和切换区域，二者相机完全联动。正式地理关系——联合城与人民天国同超级大陆、内海南部出口、秦棠—萨瑞拉关系、棠溪与R1/R2水系以及25个正式海域名称——并未修改。B34是依赖B16原始数据加载的<strong>可回退矢量替换层</strong>，不是最终获批的星球大陆地图。</p>
+</section>
+</main><script>
+"use strict";
+const $=x=>document.getElementById(x);
+let B=null,C=null,source=[],draft=[],zoom=8,panX=0,panY=0,drag=null,focusPt=[1148,1035];
+const W=740,H=520,OX=18,OY=14,DW=704,DH=352,CX=370,CY=260;
+const sites={3:{center:[1145,1038],zoom:8},5:{center:[304,987],zoom:6},6:{center:[447,1019],zoom:8},all:{center:[1200,600],zoom:1}};
+function projected(p,shift=0){return[OX+(p[0]-Number($("seam").value)*10+2400*shift)/2400*DW,OY+p[1]/1200*DH]}
+function pos(p){let x=(p[0]-Number($("seam").value)*10)%2400;if(x<0)x+=2400;return[OX+x/2400*DW,OY+p[1]/1200*DH]}
+function render(canvas,polygons,isAfter){let ctx=canvas.getContext("2d");ctx.fillStyle="#204e65";ctx.fillRect(0,0,W,H);
+ctx.save();ctx.translate(CX+panX,CY+panY);ctx.scale(zoom,zoom);ctx.translate(-CX,-CY);
+ctx.strokeStyle="#b6d8dc45";ctx.lineWidth=1/zoom;
+for(let i=0;i<=12;i++){let x=OX+DW*i/12;ctx.beginPath();ctx.moveTo(x,OY);ctx.lineTo(x,OY+DH);ctx.stroke()}
+for(let j=0;j<=6;j++){let y=OY+DH*j/6;ctx.beginPath();ctx.moveTo(OX,y);ctx.lineTo(OX+DW,y);ctx.stroke()}
+polygons.forEach((p,id)=>{const highlight=[3,5,6].includes(id);
+for(let k=-1;k<=2;k++){ctx.beginPath();p.coordinates.forEach((v,i)=>{let q=projected(v,k);if(i===0)ctx.moveTo(...q);else ctx.lineTo(...q)});ctx.closePath();ctx.fillStyle=highlight?(isAfter?"#9ed3ae":"#dbc994"):(p.color||"#c5d0b4");ctx.fill();ctx.strokeStyle=highlight?(isAfter?"#45ddb2":"#f9d28b"):"#d4e2c7";ctx.lineWidth=(highlight?1.75:.6)/zoom;ctx.stroke();}}
+);
+if(isAfter&&$("overlay").checked){for(let id of [3,5,6]){let p=source[id];for(let k=-1;k<=2;k++){ctx.beginPath();p.coordinates.forEach((v,i)=>{let q=projected(v,k);if(i===0)ctx.moveTo(...q);else ctx.lineTo(...q)});ctx.closePath();ctx.strokeStyle="#ff8fbd";ctx.setLineDash([5/zoom,3/zoom]);ctx.lineWidth=1.6/zoom;ctx.stroke();ctx.setLineDash([])}}}
+ctx.restore();ctx.strokeStyle="#bfd8d3";ctx.lineWidth=1.2;ctx.strokeRect(OX,OY,DW,DH)}
+function draw(){if(!B)return;render($("before"),source,false);render($("after"),draft,true)}
+function focus(p,value){focusPt=p.slice();zoom=value;let pt=pos(focusPt);panX=-zoom*(pt[0]-CX);panY=-zoom*(pt[1]-CY);$("zoom").value=String(zoom);$("zoomTxt").textContent=zoom+"×";draw()}
+function showRegion(){const v=sites[$("region").value];focus(v.center,v.zoom);if(!C)return;
+const summary=$("details");summary.innerHTML="";
+for(const id of [3,5,6]){let x=C.geometry_changes.polygon_replacements.find(z=>z.polygon_id===id);
+let item=document.createElement("div"),title=document.createElement("h3"),note=document.createElement("p");
+title.textContent="#"+id+" · "+x.source_polygon_name;
+note.textContent="面积变化 "+(x.relative_area_change_pct>0?"+":"")+x.relative_area_change_pct.toFixed(4)+"%；顶点 "+x.original_vertices+" → "+x.revised_vertices+"；最小夹角 "+x.minimum_unsigned_turn_angle_deg.toFixed(1)+"°。";
+item.append(title,note);summary.append(item);
+}
+}
+$("region").onchange=showRegion;$("seam").onchange=()=>showRegion();$("overlay").onchange=draw;
+$("zoom").oninput=()=>{zoom=Number($("zoom").value);$("zoomTxt").textContent=zoom+"×";draw()};
+$("reset").onclick=showRegion;
+for(let id of ["before","after"]){let c=$(id);
+c.onpointerdown=e=>{drag={id:e.pointerId,x:e.clientX,y:e.clientY,panX,panY};c.setPointerCapture(e.pointerId)};
+c.onpointermove=e=>{if(!drag||drag.id!==e.pointerId)return;let f=W/c.getBoundingClientRect().width;panX=drag.panX+(e.clientX-drag.x)*f;panY=drag.panY+(e.clientY-drag.y)*f;draw()};
+c.onpointerup=()=>drag=null;c.onpointercancel=()=>drag=null;
+}
+Promise.all([
+fetch("../data/orbina-v225r-b16-aesthetic-geography-master.json").then(r=>{if(!r.ok)throw Error("B16 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b34-reversible-coastline-layer.json").then(r=>{if(!r.ok)throw Error("B34 HTTP "+r.status);return r.json()})
+]).then(([b,c])=>{
+B=b;C=c;source=[...b.macro_landmasses,...b.archipelago];draft=source.map((p,id)=>{const rep=c.geometry_changes.polygon_replacements.find(z=>z.polygon_id===id);return rep?{...p,coordinates:rep.revised_coordinates}:p});
+const total=source.reduce((s,p)=>s+p.coordinates.length,0),revised=draft.reduce((s,p)=>s+p.coordinates.length,0);
+if(source.length!==99||total!==9621||revised!==9633||c.totals.revised_vertices!==9633||c.geometry_changes.polygon_replacements.length!==3)throw Error("B34数据完整性检查未通过");
+for(const item of c.geometry_changes.polygon_replacements){const row=document.createElement("tr");let values=["#"+item.polygon_id+" · "+item.source_polygon_name,item.original_vertices,item.revised_vertices,(item.relative_area_change_pct>0?"+":"")+item.relative_area_change_pct.toFixed(4)+"%"];values.forEach(v=>{let cell=document.createElement("td");cell.textContent=v;row.append(cell)});$("changeRows").append(row)}
+$("status").textContent="已载入B16原始99片陆地（9,621顶点）和B34局部矢量修订层（9,633顶点）。左右视图联动，粉红虚线标出被修改的原始海岸。";showRegion();
+}).catch(e=>$("status").textContent="数据读取错误："+e.message+"。请通过页面顶部链接检查原始文件。");
+</script></body></html>
