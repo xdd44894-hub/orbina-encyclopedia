@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 · V2.25-R-B18 碎裂大陆世界地图</title>
+<style>
+:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color-scheme:dark;background:#081e29;color:#ecf2ec}*{box-sizing:border-box}body{margin:0}
+header{background:#123c49;padding:28px max(18px,calc((100% - 1240px)/2));border-bottom:1px solid #3d7180}header h1{font-size:clamp(24px,3vw,37px);line-height:1.3;margin:0 0 8px}header p{color:#bdd3d5;margin:0;line-height:1.7}
+main{max-width:1280px;margin:auto;padding:18px}a{color:#c5e7de}.links{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 19px}.links a{border:1px solid #4e7883;border-radius:8px;padding:9px;text-decoration:none;background:#153e4b;font-size:14px}
+.card{background:#123542;border:1px solid #456e7c;border-radius:13px;padding:16px;margin:15px 0}.card h2{font-size:20px;margin:0 0 10px}
+#mapView{display:block;background:#0c3444;width:100%;height:auto;aspect-ratio:2/1;border-radius:8px;border:1px solid #356271}.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 0}.controls label{display:flex;align-items:center;gap:7px;font-size:14px}
+button,select{background:#255566;color:#f0f7ec;border:1px solid #6b9ba3;border-radius:7px;padding:8px;cursor:pointer}button:hover{background:#316c7e}
+small,.muted{color:#b6ccd1;line-height:1.7}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{background:#0d2b36;border-radius:9px;padding:13px}.stat strong{display:block;font-size:28px}.stat span{font-size:13px;color:#bfd0d0}
+.grid2{display:grid;grid-template-columns:minmax(240px,410px) 1fr;gap:20px}.grid2 p{line-height:1.8;color:#d4e4dd}
+#globe{display:block;width:100%;max-width:400px;margin:auto;border-radius:50%;background:#0e3041}
+.range{width:min(300px,55vw)}footer{text-align:center;color:#a6bfc3;padding:22px}
+@media(max-width:740px){.grid2{grid-template-columns:1fr}main{padding:10px}.card{padding:12px}}
+</style><style>.chapter-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}.chapter-grid details{border:1px solid #486878;border-radius:10px;padding:13px}.chapter-grid summary{cursor:pointer;font-weight:700}.chapter-grid p,.archive-record{line-height:1.8}.archive-record{min-height:100px;padding:14px;border:1px solid #486878;border-radius:10px}</style><style>.terrain-frame{background:#123e5b;border-radius:12px;border:1px solid rgba(120,160,181,.4);overflow:hidden}.terrain-frame canvas{width:100%;height:auto;display:block}.terrain-legend{display:flex;flex-wrap:wrap;gap:12px;padding:10px 0;font-size:13px}.terrain-legend span{display:flex;align-items:center;gap:5px}.terrain-legend i{display:block;width:14px;height:14px;border-radius:3px}.terrain-summary{background:rgba(57,88,101,.25);padding:12px;border-radius:10px;line-height:1.6}.terrain-summary p{margin:5px 0}</style></head><body>
+<header><h1>俄庇娜 · B18 地理书：相对地势与水文模型</h1>
+<p><strong>V2.25-R-B18</strong> · 在原有10章地理目录、99陆地档案基础上，开展5幅相对地形、坡地与汇水候选图幅的可视化研究。海岸维持B16原样，地势和水系仍为非正史情景。<strong>当前仍为全球海陆工作方案，不是正史全球坐标图。</strong></p></header>
+<main>
+<div class="links">
+<a href="../images/orbina-v225r-b18-relative-relief-hydrography.svg" target="_blank">B18地势与汇流候选全图</a>
+<a href="../images/orbina-v225r-b16-mollweide.svg" target="_blank">B16等面积全球图</a>
+<a href="../data/orbina-v225r-b16-aesthetic-geography-master.json" target="_blank">可编辑海陆坐标 JSON</a>
+<a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank">海洋地理正史说明</a>
+</div>
+<section class="card" id="terrain">
+<h2>五幅自然地理专题图：地势、坡地与汇水</h2>
+<p class="muted">选择 H1–H5 可以查看不同大陆的模拟相对高度与河谷候选。数值0–100仅表示模型内部相对地势，没有米或公里单位；蓝色线不是正式河流。</p>
+<div class="controls">
+<label>研究图幅<select id="terrainSheet"><option value="0">H1 · 中央超级大陆</option><option value="1">H2 · 东北西主陆</option><option value="2">H3 · 东北东主陆</option><option value="3">H4 · 东南北主角</option><option value="4">H5 · 东南中主角</option></select></label>
+<label>专题<select id="terrainMode"><option value="relief">相对地形高度</option><option value="flow">汇流累积</option><option value="slope">局部坡度差</option></select></label>
+<label><input id="terrainContour" type="checkbox" checked>高度分层等值线</label>
+<label><input id="terrainStreams" type="checkbox" checked>推演汇流路径</label>
+</div>
+<div class="terrain-frame"><canvas id="terrainCanvas" width="1000" height="620" aria-label="相对地势与水文研究网格"></canvas></div>
+<div class="terrain-legend"><span><i style="background:#123e5b"></i>海洋</span><span><i style="background:#8fbf9a"></i>近岸低地</span><span><i style="background:#d3d1a0"></i>中部地势</span><span><i style="background:#a38b68"></i>高地</span><span><i style="background:#187cad"></i>数值汇流</span></div>
+<div id="terrainStats" class="terrain-summary">正在读取B18模型…</div>
+<p class="muted">本模型优先用岸线距离和B17候选山脊建立连续高度，再用从海岸向内的优先泛洪树选择8邻域下游。该树不是严格的D8最大坡降算法，展示结果为水文研究候选而非真实河网。</p>
+</section>
+<section class="card">
+<div class="controls">
+<label>投影<select id="projection"><option value="working">经纬工作网格</option><option value="equal">Mollweide等面积</option></select></label>
+<label>区域<select id="region"><option value="all">全球全览</option><option value="ne">东北双主陆</option><option value="se">东南碎裂陆群</option><option value="sw">西南断裂海</option><option value="core">中央超级大陆</option></select></label>
+<label><input type="checkbox" id="oldOutline">对照B15旧轮廓</label>
+<label><input type="checkbox" id="arcLayer">B16群岛构图参考</label>
+<label><input type="checkbox" id="ridgeLayer" checked>候选内陆山脊</label>
+<label><input type="checkbox" id="peakLayer" checked>高地研究点</label>
+<label><input type="checkbox" id="drainageLayer">向海研究路径（非河流）</label>
+<label><input type="checkbox" id="studyLabels">B17研究编号</label><label><input type="checkbox" id="b18Lines">B18推演水道（非正式河流）</label><label><input type="checkbox" id="b18Marks" checked>五幅图幅位置</label>
+<button id="reset" type="button">重置地图</button>
+</div>
+<object id="mapView" aria-label="俄庇娜B17自然地理教学地图" type="image/svg+xml" data="../images/orbina-v225r-b18-relative-relief-hydrography.svg">地图 SVG 加载失败，请使用上方原图链接。</object>
+<p class="muted" id="mapStatus">棕色虚线表示候选内陆高地，蓝色表示待验证的潜在向海路径；没有实测海拔，也没有正式河流。</p><p class="muted">图例：浅绿色＝候选陆地；棕色虚线＝相对高地研究；蓝色箭头＝潜在向海路径；橙色虚线＝旧岸线。以上图层均非正式地理测量。</p>
+</section>
+<section class="card"><h2>B18地势与地理图集建设进度</h2>
+<div class="stats">
+<div class="stat"><strong id="neCount">20</strong><span>东北独立有机陆块总数</span></div>
+<div class="stat"><strong id="neMain">2</strong><span>东北保留较大主体</span></div>
+<div class="stat"><strong id="seCount">46</strong><span>东南独立有机陆块总数</span></div>
+<div class="stat"><strong id="allCount">99</strong><span>全球候选陆地多边形</span></div>
+<div class="stat"><strong>42.76%</strong><span>假设球面陆地比例（非正史）</span></div><div class="stat"><strong>26</strong><span>首批相对地形研究区</span></div><div class="stat"><strong>78</strong><span>候选沿岸研究路径（非河流）</span></div>
+</div>
+<p class="muted">B18保留B16的99片陆地和B17的地理档案，新增5个有效的相对高度网格、8邻域优先泛洪模型与25条模拟汇流主路径；并无已确认的海拔、流量或实体地名坐标。</p>
+</section>
+<section class="card grid2"><div>
+<h2>3D 球面概览</h2><canvas width="400" height="400" id="globe" aria-label="候选大陆球面正射预览"></canvas>
+<div class="controls"><label>旋转角度 <input id="heading" class="range" type="range" min="-180" max="180" value="0"></label><span id="deg">0°</span></div>
+<div class="controls"><button data-lon="0" type="button">中央超级大陆</button><button data-lon="124" type="button">东北/东南</button><button data-lon="-130" type="button">西部大陆</button></div>
+<p id="globeStatus" class="muted">正在读取B16陆地几何…</p></div>
+<div><h2>B18：从海岸走向可检验的地势</h2>
+<p><strong>地势与水文：</strong>本版已为中央超级大陆、东北两主陆和东南两主角分别计算0—100的相对地势，结合海岸邻接以8邻域方式推导排水树。真实山川、河流与分水岭还未确立。</p>
+<p><strong>地理全书：</strong>按行星、海陆、地质地貌、水文、气候、生态、国家人口、交通经济、历史专题与地方地理志10章扩充，每章逐步落实图层与可核验的世界观文字。</p>
+<p><strong>地理正史：</strong>联合城和人民天国仍在同一中央超级大陆；秦棠在萨瑞拉西北；内海与棠溪等既定关系不变。25个已确认海名继续保留，但不据图上匿名点分配海名。</p>
+<p><strong>资料分级：</strong>B18假设地势与条件性流向均来自绘图几何，不是实测资料，尤其不能覆盖正史抵抗者之弧、棠溪与R1/R2的现有相对地理事实。</p></div></section>
+<section class="card"><h2>下一轮：海岸地质与景观层次</h2><p class="muted">确认B16的远景构图后，再绘制相对山脊、沿海冲积区、河谷与分水岭；不能先根据几何上漂亮的海湾就认定它是已形成的峡湾、河口或冰蚀地貌。</p></section>
+<section class="card"><h2>地理教科书目录 · 10章</h2><div id="chapterGrid" class="chapter-grid">载入图集章节…</div><p class="muted">各章节严格区分正史数据、制图候选、推测研究和空缺。</p></section>
+<section class="card"><h2>全球99个候选陆地档案</h2><div class="controls"><label>陆地编号<select id="landSelector"><option value="">读取档案…</option></select></label><label>查看<select id="archiveScope"><option value="physical">自然地理研究</option><option value="fields">档案完整度</option></select></label></div><div id="landRecord" class="archive-record">选择陆地，查看研究状态。</div><p class="muted">档案 ID 不是正式地名、国界或世界经纬坐标。</p></section>
+<section class="card"><h2>图集数据及底图</h2><p><a href="../data/orbina-v225r-b17-atlas-layer-catalog.json" target="_blank">10章图集目录与99片陆地档案 JSON</a> · <a href="../data/orbina-v225r-b17-physiography-study.json" target="_blank">26片地形研究 JSON</a> · <a href="../data/orbina-v225r-b16-aesthetic-geography-master.json" target="_blank">B16可编辑海岸底图 JSON</a> · <a href="../data/orbina-v225r-b18-relative-elevation-hydrology.json" target="_blank">B18相对地势及数值水文完整模型</a> · <a href="../data/orbina-v225r-b17-confirmed-geographic-register.json" target="_blank">25正式海名与已确认地理关系 JSON</a></p></section></main><footer>ORBINA · B18 RELATIVE RELIEF AND HYDROGRAPHIC RESEARCH · NON-CANON</footer>
+<script>
+const map=document.getElementById("mapView"),proj=document.getElementById("projection"),region=document.getElementById("region"),old=document.getElementById("oldOutline"),arcToggle=document.getElementById("arcLayer"),modelLines=document.getElementById("b18Lines"),modelMarks=document.getElementById("b18Marks"),ridgeToggle=document.getElementById("ridgeLayer"),peakToggle=document.getElementById("peakLayer"),drainToggle=document.getElementById("drainageLayer"),labelsToggle=document.getElementById("studyLabels"),mapStatus=document.getElementById("mapStatus");
+const windows={all:"0 0 2400 1200",ne:"1340 12 780 465",se:"1465 465 880 690",sw:"180 718 510 455",core:"525 102 1080 825"};
+function updateMap(){
+const equal=proj.value==="equal";const desired=equal?"../images/orbina-v225r-b16-mollweide.svg":"../images/orbina-v225r-b18-relative-relief-hydrography.svg";
+if(map.getAttribute("data")!==desired){map.setAttribute("data",desired);return;}
+try{const svg=map.contentDocument?.documentElement;if(!svg||svg.localName!=="svg")return;
+svg.setAttribute("viewBox",equal?"0 0 2400 1200":windows[region.value]);
+const overlay=svg.ownerDocument.getElementById("b16-b15-outline-comparison");if(overlay)overlay.style.display=old.checked&&!equal?"":"none";
+const arc=svg.ownerDocument.getElementById("b16-editorial-arc-guides");if(arc)arc.style.display=arcToggle.checked&&!equal?"":"none";
+for(const [id,on] of [["b17-relief-ridge-study",ridgeToggle.checked],["b17-inland-highland-study",peakToggle.checked],["b17-potential-drainage-sector",drainToggle.checked],["b17-research-labels",labelsToggle.checked],["b18-synthetic-hydro-candidates",modelLines.checked],["b18-sheet-index-markers",modelMarks.checked]]){const e=svg.ownerDocument.getElementById(id);if(e)e.style.display=on&&!equal?"inline":"none";}
+mapStatus.textContent=equal?"等面积图仅示B16候选海岸，具体地势请看下方分幅图。":modelLines.checked?"蓝色线是数值路由推演水道，不是经确认的永久河流。":ridgeToggle.checked?"棕色是未经正式高程验证的高地研究。":"显示B18的五幅地形示范图位置；使用下方区域专题查看相对高低、坡地和汇流。";
+}catch(e){mapStatus.textContent="可打开SVG原图查看；交互层未成功读取："+e.message;}}
+map.addEventListener("load",updateMap);
+proj.addEventListener("change",()=>{if(proj.value==="equal")region.value="all";updateMap();});
+region.addEventListener("change",()=>{if(region.value!=="all"&&proj.value==="equal")proj.value="working";updateMap();});
+old.addEventListener("change",()=>{if(old.checked&&proj.value==="equal")proj.value="working";updateMap();});
+arcToggle.addEventListener("change",()=>{if(arcToggle.checked&&proj.value==="equal")proj.value="working";updateMap();});
+for(const ctl of [ridgeToggle,peakToggle,drainToggle,labelsToggle,modelLines,modelMarks])ctl.addEventListener("change",()=>{if(ctl.checked&&proj.value==="equal")proj.value="working";updateMap();});
+
+document.getElementById("reset").addEventListener("click",()=>{region.value="all";proj.value="working";old.checked=false;arcToggle.checked=false;ridgeToggle.checked=false;peakToggle.checked=false;drainToggle.checked=false;labelsToggle.checked=false;modelLines.checked=false;modelMarks.checked=true;updateMap();});
+const canvas=document.getElementById("globe"),ctx=canvas.getContext("2d",{willReadFrequently:true}),heading=document.getElementById("heading"),deg=document.getElementById("deg"),r=canvas.width*.467,cx=canvas.width/2,cy=canvas.height/2;
+let tex=null;
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+function populate(data){
+const off=document.createElement("canvas");off.width=1200;off.height=600;const c=off.getContext("2d");
+c.fillStyle="#154c61";c.fillRect(0,0,1200,600);
+for(let p of data.macro_landmasses.concat(data.archipelago)){
+c.fillStyle=p.color||"#c4cbae";c.strokeStyle="#dfeadc";c.lineWidth=.55;
+for(let shift of [-2400,0,2400]){const pts=p.coordinates;if(!pts?.length)continue;c.beginPath();c.moveTo((pts[0][0]+shift)/2,pts[0][1]/2);for(let i=1;i<pts.length;i++)c.lineTo((pts[i][0]+shift)/2,pts[i][1]/2);c.closePath();c.fill();c.stroke();}}
+return c.getImageData(0,0,1200,600);
+}
+function render(){
+deg.textContent=heading.value+"°";const sz=canvas.width;ctx.fillStyle="#0b2633";ctx.fillRect(0,0,sz,sz);
+if(!tex){ctx.fillStyle="#d1e3e6";ctx.font="16px system-ui";ctx.fillText("读取地图数据…",115,190);return;}
+let out=ctx.createImageData(sz,sz),dst=out.data,src=tex.data,centerLon=+heading.value;
+for(let yy=0;yy<sz;yy++){let y=(cy-yy)/r;for(let xx=0;xx<sz;xx++){let x=(xx-cx)/r,z2=1-x*x-y*y;if(z2<0)continue;let z=Math.sqrt(z2),lat=Math.asin(y)*180/Math.PI,lon=centerLon+Math.atan2(x,z)*180/Math.PI;lon=((lon+180)%360+360)%360-180;
+let ix=clamp(Math.floor((lon+180)*1200/360),0,1199),iy=clamp(Math.floor((90-lat)*600/180),0,599),si=4*(iy*1200+ix),di=4*(yy*sz+xx),shade=.64+.33*z;
+dst[di]=src[si]*shade;dst[di+1]=src[si+1]*shade;dst[di+2]=src[si+2]*shade;dst[di+3]=255;}}
+ctx.putImageData(out,0,0);ctx.strokeStyle="#e8f5ee";ctx.lineWidth=2;ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.stroke();}
+heading.addEventListener("input",render);
+document.querySelectorAll("[data-lon]").forEach(b=>b.addEventListener("click",()=>{heading.value=b.dataset.lon;render();}));
+fetch("../data/orbina-v225r-b16-aesthetic-geography-master.json").then(r=>{if(!r.ok)throw Error("无法读取B16工作数据");return r.json();}).then(data=>{
+tex=populate(data);document.getElementById("neCount").textContent=data.b16_aesthetic_design.NE_count;
+document.getElementById("neMain").textContent=2;
+document.getElementById("seCount").textContent=data.b16_aesthetic_design.SE_count;
+document.getElementById("allCount").textContent=data.macro_landmasses.length+data.archipelago.length;
+document.getElementById("globeStatus").textContent="B17沿用B16海陆几何球面；候选自然地形叠加仅在二维专题图显示。";render();
+}).catch(e=>{document.getElementById("globeStatus").textContent="球面源数据未加载："+e.message;});
+render();updateMap();
+
+// B17 Atlas reading UI: chapters and indexed candidate land registry.
+const chap=document.getElementById("chapterGrid"),selectLand=document.getElementById("landSelector"),landRecord=document.getElementById("landRecord"),archiveScope=document.getElementById("archiveScope");
+let atlasCatalog=null,physStudy=null;
+function element(tag,text){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;}
+function showLand(){
+landRecord.replaceChildren();if(!atlasCatalog)return;
+const land=atlasCatalog.registry.find(x=>x.uid===selectLand.value);if(!land){landRecord.textContent="选择一片候选陆地";return;}
+const u=physStudy.units.find(x=>x.land_uid===land.uid);
+landRecord.appendChild(element("h3",land.uid+" | "+land.polygon_id));
+landRecord.appendChild(element("p","图纸区域："+land.region+"；仅为当前候选陆地对象，不是正式地名或国家。"));
+if(archiveScope.value==="fields"){landRecord.appendChild(element("p","已登记：绘图位置、形态、档案编号、面积图纸单位。"+(u?"具有候选地貌研究。":"尚无单独地貌研究。")));landRecord.appendChild(element("p","待补充：真实经纬、岩层地质、地形高度、山脉河湖、降水温度、气候带、生态、城市人口、交通产业。"));}
+else{landRecord.appendChild(element("p","图纸多边形面积约 "+land.planar_polygon_area_svg2+" 平方绘图单位；不对应真实平方公里。"));if(u){landRecord.appendChild(element("p","地形研究单位 "+u.study_id+"；候选相对山脊角度 "+u.axis_orientation_drawing_deg+"°（图纸方向）；潜在向海扇区 "+u.potential_shoreward_sectors.length+" 组。"));landRecord.appendChild(element("p","未确定实测高度、真实河流或坡降；本资料仅服务后续地形推演。"));}else landRecord.appendChild(element("p","本版仅已建档，将在后续地图集阶段补充自然地理专题。"));}}
+Promise.all([fetch("../data/orbina-v225r-b17-atlas-layer-catalog.json").then(r=>{if(!r.ok)throw Error("目录无法读取");return r.json()}),fetch("../data/orbina-v225r-b17-physiography-study.json").then(r=>{if(!r.ok)throw Error("地形研究无法读取");return r.json()})]).then(([cat,phys])=>{
+atlasCatalog=cat;physStudy=phys;chap.replaceChildren();selectLand.replaceChildren();
+for(const ch of cat.chapters){const d=element("details"),title=element("summary",ch.id+" "+ch.name+" ["+ch.state+"]");d.appendChild(title);d.appendChild(element("p",ch.layers.join(" · ")));if(ch.strict_note)d.appendChild(element("p","资料限制："+ch.strict_note));chap.appendChild(d);}
+selectLand.appendChild(new Option("请选择陆地…",""));for(const row of cat.registry)selectLand.appendChild(new Option(row.uid+" "+row.polygon_id+" ["+row.region+"]",row.uid));
+selectLand.addEventListener("change",showLand);archiveScope.addEventListener("change",showLand);showLand();
+}).catch(e=>{chap.textContent="目录载入失败："+e.message;landRecord.textContent="档案资料暂不可用："+e.message;});
+
+
+(()=>{
+const el=id=>document.getElementById(id),cv=el("terrainCanvas"),cx=cv.getContext("2d"),picker=el("terrainSheet"),mode=el("terrainMode"),contour=el("terrainContour"),streams=el("terrainStreams"),note=el("terrainStats");let pack=null;
+const colors=h=>{let t=Math.max(0,Math.min(1,h/100)),stops=[[0,[142,195,155]],[.32,[181,204,152]],[.57,[214,211,156]],[.8,[175,150,109]],[1,[122,107,91]]];for(let i=1;i<stops.length;i++){let [t1,A]=stops[i-1],[t2,B]=stops[i];if(t<=t2){let k=(t-t1)/(t2-t1);return A.map((v,j)=>Math.round(v+(B[j]-v)*k));}}return stops.at(-1)[1];};
+function render(){
+if(!pack)return;let m=pack.models[Number(picker.value)],nx=m.grid.cell_columns,ny=m.grid.cell_rows,ms=m.mask_rows,z=m.relative_elevation_percent_rows,a=m.flow_accumulation_log_index_percent_rows,scale=Math.min((cv.width-110)/nx,(cv.height-120)/ny),ox=48,oy=53;
+cx.fillStyle="#123e5b";cx.fillRect(0,0,cv.width,cv.height);
+for(let y=0;y<ny;y++)for(let x=0;x<nx;x++){
+if(ms[y][x]!=="1")continue;let h=z[y][x],col;
+if(mode.value==="relief"){col=colors(h);
+let l=z[y][Math.max(0,x-1)]??h,r=z[y][Math.min(nx-1,x+1)]??h,u=z[Math.max(0,y-1)][x]??h,d=z[Math.min(ny-1,y+1)][x]??h;
+let shade=Math.max(-.17,Math.min(.17,(-r+l-d+u)/180));col=col.map(v=>Math.max(0,Math.min(255,v*(1+shade))));}
+else if(mode.value==="flow"){let q=a[y][x]/100;col=[Math.round(149-126*q),Math.round(193-77*q),Math.round(155+40*q)];}
+else{let l=z[y][Math.max(0,x-1)]??h,r=z[y][Math.min(nx-1,x+1)]??h,u=z[Math.max(0,y-1)][x]??h,d=z[Math.min(ny-1,y+1)][x]??h,t=Math.min(1,Math.hypot(r-l,d-u)/36);col=[Math.round(125+123*t),Math.round(189-61*t),Math.round(140-64*t)];}
+cx.fillStyle="rgb("+col.map(Math.round).join(",")+")";
+cx.fillRect(ox+x*scale,oy+y*scale,Math.ceil(scale+.2),Math.ceil(scale+.2));
+}
+if(contour.checked){cx.strokeStyle="rgba(82,69,46,.5)";cx.lineWidth=1.2;
+for(let k of [20,40,60,80]){cx.beginPath();for(let y=0;y<ny-1;y++)for(let x=0;x<nx-1;x++){
+if(ms[y][x]!=="1"||ms[y+1][x]!=="1"||ms[y][x+1]!=="1"||ms[y+1][x+1]!=="1")continue;
+let values=[z[y][x],z[y][x+1],z[y+1][x+1],z[y+1][x]],p=[[0,0],[1,0],[1,1],[0,1]],hits=[];
+for(let j=0;j<4;j++){let n=(j+1)%4;if((values[j]<k)===(values[n]<k))continue;let t=(k-values[j])/(values[n]-values[j]);hits.push([ox+(x+.5+p[j][0]+t*(p[n][0]-p[j][0]))*scale,oy+(y+.5+p[j][1]+t*(p[n][1]-p[j][1]))*scale]);}
+if(hits.length>=2){cx.moveTo(...hits[0]);cx.lineTo(...hits[1]);if(hits.length===4){cx.moveTo(...hits[2]);cx.lineTo(...hits[3]);}}}cx.stroke();}}
+if(streams.checked){cx.strokeStyle="#197ec4";cx.lineWidth=2.7;cx.lineJoin="round";cx.lineCap="round";
+for(let line of m.potential_d8_model_channels){cx.beginPath();for(let i=0;i<line.geometry_drawing_xy.length;i++){let p=line.geometry_drawing_xy[i],X=ox+(p[0]-m.bbox_drawing[0])/m.grid.cell_size_drawing_units*scale,Y=oy+(p[1]-m.bbox_drawing[1])/m.grid.cell_size_drawing_units*scale;if(i===0)cx.moveTo(X,Y);else cx.lineTo(X,Y);}cx.stroke();}}
+cx.fillStyle="#f3eee0";cx.font="bold 19px system-ui,sans-serif";cx.fillText(m.id+" / "+m.land_polygon_id,ox,27);
+cx.font="13px system-ui,sans-serif";cx.fillText("RELATIVE TERRAIN / MODEL STUDY ONLY",ox,oy+ny*scale+27);cx.fillText("无真实公里比例 · 高低数值不是海拔米数 · 蓝线不是官方河网",ox,oy+ny*scale+47);
+note.replaceChildren();
+for(let msg of ["图幅："+m.id+"（"+m.focus_region+"） · 研究陆地："+m.land_polygon_id,"有效陆地网格 "+m.grid.land_cells+" 格；图幅栅格 "+nx+" × "+ny+"；海岸邻接出口格 "+m.grid.shore_outlet_cells,"模型排水路径 "+m.potential_d8_model_channels.length+" 条，最高汇水面积 "+m.grid.max_flow_accumulation_cells+" 格（并非平方公里或实际水量）","优先泛洪调整单元 "+m.grid.hydroconditioned_cells+" 格。地势完全属于假设研究，需以后与正史地理相容性审核。"]){let p=document.createElement("p");p.textContent=msg;note.appendChild(p);}
+}
+for(let x of [picker,mode,contour,streams])x.addEventListener("change",render);
+fetch("../data/orbina-v225r-b18-relative-elevation-hydrology.json").then(r=>{if(!r.ok)throw Error("模型尚未公开发布");return r.json()}).then(data=>{pack=data;render()}).catch(e=>{note.textContent="读取地形模型失败："+e.message});
+})();
+
+</script>
+</body></html>
