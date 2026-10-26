@@ -1,0 +1,73 @@
+{
+  "edition": "V2.25-R-B17",
+  "status": "REPO_STATIC_QA_PASS; GITHUB_PAGES_PUBLIC_AND_MOBILE_RUNTIME_UNVERIFIED",
+  "scope": "First geography textbook-style atlas over unchanged B16 coastlines",
+  "deliverables": {
+    "interactive_atlas": "assets/maps/orbina-v225r-b17-geography-atlas.html",
+    "physical_svg": "assets/images/orbina-v225r-b17-physical-geography.svg",
+    "land_registry_and_chapters": "assets/data/orbina-v225r-b17-atlas-layer-catalog.json",
+    "physiography": "assets/data/orbina-v225r-b17-physiography-study.json",
+    "confirmed_feature_register": "assets/data/orbina-v225r-b17-confirmed-geographic-register.json",
+    "base_geometry": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+    "article": "_articles/article-035.md"
+  },
+  "verified_counts": {
+    "unchanged_land_polygons": 99,
+    "land_registry": 99,
+    "physiography_studies": 26,
+    "candidate_underground_ridge_axes": 26,
+    "shoreward_sector_trials": 78,
+    "atlas_chapters": 10,
+    "confirmed_major_ocean_sea_names": 25,
+    "confirmed_geographic_relation_entries": 10,
+    "svg_global_wrap_land_paths": 297
+  },
+  "checks": {
+    "B17_land_units_exist_in_B16": true,
+    "study_center_ridge_and_sector_endpoints_in_selected_polygons": true,
+    "SVG_GroupTagBalanced": true,
+    "SVG_IdUnique": true,
+    "study_overlay_groups_exists": true,
+    "viewer_inline_javascript_static_syntax": true,
+    "atlas_chapter_dom_exists": true,
+    "all_land_archive_dom_exists": true,
+    "encyclopedia_article_is_current_B17": true,
+    "global_policy_current_B17": true,
+    "no_new_B17_coastline_geometry_created": true
+  },
+  "restrictions": [
+    "B17 ridge axes are computed from land polygons only, NOT from actual digital elevation measurements or confirmed tectonic topology",
+    "B17 shoreward study traces are NOT streams, not guaranteed runoff pathways, and not official drainage basins",
+    "No climate measurements, latitude positions, literal scale kilometers or verified continental shelves supplied",
+    "The 25 canonical ocean/sea names are registered without assigning fictional global coordinates",
+    "Central-supercontinent confirmed arc ridge, R1/R2, Tangxi and state spatial relationships preserved without conflating with algorithmic study lines",
+    "The public Github Pages URL was not independently accessible from the current public web reader; mobile/browser interaction and actual deployment remain unverified"
+  ],
+  "textbook_next_stages": [
+    {
+      "stage": "B18",
+      "topic": "selective relative elevation modeling on confirmed candidates",
+      "notes": "Define qualitative slope model for one priority sheet, respect confirmed Resistance Arc while avoiding invented fixed altitude"
+    },
+    {
+      "stage": "B19",
+      "topic": "hydrographic network from elevation",
+      "notes": "derive drainage divides, candidate rivers and inland/wetland waters with distinct provenance"
+    },
+    {
+      "stage": "B20",
+      "topic": "ocean-atmosphere-climate mapping",
+      "notes": "only after rotation/axis/season parameters or explicit scenario assumptions"
+    },
+    {
+      "stage": "B21",
+      "topic": "biome-soil-resource ecology",
+      "notes": "ecosystems consistent with terrain, rainfall and water sources"
+    },
+    {
+      "stage": "B22+",
+      "topic": "nation/city/transport/regional gazetteers",
+      "notes": "connect only confirmed lore localities to exact map positions when those coordinates are actually approved"
+    }
+  ]
+}
