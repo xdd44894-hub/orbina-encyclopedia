@@ -139,7 +139,7 @@ B32还统计了原筛选的顶点序号敏感性：**56条中的53条**，两段
 
 B31对A01/A02两处极尖角的**独立可回退预览**继续保留，不在B32应用更改。原始B16、完整B29矢量图以及已确认的25个主要海域名称、联合城—人民天国同超级大陆、南口内海、秦棠在萨瑞拉西北、棠溪与R1/R2分离等设定全部保持不变。
 
-[读取B32全部精确截线及交点区间记录]({{ '/assets/data/orbina-v225r-b32-exact-chord-shoreline-audit.json' | relative_url }}) · [回看B31原审查图]({{ '/assets/maps/orbina-v225r-b31-topology-neck-atlas.html' | relative_url }}) · [查看B16原始海岸资料]({{ '/assets/data/orbina-v225r-b16-aesthetic-geography-master.json' | relative_url }})
+[读取B32全部精确截线及交点区间记录]({{ '/assets/data/orbina-v225r-b32-exact-chord-shoreline-audit.json' | relative_url }}) · [查看B32静态发布核查：32项通过]({{ '/assets/data/orbina-v225r-b32-release-qa.json' | relative_url }}) · [回看B31原审查图]({{ '/assets/maps/orbina-v225r-b31-topology-neck-atlas.html' | relative_url }}) · [查看B16原始海岸资料]({{ '/assets/data/orbina-v225r-b16-aesthetic-geography-master.json' | relative_url }})
 
 **B33下一阶段方向：**优先处理依赖顶点数量的“非局部”假阳性，建立尺度更稳健的海岸弧长、岸线横穿及地峡最低宽度候选审查，而不是增加岛屿数量或随意修改全球陆块。
 
