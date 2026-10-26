@@ -1,0 +1,75 @@
+{
+  "edition": "V2.25-R-B22",
+  "status": "NUMERICAL_SOURCE_QA_PASS__BROWSER_NOT_TESTED",
+  "checks": {
+    "source_land_cells_match": true,
+    "source_coast_cells_match": true,
+    "all_source_land_route_to_coast": true,
+    "coastal_height_unchanged": true,
+    "all_ocean_cells_null": true,
+    "distinct_S2_pocket": true,
+    "BASE_S1_S3_no_qualified_pocket": true
+  },
+  "summary": [
+    {
+      "id": "BASE",
+      "land_cells": 1234,
+      "shore_outlets": 157,
+      "processed_cells": 1234,
+      "positive_fill_cells": 0,
+      "core_cells": 0,
+      "qualified_pocket_count": 0,
+      "max_fill_depth": 0,
+      "min_height": 1,
+      "max_height": 92,
+      "pockets": []
+    },
+    {
+      "id": "S1",
+      "land_cells": 1234,
+      "shore_outlets": 157,
+      "processed_cells": 1234,
+      "positive_fill_cells": 0,
+      "core_cells": 0,
+      "qualified_pocket_count": 0,
+      "max_fill_depth": 0,
+      "min_height": 1,
+      "max_height": 100,
+      "pockets": []
+    },
+    {
+      "id": "S2",
+      "land_cells": 1234,
+      "shore_outlets": 157,
+      "processed_cells": 1234,
+      "positive_fill_cells": 23,
+      "core_cells": 10,
+      "qualified_pocket_count": 1,
+      "max_fill_depth": 6.33,
+      "min_height": 1,
+      "max_height": 78.28,
+      "pockets": [
+        {
+          "core": 10,
+          "full": 23,
+          "spill": 20.12,
+          "capacity": 63.53
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "land_cells": 1234,
+      "shore_outlets": 157,
+      "processed_cells": 1234,
+      "positive_fill_cells": 2,
+      "core_cells": 0,
+      "qualified_pocket_count": 0,
+      "max_fill_depth": 0.61,
+      "min_height": 1,
+      "max_height": 88.81,
+      "pockets": []
+    }
+  ],
+  "physical_realism": "No proof of persistent lake or real geology."
+}
