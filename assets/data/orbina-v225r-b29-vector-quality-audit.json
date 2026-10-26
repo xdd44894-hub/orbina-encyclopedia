@@ -1,1 +1,137 @@
-{"edition":"V2.25-R-B29","status":"B29_VECTOR_NUMERICAL_QA_PASS","checks":{"polygons_99":true,"vertices_9621":true,"missing_eight":true,"all_240_scored":true,"no_invisible_vector_source_at_any_meridian":true,"area_conserved_for_clip":true,"preferred_57_is_lowest_smaller_side_area":true},"source_shas":{"B16":"d580bd5d0410b1c533acfe9709e99092d302584c","B28":"d250b81512039758654e2f66bb1eda4caad99f11"},"largest_clipping_area_error":0.0005000013643439161,"baseline":{"shift":0,"relative_angle_deg":0,"split_count":1,"small_side_area":97903.927,"mainland_small_side_area":97903.927,"coarse_crossing_rows":51,"splits":[{"id":1,"name":"seam-crossing-western-long-continent","fragment_areas":[125040.587,97903.927],"smaller_area":97903.927}]},"preferred":{"shift":57,"relative_angle_deg":85.5,"split_count":3,"small_side_area":356.682,"mainland_small_side_area":340.784,"coarse_crossing_rows":2,"splits":[{"id":0,"name":"continental-nucleus","fragment_areas":[459493.026,94.068],"smaller_area":94.068},{"id":4,"name":"southwestern-fractured-northern-block","fragment_areas":[246.716,28844.667],"smaller_area":246.716},{"id":28,"name":"western-rift-and-shelf-islands-1-3","fragment_areas":[15.898,118.273],"smaller_area":15.898}]},"unseen_islet_ids":[31,32,33,34,35,36,37,38]}
+{
+  "edition": "V2.25-R-B29",
+  "status": "GITHUB_SOURCE_STATIC_QA_PASS__PUBLIC_PAGES_AND_MOBILE_UNVERIFIED",
+  "checks": {
+    "polygons_99": true,
+    "vertices_9621": true,
+    "missing_eight": true,
+    "all_240_scored": true,
+    "no_invisible_vector_source_at_any_meridian": true,
+    "area_conserved_for_clip": true,
+    "preferred_57_is_lowest_smaller_side_area": true
+  },
+  "source_shas": {
+    "B16": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "B28": "d250b81512039758654e2f66bb1eda4caad99f11"
+  },
+  "largest_clipping_area_error": 0.0005000013643439161,
+  "baseline": {
+    "shift": 0,
+    "relative_angle_deg": 0,
+    "split_count": 1,
+    "small_side_area": 97903.927,
+    "mainland_small_side_area": 97903.927,
+    "coarse_crossing_rows": 51,
+    "splits": [
+      {
+        "id": 1,
+        "name": "seam-crossing-western-long-continent",
+        "fragment_areas": [
+          125040.587,
+          97903.927
+        ],
+        "smaller_area": 97903.927
+      }
+    ]
+  },
+  "preferred": {
+    "shift": 57,
+    "relative_angle_deg": 85.5,
+    "split_count": 3,
+    "small_side_area": 356.682,
+    "mainland_small_side_area": 340.784,
+    "coarse_crossing_rows": 2,
+    "splits": [
+      {
+        "id": 0,
+        "name": "continental-nucleus",
+        "fragment_areas": [
+          459493.026,
+          94.068
+        ],
+        "smaller_area": 94.068
+      },
+      {
+        "id": 4,
+        "name": "southwestern-fractured-northern-block",
+        "fragment_areas": [
+          246.716,
+          28844.667
+        ],
+        "smaller_area": 246.716
+      },
+      {
+        "id": 28,
+        "name": "western-rift-and-shelf-islands-1-3",
+        "fragment_areas": [
+          15.898,
+          118.273
+        ],
+        "smaller_area": 15.898
+      }
+    ]
+  },
+  "unseen_islet_ids": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "final_cross_file_checks": {
+    "files_fetched": true,
+    "edition_is_B29": true,
+    "active_page_matches": true,
+    "article_latest": true,
+    "previous_B18_B28_retained": true,
+    "original_B16_sha": true,
+    "original_B27_sha": true,
+    "original_B28_sha": true,
+    "B16_all_99": true,
+    "B16_9621_vertices": true,
+    "B29_all_99_metadata": true,
+    "B29_8_unsampled_ids": true,
+    "polygon_names_unchanged": true,
+    "all_240_seam_cases": true,
+    "all_coarse_scores_match": true,
+    "B29_optimal_by_area": true,
+    "shift57_total_area_356": true,
+    "shift57_three_split_polygons": true,
+    "baseline_larger_split": true,
+    "vector_selected_default": true,
+    "raster_comparison_option": true,
+    "SVG_balanced_svg_elements": true,
+    "SVG_original_coastline_paths": true,
+    "SVG_contains_all_missing_islet_paths": true,
+    "SVG_compares_0_57": true,
+    "HTML_valid_js": true,
+    "HTML_fetch_B16": true,
+    "HTML_fetch_B29": true,
+    "HTML_fetch_B27": true,
+    "HTML_vector_clip_method": true,
+    "HTML_three_projection_branches": true,
+    "HTML_islet_buttons": true,
+    "HTML_map_zoom_and_drag": true,
+    "HTML_shift_range_240": true,
+    "wiki_links_to_deliverables": true,
+    "no_canon_coordinates": true,
+    "no_original_polygons_edited": true
+  },
+  "published_files": {
+    "interactive_atlas": "assets/maps/orbina-v225r-b29-complete-vector-atlas.html",
+    "static_vector_overview": "assets/images/orbina-v225r-b29-complete-vector-coast-overview.svg",
+    "source_metadata_and_240_seams": "assets/data/orbina-v225r-b29-full-vector-coast-audit.json",
+    "encyclopedia": "_articles/article-035.md",
+    "active_index": "assets/data/orbina-global-continent-scale-principles.json"
+  },
+  "original_source_shas": {
+    "B16": "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "B27": "44f70d053ecb840df8ebec3c7a4c3e79e339a51a",
+    "B28": "d250b81512039758654e2f66bb1eda4caad99f11"
+  },
+  "publication_limits": "Source files, JS syntax, referenced fields and assets checked. Public Pages URL inaccessible via web reader; actual interactive browser and mobile operation not independently verified.",
+  "science_limit": "Original B16 coast remains noncanonical. Locator rings highlight genuine source islets but are not scaled geographic shapes."
+}
