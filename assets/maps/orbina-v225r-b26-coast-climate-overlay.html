@@ -1,0 +1,74 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>俄庇娜B26 · 大陆与气候纬度配准试验</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f2e9;color:#254856;font:15px/1.62 system-ui,"Microsoft YaHei",sans-serif}header{background:linear-gradient(120deg,#163e51,#275c6d);color:#f7f9f3;padding:31px max(15px,calc((100vw - 1210px)/2))}h1{margin:0 0 8px;font-size:clamp(25px,3vw,40px)}header p{max-width:1070px;line-height:1.72;color:#cee2e0;margin:0}main{max-width:1210px;margin:auto;padding:20px 15px 50px}nav{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}nav a{border:1px solid #c2d5d0;border-radius:7px;padding:9px 11px;background:white;color:#286477;font-size:13px;text-decoration:none}.panel{background:#fffefa;border:1px solid #d2ded6;border-radius:13px;padding:18px;margin:0 0 20px}h2{font-size:21px;margin:0 0 14px}h3{font-size:17px;margin:10px 0}.controls{display:flex;gap:13px;flex-wrap:wrap;align-items:center;margin:12px 0}.controls label{display:flex;align-items:center;gap:7px;font-size:14px}select{padding:8px 10px;font:inherit;border:1px solid #afc9c2;border-radius:7px;background:white;color:#284b59}.cols{display:grid;grid-template-columns:minmax(0,1fr) 273px;gap:15px}.canvas{background:#1b5371;border:1px solid #aac3c5;border-radius:9px;overflow:hidden}canvas{width:100%;height:auto;display:block;touch-action:manipulation}.stat{border-bottom:1px solid #d8e5dc;padding:10px 0}.stat b{font-size:23px;display:block;font-variant-numeric:tabular-nums}.stat small{font-size:12px;color:#5c7980}.muted{font-size:13px;color:#648083;line-height:1.77}#read{padding:12px;border:1px solid #d1e0d9;background:#edf5ee;border-radius:8px;margin:12px 0;min-height:45px}.legend{display:flex;gap:8px;align-items:center;flex-wrap:wrap;color:#678080;font-size:12px}.legend i{width:15px;height:15px;display:inline-block;border-radius:3px}.cases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.case{padding:13px;background:#f1f7f3;border:1px solid #cddfd5;border-radius:9px}.case b{font-size:17px;display:block}.case small{font-size:12px;color:#68817d}table{border-collapse:collapse;width:100%;font-size:13px}td,th{border-bottom:1px solid #dce6df;padding:9px 7px;text-align:right}td:first-child,th:first-child{text-align:left}.warn{font-size:13px;color:#5f7d7e}footer{font-size:12px;color:#6b8284;text-align:center;padding:20px}@media(max-width:860px){.cols{grid-template-columns:1fr}.cases{grid-template-columns:1fr}}@media(max-width:550px){.panel{padding:12px}.controls label{flex-direction:column;align-items:flex-start}td,th{font-size:11px;padding:8px 3px}}
+</style></head><body>
+<header><h1>俄庇娜 · B26 大陆与气候配准图集</h1><p>将B16原本的99片候选陆地与B25九组合纬向气候研究叠合；保留全部海岸细节和跨地图接缝的西部大陆。三档候选纬度只重新标注数学纬线，不修改实际陆块形状，也不确立任何国家、海域的经纬坐标。</p></header>
+<main><nav><a href="../images/orbina-v225r-b26-three-latitude-overlays.svg" target="_blank" rel="noopener">三方案全球地图总图</a><a href="../data/orbina-v225r-b26-coast-climate-registration.json" target="_blank" rel="noopener">B26海岸气候配准与统计数据</a><a href="orbina-v225r-b25-global-circulation-atlas.html">B25纯纬向气候模型</a><a href="orbina-v225r-b24-extreme-hydrology-atlas.html">B24水文研究</a><a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank">百科《海洋地理》</a></nav>
+<section class="panel"><h2>真实候选海岸 × 假设纬线 × 相对气候层</h2>
+<div class="controls">
+<label>大陆纬度研究情景<select id="placement"><option value="N">N · 倾向偏北（+18°中心）</option><option value="C" selected>C · 中性配准</option><option value="S">S · 倾向偏南（−18°中心）</option></select></label>
+<label>相对自转<select id="rot"><option value="F">快自转1.60</option><option value="M" selected>中自转1.00</option><option value="S">慢自转0.55</option></select></label>
+<label>轴倾角<select id="tilt"><option value="L">10°</option><option value="M" selected>24°</option><option value="H">42°</option></select></label>
+<label>气候图层<select id="layer"><option value="rain">陆地型湿润潜势</option><option value="solar">日照几何Q/S₀</option><option value="thermal">陆地型热响应异常</option><option value="wind">纬向风带倾向</option></select></label>
+<label><input id="grid" type="checkbox" checked>显示候选纬线</label>
+</div>
+<div class="controls"><label>人工公转相位 <input id="phase" type="range" min="1" max="12" step="1" value="4"><b id="phaseNum">04</b></label>
+<label>研究区域 <select id="region"></select></label></div>
+<div class="cols"><div><div class="canvas"><canvas id="world" width="1200" height="600" aria-label="99片候选陆地与纬向气候配准图"></canvas></div>
+<div class="legend"><span><i style="background:#c5ad8a"></i>较干潜势</span><span><i style="background:#4d9cb7"></i>较湿潜势</span><span><i style="background:#efe9cc"></i>候选海岸线</span></div><p id="read">读取B16候选海岸和B25纬向气候格网中……</p></div><aside><h3>所选情景摘要</h3><div id="stats"></div><p class="muted">“偏北/中性/偏南”只是全球候选纬度的非线性配准；海岸在画布上完全固定。下方比较值按B16陆地网格采样，没有面积单位或真实气候意义。</p></aside></div></section>
+<section class="panel"><h2>同一大陆，不同纬度配准</h2><div class="cases" id="compare"></div><p class="muted">比较统计统一采用B25的MM参考参数（相对自转1、假设轴倾24°）。上方可以自由切换其它八组组合，但选中单个区域的三情景年统计仍是MM参考结果，避免误把不同参数口径放在同一张表里。</p>
+<div style="overflow-x:auto"><table><thead><tr><th>候选陆地组</th><th>采样陆地格</th><th>北侧MM湿润潜势</th><th>中性MM湿润潜势</th><th>南侧MM湿润潜势</th></tr></thead><tbody id="table"></tbody></table></div></section>
+<section class="panel"><h2>为什么B26仍不是正式气候图？</h2>
+<p>地形轮廓取自B16未正式确立的全球陆海候选地图。B26的纬线不是把真实星球上的大陆向北或向南漂移，而是对候选图纸使用三个不同的纬度标定方案。**地图中的海洋颜色只是背景，并不意味着已经求出洋流、海温或真实水汽通量。**</p>
+<p>未经批准的参数包括行星实际半径、日长与年长、轴倾角、恒星辐照、大气压力与成分、板块山脉的实际高度与走向。局部降水还需要海洋水汽输入、盛行风方向、迎风坡抬升、背风雨影与蒸散发信息。</p>
+<p class="warn">同理，联合城与人民天国位于同一超级大陆、巨型内海南口通外洋、抵抗者之弧、内海东岸R1/R2、秦棠位于萨瑞拉西北以及棠溪独立水系，仍然仅按原有相对地理正史记录。图纸上的陆块编号不用于给这些国家或正式海域定位。</p>
+</section></main><footer>ORBINA B26 · B16 DRAFT COAST + B25 NINE GLOBAL LATITUDE-SEASON SCENARIOS · NONCANON</footer>
+<script>
+"use strict";
+const $=id=>document.getElementById(id),canvas=$("world"),ctx=canvas.getContext("2d");
+const W=2400,H=1200,OWN_W=240,OWN_H=120;
+let b=null,climate=null,reg=null,regions=[],selectedRegion="ALL";
+function lat(y,shift){return 90-180*y/H+shift*Math.sin(Math.PI*y/H)}
+function guessY(latitude,shift){let a=0,c=H;for(let i=0;i<46;i++){let mid=(a+c)/2;if(lat(mid,shift)>latitude)a=mid;else c=mid}return(a+c)/2}
+function interpolate(row,L){let k=(Math.max(-90,Math.min(90,L))+90)/5,a=Math.floor(k),z=Math.min(36,a+1);return row[a]*(1-(k-a))+row[z]*(k-a)}
+function mix(a,b,t){const rgb=x=>[1,3,5].map(i=>parseInt(x.slice(i,i+2),16)),x=rgb(a),y=rgb(b);return "#"+x.map((v,i)=>Math.round(v+(y[i]-v)*Math.max(0,Math.min(1,t))).toString(16).padStart(2,"0")).join("")}
+function current(){return climate.variants[$("rot").value+$("tilt").value]}
+function field(){const v=current(),t=Number($("phase").value)-1,layer=$("layer").value;return layer==="rain"?v.rain_potential_land_rows[t]:layer==="solar"?v.solar_q_over_stellar_flux_rows[t]:layer==="wind"?v.zonal_wind_tendency_rows[t]:v.thermal_anomaly_land_rows[t]}
+function color(v){let l=$("layer").value;if(l==="rain")return mix("#c5ad89","#438daf",v);if(l==="solar")return mix("#7394a1","#e3c38b",v/.55);if(l==="thermal")return v>=0?mix("#c8d0b5","#c78764",v/.55):mix("#c8d0b5","#6d9aca",-v/.55);return v>=0?mix("#c7d2bb","#bc8d64",v):mix("#c7d2bb","#6a9fc3",-v)}
+function allGeometry(){
+ctx.beginPath();const geo=[...b.macro_landmasses,...b.archipelago];
+for(const obj of geo){let p=obj.coordinates,offs=Math.min(...p.map(a=>a[0]))<0?[0,W]:[0];
+for(const off of offs){p.forEach(([x,y],k)=>k?ctx.lineTo(x+off,y):ctx.moveTo(x+off,y));ctx.closePath()}}
+}
+function paint(){
+if(!b||!climate||!reg)return;const scaleX=canvas.width/W,scaleY=canvas.height/H,A=reg.placements.find(x=>x.id===$("placement").value).shift_amplitude_deg,row=field();
+ctx.fillStyle="#205c78";ctx.fillRect(0,0,canvas.width,canvas.height);
+ctx.save();ctx.scale(scaleX,scaleY);allGeometry();ctx.save();ctx.clip();
+for(let y=0;y<H;y+=8){let L=lat(y+4,A),v=interpolate(row,L);ctx.fillStyle=color(v);ctx.fillRect(0,y,W,8.2)}
+ctx.restore();ctx.lineWidth=2.6;ctx.strokeStyle="#f1eddb";allGeometry();ctx.stroke();
+if($("grid").checked){for(let L=-75;L<=75;L+=15){let y=guessY(L,A);ctx.lineWidth=L===0?3:1.7;ctx.strokeStyle=L===0?"rgba(240,247,227,.64)":"rgba(215,240,247,.42)";ctx.setLineDash([10,11]);ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();ctx.setLineDash([])}for(let x=0;x<=W;x+=300){ctx.strokeStyle="rgba(220,240,240,.18)";ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke()}}
+ctx.restore();
+ctx.fillStyle="#f3fbf6";ctx.fillRect(9,8,410,28);ctx.fillStyle="#284e5b";ctx.font="bold 15px system-ui";ctx.fillText("B16候选陆地 · B26纬线"+$("placement").value+" · B25 "+$("rot").value+$("tilt").value,16,27);
+}
+function update(){
+if(!reg||!climate)return;const key=$("placement").value,s=reg.case_statistics[key],a=s.spin_tilt_cases[$("rot").value+$("tilt").value].land,rid=$("region").value,ref=s.reference_MM_macros_and_islands[rid],v=current(),t=Number($("phase").value)-1;
+$("phaseNum").textContent=String(t+1).padStart(2,"0");
+$("stats").innerHTML=[["模型候选陆地格",reg.grid.sampled_land_cells],["采样陆地平均假设纬度",a.centroid_latitude_candidate_deg+"°"],["当前参数九组合编号",v.id],["陆地年均日照Q/S₀",a.normalized_annual_solar_index.toFixed(4)],["陆地年均湿润潜势",a.normalized_annual_rain_potential.toFixed(4)],["本区MM参考湿润潜势",ref?ref.normalized_annual_rain_potential.toFixed(4):"—"]].map(([k,n])=>"<div class='stat'><b>"+n+"</b><small>"+k+"</small></div>").join("");
+$("compare").innerHTML=reg.placements.map(p=>{let g=reg.case_statistics[p.id].spin_tilt_cases.MM.land;return "<div class='case'><b>"+p.id+" · "+p.name+"</b><small>大陆采样年均纬度 "+g.centroid_latitude_candidate_deg+"°</small><p>MM年均日照 "+g.normalized_annual_solar_index.toFixed(4)+"<br>MM年均湿润潜势 "+g.normalized_annual_rain_potential.toFixed(4)+"</p></div>"}).join("");
+$("table").innerHTML=reg.group_metadata.slice(0,16).map(g=>{let vals=reg.placements.map(p=>reg.case_statistics[p.id].reference_MM_macros_and_islands[g.id].normalized_annual_rain_potential);return "<tr><td>"+g.id+" · "+g.name+"</td><td>"+g.cell_count+"</td>"+vals.map(v=>"<td>"+v.toFixed(4)+"</td>").join("")+"</tr>"}).join("");
+$("read").textContent="点击候选大陆陆块查看其地图编号；若岛屿小于采样格可能不会出现在抽样统计中。当前MM区域数据与所选九组模型不可混用。";
+paint();}
+for(const id of ["placement","rot","tilt","layer","phase","grid","region"])$(id).addEventListener(id==="phase"?"input":"change",update);
+canvas.addEventListener("pointerdown",event=>{if(!reg)return;let rect=canvas.getBoundingClientRect(),x=(event.clientX-rect.left)*W/rect.width,y=(event.clientY-rect.top)*H/rect.height;
+let ix=Math.max(0,Math.min(OWN_W-1,Math.floor(x/10))),iy=Math.max(0,Math.min(OWN_H-1,Math.floor(y/10)));
+const pi=Number(reg.grid.owner_region_rows[iy].split(",")[ix]);if(pi<0){$("read").textContent="候选海洋区域：当前海流及实际海域名称位置未定。";return}
+const g=pi<16?reg.group_metadata[pi]:reg.group_metadata[16],cand=lat(y,reg.placements.find(t=>t.id===$("placement").value).shift_amplitude_deg);
+$("region").value=g.id;update();$("read").textContent="模型格("+ix+","+iy+") · "+g.name+" · 假设纬度"+cand.toFixed(1)+"°；只是B16候选陆地编号，并非已确认国家或海域位置。"});
+Promise.all([
+ fetch("../data/orbina-v225r-b16-aesthetic-geography-master.json").then(r=>{if(!r.ok)throw Error("B16 HTTP "+r.status);return r.json()}),
+ fetch("../data/orbina-v225r-b25-global-circulation-factorial.json").then(r=>{if(!r.ok)throw Error("B25 HTTP "+r.status);return r.json()}),
+ fetch("../data/orbina-v225r-b26-coast-climate-registration.json").then(r=>{if(!r.ok)throw Error("B26 HTTP "+r.status);return r.json()})
+]).then(([a,c,d])=>{b=a;climate=c;reg=d;if(b.macro_landmasses.length+b.archipelago.length!==99||Object.keys(climate.variants).length!==9||reg.grid.sampled_land_cells<1000)throw Error("模型源数据缺失");
+$("region").innerHTML="<option value='ALL'>全球陆地集合（点击陆块查看编号）</option>"+reg.group_metadata.map(g=>"<option value='"+g.id+"'>"+g.id+" · "+g.name+"</option>").join("");
+update();}).catch(e=>$("read").textContent="无法读取叠合图源数据："+e.message+"。请使用顶部静态地图或JSON。");
+</script></body></html>
