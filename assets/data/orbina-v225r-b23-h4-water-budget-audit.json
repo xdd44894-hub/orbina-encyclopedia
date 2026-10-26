@@ -1,6 +1,6 @@
 {
   "edition": "V2.25-R-B23",
-  "status": "MASS_BALANCE_SOURCE_QA_PASS__PUBLIC_SITE_NOT_TESTED",
+  "status": "GITHUB_SOURCE_STATIC_QA_PASSED__PUBLIC_PAGES_AND_MOBILE_UNVERIFIED",
   "residual_absolute_max": 0,
   "source_capacity_matches": true,
   "checks": {
@@ -65,5 +65,37 @@
     "Dry/wet labels are conditional on deliberately chosen parameters",
     "Sustained nonzero model storage cannot confirm real lake permanence",
     "No new official lake, tectonic fault, nation, river or global coordinate assigned"
-  ]
+  ],
+  "final_cross_file_checks": {
+    "source_paths_present": true,
+    "version_is_B23": true,
+    "config_viewer_exists": true,
+    "reference_B22_is_original": true,
+    "pocket_index_match": true,
+    "original_capacity_same": true,
+    "article_updated": true,
+    "original_B22_article_retained": true,
+    "chart_has_three_conditions": true,
+    "svg_single_closed_root": true,
+    "svg_contains_12_phase_plots": true,
+    "html_uses_correct_data_paths": true,
+    "html_js_parses": true,
+    "three_scenarios": true,
+    "all_phase_ledgers_balance": true,
+    "complete_data_not_deleted": true,
+    "geometry_floor_indices_correct": true,
+    "sediment_cap_monotonic": true,
+    "qualifiers_on_page": true,
+    "archived_B22_viewer_reference_kept": true
+  },
+  "committed_files": {
+    "map": "assets/maps/orbina-v225r-b23-h4-water-and-sediment-atlas.html",
+    "graphic": "assets/images/orbina-v225r-b23-h4-water-balance-overview.svg",
+    "water_model": "assets/data/orbina-v225r-b23-h4-water-budget-scenarios.json",
+    "wiki": "_articles/article-035.md",
+    "active_config": "assets/data/orbina-global-continent-scale-principles.json",
+    "unchanged_B22_geometry": "assets/data/orbina-v225r-b22-h4-terrain-experiments.json"
+  },
+  "publication_limit": "Public GitHub Pages page could not be loaded by web reader. GitHub source is committed, but live canvas and mobile controls not independently tested.",
+  "model_limit": "All artificial numbers are scenario storage proxies (not actual climate or lake observations). The 20-cycle solution uses simplified area-dependent evaporation and seepage and is not a real lake prediction."
 }
