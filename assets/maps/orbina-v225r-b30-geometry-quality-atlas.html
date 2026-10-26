@@ -1,0 +1,156 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>俄庇娜 B30｜矢量海岸几何质量审查</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f4f2eb;color:#244855;font:15px/1.65 system-ui,"Microsoft YaHei",sans-serif}
+header{background:linear-gradient(115deg,#174057,#2a6672);color:#f7faf5;padding:29px max(16px,calc((100vw - 1250px)/2))}header h1{font-size:clamp(26px,3vw,41px);margin:0 0 9px}header p{color:#d2e4e1;margin:0;max-width:1080px}
+main{max-width:1250px;margin:auto;padding:21px 15px 45px}nav{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 20px}
+nav a{padding:8px 10px;border-radius:7px;border:1px solid #bdd2c9;background:#fff;color:#26657a;text-decoration:none;font-size:13px}
+.panel{background:#fffefa;border:1px solid #d2dfd6;border-radius:12px;padding:19px;margin:0 0 19px}h2{font-size:21px;margin:0 0 12px}h3{font-size:17px;margin:7px 0 10px}
+.sub{font-size:13px;color:#637e81;line-height:1.8}.controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:12px 0}
+.controls label{display:flex;align-items:center;gap:7px;font-size:14px}
+select,input{font:inherit;color:#285161;accent-color:#348a9b}select{border:1px solid #b6d0c9;background:#fff;border-radius:7px;padding:8px}
+button{font:inherit;border-radius:7px;background:#eaf4f0;color:#255e6c;border:1px solid #b8d0c7;cursor:pointer;padding:8px 12px}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #147a94}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 287px;gap:16px}.surface{background:#1d4a62;border:1px solid #acc8c9;overflow:hidden;border-radius:10px}canvas{display:block;width:100%;height:auto;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}
+.stat{border-bottom:1px solid #d8e5df;padding:8px 0}.stat b{font-size:22px;display:block;font-variant-numeric:tabular-nums}.stat small{font-size:12px;color:#617e81}
+#notice,#selection{background:#eef5f0;border:1px solid #cbdcd4;border-radius:8px;padding:11px;margin-top:11px;line-height:1.8}
+#selection h3{margin:0 0 8px}.controls button.on{background:#d9f0e9;border-color:#39869b}
+.issue-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.issue-list button{text-align:left;background:#f2f7f2;padding:11px;border:1px solid #ccdcd2;border-radius:8px}
+.issue-list button b{display:block;font-size:14px}.issue-list button span{display:block;font-size:12px;color:#607b7e}
+.issue-list button.selected{border-color:#277f91;background:#def3ee;border-width:2px}
+.quick{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.quick div{border:1px solid #ceddd1;background:#f0f6f1;padding:14px;border-radius:9px}
+.quick b{display:block;font-size:24px;color:#336c7a}.quick small{font-size:12px;color:#657c7b}
+.legend{display:flex;flex-wrap:wrap;gap:15px;color:#617c7c;font-size:12px;margin-top:9px}.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px}
+footer{text-align:center;padding:15px;font-size:12px;color:#758988}
+@media(max-width:870px){.cols{grid-template-columns:1fr}.quick{grid-template-columns:1fr}}@media(max-width:560px){.panel{padding:12px}.issue-list{grid-template-columns:1fr}.controls label{flex-direction:column;align-items:flex-start}}
+</style></head><body>
+<header><h1>俄庇娜 · B30 海岸几何审查</h1><p>从B16的原始99片候选矢量海岸查找异常尖角、极近海岸与潜在狭窄地貌。每个候选问题都可点击定位与放大；本图绝不自动修海岸，也不确立国家坐标、真实海峡或山脉。</p></header><main>
+<nav><a href="../images/orbina-v225r-b30-geometry-review-map.svg" target="_blank" rel="noopener">B30完整诊断专题图与三处放大</a>
+<a href="../data/orbina-v225r-b30-vector-coast-geometry-screen.json" target="_blank" rel="noopener">全部几何测量与问题记录</a>
+<a href="orbina-v225r-b29-complete-vector-atlas.html">B29原始99片矢量地图</a>
+<a href="https://github.com/xdd44894-hub/orbina-encyclopedia/blob/main/_articles/article-035.md" target="_blank" rel="noopener">百科《海洋地理》</a></nav>
+<section class="panel"><h2>全图问题定位与原始海岸对照</h2>
+<div class="controls"><label>候选问题 <select id="issue"><option value="">选取问题编号</option></select></label>
+<label>问题类别 <select id="category"><option value="all">尖角与海岸间隙</option><option value="sharp">仅异常尖角</option><option value="gap">仅独立海岸间隙</option></select></label>
+<label>显示切图 <select id="shift"><option value="57">第57列 · 低切岸面积</option><option value="0">第0列 · B16原始画幅</option><option value="55">第55列 · 较少分割多边形</option></select></label>
+<label><input id="showMarkers" type="checkbox" checked>显示诊断标记</label></div>
+<div class="controls"><label>放大倍数 <input id="zoom" type="range" min="1" max="42" step=".5" value="1"><b id="zoomText">1.0×</b></label>
+<button id="focus" type="button">聚焦所选问题</button><button id="reset" type="button">重置视图</button><button id="prev" type="button">上一问题</button><button id="next" type="button">下一问题</button></div>
+<div class="cols">
+<div><div class="surface"><canvas id="map" width="1400" height="735" aria-label="原始候选海岸几何问题分布，可拖动放大"></canvas></div>
+<div class="legend"><span><i style="background:#e78b67"></i>尖角问题 A</span><span><i style="background:#7cc9d2"></i>过近独立海岸 G</span><span><i style="background:#d9c49f"></i>原始小岛轮廓</span></div>
+<p id="notice">数据读取中……</p></div>
+<aside><h3>诊断概览</h3><div id="stats"></div>
+<div id="selection"><h3>选中问题</h3>点击问题即可定位与放大</div>
+<p class="sub">海岸距离是图纸绘图单位，角度来自原始矢量顶点。狭窄海峡、陆桥是否真实存在，仍需要地形比例和地质证据。</p></aside>
+</div></section>
+<section class="panel"><h2>待人工审核的问题位置</h2><p class="sub">以下列出10处小于30°的尖角、10组最短距离小于5绘图单位的独立海岸。其它近岸点与非局部同岸邻近点保存在完整数据文件中。问题分级只决定优先检查，不决定是否需要改变地形。</p>
+<div id="issueList" class="issue-list"></div></section>
+<section class="panel"><h2>第一轮质量结论与阈值</h2><div class="quick"><div><b>0</b><small>严格非相邻线段自交（未覆盖端点相切或共线重叠等全部情况）</small></div><div><b>10</b><small>原始顶点角度小于30°，其中2处低于1°</small></div><div><b>3</b><small>不同多边形的边界相隔少于2绘图单位</small></div></div>
+<p class="sub">相邻海岸的距离不等于海峡通航宽度，非相邻同岸距离也不必然是陆桥宽度。本轮没有验证任何真实窄陆桥，没有把图纸距离换算为公里，也没有向B16写入新海岸顶点。</p>
+</section>
+<section class="panel"><h2>B31可以怎样使用审查结果？</h2>
+<p>应先人工核查A01、A02两个极尖角，以及G01–G03三组极近海岸是否在放大后不符合预期地貌。需要对照各陆块可能的构造、侵蚀、河流和海峡形成机制，再决定哪些应调整。**合法的海岬和破碎岛链不应该因为筛查阈值就被自动抹平。**</p>
+<p class="sub">全部建议都是可撤回的候选编辑规划。联合城—人民天国同大陆、超级大陆南口内海、抵抗者之弧、内海东岸R1/R2、秦棠在萨瑞拉西北及棠溪等正式关系不变；B16原始地理数据也不变。</p>
+</section>
+</main><footer>ORBINA / V2.25-R-B30 · VECTOR COAST GEOMETRY SCREENING / NONCANON</footer>
+<script>
+"use strict";
+const $=id=>document.getElementById(id),PI=Math.PI;
+const canvas=$("map"),ctx=canvas.getContext("2d"),frame={x:37,y:26,w:1326,h:664};
+let B=null,Q=null,M=null,polys=[],list=[],selected=null,zoom=1,panX=0,panY=0,drag=null;
+const cx=canvas.width/2,cy=canvas.height/2;
+function norm(x){return(x%2400+2400)%2400}
+function transformed(point){return[cx+zoom*(point[0]-cx)+panX,cy+zoom*(point[1]-cy)+panY]}
+function worldToCanvas(p){const shift=Number($("shift").value),x=norm(p[0]-shift*10);return[frame.x+x/2400*frame.w,frame.y+p[1]/1200*frame.h]}
+function segmentsInFrame(id,shift){
+const poly=polys[id],m=M.metadata[id],start=Math.ceil((shift*10-m.bbox[2]-.01)/2400),end=Math.floor((shift*10+2400-m.bbox[0]+.01)/2400),res=[];
+for(let n=start;n<=end;n++)res.push(poly.coordinates.map(([x,y])=>[x-shift*10+n*2400,y]));
+return res}
+function clipVertical(points,bound,sign){const out=[];for(let i=0;i<points.length;i++){const a=points[i],b=points[(i+1)%points.length],inA=sign*(a[0]-bound)>=-1e-8,inB=sign*(b[0]-bound)>=-1e-8;
+if(inA&&inB)out.push(b);else if(inA!==inB){const t=(bound-a[0])/(b[0]-a[0]);out.push([bound,a[1]+t*(b[1]-a[1])]);if(inB)out.push(b)}}return out}
+function visiblePolygon(points){const a=clipVertical(points,0,1);return a.length?clipVertical(a,2400,-1):[]}
+function pathPolygon(points){
+if(points.length<3)return;ctx.beginPath();points.forEach((p,i)=>{const a=[frame.x+p[0]/2400*frame.w,frame.y+p[1]/1200*frame.h];i?ctx.lineTo(a[0],a[1]):ctx.moveTo(a[0],a[1])});ctx.closePath()}
+function getIssues(){if(!Q)return[];const mode=$("category").value;
+return Q.candidate_review_queue.filter(x=>mode==="all"||(mode==="sharp"&&x.type==="acute_vertex")||(mode==="gap"&&x.type==="near_independent_coasts"))}
+function draw(){
+if(!B||!Q||!M)return;
+ctx.fillStyle="#194359";ctx.fillRect(0,0,canvas.width,canvas.height);
+ctx.save();ctx.translate(cx+panX,cy+panY);ctx.scale(zoom,zoom);ctx.translate(-cx,-cy);
+ctx.beginPath();ctx.rect(frame.x,frame.y,frame.w,frame.h);ctx.clip();
+ctx.fillStyle="#205b75";ctx.fillRect(frame.x,frame.y,frame.w,frame.h);
+const shift=Number($("shift").value);
+for(let id=0;id<polys.length;id++){
+ for(const source of segmentsInFrame(id,shift)){
+  const polygon=visiblePolygon(source);if(polygon.length<3)continue;pathPolygon(polygon);
+  ctx.fillStyle=id<16?["#c7d3af","#aecbbb","#cdd4bb","#b5c7a8"][id%4]:(id%2?"#ddc49f":"#e1caa7");
+  ctx.fill();ctx.strokeStyle=id<16?"rgba(107,135,112,.62)":"rgba(143,117,85,.72)";ctx.lineWidth=(id<16?.8:.55)/zoom;ctx.stroke();
+ }
+}
+ctx.restore();
+if($("showMarkers").checked){
+ for(const issue of getIssues()){
+  const p=transformed(worldToCanvas(issue.coordinate)),isAngle=issue.type==="acute_vertex",high=issue.priority==="very_high_inspection"||issue.priority==="high_cartographic_review";
+  const size=issue.id===selected?12:high?9:6;
+  ctx.beginPath();ctx.arc(p[0],p[1],size,0,2*PI);ctx.strokeStyle=issue.id===selected?"#fff4a9":isAngle?"#e78b67":"#7cc9d2";ctx.lineWidth=issue.id===selected?3.2:2.2;ctx.stroke();
+  if(issue.id===selected){ctx.font="bold 14px system-ui";ctx.fillStyle="#fff8dc";ctx.fillText(issue.id,p[0]+14,p[1]-12)}
+ }
+}
+ctx.fillStyle="#f4faf3";ctx.font="bold 18px system-ui";ctx.fillText("B30候选海岸诊断 · 99片原始矢量 · 第"+$("shift").value+"列",21,21);
+ctx.fillStyle="#d4e9e3";ctx.font="13px system-ui";ctx.fillText("所有标记为研究建议，海岸源文件未修改。",21,canvas.height-23);
+}
+function focus(issue){
+zoom=Math.max(10,zoom);zoom=Math.min(42,zoom);$("zoom").value=String(zoom);$("zoomText").textContent=zoom.toFixed(1)+"×";
+const p=worldToCanvas(issue.coordinate);
+panX=zoom*(cx-p[0]);panY=zoom*(cy-p[1]);draw();
+}
+function select(id,focusNow=true){
+const issue=Q.candidate_review_queue.find(x=>x.id===id);
+if(!issue)return;selected=issue.id;$("issue").value=issue.id;
+let title=issue.type==="acute_vertex"?"异常尖角":"独立近岸",ids=issue.polygon_ids.join(" / "),metric=issue.type==="acute_vertex"?"角度 "+issue.measured_angle+"°":"最短岸距 "+issue.measured_gap+" 绘图单位";
+$("selection").innerHTML="<h3>"+issue.id+" · "+title+"</h3><b>"+metric+"</b><p>原始多边形序号："+ids+"</p><p>"+(issue.type==="acute_vertex"?"需要区分合理的尖锐海岬与不自然的简化顶点。":"不是已确认的海峡或陆桥；需结合真实比例、水深与地质成因检查。")+"</p>";
+renderIssueList();if(focusNow)focus(issue);else draw();
+}
+function renderIssueList(){
+const filtered=getIssues();$("issueList").innerHTML=filtered.map(i=>{
+ const metric=i.type==="acute_vertex"?i.measured_angle.toFixed(3)+"°":i.measured_gap.toFixed(3)+"绘图单位";
+ const title=i.type==="acute_vertex"?"异常尖角":"独立海岸近距";
+ return "<button type='button' class='"+(i.id===selected?"selected":"")+"' data-id='"+i.id+"'><b>"+i.id+" · "+title+"</b><span>原始多边形 #"+i.polygon_ids.join(" / #")+" · "+metric+"</span></button>"
+}).join("");
+document.querySelectorAll("[data-id]").forEach(b=>b.addEventListener("click",()=>select(b.dataset.id)));
+}
+function refresh(){
+if(!Q)return;$("zoomText").textContent=zoom.toFixed(1)+"×";
+const t=Q.source_totals;
+$("stats").innerHTML=[["原始矢量多边形",t.vector_polygons],["严格自交",t.self_crossings_strict],["小于30°的顶点",t.sharp_vertices_under30],["不同陆块间隙小于2",t.cross_polygon_pairs_with_min_gap_under2],["不同陆块间隙小于5",t.cross_polygon_pairs_with_min_gap_under5],["问题审查队列",Q.candidate_review_queue.length]].map(([k,v])=>"<div class='stat'><b>"+v+"</b><small>"+k+"</small></div>").join("");
+renderIssueList();draw();}
+function screenCoord(e){const b=canvas.getBoundingClientRect();return[(e.clientX-b.left)*canvas.width/b.width,(e.clientY-b.top)*canvas.height/b.height]}
+function nextIssue(sign){const items=getIssues();if(!items.length)return;const i=items.findIndex(x=>x.id===selected);select(items[(i+sign+items.length)%items.length].id)}
+$("category").addEventListener("change",()=>{const items=getIssues();$("issue").innerHTML="<option value=''>选择问题</option>"+items.map(i=>"<option value='"+i.id+"'>"+i.id+" · "+(i.type==="acute_vertex"?"尖角":"近岸")+"</option>").join("");if(selected&&!items.some(x=>x.id===selected))selected=null;refresh()});
+$("shift").addEventListener("change",draw);$("showMarkers").addEventListener("change",draw);
+$("zoom").addEventListener("input",()=>{zoom=Number($("zoom").value);refresh()});
+$("reset").addEventListener("click",()=>{zoom=1;panX=0;panY=0;$("zoom").value="1";refresh()});
+$("focus").addEventListener("click",()=>{if(selected)focus(Q.candidate_review_queue.find(x=>x.id===selected))});
+$("issue").addEventListener("change",()=>{if($("issue").value)select($("issue").value)});
+$("next").addEventListener("click",()=>nextIssue(1));$("prev").addEventListener("click",()=>nextIssue(-1));
+canvas.addEventListener("pointerdown",e=>{if(!Q)return;const p=screenCoord(e);drag={id:e.pointerId,start:p,orig:[panX,panY]};canvas.setPointerCapture(e.pointerId)});
+canvas.addEventListener("pointermove",e=>{if(!drag||drag.id!==e.pointerId)return;const p=screenCoord(e);panX=drag.orig[0]+p[0]-drag.start[0];panY=drag.orig[1]+p[1]-drag.start[1];draw()});
+canvas.addEventListener("pointerup",e=>{
+if(!drag||drag.id!==e.pointerId)return;const p=screenCoord(e),move=Math.hypot(p[0]-drag.start[0],p[1]-drag.start[1]);drag=null;
+if(move>7)return;
+let nearest=null,dmin=Infinity;
+for(const issue of getIssues()){const q=transformed(worldToCanvas(issue.coordinate)),distance=Math.hypot(q[0]-p[0],q[1]-p[1]);if(distance<18&&distance<dmin){nearest=issue;dmin=distance}}
+if(nearest)select(nearest.id,false);
+});
+canvas.addEventListener("pointercancel",()=>{drag=null});
+Promise.all([
+fetch("../data/orbina-v225r-b16-aesthetic-geography-master.json").then(r=>{if(!r.ok)throw Error("B16 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b30-vector-coast-geometry-screen.json").then(r=>{if(!r.ok)throw Error("B30 HTTP "+r.status);return r.json()}),
+fetch("../data/orbina-v225r-b29-full-vector-coast-audit.json").then(r=>{if(!r.ok)throw Error("B29 HTTP "+r.status);return r.json()})
+]).then(([b,q,m])=>{
+if(b.macro_landmasses.length+b.archipelago.length!==99||q.source_totals.original_vertices!==9621||q.candidate_review_queue.length!==20||m.metadata.length!==99)throw Error("数据版本/字段不匹配");
+B=b;Q=q;M=m;polys=[...b.macro_landmasses,...b.archipelago];list=q.candidate_review_queue;
+$("issue").innerHTML="<option value=''>请选择候选问题</option>"+list.map(v=>"<option value='"+v.id+"'>"+v.id+" · "+(v.type==="acute_vertex"?"尖角":"近岸")+"</option>").join("");
+refresh();$("notice").textContent="原始B16的99片矢量海岸已载入。可按编号审核20处优先位置；其它诊断在原始B30 JSON中。";
+}).catch(e=>$("notice").textContent="交互地图源数据读取失败："+e.message+"；可打开上方静态诊断总图。");
+</script></body></html>
