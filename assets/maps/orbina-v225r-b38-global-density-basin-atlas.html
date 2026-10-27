@@ -35,10 +35,10 @@ center=[(xmin+xmax)/2,(ymin+ymax)/2];scale=Math.min((W-98)/(xmax-xmin+30),(H-90)
 function pt(p,k=0){return[W/2+(p[0]+k-center[0])*scale*zoom+pan[0],H/2+(p[1]-center[1])*scale*zoom+pan[1]]}
 function visible(poly,k){let b=box(poly),p=pt([b[0],b[1]],k),q=pt([b[2],b[3]],k);return!(q[0]<-20||p[0]>W+20||q[1]<-20||p[1]>H+20)}
 function trace(ctx,poly,k){ctx.beginPath();poly.forEach((q,i)=>{let a=pt(q,k);if(!i)ctx.moveTo(...a);else ctx.lineTo(...a)});ctx.closePath()}
-function shade(ctx,which){let m=which.global_diagnostics[which===B38?"B38":"B37"].matrix_pct; // overridden below by direct selection
+function shade(ctx,version){let m=B38.global_diagnostics[version].matrix_pct;
 for(let j=0;j<4;j++)for(let i=0;i<8;i++){let percent=m[j][i],a=pt([i*300,j*300]),b=pt([(i+1)*300,(j+1)*300]),x=Math.min(a[0],b[0]),y=Math.min(a[1],b[1]),w=Math.abs(b[0]-a[0]),h=Math.abs(b[1]-a[1]);ctx.fillStyle="rgba(255,188,85,"+(0.12+percent/100*.22)+")";ctx.fillRect(x,y,w,h);ctx.strokeStyle="rgba(224,242,224,.25)";ctx.strokeRect(x,y,w,h);if(w>50&&h>28){ctx.font="12px system-ui";ctx.fillStyle="#fff7dd";ctx.fillText(percent.toFixed(1)+"%",x+5,y+17)}}}
 function plotLine(ctx,r){if(!r?.points)return;let u=pt(r.points[0]),v=pt(r.points[1]);ctx.beginPath();ctx.moveTo(...u);ctx.lineTo(...v);ctx.lineWidth=3;ctx.strokeStyle="#fff2a0";ctx.stroke();for(let p of [u,v]){ctx.beginPath();ctx.arc(...p,3,0,2*Math.PI);ctx.fillStyle="#fff7d1";ctx.fill()}}
-function paint(canvas,shapes,isAfter){let ctx=canvas.getContext("2d");ctx.fillStyle="#235169";ctx.fillRect(0,0,W,H);if($("density").checked)shade(ctx,isAfter?{global_diagnostics:{B38:B38.global_diagnostics.B38},__which:"B38"}:B38);
+function paint(canvas,shapes,isAfter){let ctx=canvas.getContext("2d");ctx.fillStyle="#235169";ctx.fillRect(0,0,W,H);if($("density").checked)shade(ctx,isAfter?"B38":"B37");
 for(let i=0;i<shapes.length;i++){let poly=shapes[i].coordinates;for(let k of [-2400,0,2400]){if(!visible(poly,k))continue;trace(ctx,poly,k);let high=i===9;ctx.fillStyle=high?(isAfter?"#a1d6b2":"#dfcaa1"):(shapes[i].color||"#c8d2b3");ctx.fill();ctx.lineWidth=high?2.4:.7;ctx.strokeStyle=high?(isAfter?"#6ce3ad":"#ffdaa0"):"#e1e9c5";ctx.stroke();}}
 if(isAfter&&$("ghost").checked)for(let k of [-2400,0,2400]){let p=old[9].coordinates;if(!visible(p,k))continue;trace(ctx,p,k);ctx.strokeStyle="#f68fc6";ctx.lineWidth=2;ctx.setLineDash([7,5]);ctx.stroke();ctx.setLineDash([])}
 if($("segment").checked)plotLine(ctx,(isAfter?B38.selection_audit.selected_macro_9.closest_after.after:B38.selection_audit.selected_macro_9.closest_before.before));
