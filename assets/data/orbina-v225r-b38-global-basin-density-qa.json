@@ -1,0 +1,767 @@
+{
+  "edition": "V2.25-R-B38",
+  "status": "SOURCE_GLOBAL_RASTER_AND_EXACT_LOCAL_COAST_PROXIMITY_CHECK_PASS",
+  "date": "2026-10-27",
+  "checks": {
+    "sourcesSHA_match": true,
+    "source99": true,
+    "source9669": true,
+    "final9669": true,
+    "one_macro_changed": true,
+    "exact_translation": true,
+    "area_preserved": true,
+    "before_closest_82": true,
+    "before_gap_under4": true,
+    "after_min_gap_over24": true,
+    "after_82_gap_over24": true,
+    "after_0_gap_over25": true,
+    "no_new_collision": true,
+    "sparse_southern_zone_not_artificially_filled": true,
+    "raster_matches_7200": true
+  },
+  "source_shas": [
+    "d580bd5d0410b1c533acfe9709e99092d302584c",
+    "cc35278c54ba12c2ebefecb7d97567110270e881",
+    "28e6e8143aac255f9150904a9b8f2abc464585c0",
+    "c54a08165caba6f1a978465a3cb6221560f140f5",
+    "5aa747a543317f955ea9a6965c2365d348591c17"
+  ],
+  "selected_gap_comparison": {
+    "old": [
+      {
+        "other_polygon_id": 82,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 3.46244783,
+          "touches": false,
+          "points": [
+            [
+              1831.158,
+              588.186
+            ],
+            [
+              1834.519,
+              589.018
+            ]
+          ],
+          "edge_ids": [
+            15,
+            19
+          ]
+        },
+        "after": {
+          "distance": 24.70570209,
+          "touches": false,
+          "points": [
+            [
+              1815.757,
+              569.346
+            ],
+            [
+              1838.111,
+              579.866
+            ]
+          ],
+          "edge_ids": [
+            16,
+            22
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 96,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 9.14729877,
+          "touches": false,
+          "points": [
+            [
+              1634.9730155,
+              624.4469626
+            ],
+            [
+              1636.75,
+              633.42
+            ]
+          ],
+          "edge_ids": [
+            122,
+            74
+          ]
+        },
+        "after": {
+          "distance": 31.95417249,
+          "touches": false,
+          "points": [
+            [
+              1629.3989889,
+              602.3228655
+            ],
+            [
+              1636.75,
+              633.42
+            ]
+          ],
+          "edge_ids": [
+            119,
+            74
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 72,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 27.31177338,
+          "touches": false,
+          "points": [
+            [
+              1565.802,
+              616.795
+            ],
+            [
+              1541.276,
+              628.812
+            ]
+          ],
+          "edge_ids": [
+            150,
+            69
+          ]
+        },
+        "after": {
+          "distance": 29.55165308,
+          "touches": false,
+          "points": [
+            [
+              1553.638,
+              600.225
+            ],
+            [
+              1538.304,
+              625.487
+            ]
+          ],
+          "edge_ids": [
+            147,
+            66
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 83,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 28.92606423,
+          "touches": false,
+          "points": [
+            [
+              1827.976,
+              592.544
+            ],
+            [
+              1845.51,
+              615.55
+            ]
+          ],
+          "edge_ids": [
+            19,
+            40
+          ]
+        },
+        "after": {
+          "distance": 53.92566357,
+          "touches": false,
+          "points": [
+            [
+              1812.976,
+              572.544
+            ],
+            [
+              1845.51,
+              615.55
+            ]
+          ],
+          "edge_ids": [
+            19,
+            40
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 65,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 28.98971329,
+          "touches": false,
+          "points": [
+            [
+              1795.2490005,
+              613.9057056
+            ],
+            [
+              1801.397,
+              642.236
+            ]
+          ],
+          "edge_ids": [
+            43,
+            81
+          ]
+        },
+        "after": {
+          "distance": 52.06773018,
+          "touches": false,
+          "points": [
+            [
+              1784.3434108,
+              592.9513009
+            ],
+            [
+              1799.131,
+              642.875
+            ]
+          ],
+          "edge_ids": [
+            41,
+            80
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 0,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 45.73376363,
+          "touches": false,
+          "points": [
+            [
+              1565.32,
+              604.65
+            ],
+            [
+              1523.9690427,
+              585.1134837
+            ]
+          ],
+          "edge_ids": [
+            159,
+            61
+          ]
+        },
+        "after": {
+          "distance": 25.39956277,
+          "touches": false,
+          "points": [
+            [
+              1549.1524133,
+              588.4203909
+            ],
+            [
+              1523.9690427,
+              585.1134837
+            ]
+          ],
+          "edge_ids": [
+            157,
+            61
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 75,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 49.7851678,
+          "touches": false,
+          "points": [
+            [
+              1606.4172037,
+              626.3749108
+            ],
+            [
+              1604.869,
+              676.136
+            ]
+          ],
+          "edge_ids": [
+            132,
+            81
+          ]
+        },
+        "after": {
+          "distance": 69.8264357,
+          "touches": false,
+          "points": [
+            [
+              1601.1937871,
+              606.385391
+            ],
+            [
+              1603.367,
+              676.178
+            ]
+          ],
+          "edge_ids": [
+            128,
+            80
+          ]
+        }
+      }
+    ],
+    "new": [
+      {
+        "other_polygon_id": 82,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 3.46244783,
+          "touches": false,
+          "points": [
+            [
+              1831.158,
+              588.186
+            ],
+            [
+              1834.519,
+              589.018
+            ]
+          ],
+          "edge_ids": [
+            15,
+            19
+          ]
+        },
+        "after": {
+          "distance": 24.70570209,
+          "touches": false,
+          "points": [
+            [
+              1815.757,
+              569.346
+            ],
+            [
+              1838.111,
+              579.866
+            ]
+          ],
+          "edge_ids": [
+            16,
+            22
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 0,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 45.73376363,
+          "touches": false,
+          "points": [
+            [
+              1565.32,
+              604.65
+            ],
+            [
+              1523.9690427,
+              585.1134837
+            ]
+          ],
+          "edge_ids": [
+            159,
+            61
+          ]
+        },
+        "after": {
+          "distance": 25.39956277,
+          "touches": false,
+          "points": [
+            [
+              1549.1524133,
+              588.4203909
+            ],
+            [
+              1523.9690427,
+              585.1134837
+            ]
+          ],
+          "edge_ids": [
+            157,
+            61
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 72,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 27.31177338,
+          "touches": false,
+          "points": [
+            [
+              1565.802,
+              616.795
+            ],
+            [
+              1541.276,
+              628.812
+            ]
+          ],
+          "edge_ids": [
+            150,
+            69
+          ]
+        },
+        "after": {
+          "distance": 29.55165308,
+          "touches": false,
+          "points": [
+            [
+              1553.638,
+              600.225
+            ],
+            [
+              1538.304,
+              625.487
+            ]
+          ],
+          "edge_ids": [
+            147,
+            66
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 96,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 9.14729877,
+          "touches": false,
+          "points": [
+            [
+              1634.9730155,
+              624.4469626
+            ],
+            [
+              1636.75,
+              633.42
+            ]
+          ],
+          "edge_ids": [
+            122,
+            74
+          ]
+        },
+        "after": {
+          "distance": 31.95417249,
+          "touches": false,
+          "points": [
+            [
+              1629.3989889,
+              602.3228655
+            ],
+            [
+              1636.75,
+              633.42
+            ]
+          ],
+          "edge_ids": [
+            119,
+            74
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 65,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 28.98971329,
+          "touches": false,
+          "points": [
+            [
+              1795.2490005,
+              613.9057056
+            ],
+            [
+              1801.397,
+              642.236
+            ]
+          ],
+          "edge_ids": [
+            43,
+            81
+          ]
+        },
+        "after": {
+          "distance": 52.06773018,
+          "touches": false,
+          "points": [
+            [
+              1784.3434108,
+              592.9513009
+            ],
+            [
+              1799.131,
+              642.875
+            ]
+          ],
+          "edge_ids": [
+            41,
+            80
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 83,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 28.92606423,
+          "touches": false,
+          "points": [
+            [
+              1827.976,
+              592.544
+            ],
+            [
+              1845.51,
+              615.55
+            ]
+          ],
+          "edge_ids": [
+            19,
+            40
+          ]
+        },
+        "after": {
+          "distance": 53.92566357,
+          "touches": false,
+          "points": [
+            [
+              1812.976,
+              572.544
+            ],
+            [
+              1845.51,
+              615.55
+            ]
+          ],
+          "edge_ids": [
+            19,
+            40
+          ]
+        }
+      },
+      {
+        "other_polygon_id": 75,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 49.7851678,
+          "touches": false,
+          "points": [
+            [
+              1606.4172037,
+              626.3749108
+            ],
+            [
+              1604.869,
+              676.136
+            ]
+          ],
+          "edge_ids": [
+            132,
+            81
+          ]
+        },
+        "after": {
+          "distance": 69.8264357,
+          "touches": false,
+          "points": [
+            [
+              1601.1937871,
+              606.385391
+            ],
+            [
+              1603.367,
+              676.178
+            ]
+          ],
+          "edge_ids": [
+            128,
+            80
+          ]
+        }
+      }
+    ],
+    "neighbors": [
+      {
+        "id": 0,
+        "before": 45.73376363,
+        "after": 25.39956277
+      },
+      {
+        "id": 72,
+        "before": 27.31177338,
+        "after": 29.55165308
+      },
+      {
+        "id": 82,
+        "before": 3.46244783,
+        "after": 24.70570209
+      },
+      {
+        "id": 96,
+        "before": 9.14729877,
+        "after": 31.95417249
+      }
+    ]
+  },
+  "raster_comparison": {
+    "B37": {
+      "grid": [
+        120,
+        60
+      ],
+      "land_cells": 2517,
+      "total_cells": 7200,
+      "land_pct": 34.958,
+      "matrix_pct": [
+        [
+          44,
+          0.444,
+          32.444,
+          35.556,
+          25.333,
+          34.667,
+          26.667,
+          36.889
+        ],
+        [
+          83.111,
+          13.333,
+          96.889,
+          91.556,
+          94.222,
+          25.778,
+          18.222,
+          70.667
+        ],
+        [
+          3.556,
+          27.111,
+          56.889,
+          14.667,
+          58.222,
+          48,
+          40.444,
+          28
+        ],
+        [
+          4.889,
+          22.222,
+          9.333,
+          37.778,
+          2.222,
+          20,
+          12,
+          3.556
+        ]
+      ],
+      "row_pct": [
+        29.5,
+        61.722,
+        34.611,
+        14
+      ],
+      "col_pct": [
+        33.889,
+        15.778,
+        48.889,
+        44.889,
+        45,
+        32.111,
+        24.333,
+        34.778
+      ]
+    },
+    "B38": {
+      "grid": [
+        120,
+        60
+      ],
+      "land_cells": 2518,
+      "total_cells": 7200,
+      "land_pct": 34.972,
+      "matrix_pct": [
+        [
+          44,
+          0.444,
+          32.444,
+          35.556,
+          25.333,
+          34.667,
+          26.667,
+          36.889
+        ],
+        [
+          83.111,
+          13.333,
+          96.889,
+          91.556,
+          94.222,
+          32,
+          17.333,
+          70.667
+        ],
+        [
+          3.556,
+          27.111,
+          56.889,
+          14.667,
+          58.222,
+          43.111,
+          40.444,
+          28
+        ],
+        [
+          4.889,
+          22.222,
+          9.333,
+          37.778,
+          2.222,
+          20,
+          12,
+          3.556
+        ]
+      ],
+      "row_pct": [
+        29.5,
+        62.389,
+        34,
+        14
+      ],
+      "col_pct": [
+        33.889,
+        15.778,
+        48.889,
+        44.889,
+        45,
+        32.444,
+        24.111,
+        34.778
+      ]
+    }
+  },
+  "summary": {
+    "polygons_before": 99,
+    "polygons_after": 99,
+    "vertices_before": 9669,
+    "vertices_after": 9669,
+    "modified_macro_polygons": 1,
+    "B37_closest_gap_drawing": 3.46244783,
+    "B38_closest_gap_drawing": 24.70570209,
+    "B37_to_82_gap_drawing": 3.46244783,
+    "B38_to_82_gap_drawing": 24.70570209,
+    "land_percentage_B37": 34.958,
+    "land_percentage_B38": 34.972
+  },
+  "geometry_note": "Full polygon segment to segment distance on neighboring geometries after bbox pruning, coastline intersections and polygon containment; globally periodic X offsets ±2400."
+}
