@@ -1,0 +1,472 @@
+{
+  "edition": "V2.25-R-B41",
+  "date": "2026-10-27",
+  "status": "NONCANON_COUNTRY_RELATION_FIT_SCREEN__NO_ADMINISTRATIVE_BORDERS_APPROVED",
+  "source": {
+    "paths": [
+      "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+      "assets/data/orbina-v225r-b34-reversible-coastline-layer.json",
+      "assets/data/orbina-v225r-b35-reversible-archipelago-layer.json",
+      "assets/data/orbina-v225r-b36-island-spacing-layer.json",
+      "assets/data/orbina-v225r-b37-macro-basin-composition-layer.json",
+      "assets/data/orbina-v225r-b38-global-basin-density-layer.json",
+      "assets/data/orbina-v225r-b17-confirmed-geographic-register.json",
+      "assets/data/orbina-v225r-b40-provisional-continent-name-register.json"
+    ],
+    "shas": [
+      "d580bd5d0410b1c533acfe9709e99092d302584c",
+      "cc35278c54ba12c2ebefecb7d97567110270e881",
+      "28e6e8143aac255f9150904a9b8f2abc464585c0",
+      "c54a08165caba6f1a978465a3cb6221560f140f5",
+      "5aa747a543317f955ea9a6965c2365d348591c17",
+      "c53b60e4d38eab1bafd35a8f570e2eb8fd3b2583",
+      "abd94277a1273ec95eb285c76d8b3547adfca50a",
+      "92cafa839efee650078e2d298b7c1d911172fc35"
+    ],
+    "frame": [
+      2400,
+      1200
+    ],
+    "horizontal_wrap": 2400,
+    "drawing_units_not_km": true,
+    "source_current_version": "B38 geometry + B40 approved names only"
+  },
+  "canonical_inputs": {
+    "confirmed_geography_register": "B17 CG-001 to CG-010",
+    "approved_country_entities": [
+      "联合城",
+      "人民天国",
+      "秦棠",
+      "萨瑞拉",
+      "白石城"
+    ],
+    "official_continent_names": [
+      "溪兰溪古洲",
+      "杭塔杉洲",
+      "鬃马陆",
+      "夕鉄陆"
+    ],
+    "canonical_relation_facts": "详见B17，尚无任何真实全球坐标"
+  },
+  "hypotheses": [
+    {
+      "hypothesis": "H-A",
+      "continent_label": "溪兰溪古洲",
+      "draft_polygon_id": 0,
+      "canon_cluster": [
+        "联合城",
+        "人民天国"
+      ],
+      "status": "PROMISING_FOR_SOUTH_OPEN_BAY__INCOMPLETE_NORTH_TWIN_BASINS",
+      "rationale": "#0 has a southward open deep inlet, but lacks demonstrable north-divided east/west subbasins. Country probes can be swapped west/east without changing canon.",
+      "country_probes": {
+        "scenario_A": [
+          {
+            "id": "U-A",
+            "label": "联合城（示范方案A）",
+            "point": [
+              850,
+              380
+            ],
+            "idtype": "country_region_probe"
+          },
+          {
+            "id": "P-A",
+            "label": "人民天国（示范方案A）",
+            "point": [
+              1325,
+              400
+            ],
+            "idtype": "country_region_probe"
+          }
+        ],
+        "scenario_B": [
+          {
+            "id": "U-B",
+            "label": "联合城（备选方案B）",
+            "point": [
+              1325,
+              400
+            ],
+            "idtype": "country_region_probe"
+          },
+          {
+            "id": "P-B",
+            "label": "人民天国（备选方案B）",
+            "point": [
+              850,
+              380
+            ],
+            "idtype": "country_region_probe"
+          }
+        ]
+      },
+      "west_east_assignment_is_canon": false
+    },
+    {
+      "hypothesis": "H-B",
+      "continent_label": "杭塔杉洲",
+      "draft_polygon_id": 1,
+      "canon_cluster": [
+        "秦棠",
+        "萨瑞拉",
+        "白石城"
+      ],
+      "status": "LAND_POINTS_FEASIBLE__ADJACENCY_AND_TANGXI_REQUIRE_FURTHER_WORK",
+      "rationale": "#1 periodic land is large enough for northwest/north location markers. Administrative borders and river network aren't established.",
+      "country_probes": [
+        {
+          "id": "Q",
+          "label": "秦棠",
+          "point": [
+            115,
+            290
+          ]
+        },
+        {
+          "id": "S",
+          "label": "萨瑞拉",
+          "point": [
+            225,
+            400
+          ]
+        },
+        {
+          "id": "W",
+          "label": "白石城",
+          "point": [
+            235,
+            305
+          ]
+        }
+      ],
+      "nation_probes_are_actual_capitals_or_centers": false
+    }
+  ],
+  "coast_fit": {
+    "mainland_0_horizontal_sections": [
+      {
+        "y": 480,
+        "land_sections": 1,
+        "central_water_gap": null
+      },
+      {
+        "y": 500,
+        "land_sections": 1,
+        "central_water_gap": null
+      },
+      {
+        "y": 510,
+        "land_sections": 1,
+        "central_water_gap": null
+      },
+      {
+        "y": 520,
+        "land_sections": 1,
+        "central_water_gap": null
+      },
+      {
+        "y": 530,
+        "land_sections": 2,
+        "central_water_gap": {
+          "west_edge": 1078.415,
+          "east_edge": 1091.66,
+          "width": 13.245,
+          "center": 1085.038
+        }
+      },
+      {
+        "y": 540,
+        "land_sections": 2,
+        "central_water_gap": {
+          "west_edge": 1041.109,
+          "east_edge": 1106.319,
+          "width": 65.21,
+          "center": 1073.714
+        }
+      },
+      {
+        "y": 550,
+        "land_sections": 2,
+        "central_water_gap": {
+          "west_edge": 1033.651,
+          "east_edge": 1120.978,
+          "width": 87.327,
+          "center": 1077.315
+        }
+      },
+      {
+        "y": 570,
+        "land_sections": 2,
+        "central_water_gap": {
+          "west_edge": 1016.27,
+          "east_edge": 1139.737,
+          "width": 123.467,
+          "center": 1078.003
+        }
+      },
+      {
+        "y": 600,
+        "land_sections": 2,
+        "central_water_gap": {
+          "west_edge": 1000.7,
+          "east_edge": 1162.858,
+          "width": 162.158,
+          "center": 1081.779
+        }
+      },
+      {
+        "y": 650,
+        "land_sections": 2,
+        "central_water_gap": {
+          "west_edge": 981.443,
+          "east_edge": 1183.31,
+          "width": 201.866,
+          "center": 1082.377
+        }
+      },
+      {
+        "y": 700,
+        "land_sections": 2,
+        "central_water_gap": {
+          "west_edge": 957.062,
+          "east_edge": 1205.954,
+          "width": 248.892,
+          "center": 1081.508
+        }
+      },
+      {
+        "y": 740,
+        "land_sections": 3,
+        "central_water_gap": {
+          "west_edge": 944.117,
+          "east_edge": 1213.926,
+          "width": 269.809,
+          "center": 1079.021
+        }
+      },
+      {
+        "y": 780,
+        "land_sections": 3,
+        "central_water_gap": {
+          "west_edge": 929.352,
+          "east_edge": 1230.109,
+          "width": 300.756,
+          "center": 1079.73
+        }
+      },
+      {
+        "y": 820,
+        "land_sections": 2,
+        "central_water_gap": {
+          "west_edge": 911.935,
+          "east_edge": 1282.839,
+          "width": 370.905,
+          "center": 1097.387
+        }
+      },
+      {
+        "y": 880,
+        "land_sections": 0,
+        "central_water_gap": null
+      }
+    ],
+    "deep_southern_water_corridor": {
+      "polyline": [
+        [
+          1090,
+          545
+        ],
+        [
+          1080,
+          575
+        ],
+        [
+          1090,
+          610
+        ],
+        [
+          1100,
+          650
+        ],
+        [
+          1100,
+          690
+        ],
+        [
+          1100,
+          740
+        ],
+        [
+          1100,
+          785
+        ],
+        [
+          1100,
+          860
+        ]
+      ],
+      "source_polygon_id": 0,
+      "global_water_point_sampling": {
+        "points_checked": 287,
+        "unexpected_count": 0,
+        "examples": []
+      },
+      "demonstrated_only": "continuous polyline samples are outside 99 land shapes; not certified real ocean connectivity at all passage scales"
+    },
+    "north_crown_issue": "B41 does not assert that B38 northern bay already contains two north subbasins. B42 should reshape the inner northern bay as a reversible B41/B42 test, preserving the 99-polygons count only if topology permits."
+  },
+  "qintang_fit": {
+    "region_probe_map": [
+      {
+        "id": "Q",
+        "label": "秦棠",
+        "point": [
+          115,
+          290
+        ]
+      },
+      {
+        "id": "S",
+        "label": "萨瑞拉",
+        "point": [
+          225,
+          400
+        ]
+      },
+      {
+        "id": "W",
+        "label": "白石城",
+        "point": [
+          235,
+          305
+        ]
+      }
+    ],
+    "candidate_Tangxi_line": [
+      [
+        115,
+        290
+      ],
+      [
+        148,
+        317
+      ],
+      [
+        179,
+        345
+      ],
+      [
+        207,
+        374
+      ],
+      [
+        225,
+        400
+      ]
+    ],
+    "land_route_sampling": {
+      "points_checked": 164,
+      "unexpected_count": 0,
+      "examples": []
+    },
+    "routing_status": "LAND_ONLY_SCHEMATIC_NO_ELEVATION_OR_WATERSHED_VALIDATION",
+    "borders": "NOT_PROPOSED",
+    "adjacency": "NOT_GEOMETRICALLY_PROVEN"
+  },
+  "known_constraints": [
+    {
+      "id": "CG-001",
+      "criterion": "联合城与人民天国同处同一陆块",
+      "status": "PASSES_AS_FEASIBILITY_PROBE",
+      "evidence": "示范A与示范B两种互换方位的试摆点均在#0多边形陆地上",
+      "binding": "UNAPPROVED"
+    },
+    {
+      "id": "CG-002",
+      "criterion": "巨型内海从超级大陆南口连接外洋",
+      "status": "SUPPORTED_BY_SAMPLED_SOUTH_OPEN_WATER_CORRIDOR",
+      "evidence": "287个沿示范水道采样点全部属于当前全球水面；剖面y=550到780显示中央海水空隙",
+      "binding": "UNAPPROVED"
+    },
+    {
+      "id": "CG-003",
+      "criterion": "北冠半岛将内海北部分为东西两个连续海盆",
+      "status": "GEOMETRY_GAP_REQUIRES_RESHAPING",
+      "evidence": "当前#0在y=480、500、510、520均为一条连续实心陆地横截面；北部水道没有现成双海盆环绕的半岛",
+      "binding": "UNAPPROVED"
+    },
+    {
+      "id": "CG-004",
+      "criterion": "抵抗者之弧起于内海西北，向内陆弧形延伸",
+      "status": "NEEDS_RELIEF_AND_RIDGE_DESIGN",
+      "evidence": "#0允许抽象的高地研究，但B39合成高地/历史计算脊线不能代替已确认的抵抗者之弧",
+      "binding": "UNAPPROVED"
+    },
+    {
+      "id": "CG-005",
+      "criterion": "东门陆连地峡、内海南口与东西两岸港湾条件",
+      "status": "NEEDS_COAST_CROSS_SECTION_AND_SHORE_CLASSIFICATION",
+      "evidence": "图纸内海南口已有大致水道，具体东门地峡结构尚未证明",
+      "binding": "UNAPPROVED"
+    },
+    {
+      "id": "CG-006-007",
+      "criterion": "R1流向东北次级海盆、R2流向中东部海盆",
+      "status": "BLOCKED_BY_MISSING_NORTHERN_EAST_BASIN",
+      "evidence": "还缺北部东侧次级海盆，无法合法落实R1注海口和真正分水岭",
+      "binding": "UNAPPROVED"
+    },
+    {
+      "id": "CG-008",
+      "criterion": "秦棠位于萨瑞拉西北；白石城北方且毗邻",
+      "status": "PASSES_POINT_ORDERING_ONLY__ADJACENCY_NOT_DETERMINED",
+      "evidence": "#1上三处试摆点均在陆地内，Q的x、y均小于S，W的y小于S；未画边界，因此白石城与萨瑞拉的行政接壤仍未证实",
+      "binding": "UNAPPROVED"
+    },
+    {
+      "id": "CG-009",
+      "criterion": "棠溪涉及秦棠和萨瑞拉；与R1/R2独立",
+      "status": "PASSES_SINGLE_LAND_ROUTE_FEASIBILITY_ONLY",
+      "evidence": "示范连线的164个样点均在#1陆地内；但没有测量地形落差、河源、河口、流向或跨境边界",
+      "binding": "UNAPPROVED"
+    },
+    {
+      "id": "CG-010",
+      "criterion": "气候、水汽、迎风坡、雨影",
+      "status": "DEFERRED_UNTIL_GLOBAL_RELIEF",
+      "evidence": "尚无真实经纬与行星风带，当前不能配置正式气候图",
+      "binding": "UNAPPROVED"
+    }
+  ],
+  "qa": {
+    "sourcesUnchanged": true,
+    "landPolygons99": true,
+    "vertices9669": true,
+    "allUCHeavenProbesOn0": true,
+    "allQSWProbesOn1": true,
+    "QNWofS": true,
+    "WNofS": true,
+    "southernOpenAllSamplesWater": true,
+    "riverIllustrationAllSamplesLand": true,
+    "solidNorthernSpans": true,
+    "knownRelationUnchanged": true,
+    "B40CanonCrosswalkUnchanged": true,
+    "fourApprovedNamesUnchanged": true,
+    "oceanNames25NotPlaced": true,
+    "noConfirmedCountryCoordinates": true
+  },
+  "next_steps": [
+    "P1: design on #0 a north-split inner sea with wide North Crown peninsula connected to northern land; test south ocean connectivity and both north basins to shared main basin.",
+    "P2: add draft east inner-sea catchment envelopes for R1 and R2, with slope and distinct outlets; resistance arc must not become a closed straight barrier.",
+    "P3: construct border-neutral Qintang-Sarrela-Whitestone region partition tests on #1, keep White Stone adjacent to Sarrela, and test Tangxi one basin; no geography canon until user approves.",
+    "P4: only after core silhouette passes, decide whether H-A/H-B mainland-to-country mappings are adopted and update national geography wiki entries."
+  ],
+  "restrictions": [
+    "Approved names do not authorize exact map coordinates or national borders.",
+    "A and B scenario swap tests are only marker probes, not political east/west directions.",
+    "Do not assign 海域北西里 or any of the approved 25 sea names to the anonymous southern-open inlet.",
+    "No official forest, relief, climate, cities or river mouths created here.",
+    "Map remains editable and must not erase B16–B40 original data."
+  ]
+}
