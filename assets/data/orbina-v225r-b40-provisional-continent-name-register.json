@@ -1,0 +1,426 @@
+{
+  "edition": "V2.25-R-B40",
+  "date": "2026-10-27",
+  "status": "NAMING_SYSTEM_USER_APPROVED__INDIVIDUAL_NAMES_AND_MACRO_DIVISION_UNAPPROVED_CANDIDATE",
+  "source": {
+    "repository": "xdd44894-hub/orbina-encyclopedia",
+    "files": [
+      "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+      "assets/data/orbina-v225r-b34-reversible-coastline-layer.json",
+      "assets/data/orbina-v225r-b35-reversible-archipelago-layer.json",
+      "assets/data/orbina-v225r-b36-island-spacing-layer.json",
+      "assets/data/orbina-v225r-b37-macro-basin-composition-layer.json",
+      "assets/data/orbina-v225r-b38-global-basin-density-layer.json",
+      "assets/data/orbina-v225r-b17-confirmed-geographic-register.json"
+    ],
+    "blob_shas": [
+      "d580bd5d0410b1c533acfe9709e99092d302584c",
+      "cc35278c54ba12c2ebefecb7d97567110270e881",
+      "28e6e8143aac255f9150904a9b8f2abc464585c0",
+      "c54a08165caba6f1a978465a3cb6221560f140f5",
+      "5aa747a543317f955ea9a6965c2365d348591c17",
+      "c53b60e4d38eab1bafd35a8f570e2eb8fd3b2583",
+      "abd94277a1273ec95eb285c76d8b3547adfca50a"
+    ],
+    "coordinate_stage": "B38 geometry plus B39 non-modifying geomorphology research",
+    "frame": [
+      2400,
+      1200
+    ],
+    "horizontal_wrap": 2400
+  },
+  "accepted_policy": {
+    "main_continents": "historical/proper naming with Chinese suffix 洲",
+    "fragmented_land_groups": "physical-descriptive naming with suffix 陆群、微大陆、群岛 etc",
+    "no_conflation": "陆块polygon != 地质大陆 != 文明地理洲",
+    "name_should_survive_minor_coast_changes": true
+  },
+  "classification": {
+    "group_system_count": 6,
+    "possible_major_continents": 2,
+    "secondary_land_groups": 4,
+    "anonymous_core_polygons_assigned": 16,
+    "unassigned_archipelago_polygon_ids": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98
+    ],
+    "independent_island_assignment_pending": true,
+    "not_global_canon": false
+  },
+  "groups": [
+    {
+      "id": "C01",
+      "display_name": "阿维隆洲",
+      "romanization": "Avelon",
+      "style": "historical_toponym",
+      "classification_candidate": "primary_major_continent",
+      "polygon_ids": [
+        0
+      ],
+      "display_color": "#cfcc91",
+      "alternatives": [
+        "阿维伦洲",
+        "艾维隆洲"
+      ],
+      "rationale": "图幅中央最大完整核心陆块；具备成为文明史中的长期专名的尺度。名称本身尚无已编写的历史词源。",
+      "review": "是否将CG-001超级大陆绑定到#0？当前不能默认。",
+      "metrics": {
+        "polygon_count": 1,
+        "source_vertex_count": 143,
+        "absolute_illustrative_area_drawing2": 459587.09,
+        "source_bbox_drawing": [
+          565.72,
+          150.54,
+          1528.47,
+          845.35
+        ]
+      },
+      "source_polygon_names": [
+        "continental-nucleus"
+      ],
+      "name_status": "CANDIDATE_NEEDS_USER_APPROVAL",
+      "group_status": "CANDIDATE_GEOGRAPHIC_EDITORIAL_CLASSIFICATION"
+    },
+    {
+      "id": "C02",
+      "display_name": "维索兰洲",
+      "romanization": "Vesolan",
+      "style": "historical_toponym",
+      "classification_candidate": "primary_major_continent",
+      "polygon_ids": [
+        1
+      ],
+      "display_color": "#9fc5b5",
+      "alternatives": [
+        "维索伦洲",
+        "维萨兰洲"
+      ],
+      "rationale": "第二大的连续大型陆块，其轮廓跨越平面地图左右接缝；历史专名比东/西方位词稳定。",
+      "review": "跨接缝显示不代表东西边界；是否承载秦棠—萨瑞拉地理单元尚未决定。",
+      "metrics": {
+        "polygon_count": 1,
+        "source_vertex_count": 79,
+        "absolute_illustrative_area_drawing2": 222944.51,
+        "source_bbox_drawing": [
+          -226.67,
+          109.14,
+          396.6,
+          659.35
+        ]
+      },
+      "source_polygon_names": [
+        "seam-crossing-western-long-continent"
+      ],
+      "name_status": "CANDIDATE_NEEDS_USER_APPROVAL",
+      "group_status": "CANDIDATE_GEOGRAPHIC_EDITORIAL_CLASSIFICATION"
+    },
+    {
+      "id": "L03",
+      "display_name": "双脊陆群",
+      "romanization": "Twin-Ridge Land Group",
+      "style": "physical_descriptor",
+      "classification_candidate": "paired_microcontinental_land_group",
+      "polygon_ids": [
+        2,
+        3
+      ],
+      "display_color": "#a9b9d8",
+      "alternatives": [
+        "双脊残陆",
+        "双脊地群"
+      ],
+      "rationale": "在绘图形态上两片相邻、呈狭长脊状的残余微大陆；脊仅作轮廓描述，不声称山脊实测高程。",
+      "review": "将来是否合称一座微大陆／陆架共同体，需构造与浅海证据。",
+      "metrics": {
+        "polygon_count": 2,
+        "source_vertex_count": 53,
+        "absolute_illustrative_area_drawing2": 41475.32,
+        "source_bbox_drawing": [
+          821.08,
+          967.79,
+          1239.11,
+          1125.3
+        ]
+      },
+      "source_polygon_names": [
+        "southern-ocean-west-ridge",
+        "southern-ocean-east-ridge"
+      ],
+      "name_status": "CANDIDATE_NEEDS_USER_APPROVAL",
+      "group_status": "CANDIDATE_GEOGRAPHIC_EDITORIAL_CLASSIFICATION"
+    },
+    {
+      "id": "L04",
+      "display_name": "碎湾陆群",
+      "romanization": "Fragmented-Bay Land Group",
+      "style": "physical_descriptor",
+      "classification_candidate": "fractured_microcontinental_land_group",
+      "polygon_ids": [
+        4,
+        5,
+        6
+      ],
+      "display_color": "#d5ad8d",
+      "alternatives": [
+        "西南裂陆群",
+        "三碎陆群"
+      ],
+      "rationale": "一片较大的破碎北块和两片南侧较小陆块形成形态上连续的区域系统。",
+      "review": "碎裂的外观不能证明共同板块或同一裂解历史。",
+      "metrics": {
+        "polygon_count": 3,
+        "source_vertex_count": 87,
+        "absolute_illustrative_area_drawing2": 45341.24,
+        "source_bbox_drawing": [
+          247.8,
+          787.5,
+          579.63,
+          1069.32
+        ]
+      },
+      "source_polygon_names": [
+        "southwestern-fractured-northern-block",
+        "southwest-southern-west-subcontinent",
+        "southwest-southern-east-subcontinent"
+      ],
+      "name_status": "CANDIDATE_NEEDS_USER_APPROVAL",
+      "group_status": "CANDIDATE_GEOGRAPHIC_EDITORIAL_CLASSIFICATION"
+    },
+    {
+      "id": "L05",
+      "display_name": "双陆群",
+      "romanization": "Twinland Group",
+      "style": "physical_descriptor",
+      "classification_candidate": "paired_remnant_land_group",
+      "polygon_ids": [
+        7,
+        8
+      ],
+      "display_color": "#b7b7d8",
+      "alternatives": [
+        "双湾陆群",
+        "北缘双陆群"
+      ],
+      "rationale": "两片相近的大型候选残余陆块组成的北部图纸区；名字不将其直接认作某一纬度或已知文明。",
+      "review": "是否有共同陆架、共同沉积盆地以及岛链联系仍需验证。",
+      "metrics": {
+        "polygon_count": 2,
+        "source_vertex_count": 800,
+        "absolute_illustrative_area_drawing2": 41054.94,
+        "source_bbox_drawing": [
+          1451.48,
+          50.99,
+          1960.4,
+          246.5
+        ]
+      },
+      "source_polygon_names": [
+        "b14-ne-001",
+        "b14-ne-002"
+      ],
+      "name_status": "CANDIDATE_NEEDS_USER_APPROVAL",
+      "group_status": "CANDIDATE_GEOGRAPHIC_EDITORIAL_CLASSIFICATION"
+    },
+    {
+      "id": "L06",
+      "display_name": "斜列陆群",
+      "romanization": "Oblique-Chain Land Group",
+      "style": "physical_descriptor",
+      "classification_candidate": "staggered_remnant_land_group",
+      "polygon_ids": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "display_color": "#8cc9c6",
+      "alternatives": [
+        "斜列群陆",
+        "东南散陆群"
+      ],
+      "rationale": "七片大小悬殊、在地图上错列的陆块共同形成斜向碎陆系统。",
+      "review": "现阶段仅为制图分区，不代表七片在同一地质时期断裂或同属一洲。",
+      "metrics": {
+        "polygon_count": 7,
+        "source_vertex_count": 2800,
+        "absolute_illustrative_area_drawing2": 94558.27,
+        "source_bbox_drawing": [
+          1517.73,
+          475.25,
+          2228.41,
+          1052.24
+        ]
+      },
+      "source_polygon_names": [
+        "b14-se-001",
+        "b14-se-002",
+        "b14-se-003",
+        "b14-se-004",
+        "b14-se-005",
+        "b14-se-006",
+        "b14-se-007"
+      ],
+      "name_status": "CANDIDATE_NEEDS_USER_APPROVAL",
+      "group_status": "CANDIDATE_GEOGRAPHIC_EDITORIAL_CLASSIFICATION"
+    }
+  ],
+  "canon_crosswalk": {
+    "CG001_union_city_and_people_heaven_supercontinent": {
+      "confirmed": "same supercontinent with southern opening inner sea",
+      "linked_group_id": null,
+      "linked_polygon_id": null
+    },
+    "CG008_Qintang_Sarrela_Whitestone": {
+      "confirmed": "a separate continental geographic unit; Qin Tang northwest of Sarrela; Whitestone north/adjacent; could be joined or separated",
+      "linked_group_id": null,
+      "linked_polygon_id": null
+    },
+    "accepted_25_oceans": {
+      "names": [
+        "大西洋",
+        "太平洋",
+        "北白洋",
+        "洲间洋",
+        "中南洋",
+        "北西里",
+        "碎洋",
+        "南白洋",
+        "东陆洋",
+        "西陆洋",
+        "赤道洋",
+        "南环洋",
+        "远洲洋",
+        "双陆洋",
+        "长陆洋",
+        "深南洋",
+        "东赤洋",
+        "西赤洋",
+        "黑流洋",
+        "白潮海",
+        "千岛海",
+        "长峡海",
+        "内环海",
+        "双门海",
+        "赤湾海"
+      ],
+      "assigned_group_id": null
+    },
+    "R1_R2_Tangxi": {
+      "require_distinct_watersheds": true,
+      "allocated_polygons": null
+    },
+    "North_Crown_and_Resistance_Arc": {
+      "names_preserved": true,
+      "placed_on_polygon_id": null
+    }
+  },
+  "next_gate": {
+    "first": "Select or rename two historical main continent toponyms; name approval separately from polygon group approval",
+    "second": "Check geological/morphological memberships and surrounding 83 islands without automatic adjacency assignment",
+    "third": "Validate the CG001 southern-opening sea and CG008 separate continental unit on candidate map before declaring official positions",
+    "fourth": "Only after B40+B41 decisions, update existing encyclopedia main lore entries and named ocean map; no duplicate release documents in article."
+  },
+  "metadata": {
+    "B16_source_polygons": 99,
+    "B38_current_polygons": 99,
+    "B38_vertices": 9669,
+    "approved_canon_geographic_name_updates": 0
+  },
+  "QA": {
+    "full99Preserved": true,
+    "vertices9669": true,
+    "core16ExactlyOnce": true,
+    "other83NotAssigned": true,
+    "twoMainLandmasses": true,
+    "fourSubs": true,
+    "B17AllUnlinked": true,
+    "canonNamesUntouched": true,
+    "sourceB16Hash": true,
+    "nonzeroAreas": true
+  },
+  "warning": "Group C01 at #0 is only a supercontinent-shaped proposal, not a verified placement of 联合城/人民天国. C02 at #1 is not automatically 秦棠—萨瑞拉. All six B40 labels are candidate names; accepted mixed naming is the ONLY user-approved change."
+}
