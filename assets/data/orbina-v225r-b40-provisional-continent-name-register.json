@@ -1,7 +1,7 @@
 {
-  "edition": "V2.25-R-B40",
+  "edition": "V2.25-R-B40 · name revision 1",
   "date": "2026-10-27",
-  "status": "NAMING_SYSTEM_USER_APPROVED__INDIVIDUAL_NAMES_AND_MACRO_DIVISION_UNAPPROVED_CANDIDATE",
+  "status": "USER_APPROVED_FOUR_TOPONYMS__ALL_POLYGON_TO_CANONICAL_GEOLOCATION_LINKS_STILL_PROVISIONAL",
   "source": {
     "repository": "xdd44894-hub/orbina-encyclopedia",
     "files": [
@@ -30,15 +30,16 @@
     "horizontal_wrap": 2400
   },
   "accepted_policy": {
-    "main_continents": "historical/proper naming with Chinese suffix 洲",
-    "fragmented_land_groups": "physical-descriptive naming with suffix 陆群、微大陆、群岛 etc",
+    "main_continents": "historical or distinctive proper naming with Chinese suffix 洲; actual user-selected names: 溪兰溪古洲、杭塔杉洲",
+    "fragmented_land_groups": "descriptive group names for unnamed fragmented clusters, while user-designated individual proper names like 鬃马陆/夕鉄陆 are preserved",
     "no_conflation": "陆块polygon != 地质大陆 != 文明地理洲",
-    "name_should_survive_minor_coast_changes": true
+    "name_should_survive_minor_coast_changes": true,
+    "name_exceptions": "鬃马陆、夕鉄陆为用户指定的独立专有地名，虽然它们位于破碎地理系统中；用户命名优先于自动地貌描述。"
   },
   "classification": {
     "group_system_count": 6,
     "possible_major_continents": 2,
-    "secondary_land_groups": 4,
+    "secondary_land_groups": 3,
     "anonymous_core_polygons_assigned": 16,
     "unassigned_archipelago_polygon_ids": [
       16,
@@ -126,25 +127,33 @@
       98
     ],
     "independent_island_assignment_pending": true,
-    "not_global_canon": true
+    "not_global_canon": true,
+    "display_label_count": 7,
+    "individually_named_lands": 2,
+    "region_system_L05": {
+      "id": "L05",
+      "name": null,
+      "source_polygon_ids": [
+        7,
+        8
+      ],
+      "description": "原双陆群临时区域划分拆分为两个独立的用户正式命名陆地，不再使用“双陆群”作为地名。"
+    }
   },
   "groups": [
     {
       "id": "C01",
-      "display_name": "阿维隆洲",
-      "romanization": "Avelon",
+      "display_name": "溪兰溪古洲",
+      "romanization": null,
       "style": "historical_toponym",
       "classification_candidate": "primary_major_continent",
       "polygon_ids": [
         0
       ],
       "display_color": "#cfcc91",
-      "alternatives": [
-        "阿维伦洲",
-        "艾维隆洲"
-      ],
-      "rationale": "图幅中央最大完整核心陆块；具备成为文明史中的长期专名的尺度。名称本身尚无已编写的历史词源。",
-      "review": "是否将CG-001超级大陆绑定到#0？当前不能默认。",
+      "alternatives": [],
+      "rationale": "用户正式选定的大陆名称；历史来源、外语写法尚未设定。陆块#0与已确认国家所在超级大陆的对应关系仍须单独验证。",
+      "review": "确认#0是否确实容纳已知的南口内海、北冠半岛、R1/R2与联合城—人民天国关系。",
       "metrics": {
         "polygon_count": 1,
         "source_vertex_count": 143,
@@ -159,25 +168,22 @@
       "source_polygon_names": [
         "continental-nucleus"
       ],
-      "name_status": "CANDIDATE_NEEDS_USER_APPROVAL",
+      "name_status": "USER_APPROVED_NAME",
       "group_status": "CANDIDATE_GEOGRAPHIC_EDITORIAL_CLASSIFICATION"
     },
     {
       "id": "C02",
-      "display_name": "维索兰洲",
-      "romanization": "Vesolan",
+      "display_name": "杭塔杉洲",
+      "romanization": null,
       "style": "historical_toponym",
       "classification_candidate": "primary_major_continent",
       "polygon_ids": [
         1
       ],
       "display_color": "#9fc5b5",
-      "alternatives": [
-        "维索伦洲",
-        "维萨兰洲"
-      ],
-      "rationale": "第二大的连续大型陆块，其轮廓跨越平面地图左右接缝；历史专名比东/西方位词稳定。",
-      "review": "跨接缝显示不代表东西边界；是否承载秦棠—萨瑞拉地理单元尚未决定。",
+      "alternatives": [],
+      "rationale": "用户正式选定的第二主要大陆名称；历史词源及外语写法尚未设定。跨接缝大陆身份仍为候选地图的分组判断。",
+      "review": "先检验跨图幅陆地结构；不将秦棠—萨瑞拉—白石城自动放在此洲。",
       "metrics": {
         "polygon_count": 1,
         "source_vertex_count": 79,
@@ -192,7 +198,7 @@
       "source_polygon_names": [
         "seam-crossing-western-long-continent"
       ],
-      "name_status": "CANDIDATE_NEEDS_USER_APPROVAL",
+      "name_status": "USER_APPROVED_NAME",
       "group_status": "CANDIDATE_GEOGRAPHIC_EDITORIAL_CLASSIFICATION"
     },
     {
@@ -268,39 +274,66 @@
       "group_status": "CANDIDATE_GEOGRAPHIC_EDITORIAL_CLASSIFICATION"
     },
     {
-      "id": "L05",
-      "display_name": "双陆群",
-      "romanization": "Twinland Group",
-      "style": "physical_descriptor",
-      "classification_candidate": "paired_remnant_land_group",
+      "id": "L05A",
+      "display_name": "鬃马陆",
+      "romanization": null,
+      "style": "named_individual_land",
+      "classification_candidate": "individually_named_land_not_yet_classified_as_continent",
       "polygon_ids": [
-        7,
-        8
+        7
       ],
-      "display_color": "#b7b7d8",
-      "alternatives": [
-        "双湾陆群",
-        "北缘双陆群"
-      ],
-      "rationale": "两片相近的大型候选残余陆块组成的北部图纸区；名字不将其直接认作某一纬度或已知文明。",
-      "review": "是否有共同陆架、共同沉积盆地以及岛链联系仍需验证。",
+      "display_color": "#ae9dc8",
+      "alternatives": [],
+      "rationale": "用户指定的独立陆地名称；暂按图纸北部两块候选陆地中的#7表示。无法由命名直接判断是洲、微大陆还是岛屿。",
+      "review": "图纸#7对应鬃马陆属于初步映射，陆地学分类和真实边界尚未批准。",
       "metrics": {
-        "polygon_count": 2,
-        "source_vertex_count": 800,
-        "absolute_illustrative_area_drawing2": 41054.94,
+        "polygon_count": 1,
+        "source_vertex_count": 400,
+        "absolute_illustrative_area_drawing2": 22684.65,
         "source_bbox_drawing": [
           1451.48,
           50.99,
+          1713.96,
+          218.71
+        ]
+      },
+      "source_polygon_names": [
+        "b14-ne-001"
+      ],
+      "name_status": "USER_APPROVED_NAME",
+      "group_status": "PROVISIONAL_POLYGON_MAPPING",
+      "region_system_id": "L05"
+    },
+    {
+      "id": "L05B",
+      "display_name": "夕鉄陆",
+      "romanization": null,
+      "style": "named_individual_land",
+      "classification_candidate": "individually_named_land_not_yet_classified_as_continent",
+      "polygon_ids": [
+        8
+      ],
+      "display_color": "#b1cad8",
+      "alternatives": [],
+      "rationale": "用户指定的独立陆地名称，原样保留“鉄”字；暂按图纸北部另一个候选陆块#8表示。",
+      "review": "图纸#8对应夕鉄陆属于初步映射；不推断与鬃马陆必然共享一块地质板块。",
+      "metrics": {
+        "polygon_count": 1,
+        "source_vertex_count": 400,
+        "absolute_illustrative_area_drawing2": 18370.3,
+        "source_bbox_drawing": [
+          1779.93,
+          74.94,
           1960.4,
           246.5
         ]
       },
       "source_polygon_names": [
-        "b14-ne-001",
         "b14-ne-002"
       ],
-      "name_status": "CANDIDATE_NEEDS_USER_APPROVAL",
-      "group_status": "CANDIDATE_GEOGRAPHIC_EDITORIAL_CLASSIFICATION"
+      "name_status": "USER_APPROVED_NAME",
+      "group_status": "PROVISIONAL_POLYGON_MAPPING",
+      "region_system_id": "L05"
     },
     {
       "id": "L06",
@@ -422,5 +455,32 @@
     "sourceB16Hash": true,
     "nonzeroAreas": true
   },
-  "warning": "Group C01 at #0 is only a supercontinent-shaped proposal, not a verified placement of 联合城/人民天国. C02 at #1 is not automatically 秦棠—萨瑞拉. All six B40 labels are candidate names; accepted mixed naming is the ONLY user-approved change."
+  "warning": "四个名称为用户认可的名称，地图陆块与正式国家所在地的对应关系仍是候选。#7/#8分开命名，并不能据此认定地质历史或两者间的正式行政关系。",
+  "name_approvals": [
+    {
+      "name": "溪兰溪古洲",
+      "polygon_id_candidate": 0,
+      "source": "user",
+      "latin_script_name_approved": false
+    },
+    {
+      "name": "杭塔杉洲",
+      "polygon_id_candidate": 1,
+      "source": "user",
+      "latin_script_name_approved": false
+    },
+    {
+      "name": "鬃马陆",
+      "polygon_id_candidate": 7,
+      "source": "user",
+      "latin_script_name_approved": false
+    },
+    {
+      "name": "夕鉄陆",
+      "polygon_id_candidate": 8,
+      "source": "user",
+      "latin_script_name_approved": false,
+      "exact_script_preservation": "夕鉄陆（使用鉄，不使用铁）"
+    }
+  ]
 }
