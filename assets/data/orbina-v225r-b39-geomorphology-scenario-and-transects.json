@@ -1,0 +1,475 @@
+{
+  "edition": "V2.25-R-B39",
+  "date": "2026-10-27",
+  "status": "NONCANON_GEOMORPHOLOGY_AND_COASTAL_TRANSECT_STUDY_NO_COASTLINE_EDITS",
+  "sources": {
+    "paths": [
+      "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+      "assets/data/orbina-v225r-b34-reversible-coastline-layer.json",
+      "assets/data/orbina-v225r-b35-reversible-archipelago-layer.json",
+      "assets/data/orbina-v225r-b36-island-spacing-layer.json",
+      "assets/data/orbina-v225r-b37-macro-basin-composition-layer.json",
+      "assets/data/orbina-v225r-b38-global-basin-density-layer.json",
+      "assets/data/orbina-v225r-b10-tectonic-hypotheses.json",
+      "assets/data/orbina-v225r-b13-relative-relief-seeds.json",
+      "assets/data/orbina-v225r-b21-tectonic-scenario-register.json"
+    ],
+    "sha": [
+      "d580bd5d0410b1c533acfe9709e99092d302584c",
+      "cc35278c54ba12c2ebefecb7d97567110270e881",
+      "28e6e8143aac255f9150904a9b8f2abc464585c0",
+      "c54a08165caba6f1a978465a3cb6221560f140f5",
+      "5aa747a543317f955ea9a6965c2365d348591c17",
+      "c53b60e4d38eab1bafd35a8f570e2eb8fd3b2583",
+      "aa10c08d6e4ebb68803f6986797a64d38ed92948",
+      "dd8e34eb3483d00b3cf13637051afc2ecf06969a",
+      "132c199173e2c20d2064540283b339ebc2ede14b"
+    ]
+  },
+  "frame": {
+    "size": [
+      2400,
+      1200
+    ],
+    "horizontal_wrap": 2400,
+    "units": "planar illustration units, not km; no real ocean depths, mountain elevation or longitude"
+  },
+  "geometry": {
+    "source_polygon_count": 99,
+    "source_vertex_count": 9669,
+    "modified_coast_vertices": 0,
+    "modified_polygon_positions": 0,
+    "original_southern_ocean_preserved": true
+  },
+  "method": {
+    "highland_seed": "sample each named study polygon interior at 24×24 cell centers; choose interior sample with greatest coast-edge distance, and optionally two other widely spaced plausible upland probes. This is a geometric search, not actual DEM.",
+    "coastal_transect": "find coastline edge with a 12-unit inward sample wholly inside its polygon, and 4/12/24-unit outward samples in water relative to all candidate polygons, including horizontal ±2400 copies. Validate sample points and preserve coastline intersections, not infer a shelf or trench.",
+    "sample_limit": "Separate point tests do not prove every segment in each transect lies continuously in the same medium. Nor do they establish real seabed depth.",
+    "no_real_tectonic_boundaries": true
+  },
+  "models": [
+    {
+      "id": "A",
+      "name": "张裂—差异沉降—残余陆架",
+      "origin": "V2.25-R-B16 / V2.25-R-B10",
+      "regional_support": [
+        "东北：分期裂陷、盲端海湾",
+        "东南：伸展断块、沉积补平的大陆架候选",
+        "西南：曲线形伸展带与残存高地"
+      ],
+      "signatures": [
+        "扇状或台阶式沉降块体",
+        "中浅海陆架与陆缘沉积斜坡的相对层次",
+        "基岩高地位置、沉积物源与海湾端部一致性"
+      ],
+      "limitations": "The existence of a shore indentation alone does not prove a normal fault, continental shelf width or spreading center."
+    },
+    {
+      "id": "B",
+      "name": "斜向走滑—局部拉分—限制弯曲抬升",
+      "origin": "V2.25-R-B10",
+      "regional_support": [
+        "东北：剪切错列与局部拉分深湾",
+        "东南：多个海湾的错列/挤压共存",
+        "西南：不连续走滑与错动残岛"
+      ],
+      "signatures": [
+        "可追踪的地层标志横向错距",
+        "局部张开盆地旁的压缩抬升区域",
+        "错动岩相与山前坡折协同"
+      ],
+      "limitations": "No earthquake catalog, fault trace, slip direction or age exists; all lines are scenarios only."
+    }
+  ],
+  "relative_highland_seeds": [
+    {
+      "id": "H07",
+      "polygon_id": 7,
+      "polygon_name": "b14-ne-001",
+      "region": "东北碎陆",
+      "family": "NE",
+      "point": [
+        1566.3189,
+        159.3073
+      ],
+      "inland_clearance_drawing": 50.3505,
+      "neighbors": [
+        [
+          1566.3189,
+          124.3669
+        ],
+        [
+          1555.3821,
+          131.355
+        ]
+      ],
+      "land_mask_valid": true,
+      "role": "CANDIDATE_RELATIVE_UPLAND_INTERIOR__NOT_SURVEYED_MOUNTAIN",
+      "max_distance_search_grid": [
+        24,
+        24
+      ]
+    },
+    {
+      "id": "H08",
+      "polygon_id": 8,
+      "polygon_name": "b14-ne-002",
+      "region": "东北碎陆",
+      "family": "NE",
+      "point": [
+        1858.8888,
+        142.847
+      ],
+      "inland_clearance_drawing": 44.076,
+      "neighbors": [
+        [
+          1828.8108,
+          149.9952
+        ],
+        [
+          1828.8108,
+          142.847
+        ]
+      ],
+      "land_mask_valid": true,
+      "role": "CANDIDATE_RELATIVE_UPLAND_INTERIOR__NOT_SURVEYED_MOUNTAIN",
+      "max_distance_search_grid": [
+        24,
+        24
+      ]
+    },
+    {
+      "id": "H09",
+      "polygon_id": 9,
+      "polygon_name": "b14-se-001",
+      "region": "东南斜向陆缘",
+      "family": "SE",
+      "point": [
+        1654.8433,
+        538.1137
+      ],
+      "inland_clearance_drawing": 50.7179,
+      "neighbors": [
+        [
+          1621.4453,
+          559.9798
+        ],
+        [
+          1632.578,
+          559.9798
+        ]
+      ],
+      "land_mask_valid": true,
+      "role": "CANDIDATE_RELATIVE_UPLAND_INTERIOR__NOT_SURVEYED_MOUNTAIN",
+      "max_distance_search_grid": [
+        24,
+        24
+      ]
+    },
+    {
+      "id": "H11",
+      "polygon_id": 11,
+      "polygon_name": "b14-se-003",
+      "region": "东南斜向陆缘",
+      "family": "SE",
+      "point": [
+        1763.5523,
+        832.8951
+      ],
+      "inland_clearance_drawing": 50.0526,
+      "neighbors": [
+        [
+          1796.8198,
+          826.8027
+        ],
+        [
+          1805.1367,
+          826.8027
+        ]
+      ],
+      "land_mask_valid": true,
+      "role": "CANDIDATE_RELATIVE_UPLAND_INTERIOR__NOT_SURVEYED_MOUNTAIN",
+      "max_distance_search_grid": [
+        24,
+        24
+      ]
+    },
+    {
+      "id": "H04",
+      "polygon_id": 4,
+      "polygon_name": "southwestern-fractured-northern-block",
+      "region": "西南裂海",
+      "family": "SW",
+      "point": [
+        377.6025,
+        868.6476
+      ],
+      "inland_clearance_drawing": 54.0169,
+      "neighbors": [
+        [
+          338.5006,
+          860.1061
+        ],
+        [
+          416.7045,
+          860.1061
+        ]
+      ],
+      "land_mask_valid": true,
+      "role": "CANDIDATE_RELATIVE_UPLAND_INTERIOR__NOT_SURVEYED_MOUNTAIN",
+      "max_distance_search_grid": [
+        24,
+        24
+      ]
+    },
+    {
+      "id": "H06",
+      "polygon_id": 6,
+      "polygon_name": "southwest-southern-east-subcontinent",
+      "region": "西南裂海",
+      "family": "SW",
+      "point": [
+        425.7672,
+        1006.5466
+      ],
+      "inland_clearance_drawing": 31.1732,
+      "neighbors": [
+        [
+          446.0077,
+          1010.3008
+        ],
+        [
+          459.5014,
+          1014.055
+        ]
+      ],
+      "land_mask_valid": true,
+      "role": "CANDIDATE_RELATIVE_UPLAND_INTERIOR__NOT_SURVEYED_MOUNTAIN",
+      "max_distance_search_grid": [
+        24,
+        24
+      ]
+    }
+  ],
+  "shore_to_interior_transects": [
+    {
+      "id": "T07",
+      "polygon_id": 7,
+      "region": "东北碎陆",
+      "family": "NE",
+      "coastal_edge_index": 383,
+      "edge_length_drawing": 5.1885,
+      "inland_12": [
+        1690.1869,
+        81.7894
+      ],
+      "shore": [
+        1686.0285,
+        70.533
+      ],
+      "offshore_12": [
+        1681.8701,
+        59.2766
+      ],
+      "offshore_24": [
+        1677.7116,
+        48.0201
+      ],
+      "normal_to_sea": [
+        -0.3465,
+        -0.938
+      ],
+      "shoreline_transition_valid": true,
+      "baseline_type": "land/shore/sea geometry certified at sample points",
+      "candidate_A": "Differentially subsiding coastal shelf (test only)",
+      "candidate_B": "Oblique shear / pull-apart nearshore margin (test only)",
+      "feature_certainty": "HYPOTHESIS_NO_WATER_DEPTH_OR_ACTIVE_FAULT_PROOF"
+    },
+    {
+      "id": "T08",
+      "polygon_id": 8,
+      "region": "东北碎陆",
+      "family": "NE",
+      "coastal_edge_index": 6,
+      "edge_length_drawing": 2.4879,
+      "inland_12": [
+        1948.2797,
+        234.3445
+      ],
+      "shore": [
+        1960.2125,
+        233.076
+      ],
+      "offshore_12": [
+        1972.1453,
+        231.8075
+      ],
+      "offshore_24": [
+        1984.078,
+        230.539
+      ],
+      "normal_to_sea": [
+        0.9944,
+        -0.1057
+      ],
+      "shoreline_transition_valid": true,
+      "baseline_type": "land/shore/sea geometry certified at sample points",
+      "candidate_A": "Differentially subsiding coastal shelf (test only)",
+      "candidate_B": "Oblique shear / pull-apart nearshore margin (test only)",
+      "feature_certainty": "HYPOTHESIS_NO_WATER_DEPTH_OR_ACTIVE_FAULT_PROOF"
+    },
+    {
+      "id": "T09",
+      "polygon_id": 9,
+      "region": "东南斜向陆缘",
+      "family": "SE",
+      "coastal_edge_index": 3,
+      "edge_length_drawing": 2.4931,
+      "inland_12": [
+        1799.9797,
+        563.7091
+      ],
+      "shore": [
+        1805.515,
+        553.062
+      ],
+      "offshore_12": [
+        1811.0503,
+        542.4149
+      ],
+      "offshore_24": [
+        1816.5856,
+        531.7679
+      ],
+      "normal_to_sea": [
+        0.4613,
+        -0.8873
+      ],
+      "shoreline_transition_valid": true,
+      "baseline_type": "land/shore/sea geometry certified at sample points",
+      "candidate_A": "Rifted marginal shelf and sediment wedge (test only)",
+      "candidate_B": "Oblique shear / pull-apart nearshore margin (test only)",
+      "feature_certainty": "HYPOTHESIS_NO_WATER_DEPTH_OR_ACTIVE_FAULT_PROOF"
+    },
+    {
+      "id": "T11",
+      "polygon_id": 11,
+      "region": "东南斜向陆缘",
+      "family": "SE",
+      "coastal_edge_index": 366,
+      "edge_length_drawing": 1.4016,
+      "inland_12": [
+        1871.2995,
+        822.7458
+      ],
+      "shore": [
+        1882.1645,
+        817.6515
+      ],
+      "offshore_12": [
+        1893.0295,
+        812.5572
+      ],
+      "offshore_24": [
+        1903.8945,
+        807.4629
+      ],
+      "normal_to_sea": [
+        0.9054,
+        -0.4245
+      ],
+      "shoreline_transition_valid": true,
+      "baseline_type": "land/shore/sea geometry certified at sample points",
+      "candidate_A": "Rifted marginal shelf and sediment wedge (test only)",
+      "candidate_B": "Oblique shear / pull-apart nearshore margin (test only)",
+      "feature_certainty": "HYPOTHESIS_NO_WATER_DEPTH_OR_ACTIVE_FAULT_PROOF"
+    },
+    {
+      "id": "T04",
+      "polygon_id": 4,
+      "region": "西南裂海",
+      "family": "SW",
+      "coastal_edge_index": 24,
+      "edge_length_drawing": 51.1416,
+      "inland_12": [
+        563.0541,
+        964.2678
+      ],
+      "shore": [
+        552.3625,
+        969.7166
+      ],
+      "offshore_12": [
+        541.6709,
+        975.1655
+      ],
+      "offshore_24": [
+        530.9793,
+        980.6143
+      ],
+      "normal_to_sea": [
+        -0.891,
+        0.4541
+      ],
+      "shoreline_transition_valid": true,
+      "baseline_type": "land/shore/sea geometry certified at sample points",
+      "candidate_A": "Extensional rift shoulder / relict continental shelf (test only)",
+      "candidate_B": "Oblique shear / pull-apart nearshore margin (test only)",
+      "feature_certainty": "HYPOTHESIS_NO_WATER_DEPTH_OR_ACTIVE_FAULT_PROOF"
+    },
+    {
+      "id": "T06",
+      "polygon_id": 6,
+      "region": "西南裂海",
+      "family": "SW",
+      "coastal_edge_index": 1,
+      "edge_length_drawing": 35.9926,
+      "inland_12": [
+        484.4951,
+        1007.7925
+      ],
+      "shore": [
+        495.3642,
+        1012.878
+      ],
+      "offshore_12": [
+        506.2333,
+        1017.9635
+      ],
+      "offshore_24": [
+        517.1024,
+        1023.049
+      ],
+      "normal_to_sea": [
+        0.9058,
+        0.4238
+      ],
+      "shoreline_transition_valid": true,
+      "baseline_type": "land/shore/sea geometry certified at sample points",
+      "candidate_A": "Extensional rift shoulder / relict continental shelf (test only)",
+      "candidate_B": "Oblique shear / pull-apart nearshore margin (test only)",
+      "feature_certainty": "HYPOTHESIS_NO_WATER_DEPTH_OR_ACTIVE_FAULT_PROOF"
+    }
+  ],
+  "geomorphic_interpretations": {
+    "passive_margin": "For A only, offshore test probes show water today, not a measured shelf or sediment wedge.",
+    "active_arc": "No trench or volcanic arc is assigned to anonymous islands; subduction geometry must be supported before plotting the trench on one side of an arc.",
+    "upland_to_coast": "Highland seeds require a plausible runoff gradient and sediment supply before river deltas or coast-mountain relations can be added.",
+    "tectonic_geographic_guard": "Do not map official Resistance Arc, North Crown Peninsula, confirmed Qin Tang watersheds or 25 canon ocean names to these anonymous polygons."
+  },
+  "review_next": [
+    "B40 test continuity of hypothetical relief corridors and backshore sediment source paths",
+    "Compare whether scenario A or B produces fewer unsupported structural assumptions",
+    "Only after an accepted deformation/sediment model should reversible shoreline modifications be attempted"
+  ],
+  "qa": {
+    "sourcePolygonCount99": true,
+    "sourceVertices9669": true,
+    "allSixUplandSites": true,
+    "allSixCoastSections": true,
+    "highlandSeedsInside": true,
+    "waterProbesOutside": true,
+    "noModelDeclaredCanon": true,
+    "unresolved": []
+  }
+}
