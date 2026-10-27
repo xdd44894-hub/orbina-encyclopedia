@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>俄庇娜 B38 | 全球海陆密度与海盆留白对照</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f2f5ef;color:#23404d;font:15px/1.55 system-ui,"Microsoft YaHei",sans-serif}header{background:linear-gradient(108deg,#173c53,#28766c);padding:27px max(17px,calc((100vw - 1380px)/2));color:#f7fdf7}h1{margin:0 0 8px;font-size:clamp(24px,3.3vw,38px)}header p{max-width:1100px;color:#d8e9e4;margin:0}main{max-width:1380px;margin:auto;padding:18px 16px 50px}nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}nav a{padding:8px 10px;border:1px solid #c9d9d2;color:#276474;background:#fff;border-radius:6px;text-decoration:none;font-size:13px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:17px}.stats>div{border-radius:10px;background:#e7f1ea;border:1px solid #d0ddd5;padding:13px}.stats b{display:block;color:#226778;font-size:28px}.stats small{color:#607b7d}.panel{border-radius:11px;border:1px solid #d1ded6;background:#fffcf8;padding:18px;margin-bottom:17px}h2{font-size:20px;margin:0 0 10px}h3{font-size:17px;margin:0 0 8px}.controls{display:flex;gap:11px;flex-wrap:wrap;align-items:center;margin:10px 0}.controls label{display:flex;align-items:center;gap:7px;font-size:13px}button,select,input{font:inherit;accent-color:#218a84;color:#245064}select,button{border:1px solid #bbd4ca;background:#f2f8f2;padding:7px 9px;border-radius:6px}button{cursor:pointer;background:#e2f0e8}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #298d9e}.twocol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.mapcard{background:#e7efe8;border:1px solid #d0dfd5;padding:11px;border-radius:8px}.mapcard p{font-size:12px;color:#5e777b;margin:8px 0 0}.canvasbox{background:#23536a;border:1px solid #bed2d3;border-radius:7px;overflow:hidden}canvas{display:block;width:100%;height:auto;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}.legend{color:#5e757b;font-size:13px;margin:11px 0}.legend span{margin-right:14px}#status{background:#eaf3ec;border:1px solid #caddd2;border-radius:8px;padding:11px;margin-top:12px;font-size:13px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;border-bottom:1px solid #e0ebe6;padding:9px 6px}th{color:#5d777b}.muted{font-size:13px;color:#5f7d82}@media(max-width:930px){.twocol{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}</style></head>
+<body><header><h1>俄庇娜 · B38 全球海陆密度与海盆构图</h1><p>把全球大陆分布与局部海峡过密问题放到同一张图纸中审查。120×60规则样点揭示区域绘图密度差异；选择保留宽广的南部外洋，同时轻微移动一片匿名东南大陆，打开局促的近岛海水留白。本阶段并非正式行星经纬度或水深测绘。</p></header><main>
+<nav><a href="../data/orbina-v225r-b38-global-basin-density-layer.json">B38全球密度矩阵与修订层</a><a href="../data/orbina-v225r-b38-global-basin-density-qa.json">几何间距与采样校验</a><a href="orbina-v225r-b37-macro-marine-basin-atlas.html">回看B37宏观海盆</a><a href="orbina-v225r-b36-archipelago-spatial-comparison.html">B36岛链调整</a></nav>
+<div class="stats"><div><b>99</b><small>候选陆块身份完全保留</small></div><div><b>9,669</b><small>前后海岸顶点不变</small></div><div><b>35%</b><small>规则网格采样的陆地覆盖约值</small></div><div><b>3.46 → 24.71</b><small>#9到#82最近岸距，图纸单位</small></div></div>
+<section class="panel"><h2>同步对照 · 全球布局与局部海盆</h2>
+<div class="controls">
+<label>范围 <select id="region"><option value="corridor">东南候选大陆#9与近岛#82</option><option value="southeast">东南大陆、岛弧及较大海盆</option><option value="world">完整全球世界地图</option></select></label>
+<label>缩放 <input id="zoom" type="range" min=".6" max="8" step=".1" value="1"><b id="zoomLabel">1×</b></label>
+<label><input type="checkbox" id="density">叠加8×4地区陆地密度色块</label>
+<label><input type="checkbox" id="ghost" checked>右图显示旧岸粉红虚线</label>
+<label><input type="checkbox" id="segment" checked>显示两岸最近直线</label>
+<button id="reset" type="button">复位</button>
+</div>
+<div class="twocol"><div class="mapcard"><h3>B37 · 原始海盆</h3><div class="canvasbox"><canvas id="before" width="760" height="540" aria-label="B37世界地图海陆密度"></canvas></div><p>琥珀色边缘是准备调整的匿名陆块#9；淡色线条表示与岛屿#82最近的海岸截线。</p></div>
+<div class="mapcard"><h3>B38 · 可回退优化稿</h3><div class="canvasbox"><canvas id="after" width="760" height="540" aria-label="B38世界地图和海盆留白修订"></canvas></div><p>青绿色为平移后的陆块#9；粉红虚线用于对比未修订的岸线，并非新增的另一片陆地。</p></div></div>
+<div class="legend"><span>🟨 待调整陆块</span><span>🟩 修订后的陆块</span><span>🌸 旧岸位置</span><span>📏 岸距为绘图单位，并非航道宽度</span></div>
+<div id="status">正在载入B16至B38全部累计地图数据……</div>
+</section>
+<section class="panel"><h2>全球绘图密度：等面积绘图网格，而非行星测量</h2><p class="muted">把2400×1200矩形图纸分为上下4带、左右8区，每个格子有15×15个采样点；按海岸多边形点包含关系记录陆地覆盖。图幅南北具有极不均匀的陆地密度，是设计指标，不是球体真实面积。尤其不能因为南方留白多，就强行填塞大陆。</p>
+<table><thead><tr><th>图纸南北区带（自上而下）</th><th>B37陆地覆盖</th><th>B38陆地覆盖</th></tr></thead><tbody id="rows"></tbody></table>
+</section>
+<section class="panel"><h2>为什么只动一片大陆？</h2><p>全局密度统计显示中部集中、南部开阔，但<em>均匀分配陆地</em>不是目标。先前试验把南部陆块#14向南平移会与岛屿#88相交，因此拒绝这项改动。B38改为修正东南近岛边缘的一处局促间隙：#9向西15、向北20个绘图单位，保持原有形态和99片陆块不变。距离升高不代表海峡有连续通路，也不代表有可靠水深。</p></section>
+</main>
+<script>
+"use strict";
+const $=s=>document.getElementById(s),W=760,H=540;let B16=null,B34=null,B35=null,B36=null,B37=null,B38=null,old=[],neu=[],scale=1,zoom=1,center=[1670,570],pan=[0,0],drag=null;
+const groups={corridor:[0,9,65,72,82,83,96],southeast:[0,9,10,11,12,13,14,15,65,70,71,72,82,83,96],world:Array.from({length:99},(_,i)=>i)};
+function combine(){const original=[...B16.macro_landmasses,...B16.archipelago];const shifted=Object.fromEntries(B36.island_translations.map(x=>[x.id,x.delta]));old=original.map((p,i)=>{let a=B35.polygon_replacements.find(x=>x.polygon_id===i)?.revised_coordinates||B34.geometry_changes.polygon_replacements.find(x=>x.polygon_id===i)?.revised_coordinates||p.coordinates,sh=shifted[i]||(i===B37.proposal.polygon_id?B37.proposal.translation_drawing:null);return{...p,coordinates:sh?a.map(p=>[p[0]+sh[0],p[1]+sh[1]]):a}});
+neu=old.map((p,i)=>({...p,coordinates:i===B38.proposal.polygon_id?p.coordinates.map(q=>[q[0]+B38.proposal.translation_drawing[0],q[1]+B38.proposal.translation_drawing[1]]):p.coordinates}));}
+function box(p){return[Math.min(...p.map(q=>q[0])),Math.min(...p.map(q=>q[1])),Math.max(...p.map(q=>q[0])),Math.max(...p.map(q=>q[1]))]}
+function frame(){let key=$("region").value,ids=groups[key],all=ids.flatMap(i=>[...old[i].coordinates,...neu[i].coordinates]);let xmin=Math.min(...all.map(q=>q[0])),ymin=Math.min(...all.map(q=>q[1])),xmax=Math.max(...all.map(q=>q[0])),ymax=Math.max(...all.map(q=>q[1]));if(key==="world"){xmin=0;ymin=0;xmax=2400;ymax=1200}
+center=[(xmin+xmax)/2,(ymin+ymax)/2];scale=Math.min((W-98)/(xmax-xmin+30),(H-90)/(ymax-ymin+30));zoom=1;pan=[0,0];$("zoom").value="1";$("zoomLabel").textContent="1×";draw();}
+function pt(p,k=0){return[W/2+(p[0]+k-center[0])*scale*zoom+pan[0],H/2+(p[1]-center[1])*scale*zoom+pan[1]]}
+function visible(poly,k){let b=box(poly),p=pt([b[0],b[1]],k),q=pt([b[2],b[3]],k);return!(q[0]<-20||p[0]>W+20||q[1]<-20||p[1]>H+20)}
+function trace(ctx,poly,k){ctx.beginPath();poly.forEach((q,i)=>{let a=pt(q,k);if(!i)ctx.moveTo(...a);else ctx.lineTo(...a)});ctx.closePath()}
+function shade(ctx,which){let m=which.global_diagnostics[which===B38?"B38":"B37"].matrix_pct; // overridden below by direct selection
+for(let j=0;j<4;j++)for(let i=0;i<8;i++){let percent=m[j][i],a=pt([i*300,j*300]),b=pt([(i+1)*300,(j+1)*300]),x=Math.min(a[0],b[0]),y=Math.min(a[1],b[1]),w=Math.abs(b[0]-a[0]),h=Math.abs(b[1]-a[1]);ctx.fillStyle="rgba(255,188,85,"+(0.12+percent/100*.22)+")";ctx.fillRect(x,y,w,h);ctx.strokeStyle="rgba(224,242,224,.25)";ctx.strokeRect(x,y,w,h);if(w>50&&h>28){ctx.font="12px system-ui";ctx.fillStyle="#fff7dd";ctx.fillText(percent.toFixed(1)+"%",x+5,y+17)}}}
+function plotLine(ctx,r){if(!r?.points)return;let u=pt(r.points[0]),v=pt(r.points[1]);ctx.beginPath();ctx.moveTo(...u);ctx.lineTo(...v);ctx.lineWidth=3;ctx.strokeStyle="#fff2a0";ctx.stroke();for(let p of [u,v]){ctx.beginPath();ctx.arc(...p,3,0,2*Math.PI);ctx.fillStyle="#fff7d1";ctx.fill()}}
+function paint(canvas,shapes,isAfter){let ctx=canvas.getContext("2d");ctx.fillStyle="#235169";ctx.fillRect(0,0,W,H);if($("density").checked)shade(ctx,isAfter?{global_diagnostics:{B38:B38.global_diagnostics.B38},__which:"B38"}:B38);
+for(let i=0;i<shapes.length;i++){let poly=shapes[i].coordinates;for(let k of [-2400,0,2400]){if(!visible(poly,k))continue;trace(ctx,poly,k);let high=i===9;ctx.fillStyle=high?(isAfter?"#a1d6b2":"#dfcaa1"):(shapes[i].color||"#c8d2b3");ctx.fill();ctx.lineWidth=high?2.4:.7;ctx.strokeStyle=high?(isAfter?"#6ce3ad":"#ffdaa0"):"#e1e9c5";ctx.stroke();}}
+if(isAfter&&$("ghost").checked)for(let k of [-2400,0,2400]){let p=old[9].coordinates;if(!visible(p,k))continue;trace(ctx,p,k);ctx.strokeStyle="#f68fc6";ctx.lineWidth=2;ctx.setLineDash([7,5]);ctx.stroke();ctx.setLineDash([])}
+if($("segment").checked)plotLine(ctx,(isAfter?B38.selection_audit.selected_macro_9.closest_after.after:B38.selection_audit.selected_macro_9.closest_before.before));
+ctx.strokeStyle="#b9d0d0";ctx.lineWidth=1;ctx.strokeRect(.5,.5,W-1,H-1);}
+function draw(){if(!B38)return;paint($("before"),old,false);paint($("after"),neu,true)}
+$("region").onchange=frame;$("zoom").oninput=()=>{zoom=Number($("zoom").value);$("zoomLabel").textContent=zoom+"×";draw()};$("density").onchange=draw;$("ghost").onchange=draw;$("segment").onchange=draw;$("reset").onclick=frame;
+for(let name of ["before","after"]){let c=$(name);c.onpointerdown=e=>{drag={id:e.pointerId,x:e.clientX,y:e.clientY,pan:[...pan]};c.setPointerCapture(e.pointerId)};c.onpointermove=e=>{if(!drag||e.pointerId!==drag.id)return;let f=W/c.getBoundingClientRect().width;pan=[drag.pan[0]+(e.clientX-drag.x)*f,drag.pan[1]+(e.clientY-drag.y)*f];draw()};c.onpointerup=()=>drag=null;c.onpointercancel=()=>drag=null}
+const root="../data/";const files=["orbina-v225r-b16-aesthetic-geography-master.json","orbina-v225r-b34-reversible-coastline-layer.json","orbina-v225r-b35-reversible-archipelago-layer.json","orbina-v225r-b36-island-spacing-layer.json","orbina-v225r-b37-macro-basin-composition-layer.json","orbina-v225r-b38-global-basin-density-layer.json"];
+Promise.all(files.map(path=>fetch(root+path).then(r=>{if(!r.ok)throw Error(path+" HTTP "+r.status);return r.json()}))).then(([b,a,c,d,e,f])=>{B16=b;B34=a;B35=c;B36=d;B37=e;B38=f;combine();
+if(old.length!==99||neu.length!==99||old.reduce((n,p)=>n+p.coordinates.length,0)!==9669||neu.reduce((n,p)=>n+p.coordinates.length,0)!==9669||B38.proposal.polygon_id!==9||B38.global_diagnostics.B37.grid[0]!==120)throw Error("数据版本、坐标或密度网格不匹配");
+for(let j=0;j<4;j++){let tr=document.createElement("tr");let a=[["北部","中北部","中南部","南部"][j],B38.global_diagnostics.B37.row_pct[j].toFixed(1)+"%",B38.global_diagnostics.B38.row_pct[j].toFixed(1)+"%"];for(let c of a){let td=document.createElement("td");td.textContent=c;tr.append(td)}$("rows").append(tr)}
+frame();$("status").textContent="已加载B16至B38的全部6层数据。B38维持99片候选陆地和9,669顶点；120×60采样矩阵可开启叠加查看。";
+}).catch(err=>$("status").textContent="地图数据加载失败："+err.message+"。请用页面顶部源文件链接确认数据是否已部署。");
+</script></body></html>
