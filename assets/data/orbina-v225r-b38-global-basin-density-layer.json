@@ -1,0 +1,359 @@
+{
+  "edition": "V2.25-R-B38",
+  "date": "2026-10-27",
+  "status": "REVERSIBLE_NONCANON_MACRO_BASIN_AND_DENSITY_SCREEN",
+  "baseline": {
+    "source_paths": [
+      "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+      "assets/data/orbina-v225r-b34-reversible-coastline-layer.json",
+      "assets/data/orbina-v225r-b35-reversible-archipelago-layer.json",
+      "assets/data/orbina-v225r-b36-island-spacing-layer.json",
+      "assets/data/orbina-v225r-b37-macro-basin-composition-layer.json"
+    ],
+    "source_blob_shas": [
+      "d580bd5d0410b1c533acfe9709e99092d302584c",
+      "cc35278c54ba12c2ebefecb7d97567110270e881",
+      "28e6e8143aac255f9150904a9b8f2abc464585c0",
+      "c54a08165caba6f1a978465a3cb6221560f140f5",
+      "5aa747a543317f955ea9a6965c2365d348591c17"
+    ],
+    "polygon_count": 99,
+    "vertex_count": 9669
+  },
+  "global_diagnostics": {
+    "source": "Original B37 polygon outlines plus B34–B36 overlays, on a periodic 2400×1200 plane. Raster sample cell centers only.",
+    "method": "120×60 equal drawing-area point samples; point-in-polygon parity with periodic X ±2400, not a sphere-area estimator.",
+    "B37": {
+      "grid": [
+        120,
+        60
+      ],
+      "land_cells": 2517,
+      "total_cells": 7200,
+      "land_pct": 34.958,
+      "matrix_pct": [
+        [
+          44,
+          0.444,
+          32.444,
+          35.556,
+          25.333,
+          34.667,
+          26.667,
+          36.889
+        ],
+        [
+          83.111,
+          13.333,
+          96.889,
+          91.556,
+          94.222,
+          25.778,
+          18.222,
+          70.667
+        ],
+        [
+          3.556,
+          27.111,
+          56.889,
+          14.667,
+          58.222,
+          48,
+          40.444,
+          28
+        ],
+        [
+          4.889,
+          22.222,
+          9.333,
+          37.778,
+          2.222,
+          20,
+          12,
+          3.556
+        ]
+      ],
+      "row_pct": [
+        29.5,
+        61.722,
+        34.611,
+        14
+      ],
+      "col_pct": [
+        33.889,
+        15.778,
+        48.889,
+        44.889,
+        45,
+        32.111,
+        24.333,
+        34.778
+      ]
+    },
+    "B38": {
+      "grid": [
+        120,
+        60
+      ],
+      "land_cells": 2518,
+      "total_cells": 7200,
+      "land_pct": 34.972,
+      "matrix_pct": [
+        [
+          44,
+          0.444,
+          32.444,
+          35.556,
+          25.333,
+          34.667,
+          26.667,
+          36.889
+        ],
+        [
+          83.111,
+          13.333,
+          96.889,
+          91.556,
+          94.222,
+          32,
+          17.333,
+          70.667
+        ],
+        [
+          3.556,
+          27.111,
+          56.889,
+          14.667,
+          58.222,
+          43.111,
+          40.444,
+          28
+        ],
+        [
+          4.889,
+          22.222,
+          9.333,
+          37.778,
+          2.222,
+          20,
+          12,
+          3.556
+        ]
+      ],
+      "row_pct": [
+        29.5,
+        62.389,
+        34,
+        14
+      ],
+      "col_pct": [
+        33.889,
+        15.778,
+        48.889,
+        44.889,
+        45,
+        32.444,
+        24.111,
+        34.778
+      ]
+    },
+    "note": "Strong apparent center-band concentration and southern ocean gap are editorial map composition, not a measured planetary latitude distribution. Deliberately do not fill the south to reach uniform bands."
+  },
+  "selection_audit": {
+    "rejected_southern_macro_14": {
+      "candidate_translation": [
+        0,
+        30
+      ],
+      "reason": "Polygon #14 would intersect island #88 in a southward shift; do not enforce density uniformity."
+    },
+    "selected_macro_9": {
+      "polygon_id": 9,
+      "name": "b14-se-001",
+      "translation_drawing": [
+        -15,
+        -20
+      ],
+      "reason": "A near-clinging island margin (#82 gap ~3.46 drawing units) is relaxed without compressing #0 or island #72 below 24 drawing units.",
+      "closest_before": {
+        "other_polygon_id": 82,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 3.46244783,
+          "touches": false,
+          "points": [
+            [
+              1831.158,
+              588.186
+            ],
+            [
+              1834.519,
+              589.018
+            ]
+          ],
+          "edge_ids": [
+            15,
+            19
+          ]
+        },
+        "after": {
+          "distance": 24.70570209,
+          "touches": false,
+          "points": [
+            [
+              1815.757,
+              569.346
+            ],
+            [
+              1838.111,
+              579.866
+            ]
+          ],
+          "edge_ids": [
+            16,
+            22
+          ]
+        }
+      },
+      "closest_after": {
+        "other_polygon_id": 82,
+        "horizontal_shift": 0,
+        "before": {
+          "distance": 3.46244783,
+          "touches": false,
+          "points": [
+            [
+              1831.158,
+              588.186
+            ],
+            [
+              1834.519,
+              589.018
+            ]
+          ],
+          "edge_ids": [
+            15,
+            19
+          ]
+        },
+        "after": {
+          "distance": 24.70570209,
+          "touches": false,
+          "points": [
+            [
+              1815.757,
+              569.346
+            ],
+            [
+              1838.111,
+              579.866
+            ]
+          ],
+          "edge_ids": [
+            16,
+            22
+          ]
+        }
+      },
+      "other_coasts": [
+        {
+          "id": 0,
+          "before": 45.73376363,
+          "after": 25.39956277
+        },
+        {
+          "id": 72,
+          "before": 27.31177338,
+          "after": 29.55165308
+        },
+        {
+          "id": 82,
+          "before": 3.46244783,
+          "after": 24.70570209
+        },
+        {
+          "id": 96,
+          "before": 9.14729877,
+          "after": 31.95417249
+        }
+      ]
+    },
+    "alternative_moves_screened": [
+      [
+        0,
+        0
+      ],
+      [
+        -10,
+        -10
+      ],
+      [
+        -15,
+        -10
+      ],
+      [
+        -20,
+        -10
+      ],
+      [
+        -20,
+        -15
+      ],
+      [
+        -15,
+        -20
+      ],
+      [
+        -15,
+        -25
+      ]
+    ]
+  },
+  "proposal": {
+    "polygon_id": 9,
+    "translation_drawing": [
+      -15,
+      -20
+    ],
+    "operation": "Move every vertex of macro polygon #9 by the same (dx,dy), preserving shape, vertices, area, land count and all other polygons.",
+    "rollback": "Discard B38 position layer for B37; original B16/B34/B35/B36/B37 remain unchanged.",
+    "land_geometry_canonical": false,
+    "official_ocean_positions": false
+  },
+  "summary": {
+    "polygons_before": 99,
+    "polygons_after": 99,
+    "vertices_before": 9669,
+    "vertices_after": 9669,
+    "modified_macro_polygons": 1,
+    "B37_closest_gap_drawing": 3.46244783,
+    "B38_closest_gap_drawing": 24.70570209,
+    "B37_to_82_gap_drawing": 3.46244783,
+    "B38_to_82_gap_drawing": 24.70570209,
+    "land_percentage_B37": 34.958,
+    "land_percentage_B38": 34.972
+  },
+  "qa": {
+    "sourcesSHA_match": true,
+    "source99": true,
+    "source9669": true,
+    "final9669": true,
+    "one_macro_changed": true,
+    "exact_translation": true,
+    "area_preserved": true,
+    "before_closest_82": true,
+    "before_gap_under4": true,
+    "after_min_gap_over24": true,
+    "after_82_gap_over24": true,
+    "after_0_gap_over25": true,
+    "no_new_collision": true,
+    "sparse_southern_zone_not_artificially_filled": true,
+    "raster_matches_7200": true
+  },
+  "limitations": [
+    "Drawing coordinates are not kilometers or official geographic longitudes.",
+    "Area sample uses equal-sized square cells; no cosine-latitude or spherical area correction.",
+    "No claim of navigable channel depth, geological structure, or actual winds/current directions.",
+    "The 120×60 raster cannot resolve all smaller islands; zoomed geospatial polygons remain the authoritative drawing objects."
+  ]
+}
