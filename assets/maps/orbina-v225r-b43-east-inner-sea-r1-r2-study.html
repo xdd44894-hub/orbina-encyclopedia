@@ -37,7 +37,7 @@ input{accent-color:#2c7c91}svg{display:block;width:100%;height:auto;aspect-ratio
 <script>
 "use strict";
 const SVGNS="http://www.w3.org/2000/svg",atlas=document.getElementById("atlas");
-const base={x:550,y:140,w:1010,h:720};let view={...base};let pointers=new Map(),active=false,dragStart=null;
+const base={x:550,y:140,w:1010,h:720};let view={...base};let pointers=new Map(),active=false;
 const el=(type,attrs,parent=atlas)=>{const n=document.createElementNS(SVGNS,type);for(const k in attrs)n.setAttribute(k,attrs[k]);parent.appendChild(n);return n};
 const pathData=points=>points.map((p,i)=>(i?"L":"M")+p[0]+","+p[1]).join(" ")+" Z";
 function updateView(){atlas.setAttribute("viewBox",[view.x,view.y,view.w,view.h].join(" "))}
@@ -45,9 +45,9 @@ function zoom(factor,cx=view.x+view.w/2,cy=view.y+view.h/2){const nw=view.w*fact
 function svgPoint(e){const pt=atlas.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;const ctm=atlas.getScreenCTM();return ctm?pt.matrixTransform(ctm.inverse()):{x:view.x+view.w/2,y:view.y+view.h/2}}
 document.getElementById("plus").onclick=()=>zoom(.8);document.getElementById("minus").onclick=()=>zoom(1.25);document.getElementById("reset").onclick=()=>{view={...base};updateView()};
 atlas.addEventListener("wheel",e=>{e.preventDefault();const p=svgPoint(e);zoom(e.deltaY>0?1.12:.89,p.x,p.y)},{passive:false});
-atlas.addEventListener("pointerdown",e=>{atlas.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});dragStart=svgPoint(e);active=true});
-atlas.addEventListener("pointermove",e=>{if(!pointers.has(e.pointerId)||!active||pointers.size!==1)return;const p=svgPoint(e);view.x+=dragStart.x-p.x;view.y+=dragStart.y-p.y;updateView()});
-const end=e=>{pointers.delete(e.pointerId);active=pointers.size>0;dragStart=null};
+atlas.addEventListener("pointerdown",e=>{atlas.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});active=true});
+atlas.addEventListener("pointermove",e=>{const last=pointers.get(e.pointerId);if(!last||!active||pointers.size!==1)return;const bounds=atlas.getBoundingClientRect();view.x-=(e.clientX-last.x)*view.w/bounds.width;view.y-=(e.clientY-last.y)*view.h/bounds.height;pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});updateView()});
+const end=e=>{pointers.delete(e.pointerId);active=pointers.size>0};
 atlas.addEventListener("pointerup",end);atlas.addEventListener("pointercancel",end);
 async function start(){
 try{
