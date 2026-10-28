@@ -1,0 +1,243 @@
+{
+  "edition": "V2.25-R-B43",
+  "date": "2026-10-28",
+  "status": "NONCANON_REVERSIBLE_R1_R2_CATCHMENT_FEASIBILITY_NO_DEM",
+  "scope": "Polygon-0 schematic east-shore river-mouth routing only. Not real river paths, drainage boundaries, elevations or national coordinates.",
+  "sources": {
+    "B42": {
+      "path": "assets/data/orbina-v225r-b42-north-crown-dual-basin-coastline.json",
+      "sha": "000d4b1862934e8b122d8d871b39addf81240926"
+    },
+    "B39": {
+      "path": "assets/data/orbina-v225r-b39-geomorphology-scenario-and-transects.json",
+      "sha": "d8018b7387c6fdcec251628c61cba5b5894311c4"
+    },
+    "B17": {
+      "path": "assets/data/orbina-v225r-b17-confirmed-geographic-register.json",
+      "sha": "abd94277a1273ec95eb285c76d8b3547adfca50a"
+    }
+  },
+  "frame": {
+    "size": [
+      2400,
+      1200
+    ],
+    "units": "map illustration units, not kilometers or latitude/longitude",
+    "mainland_polygon": 0,
+    "land_polygons_unchanged": 99,
+    "total_coast_vertices_unchanged": 9690
+  },
+  "confirmed_constraints": [
+    "R1 reaches northern eastern secondary sea basin",
+    "R2 reaches central-eastern main inland sea",
+    "R1 and R2 do not connect to 秦棠—萨瑞拉's 棠溪",
+    "North Crown is a connected peninsula, not an island",
+    "Two northern basins and southern ocean mouth stay connected",
+    "No official coast, elevation, water depth, country border, sea identity or flow size fixed"
+  ],
+  "mouth_trials": [
+    {
+      "id": "R1",
+      "receiving_water": "north eastern secondary basin",
+      "point": [
+        1156.7826086956522,
+        490
+      ],
+      "landward_2_units": [
+        1158.7826086956522,
+        490
+      ],
+      "seaward_2_units": [
+        1154.7826086956522,
+        490
+      ],
+      "route": "R1-A",
+      "canonical": false
+    },
+    {
+      "id": "R2",
+      "receiving_water": "middle eastern main inner sea",
+      "point": [
+        1196.748709485065,
+        680
+      ],
+      "landward_2_units": [
+        1198.748709485065,
+        680
+      ],
+      "seaward_2_units": [
+        1194.748709485065,
+        680
+      ],
+      "route": "R2-A",
+      "canonical": false
+    }
+  ],
+  "schematic_routes": [
+    {
+      "id": "R1-A",
+      "points": [
+        [
+          1390,
+          315
+        ],
+        [
+          1360,
+          345
+        ],
+        [
+          1320,
+          375
+        ],
+        [
+          1280,
+          405
+        ],
+        [
+          1245,
+          430
+        ],
+        [
+          1210,
+          455
+        ],
+        [
+          1180,
+          475
+        ],
+        [
+          1161,
+          492
+        ],
+        [
+          1156.7826086956522,
+          490
+        ]
+      ],
+      "status": "LAND_ROUTE_FEASIBILITY_ONLY__NOT_FLOW_PROOF"
+    },
+    {
+      "id": "R2-A",
+      "points": [
+        [
+          1410,
+          625
+        ],
+        [
+          1380,
+          645
+        ],
+        [
+          1340,
+          655
+        ],
+        [
+          1300,
+          675
+        ],
+        [
+          1260,
+          688
+        ],
+        [
+          1235,
+          690
+        ],
+        [
+          1215,
+          689
+        ],
+        [
+          1196.748709485065,
+          680
+        ]
+      ],
+      "status": "LAND_ROUTE_FEASIBILITY_ONLY__NOT_FLOW_PROOF"
+    }
+  ],
+  "separation_guide": {
+    "points": [
+      [
+        1470,
+        525
+      ],
+      [
+        1420,
+        530
+      ],
+      [
+        1370,
+        535
+      ],
+      [
+        1320,
+        547
+      ],
+      [
+        1270,
+        560
+      ],
+      [
+        1230,
+        571
+      ]
+    ],
+    "status": "PURELY_DIAGRAMMATIC__NOT_A_HYDROLOGIC_DIVIDE"
+  },
+  "method": {
+    "coast_contact": "Intersect mainland polygon-0 with y=490 and 680; use east-bank land/water transition, with 2-unit horizontal control points.",
+    "route_check": "Use point-in-polygon samples spaced at most one-third drawing unit along centerline interiors; terminal shore contact tested separately.",
+    "B39_relation": "B39 method uses inland clearance as a geometric highland proxy, not real measured height. Its six upland probes are on polygons other than 0, so cannot prove any mainland-0 water gradient.",
+    "validation_boundary": "Only polygon 0 local land tests independently rerun in B43. General sea connectivity is inherited from B42; no full hydrology, DEM or sediment budget exists."
+  },
+  "qa": {
+    "R1": {
+      "samples": 896,
+      "land_failures": 0,
+      "shore_contact": {
+        "x": 1156.782609,
+        "y": 490,
+        "landward_2_units": true,
+        "seaward_2_units_water": true,
+        "row_intersections": [
+          584.024,
+          1004.273,
+          1058,
+          1109.375,
+          1156.783,
+          1496.494
+        ]
+      }
+    },
+    "R2": {
+      "samples": 700,
+      "land_failures": 0,
+      "shore_contact": {
+        "x": 1196.748709,
+        "y": 680,
+        "landward_2_units": true,
+        "seaward_2_units_water": true,
+        "row_intersections": [
+          610.609,
+          967.323,
+          1196.749,
+          1504.778
+        ]
+      }
+    },
+    "separation_guide": {
+      "samples": 742,
+      "land_failures": 0
+    },
+    "centerlines_cross": false,
+    "total_interior_land_samples": 2338,
+    "all_interior_land_samples_pass": true,
+    "b39_upland_seed_count_on_mainland0": 0,
+    "modified_existing_geometry": false
+  },
+  "next": [
+    "Model multiple explicit relative-relief hypotheses for mainland polygon 0 before selecting a divide.",
+    "Compute downhill flow accumulation in each hypothetical elevation grid and reject candidates crossing coasts or dividing the North Crown land bridge.",
+    "Evaluate estuaries and floodplains with sediment/slope assumptions; require separate human approval for any specific river course or coordinates."
+  ]
+}
