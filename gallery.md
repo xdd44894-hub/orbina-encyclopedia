@@ -4,7 +4,7 @@ title: 插画图库
 permalink: /gallery/
 ---
 <h1>插画图库</h1>
-<p>展示世界观场景、人物、装备与相关视觉设计。旧版世界地图、气候统计图、几何校验图不混入插画列表；请在<a href="{{ '/assets/maps/orbina-v225r-b41-national-geography-fit-atlas.html' | relative_url }}">国家与大陆地理适配图册（B41）</a>查看地图。</p>
+<p>展示世界观场景、人物、装备与相关视觉设计。旧版世界地图、气候统计图、几何校验图不混入插画列表；请在<a href="{{ '/assets/maps/orbina-v225r-b42-north-crown-dual-basin-before-after.html' | relative_url }}">北冠半岛及双海盆图册（B42）</a>查看地图。</p>
 <table class="record-table">
 <thead><tr><th>预览</th><th>作品</th><th>相关条目</th></tr></thead>
 <tbody>
