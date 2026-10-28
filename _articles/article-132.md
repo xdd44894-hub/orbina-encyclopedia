@@ -129,5 +129,6 @@ ai_search: true
 - [《战场语言》]({{ '/articles/article-173/' | relative_url }})：前线常见战斗喊话。
 - [《沙丘战役》]({{ '/articles/article-069/' | relative_url }})：金字塔方向的深蓝广播语境。
 - [《“回响”战役》]({{ '/articles/article-387/' | relative_url }})：世纪大厦倒塌所在战役。
+- [《“终点线”战役》]({{ '/articles/article-391/' | relative_url }})：2号海墙方向的寰宇任务简报、海南特遣队失联通报、016装甲伏击通讯、预警4-1坠落呼喊及深蓝阵营交战广播原话（由战役主条目完整保存）。
 - [《世纪大厦》]({{ '/articles/article-395/' | relative_url }})：两次现场指挥官喊话与事件事实。
 - [《和声-1M多任务电子机》]({{ '/articles/article-382/' | relative_url }})：广播与通信中继的技术平台。
