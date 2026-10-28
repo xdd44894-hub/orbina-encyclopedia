@@ -7,7 +7,7 @@ permalink: /
 <h1>俄庇娜百科</h1>
 {% assign current_articles = site.articles | where_exp: "article", "article.archived != true" %}
 <p>收录 {{ current_articles | size }} 个公开条目。可按主题浏览，也可以直接检索人物、国家、地理、战争、装备及日常生活。</p>
-<p><a href="{{ '/assets/maps/orbina-v225r-b42-north-crown-dual-basin-before-after.html' | relative_url }}">查看北冠半岛与双海盆岸线对照（B42）</a></p>
+<p><a href="{{ '/assets/maps/orbina-v225r-b42-north-crown-dual-basin-before-after.html' | relative_url }}">北冠半岛与双海盆岸线（B42）</a> · <a href="{{ '/assets/maps/orbina-v225r-b43-east-inner-sea-r1-r2-study.html' | relative_url }}">东岸R1／R2水文候选图（B43）</a></p>
 <label class="searchbox"><span>全文检索</span><input id="wiki-search" type="search" placeholder="输入人物、地点、术语或事件" autocomplete="off"></label>
 <div id="search-results" class="search-results" hidden></div>
 <h2>分类目录</h2>
