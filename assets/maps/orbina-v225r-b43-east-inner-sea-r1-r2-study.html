@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 B43｜内海东岸 R1/R2 可逆水文试绘</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f2f5f0;color:#244754;font:15px/1.65 system-ui,"Microsoft YaHei",sans-serif}
+header{background:#163b4a;color:#f6fcf8;padding:24px max(16px,calc((100vw - 1280px)/2))}
+h1{font-size:clamp(24px,4vw,36px);margin:0}header p{margin:4px 0 0;color:#c2d8d8}
+main{max-width:1280px;margin:auto;padding:16px 14px 55px}nav{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 13px}
+nav a{background:white;border:1px solid #d1ded9;border-radius:7px;padding:6px 10px;text-decoration:none;color:#29647a}
+.panel{background:white;border:1px solid #d5e1db;border-radius:12px;padding:16px;margin:12px 0}
+.controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center}.controls label{display:flex;gap:6px;align-items:center}
+button{cursor:pointer;border:1px solid #a7c8c3;background:#eaf3ed;color:#285d69;border-radius:7px;padding:7px 13px;font:inherit}
+input{accent-color:#2c7c91}svg{display:block;width:100%;height:auto;aspect-ratio:1.67;touch-action:none;background:#376978;border:1px solid #bcd0ca;border-radius:9px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}small,.muted{color:#5b7478}
+#status{margin:8px 0;color:#3c646b}.legend{display:inline-block;width:27px;vertical-align:middle;border-top:4px dashed;margin-right:8px}
+@media(max-width:750px){.two{grid-template-columns:1fr}svg{aspect-ratio:1.2}}
+</style></head><body>
+<header><h1>俄庇娜 · B43 内海东岸水文试绘</h1><p>保留 B42 真实大陆轮廓｜候选河口路线，不代表已经建立高程或正式流域</p></header>
+<main><nav><a href="../images/orbina-v225r-b43-east-inner-sea-river-mouth-study.svg">静态可缩放 SVG</a><a href="orbina-v225r-b42-north-crown-dual-basin-before-after.html">B42 岸线前后对照</a><a href="../data/orbina-v225r-b43-east-inner-sea-r1-r2-screen.json">B43 数据与 QA</a></nav>
+<div class="panel"><div class="controls">
+<label><input type="checkbox" id="r1" checked>R1 北侧候选</label>
+<label><input type="checkbox" id="r2" checked>R2 南侧候选</label>
+<label><input type="checkbox" id="guide" checked>分隔参考线</label>
+<button id="plus" type="button">放大＋</button><button id="minus" type="button">缩小－</button><button id="reset" type="button">复位</button>
+</div><div id="status" role="status">读取 B42 / B43 地理数据…</div>
+<svg id="atlas" xmlns="http://www.w3.org/2000/svg" viewBox="550 140 1010 720" aria-label="基于B42大陆海岸的B43水文试绘地图">
+<rect x="0" y="0" width="2400" height="1200" fill="#376978"></rect>
+</svg><small>地图：鼠标滚轮缩放；鼠标或手指拖动平移。水陆线为图纸单位，绝非地球经纬度或实际公里。</small>
+</div>
+<div class="two"><section class="panel"><h2>试绘路径</h2><p><span class="legend" style="border-color:#168aa4"></span><strong>R1</strong>：东北方向内陆到北部东侧次级海盆，内部 896 个陆地点均通过。</p>
+<p><span class="legend" style="border-color:#2864b4"></span><strong>R2</strong>：较南东部内陆到中东部主海盆，内部 700 个陆地点均通过。</p>
+<p><span class="legend" style="border-color:#98653d"></span><strong>分隔参考线</strong>：仅作空间分隔试绘，742 点在陆地内；它绝不是由坡度计算出来的真正分水岭。</p></section>
+<section class="panel"><h2>判断边界</h2><p>两处河口的海岸两侧，各相距 2 绘图单位的陆地和水面判定符合预期。两条虚线均未穿越现有陆地轮廓。</p>
+<p><strong>尚不具备：</strong>真实地形高程、坡降、河源、流量、支流、精确水系边界、河口沉积与航运水深。B39 的六处高地探针不在本次大陆 0 号多边形上，不能借用为这两条河的高程依据。</p></section></div>
+<p class="muted">此页不是正式行政区划图。联合城与人民天国的全球方位、国家边界以及25个正式海域名称的空间分配没有因此确定。项目 B43 没有修改任何原始陆块或岸线。</p>
+</main>
+<script>
+"use strict";
+const SVGNS="http://www.w3.org/2000/svg",atlas=document.getElementById("atlas");
+const base={x:550,y:140,w:1010,h:720};let view={...base};let pointers=new Map(),active=false,dragStart=null;
+const el=(type,attrs,parent=atlas)=>{const n=document.createElementNS(SVGNS,type);for(const k in attrs)n.setAttribute(k,attrs[k]);parent.appendChild(n);return n};
+const pathData=points=>points.map((p,i)=>(i?"L":"M")+p[0]+","+p[1]).join(" ")+" Z";
+function updateView(){atlas.setAttribute("viewBox",[view.x,view.y,view.w,view.h].join(" "))}
+function zoom(factor,cx=view.x+view.w/2,cy=view.y+view.h/2){const nw=view.w*factor,nh=view.h*factor;view={x:cx-(cx-view.x)*factor,y:cy-(cy-view.y)*factor,w:nw,h:nh};updateView()}
+function svgPoint(e){const pt=atlas.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;const ctm=atlas.getScreenCTM();return ctm?pt.matrixTransform(ctm.inverse()):{x:view.x+view.w/2,y:view.y+view.h/2}}
+document.getElementById("plus").onclick=()=>zoom(.8);document.getElementById("minus").onclick=()=>zoom(1.25);document.getElementById("reset").onclick=()=>{view={...base};updateView()};
+atlas.addEventListener("wheel",e=>{e.preventDefault();const p=svgPoint(e);zoom(e.deltaY>0?1.12:.89,p.x,p.y)},{passive:false});
+atlas.addEventListener("pointerdown",e=>{atlas.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});dragStart=svgPoint(e);active=true});
+atlas.addEventListener("pointermove",e=>{if(!pointers.has(e.pointerId)||!active||pointers.size!==1)return;const p=svgPoint(e);view.x+=dragStart.x-p.x;view.y+=dragStart.y-p.y;updateView()});
+const end=e=>{pointers.delete(e.pointerId);active=pointers.size>0;dragStart=null};
+atlas.addEventListener("pointerup",end);atlas.addEventListener("pointercancel",end);
+async function start(){
+try{
+ const [a,b]=await Promise.all([fetch("../data/orbina-v225r-b42-north-crown-dual-basin-coastline.json"),fetch("../data/orbina-v225r-b43-east-inner-sea-r1-r2-screen.json")]);
+ if(!a.ok||!b.ok)throw Error("地理文件不可访问");
+ const b42=await a.json(),b43=await b.json(),coast=b42.change.revised_coordinates;
+ atlas.innerHTML="";
+ el("rect",{x:0,y:0,width:2400,height:1200,fill:"#376978"});
+ for(let x=600;x<=1800;x+=200)el("line",{x1:x,y1:0,x2:x,y2:1200,stroke:"#91babe","stroke-opacity":.15});
+ for(let y=200;y<=1000;y+=200)el("line",{x1:0,y1:y,x2:2400,y2:y,stroke:"#91babe","stroke-opacity":.15});
+ el("path",{d:pathData(coast),fill:"#ced9b2",stroke:"#73896f","stroke-width":3});
+ function polyline(pts,color,width,dash,id){return el("path",{id,d:pts.map((p,i)=>(i?"L":"M")+p.join(",")).join(" "),fill:"none",stroke:color,"stroke-width":width,"stroke-dasharray":dash,"stroke-linecap":"round","stroke-linejoin":"round"})}
+ const g=polyline(b43.separation_guide.points,"#98653d",4,"12 9","guide-line");
+ const r1=polyline(b43.schematic_routes[0].points,"#168aa4",6,"12 7","r1-line");
+ const r2=polyline(b43.schematic_routes[1].points,"#2864b4",6,"12 7","r2-line");
+ const label=(x,y,txt,fill="#1c4857",size=18)=>{const t=el("text",{x,y,fill,"font-size":size,"font-weight":700,"font-family":"system-ui,Microsoft YaHei,sans-serif"});t.textContent=txt;return t};
+ label(700,283,"溪兰溪古洲｜东岸区域试绘", "#244956",25);
+ label(1080,390,"北冠半岛","#f4f8f3",17);label(1010,760,"内海主海盆","#f4f8f3",23);
+ label(1190,424,"R1（示意）","#13758d",22);label(1320,732,"R2（示意）","#2459a0",22);
+ b43.mouth_trials.forEach((m,i)=>el("circle",{cx:m.point[0],cy:m.point[1],r:10,fill:i?"#2864b4":"#168aa4",stroke:"#fafcfb","stroke-width":3}));
+ for(const [control,node] of [["r1",r1],["r2",r2],["guide",g]]){const cb=document.getElementById(control);cb.onchange=()=>node.style.display=cb.checked?"":"none";}
+ document.getElementById("status").textContent="数据已载入 · 大陆岸线来自 B42（164 个顶点的修改大陆）· R1/R2 仅为候选";
+}catch(err){document.getElementById("status").textContent="在线数据无法载入，请使用上方静态 SVG 链接。";}
+}
+start();
+</script>
+</body></html>
