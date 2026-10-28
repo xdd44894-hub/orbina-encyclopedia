@@ -1,0 +1,133 @@
+{
+  "edition": "V2.25-R-B42",
+  "status": "REVERSIBLE_GEOMETRY_PROPOSAL_NOT_CANON",
+  "date": "2026-10-28",
+  "base": "B38 accumulated coastline, polygon #0",
+  "intent": "Create two northern secondary sea basins separated by a land-connected North Crown peninsula; both remain connected southward to existing south-open main inner sea.",
+  "method": "Non-destructive rasterized water-mask study: add two northern basin excavation polygons to current land polygon #0, separated by an uncut central peninsula and two sea necks. This is a mask overlay proposal, NOT yet a topologically integrated vector polygon.",
+  "excavations": [
+    {
+      "id": "west-northern-basin",
+      "vertices": [
+        [
+          1061,
+          548
+        ],
+        [
+          1032,
+          535
+        ],
+        [
+          996,
+          512
+        ],
+        [
+          967,
+          483
+        ],
+        [
+          966,
+          451
+        ],
+        [
+          990,
+          424
+        ],
+        [
+          1027,
+          427
+        ],
+        [
+          1047,
+          447
+        ],
+        [
+          1050,
+          481
+        ],
+        [
+          1061,
+          512
+        ]
+      ]
+    },
+    {
+      "id": "east-northern-basin",
+      "vertices": [
+        [
+          1092,
+          536
+        ],
+        [
+          1122,
+          518
+        ],
+        [
+          1152,
+          486
+        ],
+        [
+          1167,
+          453
+        ],
+        [
+          1160,
+          427
+        ],
+        [
+          1128,
+          411
+        ],
+        [
+          1097,
+          421
+        ],
+        [
+          1082,
+          451
+        ],
+        [
+          1084,
+          488
+        ],
+        [
+          1090,
+          515
+        ]
+      ]
+    }
+  ],
+  "central_peninsula": {
+    "status": "UNEXCAVATED_LAND_BRIDGE_IN_BETWEEN_BASINS",
+    "test_spine": [
+      [
+        1065,
+        390
+      ],
+      [
+        1067,
+        420
+      ],
+      [
+        1067,
+        450
+      ],
+      [
+        1068,
+        480
+      ],
+      [
+        1074,
+        510
+      ]
+    ],
+    "warning": "Actual land connectivity and 2 independent water connections require computational topology verification."
+  },
+  "constraints": [
+    "Do not move existing political borders or confirm national coordinates",
+    "Keep 25 existing official sea names unchanged",
+    "R1/R2 mouth placements blocked until validated basin connectivity",
+    "Do not replace B16-B38 source geometry"
+  ],
+  "next": "Compute clipped land subtraction, check exact connectivity for west/east basins to south-open water and peninsula to main land, detect intersections, render before/after atlas."
+}
