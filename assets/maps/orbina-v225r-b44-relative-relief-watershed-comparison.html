@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 B44｜相对高程与流域敏感性对照</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;font:15px/1.65 system-ui,-apple-system,"Microsoft YaHei",sans-serif;color:#294e58;background:#eff3ee}
+header{background:linear-gradient(105deg,#173e50,#266b73);color:#f4fbf8;padding:25px max(16px,calc((100vw - 1380px)/2))}
+h1{font-size:clamp(24px,3vw,37px);margin:0}header p{margin:4px 0 0;color:#d5e6df}
+main{max-width:1380px;padding:18px 14px 66px;margin:auto}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}nav a{background:#fff;border:1px solid #c5d8d2;border-radius:8px;padding:8px 12px;color:#276a77;text-decoration:none}
+.panel{background:#fffefa;border:1px solid #cddfd6;border-radius:13px;padding:15px;margin:13px 0}
+.control{display:flex;flex-wrap:wrap;align-items:center;gap:12px}.control label{display:inline-flex;align-items:center;gap:6px}input{accent-color:#317c8b}
+select,button{font:inherit;border:1px solid #afcbc3;background:#eff5ef;color:#264f5b;border-radius:7px;padding:7px}
+button{cursor:pointer}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mapgroup{min-width:0;background:#e5efeb;border-radius:10px;padding:12px}h2{font-size:19px;margin:0 0 4px}h3{font-size:17px;margin:0 0 6px}
+canvas{background:#386d80;display:block;width:100%;height:auto;aspect-ratio:490/610;border:1px solid #aac9c4;border-radius:8px;touch-action:manipulation}
+.muted,small{color:#58777e}.stat{margin:9px 0 0;font-size:14px}.notes{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#hover{min-height:26px;font-size:13px;color:#517078;margin-top:10px}.warning{color:#895a45}
+@media(max-width:750px){.twocol,.notes{grid-template-columns:1fr}.mapgroup{padding:8px}h1{line-height:1.3}}
+</style></head>
+<body><header><h1>俄庇娜世界地图 B44</h1><p>北冠内海东岸｜相对高程及排水敏感性｜两套假设可比较，尚未建立真实高程模型</p></header>
+<main><nav>
+<a href="../images/orbina-v225r-b44-drainage-scenario-comparison.svg">静态双方案流域对照 SVG</a>
+<a href="../data/orbina-v225r-b44-relative-relief-d8-sensitivity.json">模拟数据与检查记录</a>
+<a href="orbina-v225r-b43-east-inner-sea-r1-r2-study.html">查看 B43 原候选河道</a>
+<a href="orbina-v225r-b42-north-crown-dual-basin-before-after.html">查看 B42 海岸来源</a></nav>
+<section class="panel"><div class="control">
+<label for="mode">着色方式</label><select id="mode"><option value="basins">流向归属（R1 / R2 / 其他）</option><option value="relief">相对高程（低 → 高）</option></select>
+<label><input type="checkbox" id="schematic" checked>叠加 B43 候选线</label>
+<label><input type="checkbox" id="stream">叠加模拟下泄路径</label>
+</div>
+<div id="status" role="status">正在载入 B42 / B43 / B44 模型……</div>
+<div class="twocol">
+<div class="mapgroup"><h2>方案 A · 预设河口的试验地势</h2><small>利用两条河口及候选走廊约束相对地势。所得分水并非独立证据。</small>
+<canvas id="mapA" width="490" height="610" aria-label="河口约束模型地图"></canvas><div class="stat" id="statA"></div></div>
+<div class="mapgroup"><h2>方案 B · 不预设河口的东部高地</h2><small>总体向西倾斜并叠加宽阔丘脊；有水流离开试验范围，不得误判为入海。</small>
+<canvas id="mapB" width="490" height="610" aria-label="不预设河口的对照地图"></canvas><div class="stat" id="statB"></div></div>
+</div>
+<div id="hover" aria-live="polite">点击任一地图网格，可查看其绘图坐标、模型相对高程与流向类别。</div>
+</section>
+<div class="notes">
+<section class="panel"><h3>流域解释</h3>
+<p>本轮只覆盖溪兰溪古洲候选陆块 #0 的一块东岸研究窗口（6,951 个陆地网格）。R1／R2 判定使用河口邻近区域，不意味着整条河已测绘。</p>
+<p>方案 A 的高匹配率来自反向设定的低谷，不能证明其山脊和汇水区真实存在。方案 B 的 R1 上游点流出研究边界，只能报告“待判定”。</p>
+</section>
+<section class="panel"><h3>验证边界</h3>
+<p>使用八邻域单向最陡下降（D8）追踪试验格点；模型未使用真实海拔、沉积物、降水量或地质剖面。无内部死点，不代表地形天然不存在封闭洼地。</p>
+<p>未改变 99 个陆块或 9,690 个岸线顶点；既定海域名称、国家关系、棠溪水系与北冠陆地连通全部保留。</p>
+</section>
+</div><p class="muted">B44 是可逆制图研究，不是正式世界地图。流量、坡度、距离和海拔没有实际单位，下一步需扩展研究范围并引入独立的构造与沉积约束。</p></main>
+<script>
+"use strict";
+const refs={
+A:document.getElementById("mapA"),B:document.getElementById("mapB"),
+mode:document.getElementById("mode"),schematic:document.getElementById("schematic"),stream:document.getElementById("stream")};
+const col=["#376f83","#2b8998","#c69b66","#84939a","#db8463","#ab8c9e"];
+let dat=null,coast=null,rivers=null;
+const viewport={x:1120,y:265,w:435,h:550};
+function toCanvas(p){return [(p[0]-viewport.x)*490/viewport.w,(p[1]-viewport.y)*610/viewport.h]}
+function drawPath(ctx,coords,stroke,w,dash=[]){if(!coords||!coords.length)return;ctx.beginPath();for(let i=0;i<coords.length;i++){let [x,y]=toCanvas(coords[i]);if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);}ctx.strokeStyle=stroke;ctx.lineWidth=w;ctx.setLineDash(dash);ctx.stroke();ctx.setLineDash([])}
+function heightColor(h){if(h<0)return "#376f83";const t=h/255;const low=[219,224,188],high=[104,121,108];return "rgb("+low.map((v,i)=>Math.round(v+(high[i]-v)*t)).join(",")+")";}
+function renderOne(id,idx){
+ const cn=refs[id],ctx=cn.getContext("2d"),g=dat.frame.grid,scene=dat.scenarios[idx],labels=scene.derived.cells_label,v=scene.relief.values,mode=refs.mode.value;
+ ctx.clearRect(0,0,cn.width,cn.height);ctx.fillStyle=col[0];ctx.fillRect(0,0,490,610);
+ const sx=490/viewport.w,sy=610/viewport.h;for(let j=0;j<g.ny;j++)for(let i=0;i<g.nx;i++){
+ const k=j*g.nx+i,label=labels[k];if(!label)continue;
+ ctx.fillStyle=mode==="basins"?col[label]:heightColor(v[k]);
+ ctx.fillRect((i-.5)*g.dx*sx,(j-.5)*g.dy*sy,g.dx*sx+.3,g.dy*sy+.3);
+ }
+ ctx.save();ctx.beginPath();ctx.rect(0,0,490,610);ctx.clip();
+ drawPath(ctx,coast.change.revised_coordinates,"rgba(243,249,237,.87)",1.7);
+ if(refs.schematic.checked)rivers.schematic_routes.forEach((route,i)=>drawPath(ctx,route.points,i?"#18437d":"#fbfff8",2.7,[8,6]));
+ if(refs.stream.checked)scene.derived.source_traces.forEach((s,i)=>drawPath(ctx,s.points,i%2?"#163c60":"#9b482d",2.2,[3,4]));
+ rivers.mouth_trials.forEach((m,i)=>{let [x,y]=toCanvas(m.point);ctx.beginPath();ctx.arc(x,y,5.3,0,2*Math.PI);ctx.fillStyle=i?"#ead1ab":"#dbfaf5";ctx.fill();ctx.strokeStyle="#214451";ctx.lineWidth=1.8;ctx.stroke();});
+ ctx.restore();
+ const s=scene.derived.catchments_cell_count;
+ document.getElementById("stat"+id).textContent="R1： "+s.R1.toLocaleString()+" 格 · R2： "+s.R2.toLocaleString()+" 格 · 其他海岸： "+s.OTHER_COAST.toLocaleString()+" 格 · 超出研究区： "+s.DOMAIN_EDGE.toLocaleString()+" 格";
+}
+function render(){if(!dat)return;renderOne("A",0);renderOne("B",1)}
+for(const key of ["mode","schematic","stream"])refs[key].addEventListener("change",render);
+for(let idx=0;idx<2;idx++){const cn=refs[idx?"B":"A"];cn.addEventListener("click",e=>{if(!dat)return;const box=cn.getBoundingClientRect(),mx=(e.clientX-box.left)/box.width*490,my=(e.clientY-box.top)/box.height*610;
+const g=dat.frame.grid,x=viewport.x+mx*viewport.w/490,y=viewport.y+my*viewport.h/610;
+const i=Math.round((x-g.x0)/g.dx),j=Math.round((y-g.y0)/g.dy);
+if(i<0||i>=g.nx||j<0||j>=g.ny)return;
+const k=j*g.nx+i,scene=dat.scenarios[idx],cl=scene.derived.cells_label[k],types=["非本大陆陆地","R1河口邻近区域","R2河口邻近区域","其他海岸","超出研究范围","内部低点"];
+document.getElementById("hover").textContent=(idx?"B":"A")+"：绘图坐标（"+(g.x0+i*g.dx)+"，"+(g.y0+j*g.dy)+"） · "+types[cl]+" · 相对高程栅格值 "+(cl?scene.relief.values[k]:"水域 / 非本研究陆块");});}
+async function init(){try{
+const names=["../data/orbina-v225r-b42-north-crown-dual-basin-coastline.json","../data/orbina-v225r-b43-east-inner-sea-r1-r2-screen.json","../data/orbina-v225r-b44-relative-relief-d8-sensitivity.json"];
+const responses=await Promise.all(names.map(p=>fetch(p)));if(responses.some(r=>!r.ok))throw Error("源数据未正确发布");
+[coast,rivers,dat]=await Promise.all(responses.map(r=>r.json()));
+if(dat.frame.land_cells!==6951||dat.scenarios.some(s=>s.derived.cells_label.length!==dat.frame.grid.nx*dat.frame.grid.ny))throw Error("模型维度不一致");
+document.getElementById("status").textContent="已载入两个模型；切换流向或相对高程进行对照。";
+render();
+}catch(e){document.getElementById("status").textContent="无法从公共站点载入研究文件，请先查看上方静态 SVG。";}}
+init();
+</script></body></html>
