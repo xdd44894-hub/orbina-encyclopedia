@@ -1,0 +1,128 @@
+{
+  "edition": "V2.25-R-B45",
+  "date": "2026-10-29",
+  "status": "STATIC_REPOSITORY_QA_PASSED__GITHUB_PAGES_AND_TOUCH_UX_NOT_LIVE_TESTED",
+  "count": {
+    "passed": 29,
+    "total": 29,
+    "failed": 0
+  },
+  "checked_blobs": {
+    "assets/data/orbina-v225r-b45-full-mainland-relative-relief.json": "2203b9e04917a0ed0a8a4e649756b0d75785776d",
+    "assets/maps/orbina-v225r-b45-mainland-watershed-comparison.html": "7dc0b33a6878af8cc90c9ef96c5059c783f707d7",
+    "assets/images/orbina-v225r-b45-full-mainland-drainage-comparison.svg": "17e831d39f5ad47bd4ab7c13e8b2ed653edf0092",
+    "_articles/article-035.md": "a3084b5c09630c53dc16647f293ab68e8f97dbf1",
+    "index.md": "0ebbf9dccf77f5b2e60dce5ca9aa6f873fbe64e3",
+    "gallery.md": "fd5468de8839f2a0ad2b2911c328bd8460b559e0",
+    "assets/data/orbina-v225r-b42-north-crown-dual-basin-coastline.json": "000d4b1862934e8b122d8d871b39addf81240926",
+    "assets/data/orbina-v225r-b43-east-inner-sea-r1-r2-screen.json": "c1587444341b6531148b3394f9e98f9845fe7eca",
+    "assets/data/orbina-v225r-b44-relative-relief-d8-sensitivity.json": "0a6fc969934eb035763fb89598f4f97a47767787"
+  },
+  "checks": {
+    "B42_source_blob_matches": true,
+    "B43_source_blob_matches": true,
+    "B44_source_blob_matches": true,
+    "B42_polygon_count_preserved": true,
+    "B42_coast_vertices_preserved": true,
+    "full_domain_all_margins_clear": true,
+    "land_cells_count": true,
+    "grid_dimensions": true,
+    "mask_area_within_one_percent": true,
+    "two_scenarios": true,
+    "both_full_grid_labels": true,
+    "both_full_grid_relief": true,
+    "both_labels_sum_12614": true,
+    "both_no_domain_stops": true,
+    "both_no_inner_stops": true,
+    "both_unused_mouth_priors": true,
+    "B44_2403_retest": true,
+    "B44_all_retest_mapped": true,
+    "B44_retest_sums": true,
+    "SVG_two_panels": true,
+    "SVG_valid_outer_tags": true,
+    "interactive_JS_parse": true,
+    "interactive_has_3_sources": true,
+    "interactive_has_2_modes": true,
+    "article_B45_correctly_marked": true,
+    "article_existing_geography": true,
+    "home_B45_link": true,
+    "gallery_B45_link": true,
+    "all_model_metadata_noncanon": true
+  },
+  "model_summary": [
+    {
+      "id": "T",
+      "category_counts": {
+        "R1": 161,
+        "R2": 1307,
+        "OTHER_COAST": 11146,
+        "DOMAIN_EDGE": 0,
+        "SINK": 0
+      },
+      "priority_fill": {
+        "boundary_seed_cells": 851,
+        "modified_cells": 0,
+        "largest_raise": 0,
+        "not_reached": 0
+      },
+      "source_traces": [
+        {
+          "id": "R1_UP",
+          "terminal": "OTHER_COAST"
+        },
+        {
+          "id": "R2_UP",
+          "terminal": "R2"
+        },
+        {
+          "id": "R1_MID",
+          "terminal": "OTHER_COAST"
+        },
+        {
+          "id": "R2_MID",
+          "terminal": "R2"
+        }
+      ]
+    },
+    {
+      "id": "O",
+      "category_counts": {
+        "R1": 743,
+        "R2": 544,
+        "OTHER_COAST": 11327,
+        "DOMAIN_EDGE": 0,
+        "SINK": 0
+      },
+      "priority_fill": {
+        "boundary_seed_cells": 851,
+        "modified_cells": 0,
+        "largest_raise": 0,
+        "not_reached": 0
+      },
+      "source_traces": [
+        {
+          "id": "R1_UP",
+          "terminal": "OTHER_COAST"
+        },
+        {
+          "id": "R2_UP",
+          "terminal": "OTHER_COAST"
+        },
+        {
+          "id": "R1_MID",
+          "terminal": "R1"
+        },
+        {
+          "id": "R2_MID",
+          "terminal": "R2"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Relief fields entirely synthetic; passing checks do not validate actual geology, river courses, or coordinates.",
+    "Exit from polygon #0 may touch another land polygon, so OTHER_COAST cannot be described as verified sea.",
+    "The 2,403 old clipped cells are reclassified under modified hypotheses and not original B44 exact flowlines.",
+    "No browser-based public GitHub Pages render or mobile touch test performed."
+  ]
+}
