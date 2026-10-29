@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 B45｜全大陆高程与排水比较</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef3ef;color:#264956;font:15px/1.64 system-ui,-apple-system,"Microsoft YaHei",sans-serif}
+header{background:linear-gradient(110deg,#173d4e,#24636e);padding:25px max(16px,calc((100vw - 1370px)/2));color:white}
+h1{margin:0;font-size:clamp(23px,3vw,36px)}header p{color:#c5ddd9;margin:4px 0 0}
+main{max-width:1370px;padding:17px 14px 55px;margin:auto}
+nav{display:flex;flex-wrap:wrap;gap:9px}nav a{background:white;border:1px solid #cadad4;border-radius:8px;padding:7px 10px;color:#216579;text-decoration:none}
+.panel{margin:15px 0;background:#fffefa;border:1px solid #cbded5;border-radius:11px;padding:16px}
+.controls{display:flex;gap:13px;align-items:center;flex-wrap:wrap}.controls label{display:inline-flex;align-items:center;gap:6px}
+select{font:inherit;border:1px solid #abcac0;border-radius:7px;padding:6px;background:#edf5ef}
+input{accent-color:#286c79}h2{font-size:20px;margin:0 0 4px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mapbox{background:#e6eee9;padding:12px;border-radius:10px;min-width:0}
+canvas{width:100%;height:auto;aspect-ratio:684/500;display:block;border:1px solid #a8c7bf;border-radius:8px;cursor:crosshair;background:#356b7c}
+small,.muted{color:#657e81}.stats{font-size:14px;margin:10px 0 0}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+#info{margin-top:8px;min-height:25px;font-size:14px;color:#466971}.warning{color:#805d4c}
+@media(max-width:750px){.grid,.twocol{grid-template-columns:1fr}.mapbox{padding:8px}}
+</style></head><body>
+<header><h1>俄庇娜 B45 · 全主大陆相对高程</h1><p>以 B42 实际候选海岸为边界，延伸 B44 东岸研究；无量纲试验地势，并非正式高程图或分水岭图</p></header>
+<main>
+<nav>
+<a href="../images/orbina-v225r-b45-full-mainland-drainage-comparison.svg">静态双方案地图</a>
+<a href="../data/orbina-v225r-b45-full-mainland-relative-relief.json">B45 模拟数据</a>
+<a href="orbina-v225r-b44-relative-relief-watershed-comparison.html">B44 局部窗口对照</a>
+<a href="orbina-v225r-b42-north-crown-dual-basin-before-after.html">B42 既有海岸</a>
+</nav>
+<section class="panel">
+<div class="controls">
+<label>显示 <select id="mode"><option value="flow">出口归属</option><option value="relief">相对高程</option></select></label>
+<label><input id="rivers" type="checkbox" checked>叠加 B43 试绘河道</label>
+<label><input id="routes" type="checkbox">显示 B45 下泄试线</label>
+<label><input id="crop" type="checkbox">标出 B44 原窗口</label>
+</div>
+<p id="state" role="status">正在检查并载入地图源数据……</p>
+<div class="grid">
+<div class="mapbox"><h2>T · 再中心化东升高地</h2><small>模型沿 B44 独立东升地势思路扩大到整片主大陆；常数偏移已改变，因此不是 B44 轨迹的直接续算。</small>
+<canvas id="canvasT" width="684" height="500" aria-label="T方案全主大陆地图"></canvas><p class="stats" id="statT"></p></div>
+<div class="mapbox"><h2>O · 斜向隆起与内海低地</h2><small>使用独立的假想隆起和低地，比较区域高地位置改变时的排水分布，不代表实测板块活动。</small>
+<canvas id="canvasO" width="684" height="500" aria-label="O方案全主大陆地图"></canvas><p class="stats" id="statO"></p></div>
+</div>
+<div id="info">点击地图可查看该栅格的相对高程与排水出口分类。</div>
+</section>
+<div class="twocol">
+<div class="panel"><h2>从 B44 到 B45 的变化</h2>
+<p>研究区域由局部东岸扩大到 B42 的整个候选主大陆 #0，共 12,614 个陆地网格。旧模型 B 的 2,403 个“离开研究窗口”的网格，已在新模型地形假设下重新分类，而不是声称找到了旧河流的真正终点。</p>
+<p>由于模型不再强行把地势导向两处河口，R1 与 R2 的候选上游点并非总能流至预设海口。这正是对假设不确定性的有效提示。</p>
+</div>
+<div class="panel"><h2>仍须谨慎的地方</h2>
+<p>图中“其他岸线”只是水流走出大陆 #0 的平面掩膜位置，不保证该处在完整世界地图上一定是开放海水；另有 98 个陆块尚未在本次出海点核对中逐一纳入。</p>
+<p class="warning">任何相对高程、河道、分水线及河口位置，都没有被确认为俄庇娜正史。无真实海拔、河流径流、降水、沉积物或板块地质测量数据。</p>
+</div>
+</div>
+</main>
+<script>
+"use strict";
+const ids=["T","O"], CANW=684,CANH=500,view={x:540,y:126,w:1026,h:750};
+const COLORS=["#346b7c","#80c4b6","#dfab72","#d9d6b9","#bba6c1","#d38b83"];
+const E=(id)=>document.getElementById(id);
+let data=null,coast=null,b43=null;
+function pix(x,y){return[(x-view.x)*CANW/view.w,(y-view.y)*CANH/view.h]}
+function drawLine(ctx,pts,color,width,dashed=[]){if(!pts||!pts.length)return;ctx.beginPath();pts.forEach((p,i)=>{const [x,y]=pix(p[0],p[1]);if(!i)ctx.moveTo(x,y);else ctx.lineTo(x,y)});ctx.lineWidth=width;ctx.strokeStyle=color;ctx.setLineDash(dashed);ctx.stroke();ctx.setLineDash([])}
+function reliefColor(v){if(v<0)return COLORS[0];const t=v/255;return "rgb("+[202,202,172].map((a,i)=>Math.round(a+t*([84,112,105][i]-a))).join(",")+")"}
+function draw(which){
+const c=E("canvas"+which),ctx=c.getContext("2d"),m=data.scenarios.find(s=>s.id===which),g=data.frame.grid;
+ctx.clearRect(0,0,CANW,CANH);ctx.fillStyle=COLORS[0];ctx.fillRect(0,0,CANW,CANH);
+const dx=g.step*CANW/view.w,dy=g.step*CANH/view.h,showRelief=E("mode").value==="relief";
+for(let j=0;j<g.ny;j++)for(let i=0;i<g.nx;i++){
+const k=j*g.nx+i,group=m.catchment_codes[k];if(!group)continue;
+ctx.fillStyle=showRelief?reliefColor(m.elevation_quantized[k]):COLORS[group];
+let [x,y]=pix(g.x0+(i-.5)*g.step,g.y0+(j-.5)*g.step);ctx.fillRect(x,y,dx+.35,dy+.35);
+}
+drawLine(ctx,[...coast.change.revised_coordinates,coast.change.revised_coordinates[0]],"rgba(246,248,234,.85)",1.7);
+if(E("crop").checked){const old={x:1120,y:265,w:435,h:550},[x,y]=pix(old.x,old.y);ctx.strokeStyle="#a14069";ctx.lineWidth=2.3;ctx.setLineDash([8,5]);ctx.strokeRect(x,y,old.w*CANW/view.w,old.h*CANH/view.h);ctx.setLineDash([]);}
+if(E("rivers").checked)b43.schematic_routes.forEach((r,i)=>drawLine(ctx,r.points,i?"#294a91":"#f7ffff",2.3,[7,5]));
+if(E("routes").checked)m.traces.forEach((r,i)=>drawLine(ctx,r.polyline,i%2?"#54354e":"#9e3c25",2.4,[3,3]));
+b43.mouth_trials.forEach((r,i)=>{let [x,y]=pix(...r.point);ctx.beginPath();ctx.arc(x,y,5,0,2*Math.PI);ctx.fillStyle=i?"#ffe2b4":"#a7ebdc";ctx.fill();ctx.lineWidth=1.5;ctx.strokeStyle="#244457";ctx.stroke()});
+let gstats=m.groups;E("stat"+which).textContent="R1 "+gstats.R1.toLocaleString()+"格 · R2 "+gstats.R2.toLocaleString()+"格 · 其他岸线 "+gstats.OTHER_COAST.toLocaleString()+"格 · 研究区截断 0";
+}
+function render(){if(!data)return;ids.forEach(draw)}
+["mode","rivers","routes","crop"].forEach(k=>E(k).addEventListener("change",render));
+ids.forEach(id=>E("canvas"+id).addEventListener("click",event=>{
+if(!data)return;const canvas=E("canvas"+id),box=canvas.getBoundingClientRect(),xx=(event.clientX-box.left)/box.width,yy=(event.clientY-box.top)/box.height;
+const px=view.x+xx*view.w,py=view.y+yy*view.h,g=data.frame.grid,i=Math.round((px-g.x0)/g.step),j=Math.round((py-g.y0)/g.step);
+if(i<0||j<0||i>=g.nx||j>=g.ny)return;
+const model=data.scenarios.find(s=>s.id===id),k=j*g.nx+i,labels=["水域或非本大陆","R1 河口邻近","R2 河口邻近","其他主大陆边缘","研究区截断","内部停流"];
+E("info").textContent=id+"模型 · 图纸坐标 ("+(g.x0+i*g.step)+", "+(g.y0+j*g.step)+") · "+labels[model.catchment_codes[k]]+" · 相对高程 "+(model.elevation_quantized[k]<0?"非陆地":model.elevation_quantized[k]+"（0—255）");
+}));
+async function init(){try{
+const paths=["../data/orbina-v225r-b45-full-mainland-relative-relief.json","../data/orbina-v225r-b42-north-crown-dual-basin-coastline.json","../data/orbina-v225r-b43-east-inner-sea-r1-r2-screen.json"];
+const rr=await Promise.all(paths.map(p=>fetch(p)));if(rr.some(x=>!x.ok))throw Error("source fetch");
+[data,coast,b43]=await Promise.all(rr.map(x=>x.json()));
+if(data.frame.land_cells!==12614||data.scenarios.some(s=>s.catchment_codes.length!==data.frame.grid.nx*data.frame.grid.ny))throw Error("dimension check");
+E("state").textContent="已载入全主大陆 12,614 个陆地网格。查看流向归属，或切换相对高程与候选线图层。";
+render();
+}catch(err){E("state").textContent="公共数据尚无法载入；可使用上方静态 SVG 对照图。";}}
+init();
+</script></body></html>
