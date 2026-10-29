@@ -74,3 +74,9 @@ ai_search: true
 - [新来戈大坝]({{ '/articles/article-394/' | relative_url }})
 - [“锋刃”战役]({{ '/articles/article-393/' | relative_url }})
 - [溪热与夕·熱温泉山庄]({{ '/articles/article-328/' | relative_url }})
+
+## 下游河石、啄砾鸟与赠石习俗
+
+棠溪下游的河卵石常经水流磨圆，并可因矿物组成、火山岩来源及局部人为因素呈现不同颜色、纹理、透明度与透光性。当地特色鸟类[啄砾鸟]({{ '/articles/article-442/' | relative_url }})会在求偶场收集、排列与啄击石子；不同雌鸟对石材外观及声音的偏好可能不同，昂贵钻石也未必比普通卵石更受欢迎。
+
+萨瑞拉部分青年会模仿啄砾鸟朴素的浪漫，亲自到河边选石，以祖传编织方法制成石串赠与心仪的人。这一习俗见[萨瑞拉河石赠礼与编石传统]({{ '/articles/article-443/' | relative_url }})；相关动物及纪录片设定见[萨瑞拉野生动物]({{ '/articles/article-441/' | relative_url }})与[《野原の子女》]({{ '/articles/article-444/' | relative_url }})。此处的河滩矿物多样性并不锁定全河道具体地层、矿区或人为石材来源比例。
