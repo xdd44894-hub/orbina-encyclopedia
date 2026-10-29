@@ -1,0 +1,71 @@
+{
+  "edition": "V2.25-R-B44",
+  "date": "2026-10-29",
+  "status": "GITHUB_REPOSITORY_STATIC_QA_PASSED__PUBLIC_PAGE_INTERACTION_UNVERIFIED",
+  "data_blob_shas": {
+    "assets/data/orbina-v225r-b44-relative-relief-d8-sensitivity.json": "0a6fc969934eb035763fb89598f4f97a47767787",
+    "assets/maps/orbina-v225r-b44-relative-relief-watershed-comparison.html": "19c5f7e35b6756826654d7163a4848eccaca8f57",
+    "assets/images/orbina-v225r-b44-drainage-scenario-comparison.svg": "d9bae62f5ecee1c3f30e2e5d9daaa33e5f276198",
+    "_articles/article-035.md": "8c971d1dee8dab1c38e8fb1668ba3e15a068135d",
+    "index.md": "6b8234659b256f730af08d0c80dde064f7837c7c",
+    "gallery.md": "79c25e8efbb0ca56fbcd712562f75b113325626d"
+  },
+  "checks": {
+    "data_and_two_scenario_documents_present": true,
+    "b42_b43_sha_frozen": true,
+    "global_land_polygons_unchanged": true,
+    "coast_vertices_unchanged": true,
+    "grid_dimensions_consistent": true,
+    "valid_land_grid_count": true,
+    "both_scenarios_full_grid": true,
+    "both_scenarios_labels_sum": true,
+    "A_R1_and_R2_source_probes_connected": true,
+    "B_R1_cropping_reported": true,
+    "no_internal_sinks_in_computed_grid": true,
+    "synthetic_units_explicit": true,
+    "original_geography_guarded": true,
+    "interactive_js_static_parse": true,
+    "interactive_contains_both_modes": true,
+    "static_atlas_exists": true,
+    "article_has_B44_link": true,
+    "homepage_link": true,
+    "gallery_link": true
+  },
+  "passed": 19,
+  "total": 19,
+  "failed": 0,
+  "basin_summary": [
+    {
+      "scenario": "A",
+      "classification_counts": {
+        "R1": 3746,
+        "R2": 2891,
+        "OTHER_COAST": 314,
+        "DOMAIN_EDGE": 0,
+        "SINK": 0
+      }
+    },
+    {
+      "scenario": "B",
+      "classification_counts": {
+        "R1": 190,
+        "R2": 1851,
+        "OTHER_COAST": 2507,
+        "DOMAIN_EDGE": 2403,
+        "SINK": 0
+      }
+    }
+  ],
+  "publication_limits": {
+    "github_repo_files_fetched": true,
+    "client_javascript_syntax_checked": true,
+    "live_pages_render_checked": false,
+    "touch_interaction_real_device_checked": false,
+    "full_end_to_end_geologic_hydrology_model": false
+  },
+  "caveats": [
+    "No quantitative elevations, rainfall, discharge or bathymetry inferred.",
+    "A is seeded from target mouths, hence not an independent test.",
+    "B has drainage leaving the partial window and cannot be classified as river mouth arrivals."
+  ]
+}
