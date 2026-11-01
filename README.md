@@ -29,6 +29,8 @@ ai_search: true
 
 ## 项目文件
 
+公式：独立公式使用 `~~~tex` 围栏，行内公式使用 `$$公式$$`（Kramdown 行内语法），避免直接写 `\(...\)` 被 Markdown 转义。文章模板通过本站的 MathJax 3.2.2 SVG 渲染器排版，不依赖外部 CDN；普通代码框保持原样。渲染器及 Apache-2.0 许可证位于 `assets/vendor/mathjax/`，来源为 npm 的 `mathjax@3.2.2` 包。
+
 - `_articles/`：百科正文
 - `_layouts/`：网站页面模板
 - `assets/images/`：插画及专题图
