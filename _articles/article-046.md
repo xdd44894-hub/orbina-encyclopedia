@@ -51,9 +51,9 @@ RDE产品按**可释放总能量、能量密度、储存稳定性、自然放热
 现代制取需要独立核算外部供能、设备机械功、生物质及遗器材料状态变化、RDF储能变化、余热、废料及任何被实际验证的边界能量交换。按一致的符号约定，可作工程总账：
 
 ~~~tex
-W_{mathrm{in}}+Delta E_{mathrm{feed}}+E_{mathrm{boundary}}
-=Delta E_{mathrm{RDE}}+Q_{mathrm{loss}}
-+W_{mathrm{out}}+Delta E_{mathrm{waste}}
+W_{\mathrm{in}}+\Delta E_{\mathrm{feed}}+E_{\mathrm{boundary}}
+=\Delta E_{\mathrm{RDE}}+Q_{\mathrm{loss}}
++W_{\mathrm{out}}+\Delta E_{\mathrm{waste}}
 ~~~
 
 **E_boundary只是待验证的外部场能量交换项，不是已经证实的无限高维能源。**如果某一实验的净能量收支无法闭合，首先应核查计量与遗漏的输入和输出，不能直接把差额解释为神明免费供能。上述账本也不要求RDE成品的全部能量都来自尸体化学能。物理场论与引力关系见[《现实失衡能（RDE）》]({{ '/articles/article-001/' | relative_url }})。
