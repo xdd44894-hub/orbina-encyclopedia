@@ -14,6 +14,5 @@ ai_search: true
 
 核尘黑质，英文Nuclear Dust Black Biomass，简称NDB，是TML后形成的黑色黏稠、类似焦油的生物废物，含重金属和一定放射性污染。
 
-通常的遗体处置为铅制容器与受控隔离掩埋，不能将所有死者都理解为被回收制成燃料。
 
 在特定后续条件下，NDB可形成[黑质焦]({{ '/articles/article-373/' | relative_url }})；两者分别是生物废物与后续凝聚形成的能源材料前体。
