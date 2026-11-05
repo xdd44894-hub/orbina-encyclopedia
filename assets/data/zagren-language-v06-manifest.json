@@ -201,5 +201,16 @@
     "历史语法记录与现代词典原形不混写",
     "新100词目前只声明词典原形，不虚构六格变位"
   ],
-  "dataStatus": "已完成文件结构与数量一致性校验；网页在线部署、词汇重音及所有现代范式仍需单独验证"
+  "dataStatus": "已完成文件结构与数量一致性校验；网页在线部署、词汇重音及所有现代范式仍需单独验证",
+  "verification": {
+    "status": "pass",
+    "filesChecked": 15,
+    "checksPassed": 20,
+    "dictionaryEntries": 279,
+    "modernHeadwords": 127,
+    "broadIPA": 825,
+    "grammarSlotChecks": 2025,
+    "controlledSentences": 50,
+    "limits": "Validated file contents, cross-references and in-memory JS compilation; live GitHub Pages HTTP was inaccessible from this environment."
+  }
 }
