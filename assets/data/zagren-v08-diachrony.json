@@ -1,0 +1,416 @@
+{
+  "title": "Žaġręn V0.8 · 历时音变、同源词干交替与词典现代化",
+  "date": "2026-11-06",
+  "status": "normative-for-explicitly-listed-lemmas; other paradigms remain source-stage",
+  "version": "V0.8-phonology-1",
+  "scope": "仅把已有21个音变规则的适用环境、词族与格位边界讲清楚；新增一个明确的冬季词族类推操作，不把它冒充第22条通行音变。",
+  "phonologyRuleCount": 21,
+  "ruleSource": "assets/data/zagren-v06-phonology-lexicon.json",
+  "ordering": [
+    "祖语辅音对立反映与历史借词分类",
+    "共享词汇化短化 C01–C04（限核实词族）",
+    "三方言词根受限软化/摩擦化 N11–N17, SE11–SE15, W11–W15",
+    "词干关系类推 V08-STEM-ZYM（不是无条件音变）",
+    "格位与词尾层：西部 W11 不机械去掉斜格中的 ġ，W15 不剥除有格语义的 -a"
+  ],
+  "rules": [
+    {
+      "id": "C01",
+      "scope": "三地",
+      "type": "lexicalized-root-reduction",
+      "description": "词根内部 /l,ɫ/ + 弱读 /o/ + /k,d/ 的元音脱落",
+      "example": "ħolod→ħold / holod→hold / ħołod→ħołd；moloko→molko",
+      "caveat": "限于可确认弱读的词根；不机械删除全部o",
+      "phase": "shared",
+      "productivity": "restricted"
+    },
+    {
+      "id": "C02",
+      "scope": "三地",
+      "type": "restricted-derivational",
+      "description": "边界类派生词中 -nic(a) / -nic 失去弱读 i，成为 -nc(a) / -nc",
+      "example": "ġranica→ġranca；granica→granca；ġranic→ġranc",
+      "caveat": "现阶段仅验证这一派生词族",
+      "phase": "shared",
+      "productivity": "restricted"
+    },
+    {
+      "id": "C03",
+      "scope": "三地",
+      "type": "lexicalized",
+      "description": "高频弱读副词 ešče 的 e- 脱落及 šč > š 合流",
+      "example": "ešče→še",
+      "caveat": "词汇化缩约，不任意推广到所有 šč 词根",
+      "phase": "shared",
+      "productivity": "restricted"
+    },
+    {
+      "id": "C04",
+      "scope": "三地",
+      "type": "lexicalized",
+      "description": "高频风词词干末 -etr > -er（/t/ 在复杂韵尾中脱落）",
+      "example": "ŵetr→ŵer；vetr→ver",
+      "caveat": "暂限气象词及经验证的同源词",
+      "phase": "shared",
+      "productivity": "restricted"
+    },
+    {
+      "id": "N11",
+      "scope": "北部",
+      "type": "phoneme-context-restricted",
+      "description": "词首 /sne/ > /sę/（鼻音失去辅音地位，元音鼻化）",
+      "example": "sneġ→sęġ",
+      "caveat": "也可作用于复合词词根的起始位置",
+      "phase": "dialect",
+      "productivity": "root-or-context-controlled"
+    },
+    {
+      "id": "N12",
+      "scope": "北部",
+      "type": "analogical-soft-root",
+      "description": "历史软音节尾触发 /o/ 前化为 /ø/，后经类推推广到全词干",
+      "example": "oġń→ӧġń；kośť→kӧśť",
+      "caveat": "词干音变；不能见软音就无条件换字",
+      "phase": "dialect",
+      "productivity": "root-or-context-controlled"
+    },
+    {
+      "id": "N13",
+      "scope": "北部",
+      "type": "root-inherited-softening",
+      "description": "/ʒ/ 在后接 /e,i/ 环境软化成 /ʑ/，写ẑ",
+      "example": "železo→ẑelezo；žiŵot→ẑiŵot",
+      "caveat": "不影响后接 a、o 的 ž",
+      "phase": "dialect",
+      "productivity": "root-or-context-controlled"
+    },
+    {
+      "id": "N14",
+      "scope": "北部",
+      "type": "cluster-conditioned",
+      "description": "历史 /tʲr/ > /tʰr/；新增字母 ṱ = /tʰ/，区别于 ť、t",
+      "example": "ťruba→ṱruba；ťrubu→ṱrubu",
+      "caveat": "仅该音丛起源，不把所有t变送气",
+      "phase": "dialect",
+      "productivity": "root-or-context-controlled"
+    },
+    {
+      "id": "N15",
+      "scope": "北部",
+      "type": "lexicalized",
+      "description": "高频中性时间词 utro 末尾 -o 弱化脱落",
+      "example": "utro→utr",
+      "caveat": "词形类推后需重新推导变格",
+      "phase": "dialect",
+      "productivity": "restricted"
+    },
+    {
+      "id": "N16",
+      "scope": "北部",
+      "type": "palatal-environment",
+      "description": "新祖语软化辅音 /kʲ,rʲ/ 后 /u/ 前化为 /y/，写 ү",
+      "example": "*kʲuta→ǩүta；*rʲud→rjүd",
+      "caveat": "不能把普通u全部换成ү",
+      "phase": "dialect",
+      "productivity": "root-or-context-controlled"
+    },
+    {
+      "id": "N17",
+      "scope": "北部",
+      "type": "proto-reflex",
+      "description": "新祖语 *kʲ > ǩ，*dj > ď，*rʲ > rj",
+      "example": "*kʲel→ǩel；*medja→meďa；*rʲud→rjүd",
+      "caveat": "新增祖语词根的示范性演变",
+      "phase": "dialect",
+      "productivity": "root-or-context-controlled"
+    },
+    {
+      "id": "SE11",
+      "scope": "东南",
+      "type": "cluster-conditioned",
+      "description": "词首 /sne/ > /se/，失去鼻音但不保留鼻化",
+      "example": "sneg→seg",
+      "caveat": "与北部N11形成同源对应",
+      "phase": "dialect",
+      "productivity": "root-or-context-controlled"
+    },
+    {
+      "id": "SE12",
+      "scope": "东南",
+      "type": "root-inherited-softening",
+      "description": "/z/ 在 /i/ 前软化为 /ʑ/，写ẑ",
+      "example": "zima→ẑima",
+      "caveat": "先验证稳定的该词根",
+      "phase": "dialect",
+      "productivity": "root-or-context-controlled"
+    },
+    {
+      "id": "SE13",
+      "scope": "东南",
+      "type": "root-restricted",
+      "description": "/o/ 在 /l/ 之前于指定词根中央化为 /ɵ/，写ȯ",
+      "example": "holod→hȯld；moloko→mȯlko",
+      "caveat": "同期先应用C01；需核对其他含ol词根",
+      "phase": "dialect",
+      "productivity": "restricted"
+    },
+    {
+      "id": "SE14",
+      "scope": "东南",
+      "type": "cluster-conditioned",
+      "description": "/gn/ > /ŋ/ 写ң；旧 ogon 经次音节脱落 ogn 再同化",
+      "example": "jagne→jaңe；ogon→ogn→oң",
+      "caveat": "保留相关词汇历史层级，不得无根据把单独g或n写作ң",
+      "phase": "dialect",
+      "productivity": "root-or-context-controlled"
+    },
+    {
+      "id": "SE15",
+      "scope": "东南",
+      "type": "proto-reflex",
+      "description": "新祖语 *kʲ > ć，*dj > җ，*rʲ > r",
+      "example": "*kʲuta→ćuta；*medja→meҗa；*rʲud→rud",
+      "caveat": "源于不同的祖语对立",
+      "phase": "dialect",
+      "productivity": "root-or-context-controlled"
+    },
+    {
+      "id": "W11",
+      "scope": "西部",
+      "type": "morphological-final-only",
+      "description": "词末 /ɣ/ 在元音之后脱落（词中、带词尾时不自动脱落）",
+      "example": "sneġ→sne；boġ→bo；droġ→dro",
+      "caveat": "造成词干与带格尾形的交替，后续重造范式",
+      "phase": "dialect",
+      "productivity": "case-and-stress-sensitive"
+    },
+    {
+      "id": "W12",
+      "scope": "西部",
+      "type": "cluster-conditioned",
+      "description": "/r/ 在 /θ/（þ）后强化为 /r̝/，写ř",
+      "example": "þrub→þřub",
+      "caveat": "先验证此辅音丛，不影响全部r",
+      "phase": "dialect",
+      "productivity": "root-or-context-controlled"
+    },
+    {
+      "id": "W13",
+      "scope": "西部",
+      "type": "root-restricted",
+      "description": "词首 /ʒeɫ/ > /ʒɫ/ 的弱元音脱落",
+      "example": "žełez→žłez",
+      "caveat": "可能受语速及重音限制；先验证冶金词根",
+      "phase": "dialect",
+      "productivity": "restricted"
+    },
+    {
+      "id": "W14",
+      "scope": "西部",
+      "type": "proto-reflex",
+      "description": "新祖语 *kʲ > ǩ，*dj > ẑ，*rʲ > ř；软化辅音后u > ү",
+      "example": "*kʲuta→ǩүt；*medja→meẑ；*rʲud→řүd",
+      "caveat": "以具体祖语词根与音变路径为限",
+      "phase": "dialect",
+      "productivity": "root-or-context-controlled"
+    },
+    {
+      "id": "W15",
+      "scope": "西部",
+      "type": "unstressed-lexical-ending",
+      "description": "沿用V0.5既有W09：多音节实词非重读-a词尾脱落",
+      "example": "*kʲuta→ǩүt；*medja→meẑ",
+      "caveat": "不能对所有单音节词或有意义格尾做任意删尾",
+      "phase": "dialect",
+      "productivity": "case-and-stress-sensitive"
+    }
+  ],
+  "derivationalStemRules": [
+    {
+      "id": "V08-STEM-ZYM",
+      "kind": "analogy-not-sound-law",
+      "meaning": "冬季（*zim-/*zÿm-）→冬季的（关系形容词）",
+      "N": {
+        "noun": "zÿma",
+        "adjective": "zÿmnÿ"
+      },
+      "SE": {
+        "noun": "ẑima",
+        "adjective": "ẑimni"
+      },
+      "W": {
+        "noun": "zÿm",
+        "adjective": "zÿmnÿ"
+      },
+      "proviso": "规则只适用于该词族，不能把其他词干中 zi 无条件改为 zÿ"
+    }
+  ],
+  "productiveRootFamilies": [
+    {
+      "family": "*živ- 生命/生活",
+      "ids": [
+        "D0035",
+        "D0078",
+        "D0108",
+        "D0147"
+      ],
+      "changes": "北部 /ʒi/→/ʑi/，所有同源词干与历史动词/形容词/分词形式对应"
+    },
+    {
+      "family": "*žen- 女人",
+      "ids": [
+        "D0027"
+      ],
+      "changes": "北部 /ʒe/→/ʑe/，不推断未经记录的全部六格"
+    },
+    {
+      "family": "*želez- 铁",
+      "ids": [
+        "D0041",
+        "D0129"
+      ],
+      "changes": "北部 /ʒe/→/ʑe/、西部词根簇 žeł→žł"
+    },
+    {
+      "family": "*zim- 冬季",
+      "ids": [
+        "D0011",
+        "D0100"
+      ],
+      "changes": "东南 zi→ẑi；北部与西部关系形容词词根按 zÿm- 类推"
+    },
+    {
+      "family": "*predložen- 句子",
+      "ids": [
+        "D0283"
+      ],
+      "changes": "北部中词 ž+e 软化，但不能借此推断词尾格位"
+    },
+    {
+      "family": "*jazÿk- 语言",
+      "ids": [
+        "D0288"
+      ],
+      "changes": "东南 zi→ẑi；仍属词典原形核验"
+    }
+  ],
+  "modernHeadwordCountAfter": 193,
+  "previouslyModern": 188,
+  "changes": [
+    {
+      "id": "D0027",
+      "gloss": "女人",
+      "branch": "N",
+      "old": "žena",
+      "new": "ẑena",
+      "oldIPA": "/ʒena/",
+      "newIPA": "/ʑena/",
+      "rule": "N13",
+      "explanation": "*žen- 中 ž /ʒ/ 在 e 前北部软化",
+      "priorStage": "legacy"
+    },
+    {
+      "id": "D0078",
+      "gloss": "生活",
+      "branch": "N",
+      "old": "žiŵeť",
+      "new": "ẑiŵeť",
+      "oldIPA": "/ʒiwetʲ/",
+      "newIPA": "/ʑiwetʲ/",
+      "rule": "N13",
+      "explanation": "*živ- 动词词干与既有生命词族统一",
+      "priorStage": "legacy"
+    },
+    {
+      "id": "D0100",
+      "gloss": "冬季的",
+      "branch": "N",
+      "old": "zimnÿ",
+      "new": "zÿmnÿ",
+      "oldIPA": "/zimnɨ/",
+      "newIPA": "/zɨmnɨ/",
+      "rule": "V08-STEM-ZYM",
+      "explanation": "北部冬季 zÿma 的同源关系形容词词干类推",
+      "priorStage": "legacy"
+    },
+    {
+      "id": "D0100",
+      "gloss": "冬季的",
+      "branch": "SE",
+      "old": "zimni",
+      "new": "ẑimni",
+      "oldIPA": "/zimni/",
+      "newIPA": "/ʑimni/",
+      "rule": "SE12",
+      "explanation": "与东南冬季 ẑima 的 /z/ 软化一致",
+      "priorStage": "legacy"
+    },
+    {
+      "id": "D0100",
+      "gloss": "冬季的",
+      "branch": "W",
+      "old": "zimnÿ",
+      "new": "zÿmnÿ",
+      "oldIPA": "/zimnɨ/",
+      "newIPA": "/zɨmnɨ/",
+      "rule": "V08-STEM-ZYM",
+      "explanation": "西部冬季 zÿm 与其关系形容词词干类推",
+      "priorStage": "legacy"
+    },
+    {
+      "id": "D0108",
+      "gloss": "活体的",
+      "branch": "N",
+      "old": "žiŵÿ",
+      "new": "ẑiŵÿ",
+      "oldIPA": "/ʒiwɨ/",
+      "newIPA": "/ʑiwɨ/",
+      "rule": "N13",
+      "explanation": "*živ- 关系形容词统一北部 /ʑ/",
+      "priorStage": "legacy"
+    },
+    {
+      "id": "D0147",
+      "gloss": "生活中的",
+      "branch": "N",
+      "old": "žiŵejącÿ",
+      "new": "ẑiŵejącÿ",
+      "oldIPA": "/ʒiwejɔ̃t͡sɨ/",
+      "newIPA": "/ʑiwejɔ̃t͡sɨ/",
+      "rule": "N13",
+      "explanation": "*živ- 分词词干继承北部 /ʑ/",
+      "priorStage": "legacy"
+    },
+    {
+      "id": "D0283",
+      "gloss": "句子",
+      "branch": "N",
+      "old": "predloženie",
+      "new": "predloẑenie",
+      "oldIPA": "/predloʒenie/",
+      "newIPA": "/predloʑenie/",
+      "rule": "N13",
+      "explanation": "词中 ž+e 触发北部 /ʒ/→/ʑ/",
+      "priorStage": "v07-lexicon"
+    },
+    {
+      "id": "D0288",
+      "gloss": "语言",
+      "branch": "SE",
+      "old": "jazik",
+      "new": "jaẑik",
+      "oldIPA": "/jazik/",
+      "newIPA": "/jaʑik/",
+      "rule": "SE12",
+      "explanation": "东南同环境 z+i /z/→/ʑ/ 词汇类推",
+      "priorStage": "v07-lexicon"
+    }
+  ],
+  "checks": [
+    "7个词条共9处现代词典形校订",
+    "151个历史/仅祖语阶段词条纳入规则适用性审查，5条升为V0.8现代词典形",
+    "未核定的重音保持空缺",
+    "原有名词、动词、形容词范式均保留原历史形式，实时生成器按受限规则显示现代对应形",
+    "规则列表总数维持21，冬季词干是同源类推而非新增通用音变"
+  ]
+}
