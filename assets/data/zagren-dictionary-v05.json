@@ -14164,5 +14164,20 @@
     "disclaimer": "根据世界观既有音系与旧分词形态做出的新规范决定；并非现实语言实证材料，不允许由不定式自动宣称整个现代动词范式已核定。",
     "morphologyAudit": "assets/data/zagren-v09-morphology-audit.json",
     "morphologyStatus": "16个指定受控语法位置的48个方言实现已对照V0.6/V0.7语料；未核验现代格位与变位仍保持试验地位"
+  },
+  "historicalGrammarPolicy": {
+    "status": "canonical-in-world-historical-language-layer",
+    "historicalStage": "Early Literary Žaġręn / 早期藏朔原三支书面语",
+    "historicalGrammars": [
+      "assets/data/zagren-nominal-morphology-v02.json",
+      "assets/data/zagren-verbal-morphology-v03.json",
+      "assets/data/zagren-modifier-morphology-v04.json"
+    ],
+    "periodRelation": "祖语重建（*） → 已分化的早期三支书面语 → 过渡文学 → 现代三支方言",
+    "sourceOfAuthority": "_articles/article-451.md",
+    "detailedAudit": "assets/data/zagren-v09-morphology-audit.json",
+    "policy": "V0.2–V0.4旧范式确认为历史书面语文法，不将它们视为现代拼写错误。其具体对应格位须有受控证据才能进入现代范式。现有597项历史形态比较中109项词典原形变化；27项具体对应有直接/规则来源，82项当前未确定。",
+    "protoBoundary": "祖语*构拟形式并不是已经有文献证明的早期书面语，也不等同于可直接使用的现代形式",
+    "created": "2026-11-06"
   }
 }
