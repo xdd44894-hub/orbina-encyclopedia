@@ -2,9 +2,9 @@
   "language": "Žaġręn",
   "chinese": "藏朔原语（扎格伦语）",
   "date": "2026-11-05",
-  "languageStage": "V0.7-core-2",
-  "dictionaryEdition": "V0.2",
-  "authority": "V0.7第一阶段已确立的句法规则有效；第二阶段14名词和8动词的840屈折形目前是试验候选，不改写V0.2字典原形或已证据化的历史格位。音系正字法仍依V0.6。",
+  "languageStage": "V0.7-core-2+lexicon",
+  "dictionaryEdition": "V0.3",
+  "authority": "V0.7规范层负责句法及新书面引用层次；V0.6负责音系，现行词典V0.3负责339条词典原形。840种旧版范式类推仍是试验，不能把新60条当作已核定的变格。",
   "dialects": {
     "N": {
       "name": "珀璃璐卡",
@@ -107,12 +107,15 @@
       "focus": {
         "symbol": "•…•",
         "meaning": "聚焦符：左右成对包围重点",
-        "scope": "可跨词，但不可同类自嵌套"
+        "scope": "可跨词，但不可同类自嵌套",
+        "semanticLayers": "narrator and cited-written-source",
+        "innerFocusRule": "禁止同层聚焦自嵌套，但/文引/所开启的书面原文层允许新的•…•，构成双层聚焦"
       },
       "citation": {
         "symbol": "/…\\",
         "meaning": "文引符：引用已有书面文字，而非人物正在说话",
-        "scope": "成对，不可同类自嵌套"
+        "scope": "成对，不可同类自嵌套",
+        "nestedFocusSemantics": "内部•…•为原文本身重点，外部•…•为引用者重点；两者叠加与§的郑重发言不同"
       }
     },
     "sentenceFinalRule": "¡、¿、！、？四选一；平叙句普通句号。§与重点/语气可组合。"
@@ -160,11 +163,11 @@
     }
   },
   "metrics": {
-    "dictionaryEntries": 279,
-    "modernHeadwordEntries": 128,
+    "dictionaryEntries": 339,
+    "modernHeadwordEntries": 188,
     "historicOrProtoEntries": 151,
-    "completeDialectHeadwords": 275,
-    "broadIPATranscriptions": 825,
+    "completeDialectHeadwords": 335,
+    "broadIPATranscriptions": 1005,
     "addedHighFrequencyWords": 100,
     "currentCorpusSentences": 50,
     "currentCorpusDialectRealizations": 150,
@@ -180,14 +183,16 @@
     "pilotHistoricalTemplateMatches": 1302,
     "phonotacticFormsChecked": 825,
     "zeroWrittenNucleusForms": 11,
-    "dialectNucleusDifferenceHeadwords": 59
+    "dialectNucleusDifferenceHeadwords": 59,
+    "newRussianReferenceHeadwords": 60,
+    "newRussianReferenceDialectForms": 180
   },
   "availableSources": {
     "main": "_articles/article-451.md",
     "dictionaryBook": "_articles/article-456.md",
     "dictionaryUI": "zagren-dictionary/index.html",
-    "dictionaryData": "assets/data/zagren-dictionary-v02.json",
-    "dictionaryTxt": "assets/data/zagren-dictionary-v02.txt",
+    "dictionaryData": "assets/data/zagren-dictionary-v03.json",
+    "dictionaryTxt": "assets/data/zagren-dictionary-v03.txt",
     "grammarUI": "zagren-grammar/index.html",
     "grammarModule": "assets/js/zagren-grammar-v06.js",
     "currentPhonology": "assets/data/zagren-v06-phonology-lexicon.json",
@@ -212,7 +217,11 @@
     "pilotMorphologyProgram": "assets/js/zagren-morphology-pilot-v07.js",
     "pilotMorphologyTXT": "assets/data/zagren-morphology-pilot-v07.txt",
     "pilotMorphologyPage": "zagren-morphology/index.html",
-    "phonotacticsAudit": "assets/data/zagren-phonotactics-audit-v07.json"
+    "phonotacticsAudit": "assets/data/zagren-phonotactics-audit-v07.json",
+    "dictionaryPreviousEdition": "assets/data/zagren-dictionary-v02.json",
+    "newRussianReferenceLexemes": "assets/data/zagren-academic-v07-lexical-expansion.json",
+    "twoLayerPunctuation": "assets/data/zagren-punctuation-layers-v07.json",
+    "punctuationValidator": "assets/js/zagren-punctuation-validator-v07.js"
   },
   "principles": [
     "句义清晰、表达简洁，避免增加无意义词长",
@@ -222,14 +231,14 @@
     "历史语法记录与现代词典原形不混写",
     "新100词目前只声明词典原形，不虚构六格变位"
   ],
-  "dataStatus": "V0.7第二阶段类推范式已可操作，但840形式尚未作为完全核定的现代正史屈折；词汇重音未赋值。",
+  "dataStatus": "词典V0.3有339条原形、1,005条无重音宽式IPA。V0.7跨文引分层标点已经正式确定；新60词完整变格变位暂不冒充已校定。历史音节核825字形审计保留原采样口径。",
   "verification": {
     "status": "pass",
     "filesChecked": 15,
     "checksPassed": 20,
-    "dictionaryEntries": 279,
-    "modernHeadwords": 128,
-    "broadIPA": 825,
+    "dictionaryEntries": 339,
+    "modernHeadwords": 188,
+    "broadIPA": 1005,
     "grammarSlotChecks": 2025,
     "controlledSentences": 50,
     "limits": "Validated file contents, cross-references and in-memory JS compilation; live GitHub Pages HTTP was inaccessible from this environment.",
@@ -241,7 +250,11 @@
     "pilotClassCalibration": "1,302/1,302",
     "pilotFormGeneration": "840/840",
     "pilotModernCanonized": false,
-    "stressAssigned": false
+    "stressAssigned": false,
+    "punctuationLayerFixtures": 8,
+    "addedHeadwords": 60,
+    "headwordCompleteTrio": 335,
+    "lexiconInflectionsNotValidated": true
   },
   "phonologyStage": "V0.6",
   "pilotStage": "V0.7 morphology analogical pilot"
