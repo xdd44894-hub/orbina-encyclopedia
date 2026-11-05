@@ -737,7 +737,9 @@
       "ruleIds": [],
       "notes": [],
       "id": "D0020",
-      "aliases": [],
+      "aliases": [
+        "房屋"
+      ],
       "ipa": {
         "N": "/dom/",
         "SE": "/dom/",
