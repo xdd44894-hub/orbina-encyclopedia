@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Žaġręn V0.6 · 三方言日常语料（50句）</title>
+<meta name="description" content="藏朔原语V0.6的50句日常受控语料，三方言并排对照、中文释义及语法依据。">
+<style>
+:root{color-scheme:dark;--bg:#0c1820;--panel:#172a36;--line:#345260;--text:#edf3f5;--sub:#aec5cc;--accent:#a8d9df}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans",sans-serif;line-height:1.65}
+header{background:#12232e;padding:1rem max(1rem,calc((100% - 1120px)/2));border-bottom:1px solid var(--line)}
+a{color:var(--accent)}main{max-width:1120px;margin:auto;padding:1.8rem 1rem 4rem}
+h1{font-size:clamp(2rem,6vw,3.6rem);letter-spacing:-.05em;margin:.25rem 0}
+.sub{color:var(--sub)}.topnote{border-left:3px solid #7aa8af;padding:.6rem 1rem;background:var(--panel);color:var(--sub);margin:1.2rem 0}
+.toolbar{display:flex;gap:.65rem;flex-wrap:wrap;align-items:center;margin:1.5rem 0}select,input{border:1px solid #547383;border-radius:8px;background:var(--panel);color:var(--text);padding:.65rem .8rem;font:inherit}input{flex:1;min-width:180px}
+article{border:1px solid var(--line);border-radius:12px;padding:1.1rem;background:var(--panel);margin:.8rem 0}
+.head{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}.id{font-size:.78rem;font-weight:700;color:var(--accent)}.group{font-size:.76rem;color:var(--sub);border:1px solid var(--line);border-radius:6px;padding:.13rem .5rem}
+.zh{font-size:1.09rem;font-weight:680;margin:.4rem 0 .8rem}.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.55rem}
+.dialect{background:#10222d;padding:.7rem .75rem;border-radius:8px;min-width:0}.dialect b{display:block;color:var(--sub);font-size:.76rem;margin-bottom:.45rem}.dialect p{font-size:1rem;overflow-wrap:anywhere;margin:0}
+details{margin-top:.65rem;color:var(--sub)}summary{cursor:pointer;color:var(--accent);font-size:.85rem}details p{font-size:.85rem;margin:.4rem 0}
+#status{color:var(--sub)}footer{border-top:1px solid var(--line);margin-top:2rem;padding:1.2rem 0;color:var(--sub);font-size:.83rem}
+@media(max-width:690px){.trio{grid-template-columns:1fr}.dialect{display:grid;grid-template-columns:4.7rem 1fr;gap:.4rem}.dialect b{margin:0}}
+</style></head><body>
+<header><a href="../">俄庇娜百科</a>　·　<a href="../zagren/">藏朔原语总览</a>　·　<a href="../zagren-dictionary/">扎格伦字典V0.2</a>　·　<a href="../zagren-grammar/">语法实验室</a></header>
+<main>
+<div class="sub">ŽAĠRĘN V0.6 · 50 CONTROLLED SENTENCES</div>
+<h1>三方言日常语料</h1>
+<p class="sub">50句中文意图 × 三大方言 = 150个句形；涵盖陈述、及物宾格、性质、疑问与否定、将来和特殊书写标点。</p>
+<div class="topnote">这是依据已登记的 V0.2–V0.3 格位与 V0.6 新词典原形构造的受控训练语料，不等于整门语言所有现代变格、重音和口语语流都已校定。旧版文学语料仍收录于 <a href="../zagren-showcase/">《雪原上的一天》</a>。</div>
+<div class="toolbar">
+<input id="search" type="search" placeholder="查中文、北部、东南或西部词形" aria-label="筛选语料" spellcheck="false">
+<select id="kind" aria-label="句子类型"><option value="all">全部类型</option></select>
+<span id="status" role="status" aria-live="polite">读取中…</span>
+</div>
+<section id="list" aria-label="三方言对照句子"></section>
+<footer><a href="../assets/data/zagren-corpus-v06-50.json">查看语料 JSON</a> · <a href="../articles/article-451/">现行语言总纲</a> · Žaġręn V0.6</footer>
+</main>
+<script type="module">
+const $=id=>document.getElementById(id);
+const make=(t,cl,text)=>{const el=document.createElement(t);if(cl)el.className=cl;if(text!==undefined)el.textContent=text;return el};
+let data;
+const dialect=[["N","珀璃璐卡 · 北"],["SE","丽庞萨 · 东南"],["W","雷西尼昂帕 · 西"]];
+function render(){
+ if(!data)return;
+ const needle=$("search").value.trim().normalize("NFC").toLowerCase(),kind=$("kind").value;
+ const rows=data.rows.filter(e=>(kind==="all"||e.group===kind)&&(!needle||[e.zh,e.N,e.SE,e.W,e.notes].join(" ").toLowerCase().includes(needle)));
+ const box=$("list");box.replaceChildren();
+ for(const e of rows){
+  const item=make("article"),head=make("div","head");
+  head.append(make("span","id",e.id),make("span","group",e.group));item.append(head,make("p","zh",e.zh));
+  const trio=make("div","trio");
+  for(const [key,label] of dialect){const segment=make("div","dialect");segment.append(make("b",null,label),make("p",null,e[key]));trio.append(segment)}
+  item.append(trio);
+  const note=make("details"),summary=make("summary",null,"查看语法与来源边界");
+  note.append(summary,make("p",null,e.notes));item.append(note);box.append(item);
+ }
+ $("status").textContent="显示 "+rows.length+" / "+data.rows.length+" 句";
+ if(!rows.length)box.append(make("p","sub","没有匹配的句子。"));
+}
+async function main(){
+ try{
+  const res=await fetch("../assets/data/zagren-corpus-v06-50.json",{cache:"no-cache"});
+  if(!res.ok)throw Error("HTTP "+res.status);
+  data=await res.json();
+  if(data.rows.length!==50)throw Error("语料数目校验失败");
+  [...new Set(data.rows.map(x=>x.group))].forEach(group=>{const op=make("option",null,group);op.value=group;$("kind").append(op)});
+  $("search").addEventListener("input",render);$("kind").addEventListener("change",render);render();
+ }catch(e){$("status").textContent="加载失败："+e.message}
+}
+main();
+</script></body></html>
