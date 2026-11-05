@@ -1,0 +1,202 @@
+{
+  "language": "Žaġręn",
+  "chinese": "藏朔原语（扎格伦语）",
+  "date": "2026-11-05",
+  "languageStage": "V0.6",
+  "dictionaryEdition": "V0.2",
+  "authority": "现行规范优先查总纲与V0.2词典；V0.1–V0.5诸形态学原始记录保留作历史阶段，不将历史格位直接视为全新V0.6格位。",
+  "dialects": {
+    "N": {
+      "name": "珀璃璐卡",
+      "endonym": "Pęrlÿkań",
+      "region": "北部"
+    },
+    "SE": {
+      "name": "丽庞萨",
+      "endonym": "Lipańsë",
+      "region": "东南"
+    },
+    "W": {
+      "name": "雷西尼昂帕",
+      "endonym": "Reśinąmp",
+      "region": "西部"
+    }
+  },
+  "languageClassification": "old Earth Slavic-descended contact family in Orbina setting, independent modern phonology and usage",
+  "unifiedOrthography": {
+    "base": "modified Latin with a small Cyrillic supplementary set",
+    "ipaRuleStatus": "broad phonemic only; no lexical stress or connected speech",
+    "graphemeValues": {
+      "a": "a",
+      "b": "b",
+      "c": "t͡s",
+      "č": "t͡ʃ",
+      "ć": "t͡ɕ",
+      "d": "d",
+      "ď": "dʲ",
+      "e": "e",
+      "ë": "ə",
+      "ę": "ɛ̃",
+      "f": "f",
+      "g": "ɡ",
+      "ġ": "ɣ",
+      "h": "x",
+      "ħ": "χ",
+      "i": "i",
+      "j": "j",
+      "k": "k",
+      "ǩ": "kʲ",
+      "l": "l",
+      "ł": "ɫ",
+      "m": "m",
+      "n": "n",
+      "ń": "ɲ",
+      "ң": "ŋ",
+      "o": "o",
+      "ȯ": "ɵ",
+      "ӧ": "ø",
+      "p": "p",
+      "r": "r",
+      "ř": "r̝",
+      "s": "s",
+      "ś": "ɕ",
+      "š": "ʃ",
+      "t": "t",
+      "ť": "tʲ",
+      "ṱ": "tʰ",
+      "u": "u",
+      "ү": "y",
+      "v": "v",
+      "ŵ": "w",
+      "x": "x",
+      "y": "y",
+      "ÿ": "ɨ",
+      "z": "z",
+      "ž": "ʒ",
+      "ẑ": "ʑ",
+      "ą": "ɔ̃",
+      "þ": "θ",
+      "җ": "d͡ʒ"
+    },
+    "punctuation": {
+      "solemn": {
+        "symbol": "§",
+        "meaning": "郑言符：发言内容郑重，但不必然高声",
+        "scope": "直接引语到对应右引号；无引号仅下一句"
+      },
+      "lightSurprise": {
+        "symbol": "¡",
+        "meaning": "轻惊符：小惊",
+        "scope": "句末独立终止"
+      },
+      "slightDoubt": {
+        "symbol": "¿",
+        "meaning": "微疑符：微微疑惑",
+        "scope": "句末独立终止"
+      },
+      "strongSurprise": {
+        "symbol": "！",
+        "meaning": "大惊符：强烈惊讶",
+        "scope": "句末独立终止"
+      },
+      "standardQuestion": {
+        "symbol": "？",
+        "meaning": "正疑符：普通疑问",
+        "scope": "句末独立终止"
+      },
+      "focus": {
+        "symbol": "•…•",
+        "meaning": "聚焦符：左右成对包围重点",
+        "scope": "可跨词，但不可同类自嵌套"
+      },
+      "citation": {
+        "symbol": "/…\\",
+        "meaning": "文引符：引用已有书面文字，而非人物正在说话",
+        "scope": "成对，不可同类自嵌套"
+      }
+    },
+    "sentenceFinalRule": "¡、¿、！、？四选一；平叙句普通句号。§与重点/语气可组合。"
+  },
+  "morphology": {
+    "nouns": {
+      "genders": [
+        "阳",
+        "阴",
+        "中"
+      ],
+      "number": [
+        "SG",
+        "PL"
+      ],
+      "cases": [
+        "NOM",
+        "GEN",
+        "DAT",
+        "ACC",
+        "INS",
+        "LOC"
+      ],
+      "historicEntries": 14,
+      "historicDialectSlots": 504
+    },
+    "pronouns": {
+      "historicPersons": 7,
+      "historicDialectSlots": 126
+    },
+    "verbs": {
+      "historicLemmas": 36,
+      "finiteDialectSlots": 648,
+      "pastDialectSlots": 432,
+      "imperativeDialectSlots": 315,
+      "aspects": [
+        "IPFV",
+        "PFV"
+      ]
+    },
+    "modifiers": {
+      "adjectives": 44,
+      "participles": 20,
+      "historicDialectSlots": 9360
+    }
+  },
+  "metrics": {
+    "dictionaryEntries": 279,
+    "modernHeadwordEntries": 127,
+    "historicOrProtoEntries": 152,
+    "completeDialectHeadwords": 275,
+    "broadIPATranscriptions": 825,
+    "addedHighFrequencyWords": 100,
+    "currentCorpusSentences": 50,
+    "currentCorpusDialectRealizations": 150,
+    "modernPhonologyRules": 21,
+    "oldMorphologyEngineSlots": 2025
+  },
+  "availableSources": {
+    "main": "_articles/article-451.md",
+    "dictionaryBook": "_articles/article-456.md",
+    "dictionaryUI": "zagren-dictionary/index.html",
+    "dictionaryData": "assets/data/zagren-dictionary-v02.json",
+    "dictionaryTxt": "assets/data/zagren-dictionary-v02.txt",
+    "grammarUI": "zagren-grammar/index.html",
+    "grammarModule": "assets/js/zagren-grammar-v06.js",
+    "currentPhonology": "assets/data/zagren-v06-phonology-lexicon.json",
+    "core100": "assets/data/zagren-core100-v06.json",
+    "currentCorpus": "assets/data/zagren-corpus-v06-50.json",
+    "currentCorpusUI": "zagren-corpus/index.html",
+    "historicPhonology": "assets/data/zagren-comparative-lexicon-v01.json",
+    "historicNouns": "assets/data/zagren-nominal-morphology-v02.json",
+    "historicVerbs": "assets/data/zagren-verbal-morphology-v03.json",
+    "historicModifiers": "assets/data/zagren-modifier-morphology-v04.json",
+    "historicLiterature": "assets/data/zagren-public-corpus-v05.json",
+    "historicLiteratureUI": "zagren-showcase/index.html"
+  },
+  "principles": [
+    "句义清晰、表达简洁，避免增加无意义词长",
+    "斯拉夫语历史词源可辨，但当代完整理解必须学习语言本身",
+    "三地书写对应经可复核音变，特殊字母不得装饰性随意出现",
+    "音系借鉴送气紧音等发音特征，不以某民族语言天生适合大声讲话作为事实",
+    "历史语法记录与现代词典原形不混写",
+    "新100词目前只声明词典原形，不虚构六格变位"
+  ],
+  "dataStatus": "已完成文件结构与数量一致性校验；网页在线部署、词汇重音及所有现代范式仍需单独验证"
+}
