@@ -1,0 +1,1155 @@
+{
+  "title": "Žaġręn V0.8 旧范式衍生词形回归测试",
+  "date": "2026-11-06",
+  "status": "generated-modern-correspondences-not-independent-native-attestation",
+  "version": "V0.8-morphology-regression-2",
+  "source": "历史V0.3动词与V0.4形容词/分词原始格位，经受限N13、SE12及冬季词干类推生成",
+  "totalRows": 143,
+  "unchangedHistoricalSourceFiles": true,
+  "rows": [
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "finite.1SG",
+      "historical": "žiŵem",
+      "modern": "ẑiŵem",
+      "rule": "N13"
+    },
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "finite.2SG",
+      "historical": "žiŵeš",
+      "modern": "ẑiŵeš",
+      "rule": "N13"
+    },
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "finite.3SG",
+      "historical": "žiŵet",
+      "modern": "ẑiŵet",
+      "rule": "N13"
+    },
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "finite.1PL",
+      "historical": "žiŵeme",
+      "modern": "ẑiŵeme",
+      "rule": "N13"
+    },
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "finite.2PL",
+      "historical": "žiŵete",
+      "modern": "ẑiŵete",
+      "rule": "N13"
+    },
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "finite.3PL",
+      "historical": "žiŵeut",
+      "modern": "ẑiŵeut",
+      "rule": "N13"
+    },
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "past.M",
+      "historical": "žiŵel",
+      "modern": "ẑiŵel",
+      "rule": "N13"
+    },
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "past.F",
+      "historical": "žiŵela",
+      "modern": "ẑiŵela",
+      "rule": "N13"
+    },
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "past.N",
+      "historical": "žiŵelo",
+      "modern": "ẑiŵelo",
+      "rule": "N13"
+    },
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "past.PL",
+      "historical": "žiŵeli",
+      "modern": "ẑiŵeli",
+      "rule": "N13"
+    },
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "imperative.2SG",
+      "historical": "žiŵi",
+      "modern": "ẑiŵi",
+      "rule": "N13"
+    },
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "imperative.2PL",
+      "historical": "žiŵite",
+      "modern": "ẑiŵite",
+      "rule": "N13"
+    },
+    {
+      "origin": "V20",
+      "branch": "N",
+      "grammaticalSlot": "imperative.1PL",
+      "historical": "žiŵime",
+      "modern": "ẑiŵime",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.NOM",
+      "historical": "žiŵÿ",
+      "modern": "ẑiŵÿ",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.GEN",
+      "historical": "žiŵoġo",
+      "modern": "ẑiŵoġo",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.DAT",
+      "historical": "žiŵomu",
+      "modern": "ẑiŵomu",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.ACC",
+      "historical": "žiŵÿ",
+      "modern": "ẑiŵÿ",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.ACC.1",
+      "historical": "žiŵoġo",
+      "modern": "ẑiŵoġo",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.INS",
+      "historical": "žiŵÿm",
+      "modern": "ẑiŵÿm",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.LOC",
+      "historical": "žiŵom",
+      "modern": "ẑiŵom",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.F.NOM",
+      "historical": "žiŵa",
+      "modern": "ẑiŵa",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.F.GEN",
+      "historical": "žiŵoją",
+      "modern": "ẑiŵoją",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.F.DAT",
+      "historical": "žiŵoją",
+      "modern": "ẑiŵoją",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.F.ACC",
+      "historical": "žiŵu",
+      "modern": "ẑiŵu",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.F.INS",
+      "historical": "žiŵoją",
+      "modern": "ẑiŵoją",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.F.LOC",
+      "historical": "žiŵoją",
+      "modern": "ẑiŵoją",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.N.NOM",
+      "historical": "žiŵo",
+      "modern": "ẑiŵo",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.N.GEN",
+      "historical": "žiŵoġo",
+      "modern": "ẑiŵoġo",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.N.DAT",
+      "historical": "žiŵomu",
+      "modern": "ẑiŵomu",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.N.ACC",
+      "historical": "žiŵo",
+      "modern": "ẑiŵo",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.N.INS",
+      "historical": "žiŵÿm",
+      "modern": "ẑiŵÿm",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.N.LOC",
+      "historical": "žiŵom",
+      "modern": "ẑiŵom",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.NOM",
+      "historical": "žiŵÿ",
+      "modern": "ẑiŵÿ",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.GEN",
+      "historical": "žiŵÿħ",
+      "modern": "ẑiŵÿħ",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.DAT",
+      "historical": "žiŵÿm",
+      "modern": "ẑiŵÿm",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.ACC",
+      "historical": "žiŵÿ",
+      "modern": "ẑiŵÿ",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.ACC.1",
+      "historical": "žiŵÿħ",
+      "modern": "ẑiŵÿħ",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.INS",
+      "historical": "žiŵÿmi",
+      "modern": "ẑiŵÿmi",
+      "rule": "N13"
+    },
+    {
+      "origin": "A39",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.LOC",
+      "historical": "žiŵÿħ",
+      "modern": "ẑiŵÿħ",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.M.NOM",
+      "historical": "žiŵejącÿ",
+      "modern": "ẑiŵejącÿ",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.M.GEN",
+      "historical": "žiŵejącoġo",
+      "modern": "ẑiŵejącoġo",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.M.DAT",
+      "historical": "žiŵejącomu",
+      "modern": "ẑiŵejącomu",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.M.ACC",
+      "historical": "žiŵejącÿ",
+      "modern": "ẑiŵejącÿ",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.M.ACC.1",
+      "historical": "žiŵejącoġo",
+      "modern": "ẑiŵejącoġo",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.M.INS",
+      "historical": "žiŵejącÿm",
+      "modern": "ẑiŵejącÿm",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.M.LOC",
+      "historical": "žiŵejącom",
+      "modern": "ẑiŵejącom",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.F.NOM",
+      "historical": "žiŵejąca",
+      "modern": "ẑiŵejąca",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.F.GEN",
+      "historical": "žiŵejącoją",
+      "modern": "ẑiŵejącoją",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.F.DAT",
+      "historical": "žiŵejącoją",
+      "modern": "ẑiŵejącoją",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.F.ACC",
+      "historical": "žiŵejącu",
+      "modern": "ẑiŵejącu",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.F.INS",
+      "historical": "žiŵejącoją",
+      "modern": "ẑiŵejącoją",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.F.LOC",
+      "historical": "žiŵejącoją",
+      "modern": "ẑiŵejącoją",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.N.NOM",
+      "historical": "žiŵejąco",
+      "modern": "ẑiŵejąco",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.N.GEN",
+      "historical": "žiŵejącoġo",
+      "modern": "ẑiŵejącoġo",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.N.DAT",
+      "historical": "žiŵejącomu",
+      "modern": "ẑiŵejącomu",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.N.ACC",
+      "historical": "žiŵejąco",
+      "modern": "ẑiŵejąco",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.N.INS",
+      "historical": "žiŵejącÿm",
+      "modern": "ẑiŵejącÿm",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.N.LOC",
+      "historical": "žiŵejącom",
+      "modern": "ẑiŵejącom",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.PL.NOM",
+      "historical": "žiŵejącÿ",
+      "modern": "ẑiŵejącÿ",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.PL.GEN",
+      "historical": "žiŵejącÿħ",
+      "modern": "ẑiŵejącÿħ",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.PL.DAT",
+      "historical": "žiŵejącÿm",
+      "modern": "ẑiŵejącÿm",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.PL.ACC",
+      "historical": "žiŵejącÿ",
+      "modern": "ẑiŵejącÿ",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.PL.ACC.1",
+      "historical": "žiŵejącÿħ",
+      "modern": "ẑiŵejącÿħ",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.PL.INS",
+      "historical": "žiŵejącÿmi",
+      "modern": "ẑiŵejącÿmi",
+      "rule": "N13"
+    },
+    {
+      "origin": "P08",
+      "branch": "N",
+      "grammaticalSlot": "PART.PL.LOC",
+      "historical": "žiŵejącÿħ",
+      "modern": "ẑiŵejącÿħ",
+      "rule": "N13"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.M.NOM",
+      "historical": "zimni",
+      "modern": "ẑimni",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.M.GEN",
+      "historical": "zimnogo",
+      "modern": "ẑimnogo",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.M.DAT",
+      "historical": "zimnomu",
+      "modern": "ẑimnomu",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.M.ACC",
+      "historical": "zimni",
+      "modern": "ẑimni",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.M.ACC.1",
+      "historical": "zimnogo",
+      "modern": "ẑimnogo",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.M.INS",
+      "historical": "zimnim",
+      "modern": "ẑimnim",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.M.LOC",
+      "historical": "zimnom",
+      "modern": "ẑimnom",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.F.NOM",
+      "historical": "zimna",
+      "modern": "ẑimna",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.F.GEN",
+      "historical": "zimnojo",
+      "modern": "ẑimnojo",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.F.DAT",
+      "historical": "zimnojo",
+      "modern": "ẑimnojo",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.F.ACC",
+      "historical": "zimnu",
+      "modern": "ẑimnu",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.F.INS",
+      "historical": "zimnojo",
+      "modern": "ẑimnojo",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.F.LOC",
+      "historical": "zimnojo",
+      "modern": "ẑimnojo",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.N.NOM",
+      "historical": "zimno",
+      "modern": "ẑimno",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.N.GEN",
+      "historical": "zimnogo",
+      "modern": "ẑimnogo",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.N.DAT",
+      "historical": "zimnomu",
+      "modern": "ẑimnomu",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.N.ACC",
+      "historical": "zimno",
+      "modern": "ẑimno",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.N.INS",
+      "historical": "zimnim",
+      "modern": "ẑimnim",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.N.LOC",
+      "historical": "zimnom",
+      "modern": "ẑimnom",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.PL.NOM",
+      "historical": "zimni",
+      "modern": "ẑimni",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.PL.GEN",
+      "historical": "zimnih",
+      "modern": "ẑimnih",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.PL.DAT",
+      "historical": "zimnim",
+      "modern": "ẑimnim",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.PL.ACC",
+      "historical": "zimni",
+      "modern": "ẑimni",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.PL.ACC.1",
+      "historical": "zimnih",
+      "modern": "ẑimnih",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.PL.INS",
+      "historical": "zimnimi",
+      "modern": "ẑimnimi",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "SE",
+      "grammaticalSlot": "POS.PL.LOC",
+      "historical": "zimnih",
+      "modern": "ẑimnih",
+      "rule": "SE12"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.NOM",
+      "historical": "zimnÿ",
+      "modern": "zÿmnÿ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.M.NOM",
+      "historical": "zimnÿ",
+      "modern": "zÿmnÿ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.GEN",
+      "historical": "zimnoġo",
+      "modern": "zÿmnoġo",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.M.GEN",
+      "historical": "zimnoġ",
+      "modern": "zÿmnoġ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.DAT",
+      "historical": "zimnomu",
+      "modern": "zÿmnomu",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.M.DAT",
+      "historical": "zimnomu",
+      "modern": "zÿmnomu",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.ACC",
+      "historical": "zimnÿ",
+      "modern": "zÿmnÿ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.M.ACC",
+      "historical": "zimnÿ",
+      "modern": "zÿmnÿ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.ACC.1",
+      "historical": "zimnoġo",
+      "modern": "zÿmnoġo",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.M.ACC.1",
+      "historical": "zimnoġ",
+      "modern": "zÿmnoġ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.INS",
+      "historical": "zimnÿm",
+      "modern": "zÿmnÿm",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.M.INS",
+      "historical": "zimnÿm",
+      "modern": "zÿmnÿm",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.M.LOC",
+      "historical": "zimnom",
+      "modern": "zÿmnom",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.M.LOC",
+      "historical": "zimnom",
+      "modern": "zÿmnom",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.F.NOM",
+      "historical": "zimna",
+      "modern": "zÿmna",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.F.NOM",
+      "historical": "zimn",
+      "modern": "zÿmn",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.F.GEN",
+      "historical": "zimnoją",
+      "modern": "zÿmnoją",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.F.GEN",
+      "historical": "zimnoj",
+      "modern": "zÿmnoj",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.F.DAT",
+      "historical": "zimnoją",
+      "modern": "zÿmnoją",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.F.DAT",
+      "historical": "zimnoj",
+      "modern": "zÿmnoj",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.F.ACC",
+      "historical": "zimnu",
+      "modern": "zÿmnu",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.F.ACC",
+      "historical": "zimnu",
+      "modern": "zÿmnu",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.F.INS",
+      "historical": "zimnoją",
+      "modern": "zÿmnoją",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.F.INS",
+      "historical": "zimnoj",
+      "modern": "zÿmnoj",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.F.LOC",
+      "historical": "zimnoją",
+      "modern": "zÿmnoją",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.F.LOC",
+      "historical": "zimnoj",
+      "modern": "zÿmnoj",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.N.NOM",
+      "historical": "zimno",
+      "modern": "zÿmno",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.N.NOM",
+      "historical": "zimn",
+      "modern": "zÿmn",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.N.GEN",
+      "historical": "zimnoġo",
+      "modern": "zÿmnoġo",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.N.GEN",
+      "historical": "zimnoġ",
+      "modern": "zÿmnoġ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.N.DAT",
+      "historical": "zimnomu",
+      "modern": "zÿmnomu",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.N.DAT",
+      "historical": "zimnomu",
+      "modern": "zÿmnomu",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.N.ACC",
+      "historical": "zimno",
+      "modern": "zÿmno",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.N.ACC",
+      "historical": "zimn",
+      "modern": "zÿmn",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.N.INS",
+      "historical": "zimnÿm",
+      "modern": "zÿmnÿm",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.N.INS",
+      "historical": "zimnÿm",
+      "modern": "zÿmnÿm",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.N.LOC",
+      "historical": "zimnom",
+      "modern": "zÿmnom",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.N.LOC",
+      "historical": "zimnom",
+      "modern": "zÿmnom",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.NOM",
+      "historical": "zimnÿ",
+      "modern": "zÿmnÿ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.PL.NOM",
+      "historical": "zimnÿ",
+      "modern": "zÿmnÿ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.GEN",
+      "historical": "zimnÿħ",
+      "modern": "zÿmnÿħ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.PL.GEN",
+      "historical": "zimnÿħ",
+      "modern": "zÿmnÿħ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.DAT",
+      "historical": "zimnÿm",
+      "modern": "zÿmnÿm",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.PL.DAT",
+      "historical": "zimnÿm",
+      "modern": "zÿmnÿm",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.ACC",
+      "historical": "zimnÿ",
+      "modern": "zÿmnÿ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.PL.ACC",
+      "historical": "zimnÿ",
+      "modern": "zÿmnÿ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.ACC.1",
+      "historical": "zimnÿħ",
+      "modern": "zÿmnÿħ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.PL.ACC.1",
+      "historical": "zimnÿħ",
+      "modern": "zÿmnÿħ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.INS",
+      "historical": "zimnÿmi",
+      "modern": "zÿmnÿmi",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.PL.INS",
+      "historical": "zimnÿmi",
+      "modern": "zÿmnÿmi",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "N",
+      "grammaticalSlot": "POS.PL.LOC",
+      "historical": "zimnÿħ",
+      "modern": "zÿmnÿħ",
+      "rule": "V08-STEM-ZYM"
+    },
+    {
+      "origin": "A36",
+      "branch": "W",
+      "grammaticalSlot": "POS.PL.LOC",
+      "historical": "zimnÿħ",
+      "modern": "zÿmnÿħ",
+      "rule": "V08-STEM-ZYM"
+    }
+  ]
+}
