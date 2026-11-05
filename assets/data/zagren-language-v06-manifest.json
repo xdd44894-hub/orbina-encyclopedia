@@ -1,10 +1,10 @@
 {
   "language": "Žaġręn",
   "chinese": "藏朔原语（扎格伦语）",
-  "date": "2026-11-05",
-  "languageStage": "V0.7-core-2+lexicon",
-  "dictionaryEdition": "V0.3",
-  "authority": "V0.7规范层负责句法及新书面引用层次；V0.6负责音系，现行词典V0.3负责339条词典原形。840种旧版范式类推仍是试验，不能把新60条当作已核定的变格。",
+  "date": "2026-11-06",
+  "languageStage": "V0.8-phonology-1",
+  "dictionaryEdition": "V0.4",
+  "authority": "当前音系与词干承续规范为V0.8（21条既有音变与4项限制性的同源词族修订）；V0.7仍决定核心句法；现行字典V0.4含339条、旧词151条已审阅。143条旧词原形保持，4条现代化修订，4条仅构拟祖语词有非正式候选。不能把保留的历史格位自动等同全面验证的现行屈折。",
   "dialects": {
     "N": {
       "name": "珀璃璐卡",
@@ -164,8 +164,8 @@
   },
   "metrics": {
     "dictionaryEntries": 339,
-    "modernHeadwordEntries": 188,
-    "historicOrProtoEntries": 151,
+    "modernHeadwordEntries": 192,
+    "historicOrProtoEntries": 147,
     "completeDialectHeadwords": 335,
     "broadIPATranscriptions": 1005,
     "addedHighFrequencyWords": 100,
@@ -181,21 +181,27 @@
     "pilotVerbLemmas": 8,
     "pilotCandidateForms": 840,
     "pilotHistoricalTemplateMatches": 1302,
-    "phonotacticFormsChecked": 825,
+    "phonotacticFormsChecked": 1005,
     "zeroWrittenNucleusForms": 11,
-    "dialectNucleusDifferenceHeadwords": 59,
+    "dialectNucleusDifferenceHeadwords": 80,
     "newRussianReferenceHeadwords": 60,
-    "newRussianReferenceDialectForms": 180
+    "newRussianReferenceDialectForms": 180,
+    "reviewedLegacyHeadwords": 143,
+    "revisedLegacyHeadwords": 4,
+    "protoOnlyCandidates": 4,
+    "legacyHeadwordsReviewed": 151,
+    "v08FamilyExtensions": 4,
+    "v08RelatedInflectionChecks": 91
   },
   "availableSources": {
     "main": "_articles/article-451.md",
     "dictionaryBook": "_articles/article-456.md",
     "dictionaryUI": "zagren-dictionary/index.html",
-    "dictionaryData": "assets/data/zagren-dictionary-v03.json",
-    "dictionaryTxt": "assets/data/zagren-dictionary-v03.txt",
+    "dictionaryData": "assets/data/zagren-dictionary-v04.json",
+    "dictionaryTxt": "assets/data/zagren-dictionary-v04.txt",
     "grammarUI": "zagren-grammar/index.html",
     "grammarModule": "assets/js/zagren-grammar-v06.js",
-    "currentPhonology": "assets/data/zagren-v06-phonology-lexicon.json",
+    "currentPhonology": "assets/data/zagren-phonology-v08.json",
     "core100": "assets/data/zagren-core100-v06.json",
     "currentCorpus": "assets/data/zagren-corpus-v06-50.json",
     "currentCorpusUI": "zagren-corpus/index.html",
@@ -206,7 +212,7 @@
     "historicLiterature": "assets/data/zagren-public-corpus-v05.json",
     "historicLiteratureUI": "zagren-showcase/index.html",
     "hub": "zagren/index.html",
-    "offlineCompendium": "assets/data/zagren-language-compendium-v07.txt",
+    "offlineCompendium": "assets/data/zagren-language-compendium-v08.txt",
     "dictionaryOldBaseline": "assets/data/zagren-dictionary-v01.json",
     "fiveSentenceAudit": "assets/data/zagren-v06-five-sentence-audit.json",
     "architectureRules": "assets/data/zagren-syntax-v07.json",
@@ -218,10 +224,14 @@
     "pilotMorphologyTXT": "assets/data/zagren-morphology-pilot-v07.txt",
     "pilotMorphologyPage": "zagren-morphology/index.html",
     "phonotacticsAudit": "assets/data/zagren-phonotactics-audit-v07.json",
-    "dictionaryPreviousEdition": "assets/data/zagren-dictionary-v02.json",
+    "dictionaryPreviousEdition": "assets/data/zagren-dictionary-v03.json",
     "newRussianReferenceLexemes": "assets/data/zagren-academic-v07-lexical-expansion.json",
     "twoLayerPunctuation": "assets/data/zagren-punctuation-layers-v07.json",
-    "punctuationValidator": "assets/js/zagren-punctuation-validator-v07.js"
+    "punctuationValidator": "assets/js/zagren-punctuation-validator-v07.js",
+    "historicV06SoundLaws": "assets/data/zagren-v06-phonology-lexicon.json",
+    "v08LexicalAudit": "assets/data/zagren-v08-lexical-audit.json",
+    "v08SoundChangeModule": "assets/js/zagren-phonology-v08.js",
+    "v08PhonologyPage": "zagren-phonology/index.html"
   },
   "principles": [
     "句义清晰、表达简洁，避免增加无意义词长",
@@ -231,13 +241,13 @@
     "历史语法记录与现代词典原形不混写",
     "新100词目前只声明词典原形，不虚构六格变位"
   ],
-  "dataStatus": "词典V0.3有339条原形、1,005条无重音宽式IPA。V0.7跨文引分层标点已经正式确定；新60词完整变格变位暂不冒充已校定。历史音节核825字形审计保留原采样口径。",
+  "dataStatus": "V0.8第一阶段：对151条原旧词审阅，4条修订、143条保留、4条仅祖语候选；历史音变保持21项规范，并按4个同词根范围扩展；语音重音及自由语流仍未确定。",
   "verification": {
     "status": "pass",
     "filesChecked": 15,
     "checksPassed": 20,
     "dictionaryEntries": 339,
-    "modernHeadwords": 188,
+    "modernHeadwords": 192,
     "broadIPA": 1005,
     "grammarSlotChecks": 2025,
     "controlledSentences": 50,
@@ -257,7 +267,7 @@
     "lexiconInflectionsNotValidated": true,
     "offlineCompendiumEntries": 339,
     "oldV06OfflinePreserved": true,
-    "currentEdition": "V0.3",
+    "currentEdition": "V0.4",
     "uniqueEntryIds": true,
     "allNewHeadwordsUnique": true,
     "duplicateGlossExplanations": [
@@ -274,8 +284,18 @@
     "newLemmaLookupsPassed": true,
     "oldGrammarSlotAudit": "2025/2025",
     "webJavascriptSyntaxChecked": true,
-    "liveGithubPagesNotConfirmed": true
+    "liveGithubPagesNotConfirmed": true,
+    "phonologyRulesInherited": 21,
+    "phonologyFamilyExtensions": 4,
+    "legacyReview": "151/151",
+    "revisedHeadwords": 4,
+    "unchangedOldHeadwords": 143,
+    "protoCandidatesNotCounted": 4,
+    "relatedInflectionChecks": 91,
+    "phonotacticModernForms": 1005,
+    "nucleusVariationModern": 80
   },
-  "phonologyStage": "V0.6",
-  "pilotStage": "V0.7 morphology analogical pilot"
+  "phonologyStage": "V0.8",
+  "pilotStage": "V0.7 morphology analogical pilot",
+  "grammarStage": "V0.7"
 }
