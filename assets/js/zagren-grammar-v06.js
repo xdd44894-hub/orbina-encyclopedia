@@ -68,7 +68,7 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null})
    const registered=dictionary?.entries?.find(x=>x.gloss===gloss);
    if(!registered)throw new Error("Unknown dictionary lexeme "+gloss);
    if(!registered.forms)throw new Error("Only ancestral root exists; no modern forms for "+gloss);
-   return {gloss,branch,form:registered.forms[branch],baseForm:registered.older?.[branch]??null,appliedRules:registered.ruleIds||[],ipa:registered.ipa?.[branch]??null,status:registered.inflectionCoverage==="lemma-only"?"lemma-only":"historical-paradigm"};
+   return {gloss,branch,form:registered.forms[branch],baseForm:registered.older?.[branch]??null,appliedRules:(registered.ruleIds||[]).filter(id=>!id.startsWith("BASE-")||id==="BASE-"+branch),ipa:registered.ipa?.[branch]??null,status:registered.inflectionCoverage==="lemma-only"?"lemma-only":"historical-paradigm"};
   }
   if(!row.v05)return {gloss,branch,form:row.v06[branch],baseForm:null,appliedRules:[],status:"new-root-lemma-only"};
   return {gloss,branch,...soundShift(row.v05[branch],{branch,gloss}),status:"sound-shifted-lemma"};
