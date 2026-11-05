@@ -3,7 +3,7 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null,m
  const branches=["N","SE","W"];
  const dialects={N:"珀璃璐卡",SE:"丽庞萨",W:"雷西尼昂帕"};
  const assertBranch=(b)=>{if(!branches.includes(b))throw new Error("Unknown dialect "+b)};
- function soundShift(base,{branch,gloss}){
+ function soundShift(base,{branch,gloss,gramCase=null}){
   assertBranch(branch);
   if(typeof base!=="string")throw new Error("Missing V0.5 form");
   let form=base;
@@ -26,7 +26,7 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null,m
    change("SE14",gloss==="火",s=>s.replace(/^ogon/u,"oң").replace(/^ogn/u,"oң"));
    change("SE14",gloss==="羊羔",s=>s.replace(/^jagn/u,"jaң"));
   }else{
-   change("W11",["雪","神明","道路"].includes(gloss),s=>s.replace(/ġ$/u,""));
+   change("W11",["雪","道路"].includes(gloss)||(gloss==="神明"&&(gramCase===null||gramCase==="NOM")),s=>s.replace(/ġ$/u,""));
    change("W12",gloss==="管道",s=>s.replace(/^þr/u,"þř"));
    change("W13",["铁","铁制的"].includes(gloss),s=>s.replace(/^žeł/u,"žł"));
   }
@@ -36,7 +36,7 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null,m
   assertBranch(branch);
   const row=nominal.nouns.find(x=>x.id===id&&x.number===number&&x.case===gramCase)??modifier?.extended_noun_forms?.find(x=>x.id===id&&x.number===number&&x.case===gramCase);
   if(!row)throw new Error("Unknown noun slot "+id+"/"+number+"/"+gramCase);
-  return {id,meaning:row.meaning,number,case:gramCase,branch,...soundShift(row[branch],{branch,gloss:row.meaning})};
+  return {id,meaning:row.meaning,number,case:gramCase,branch,...soundShift(row[branch],{branch,gloss:row.meaning,gramCase})};
  }
  function pronoun(person,gramCase,branch){
   assertBranch(branch);
