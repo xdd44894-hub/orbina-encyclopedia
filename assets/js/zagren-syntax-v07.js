@@ -46,13 +46,13 @@ export function createZagrenSyntaxV07({morphology,nominal,modifier,verbal}){
   if(negative)predicate=verbal.auxiliary.negative[branch]+" "+predicate;
   return predicate;
  }
- function sentence({branch,subject=null,verbId,tense="nonpast",pastGender=null,recipient=null,object=null,frame=null,frameBeforeVerb=false,negative=false,punctuation="."}){
+ function sentence({branch,subject=null,verbId,tense="nonpast",pastGender=null,recipient=null,object=null,frame=null,frameBeforeVerb=false,negative=false,punctuation=".",imperativePerson="2SG"}){
   valid(branch);
   if(![".","¡","¿","！","？"].includes(punctuation))throw Error("Unsupported clause-final punctuation");
   if(tense!=="imperative"&&!subject)throw Error("Subject is required");
   let person="3SG",subjForm="";
   if(subject?.kind==="pronoun"){
-   person=subject.person;
+   person=subject.person.replace(/^3SG\..+$/u,"3SG");
    subjForm=pronoun(subject.person,"NOM",branch);
   }else if(subject?.kind==="noun"){
    const entry=nounEntry(subject.id);
@@ -63,6 +63,7 @@ export function createZagrenSyntaxV07({morphology,nominal,modifier,verbal}){
    }
    subjForm=nounPhrase({id:subject.id,branch}).form;
   }else if(subject)throw Error("Unknown subject kind");
+  if(tense==="imperative")person=imperativePerson;
   const vp=verbPhrase(verbId,branch,{tense,person,pastGender,negative});
   const np=(arg,gramCase)=>arg?arg.kind==="pronoun"?pronoun(arg.person,gramCase,branch):nounPhrase({id:arg.id,branch,gramCase,adjectives:arg.adjectives||[]}).form:null;
   const loc=frame?preposition(frame.kind,frame.id,branch,{adjectives:frame.adjectives||[]}):null;
