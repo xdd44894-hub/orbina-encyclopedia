@@ -5,6 +5,7 @@ permalink: /
 ---
 
 <h1>俄庇娜百科</h1>
+<p><strong><a href="{{ '/zagren-showcase/' | relative_url }}">新专题：藏朔原三大部族语言首次正式展示——《雪原上的一天》</a></strong></p>
 <p><strong><a href="{{ '/timeline/' | relative_url }}">浏览大事件时间轴：从旧地球迁徙、弑神战到全球攻势与联合城分裂</a></strong></p>
 {% assign current_articles = site.articles | where_exp: "article", "article.archived != true" %}
 <p>收录 {{ current_articles | size }} 个公开条目。可按主题浏览，也可以直接检索人物、国家、地理、战争、装备及日常生活。</p>
