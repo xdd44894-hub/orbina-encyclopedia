@@ -1,0 +1,2838 @@
+{
+  "title": "Žaġręn V0.8 历史词汇原形逐条审阅记录",
+  "version": "V0.8-lexical-review-1",
+  "date": "2026-11-06",
+  "sources": [
+    "assets/data/zagren-dictionary-v03.json",
+    "assets/data/zagren-v06-phonology-lexicon.json",
+    "assets/data/zagren-nominal-morphology-v02.json",
+    "assets/data/zagren-verbal-morphology-v03.json",
+    "assets/data/zagren-modifier-morphology-v04.json"
+  ],
+  "reviewScope": "对旧版未升级151条词典原形逐条处理，保留历史形。143个原形不改，并不代表完整范式得到新证据；4个有同根音变根据的旧词修订；4个没有原形的祖语记录只提出候选。",
+  "metrics": {
+    "reviewed": 151,
+    "retained": 143,
+    "changed": 4,
+    "protoOnlyCandidates": 4,
+    "affectedDialectHeadwords": 4,
+    "modernLemmaCount": 192,
+    "totalDictionaryEntries": 339
+  },
+  "laws": [
+    {
+      "id": "N13-F-LIVE",
+      "gloss": "生活",
+      "branch": "N",
+      "sourceLaw": "N13",
+      "family": "*živ-",
+      "matchPrefix": "^ži",
+      "newPrefix": "ẑi"
+    },
+    {
+      "id": "N13-F-LIVE-ADJ",
+      "gloss": "活体的",
+      "branch": "N",
+      "sourceLaw": "N13",
+      "family": "*živ-",
+      "matchPrefix": "^ži",
+      "newPrefix": "ẑi"
+    },
+    {
+      "id": "N13-F-LIVE-PTCP",
+      "gloss": "生活中的",
+      "branch": "N",
+      "sourceLaw": "N13",
+      "family": "*živ-",
+      "matchPrefix": "^ži",
+      "newPrefix": "ẑi"
+    },
+    {
+      "id": "SE12-F-WINTER",
+      "gloss": "冬季的",
+      "branch": "SE",
+      "sourceLaw": "SE12",
+      "family": "*zim-",
+      "matchPrefix": "^zi",
+      "newPrefix": "ẑi"
+    }
+  ],
+  "changes": [
+    {
+      "id": "D0078",
+      "gloss": "生活",
+      "pos": "verb",
+      "old": {
+        "N": "žiŵeť",
+        "SE": "živet",
+        "W": "žiŵeþ"
+      },
+      "new": {
+        "N": "ẑiŵeť",
+        "SE": "živet",
+        "W": "žiŵeþ"
+      },
+      "ruleIds": [
+        "N13-F-LIVE"
+      ]
+    },
+    {
+      "id": "D0100",
+      "gloss": "冬季的",
+      "pos": "adj",
+      "old": {
+        "N": "zimnÿ",
+        "SE": "zimni",
+        "W": "zimnÿ"
+      },
+      "new": {
+        "N": "zimnÿ",
+        "SE": "ẑimni",
+        "W": "zimnÿ"
+      },
+      "ruleIds": [
+        "SE12-F-WINTER"
+      ]
+    },
+    {
+      "id": "D0108",
+      "gloss": "活体的",
+      "pos": "adj",
+      "old": {
+        "N": "žiŵÿ",
+        "SE": "živi",
+        "W": "žiŵÿ"
+      },
+      "new": {
+        "N": "ẑiŵÿ",
+        "SE": "živi",
+        "W": "žiŵÿ"
+      },
+      "ruleIds": [
+        "N13-F-LIVE-ADJ"
+      ]
+    },
+    {
+      "id": "D0147",
+      "gloss": "生活中的",
+      "pos": "participle",
+      "old": {
+        "N": "žiŵejącÿ",
+        "SE": "živejoci",
+        "W": "žiŵejącÿ"
+      },
+      "new": {
+        "N": "ẑiŵejącÿ",
+        "SE": "živejoci",
+        "W": "žiŵejącÿ"
+      },
+      "ruleIds": [
+        "N13-F-LIVE-PTCP"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "id": "D0001",
+      "gloss": "傍晚",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "attested",
+      "oldForms": {
+        "N": "ŵečer",
+        "SE": "večer",
+        "W": "ŵečer"
+      },
+      "newForms": {
+        "N": "ŵečer",
+        "SE": "večer",
+        "W": "ŵečer"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0003",
+      "gloss": "冰",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "led",
+        "SE": "led",
+        "W": "łed"
+      },
+      "newForms": {
+        "N": "led",
+        "SE": "led",
+        "W": "łed"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0006",
+      "gloss": "词／单词",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "attested",
+      "oldForms": {
+        "N": "sloŵo",
+        "SE": "slovo",
+        "W": "słoŵ"
+      },
+      "newForms": {
+        "N": "sloŵo",
+        "SE": "slovo",
+        "W": "słoŵ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0007",
+      "gloss": "村庄",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "attested",
+      "oldForms": {
+        "N": "ŵes",
+        "SE": "ves",
+        "W": "ŵes"
+      },
+      "newForms": {
+        "N": "ŵes",
+        "SE": "ves",
+        "W": "ŵes"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0008",
+      "gloss": "大门",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ŵrata",
+        "SE": "vrata",
+        "W": "ŵrat"
+      },
+      "newForms": {
+        "N": "ŵrata",
+        "SE": "vrata",
+        "W": "ŵrat"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0010",
+      "gloss": "地区",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "strana",
+        "SE": "strana",
+        "W": "stran"
+      },
+      "newForms": {
+        "N": "strana",
+        "SE": "strana",
+        "W": "stran"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0017",
+      "gloss": "河流",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "reka",
+        "SE": "reka",
+        "W": "rek"
+      },
+      "newForms": {
+        "N": "reka",
+        "SE": "reka",
+        "W": "rek"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0018",
+      "gloss": "灰烬",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "pepel",
+        "SE": "pepel",
+        "W": "pepeł"
+      },
+      "newForms": {
+        "N": "pepel",
+        "SE": "pepel",
+        "W": "pepeł"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0023",
+      "gloss": "雷鸣",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ġrom",
+        "SE": "grom",
+        "W": "ġrom"
+      },
+      "newForms": {
+        "N": "ġrom",
+        "SE": "grom",
+        "W": "ġrom"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0024",
+      "gloss": "炉",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "peč",
+        "SE": "peč",
+        "W": "peč"
+      },
+      "newForms": {
+        "N": "peč",
+        "SE": "peč",
+        "W": "peč"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0026",
+      "gloss": "男子",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "muž",
+        "SE": "muž",
+        "W": "muž"
+      },
+      "newForms": {
+        "N": "muž",
+        "SE": "muž",
+        "W": "muž"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0027",
+      "gloss": "女人",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "žena",
+        "SE": "žena",
+        "W": "žen"
+      },
+      "newForms": {
+        "N": "žena",
+        "SE": "žena",
+        "W": "žen"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0028",
+      "gloss": "皮肤",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "koža",
+        "SE": "koža",
+        "W": "kož"
+      },
+      "newForms": {
+        "N": "koža",
+        "SE": "koža",
+        "W": "kož"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0030",
+      "gloss": "荣耀",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "slaŵa",
+        "SE": "slava",
+        "W": "słaŵ"
+      },
+      "newForms": {
+        "N": "slaŵa",
+        "SE": "slava",
+        "W": "słaŵ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0033",
+      "gloss": "山",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ġora",
+        "SE": "gora",
+        "W": "ġor"
+      },
+      "newForms": {
+        "N": "ġora",
+        "SE": "gora",
+        "W": "ġor"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0036",
+      "gloss": "尸体",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "trup",
+        "SE": "trup",
+        "W": "trup"
+      },
+      "newForms": {
+        "N": "trup",
+        "SE": "trup",
+        "W": "trup"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0037",
+      "gloss": "石头",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "kamęń",
+        "SE": "kamen",
+        "W": "kamęn"
+      },
+      "newForms": {
+        "N": "kamęń",
+        "SE": "kamen",
+        "W": "kamęn"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0038",
+      "gloss": "手",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ręka",
+        "SE": "renka",
+        "W": "ręk"
+      },
+      "newForms": {
+        "N": "ręka",
+        "SE": "renka",
+        "W": "ręk"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0040",
+      "gloss": "死亡",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "smerť",
+        "SE": "smert",
+        "W": "smerþ"
+      },
+      "newForms": {
+        "N": "smerť",
+        "SE": "smert",
+        "W": "smerþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0042",
+      "gloss": "头颅",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ġłaŵa",
+        "SE": "glava",
+        "W": "ġłaŵ"
+      },
+      "newForms": {
+        "N": "ġłaŵa",
+        "SE": "glava",
+        "W": "ġłaŵ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0046",
+      "gloss": "夜晚",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "noč",
+        "SE": "noč",
+        "W": "noč"
+      },
+      "newForms": {
+        "N": "noč",
+        "SE": "noč",
+        "W": "noč"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0048",
+      "gloss": "鱼",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "rÿba",
+        "SE": "riba",
+        "W": "rÿb"
+      },
+      "newForms": {
+        "N": "rÿba",
+        "SE": "riba",
+        "W": "rÿb"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0049",
+      "gloss": "噪声",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "šum",
+        "SE": "šum",
+        "W": "šum"
+      },
+      "newForms": {
+        "N": "šum",
+        "SE": "šum",
+        "W": "šum"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0050",
+      "gloss": "真实",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "praŵda",
+        "SE": "pravda",
+        "W": "praŵd"
+      },
+      "newForms": {
+        "N": "praŵda",
+        "SE": "pravda",
+        "W": "praŵd"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0051",
+      "gloss": "纸页",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "list",
+        "SE": "list",
+        "W": "łist"
+      },
+      "newForms": {
+        "N": "list",
+        "SE": "list",
+        "W": "łist"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0052",
+      "gloss": "桌子",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "stol",
+        "SE": "stol",
+        "W": "stoł"
+      },
+      "newForms": {
+        "N": "stol",
+        "SE": "stol",
+        "W": "stoł"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0053",
+      "gloss": "姊妹",
+      "pos": "noun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "sestra",
+        "SE": "sestra",
+        "W": "sestr"
+      },
+      "newForms": {
+        "N": "sestra",
+        "SE": "sestra",
+        "W": "sestr"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0054",
+      "gloss": "安放、放置",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "staŵiť",
+        "SE": "stavit",
+        "W": "staŵiþ"
+      },
+      "newForms": {
+        "N": "staŵiť",
+        "SE": "stavit",
+        "W": "staŵiþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0055",
+      "gloss": "安放完成",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "postaŵiť",
+        "SE": "postavit",
+        "W": "postaŵiþ"
+      },
+      "newForms": {
+        "N": "postaŵiť",
+        "SE": "postavit",
+        "W": "postaŵiþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0056",
+      "gloss": "把话说完",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "proġoŵoriť",
+        "SE": "progovorit",
+        "W": "proġoŵoriþ"
+      },
+      "newForms": {
+        "N": "proġoŵoriť",
+        "SE": "progovorit",
+        "W": "proġoŵoriþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0057",
+      "gloss": "奔跑（反复）",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "beġať",
+        "SE": "begat",
+        "W": "beġaþ"
+      },
+      "newForms": {
+        "N": "beġať",
+        "SE": "begat",
+        "W": "beġaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0058",
+      "gloss": "存在、是",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "byť",
+        "SE": "byt",
+        "W": "byþ"
+      },
+      "newForms": {
+        "N": "byť",
+        "SE": "byt",
+        "W": "byþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0059",
+      "gloss": "带来",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "prineseť",
+        "SE": "prineset",
+        "W": "prineseþ"
+      },
+      "newForms": {
+        "N": "prineseť",
+        "SE": "prineset",
+        "W": "prineseþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0060",
+      "gloss": "等候",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ždať",
+        "SE": "ždat",
+        "W": "ždaþ"
+      },
+      "newForms": {
+        "N": "ždať",
+        "SE": "ždat",
+        "W": "ždaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0061",
+      "gloss": "抵达终点",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "doprÿħodiť",
+        "SE": "doprihodit",
+        "W": "doprÿħodiþ"
+      },
+      "newForms": {
+        "N": "doprÿħodiť",
+        "SE": "doprihodit",
+        "W": "doprÿħodiþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0062",
+      "gloss": "反复搬运",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "nosiť",
+        "SE": "nosit",
+        "W": "nosiþ"
+      },
+      "newForms": {
+        "N": "nosiť",
+        "SE": "nosit",
+        "W": "nosiþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0063",
+      "gloss": "给予",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "dať",
+        "SE": "dat",
+        "W": "daþ"
+      },
+      "newForms": {
+        "N": "dať",
+        "SE": "dat",
+        "W": "daþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0064",
+      "gloss": "喊叫",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "kričať",
+        "SE": "kričat",
+        "W": "kričaþ"
+      },
+      "newForms": {
+        "N": "kričať",
+        "SE": "kričat",
+        "W": "kričaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0065",
+      "gloss": "呼唤",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "zŵať",
+        "SE": "zvat",
+        "W": "zŵaþ"
+      },
+      "newForms": {
+        "N": "zŵať",
+        "SE": "zvat",
+        "W": "zŵaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0066",
+      "gloss": "讲话",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ġoŵoriť",
+        "SE": "govorit",
+        "W": "ġoŵoriþ"
+      },
+      "newForms": {
+        "N": "ġoŵoriť",
+        "SE": "govorit",
+        "W": "ġoŵoriþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0067",
+      "gloss": "结冻、冻结",
+      "pos": "verb",
+      "status": "proto-only-candidate",
+      "forms": {
+        "N": "zamrznuť",
+        "SE": "zamrznut",
+        "W": "zamrznuþ"
+      },
+      "changeCount": 0
+    },
+    {
+      "id": "D0068",
+      "gloss": "开始喊叫",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "zakričať",
+        "SE": "zakričat",
+        "W": "zakričaþ"
+      },
+      "newForms": {
+        "N": "zakričať",
+        "SE": "zakričat",
+        "W": "zakričaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0069",
+      "gloss": "看见",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ŵideť",
+        "SE": "videt",
+        "W": "ŵideþ"
+      },
+      "newForms": {
+        "N": "ŵideť",
+        "SE": "videt",
+        "W": "ŵideþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0070",
+      "gloss": "看见（一次实现）",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "uŵideť",
+        "SE": "uvidet",
+        "W": "uŵideþ"
+      },
+      "newForms": {
+        "N": "uŵideť",
+        "SE": "uvidet",
+        "W": "uŵideþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0071",
+      "gloss": "来回走动",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ħodiť",
+        "SE": "hodit",
+        "W": "ħodiþ"
+      },
+      "newForms": {
+        "N": "ħodiť",
+        "SE": "hodit",
+        "W": "ħodiþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0072",
+      "gloss": "能够",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "moħť",
+        "SE": "moht",
+        "W": "moħþ"
+      },
+      "newForms": {
+        "N": "moħť",
+        "SE": "moht",
+        "W": "moħþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0073",
+      "gloss": "去、前往",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "iť",
+        "SE": "it",
+        "W": "iþ"
+      },
+      "newForms": {
+        "N": "iť",
+        "SE": "it",
+        "W": "iþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0074",
+      "gloss": "燃烧",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ġoreť",
+        "SE": "goret",
+        "W": "ġoreþ"
+      },
+      "newForms": {
+        "N": "ġoreť",
+        "SE": "goret",
+        "W": "ġoreþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0075",
+      "gloss": "饶恕",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ščadoŵať",
+        "SE": "ščadovat",
+        "W": "ščadoŵaþ"
+      },
+      "newForms": {
+        "N": "ščadoŵať",
+        "SE": "ščadovat",
+        "W": "ščadoŵaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0076",
+      "gloss": "饶恕一次",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "poščadoŵať",
+        "SE": "poščadovat",
+        "W": "poščadoŵaþ"
+      },
+      "newForms": {
+        "N": "poščadoŵať",
+        "SE": "poščadovat",
+        "W": "poščadoŵaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0077",
+      "gloss": "融化",
+      "pos": "verb",
+      "status": "proto-only-candidate",
+      "forms": {
+        "N": "tajať",
+        "SE": "tajat",
+        "W": "tajaþ"
+      },
+      "changeCount": 0
+    },
+    {
+      "id": "D0078",
+      "gloss": "生活",
+      "pos": "verb",
+      "status": "revised",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "žiŵeť",
+        "SE": "živet",
+        "W": "žiŵeþ"
+      },
+      "newForms": {
+        "N": "ẑiŵeť",
+        "SE": "živet",
+        "W": "žiŵeþ"
+      },
+      "ruleIds": [
+        "N13-F-LIVE"
+      ]
+    },
+    {
+      "id": "D0079",
+      "gloss": "使……冰封",
+      "pos": "verb",
+      "status": "proto-only-candidate",
+      "forms": {
+        "N": "zamraziť",
+        "SE": "zamrazit",
+        "W": "zamraziþ"
+      },
+      "changeCount": 0
+    },
+    {
+      "id": "D0080",
+      "gloss": "守卫、保护",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ħraniť",
+        "SE": "hranit",
+        "W": "ħraniþ"
+      },
+      "newForms": {
+        "N": "ħraniť",
+        "SE": "hranit",
+        "W": "ħraniþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0081",
+      "gloss": "睡眠",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "spať",
+        "SE": "spat",
+        "W": "spaþ"
+      },
+      "newForms": {
+        "N": "spať",
+        "SE": "spat",
+        "W": "spaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0082",
+      "gloss": "睡一阵",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "pospať",
+        "SE": "pospat",
+        "W": "pospaþ"
+      },
+      "newForms": {
+        "N": "pospať",
+        "SE": "pospat",
+        "W": "pospaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0083",
+      "gloss": "听到（有结果）",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "uslÿšať",
+        "SE": "uslišat",
+        "W": "usłÿšaþ"
+      },
+      "newForms": {
+        "N": "uslÿšať",
+        "SE": "uslišat",
+        "W": "usłÿšaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0084",
+      "gloss": "听见、听",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "slÿšať",
+        "SE": "slišat",
+        "W": "słÿšaþ"
+      },
+      "newForms": {
+        "N": "slÿšať",
+        "SE": "slišat",
+        "W": "słÿšaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0085",
+      "gloss": "忘记",
+      "pos": "verb",
+      "status": "proto-only-candidate",
+      "forms": {
+        "N": "zabÿť",
+        "SE": "zabit",
+        "W": "zabÿþ"
+      },
+      "changeCount": 0
+    },
+    {
+      "id": "D0086",
+      "gloss": "携带（单次过程）",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "neseť",
+        "SE": "neset",
+        "W": "neseþ"
+      },
+      "newForms": {
+        "N": "neseť",
+        "SE": "neset",
+        "W": "neseþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0087",
+      "gloss": "写",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "pisať",
+        "SE": "pisat",
+        "W": "pisaþ"
+      },
+      "newForms": {
+        "N": "pisať",
+        "SE": "pisat",
+        "W": "pisaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0088",
+      "gloss": "写完",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "napisať",
+        "SE": "napisat",
+        "W": "napisaþ"
+      },
+      "newForms": {
+        "N": "napisať",
+        "SE": "napisat",
+        "W": "napisaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0089",
+      "gloss": "知道",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "znať",
+        "SE": "znat",
+        "W": "znaþ"
+      },
+      "newForms": {
+        "N": "znať",
+        "SE": "znat",
+        "W": "znaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0090",
+      "gloss": "制作、做",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "delať",
+        "SE": "delat",
+        "W": "dełaþ"
+      },
+      "newForms": {
+        "N": "delať",
+        "SE": "delat",
+        "W": "dełaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0091",
+      "gloss": "注视",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "patriť",
+        "SE": "patrit",
+        "W": "patriþ"
+      },
+      "newForms": {
+        "N": "patriť",
+        "SE": "patrit",
+        "W": "patriþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0092",
+      "gloss": "走来、抵达（过程）",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "prÿħodiť",
+        "SE": "prihodit",
+        "W": "prÿħodiþ"
+      },
+      "newForms": {
+        "N": "prÿħodiť",
+        "SE": "prihodit",
+        "W": "prÿħodiþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0093",
+      "gloss": "做成",
+      "pos": "verb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "sdelať",
+        "SE": "sdelat",
+        "W": "sdełaþ"
+      },
+      "newForms": {
+        "N": "sdelať",
+        "SE": "sdelat",
+        "W": "sdełaþ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0094",
+      "gloss": "白色",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "belÿ",
+        "SE": "beli",
+        "W": "bełÿ"
+      },
+      "newForms": {
+        "N": "belÿ",
+        "SE": "beli",
+        "W": "bełÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0095",
+      "gloss": "北方的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "seŵernÿ",
+        "SE": "severni",
+        "W": "seŵernÿ"
+      },
+      "newForms": {
+        "N": "seŵernÿ",
+        "SE": "severni",
+        "W": "seŵernÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0096",
+      "gloss": "冰质的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ledenÿ",
+        "SE": "ledeni",
+        "W": "łedenÿ"
+      },
+      "newForms": {
+        "N": "ledenÿ",
+        "SE": "ledeni",
+        "W": "łedenÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0097",
+      "gloss": "潮冷",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "sÿrÿ",
+        "SE": "siri",
+        "W": "sÿrÿ"
+      },
+      "newForms": {
+        "N": "sÿrÿ",
+        "SE": "siri",
+        "W": "sÿrÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0098",
+      "gloss": "潮湿",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "mokrÿ",
+        "SE": "mokri",
+        "W": "mokrÿ"
+      },
+      "newForms": {
+        "N": "mokrÿ",
+        "SE": "mokri",
+        "W": "mokrÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0099",
+      "gloss": "沉重",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "tjažkÿ",
+        "SE": "tjažki",
+        "W": "tjažkÿ"
+      },
+      "newForms": {
+        "N": "tjažkÿ",
+        "SE": "tjažki",
+        "W": "tjažkÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0100",
+      "gloss": "冬季的",
+      "pos": "adj",
+      "status": "revised",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "zimnÿ",
+        "SE": "zimni",
+        "W": "zimnÿ"
+      },
+      "newForms": {
+        "N": "zimnÿ",
+        "SE": "ẑimni",
+        "W": "zimnÿ"
+      },
+      "ruleIds": [
+        "SE12-F-WINTER"
+      ]
+    },
+    {
+      "id": "D0101",
+      "gloss": "干燥",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "suħÿ",
+        "SE": "suhi",
+        "W": "suħÿ"
+      },
+      "newForms": {
+        "N": "suħÿ",
+        "SE": "suhi",
+        "W": "suħÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0102",
+      "gloss": "工业的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "zaŵodnÿ",
+        "SE": "zavodni",
+        "W": "zaŵodnÿ"
+      },
+      "newForms": {
+        "N": "zaŵodnÿ",
+        "SE": "zavodni",
+        "W": "zaŵodnÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0103",
+      "gloss": "古老",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "starÿ",
+        "SE": "stari",
+        "W": "starÿ"
+      },
+      "newForms": {
+        "N": "starÿ",
+        "SE": "stari",
+        "W": "starÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0104",
+      "gloss": "寒冷",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "studenÿ",
+        "SE": "studeni",
+        "W": "studenÿ"
+      },
+      "newForms": {
+        "N": "studenÿ",
+        "SE": "studeni",
+        "W": "studenÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0105",
+      "gloss": "黑色",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "černÿ",
+        "SE": "černi",
+        "W": "černÿ"
+      },
+      "newForms": {
+        "N": "černÿ",
+        "SE": "černi",
+        "W": "černÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0106",
+      "gloss": "荒凉",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "pustÿ",
+        "SE": "pusti",
+        "W": "pustÿ"
+      },
+      "newForms": {
+        "N": "pustÿ",
+        "SE": "pusti",
+        "W": "pustÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0107",
+      "gloss": "昏暗",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "temnÿ",
+        "SE": "temni",
+        "W": "temnÿ"
+      },
+      "newForms": {
+        "N": "temnÿ",
+        "SE": "temni",
+        "W": "temnÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0108",
+      "gloss": "活体的",
+      "pos": "adj",
+      "status": "revised",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "žiŵÿ",
+        "SE": "živi",
+        "W": "žiŵÿ"
+      },
+      "newForms": {
+        "N": "ẑiŵÿ",
+        "SE": "živi",
+        "W": "žiŵÿ"
+      },
+      "ruleIds": [
+        "N13-F-LIVE-ADJ"
+      ]
+    },
+    {
+      "id": "D0109",
+      "gloss": "寂静",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "tiħÿ",
+        "SE": "tihi",
+        "W": "tiħÿ"
+      },
+      "newForms": {
+        "N": "tiħÿ",
+        "SE": "tihi",
+        "W": "tiħÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0110",
+      "gloss": "坚硬",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "tŵerdÿ",
+        "SE": "tverdi",
+        "W": "tŵerdÿ"
+      },
+      "newForms": {
+        "N": "tŵerdÿ",
+        "SE": "tverdi",
+        "W": "tŵerdÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0111",
+      "gloss": "巨大",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ŵelikÿ",
+        "SE": "veliki",
+        "W": "ŵełikÿ"
+      },
+      "newForms": {
+        "N": "ŵelikÿ",
+        "SE": "veliki",
+        "W": "ŵełikÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0112",
+      "gloss": "可怖",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "strašnÿ",
+        "SE": "strašni",
+        "W": "strašnÿ"
+      },
+      "newForms": {
+        "N": "strašnÿ",
+        "SE": "strašni",
+        "W": "strašnÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0113",
+      "gloss": "蓝色",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "sińi",
+        "SE": "sini",
+        "W": "sini"
+      },
+      "newForms": {
+        "N": "sińi",
+        "SE": "sini",
+        "W": "sini"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0114",
+      "gloss": "邻近",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "blizńi",
+        "SE": "blizni",
+        "W": "błizni"
+      },
+      "newForms": {
+        "N": "blizńi",
+        "SE": "blizni",
+        "W": "błizni"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0115",
+      "gloss": "林地的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "lesnÿ",
+        "SE": "lesni",
+        "W": "łesnÿ"
+      },
+      "newForms": {
+        "N": "lesnÿ",
+        "SE": "lesni",
+        "W": "łesnÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0116",
+      "gloss": "漫长",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "dolġÿ",
+        "SE": "dolgi",
+        "W": "dołġÿ"
+      },
+      "newForms": {
+        "N": "dolġÿ",
+        "SE": "dolgi",
+        "W": "dołġÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0117",
+      "gloss": "明亮",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "sŵetlÿ",
+        "SE": "svetli",
+        "W": "sŵetłÿ"
+      },
+      "newForms": {
+        "N": "sŵetlÿ",
+        "SE": "svetli",
+        "W": "sŵetłÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0118",
+      "gloss": "内部的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ŵnutreńi",
+        "SE": "vnutreni",
+        "W": "ŵnutreni"
+      },
+      "newForms": {
+        "N": "ŵnutreńi",
+        "SE": "vnutreni",
+        "W": "ŵnutreni"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0119",
+      "gloss": "年轻",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "mladÿ",
+        "SE": "mladi",
+        "W": "mładÿ"
+      },
+      "newForms": {
+        "N": "mladÿ",
+        "SE": "mladi",
+        "W": "mładÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0120",
+      "gloss": "强壮",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "silnÿ",
+        "SE": "silni",
+        "W": "siłnÿ"
+      },
+      "newForms": {
+        "N": "silnÿ",
+        "SE": "silni",
+        "W": "siłnÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0121",
+      "gloss": "清晰",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "jasnÿ",
+        "SE": "jasni",
+        "W": "jasnÿ"
+      },
+      "newForms": {
+        "N": "jasnÿ",
+        "SE": "jasni",
+        "W": "jasnÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0122",
+      "gloss": "秋季的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "osenńi",
+        "SE": "osenni",
+        "W": "osenni"
+      },
+      "newForms": {
+        "N": "osenńi",
+        "SE": "osenni",
+        "W": "osenni"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0123",
+      "gloss": "软弱",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "slabÿ",
+        "SE": "slabi",
+        "W": "słabÿ"
+      },
+      "newForms": {
+        "N": "slabÿ",
+        "SE": "slabi",
+        "W": "słabÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0124",
+      "gloss": "山区的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ġornÿ",
+        "SE": "gorni",
+        "W": "ġornÿ"
+      },
+      "newForms": {
+        "N": "ġornÿ",
+        "SE": "gorni",
+        "W": "ġornÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0125",
+      "gloss": "深",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ġłubokÿ",
+        "SE": "gluboki",
+        "W": "ġłubokÿ"
+      },
+      "newForms": {
+        "N": "ġłubokÿ",
+        "SE": "gluboki",
+        "W": "ġłubokÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0126",
+      "gloss": "石制的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "kamennÿ",
+        "SE": "kamenni",
+        "W": "kamennÿ"
+      },
+      "newForms": {
+        "N": "kamennÿ",
+        "SE": "kamenni",
+        "W": "kamennÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0127",
+      "gloss": "死去的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "mertŵÿ",
+        "SE": "mertvi",
+        "W": "mertŵÿ"
+      },
+      "newForms": {
+        "N": "mertŵÿ",
+        "SE": "mertvi",
+        "W": "mertŵÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0128",
+      "gloss": "铁锈色的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "rÿžÿ",
+        "SE": "riži",
+        "W": "rÿžÿ"
+      },
+      "newForms": {
+        "N": "rÿžÿ",
+        "SE": "riži",
+        "W": "rÿžÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0130",
+      "gloss": "温暖",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "teplÿ",
+        "SE": "tepli",
+        "W": "tepłÿ"
+      },
+      "newForms": {
+        "N": "teplÿ",
+        "SE": "tepli",
+        "W": "tepłÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0131",
+      "gloss": "夏季的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "letńi",
+        "SE": "letni",
+        "W": "łetni"
+      },
+      "newForms": {
+        "N": "letńi",
+        "SE": "letni",
+        "W": "łetni"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0132",
+      "gloss": "小",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "malÿ",
+        "SE": "mali",
+        "W": "małÿ"
+      },
+      "newForms": {
+        "N": "malÿ",
+        "SE": "mali",
+        "W": "małÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0133",
+      "gloss": "新",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "noŵÿ",
+        "SE": "novi",
+        "W": "noŵÿ"
+      },
+      "newForms": {
+        "N": "noŵÿ",
+        "SE": "novi",
+        "W": "noŵÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0134",
+      "gloss": "血缘的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "kroŵnÿ",
+        "SE": "krovni",
+        "W": "kroŵnÿ"
+      },
+      "newForms": {
+        "N": "kroŵnÿ",
+        "SE": "krovni",
+        "W": "kroŵnÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0135",
+      "gloss": "迅速",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "bÿstrÿ",
+        "SE": "bistri",
+        "W": "bÿstrÿ"
+      },
+      "newForms": {
+        "N": "bÿstrÿ",
+        "SE": "bistri",
+        "W": "bÿstrÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0136",
+      "gloss": "遥远",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "dalekÿ",
+        "SE": "daleki",
+        "W": "dałekÿ"
+      },
+      "newForms": {
+        "N": "dalekÿ",
+        "SE": "daleki",
+        "W": "dałekÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0137",
+      "gloss": "最后的",
+      "pos": "adj",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "posledńi",
+        "SE": "posledni",
+        "W": "posłedni"
+      },
+      "newForms": {
+        "N": "posledńi",
+        "SE": "posledni",
+        "W": "posłedni"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0138",
+      "gloss": "安放好的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "postaŵenÿ",
+        "SE": "postaveni",
+        "W": "postaŵenÿ"
+      },
+      "newForms": {
+        "N": "postaŵenÿ",
+        "SE": "postaveni",
+        "W": "postaŵenÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0139",
+      "gloss": "被冰封的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "zamrazenÿ",
+        "SE": "zamrazeni",
+        "W": "zamrazenÿ"
+      },
+      "newForms": {
+        "N": "zamrazenÿ",
+        "SE": "zamrazeni",
+        "W": "zamrazenÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0140",
+      "gloss": "被带来的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "prinesenÿ",
+        "SE": "prineseni",
+        "W": "prinesenÿ"
+      },
+      "newForms": {
+        "N": "prinesenÿ",
+        "SE": "prineseni",
+        "W": "prinesenÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0141",
+      "gloss": "被看见的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "uŵidenÿ",
+        "SE": "uvideni",
+        "W": "uŵidenÿ"
+      },
+      "newForms": {
+        "N": "uŵidenÿ",
+        "SE": "uvideni",
+        "W": "uŵidenÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0142",
+      "gloss": "被饶恕的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "poščadoŵanÿ",
+        "SE": "poščadovani",
+        "W": "poščadoŵanÿ"
+      },
+      "newForms": {
+        "N": "poščadoŵanÿ",
+        "SE": "poščadovani",
+        "W": "poščadoŵanÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0143",
+      "gloss": "被遗忘的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "zabÿtÿ",
+        "SE": "zabiti",
+        "W": "zabÿtÿ"
+      },
+      "newForms": {
+        "N": "zabÿtÿ",
+        "SE": "zabiti",
+        "W": "zabÿtÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0144",
+      "gloss": "喊叫中的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "kričającÿ",
+        "SE": "kričajoci",
+        "W": "kričającÿ"
+      },
+      "newForms": {
+        "N": "kričającÿ",
+        "SE": "kričajoci",
+        "W": "kričającÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0145",
+      "gloss": "讲话中的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ġoŵorijącÿ",
+        "SE": "govorijoci",
+        "W": "ġoŵorijącÿ"
+      },
+      "newForms": {
+        "N": "ġoŵorijącÿ",
+        "SE": "govorijoci",
+        "W": "ġoŵorijącÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0146",
+      "gloss": "燃烧中的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ġorejącÿ",
+        "SE": "gorejoci",
+        "W": "ġorejącÿ"
+      },
+      "newForms": {
+        "N": "ġorejącÿ",
+        "SE": "gorejoci",
+        "W": "ġorejącÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0147",
+      "gloss": "生活中的",
+      "pos": "participle",
+      "status": "revised",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "žiŵejącÿ",
+        "SE": "živejoci",
+        "W": "žiŵejącÿ"
+      },
+      "newForms": {
+        "N": "ẑiŵejącÿ",
+        "SE": "živejoci",
+        "W": "žiŵejącÿ"
+      },
+      "ruleIds": [
+        "N13-F-LIVE-PTCP"
+      ]
+    },
+    {
+      "id": "D0148",
+      "gloss": "守护、保卫中的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ħranijącÿ",
+        "SE": "hranijoci",
+        "W": "ħranijącÿ"
+      },
+      "newForms": {
+        "N": "ħranijącÿ",
+        "SE": "hranijoci",
+        "W": "ħranijącÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0149",
+      "gloss": "听见、听中的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "slÿšającÿ",
+        "SE": "slišajoci",
+        "W": "słÿšającÿ"
+      },
+      "newForms": {
+        "N": "slÿšającÿ",
+        "SE": "slišajoci",
+        "W": "słÿšającÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0150",
+      "gloss": "携带（单次过程）中的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "nesejącÿ",
+        "SE": "nesejoci",
+        "W": "nesejącÿ"
+      },
+      "newForms": {
+        "N": "nesejącÿ",
+        "SE": "nesejoci",
+        "W": "nesejącÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0151",
+      "gloss": "写成的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "napisanÿ",
+        "SE": "napisani",
+        "W": "napisanÿ"
+      },
+      "newForms": {
+        "N": "napisanÿ",
+        "SE": "napisani",
+        "W": "napisanÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0152",
+      "gloss": "已讲述的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "proġoŵorenÿ",
+        "SE": "progovoreni",
+        "W": "proġoŵorenÿ"
+      },
+      "newForms": {
+        "N": "proġoŵorenÿ",
+        "SE": "progovoreni",
+        "W": "proġoŵorenÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0153",
+      "gloss": "已经结冻的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "zamrzlÿ",
+        "SE": "zamrzli",
+        "W": "zamrzłÿ"
+      },
+      "newForms": {
+        "N": "zamrzlÿ",
+        "SE": "zamrzli",
+        "W": "zamrzłÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0154",
+      "gloss": "正在融化的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "tajającÿ",
+        "SE": "tajajoci",
+        "W": "tajającÿ"
+      },
+      "newForms": {
+        "N": "tajającÿ",
+        "SE": "tajajoci",
+        "W": "tajającÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0155",
+      "gloss": "注视中的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "patrijącÿ",
+        "SE": "patrijoci",
+        "W": "patrijącÿ"
+      },
+      "newForms": {
+        "N": "patrijącÿ",
+        "SE": "patrijoci",
+        "W": "patrijącÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0156",
+      "gloss": "走来、抵达（过程）中的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "prÿħodijącÿ",
+        "SE": "prihodijoci",
+        "W": "prÿħodijącÿ"
+      },
+      "newForms": {
+        "N": "prÿħodijącÿ",
+        "SE": "prihodijoci",
+        "W": "prÿħodijącÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0157",
+      "gloss": "做成的",
+      "pos": "participle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "sdelanÿ",
+        "SE": "sdelani",
+        "W": "sdełanÿ"
+      },
+      "newForms": {
+        "N": "sdelanÿ",
+        "SE": "sdelani",
+        "W": "sdełanÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0158",
+      "gloss": "你",
+      "pos": "pronoun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "tÿ",
+        "SE": "ti",
+        "W": "tÿ"
+      },
+      "newForms": {
+        "N": "tÿ",
+        "SE": "ti",
+        "W": "tÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0159",
+      "gloss": "你们",
+      "pos": "pronoun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ŵÿ",
+        "SE": "vi",
+        "W": "ŵÿ"
+      },
+      "newForms": {
+        "N": "ŵÿ",
+        "SE": "vi",
+        "W": "ŵÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0160",
+      "gloss": "他",
+      "pos": "pronoun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "on",
+        "SE": "on",
+        "W": "on"
+      },
+      "newForms": {
+        "N": "on",
+        "SE": "on",
+        "W": "on"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0161",
+      "gloss": "他们／她们",
+      "pos": "pronoun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "oni",
+        "SE": "oni",
+        "W": "oni"
+      },
+      "newForms": {
+        "N": "oni",
+        "SE": "oni",
+        "W": "oni"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0162",
+      "gloss": "她",
+      "pos": "pronoun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ona",
+        "SE": "ona",
+        "W": "ona"
+      },
+      "newForms": {
+        "N": "ona",
+        "SE": "ona",
+        "W": "ona"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0163",
+      "gloss": "我",
+      "pos": "pronoun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ja",
+        "SE": "ja",
+        "W": "ja"
+      },
+      "newForms": {
+        "N": "ja",
+        "SE": "ja",
+        "W": "ja"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0164",
+      "gloss": "我们",
+      "pos": "pronoun",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "mÿ",
+        "SE": "mi",
+        "W": "mÿ"
+      },
+      "newForms": {
+        "N": "mÿ",
+        "SE": "mi",
+        "W": "mÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0165",
+      "gloss": "今天",
+      "pos": "adverb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "dnes",
+        "SE": "dnes",
+        "W": "dnes"
+      },
+      "newForms": {
+        "N": "dnes",
+        "SE": "dnes",
+        "W": "dnes"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0166",
+      "gloss": "明天",
+      "pos": "adverb",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "jutro",
+        "SE": "jutro",
+        "W": "jutro"
+      },
+      "newForms": {
+        "N": "jutro",
+        "SE": "jutro",
+        "W": "jutro"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0168",
+      "gloss": "从……",
+      "pos": "preposition",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "od",
+        "SE": "od",
+        "W": "od"
+      },
+      "newForms": {
+        "N": "od",
+        "SE": "od",
+        "W": "od"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0169",
+      "gloss": "到……旁",
+      "pos": "preposition",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "k",
+        "SE": "k",
+        "W": "k"
+      },
+      "newForms": {
+        "N": "k",
+        "SE": "k",
+        "W": "k"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0170",
+      "gloss": "与……一起",
+      "pos": "preposition",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "s",
+        "SE": "s",
+        "W": "s"
+      },
+      "newForms": {
+        "N": "s",
+        "SE": "s",
+        "W": "s"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0171",
+      "gloss": "在……里面",
+      "pos": "preposition",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ŵ",
+        "SE": "v",
+        "W": "ŵ"
+      },
+      "newForms": {
+        "N": "ŵ",
+        "SE": "v",
+        "W": "ŵ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0172",
+      "gloss": "在……旁",
+      "pos": "preposition",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "u",
+        "SE": "u",
+        "W": "u"
+      },
+      "newForms": {
+        "N": "u",
+        "SE": "u",
+        "W": "u"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0173",
+      "gloss": "在……上",
+      "pos": "preposition",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "na",
+        "SE": "na",
+        "W": "na"
+      },
+      "newForms": {
+        "N": "na",
+        "SE": "na",
+        "W": "na"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0174",
+      "gloss": "比……",
+      "pos": "conjunction",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "než",
+        "SE": "než",
+        "W": "než"
+      },
+      "newForms": {
+        "N": "než",
+        "SE": "než",
+        "W": "než"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0175",
+      "gloss": "但是",
+      "pos": "conjunction",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "no",
+        "SE": "no",
+        "W": "no"
+      },
+      "newForms": {
+        "N": "no",
+        "SE": "no",
+        "W": "no"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0176",
+      "gloss": "和／并且",
+      "pos": "conjunction",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "i",
+        "SE": "i",
+        "W": "i"
+      },
+      "newForms": {
+        "N": "i",
+        "SE": "i",
+        "W": "i"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0177",
+      "gloss": "不／否定",
+      "pos": "particle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "ńe",
+        "SE": "ne",
+        "W": "n"
+      },
+      "newForms": {
+        "N": "ńe",
+        "SE": "ne",
+        "W": "n"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0178",
+      "gloss": "条件式助词",
+      "pos": "particle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "bÿ",
+        "SE": "bi",
+        "W": "bÿ"
+      },
+      "newForms": {
+        "N": "bÿ",
+        "SE": "bi",
+        "W": "bÿ"
+      },
+      "ruleIds": []
+    },
+    {
+      "id": "D0179",
+      "gloss": "未完成体将来助词",
+      "pos": "particle",
+      "status": "retained",
+      "oldStage": "legacy",
+      "oldForms": {
+        "N": "bu",
+        "SE": "bu",
+        "W": "b"
+      },
+      "newForms": {
+        "N": "bu",
+        "SE": "bu",
+        "W": "b"
+      },
+      "ruleIds": []
+    }
+  ]
+}
