@@ -21,6 +21,7 @@ ai_search: true
 | **[50句日常受控语料]({{ '/zagren-corpus/' | relative_url }})** | 50句 × 3方言，测试陈述、及物、形容词、疑问、将来和标点 |
 | **[《雪原上的一天》]({{ '/zagren-showcase/' | relative_url }})** | V0.5保留的32句比较文学历史基准，含旧版IPA |
 | **[完整 TXT 字典]({{ '/assets/data/zagren-dictionary-v02.txt' | relative_url }})** | 可离线阅读的统一词典正文 |
+| **[统一语言资料总卷 TXT]({{ '/assets/data/zagren-language-compendium-v06.txt' | relative_url }})** | 单一文档汇集当前总纲、字典、50句新语料、32句文学和历史语法研究 |
 | **[字典 JSON]({{ '/assets/data/zagren-dictionary-v02.json' | relative_url }})** | 词条、方言、IPA和版本状态的现行机器可读数据 |
 | **[语言资料总索引 JSON]({{ '/assets/data/zagren-language-v06-manifest.json' | relative_url }})** | 所有阶段的规范层级、资料路径、计数口径及音位字母表 |
 
