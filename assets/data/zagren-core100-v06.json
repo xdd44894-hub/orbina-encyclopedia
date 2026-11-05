@@ -1,0 +1,3587 @@
+{
+  "title": "Žaġręn V0.6 核心百词扩展",
+  "version": "0.6-core100",
+  "date": "2026-11-05",
+  "status": "词典原形与宽式音标先行，非完整屈折语法",
+  "basis": "historically derived basic noun/verb/adjective endings + lexeme-specific clipping; not all outcomes represent a proven general sound law",
+  "rules": [
+    {
+      "id": "BASE-N",
+      "rule": "北部 *g>*ġ, *v>*ŵ, *x>*ħ, *tʲ>ť; soft-source variants as attested in V0.5",
+      "type": "phonetic"
+    },
+    {
+      "id": "BASE-SE",
+      "rule": "东南 *x>h, *ÿ>i, *ę>e, *ą>o, *tʲ>t",
+      "type": "phonetic"
+    },
+    {
+      "id": "BASE-W",
+      "rule": "西部 *g>ġ, *v>ŵ, *x>ħ, *l>ł, *tʲ>þ; nominal theme vowel may delete",
+      "type": "phonetic"
+    },
+    {
+      "id": "LEX-C",
+      "rule": "高频功能词经独立、词汇化短化；本表逐词列出，不作为通用自动音变规则",
+      "type": "lexical"
+    }
+  ],
+  "ipaKey": "宽式音位按字符规范映射，未标注词汇重音；不等同完整语音学测量。",
+  "stats": {
+    "noun": 40,
+    "verb": 25,
+    "adj": 15,
+    "func": 20,
+    "actual": 100,
+    "forms": 300
+  },
+  "homographWarnings": {
+    "intra": [],
+    "prior": [
+      {
+        "dialect": "W",
+        "form": "než",
+        "old": "比……",
+        "new": "尚未"
+      },
+      {
+        "dialect": "W",
+        "form": "bo",
+        "old": "神明",
+        "new": "因为"
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "C001",
+      "pos": "noun",
+      "gloss": "人",
+      "proto": "*lud",
+      "forms": {
+        "N": "lud",
+        "SE": "lud",
+        "W": "łud"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "人物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/lud/",
+        "SE": "/lud/",
+        "W": "/ɫud/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C002",
+      "pos": "noun",
+      "gloss": "孩子",
+      "proto": "*detę",
+      "forms": {
+        "N": "detę",
+        "SE": "dete",
+        "W": "det"
+      },
+      "detail": {
+        "gender": "中",
+        "number": "SG",
+        "group": "人物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/detɛ̃/",
+        "SE": "/dete/",
+        "W": "/det/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C003",
+      "pos": "noun",
+      "gloss": "父亲",
+      "proto": "*otec",
+      "forms": {
+        "N": "otec",
+        "SE": "otec",
+        "W": "otec"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "人物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/otet͡s/",
+        "SE": "/otet͡s/",
+        "W": "/otet͡s/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C004",
+      "pos": "noun",
+      "gloss": "朋友",
+      "proto": "*drug",
+      "forms": {
+        "N": "druġ",
+        "SE": "drug",
+        "W": "dru"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "人物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/druɣ/",
+        "SE": "/druɡ/",
+        "W": "/dru/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C005",
+      "pos": "noun",
+      "gloss": "邻居",
+      "proto": "*sused",
+      "forms": {
+        "N": "sused",
+        "SE": "sused",
+        "W": "sused"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "人物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/sused/",
+        "SE": "/sused/",
+        "W": "/sused/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C006",
+      "pos": "noun",
+      "gloss": "客人",
+      "proto": "*gost",
+      "forms": {
+        "N": "ġost",
+        "SE": "gost",
+        "W": "ġost"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "人物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/ɣost/",
+        "SE": "/ɡost/",
+        "W": "/ɣost/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C007",
+      "pos": "noun",
+      "gloss": "工人",
+      "proto": "*trudnik",
+      "forms": {
+        "N": "trudnik",
+        "SE": "trudnik",
+        "W": "trudnik"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "人物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/trudnik/",
+        "SE": "/trudnik/",
+        "W": "/trudnik/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C008",
+      "pos": "noun",
+      "gloss": "教师",
+      "proto": "*učitel",
+      "forms": {
+        "N": "učitel",
+        "SE": "učitel",
+        "W": "učiteł"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "人物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/ut͡ʃitel/",
+        "SE": "/ut͡ʃitel/",
+        "W": "/ut͡ʃiteɫ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C009",
+      "pos": "noun",
+      "gloss": "医生",
+      "proto": "*lekar",
+      "forms": {
+        "N": "lekar",
+        "SE": "lekar",
+        "W": "łekar"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "人物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/lekar/",
+        "SE": "/lekar/",
+        "W": "/ɫekar/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C010",
+      "pos": "noun",
+      "gloss": "祖母",
+      "proto": "*baba",
+      "forms": {
+        "N": "baba",
+        "SE": "baba",
+        "W": "bab"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "人物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/baba/",
+        "SE": "/baba/",
+        "W": "/bab/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C011",
+      "pos": "noun",
+      "gloss": "门",
+      "proto": "*dvera",
+      "forms": {
+        "N": "dŵera",
+        "SE": "dvera",
+        "W": "dŵer"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "住宅",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/dwera/",
+        "SE": "/dvera/",
+        "W": "/dwer/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C012",
+      "pos": "noun",
+      "gloss": "窗户",
+      "proto": "*okno",
+      "forms": {
+        "N": "okno",
+        "SE": "okno",
+        "W": "okn"
+      },
+      "detail": {
+        "gender": "中",
+        "number": "SG",
+        "group": "住宅",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/okno/",
+        "SE": "/okno/",
+        "W": "/okn/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C013",
+      "pos": "noun",
+      "gloss": "墙",
+      "proto": "*stena",
+      "forms": {
+        "N": "stena",
+        "SE": "stena",
+        "W": "sten"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "住宅",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/stena/",
+        "SE": "/stena/",
+        "W": "/sten/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C014",
+      "pos": "noun",
+      "gloss": "屋顶",
+      "proto": "*krova",
+      "forms": {
+        "N": "kroŵa",
+        "SE": "krova",
+        "W": "kroŵ"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "住宅",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/krowa/",
+        "SE": "/krova/",
+        "W": "/krow/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C015",
+      "pos": "noun",
+      "gloss": "床",
+      "proto": "*ležka",
+      "forms": {
+        "N": "ležka",
+        "SE": "ležka",
+        "W": "łežk"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "住宅",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/leʒka/",
+        "SE": "/leʒka/",
+        "W": "/ɫeʒk/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C016",
+      "pos": "noun",
+      "gloss": "灯",
+      "proto": "*sveta",
+      "forms": {
+        "N": "sŵeta",
+        "SE": "sveta",
+        "W": "sŵet"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "住宅",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/sweta/",
+        "SE": "/sveta/",
+        "W": "/swet/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C017",
+      "pos": "noun",
+      "gloss": "椅子",
+      "proto": "*sedlo",
+      "forms": {
+        "N": "sedlo",
+        "SE": "sedlo",
+        "W": "sedł"
+      },
+      "detail": {
+        "gender": "中",
+        "number": "SG",
+        "group": "住宅",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/sedlo/",
+        "SE": "/sedlo/",
+        "W": "/sedɫ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C018",
+      "pos": "noun",
+      "gloss": "杯子",
+      "proto": "*kupa",
+      "forms": {
+        "N": "kupa",
+        "SE": "kupa",
+        "W": "kup"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "住宅",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/kupa/",
+        "SE": "/kupa/",
+        "W": "/kup/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C019",
+      "pos": "noun",
+      "gloss": "碗",
+      "proto": "*misa",
+      "forms": {
+        "N": "misa",
+        "SE": "misa",
+        "W": "mis"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "住宅",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/misa/",
+        "SE": "/misa/",
+        "W": "/mis/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C020",
+      "pos": "noun",
+      "gloss": "锅",
+      "proto": "*kotla",
+      "forms": {
+        "N": "kotla",
+        "SE": "kotla",
+        "W": "kotł"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "住宅",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/kotla/",
+        "SE": "/kotla/",
+        "W": "/kotɫ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C021",
+      "pos": "noun",
+      "gloss": "衣服",
+      "proto": "*odeva",
+      "forms": {
+        "N": "odeŵa",
+        "SE": "odeva",
+        "W": "odeŵ"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "生活",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/odewa/",
+        "SE": "/odeva/",
+        "W": "/odew/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C022",
+      "pos": "noun",
+      "gloss": "鞋",
+      "proto": "*obuta",
+      "forms": {
+        "N": "obuta",
+        "SE": "obuta",
+        "W": "obut"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "生活",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/obuta/",
+        "SE": "/obuta/",
+        "W": "/obut/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C023",
+      "pos": "noun",
+      "gloss": "手套",
+      "proto": "*rukava",
+      "forms": {
+        "N": "rukaŵa",
+        "SE": "rukava",
+        "W": "rukaŵ"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "生活",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/rukawa/",
+        "SE": "/rukava/",
+        "W": "/rukaw/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C024",
+      "pos": "noun",
+      "gloss": "面包",
+      "proto": "*xleb",
+      "forms": {
+        "N": "ħleb",
+        "SE": "hleb",
+        "W": "ħłeb"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "食物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/χleb/",
+        "SE": "/xleb/",
+        "W": "/χɫeb/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C025",
+      "pos": "noun",
+      "gloss": "汤",
+      "proto": "*sup",
+      "forms": {
+        "N": "sup",
+        "SE": "sup",
+        "W": "sup"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "食物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/sup/",
+        "SE": "/sup/",
+        "W": "/sup/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C026",
+      "pos": "noun",
+      "gloss": "盐",
+      "proto": "*sol",
+      "forms": {
+        "N": "sol",
+        "SE": "sol",
+        "W": "soł"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "食物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/sol/",
+        "SE": "/sol/",
+        "W": "/soɫ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C027",
+      "pos": "noun",
+      "gloss": "肉",
+      "proto": "*męso",
+      "forms": {
+        "N": "męso",
+        "SE": "meso",
+        "W": "męs"
+      },
+      "detail": {
+        "gender": "中",
+        "number": "SG",
+        "group": "食物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/mɛ̃so/",
+        "SE": "/meso/",
+        "W": "/mɛ̃s/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C028",
+      "pos": "noun",
+      "gloss": "果实",
+      "proto": "*plod",
+      "forms": {
+        "N": "plod",
+        "SE": "plod",
+        "W": "płod"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "食物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/plod/",
+        "SE": "/plod/",
+        "W": "/pɫod/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C029",
+      "pos": "noun",
+      "gloss": "茶",
+      "proto": "*čaj",
+      "forms": {
+        "N": "čaj",
+        "SE": "čaj",
+        "W": "čaj"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "食物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/t͡ʃaj/",
+        "SE": "/t͡ʃaj/",
+        "W": "/t͡ʃaj/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C030",
+      "pos": "noun",
+      "gloss": "鸡蛋",
+      "proto": "*jajce",
+      "forms": {
+        "N": "jajce",
+        "SE": "jajce",
+        "W": "jajc"
+      },
+      "detail": {
+        "gender": "中",
+        "number": "SG",
+        "group": "食物",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/jajt͡se/",
+        "SE": "/jajt͡se/",
+        "W": "/jajt͡s/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C031",
+      "pos": "noun",
+      "gloss": "车辆",
+      "proto": "*voz",
+      "forms": {
+        "N": "ŵoz",
+        "SE": "voz",
+        "W": "ŵoz"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "交通",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/woz/",
+        "SE": "/voz/",
+        "W": "/woz/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C032",
+      "pos": "noun",
+      "gloss": "桥梁",
+      "proto": "*most",
+      "forms": {
+        "N": "most",
+        "SE": "most",
+        "W": "most"
+      },
+      "detail": {
+        "gender": "阳",
+        "number": "SG",
+        "group": "交通",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/most/",
+        "SE": "/most/",
+        "W": "/most/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C033",
+      "pos": "noun",
+      "gloss": "河岸",
+      "proto": "*brega",
+      "forms": {
+        "N": "breġa",
+        "SE": "brega",
+        "W": "bre"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "地理",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/breɣa/",
+        "SE": "/breɡa/",
+        "W": "/bre/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C034",
+      "pos": "noun",
+      "gloss": "湖泊",
+      "proto": "*ozero",
+      "forms": {
+        "N": "ozero",
+        "SE": "ozero",
+        "W": "ozer"
+      },
+      "detail": {
+        "gender": "中",
+        "number": "SG",
+        "group": "地理",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/ozero/",
+        "SE": "/ozero/",
+        "W": "/ozer/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C035",
+      "pos": "noun",
+      "gloss": "雨",
+      "proto": "*dožda",
+      "forms": {
+        "N": "dožda",
+        "SE": "dožda",
+        "W": "dožd"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "自然",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/doʒda/",
+        "SE": "/doʒda/",
+        "W": "/doʒd/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C036",
+      "pos": "noun",
+      "gloss": "云",
+      "proto": "*oblaka",
+      "forms": {
+        "N": "oblaka",
+        "SE": "oblaka",
+        "W": "obłak"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "自然",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/oblaka/",
+        "SE": "/oblaka/",
+        "W": "/obɫak/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C037",
+      "pos": "noun",
+      "gloss": "太阳",
+      "proto": "*solnce",
+      "forms": {
+        "N": "solnce",
+        "SE": "solnce",
+        "W": "sołnc"
+      },
+      "detail": {
+        "gender": "中",
+        "number": "SG",
+        "group": "自然",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/solnt͡se/",
+        "SE": "/solnt͡se/",
+        "W": "/soɫnt͡s/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C038",
+      "pos": "noun",
+      "gloss": "月亮",
+      "proto": "*luna",
+      "forms": {
+        "N": "luna",
+        "SE": "luna",
+        "W": "łun"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "自然",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/luna/",
+        "SE": "/luna/",
+        "W": "/ɫun/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C039",
+      "pos": "noun",
+      "gloss": "树木",
+      "proto": "*drevo",
+      "forms": {
+        "N": "dreŵo",
+        "SE": "drevo",
+        "W": "dreŵ"
+      },
+      "detail": {
+        "gender": "中",
+        "number": "SG",
+        "group": "自然",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/drewo/",
+        "SE": "/drevo/",
+        "W": "/drew/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C040",
+      "pos": "noun",
+      "gloss": "草",
+      "proto": "*trava",
+      "forms": {
+        "N": "traŵa",
+        "SE": "trava",
+        "W": "traŵ"
+      },
+      "detail": {
+        "gender": "阴",
+        "number": "SG",
+        "group": "自然",
+        "paradigm": "noun-inflection-unvalidated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/trawa/",
+        "SE": "/trava/",
+        "W": "/traw/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C041",
+      "pos": "verb",
+      "gloss": "吃",
+      "proto": "*jedatʲ",
+      "forms": {
+        "N": "jedať",
+        "SE": "jedat",
+        "W": "jedaþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "饮食",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/jedatʲ/",
+        "SE": "/jedat/",
+        "W": "/jedaθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C042",
+      "pos": "verb",
+      "gloss": "喝",
+      "proto": "*pivatʲ",
+      "forms": {
+        "N": "piŵať",
+        "SE": "pivat",
+        "W": "piŵaþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "饮食",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/piwatʲ/",
+        "SE": "/pivat/",
+        "W": "/piwaθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C043",
+      "pos": "verb",
+      "gloss": "烹煮",
+      "proto": "*varitʲ",
+      "forms": {
+        "N": "ŵariť",
+        "SE": "varit",
+        "W": "ŵariþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "饮食",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/waritʲ/",
+        "SE": "/varit/",
+        "W": "/wariθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C044",
+      "pos": "verb",
+      "gloss": "打开",
+      "proto": "*otvoritʲ",
+      "forms": {
+        "N": "otŵoriť",
+        "SE": "otvorit",
+        "W": "otŵoriþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "生活",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/otworitʲ/",
+        "SE": "/otvorit/",
+        "W": "/otworiθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C045",
+      "pos": "verb",
+      "gloss": "关闭",
+      "proto": "*zakritʲ",
+      "forms": {
+        "N": "zakriť",
+        "SE": "zakrit",
+        "W": "zakriþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "生活",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/zakritʲ/",
+        "SE": "/zakrit/",
+        "W": "/zakriθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C046",
+      "pos": "verb",
+      "gloss": "拿起",
+      "proto": "*podnetʲ",
+      "forms": {
+        "N": "podneť",
+        "SE": "podnet",
+        "W": "podneþ"
+      },
+      "detail": {
+        "aspect": "PFV",
+        "group": "动作",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/podnetʲ/",
+        "SE": "/podnet/",
+        "W": "/podneθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C047",
+      "pos": "verb",
+      "gloss": "放下",
+      "proto": "*kladetʲ",
+      "forms": {
+        "N": "kladeť",
+        "SE": "kladet",
+        "W": "kładeþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "动作",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/kladetʲ/",
+        "SE": "/kladet/",
+        "W": "/kɫadeθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C048",
+      "pos": "verb",
+      "gloss": "寻找",
+      "proto": "*iskatʲ",
+      "forms": {
+        "N": "iskať",
+        "SE": "iskat",
+        "W": "iskaþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "认知",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/iskatʲ/",
+        "SE": "/iskat/",
+        "W": "/iskaθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C049",
+      "pos": "verb",
+      "gloss": "找到",
+      "proto": "*najditʲ",
+      "forms": {
+        "N": "najdiť",
+        "SE": "najdit",
+        "W": "najdiþ"
+      },
+      "detail": {
+        "aspect": "PFV",
+        "group": "认知",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/najditʲ/",
+        "SE": "/najdit/",
+        "W": "/najdiθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C050",
+      "pos": "verb",
+      "gloss": "询问",
+      "proto": "*pytatʲ",
+      "forms": {
+        "N": "pytať",
+        "SE": "pytat",
+        "W": "pytaþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "交流",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/pytatʲ/",
+        "SE": "/pytat/",
+        "W": "/pytaθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C051",
+      "pos": "verb",
+      "gloss": "回答",
+      "proto": "*otvetitʲ",
+      "forms": {
+        "N": "otŵetiť",
+        "SE": "otvetit",
+        "W": "otŵetiþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "交流",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/otwetitʲ/",
+        "SE": "/otvetit/",
+        "W": "/otwetiθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C052",
+      "pos": "verb",
+      "gloss": "学习",
+      "proto": "*učatʲ",
+      "forms": {
+        "N": "učať",
+        "SE": "učat",
+        "W": "učaþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "交流",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/ut͡ʃatʲ/",
+        "SE": "/ut͡ʃat/",
+        "W": "/ut͡ʃaθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C053",
+      "pos": "verb",
+      "gloss": "教授",
+      "proto": "*učitʲ",
+      "forms": {
+        "N": "učiť",
+        "SE": "učit",
+        "W": "učiþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "交流",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/ut͡ʃitʲ/",
+        "SE": "/ut͡ʃit/",
+        "W": "/ut͡ʃiθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C054",
+      "pos": "verb",
+      "gloss": "购买",
+      "proto": "*kupitʲ",
+      "forms": {
+        "N": "kupiť",
+        "SE": "kupit",
+        "W": "kupiþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "交易",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/kupitʲ/",
+        "SE": "/kupit/",
+        "W": "/kupiθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C055",
+      "pos": "verb",
+      "gloss": "售卖",
+      "proto": "*prodatʲ",
+      "forms": {
+        "N": "prodať",
+        "SE": "prodat",
+        "W": "prodaþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "交易",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/prodatʲ/",
+        "SE": "/prodat/",
+        "W": "/prodaθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C056",
+      "pos": "verb",
+      "gloss": "付款",
+      "proto": "*platitʲ",
+      "forms": {
+        "N": "platiť",
+        "SE": "platit",
+        "W": "płatiþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "交易",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/platitʲ/",
+        "SE": "/platit/",
+        "W": "/pɫatiθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C057",
+      "pos": "verb",
+      "gloss": "步行",
+      "proto": "*stupatʲ",
+      "forms": {
+        "N": "stupať",
+        "SE": "stupat",
+        "W": "stupaþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "行动",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/stupatʲ/",
+        "SE": "/stupat/",
+        "W": "/stupaθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C058",
+      "pos": "verb",
+      "gloss": "停下",
+      "proto": "*ostatʲ",
+      "forms": {
+        "N": "ostať",
+        "SE": "ostat",
+        "W": "ostaþ"
+      },
+      "detail": {
+        "aspect": "PFV",
+        "group": "行动",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/ostatʲ/",
+        "SE": "/ostat/",
+        "W": "/ostaθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C059",
+      "pos": "verb",
+      "gloss": "坐着",
+      "proto": "*sedetʲ",
+      "forms": {
+        "N": "sedeť",
+        "SE": "sedet",
+        "W": "sedeþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "行动",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/sedetʲ/",
+        "SE": "/sedet/",
+        "W": "/sedeθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C060",
+      "pos": "verb",
+      "gloss": "站立",
+      "proto": "*stojatʲ",
+      "forms": {
+        "N": "stojať",
+        "SE": "stojat",
+        "W": "stojaþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "行动",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/stojatʲ/",
+        "SE": "/stojat/",
+        "W": "/stojaθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C061",
+      "pos": "verb",
+      "gloss": "帮助",
+      "proto": "*pomogatʲ",
+      "forms": {
+        "N": "pomoġať",
+        "SE": "pomogat",
+        "W": "pomoġaþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "生活",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/pomoɣatʲ/",
+        "SE": "/pomoɡat/",
+        "W": "/pomoɣaθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C062",
+      "pos": "verb",
+      "gloss": "修理",
+      "proto": "*pravitʲ",
+      "forms": {
+        "N": "praŵiť",
+        "SE": "pravit",
+        "W": "praŵiþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "生活",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/prawitʲ/",
+        "SE": "/pravit/",
+        "W": "/prawiθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C063",
+      "pos": "verb",
+      "gloss": "洗净",
+      "proto": "*mytʲ",
+      "forms": {
+        "N": "myť",
+        "SE": "myt",
+        "W": "myþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "生活",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/mytʲ/",
+        "SE": "/myt/",
+        "W": "/myθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C064",
+      "pos": "verb",
+      "gloss": "切割",
+      "proto": "*rezatʲ",
+      "forms": {
+        "N": "rezať",
+        "SE": "rezat",
+        "W": "rezaþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "生活",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/rezatʲ/",
+        "SE": "/rezat/",
+        "W": "/rezaθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C065",
+      "pos": "verb",
+      "gloss": "记住",
+      "proto": "*pametatʲ",
+      "forms": {
+        "N": "pametať",
+        "SE": "pametat",
+        "W": "pametaþ"
+      },
+      "detail": {
+        "aspect": "IPFV",
+        "group": "认知",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/pametatʲ/",
+        "SE": "/pametat/",
+        "W": "/pametaθ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C066",
+      "pos": "adj",
+      "gloss": "红色",
+      "proto": "*rudenÿ",
+      "forms": {
+        "N": "rudenÿ",
+        "SE": "rudeni",
+        "W": "rudenÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/rudenɨ/",
+        "SE": "/rudeni/",
+        "W": "/rudenɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C067",
+      "pos": "adj",
+      "gloss": "绿色",
+      "proto": "*zelenÿ",
+      "forms": {
+        "N": "zelenÿ",
+        "SE": "zeleni",
+        "W": "zełenÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/zelenɨ/",
+        "SE": "/zeleni/",
+        "W": "/zeɫenɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C068",
+      "pos": "adj",
+      "gloss": "炎热",
+      "proto": "*goračÿ",
+      "forms": {
+        "N": "ġoračÿ",
+        "SE": "gorači",
+        "W": "ġoračÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/ɣorat͡ʃɨ/",
+        "SE": "/ɡorat͡ʃi/",
+        "W": "/ɣorat͡ʃɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C069",
+      "pos": "adj",
+      "gloss": "凉爽",
+      "proto": "*xladenÿ",
+      "forms": {
+        "N": "ħladenÿ",
+        "SE": "hladeni",
+        "W": "ħładenÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/χladenɨ/",
+        "SE": "/xladeni/",
+        "W": "/χɫadenɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C070",
+      "pos": "adj",
+      "gloss": "甜",
+      "proto": "*sladkÿ",
+      "forms": {
+        "N": "sladkÿ",
+        "SE": "sladki",
+        "W": "sładkÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/sladkɨ/",
+        "SE": "/sladki/",
+        "W": "/sɫadkɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C071",
+      "pos": "adj",
+      "gloss": "苦",
+      "proto": "*gorkÿ",
+      "forms": {
+        "N": "ġorkÿ",
+        "SE": "gorki",
+        "W": "ġorkÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/ɣorkɨ/",
+        "SE": "/ɡorki/",
+        "W": "/ɣorkɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C072",
+      "pos": "adj",
+      "gloss": "咸",
+      "proto": "*solnÿ",
+      "forms": {
+        "N": "solnÿ",
+        "SE": "solni",
+        "W": "sołnÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/solnɨ/",
+        "SE": "/solni/",
+        "W": "/soɫnɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C073",
+      "pos": "adj",
+      "gloss": "洁净",
+      "proto": "*čistÿ",
+      "forms": {
+        "N": "čistÿ",
+        "SE": "čisti",
+        "W": "čistÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/t͡ʃistɨ/",
+        "SE": "/t͡ʃisti/",
+        "W": "/t͡ʃistɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C074",
+      "pos": "adj",
+      "gloss": "肮脏",
+      "proto": "*grjaznÿ",
+      "forms": {
+        "N": "ġrjaznÿ",
+        "SE": "grjazni",
+        "W": "ġrjaznÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/ɣrjaznɨ/",
+        "SE": "/ɡrjazni/",
+        "W": "/ɣrjaznɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C075",
+      "pos": "adj",
+      "gloss": "安全",
+      "proto": "*bezpečnÿ",
+      "forms": {
+        "N": "bezpečnÿ",
+        "SE": "bezpečni",
+        "W": "bezpečnÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/bezpet͡ʃnɨ/",
+        "SE": "/bezpet͡ʃni/",
+        "W": "/bezpet͡ʃnɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C076",
+      "pos": "adj",
+      "gloss": "危险",
+      "proto": "*opasnÿ",
+      "forms": {
+        "N": "opasnÿ",
+        "SE": "opasni",
+        "W": "opasnÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/opasnɨ/",
+        "SE": "/opasni/",
+        "W": "/opasnɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C077",
+      "pos": "adj",
+      "gloss": "空置",
+      "proto": "*praznÿ",
+      "forms": {
+        "N": "praznÿ",
+        "SE": "prazni",
+        "W": "praznÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/praznɨ/",
+        "SE": "/prazni/",
+        "W": "/praznɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C078",
+      "pos": "adj",
+      "gloss": "饱满",
+      "proto": "*polnÿ",
+      "forms": {
+        "N": "polnÿ",
+        "SE": "polni",
+        "W": "połnÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "性质",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/polnɨ/",
+        "SE": "/polni/",
+        "W": "/poɫnɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C079",
+      "pos": "adj",
+      "gloss": "饥饿",
+      "proto": "*golodnÿ",
+      "forms": {
+        "N": "ġolodnÿ",
+        "SE": "golodni",
+        "W": "ġołodnÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "状态",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/ɣolodnɨ/",
+        "SE": "/ɡolodni/",
+        "W": "/ɣoɫodnɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C080",
+      "pos": "adj",
+      "gloss": "口渴",
+      "proto": "*žadnÿ",
+      "forms": {
+        "N": "žadnÿ",
+        "SE": "žadni",
+        "W": "žadnÿ"
+      },
+      "detail": {
+        "morph": "H",
+        "degree": "QUAL",
+        "group": "状态",
+        "form": "阳性主格",
+        "inflection": "not-yet-validated"
+      },
+      "rules": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/ʒadnɨ/",
+        "SE": "/ʒadni/",
+        "W": "/ʒadnɨ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C081",
+      "pos": "demonstrative",
+      "gloss": "这",
+      "proto": "*se",
+      "forms": {
+        "N": "se",
+        "SE": "se",
+        "W": "se"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/se/",
+        "SE": "/se/",
+        "W": "/se/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C082",
+      "pos": "demonstrative",
+      "gloss": "那",
+      "proto": "*to",
+      "forms": {
+        "N": "to",
+        "SE": "to",
+        "W": "to"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/to/",
+        "SE": "/to/",
+        "W": "/to/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C083",
+      "pos": "adverb",
+      "gloss": "这里",
+      "proto": "*sede",
+      "forms": {
+        "N": "sed",
+        "SE": "sede",
+        "W": "sed"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/sed/",
+        "SE": "/sede/",
+        "W": "/sed/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C084",
+      "pos": "adverb",
+      "gloss": "那里",
+      "proto": "*tade",
+      "forms": {
+        "N": "tad",
+        "SE": "tade",
+        "W": "tad"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/tad/",
+        "SE": "/tade/",
+        "W": "/tad/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C085",
+      "pos": "adverb",
+      "gloss": "现在",
+      "proto": "*nÿne",
+      "forms": {
+        "N": "nÿn",
+        "SE": "nin",
+        "W": "nÿn"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/nɨn/",
+        "SE": "/nin/",
+        "W": "/nɨn/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C086",
+      "pos": "adverb",
+      "gloss": "刚才",
+      "proto": "*prÿde",
+      "forms": {
+        "N": "prÿd",
+        "SE": "prid",
+        "W": "prÿd"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/prɨd/",
+        "SE": "/prid/",
+        "W": "/prɨd/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C087",
+      "pos": "adverb",
+      "gloss": "已经",
+      "proto": "*už",
+      "forms": {
+        "N": "už",
+        "SE": "už",
+        "W": "už"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/uʒ/",
+        "SE": "/uʒ/",
+        "W": "/uʒ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C088",
+      "pos": "adverb",
+      "gloss": "尚未",
+      "proto": "*neže",
+      "forms": {
+        "N": "ńež",
+        "SE": "neže",
+        "W": "než"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/ɲeʒ/",
+        "SE": "/neʒe/",
+        "W": "/neʒ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C089",
+      "pos": "adverb",
+      "gloss": "经常",
+      "proto": "*často",
+      "forms": {
+        "N": "čast",
+        "SE": "často",
+        "W": "čast"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/t͡ʃast/",
+        "SE": "/t͡ʃasto/",
+        "W": "/t͡ʃast/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C090",
+      "pos": "adverb",
+      "gloss": "有时",
+      "proto": "*inoga",
+      "forms": {
+        "N": "inoġa",
+        "SE": "inoga",
+        "W": "inoġ"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/inoɣa/",
+        "SE": "/inoɡa/",
+        "W": "/inoɣ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C091",
+      "pos": "interrogative",
+      "gloss": "为什么",
+      "proto": "*začo",
+      "forms": {
+        "N": "začo",
+        "SE": "začo",
+        "W": "začo"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/zat͡ʃo/",
+        "SE": "/zat͡ʃo/",
+        "W": "/zat͡ʃo/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C092",
+      "pos": "interrogative",
+      "gloss": "怎么",
+      "proto": "*kak",
+      "forms": {
+        "N": "kak",
+        "SE": "kak",
+        "W": "kak"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/kak/",
+        "SE": "/kak/",
+        "W": "/kak/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C093",
+      "pos": "conjunction",
+      "gloss": "因为",
+      "proto": "*bože",
+      "forms": {
+        "N": "bo",
+        "SE": "bo",
+        "W": "bo"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/bo/",
+        "SE": "/bo/",
+        "W": "/bo/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C094",
+      "pos": "conjunction",
+      "gloss": "如果",
+      "proto": "*jeli",
+      "forms": {
+        "N": "jel",
+        "SE": "jeli",
+        "W": "jel"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/jel/",
+        "SE": "/jeli/",
+        "W": "/jel/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C095",
+      "pos": "particle",
+      "gloss": "请",
+      "proto": "*prositʲ",
+      "forms": {
+        "N": "proś",
+        "SE": "pros",
+        "W": "proś"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/proɕ/",
+        "SE": "/pros/",
+        "W": "/proɕ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C096",
+      "pos": "interjection",
+      "gloss": "感谢",
+      "proto": "*blagodar",
+      "forms": {
+        "N": "blaġ",
+        "SE": "blag",
+        "W": "błaġ"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/blaɣ/",
+        "SE": "/blaɡ/",
+        "W": "/bɫaɣ/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C097",
+      "pos": "interjection",
+      "gloss": "问候",
+      "proto": "*zdravin",
+      "forms": {
+        "N": "zdran",
+        "SE": "zdran",
+        "W": "zdran"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/zdran/",
+        "SE": "/zdran/",
+        "W": "/zdran/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C098",
+      "pos": "interjection",
+      "gloss": "告别",
+      "proto": "*dovid",
+      "forms": {
+        "N": "doŵid",
+        "SE": "dovid",
+        "W": "doŵid"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/dowid/",
+        "SE": "/dovid/",
+        "W": "/dowid/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C099",
+      "pos": "numeral",
+      "gloss": "一",
+      "proto": "*jedn",
+      "forms": {
+        "N": "jedn",
+        "SE": "jedn",
+        "W": "jedn"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/jedn/",
+        "SE": "/jedn/",
+        "W": "/jedn/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    },
+    {
+      "id": "C100",
+      "pos": "numeral",
+      "gloss": "二",
+      "proto": "*dva",
+      "forms": {
+        "N": "dŵa",
+        "SE": "dva",
+        "W": "dŵa"
+      },
+      "detail": {
+        "group": "基本功能词",
+        "form": "不屈折词/独立感叹词"
+      },
+      "rules": [
+        "LEX-C"
+      ],
+      "notes": [
+        "词汇化高频缩约，不能将此缩略规则机械套用到其他词",
+        "现代词典原形已建；完整格位与动词变位需以独立范式验证"
+      ],
+      "ipa": {
+        "N": "/dwa/",
+        "SE": "/dva/",
+        "W": "/dwa/"
+      },
+      "ipaStatus": "规则宽式音位转写；重音和连读未标定",
+      "stage": "v06-core",
+      "version": "V0.6",
+      "source": [
+        "assets/data/zagren-core100-v06.json"
+      ]
+    }
+  ]
+}
