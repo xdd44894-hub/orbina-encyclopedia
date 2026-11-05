@@ -12,7 +12,7 @@ ai_search: true
 
 本条是**现行规范唯一总入口**。早期形态学和原始比较词汇仍保留为历史语料；只要 V0.6 与旧版出现词形冲突，先查本条的书写规范与 [V0.3《扎格伦字典》]({{ '/zagren-dictionary/' | relative_url }})，再查原始屈折格位，不能混为同一历史时段。未完成验证的格尾、重音或现代动词系统不会被擅自宣称已完成。
 
-**[进入藏朔原语统一资料中心]({{ '/zagren/' | relative_url }})** · [下载统一资料总卷]({{ '/assets/data/zagren-language-compendium-v06.txt' | relative_url }})
+**[进入藏朔原语统一资料中心]({{ '/zagren/' | relative_url }})** · [下载统一资料总卷]({{ '/assets/data/zagren-language-compendium-v07.txt' | relative_url }})
 
 ## V0.7 第一阶段：句法和形态架构正式统一
 
@@ -88,7 +88,7 @@ ai_search: true
 | **[50句日常受控语料]({{ '/zagren-corpus/' | relative_url }})** | 50句 × 3方言，测试陈述、及物、形容词、疑问、将来和标点 |
 | **[《雪原上的一天》]({{ '/zagren-showcase/' | relative_url }})** | V0.5保留的32句比较文学历史基准，含旧版IPA |
 | **[完整 TXT 字典]({{ '/assets/data/zagren-dictionary-v03.txt' | relative_url }})** | 可离线阅读的统一词典正文 |
-| **[统一语言资料总卷 TXT]({{ '/assets/data/zagren-language-compendium-v06.txt' | relative_url }})** | 单一文档汇集当前总纲、字典、50句新语料、32句文学和历史语法研究 |
+| **[统一语言资料总卷 TXT]({{ '/assets/data/zagren-language-compendium-v07.txt' | relative_url }})** | 单一文档汇集当前总纲、字典、50句新语料、32句文学和历史语法研究 |
 | **[字典 JSON]({{ '/assets/data/zagren-dictionary-v03.json' | relative_url }})** | 词条、方言、IPA和版本状态的现行机器可读数据 |
 | **[语言资料总索引 JSON]({{ '/assets/data/zagren-language-v06-manifest.json' | relative_url }})** | 所有阶段的规范层级、资料路径、计数口径及音位字母表 |
 
