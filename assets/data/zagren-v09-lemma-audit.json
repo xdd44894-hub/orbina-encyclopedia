@@ -1,0 +1,742 @@
+{
+  "title": "Žaġręn V0.9 · 四祖语动词现代词典原形补全及142旧词屈折审订计划",
+  "date": "2026-11-06",
+  "version": "V0.9-lemma-1",
+  "scope": "正式确定四条三方言不定式原形；不强行改写142条已审查旧词，不夸大词形证据",
+  "sources": [
+    "assets/data/zagren-dictionary-v04.json",
+    "assets/data/zagren-modifier-morphology-v04.json",
+    "assets/data/zagren-v08-diachrony.json"
+  ],
+  "decisionBasis": [
+    "V0.8已存在的三方言候选不定式",
+    "既有结尾对应：N ť/tʲ；SE t/t；W þ/θ",
+    "SE 的早期祖语 ÿ 对应 i；N/W 保留 ÿ",
+    "四个词均存在 V0.4历史分词关系，但分词不等于已证实的现代变位",
+    "不增加第22条普适音变"
+  ],
+  "changes": [
+    {
+      "id": "D0067",
+      "gloss": "结冻、冻结",
+      "proto": "*zamrznutʲ",
+      "forms": {
+        "N": "zamrznuť",
+        "SE": "zamrznut",
+        "W": "zamrznuþ"
+      },
+      "ipa": {
+        "N": "/zamrznutʲ/",
+        "SE": "/zamrznut/",
+        "W": "/zamrznuθ/"
+      },
+      "aspect": "PFV",
+      "valency": "—",
+      "evidence": "V0.4分词P20：*zamrznutʲ → 历史结果分词词干 zamrzl；词根交替尚未定为现代范式",
+      "modernParadigmStatus": "not-established",
+      "boundary": "不预设现在时、过去时以及分词词干的统一形式",
+      "decision": "registered-modern-infinitive-lemma-only"
+    },
+    {
+      "id": "D0077",
+      "gloss": "融化",
+      "proto": "*tajatʲ",
+      "forms": {
+        "N": "tajať",
+        "SE": "tajat",
+        "W": "tajaþ"
+      },
+      "ipa": {
+        "N": "/tajatʲ/",
+        "SE": "/tajat/",
+        "W": "/tajaθ/"
+      },
+      "aspect": "IPFV",
+      "valency": "—",
+      "evidence": "V0.4分词P10：*tajatʲ → 历史主动现在分词词干 tajając",
+      "modernParadigmStatus": "not-established",
+      "boundary": "不预设现代现在时 -aj- 交替和完整人称形式",
+      "decision": "registered-modern-infinitive-lemma-only"
+    },
+    {
+      "id": "D0079",
+      "gloss": "使……冰封",
+      "proto": "*zamrazitʲ",
+      "forms": {
+        "N": "zamraziť",
+        "SE": "zamrazit",
+        "W": "zamraziþ"
+      },
+      "ipa": {
+        "N": "/zamrazitʲ/",
+        "SE": "/zamrazit/",
+        "W": "/zamraziθ/"
+      },
+      "aspect": "PFV",
+      "valency": "ACC",
+      "evidence": "V0.4分词P19：*zamrazitʲ → 历史被动过去分词词干 zamrazen",
+      "modernParadigmStatus": "not-established",
+      "boundary": "不把分词 -en 系列直接作为现代动词变位规则",
+      "decision": "registered-modern-infinitive-lemma-only"
+    },
+    {
+      "id": "D0085",
+      "gloss": "忘记",
+      "proto": "*zabÿtʲ",
+      "forms": {
+        "N": "zabÿť",
+        "SE": "zabit",
+        "W": "zabÿþ"
+      },
+      "ipa": {
+        "N": "/zabɨtʲ/",
+        "SE": "/zabit/",
+        "W": "/zabɨθ/"
+      },
+      "aspect": "PFV",
+      "valency": "ACC",
+      "evidence": "V0.4分词P18：*zabÿtʲ → 历史被动过去分词词干 zabÿt",
+      "modernParadigmStatus": "not-established",
+      "boundary": "此词可能有不规则范式，未核定现代屈折",
+      "decision": "registered-modern-infinitive-lemma-only"
+    }
+  ],
+  "after": {
+    "dictionaryEntries": 339,
+    "threeDialectLemmas": 339,
+    "broadIPA": 1017,
+    "registeredModernLemmas": 197,
+    "reviewedRetainedOldLemmas": 142,
+    "protoOnlyRemaining": 0
+  },
+  "nextMorphologyReview": {
+    "total": 142,
+    "byPos": {
+      "noun": {
+        "count": 26,
+        "entries": [
+          {
+            "id": "D0001",
+            "gloss": "傍晚"
+          },
+          {
+            "id": "D0003",
+            "gloss": "冰"
+          },
+          {
+            "id": "D0006",
+            "gloss": "词／单词"
+          },
+          {
+            "id": "D0007",
+            "gloss": "村庄"
+          },
+          {
+            "id": "D0008",
+            "gloss": "大门"
+          },
+          {
+            "id": "D0010",
+            "gloss": "地区"
+          },
+          {
+            "id": "D0017",
+            "gloss": "河流"
+          },
+          {
+            "id": "D0018",
+            "gloss": "灰烬"
+          },
+          {
+            "id": "D0023",
+            "gloss": "雷鸣"
+          },
+          {
+            "id": "D0024",
+            "gloss": "炉"
+          },
+          {
+            "id": "D0026",
+            "gloss": "男子"
+          },
+          {
+            "id": "D0028",
+            "gloss": "皮肤"
+          },
+          {
+            "id": "D0030",
+            "gloss": "荣耀"
+          },
+          {
+            "id": "D0033",
+            "gloss": "山"
+          },
+          {
+            "id": "D0036",
+            "gloss": "尸体"
+          },
+          {
+            "id": "D0037",
+            "gloss": "石头"
+          },
+          {
+            "id": "D0038",
+            "gloss": "手"
+          },
+          {
+            "id": "D0040",
+            "gloss": "死亡"
+          },
+          {
+            "id": "D0042",
+            "gloss": "头颅"
+          },
+          {
+            "id": "D0046",
+            "gloss": "夜晚"
+          },
+          {
+            "id": "D0048",
+            "gloss": "鱼"
+          },
+          {
+            "id": "D0049",
+            "gloss": "噪声"
+          },
+          {
+            "id": "D0050",
+            "gloss": "真实"
+          },
+          {
+            "id": "D0051",
+            "gloss": "纸页"
+          },
+          {
+            "id": "D0052",
+            "gloss": "桌子"
+          },
+          {
+            "id": "D0053",
+            "gloss": "姊妹"
+          }
+        ]
+      },
+      "verb": {
+        "count": 35,
+        "entries": [
+          {
+            "id": "D0054",
+            "gloss": "安放、放置"
+          },
+          {
+            "id": "D0055",
+            "gloss": "安放完成"
+          },
+          {
+            "id": "D0056",
+            "gloss": "把话说完"
+          },
+          {
+            "id": "D0057",
+            "gloss": "奔跑（反复）"
+          },
+          {
+            "id": "D0058",
+            "gloss": "存在、是"
+          },
+          {
+            "id": "D0059",
+            "gloss": "带来"
+          },
+          {
+            "id": "D0060",
+            "gloss": "等候"
+          },
+          {
+            "id": "D0061",
+            "gloss": "抵达终点"
+          },
+          {
+            "id": "D0062",
+            "gloss": "反复搬运"
+          },
+          {
+            "id": "D0063",
+            "gloss": "给予"
+          },
+          {
+            "id": "D0064",
+            "gloss": "喊叫"
+          },
+          {
+            "id": "D0065",
+            "gloss": "呼唤"
+          },
+          {
+            "id": "D0066",
+            "gloss": "讲话"
+          },
+          {
+            "id": "D0068",
+            "gloss": "开始喊叫"
+          },
+          {
+            "id": "D0069",
+            "gloss": "看见"
+          },
+          {
+            "id": "D0070",
+            "gloss": "看见（一次实现）"
+          },
+          {
+            "id": "D0071",
+            "gloss": "来回走动"
+          },
+          {
+            "id": "D0072",
+            "gloss": "能够"
+          },
+          {
+            "id": "D0073",
+            "gloss": "去、前往"
+          },
+          {
+            "id": "D0074",
+            "gloss": "燃烧"
+          },
+          {
+            "id": "D0075",
+            "gloss": "饶恕"
+          },
+          {
+            "id": "D0076",
+            "gloss": "饶恕一次"
+          },
+          {
+            "id": "D0080",
+            "gloss": "守卫、保护"
+          },
+          {
+            "id": "D0081",
+            "gloss": "睡眠"
+          },
+          {
+            "id": "D0082",
+            "gloss": "睡一阵"
+          },
+          {
+            "id": "D0083",
+            "gloss": "听到（有结果）"
+          },
+          {
+            "id": "D0084",
+            "gloss": "听见、听"
+          },
+          {
+            "id": "D0086",
+            "gloss": "携带（单次过程）"
+          },
+          {
+            "id": "D0087",
+            "gloss": "写"
+          },
+          {
+            "id": "D0088",
+            "gloss": "写完"
+          },
+          {
+            "id": "D0089",
+            "gloss": "知道"
+          },
+          {
+            "id": "D0090",
+            "gloss": "制作、做"
+          },
+          {
+            "id": "D0091",
+            "gloss": "注视"
+          },
+          {
+            "id": "D0092",
+            "gloss": "走来、抵达（过程）"
+          },
+          {
+            "id": "D0093",
+            "gloss": "做成"
+          }
+        ]
+      },
+      "adj": {
+        "count": 41,
+        "entries": [
+          {
+            "id": "D0094",
+            "gloss": "白色"
+          },
+          {
+            "id": "D0095",
+            "gloss": "北方的"
+          },
+          {
+            "id": "D0096",
+            "gloss": "冰质的"
+          },
+          {
+            "id": "D0097",
+            "gloss": "潮冷"
+          },
+          {
+            "id": "D0098",
+            "gloss": "潮湿"
+          },
+          {
+            "id": "D0099",
+            "gloss": "沉重"
+          },
+          {
+            "id": "D0101",
+            "gloss": "干燥"
+          },
+          {
+            "id": "D0102",
+            "gloss": "工业的"
+          },
+          {
+            "id": "D0103",
+            "gloss": "古老"
+          },
+          {
+            "id": "D0104",
+            "gloss": "寒冷"
+          },
+          {
+            "id": "D0105",
+            "gloss": "黑色"
+          },
+          {
+            "id": "D0106",
+            "gloss": "荒凉"
+          },
+          {
+            "id": "D0107",
+            "gloss": "昏暗"
+          },
+          {
+            "id": "D0109",
+            "gloss": "寂静"
+          },
+          {
+            "id": "D0110",
+            "gloss": "坚硬"
+          },
+          {
+            "id": "D0111",
+            "gloss": "巨大"
+          },
+          {
+            "id": "D0112",
+            "gloss": "可怖"
+          },
+          {
+            "id": "D0113",
+            "gloss": "蓝色"
+          },
+          {
+            "id": "D0114",
+            "gloss": "邻近"
+          },
+          {
+            "id": "D0115",
+            "gloss": "林地的"
+          },
+          {
+            "id": "D0116",
+            "gloss": "漫长"
+          },
+          {
+            "id": "D0117",
+            "gloss": "明亮"
+          },
+          {
+            "id": "D0118",
+            "gloss": "内部的"
+          },
+          {
+            "id": "D0119",
+            "gloss": "年轻"
+          },
+          {
+            "id": "D0120",
+            "gloss": "强壮"
+          },
+          {
+            "id": "D0121",
+            "gloss": "清晰"
+          },
+          {
+            "id": "D0122",
+            "gloss": "秋季的"
+          },
+          {
+            "id": "D0123",
+            "gloss": "软弱"
+          },
+          {
+            "id": "D0124",
+            "gloss": "山区的"
+          },
+          {
+            "id": "D0125",
+            "gloss": "深"
+          },
+          {
+            "id": "D0126",
+            "gloss": "石制的"
+          },
+          {
+            "id": "D0127",
+            "gloss": "死去的"
+          },
+          {
+            "id": "D0128",
+            "gloss": "铁锈色的"
+          },
+          {
+            "id": "D0130",
+            "gloss": "温暖"
+          },
+          {
+            "id": "D0131",
+            "gloss": "夏季的"
+          },
+          {
+            "id": "D0132",
+            "gloss": "小"
+          },
+          {
+            "id": "D0133",
+            "gloss": "新"
+          },
+          {
+            "id": "D0134",
+            "gloss": "血缘的"
+          },
+          {
+            "id": "D0135",
+            "gloss": "迅速"
+          },
+          {
+            "id": "D0136",
+            "gloss": "遥远"
+          },
+          {
+            "id": "D0137",
+            "gloss": "最后的"
+          }
+        ]
+      },
+      "participle": {
+        "count": 19,
+        "entries": [
+          {
+            "id": "D0138",
+            "gloss": "安放好的"
+          },
+          {
+            "id": "D0139",
+            "gloss": "被冰封的"
+          },
+          {
+            "id": "D0140",
+            "gloss": "被带来的"
+          },
+          {
+            "id": "D0141",
+            "gloss": "被看见的"
+          },
+          {
+            "id": "D0142",
+            "gloss": "被饶恕的"
+          },
+          {
+            "id": "D0143",
+            "gloss": "被遗忘的"
+          },
+          {
+            "id": "D0144",
+            "gloss": "喊叫中的"
+          },
+          {
+            "id": "D0145",
+            "gloss": "讲话中的"
+          },
+          {
+            "id": "D0146",
+            "gloss": "燃烧中的"
+          },
+          {
+            "id": "D0148",
+            "gloss": "守护、保卫中的"
+          },
+          {
+            "id": "D0149",
+            "gloss": "听见、听中的"
+          },
+          {
+            "id": "D0150",
+            "gloss": "携带（单次过程）中的"
+          },
+          {
+            "id": "D0151",
+            "gloss": "写成的"
+          },
+          {
+            "id": "D0152",
+            "gloss": "已讲述的"
+          },
+          {
+            "id": "D0153",
+            "gloss": "已经结冻的"
+          },
+          {
+            "id": "D0154",
+            "gloss": "正在融化的"
+          },
+          {
+            "id": "D0155",
+            "gloss": "注视中的"
+          },
+          {
+            "id": "D0156",
+            "gloss": "走来、抵达（过程）中的"
+          },
+          {
+            "id": "D0157",
+            "gloss": "做成的"
+          }
+        ]
+      },
+      "pronoun": {
+        "count": 7,
+        "entries": [
+          {
+            "id": "D0158",
+            "gloss": "你"
+          },
+          {
+            "id": "D0159",
+            "gloss": "你们"
+          },
+          {
+            "id": "D0160",
+            "gloss": "他"
+          },
+          {
+            "id": "D0161",
+            "gloss": "他们／她们"
+          },
+          {
+            "id": "D0162",
+            "gloss": "她"
+          },
+          {
+            "id": "D0163",
+            "gloss": "我"
+          },
+          {
+            "id": "D0164",
+            "gloss": "我们"
+          }
+        ]
+      },
+      "adverb": {
+        "count": 2,
+        "entries": [
+          {
+            "id": "D0165",
+            "gloss": "今天"
+          },
+          {
+            "id": "D0166",
+            "gloss": "明天"
+          }
+        ]
+      },
+      "preposition": {
+        "count": 6,
+        "entries": [
+          {
+            "id": "D0168",
+            "gloss": "从……"
+          },
+          {
+            "id": "D0169",
+            "gloss": "到……旁"
+          },
+          {
+            "id": "D0170",
+            "gloss": "与……一起"
+          },
+          {
+            "id": "D0171",
+            "gloss": "在……里面"
+          },
+          {
+            "id": "D0172",
+            "gloss": "在……旁"
+          },
+          {
+            "id": "D0173",
+            "gloss": "在……上"
+          }
+        ]
+      },
+      "conjunction": {
+        "count": 3,
+        "entries": [
+          {
+            "id": "D0174",
+            "gloss": "比……"
+          },
+          {
+            "id": "D0175",
+            "gloss": "但是"
+          },
+          {
+            "id": "D0176",
+            "gloss": "和／并且"
+          }
+        ]
+      },
+      "particle": {
+        "count": 3,
+        "entries": [
+          {
+            "id": "D0177",
+            "gloss": "不／否定"
+          },
+          {
+            "id": "D0178",
+            "gloss": "条件式助词"
+          },
+          {
+            "id": "D0179",
+            "gloss": "未完成体将来助词"
+          }
+        ]
+      }
+    },
+    "reviewOrder": [
+      "35个旧动词：确认各自变位类型、不规则词根和完成体区别",
+      "26个旧名词：确认历史六格到现代方言的格尾与复数",
+      "41个旧形容词与19个分词：与名词一致及词干交替",
+      "其余21个代词/副词/介词/连词/助词：语法功能词独立核查"
+    ],
+    "rule": "保留V0.8已审查未改原形；类推产物须和既有历史范式及句法互相验证后才能进入正式屈折"
+  },
+  "validation": {
+    "allModernLemmasHaveThreeBranches": true,
+    "allIPATranscriptionsWideUnstressed": true,
+    "historicalEntriesChanged": false
+  }
+}
