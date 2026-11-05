@@ -1,0 +1,1178 @@
+{
+  "title": "藏朔原语 Žaġręn V0.8：历史音系与词形表面一致性框架",
+  "date": "2026-11-06",
+  "stage": "V0.8-phonology-1",
+  "status": "canonical-family-updates; stress-and-full-syllabification-unresolved",
+  "sourceFiles": [
+    "assets/data/zagren-dictionary-v04.json",
+    "assets/data/zagren-v06-phonology-lexicon.json",
+    "assets/data/zagren-v08-lexical-audit.json",
+    "assets/js/zagren-phonology-v08.js"
+  ],
+  "normativePrinciples": [
+    "保留V0.6已有21条音变及其明示语境，不把例外词的缩略机械扩展到全部相似词根。",
+    "现行词典原形、历史复数格尾和派生词存在形态音位层，不得将主格脱音结果自动复制到所有格。",
+    "本轮新增4条同源词族的作用域扩展，仅在已登记词根与方言中运行。",
+    "区分单词词典原形和有格标记的完整名词短语：西部有生宾格 za 属于句法而非词根。",
+    "IPA 字母映射属于宽式音位；声学实现、音节边界、词汇重音和疑问语调尚未确定。",
+    "可见元音核为核查指标而非音系法规。无书写元音的短小词可能是附着词，不能强行补音。"
+  ],
+  "historyPipeline": [
+    {
+      "id": "H0",
+      "name": "内部祖语构拟",
+      "input": "proto *- 形式",
+      "note": "星号构拟不是现实学界对原始斯拉夫语的认证"
+    },
+    {
+      "id": "H1",
+      "name": "早期方言分化",
+      "input": "V0.1–V0.5比较词典及原始形态范式",
+      "note": "历史底稿保留，非全部等同现行V0.8"
+    },
+    {
+      "id": "H2",
+      "name": "共同音变",
+      "rules": [
+        "C01",
+        "C02",
+        "C03",
+        "C04"
+      ],
+      "note": "仅限已登记语音和词汇条件"
+    },
+    {
+      "id": "H3",
+      "name": "北东南西差异",
+      "rules": [
+        "N11",
+        "N12",
+        "N13",
+        "N14",
+        "N15",
+        "N16",
+        "N17",
+        "SE11",
+        "SE12",
+        "SE13",
+        "SE14",
+        "SE15",
+        "W11",
+        "W12",
+        "W13",
+        "W14",
+        "W15"
+      ],
+      "note": "明示方言顺序和相互独立的音变"
+    },
+    {
+      "id": "H4",
+      "name": "V0.8词族类推与跨词性一致",
+      "rules": [
+        "N13-F-LIVE",
+        "N13-F-LIVE-ADJ",
+        "N13-F-LIVE-PTCP",
+        "SE12-F-WINTER"
+      ],
+      "note": "4条仅限具体词族的延伸，不能泛化"
+    },
+    {
+      "id": "H5",
+      "name": "历史格位与现行表面形式",
+      "note": "形态词干/词尾相互作用；西部主格词尾弱化不意味着所有格都弱化"
+    },
+    {
+      "id": "H6",
+      "name": "实际语流与词汇重音",
+      "status": "pending",
+      "note": "未给IPA写入假定重音或未验证的连读"
+    }
+  ],
+  "inheritedSoundLaws": [
+    {
+      "id": "C01",
+      "scope": "三地",
+      "description": "词根内部 /l,ɫ/ + 弱读 /o/ + /k,d/ 的元音脱落",
+      "example": "ħolod→ħold / holod→hold / ħołod→ħołd；moloko→molko",
+      "caveat": "限于可确认弱读的词根；不机械删除全部o"
+    },
+    {
+      "id": "C02",
+      "scope": "三地",
+      "description": "边界类派生词中 -nic(a) / -nic 失去弱读 i，成为 -nc(a) / -nc",
+      "example": "ġranica→ġranca；granica→granca；ġranic→ġranc",
+      "caveat": "现阶段仅验证这一派生词族"
+    },
+    {
+      "id": "C03",
+      "scope": "三地",
+      "description": "高频弱读副词 ešče 的 e- 脱落及 šč > š 合流",
+      "example": "ešče→še",
+      "caveat": "词汇化缩约，不任意推广到所有 šč 词根"
+    },
+    {
+      "id": "C04",
+      "scope": "三地",
+      "description": "高频风词词干末 -etr > -er（/t/ 在复杂韵尾中脱落）",
+      "example": "ŵetr→ŵer；vetr→ver",
+      "caveat": "暂限气象词及经验证的同源词"
+    },
+    {
+      "id": "N11",
+      "scope": "北部",
+      "description": "词首 /sne/ > /sę/（鼻音失去辅音地位，元音鼻化）",
+      "example": "sneġ→sęġ",
+      "caveat": "也可作用于复合词词根的起始位置"
+    },
+    {
+      "id": "N12",
+      "scope": "北部",
+      "description": "历史软音节尾触发 /o/ 前化为 /ø/，后经类推推广到全词干",
+      "example": "oġń→ӧġń；kośť→kӧśť",
+      "caveat": "词干音变；不能见软音就无条件换字"
+    },
+    {
+      "id": "N13",
+      "scope": "北部",
+      "description": "/ʒ/ 在后接 /e,i/ 环境软化成 /ʑ/，写ẑ",
+      "example": "železo→ẑelezo；žiŵot→ẑiŵot",
+      "caveat": "不影响后接 a、o 的 ž"
+    },
+    {
+      "id": "N14",
+      "scope": "北部",
+      "description": "历史 /tʲr/ > /tʰr/；新增字母 ṱ = /tʰ/，区别于 ť、t",
+      "example": "ťruba→ṱruba；ťrubu→ṱrubu",
+      "caveat": "仅该音丛起源，不把所有t变送气"
+    },
+    {
+      "id": "N15",
+      "scope": "北部",
+      "description": "高频中性时间词 utro 末尾 -o 弱化脱落",
+      "example": "utro→utr",
+      "caveat": "词形类推后需重新推导变格"
+    },
+    {
+      "id": "N16",
+      "scope": "北部",
+      "description": "新祖语软化辅音 /kʲ,rʲ/ 后 /u/ 前化为 /y/，写 ү",
+      "example": "*kʲuta→ǩүta；*rʲud→rjүd",
+      "caveat": "不能把普通u全部换成ү"
+    },
+    {
+      "id": "N17",
+      "scope": "北部",
+      "description": "新祖语 *kʲ > ǩ，*dj > ď，*rʲ > rj",
+      "example": "*kʲel→ǩel；*medja→meďa；*rʲud→rjүd",
+      "caveat": "新增祖语词根的示范性演变"
+    },
+    {
+      "id": "SE11",
+      "scope": "东南",
+      "description": "词首 /sne/ > /se/，失去鼻音但不保留鼻化",
+      "example": "sneg→seg",
+      "caveat": "与北部N11形成同源对应"
+    },
+    {
+      "id": "SE12",
+      "scope": "东南",
+      "description": "/z/ 在 /i/ 前软化为 /ʑ/，写ẑ",
+      "example": "zima→ẑima",
+      "caveat": "先验证稳定的该词根"
+    },
+    {
+      "id": "SE13",
+      "scope": "东南",
+      "description": "/o/ 在 /l/ 之前于指定词根中央化为 /ɵ/，写ȯ",
+      "example": "holod→hȯld；moloko→mȯlko",
+      "caveat": "同期先应用C01；需核对其他含ol词根"
+    },
+    {
+      "id": "SE14",
+      "scope": "东南",
+      "description": "/gn/ > /ŋ/ 写ң；旧 ogon 经次音节脱落 ogn 再同化",
+      "example": "jagne→jaңe；ogon→ogn→oң",
+      "caveat": "保留相关词汇历史层级，不得无根据把单独g或n写作ң"
+    },
+    {
+      "id": "SE15",
+      "scope": "东南",
+      "description": "新祖语 *kʲ > ć，*dj > җ，*rʲ > r",
+      "example": "*kʲuta→ćuta；*medja→meҗa；*rʲud→rud",
+      "caveat": "源于不同的祖语对立"
+    },
+    {
+      "id": "W11",
+      "scope": "西部",
+      "description": "词末 /ɣ/ 在元音之后脱落（词中、带词尾时不自动脱落）",
+      "example": "sneġ→sne；boġ→bo；droġ→dro",
+      "caveat": "造成词干与带格尾形的交替，后续重造范式"
+    },
+    {
+      "id": "W12",
+      "scope": "西部",
+      "description": "/r/ 在 /θ/（þ）后强化为 /r̝/，写ř",
+      "example": "þrub→þřub",
+      "caveat": "先验证此辅音丛，不影响全部r"
+    },
+    {
+      "id": "W13",
+      "scope": "西部",
+      "description": "词首 /ʒeɫ/ > /ʒɫ/ 的弱元音脱落",
+      "example": "žełez→žłez",
+      "caveat": "可能受语速及重音限制；先验证冶金词根"
+    },
+    {
+      "id": "W14",
+      "scope": "西部",
+      "description": "新祖语 *kʲ > ǩ，*dj > ẑ，*rʲ > ř；软化辅音后u > ү",
+      "example": "*kʲuta→ǩүt；*medja→meẑ；*rʲud→řүd",
+      "caveat": "以具体祖语词根与音变路径为限"
+    },
+    {
+      "id": "W15",
+      "scope": "西部",
+      "description": "沿用V0.5既有W09：多音节实词非重读-a词尾脱落",
+      "example": "*kʲuta→ǩүt；*medja→meẑ",
+      "caveat": "不能对所有单音节词或有意义格尾做任意删尾"
+    }
+  ],
+  "familyExtensions": [
+    {
+      "id": "N13-F-LIVE",
+      "gloss": "生活",
+      "branch": "N",
+      "sourceLaw": "N13",
+      "family": "*živ-",
+      "matchPrefix": "^ži",
+      "newPrefix": "ẑi"
+    },
+    {
+      "id": "N13-F-LIVE-ADJ",
+      "gloss": "活体的",
+      "branch": "N",
+      "sourceLaw": "N13",
+      "family": "*živ-",
+      "matchPrefix": "^ži",
+      "newPrefix": "ẑi"
+    },
+    {
+      "id": "N13-F-LIVE-PTCP",
+      "gloss": "生活中的",
+      "branch": "N",
+      "sourceLaw": "N13",
+      "family": "*živ-",
+      "matchPrefix": "^ži",
+      "newPrefix": "ẑi"
+    },
+    {
+      "id": "SE12-F-WINTER",
+      "gloss": "冬季的",
+      "branch": "SE",
+      "sourceLaw": "SE12",
+      "family": "*zim-",
+      "matchPrefix": "^zi",
+      "newPrefix": "ẑi"
+    }
+  ],
+  "vowelNucleusAudit": {
+    "entriesWithForms": 335,
+    "dialectFormCount": 1005,
+    "vowelLetters": [
+      "a",
+      "e",
+      "i",
+      "o",
+      "u",
+      "y",
+      "ÿ",
+      "ë",
+      "ę",
+      "ą",
+      "ӧ",
+      "ү",
+      "ȯ"
+    ],
+    "distribution": {
+      "N": {
+        "0": 3,
+        "1": 90,
+        "2": 159,
+        "3": 58,
+        "4": 19,
+        "5": 6
+      },
+      "SE": {
+        "0": 3,
+        "1": 83,
+        "2": 166,
+        "3": 58,
+        "4": 19,
+        "5": 6
+      },
+      "W": {
+        "0": 5,
+        "1": 140,
+        "2": 123,
+        "3": 43,
+        "4": 20,
+        "5": 4
+      }
+    },
+    "zeroNucleusCount": 11,
+    "zeroNucleusForms": [
+      {
+        "id": "D0169",
+        "gloss": "到……旁",
+        "branch": "N",
+        "form": "k",
+        "pos": "preposition"
+      },
+      {
+        "id": "D0169",
+        "gloss": "到……旁",
+        "branch": "SE",
+        "form": "k",
+        "pos": "preposition"
+      },
+      {
+        "id": "D0169",
+        "gloss": "到……旁",
+        "branch": "W",
+        "form": "k",
+        "pos": "preposition"
+      },
+      {
+        "id": "D0170",
+        "gloss": "与……一起",
+        "branch": "N",
+        "form": "s",
+        "pos": "preposition"
+      },
+      {
+        "id": "D0170",
+        "gloss": "与……一起",
+        "branch": "SE",
+        "form": "s",
+        "pos": "preposition"
+      },
+      {
+        "id": "D0170",
+        "gloss": "与……一起",
+        "branch": "W",
+        "form": "s",
+        "pos": "preposition"
+      },
+      {
+        "id": "D0171",
+        "gloss": "在……里面",
+        "branch": "N",
+        "form": "ŵ",
+        "pos": "preposition"
+      },
+      {
+        "id": "D0171",
+        "gloss": "在……里面",
+        "branch": "SE",
+        "form": "v",
+        "pos": "preposition"
+      },
+      {
+        "id": "D0171",
+        "gloss": "在……里面",
+        "branch": "W",
+        "form": "ŵ",
+        "pos": "preposition"
+      },
+      {
+        "id": "D0177",
+        "gloss": "不／否定",
+        "branch": "W",
+        "form": "n",
+        "pos": "particle"
+      },
+      {
+        "id": "D0179",
+        "gloss": "未完成体将来助词",
+        "branch": "W",
+        "form": "b",
+        "pos": "particle"
+      }
+    ],
+    "nucleusVariationHeadwords": 80,
+    "nucleusVariationExamples": [
+      {
+        "id": "D0002",
+        "gloss": "边界",
+        "forms": {
+          "N": "ġranca",
+          "SE": "granca",
+          "W": "ġranc"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0006",
+        "gloss": "词／单词",
+        "forms": {
+          "N": "sloŵo",
+          "SE": "slovo",
+          "W": "słoŵ"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0008",
+        "gloss": "大门",
+        "forms": {
+          "N": "ŵrata",
+          "SE": "vrata",
+          "W": "ŵrat"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0009",
+        "gloss": "道路",
+        "forms": {
+          "N": "droġa",
+          "SE": "droga",
+          "W": "dro"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0010",
+        "gloss": "地区",
+        "forms": {
+          "N": "strana",
+          "SE": "strana",
+          "W": "stran"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0011",
+        "gloss": "冬季",
+        "forms": {
+          "N": "zÿma",
+          "SE": "ẑima",
+          "W": "zÿm"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0014",
+        "gloss": "挂钩",
+        "forms": {
+          "N": "ǩүta",
+          "SE": "ćuta",
+          "W": "ǩүt"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0015",
+        "gloss": "管道",
+        "forms": {
+          "N": "ṱruba",
+          "SE": "truba",
+          "W": "þřub"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0017",
+        "gloss": "河流",
+        "forms": {
+          "N": "reka",
+          "SE": "reka",
+          "W": "rek"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0022",
+        "gloss": "界线",
+        "forms": {
+          "N": "meďa",
+          "SE": "meҗa",
+          "W": "meẑ"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0027",
+        "gloss": "女人",
+        "forms": {
+          "N": "žena",
+          "SE": "žena",
+          "W": "žen"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0028",
+        "gloss": "皮肤",
+        "forms": {
+          "N": "koža",
+          "SE": "koža",
+          "W": "kož"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0029",
+        "gloss": "清晨",
+        "forms": {
+          "N": "utr",
+          "SE": "utro",
+          "W": "utr"
+        },
+        "vowelNuclei": {
+          "N": 1,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0030",
+        "gloss": "荣耀",
+        "forms": {
+          "N": "slaŵa",
+          "SE": "slava",
+          "W": "słaŵ"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0031",
+        "gloss": "乳",
+        "forms": {
+          "N": "molko",
+          "SE": "mȯlko",
+          "W": "mołk"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0033",
+        "gloss": "山",
+        "forms": {
+          "N": "ġora",
+          "SE": "gora",
+          "W": "ġor"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0038",
+        "gloss": "手",
+        "forms": {
+          "N": "ręka",
+          "SE": "renka",
+          "W": "ręk"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0039",
+        "gloss": "水",
+        "forms": {
+          "N": "ŵoda",
+          "SE": "voda",
+          "W": "ŵod"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0041",
+        "gloss": "铁",
+        "forms": {
+          "N": "ẑelezo",
+          "SE": "železo",
+          "W": "žłez"
+        },
+        "vowelNuclei": {
+          "N": 3,
+          "SE": 3,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0042",
+        "gloss": "头颅",
+        "forms": {
+          "N": "ġłaŵa",
+          "SE": "glava",
+          "W": "ġłaŵ"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0045",
+        "gloss": "羊羔",
+        "forms": {
+          "N": "jaġnę",
+          "SE": "jaңe",
+          "W": "jaġn"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0048",
+        "gloss": "鱼",
+        "forms": {
+          "N": "rÿba",
+          "SE": "riba",
+          "W": "rÿb"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0050",
+        "gloss": "真实",
+        "forms": {
+          "N": "praŵda",
+          "SE": "pravda",
+          "W": "praŵd"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0053",
+        "gloss": "姊妹",
+        "forms": {
+          "N": "sestra",
+          "SE": "sestra",
+          "W": "sestr"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0129",
+        "gloss": "铁制的",
+        "forms": {
+          "N": "ẑeleznÿ",
+          "SE": "železni",
+          "W": "žłeznÿ"
+        },
+        "vowelNuclei": {
+          "N": 3,
+          "SE": 3,
+          "W": 2
+        }
+      },
+      {
+        "id": "D0177",
+        "gloss": "不／否定",
+        "forms": {
+          "N": "ńe",
+          "SE": "ne",
+          "W": "n"
+        },
+        "vowelNuclei": {
+          "N": 1,
+          "SE": 1,
+          "W": 0
+        }
+      },
+      {
+        "id": "D0179",
+        "gloss": "未完成体将来助词",
+        "forms": {
+          "N": "bu",
+          "SE": "bu",
+          "W": "b"
+        },
+        "vowelNuclei": {
+          "N": 1,
+          "SE": 1,
+          "W": 0
+        }
+      },
+      {
+        "id": "D0181",
+        "gloss": "孩子",
+        "forms": {
+          "N": "detę",
+          "SE": "dete",
+          "W": "det"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0189",
+        "gloss": "祖母",
+        "forms": {
+          "N": "baba",
+          "SE": "baba",
+          "W": "bab"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0190",
+        "gloss": "门",
+        "forms": {
+          "N": "dŵera",
+          "SE": "dvera",
+          "W": "dŵer"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0191",
+        "gloss": "窗户",
+        "forms": {
+          "N": "okno",
+          "SE": "okno",
+          "W": "okn"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0192",
+        "gloss": "墙",
+        "forms": {
+          "N": "stena",
+          "SE": "stena",
+          "W": "sten"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0193",
+        "gloss": "屋顶",
+        "forms": {
+          "N": "kroŵa",
+          "SE": "krova",
+          "W": "kroŵ"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0194",
+        "gloss": "床",
+        "forms": {
+          "N": "ležka",
+          "SE": "ležka",
+          "W": "łežk"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      },
+      {
+        "id": "D0195",
+        "gloss": "灯",
+        "forms": {
+          "N": "sŵeta",
+          "SE": "sveta",
+          "W": "sŵet"
+        },
+        "vowelNuclei": {
+          "N": 2,
+          "SE": 2,
+          "W": 1
+        }
+      }
+    ],
+    "observedInitialClusters": {
+      "N": [
+        {
+          "cluster": "pr",
+          "count": 15
+        },
+        {
+          "cluster": "st",
+          "count": 9
+        },
+        {
+          "cluster": "sl",
+          "count": 8
+        },
+        {
+          "cluster": "tr",
+          "count": 4
+        },
+        {
+          "cluster": "kr",
+          "count": 4
+        },
+        {
+          "cluster": "ġr",
+          "count": 3
+        },
+        {
+          "cluster": "dr",
+          "count": 3
+        },
+        {
+          "cluster": "str",
+          "count": 3
+        },
+        {
+          "cluster": "sŵ",
+          "count": 3
+        },
+        {
+          "cluster": "sm",
+          "count": 2
+        },
+        {
+          "cluster": "ġł",
+          "count": 2
+        },
+        {
+          "cluster": "br",
+          "count": 2
+        },
+        {
+          "cluster": "ħr",
+          "count": 2
+        },
+        {
+          "cluster": "sp",
+          "count": 2
+        },
+        {
+          "cluster": "sd",
+          "count": 2
+        }
+      ],
+      "SE": [
+        {
+          "cluster": "pr",
+          "count": 15
+        },
+        {
+          "cluster": "st",
+          "count": 9
+        },
+        {
+          "cluster": "sl",
+          "count": 8
+        },
+        {
+          "cluster": "tr",
+          "count": 5
+        },
+        {
+          "cluster": "kr",
+          "count": 4
+        },
+        {
+          "cluster": "gr",
+          "count": 3
+        },
+        {
+          "cluster": "dr",
+          "count": 3
+        },
+        {
+          "cluster": "str",
+          "count": 3
+        },
+        {
+          "cluster": "sv",
+          "count": 3
+        },
+        {
+          "cluster": "sm",
+          "count": 2
+        },
+        {
+          "cluster": "gl",
+          "count": 2
+        },
+        {
+          "cluster": "br",
+          "count": 2
+        },
+        {
+          "cluster": "hr",
+          "count": 2
+        },
+        {
+          "cluster": "sp",
+          "count": 2
+        },
+        {
+          "cluster": "sd",
+          "count": 2
+        }
+      ],
+      "W": [
+        {
+          "cluster": "pr",
+          "count": 15
+        },
+        {
+          "cluster": "st",
+          "count": 9
+        },
+        {
+          "cluster": "sł",
+          "count": 8
+        },
+        {
+          "cluster": "tr",
+          "count": 4
+        },
+        {
+          "cluster": "kr",
+          "count": 4
+        },
+        {
+          "cluster": "ġr",
+          "count": 3
+        },
+        {
+          "cluster": "dr",
+          "count": 3
+        },
+        {
+          "cluster": "str",
+          "count": 3
+        },
+        {
+          "cluster": "sŵ",
+          "count": 3
+        },
+        {
+          "cluster": "sm",
+          "count": 2
+        },
+        {
+          "cluster": "žł",
+          "count": 2
+        },
+        {
+          "cluster": "ġł",
+          "count": 2
+        },
+        {
+          "cluster": "br",
+          "count": 2
+        },
+        {
+          "cluster": "ħr",
+          "count": 2
+        },
+        {
+          "cluster": "sp",
+          "count": 2
+        }
+      ]
+    },
+    "boundary": "核数与词首辅音串来自拼写；不是已完整验证的韵律音系、词重音或合法音节结构。"
+  },
+  "modernizedOldRoots": [
+    {
+      "id": "D0078",
+      "gloss": "生活",
+      "pos": "verb",
+      "old": {
+        "N": "žiŵeť",
+        "SE": "živet",
+        "W": "žiŵeþ"
+      },
+      "new": {
+        "N": "ẑiŵeť",
+        "SE": "živet",
+        "W": "žiŵeþ"
+      },
+      "ruleIds": [
+        "N13-F-LIVE"
+      ]
+    },
+    {
+      "id": "D0100",
+      "gloss": "冬季的",
+      "pos": "adj",
+      "old": {
+        "N": "zimnÿ",
+        "SE": "zimni",
+        "W": "zimnÿ"
+      },
+      "new": {
+        "N": "zimnÿ",
+        "SE": "ẑimni",
+        "W": "zimnÿ"
+      },
+      "ruleIds": [
+        "SE12-F-WINTER"
+      ]
+    },
+    {
+      "id": "D0108",
+      "gloss": "活体的",
+      "pos": "adj",
+      "old": {
+        "N": "žiŵÿ",
+        "SE": "živi",
+        "W": "žiŵÿ"
+      },
+      "new": {
+        "N": "ẑiŵÿ",
+        "SE": "živi",
+        "W": "žiŵÿ"
+      },
+      "ruleIds": [
+        "N13-F-LIVE-ADJ"
+      ]
+    },
+    {
+      "id": "D0147",
+      "gloss": "生活中的",
+      "pos": "participle",
+      "old": {
+        "N": "žiŵejącÿ",
+        "SE": "živejoci",
+        "W": "žiŵejącÿ"
+      },
+      "new": {
+        "N": "ẑiŵejącÿ",
+        "SE": "živejoci",
+        "W": "žiŵejącÿ"
+      },
+      "ruleIds": [
+        "N13-F-LIVE-PTCP"
+      ]
+    }
+  ],
+  "stressSpecification": {
+    "status": "not-standardized",
+    "phonemicContrasts": "unknown",
+    "lexicalStressByEntry": "not assigned",
+    "accentedIPACoverage": 0,
+    "recommendations": [
+      "先对高频单音节和西部无书写元音附着词确立语流分析",
+      "将词根与语法词缀分界补进形态记录",
+      "使用最小对立和朗读样本审核词汇重音后，才将重音写入IPA级词典",
+      "在没有足够语言内在证据前不简单照搬现代俄语的重音位置"
+    ]
+  },
+  "review": {
+    "oldEntriesConsidered": 151,
+    "retainedOldForms": 143,
+    "updatedHeadwords": 4,
+    "protoOnlyProposals": 4,
+    "updatedInflectedFormsPreviouslyChecked": 91
+  }
+}
