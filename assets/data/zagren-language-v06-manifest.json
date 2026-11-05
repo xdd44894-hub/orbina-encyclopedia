@@ -2,9 +2,9 @@
   "language": "Žaġręn",
   "chinese": "藏朔原语（扎格伦语）",
   "date": "2026-11-06",
-  "languageStage": "V0.8-phonology-1",
+  "languageStage": "V0.8-phonology-2",
   "dictionaryEdition": "V0.4",
-  "authority": "当前音系与词干承续规范为V0.8（21条既有音变与4项限制性的同源词族修订）；V0.7仍决定核心句法；现行字典V0.4含339条、旧词151条已审阅。143条旧词原形保持，4条现代化修订，4条仅构拟祖语词有非正式候选。不能把保留的历史格位自动等同全面验证的现行屈折。",
+  "authority": "V0.8继承21条已有受限音变，统一本期7词条9处现代拼写（其中原历史词5条升级、V0.7新词2条校正）；V08-STEM-ZYM属于“冬季”词族类推而不是第22条普适音变。V0.7决定核心句法，字典V0.4有339条。已审阅而未改的142词原形，不代表完整现代变格及重音已经验证。",
   "dialects": {
     "N": {
       "name": "珀璃璐卡",
@@ -164,8 +164,8 @@
   },
   "metrics": {
     "dictionaryEntries": 339,
-    "modernHeadwordEntries": 192,
-    "historicOrProtoEntries": 147,
+    "modernHeadwordEntries": 193,
+    "historicOrProtoEntries": 146,
     "completeDialectHeadwords": 335,
     "broadIPATranscriptions": 1005,
     "addedHighFrequencyWords": 100,
@@ -186,12 +186,14 @@
     "dialectNucleusDifferenceHeadwords": 80,
     "newRussianReferenceHeadwords": 60,
     "newRussianReferenceDialectForms": 180,
-    "reviewedLegacyHeadwords": 143,
-    "revisedLegacyHeadwords": 4,
+    "reviewedLegacyHeadwords": 142,
+    "revisedLegacyHeadwords": 5,
     "protoOnlyCandidates": 4,
     "legacyHeadwordsReviewed": 151,
-    "v08FamilyExtensions": 4,
-    "v08RelatedInflectionChecks": 91
+    "v08FamilyExtensions": 7,
+    "v08RelatedInflectionChecks": 143,
+    "v08EditedDialectForms": 9,
+    "v08UpdatedModernHeadwordEntries": 7
   },
   "availableSources": {
     "main": "_articles/article-451.md",
@@ -231,7 +233,10 @@
     "historicV06SoundLaws": "assets/data/zagren-v06-phonology-lexicon.json",
     "v08LexicalAudit": "assets/data/zagren-v08-lexical-audit.json",
     "v08SoundChangeModule": "assets/js/zagren-phonology-v08.js",
-    "v08PhonologyPage": "zagren-phonology/index.html"
+    "v08PhonologyPage": "zagren-phonology/index.html",
+    "v08Diachrony": "assets/data/zagren-v08-diachrony.json",
+    "v08LatestLexiconReview": "assets/data/zagren-v08-lexicon-review.json",
+    "v08RelatedMorphologyRegression": "assets/data/zagren-v08-morphology-regression.json"
   },
   "principles": [
     "句义清晰、表达简洁，避免增加无意义词长",
@@ -241,13 +246,13 @@
     "历史语法记录与现代词典原形不混写",
     "新100词目前只声明词典原形，不虚构六格变位"
   ],
-  "dataStatus": "V0.8第一阶段：对151条原旧词审阅，4条修订、143条保留、4条仅祖语候选；历史音变保持21项规范，并按4个同词根范围扩展；语音重音及自由语流仍未确定。",
+  "dataStatus": "V0.8第二阶段：339条词典原形完成当前受限音变范围核查；历史旧阶段151条中5条升级、142条保留、4条仅有祖语构拟，V0.7新词另2条音变校正。143个旧范式对应形式与2025个基础格位通过生成测试，重音、连读及新词全部现代范式仍未确定。",
   "verification": {
     "status": "pass",
     "filesChecked": 15,
     "checksPassed": 20,
     "dictionaryEntries": 339,
-    "modernHeadwords": 192,
+    "modernHeadwords": 193,
     "broadIPA": 1005,
     "grammarSlotChecks": 2025,
     "controlledSentences": 50,
@@ -286,37 +291,40 @@
     "webJavascriptSyntaxChecked": true,
     "liveGithubPagesNotConfirmed": true,
     "phonologyRulesInherited": 21,
-    "phonologyFamilyExtensions": 4,
+    "phonologyFamilyExtensions": 7,
     "legacyReview": "151/151",
-    "revisedHeadwords": 4,
-    "unchangedOldHeadwords": 143,
+    "revisedHeadwords": 5,
+    "unchangedOldHeadwords": 142,
     "protoCandidatesNotCounted": 4,
-    "relatedInflectionChecks": 91,
+    "relatedInflectionChecks": 143,
     "phonotacticModernForms": 1005,
     "nucleusVariationModern": 80,
     "latestV08QA": {
       "date": "2026-11-06",
-      "status": "pass",
+      "status": "reconciliation-in-progress",
       "dictionaryEntries": 339,
       "completeDialectHeadwords": 335,
       "ipaTranscriptions": 1005,
-      "modernizedHeadwords": 192,
+      "modernizedHeadwords": 193,
       "legacyEntriesReviewed": 151,
-      "retainedOldHeadwords": 143,
-      "revisedHeadwords": 4,
+      "retainedOldHeadwords": 142,
+      "revisedHeadwords": 5,
       "protoOnlyCandidates": 4,
       "inheritedLaws": 21,
-      "scopedFamilyExtensions": 4,
+      "scopedFamilyExtensions": 7,
       "reviewedHistoricalGrammarSlots": 2025,
-      "affectedInflectionsChecked": 91,
+      "affectedInflectionsChecked": 143,
       "noFormalProtoOnlyLemmaLeak": true,
       "phonotacticZeroNucleus": 11,
       "dialectNucleusVariations": 80,
       "webScriptSyntaxChecked": true,
-      "livePagesLoading": "not independently verified"
-    }
+      "livePagesLoading": "not independently verified",
+      "editedDialectForms": 9
+    },
+    "v08EditedDialectForms": 9,
+    "revisionVersion": "V0.8-phonology-2"
   },
-  "phonologyStage": "V0.8",
+  "phonologyStage": "V0.8-phonology-2",
   "pilotStage": "V0.7 morphology analogical pilot",
   "grammarStage": "V0.7"
 }
