@@ -10,7 +10,7 @@ ai_search: true
 
 这是藏朔原语的**现行统一词典**。全部词汇按同一套字段编纂：中文释义、词性、祖语词根、北部／东南／西部词典原形、宽式 IPA、历史状态、可追溯词源和有限语法说明。
 
-**[打开可检索在线字典]({{ '/zagren-dictionary/' | relative_url }})** · [下载完整 TXT]({{ '/assets/data/zagren-dictionary-v02.txt' | relative_url }}) · [结构化 JSON]({{ '/assets/data/zagren-dictionary-v02.json' | relative_url }}) · [50句三方言例句]({{ '/zagren-corpus/' | relative_url }})
+**[打开可检索在线字典]({{ '/zagren-dictionary/' | relative_url }})** · [下载完整 TXT]({{ '/assets/data/zagren-dictionary-v02.txt' | relative_url }}) · [语言资料总卷]({{ '/assets/data/zagren-language-compendium-v06.txt' | relative_url }}) · [结构化 JSON]({{ '/assets/data/zagren-dictionary-v02.json' | relative_url }}) · [50句三方言例句]({{ '/zagren-corpus/' | relative_url }})
 
 ## 收录规模
 
