@@ -1,0 +1,2530 @@
+{
+  "title": "《扎格伦字典 V0.3》·俄罗斯学术与教育词汇参照扩充",
+  "version": "V0.7-lexicon-60",
+  "date": "2026-11-06",
+  "status": "headword-canonical; inflection-unvalidated",
+  "designPolicy": "以俄罗斯国家语言研究机构正字法资料及俄语教学基础交流主题为参照，并按藏朔原语三方言自己的继承和音变生成60个词典原形。这里的*词源仅为世界观内部构拟，不是俄语研究所对真正原始斯拉夫语的学术重建。",
+  "referenceResources": [
+    {
+      "title": "俄罗斯科学院维诺格拉多夫俄语研究所，Академос",
+      "url": "https://orfo.ruslang.ru/",
+      "role": "俄语正字法参考；非藏朔原语认证"
+    },
+    {
+      "title": "俄罗斯教育部官方公告：现行俄语规范词典",
+      "url": "https://edu.gov.ru/press/9808/utverzhden-spisok-normativnyh-slovarey-spravochnikov-i-grammatik-sovremennogo-russkogo-literaturnogo-yazyka/",
+      "role": "规范词典权威出处说明"
+    },
+    {
+      "title": "俄罗斯科学院俄语研究所词典目录",
+      "url": "https://ruslang.ru/normativnyje_slovari",
+      "role": "确认国家规范词典及编纂机构"
+    }
+  ],
+  "notClaimed": [
+    "未对60个俄语参照词逐一执行远端精确词条检索",
+    "未将新增词条宣称为俄罗斯教学大纲特定级别的官方列表",
+    "未把60个新词的完整变格、动词时态、重音冒充已经审核"
+  ],
+  "stats": {
+    "newHeadwords": 60,
+    "byTopic": {
+      "阅读与教育": 18,
+      "交流与理解": 12,
+      "时间与位置": 10,
+      "生活与自然": 12,
+      "性质与状态": 8
+    },
+    "byPos": {
+      "noun": 39,
+      "verb": 8,
+      "adj": 8,
+      "adverb": 5
+    },
+    "completeDialectForms": 180
+  },
+  "homographNotes": {
+    "N": [
+      {
+        "form": "praŵda",
+        "glosses": [
+          "真实",
+          "真相"
+        ]
+      },
+      {
+        "form": "tiħÿ",
+        "glosses": [
+          "寂静",
+          "安静"
+        ]
+      }
+    ],
+    "SE": [
+      {
+        "form": "pravda",
+        "glosses": [
+          "真实",
+          "真相"
+        ]
+      },
+      {
+        "form": "tihi",
+        "glosses": [
+          "寂静",
+          "安静"
+        ]
+      }
+    ],
+    "W": [
+      {
+        "form": "praŵd",
+        "glosses": [
+          "真实",
+          "真相"
+        ]
+      },
+      {
+        "form": "tiħÿ",
+        "glosses": [
+          "寂静",
+          "安静"
+        ]
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "D0280",
+      "pos": "noun",
+      "gloss": "书",
+      "aliases": [],
+      "russianReference": "книга",
+      "proto": "*kniga",
+      "forms": {
+        "N": "kniġa",
+        "SE": "kniga",
+        "W": "kniġ"
+      },
+      "ipa": {
+        "N": "/kniɣa/",
+        "SE": "/kniɡa/",
+        "W": "/kniɣ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0281",
+      "pos": "noun",
+      "gloss": "书页",
+      "aliases": [],
+      "russianReference": "страница",
+      "proto": "*stranica",
+      "forms": {
+        "N": "stranica",
+        "SE": "stranica",
+        "W": "stranic"
+      },
+      "ipa": {
+        "N": "/stranit͡sa/",
+        "SE": "/stranit͡sa/",
+        "W": "/stranit͡s/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "比旧条目“纸页”更专指装订书页",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0282",
+      "pos": "noun",
+      "gloss": "字母",
+      "aliases": [],
+      "russianReference": "буква",
+      "proto": "*bukva",
+      "forms": {
+        "N": "bukŵa",
+        "SE": "bukva",
+        "W": "bukŵ"
+      },
+      "ipa": {
+        "N": "/bukwa/",
+        "SE": "/bukva/",
+        "W": "/bukw/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0283",
+      "pos": "noun",
+      "gloss": "句子",
+      "aliases": [],
+      "russianReference": "предложение",
+      "proto": "*predloženie",
+      "forms": {
+        "N": "predloženie",
+        "SE": "predloženie",
+        "W": "predłoženi"
+      },
+      "ipa": {
+        "N": "/predloʒenie/",
+        "SE": "/predloʒenie/",
+        "W": "/predɫoʒeni/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "中",
+        "classProvisional": "IRR",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "当前只登记词典原形；不同于“提议”的义项",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0284",
+      "pos": "noun",
+      "gloss": "文章",
+      "aliases": [],
+      "russianReference": "статья",
+      "proto": "*statʲa",
+      "forms": {
+        "N": "staťa",
+        "SE": "stata",
+        "W": "staþ"
+      },
+      "ipa": {
+        "N": "/statʲa/",
+        "SE": "/stata/",
+        "W": "/staθ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A-soft",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0285",
+      "pos": "noun",
+      "gloss": "故事",
+      "aliases": [],
+      "russianReference": "рассказ",
+      "proto": "*raskaz",
+      "forms": {
+        "N": "raskaz",
+        "SE": "raskaz",
+        "W": "raskaz"
+      },
+      "ipa": {
+        "N": "/raskaz/",
+        "SE": "/raskaz/",
+        "W": "/raskaz/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0286",
+      "pos": "noun",
+      "gloss": "诗歌",
+      "aliases": [],
+      "russianReference": "стих",
+      "proto": "*stix",
+      "forms": {
+        "N": "stiħ",
+        "SE": "stih",
+        "W": "stiħ"
+      },
+      "ipa": {
+        "N": "/stiχ/",
+        "SE": "/stix/",
+        "W": "/stiχ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0287",
+      "pos": "noun",
+      "gloss": "词典",
+      "aliases": [],
+      "russianReference": "словарь",
+      "proto": "*slovarʲ",
+      "forms": {
+        "N": "sloŵarj",
+        "SE": "slovar",
+        "W": "słoŵař"
+      },
+      "ipa": {
+        "N": "/slowarj/",
+        "SE": "/slovar/",
+        "W": "/sɫowar̝/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O-soft",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "指词典，不等于“词／单词”",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0288",
+      "pos": "noun",
+      "gloss": "语言",
+      "aliases": [],
+      "russianReference": "язык",
+      "proto": "*jazÿk",
+      "forms": {
+        "N": "jazÿk",
+        "SE": "jazik",
+        "W": "jazÿk"
+      },
+      "ipa": {
+        "N": "/jazɨk/",
+        "SE": "/jazik/",
+        "W": "/jazɨk/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "语言系统",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0289",
+      "pos": "noun",
+      "gloss": "含义",
+      "aliases": [],
+      "russianReference": "смысл",
+      "proto": "*smÿsl",
+      "forms": {
+        "N": "smÿsl",
+        "SE": "smisl",
+        "W": "smÿsł"
+      },
+      "ipa": {
+        "N": "/smɨsl/",
+        "SE": "/smisl/",
+        "W": "/smɨsɫ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "语义／含义，不是“价值”",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0290",
+      "pos": "noun",
+      "gloss": "名字",
+      "aliases": [],
+      "russianReference": "имя",
+      "proto": "*imę",
+      "forms": {
+        "N": "imę",
+        "SE": "ime",
+        "W": "im"
+      },
+      "ipa": {
+        "N": "/imɛ̃/",
+        "SE": "/ime/",
+        "W": "/im/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "中",
+        "classProvisional": "IRR",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "中性不规则词干暂不推断六格",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0291",
+      "pos": "noun",
+      "gloss": "纸张",
+      "aliases": [],
+      "russianReference": "бумага",
+      "proto": "*bumaga",
+      "forms": {
+        "N": "bumaġa",
+        "SE": "bumaga",
+        "W": "bumaġ"
+      },
+      "ipa": {
+        "N": "/bumaɣa/",
+        "SE": "/bumaɡa/",
+        "W": "/bumaɣ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "纸张材料；与纸页、书页区分",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0292",
+      "pos": "noun",
+      "gloss": "笔",
+      "aliases": [],
+      "russianReference": "ручка",
+      "proto": "*ručka",
+      "forms": {
+        "N": "ručka",
+        "SE": "ručka",
+        "W": "ručk"
+      },
+      "ipa": {
+        "N": "/rut͡ʃka/",
+        "SE": "/rut͡ʃka/",
+        "W": "/rut͡ʃk/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "本词限定为书写用笔",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0293",
+      "pos": "noun",
+      "gloss": "图画",
+      "aliases": [],
+      "russianReference": "картина",
+      "proto": "*kartina",
+      "forms": {
+        "N": "kartina",
+        "SE": "kartina",
+        "W": "kartin"
+      },
+      "ipa": {
+        "N": "/kartina/",
+        "SE": "/kartina/",
+        "W": "/kartin/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0294",
+      "pos": "noun",
+      "gloss": "课堂",
+      "aliases": [],
+      "russianReference": "урок",
+      "proto": "*urok",
+      "forms": {
+        "N": "urok",
+        "SE": "urok",
+        "W": "urok"
+      },
+      "ipa": {
+        "N": "/urok/",
+        "SE": "/urok/",
+        "W": "/urok/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "指一节课／课堂教学活动",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0295",
+      "pos": "noun",
+      "gloss": "学生",
+      "aliases": [],
+      "russianReference": "ученик",
+      "proto": "*učenik",
+      "forms": {
+        "N": "učenik",
+        "SE": "učenik",
+        "W": "učenik"
+      },
+      "ipa": {
+        "N": "/ut͡ʃenik/",
+        "SE": "/ut͡ʃenik/",
+        "W": "/ut͡ʃenik/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "有生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0296",
+      "pos": "verb",
+      "gloss": "读",
+      "aliases": [],
+      "russianReference": "читать",
+      "proto": "*čitatʲ",
+      "forms": {
+        "N": "čitať",
+        "SE": "čitat",
+        "W": "čitaþ"
+      },
+      "ipa": {
+        "N": "/t͡ʃitatʲ/",
+        "SE": "/t͡ʃitat/",
+        "W": "/t͡ʃitaθ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "classProvisional": "IPFV",
+        "aspect": "A",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "阅读的未完成体；不是“读完”",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0297",
+      "pos": "verb",
+      "gloss": "记录",
+      "aliases": [],
+      "russianReference": "записывать",
+      "proto": "*zapisÿvatʲ",
+      "forms": {
+        "N": "zapisÿŵať",
+        "SE": "zapisivat",
+        "W": "zapisÿŵaþ"
+      },
+      "ipa": {
+        "N": "/zapisɨwatʲ/",
+        "SE": "/zapisivat/",
+        "W": "/zapisɨwaθ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "阅读与教育",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "classProvisional": "IPFV",
+        "aspect": "A",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "写下并保存记录",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0298",
+      "pos": "noun",
+      "gloss": "大人",
+      "aliases": [],
+      "russianReference": "взрослый",
+      "proto": "*vzrosl",
+      "forms": {
+        "N": "ŵzrosl",
+        "SE": "vzrosl",
+        "W": "ŵzrosł"
+      },
+      "ipa": {
+        "N": "/wzrosl/",
+        "SE": "/vzrosl/",
+        "W": "/wzrosɫ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "交流与理解",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "有生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "从俄语形容词词干构拟为藏朔原独立实体名词，非直接借用俄语整词",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0299",
+      "pos": "noun",
+      "gloss": "真相",
+      "aliases": [],
+      "russianReference": "правда",
+      "proto": "*pravda",
+      "forms": {
+        "N": "praŵda",
+        "SE": "pravda",
+        "W": "praŵd"
+      },
+      "ipa": {
+        "N": "/prawda/",
+        "SE": "/pravda/",
+        "W": "/prawd/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "交流与理解",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "现实事实的真相，不泛指一切理论正确性",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0300",
+      "pos": "noun",
+      "gloss": "谎言",
+      "aliases": [],
+      "russianReference": "ложь",
+      "proto": "*lož",
+      "forms": {
+        "N": "lož",
+        "SE": "lož",
+        "W": "łož"
+      },
+      "ipa": {
+        "N": "/loʒ/",
+        "SE": "/loʒ/",
+        "W": "/ɫoʒ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "交流与理解",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "I",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "阴性软音来源；当代词典原形暂不自动变格",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0301",
+      "pos": "noun",
+      "gloss": "声音",
+      "aliases": [],
+      "russianReference": "голос",
+      "proto": "*golos",
+      "forms": {
+        "N": "ġolos",
+        "SE": "golos",
+        "W": "ġołos"
+      },
+      "ipa": {
+        "N": "/ɣolos/",
+        "SE": "/ɡolos/",
+        "W": "/ɣoɫos/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "交流与理解",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "指人或物的声音",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0302",
+      "pos": "noun",
+      "gloss": "承诺",
+      "aliases": [],
+      "russianReference": "обещание",
+      "proto": "*obeščanie",
+      "forms": {
+        "N": "obeščanie",
+        "SE": "obeščanie",
+        "W": "obeščani"
+      },
+      "ipa": {
+        "N": "/obeʃt͡ʃanie/",
+        "SE": "/obeʃt͡ʃanie/",
+        "W": "/obeʃt͡ʃani/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "交流与理解",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "中",
+        "classProvisional": "IRR",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "说出或许下的承诺",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0303",
+      "pos": "noun",
+      "gloss": "信任",
+      "aliases": [],
+      "russianReference": "доверие",
+      "proto": "*doverie",
+      "forms": {
+        "N": "doŵerie",
+        "SE": "doverie",
+        "W": "doŵeri"
+      },
+      "ipa": {
+        "N": "/dowerie/",
+        "SE": "/doverie/",
+        "W": "/doweri/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "交流与理解",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "中",
+        "classProvisional": "IRR",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "关系或态度意义",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0304",
+      "pos": "verb",
+      "gloss": "欺骗",
+      "aliases": [],
+      "russianReference": "обмануть",
+      "proto": "*obmanutʲ",
+      "forms": {
+        "N": "obmanuť",
+        "SE": "obmanut",
+        "W": "obmanuþ"
+      },
+      "ipa": {
+        "N": "/obmanutʲ/",
+        "SE": "/obmanut/",
+        "W": "/obmanuθ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "交流与理解",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "classProvisional": "PFV",
+        "aspect": "IRR",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "一次完成的欺骗；持续／反复意义需另建未完成体",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0305",
+      "pos": "verb",
+      "gloss": "说谎",
+      "aliases": [],
+      "russianReference": "лгать",
+      "proto": "*lgatʲ",
+      "forms": {
+        "N": "lġať",
+        "SE": "lgat",
+        "W": "łġaþ"
+      },
+      "ipa": {
+        "N": "/lɣatʲ/",
+        "SE": "/lɡat/",
+        "W": "/ɫɣaθ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "交流与理解",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "classProvisional": "IPFV",
+        "aspect": "IRR",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "不规则词根；不得套普通A类完整变位",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0306",
+      "pos": "verb",
+      "gloss": "解释",
+      "aliases": [],
+      "russianReference": "объяснять",
+      "proto": "*objasnʲatʲ",
+      "forms": {
+        "N": "objasńať",
+        "SE": "objasnat",
+        "W": "objasńaþ"
+      },
+      "ipa": {
+        "N": "/objasɲatʲ/",
+        "SE": "/objasnat/",
+        "W": "/objasɲaθ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "交流与理解",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "classProvisional": "IPFV",
+        "aspect": "A",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "解释、说明，不保证语义与俄语一模一样",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0307",
+      "pos": "verb",
+      "gloss": "理解",
+      "aliases": [],
+      "russianReference": "понимать",
+      "proto": "*ponimatʲ",
+      "forms": {
+        "N": "ponimať",
+        "SE": "ponimat",
+        "W": "ponimaþ"
+      },
+      "ipa": {
+        "N": "/ponimatʲ/",
+        "SE": "/ponimat/",
+        "W": "/ponimaθ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "交流与理解",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "classProvisional": "IPFV",
+        "aspect": "A",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0308",
+      "pos": "verb",
+      "gloss": "认为",
+      "aliases": [],
+      "russianReference": "считать",
+      "proto": "*sčitatʲ",
+      "forms": {
+        "N": "sčitať",
+        "SE": "sčitat",
+        "W": "sčitaþ"
+      },
+      "ipa": {
+        "N": "/st͡ʃitatʲ/",
+        "SE": "/st͡ʃitat/",
+        "W": "/st͡ʃitaθ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "交流与理解",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "classProvisional": "IPFV",
+        "aspect": "A",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "表示主观判断，不是数学计数",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0309",
+      "pos": "verb",
+      "gloss": "请求",
+      "aliases": [],
+      "russianReference": "просить",
+      "proto": "*prositʲ",
+      "forms": {
+        "N": "prosiť",
+        "SE": "prosit",
+        "W": "prosiþ"
+      },
+      "ipa": {
+        "N": "/prositʲ/",
+        "SE": "/prosit/",
+        "W": "/prosiθ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "交流与理解",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "classProvisional": "IPFV",
+        "aspect": "I",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "请求某人做事，不自动生成未知的论元格位",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0310",
+      "pos": "adverb",
+      "gloss": "昨天",
+      "aliases": [],
+      "russianReference": "вчера",
+      "proto": "*včera",
+      "forms": {
+        "N": "ŵčera",
+        "SE": "včera",
+        "W": "ŵčera"
+      },
+      "ipa": {
+        "N": "/wt͡ʃera/",
+        "SE": "/vt͡ʃera/",
+        "W": "/wt͡ʃera/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "时间与位置",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "category": "时间与位置"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0311",
+      "pos": "noun",
+      "gloss": "日子",
+      "aliases": [],
+      "russianReference": "день",
+      "proto": "*denʲ",
+      "forms": {
+        "N": "deń",
+        "SE": "den",
+        "W": "deń"
+      },
+      "ipa": {
+        "N": "/deɲ/",
+        "SE": "/den/",
+        "W": "/deɲ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "时间与位置",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O-soft",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "一天、特定的一日",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0312",
+      "pos": "noun",
+      "gloss": "年",
+      "aliases": [],
+      "russianReference": "год",
+      "proto": "*god",
+      "forms": {
+        "N": "ġod",
+        "SE": "god",
+        "W": "ġod"
+      },
+      "ipa": {
+        "N": "/ɣod/",
+        "SE": "/ɡod/",
+        "W": "/ɣod/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "时间与位置",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0313",
+      "pos": "noun",
+      "gloss": "小时",
+      "aliases": [],
+      "russianReference": "час",
+      "proto": "*čas",
+      "forms": {
+        "N": "čas",
+        "SE": "čas",
+        "W": "čas"
+      },
+      "ipa": {
+        "N": "/t͡ʃas/",
+        "SE": "/t͡ʃas/",
+        "W": "/t͡ʃas/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "时间与位置",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "60分钟的时间单位",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0314",
+      "pos": "noun",
+      "gloss": "分钟",
+      "aliases": [],
+      "russianReference": "минута",
+      "proto": "*minuta",
+      "forms": {
+        "N": "minuta",
+        "SE": "minuta",
+        "W": "minut"
+      },
+      "ipa": {
+        "N": "/minuta/",
+        "SE": "/minuta/",
+        "W": "/minut/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "时间与位置",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0315",
+      "pos": "adverb",
+      "gloss": "左边",
+      "aliases": [],
+      "russianReference": "слева",
+      "proto": "*sleva",
+      "forms": {
+        "N": "sleŵa",
+        "SE": "sleva",
+        "W": "słeŵa"
+      },
+      "ipa": {
+        "N": "/slewa/",
+        "SE": "/sleva/",
+        "W": "/sɫewa/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "时间与位置",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "category": "时间与位置"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "位置副词",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0316",
+      "pos": "adverb",
+      "gloss": "右边",
+      "aliases": [],
+      "russianReference": "справа",
+      "proto": "*sprava",
+      "forms": {
+        "N": "spraŵa",
+        "SE": "sprava",
+        "W": "spraŵa"
+      },
+      "ipa": {
+        "N": "/sprawa/",
+        "SE": "/sprava/",
+        "W": "/sprawa/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "时间与位置",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "category": "时间与位置"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "位置副词",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0317",
+      "pos": "adverb",
+      "gloss": "上方",
+      "aliases": [],
+      "russianReference": "наверху",
+      "proto": "*naverxu",
+      "forms": {
+        "N": "naŵerħu",
+        "SE": "naverhu",
+        "W": "naŵerħu"
+      },
+      "ipa": {
+        "N": "/nawerχu/",
+        "SE": "/naverxu/",
+        "W": "/nawerχu/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "时间与位置",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "category": "时间与位置"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "位置副词；不能自动代替介词na＋处所格",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0318",
+      "pos": "adverb",
+      "gloss": "下方",
+      "aliases": [],
+      "russianReference": "внизу",
+      "proto": "*vnizu",
+      "forms": {
+        "N": "ŵnizu",
+        "SE": "vnizu",
+        "W": "ŵnizu"
+      },
+      "ipa": {
+        "N": "/wnizu/",
+        "SE": "/vnizu/",
+        "W": "/wnizu/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "时间与位置",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "category": "时间与位置"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "位置副词",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0319",
+      "pos": "noun",
+      "gloss": "日期",
+      "aliases": [],
+      "russianReference": "дата",
+      "proto": "*data",
+      "forms": {
+        "N": "data",
+        "SE": "data",
+        "W": "dat"
+      },
+      "ipa": {
+        "N": "/data/",
+        "SE": "/data/",
+        "W": "/dat/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "时间与位置",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0320",
+      "pos": "noun",
+      "gloss": "房间",
+      "aliases": [],
+      "russianReference": "комната",
+      "proto": "*komnata",
+      "forms": {
+        "N": "komnata",
+        "SE": "komnata",
+        "W": "komnat"
+      },
+      "ipa": {
+        "N": "/komnata/",
+        "SE": "/komnata/",
+        "W": "/komnat/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "生活与自然",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0321",
+      "pos": "noun",
+      "gloss": "钥匙",
+      "aliases": [],
+      "russianReference": "ключ",
+      "proto": "*ključ",
+      "forms": {
+        "N": "ključ",
+        "SE": "ključ",
+        "W": "kłjuč"
+      },
+      "ipa": {
+        "N": "/kljut͡ʃ/",
+        "SE": "/kljut͡ʃ/",
+        "W": "/kɫjut͡ʃ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "生活与自然",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "用于开锁的钥匙；不含音乐调号意义",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0322",
+      "pos": "noun",
+      "gloss": "箱子",
+      "aliases": [],
+      "russianReference": "коробка",
+      "proto": "*korobka",
+      "forms": {
+        "N": "korobka",
+        "SE": "korobka",
+        "W": "korobk"
+      },
+      "ipa": {
+        "N": "/korobka/",
+        "SE": "/korobka/",
+        "W": "/korobk/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "生活与自然",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0323",
+      "pos": "noun",
+      "gloss": "蜡烛",
+      "aliases": [],
+      "russianReference": "свеча",
+      "proto": "*sveča",
+      "forms": {
+        "N": "sŵeča",
+        "SE": "sveča",
+        "W": "sŵeč"
+      },
+      "ipa": {
+        "N": "/swet͡ʃa/",
+        "SE": "/svet͡ʃa/",
+        "W": "/swet͡ʃ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "生活与自然",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0324",
+      "pos": "noun",
+      "gloss": "羊",
+      "aliases": [],
+      "russianReference": "овца",
+      "proto": "*ovca",
+      "forms": {
+        "N": "oŵca",
+        "SE": "ovca",
+        "W": "oŵc"
+      },
+      "ipa": {
+        "N": "/owt͡sa/",
+        "SE": "/ovt͡sa/",
+        "W": "/owt͡s/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "生活与自然",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "有生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "成年羊泛称；不同于“羊羔”",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0325",
+      "pos": "noun",
+      "gloss": "猫",
+      "aliases": [],
+      "russianReference": "кот",
+      "proto": "*kot",
+      "forms": {
+        "N": "kot",
+        "SE": "kot",
+        "W": "kot"
+      },
+      "ipa": {
+        "N": "/kot/",
+        "SE": "/kot/",
+        "W": "/kot/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "生活与自然",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "有生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "猫的一般泛称，语义不限定性别",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0326",
+      "pos": "noun",
+      "gloss": "狗",
+      "aliases": [],
+      "russianReference": "собака",
+      "proto": "*sobaka",
+      "forms": {
+        "N": "sobaka",
+        "SE": "sobaka",
+        "W": "sobak"
+      },
+      "ipa": {
+        "N": "/sobaka/",
+        "SE": "/sobaka/",
+        "W": "/sobak/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "生活与自然",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "有生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "狗的一般泛称，语义不限定性别",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0327",
+      "pos": "noun",
+      "gloss": "花",
+      "aliases": [],
+      "russianReference": "цветок",
+      "proto": "*cvetok",
+      "forms": {
+        "N": "cŵetok",
+        "SE": "cvetok",
+        "W": "cŵetok"
+      },
+      "ipa": {
+        "N": "/t͡swetok/",
+        "SE": "/t͡svetok/",
+        "W": "/t͡swetok/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "生活与自然",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "植物的花",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0328",
+      "pos": "noun",
+      "gloss": "土地",
+      "aliases": [],
+      "russianReference": "земля",
+      "proto": "*zemlja",
+      "forms": {
+        "N": "zemlja",
+        "SE": "zemlja",
+        "W": "zemłj"
+      },
+      "ipa": {
+        "N": "/zemlja/",
+        "SE": "/zemlja/",
+        "W": "/zemɫj/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "生活与自然",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A-soft",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "土壤或土地；不等于整个行星",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0329",
+      "pos": "noun",
+      "gloss": "雨伞",
+      "aliases": [],
+      "russianReference": "зонт",
+      "proto": "*zont",
+      "forms": {
+        "N": "zont",
+        "SE": "zont",
+        "W": "zont"
+      },
+      "ipa": {
+        "N": "/zont/",
+        "SE": "/zont/",
+        "W": "/zont/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "生活与自然",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0330",
+      "pos": "noun",
+      "gloss": "水果",
+      "aliases": [],
+      "russianReference": "фрукт",
+      "proto": "*frukt",
+      "forms": {
+        "N": "frukt",
+        "SE": "frukt",
+        "W": "frukt"
+      },
+      "ipa": {
+        "N": "/frukt/",
+        "SE": "/frukt/",
+        "W": "/frukt/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "生活与自然",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阳",
+        "classProvisional": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "水果总称，单复数语义待定",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0331",
+      "pos": "noun",
+      "gloss": "食物",
+      "aliases": [],
+      "russianReference": "еда",
+      "proto": "*jeda",
+      "forms": {
+        "N": "jeda",
+        "SE": "jeda",
+        "W": "jed"
+      },
+      "ipa": {
+        "N": "/jeda/",
+        "SE": "/jeda/",
+        "W": "/jed/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "生活与自然",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "gender": "阴",
+        "classProvisional": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "广义食物，与‘配给’等军事专业词分开",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0332",
+      "pos": "adj",
+      "gloss": "重要",
+      "aliases": [],
+      "russianReference": "важный",
+      "proto": "*važnÿ",
+      "forms": {
+        "N": "ŵažnÿ",
+        "SE": "važni",
+        "W": "ŵažnÿ"
+      },
+      "ipa": {
+        "N": "/waʒnɨ/",
+        "SE": "/vaʒni/",
+        "W": "/waʒnɨ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "性质与状态",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "form": "阳性单数主格",
+        "classProvisional": "QUAL",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "强调重要性，不自动触发§",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0333",
+      "pos": "adj",
+      "gloss": "困难",
+      "aliases": [],
+      "russianReference": "трудный",
+      "proto": "*trudnÿ",
+      "forms": {
+        "N": "trudnÿ",
+        "SE": "trudni",
+        "W": "trudnÿ"
+      },
+      "ipa": {
+        "N": "/trudnɨ/",
+        "SE": "/trudni/",
+        "W": "/trudnɨ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "性质与状态",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "form": "阳性单数主格",
+        "classProvisional": "QUAL",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0334",
+      "pos": "adj",
+      "gloss": "容易",
+      "aliases": [],
+      "russianReference": "лёгкий",
+      "proto": "*legkÿ",
+      "forms": {
+        "N": "leġkÿ",
+        "SE": "legki",
+        "W": "łeġkÿ"
+      },
+      "ipa": {
+        "N": "/leɣkɨ/",
+        "SE": "/leɡki/",
+        "W": "/ɫeɣkɨ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "性质与状态",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "form": "阳性单数主格",
+        "classProvisional": "QUAL",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "此处指难易程度，不表示重量轻",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0335",
+      "pos": "adj",
+      "gloss": "真实的",
+      "aliases": [],
+      "russianReference": "правдивый",
+      "proto": "*pravdivÿ",
+      "forms": {
+        "N": "praŵdiŵÿ",
+        "SE": "pravdivi",
+        "W": "praŵdiŵÿ"
+      },
+      "ipa": {
+        "N": "/prawdiwɨ/",
+        "SE": "/pravdivi/",
+        "W": "/prawdiwɨ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "性质与状态",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "form": "阳性单数主格",
+        "classProvisional": "QUAL",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "强调真实而非虚构",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0336",
+      "pos": "adj",
+      "gloss": "陌生的",
+      "aliases": [],
+      "russianReference": "незнакомый",
+      "proto": "*neznakomÿ",
+      "forms": {
+        "N": "neznakomÿ",
+        "SE": "neznakomi",
+        "W": "neznakomÿ"
+      },
+      "ipa": {
+        "N": "/neznakomɨ/",
+        "SE": "/neznakomi/",
+        "W": "/neznakomɨ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "性质与状态",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "form": "阳性单数主格",
+        "classProvisional": "QUAL",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "陌生、不熟悉",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0337",
+      "pos": "adj",
+      "gloss": "安静",
+      "aliases": [],
+      "russianReference": "тихий",
+      "proto": "*tixÿ",
+      "forms": {
+        "N": "tiħÿ",
+        "SE": "tihi",
+        "W": "tiħÿ"
+      },
+      "ipa": {
+        "N": "/tiχɨ/",
+        "SE": "/tixi/",
+        "W": "/tiχɨ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "性质与状态",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "form": "阳性单数主格",
+        "classProvisional": "QUAL",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "不吵闹；不同于“安静地”副词",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0338",
+      "pos": "adj",
+      "gloss": "温柔",
+      "aliases": [],
+      "russianReference": "нежный",
+      "proto": "*nežnÿ",
+      "forms": {
+        "N": "nežnÿ",
+        "SE": "nežni",
+        "W": "nežnÿ"
+      },
+      "ipa": {
+        "N": "/neʒnɨ/",
+        "SE": "/neʒni/",
+        "W": "/neʒnɨ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "性质与状态",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "form": "阳性单数主格",
+        "classProvisional": "QUAL",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    },
+    {
+      "id": "D0339",
+      "pos": "adj",
+      "gloss": "严肃",
+      "aliases": [],
+      "russianReference": "серьёзный",
+      "proto": "*serjoznÿ",
+      "forms": {
+        "N": "serjoznÿ",
+        "SE": "serjozni",
+        "W": "serjoznÿ"
+      },
+      "ipa": {
+        "N": "/serjoznɨ/",
+        "SE": "/serjozni/",
+        "W": "/serjoznɨ/"
+      },
+      "stage": "v07-lexicon",
+      "source": [
+        "assets/data/zagren-academic-v07-lexical-expansion.json"
+      ],
+      "ruEducationalTheme": "性质与状态",
+      "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
+      "detail": {
+        "form": "阳性单数主格",
+        "classProvisional": "QUAL",
+        "inflection": "unvalidated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "严肃、认真，不自动标记郑言符",
+        "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
+        "词典原形已登记；词尾、变位、重音尚未完整核定"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+    }
+  ]
+}
