@@ -206,7 +206,7 @@
     "historicLiterature": "assets/data/zagren-public-corpus-v05.json",
     "historicLiteratureUI": "zagren-showcase/index.html",
     "hub": "zagren/index.html",
-    "offlineCompendium": "assets/data/zagren-language-compendium-v06.txt",
+    "offlineCompendium": "assets/data/zagren-language-compendium-v07.txt",
     "dictionaryOldBaseline": "assets/data/zagren-dictionary-v01.json",
     "fiveSentenceAudit": "assets/data/zagren-v06-five-sentence-audit.json",
     "architectureRules": "assets/data/zagren-syntax-v07.json",
@@ -254,7 +254,9 @@
     "punctuationLayerFixtures": 8,
     "addedHeadwords": 60,
     "headwordCompleteTrio": 335,
-    "lexiconInflectionsNotValidated": true
+    "lexiconInflectionsNotValidated": true,
+    "offlineCompendiumEntries": 339,
+    "oldV06OfflinePreserved": true
   },
   "phonologyStage": "V0.6",
   "pilotStage": "V0.7 morphology analogical pilot"
