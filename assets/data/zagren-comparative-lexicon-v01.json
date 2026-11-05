@@ -1,0 +1,307 @@
+{
+  "title": "Proto-Žaġręn comparative lexicon",
+  "version": "0.1",
+  "rows": [
+    {
+      "proto": "*gora",
+      "meaning": "山",
+      "N": "ġora",
+      "SE": "gora",
+      "W": "ġor"
+    },
+    {
+      "proto": "*jagnę",
+      "meaning": "羊羔",
+      "N": "jaġnę",
+      "SE": "jagne",
+      "W": "jaġn"
+    },
+    {
+      "proto": "*tʲenʲ",
+      "meaning": "阴影",
+      "N": "ťęń",
+      "SE": "ten",
+      "W": "þęn"
+    },
+    {
+      "proto": "*kosʲtʲ",
+      "meaning": "骨",
+      "N": "kośť",
+      "SE": "kość",
+      "W": "košt"
+    },
+    {
+      "proto": "*ognʲ",
+      "meaning": "火",
+      "N": "oġń",
+      "SE": "ogon",
+      "W": "oġn"
+    },
+    {
+      "proto": "*zÿma",
+      "meaning": "冬季",
+      "N": "zÿma",
+      "SE": "zima",
+      "W": "zÿm"
+    },
+    {
+      "proto": "*voda",
+      "meaning": "水",
+      "N": "ŵoda",
+      "SE": "voda",
+      "W": "ŵod"
+    },
+    {
+      "proto": "*glava",
+      "meaning": "头颅",
+      "N": "ġłaŵa",
+      "SE": "glava",
+      "W": "ġłaŵ"
+    },
+    {
+      "proto": "*tʲruba",
+      "meaning": "管道",
+      "N": "ťruba",
+      "SE": "truba",
+      "W": "þrub"
+    },
+    {
+      "proto": "*sneg",
+      "meaning": "雪",
+      "N": "sneġ",
+      "SE": "sneg",
+      "W": "sneġ"
+    },
+    {
+      "proto": "*smertʲ",
+      "meaning": "死亡",
+      "N": "smerť",
+      "SE": "smert",
+      "W": "smerþ"
+    },
+    {
+      "proto": "*dom",
+      "meaning": "家",
+      "N": "dom",
+      "SE": "dom",
+      "W": "dom"
+    },
+    {
+      "proto": "*les",
+      "meaning": "森林",
+      "N": "les",
+      "SE": "les",
+      "W": "łes"
+    },
+    {
+      "proto": "*peč",
+      "meaning": "炉",
+      "N": "peč",
+      "SE": "peč",
+      "W": "peč"
+    },
+    {
+      "proto": "*ręka",
+      "meaning": "手",
+      "N": "ręka",
+      "SE": "renka",
+      "W": "ręk"
+    },
+    {
+      "proto": "*matʲ",
+      "meaning": "母亲",
+      "N": "mať",
+      "SE": "mat",
+      "W": "maþ"
+    },
+    {
+      "proto": "*vrata",
+      "meaning": "大门",
+      "N": "ŵrata",
+      "SE": "vrata",
+      "W": "ŵrat"
+    },
+    {
+      "proto": "*kamenʲ",
+      "meaning": "石头",
+      "N": "kamęń",
+      "SE": "kamen",
+      "W": "kamęn"
+    },
+    {
+      "proto": "*železo",
+      "meaning": "铁",
+      "N": "železo",
+      "SE": "železo",
+      "W": "žełez"
+    },
+    {
+      "proto": "*černÿ",
+      "meaning": "黑色",
+      "N": "černÿ",
+      "SE": "černi",
+      "W": "černÿ"
+    },
+    {
+      "proto": "*xolod",
+      "meaning": "寒冷",
+      "N": "ħolod",
+      "SE": "holod",
+      "W": "ħołod"
+    },
+    {
+      "proto": "*žena",
+      "meaning": "女人",
+      "N": "žena",
+      "SE": "žena",
+      "W": "žen"
+    },
+    {
+      "proto": "*rÿba",
+      "meaning": "鱼",
+      "N": "rÿba",
+      "SE": "riba",
+      "W": "rÿb"
+    },
+    {
+      "proto": "*granica",
+      "meaning": "边界",
+      "N": "ġranica",
+      "SE": "granica",
+      "W": "ġranic"
+    },
+    {
+      "proto": "*moloko",
+      "meaning": "乳",
+      "N": "moloko",
+      "SE": "moloko",
+      "W": "mołok"
+    },
+    {
+      "proto": "*strana",
+      "meaning": "地区",
+      "N": "strana",
+      "SE": "strana",
+      "W": "stran"
+    },
+    {
+      "proto": "*slava",
+      "meaning": "荣耀",
+      "N": "slaŵa",
+      "SE": "slava",
+      "W": "słaŵ"
+    },
+    {
+      "proto": "*novÿ",
+      "meaning": "新的",
+      "N": "noŵÿ",
+      "SE": "novi",
+      "W": "noŵÿ"
+    },
+    {
+      "proto": "*pravda",
+      "meaning": "真实",
+      "N": "praŵda",
+      "SE": "pravda",
+      "W": "praŵd"
+    },
+    {
+      "proto": "*život",
+      "meaning": "生命",
+      "N": "žiŵot",
+      "SE": "život",
+      "W": "žiŵot"
+    },
+    {
+      "proto": "*trup",
+      "meaning": "尸体",
+      "N": "trup",
+      "SE": "trup",
+      "W": "trup"
+    },
+    {
+      "proto": "*bog",
+      "meaning": "神明",
+      "N": "boġ",
+      "SE": "bog",
+      "W": "boġ"
+    },
+    {
+      "proto": "*grad",
+      "meaning": "城镇",
+      "N": "ġrad",
+      "SE": "grad",
+      "W": "ġrad"
+    },
+    {
+      "proto": "*pepel",
+      "meaning": "灰烬",
+      "N": "pepel",
+      "SE": "pepel",
+      "W": "pepeł"
+    },
+    {
+      "proto": "*stol",
+      "meaning": "桌子",
+      "N": "stol",
+      "SE": "stol",
+      "W": "stoł"
+    },
+    {
+      "proto": "*šum",
+      "meaning": "噪声",
+      "N": "šum",
+      "SE": "šum",
+      "W": "šum"
+    },
+    {
+      "proto": "*brat",
+      "meaning": "兄弟",
+      "N": "brat",
+      "SE": "brat",
+      "W": "brat"
+    },
+    {
+      "proto": "*sestra",
+      "meaning": "姊妹",
+      "N": "sestra",
+      "SE": "sestra",
+      "W": "sestr"
+    },
+    {
+      "proto": "*noč",
+      "meaning": "夜晚",
+      "N": "noč",
+      "SE": "noč",
+      "W": "noč"
+    },
+    {
+      "proto": "*koža",
+      "meaning": "皮肤",
+      "N": "koža",
+      "SE": "koža",
+      "W": "kož"
+    },
+    {
+      "proto": "*grom",
+      "meaning": "雷鸣",
+      "N": "ġrom",
+      "SE": "grom",
+      "W": "ġrom"
+    },
+    {
+      "proto": "*mlada",
+      "meaning": "年轻的（阴性）",
+      "N": "mlada",
+      "SE": "mlada",
+      "W": "mład"
+    },
+    {
+      "proto": "*muž",
+      "meaning": "男子",
+      "N": "muž",
+      "SE": "muž",
+      "W": "muž"
+    }
+  ]
+}
