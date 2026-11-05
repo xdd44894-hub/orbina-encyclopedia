@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="俄庇娜百科 · 扎格伦字典 V0.1，179条带出处的三方言词汇，按中文、词根、拼写与词性搜索。">
+<title>《扎格伦字典》V0.1 · Žaġręn Dictionary</title>
+<style>
+:root{color-scheme:dark;--bg:#0d1720;--nav:#12232d;--p:#172a35;--fg:#edf5f7;--muted:#a7c0ce;--border:#385361;--teal:#a4d6dd}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Noto Sans",sans-serif;line-height:1.6}
+nav{background:var(--nav);border-bottom:1px solid var(--border);padding:.85rem max(1rem,calc((100% - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+nav a,a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}.brand{font-weight:750;color:var(--fg)}
+nav .links{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.87rem}
+main{max-width:1120px;margin:auto;padding:1.8rem 1rem 4rem}
+.eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:750}
+h1{font-size:clamp(2.1rem,6.5vw,4.35rem);margin:.25rem 0 .4rem;letter-spacing:-.055em;line-height:1.14}
+.lead{color:var(--muted);max-width:890px;font-size:1.04rem}
+.small{font-size:.86rem;color:var(--muted)}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem;margin:1.6rem 0}
+.metric{border:1px solid var(--border);border-radius:12px;padding:1rem;background:var(--p)}
+.metric b{display:block;font-size:1.9rem;font-variant-numeric:tabular-nums;line-height:1.25}.metric span{font-size:.8rem;color:var(--muted)}
+.controls{border:1px solid var(--border);background:var(--p);padding:1rem;border-radius:14px;margin:1.4rem 0;display:grid;grid-template-columns:2.1fr 1fr 1fr;gap:.8rem}
+label{display:flex;flex-direction:column;gap:.3rem;color:var(--muted);font-size:.8rem}
+input,select{font:inherit;background:#101f29;color:var(--fg);border:1px solid #507181;border-radius:8px;padding:.7rem .85rem;width:100%;outline-offset:3px}
+.listhead{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .7rem}
+.listhead h2{margin:0;font-size:1.15rem}
+.records{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem}
+.word{border:1px solid var(--border);border-radius:12px;background:var(--p);padding:1rem;min-width:0}
+.wordheader{display:flex;align-items:start;justify-content:space-between;gap:1rem;min-width:0}
+.word h3{margin:0;font-size:1.15rem;font-weight:730}.type{font-size:.73rem;letter-spacing:.025em;color:#a9c1cb;border:1px solid #486370;border-radius:6px;padding:.18rem .38rem;white-space:nowrap}
+.stage{color:var(--muted);font-size:.8rem;margin:.25rem 0 .55rem}
+.formgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.45rem}
+.form{background:#0d1e28;border-radius:8px;padding:.55rem .5rem;overflow-wrap:anywhere;min-width:0}
+.form .tag{font-size:.7rem;color:#98b5c5}.form strong{display:block;font-size:1.1rem;font-weight:650;line-height:1.4}
+details{margin-top:.7rem;border-top:1px solid #304957;padding-top:.5rem}
+summary{cursor:pointer;font-size:.85rem;color:var(--teal)}.details{font-size:.85rem;color:var(--muted);margin-top:.45rem;overflow-wrap:anywhere}
+.details b{color:var(--fg)}.details p{margin:.35rem 0}
+button{font:inherit;background:#284652;border:1px solid #648b9b;color:var(--fg);border-radius:9px;padding:.7rem 1.2rem;cursor:pointer}
+button:hover{background:#355969}.center{text-align:center;padding:1.4rem}
+.note{border-left:3px solid #7aa7b4;padding:.8rem 1rem;background:#142630;color:var(--muted);margin:1.6rem 0}
+.section{margin-top:2.8rem;border-top:1px solid var(--border);padding-top:1.4rem}
+.section h2{font-size:1.3rem}
+.examples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}
+.example{background:var(--p);border:1px solid var(--border);border-radius:10px;padding:.95rem}
+.example .original{font-size:1.05rem;overflow-wrap:anywhere;font-weight:600}
+.example p{margin:.55rem 0 0;color:var(--muted)}
+footer{border-top:1px solid var(--border);margin-top:3rem;padding:1rem 0;color:var(--muted);font-size:.82rem}
+@media(max-width:750px){.records,.examples{grid-template-columns:1fr}.controls{grid-template-columns:1fr 1fr}.controls label:first-child{grid-column:1/-1}.metrics{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.formgrid{grid-template-columns:1fr}.form{display:flex;gap:.8rem;align-items:center}.form .tag{min-width:50px}.form strong{display:inline}}
+</style>
+</head>
+<body>
+<nav><a class="brand" href="../">俄庇娜百科</a><div class="links"><a href="../zagren-grammar/">词形生成器</a><a href="../zagren-showcase/">V0.5文学语料</a><a href="../articles/article-451/">历史音变</a></div></nav>
+<main>
+<div class="eyebrow">Žaġręn · Dictionary V0.1 · 三部族比较词典</div>
+<h1>扎格伦字典</h1>
+<p class="lead">藏朔原语的第一版汇编字典。每条记录都有中文释义、可考的三方言词形、来源与版本阶段；V0.6 已演化词形和此前 V0.1–V0.5 的历史词形严格区分。</p>
+<div class="metrics">
+<div class="metric"><b id="countAll">179</b><span>词典条目</span></div>
+<div class="metric"><b id="countTri">175</b><span>三方言词形齐全</span></div>
+<div class="metric"><b id="countModern">27</b><span>V0.6 新词形条目</span></div>
+<div class="metric"><b>3</b><span>区域中心方言</span></div>
+</div>
+<p class="small"><a href="../assets/data/zagren-dictionary-v01.txt" download="扎格伦字典V0.1.txt">下载完整 TXT 词典</a>　·　<a href="../assets/data/zagren-dictionary-v01.json">查看结构化 JSON</a>　·　<a href="../articles/article-456/">阅读词典前言与编写规范</a></p>
+<div class="controls">
+<label>查词：中文、词根、三地拼写、音变编号<input id="search" type="search" placeholder="例如：雪 / sęġ / *sneg / N11" spellcheck="false" autocomplete="off"></label>
+<label>词性<select id="pos"><option value="all">全部词性</option></select></label>
+<label>版本状态<select id="stage"><option value="all">全部阶段</option></select></label>
+</div>
+<div class="listhead"><h2>字典正文</h2><div class="small" id="summary" role="status" aria-live="polite">读取中……</div></div>
+<div id="records" class="records" aria-live="polite"></div>
+<div id="more" class="center" hidden><button type="button" id="loadMore">显示更多条目</button></div>
+<div class="note"><b>读法说明：</b>与“现实斯拉夫语相似”不等于可以直接互译。V0.6 标为已演化的词形，只表示对应第一阶段音变及词典原形已有来源；完整变格、重音和独立 IPA 尚需逐步校验。未注明的 V0.6 语法变化不得从旧版字典自行推断。</div>
+<section class="section">
+<h2>书写符号简表</h2>
+<p><code>§</code> 郑重发言　<code>¡</code> 小惊　<code>¿</code> 微微疑惑　<code>！</code> 大惊　<code>？</code> 标准疑问　<code>•…•</code> 重点标记　<code>/…\</code> 文字引用（非口头发言）。</p>
+</section>
+<section class="section">
+<h2>V0.6 试验句</h2>
+<div class="examples">
+<div class="example"><div class="small">北部 · 叙事</div><div class="original">Utr prÿħodit; ŵer ŵejat ŵ lese.</div><p>清晨到来，风吹过森林。</p></div>
+<div class="example"><div class="small">北部 · 郑重发言</div><div class="original">Mať ġoŵorit: §“Mÿ še imame •ӧġń•, i mÿ še imame dom.”</div><p>母亲郑重地说：“我们还有火，也还有家。”</p></div>
+</div>
+<p class="small">示例暂保留部分 V0.5 动词与句法，是 V0.6 第一阶段混合测试，不代表完整新版自然语篇。</p>
+</section>
+<footer>Žaġręn Dictionary V0.1 · 藏朔原语 · 2026-11-05 · <a href="../">俄庇娜百科</a></footer>
+</main>
+<script type="module">
+const q=(id)=>document.getElementById(id);
+let data=null,matched=[],limit=30;
+const posText={noun:"名词",verb:"动词",adj:"形容词",participle:"分词",pronoun:"代词",adverb:"副词",preposition:"介词",conjunction:"连词",particle:"助词"};
+const stageText={"v06":"V0.6已演化","v06-new-root":"V0.6新词根","legacy":"继承旧版","attested":"语料实见","proto-only":"仅祖语构拟"};
+function node(tag,cl,value){const x=document.createElement(tag);if(cl)x.className=cl;if(value!==undefined)x.textContent=value;return x}
+function normalize(x){return String(x||"").normalize("NFC").toLocaleLowerCase()}
+function options(sel,items){for(const [value,label] of items){const op=document.createElement("option");op.value=value;op.textContent=label;sel.append(op)}}
+function line(label,value){const p=node("p");p.append(node("b",null,label+"："),document.createTextNode(value||"—"));return p}
+function buildCard(entry){
+ const root=node("article","word"),head=node("div","wordheader"),title=node("h3",null,entry.gloss);
+ if(entry.aliases.length)title.append(node("span","small","（亦称："+entry.aliases.join("、")+"）"));
+ head.append(title,node("span","type",posText[entry.pos]||entry.pos));root.append(head);
+ root.append(node("div","stage",stageText[entry.stage]||entry.stage));
+ const grid=node("div","formgrid");for(const [key,label] of [["N","北部"],["SE","东南"],["W","西部"]]){
+  const c=node("div","form");c.append(node("span","tag",label),node("strong",null,entry.forms?.[key]||"待构拟"));grid.append(c);
+ }
+ root.append(grid);
+ const detail=node("details"),summary=node("summary",null,"查看词源、语法与来源"),box=node("div","details");
+ box.append(line("祖语",entry.proto||"未定"));
+ if(entry.older)box.append(line("旧版三方言",["N","SE","W"].map(k=>k+" "+entry.older[k]).join(" · ")));
+ if(entry.ruleIds?.length)box.append(line("已登记音变",entry.ruleIds.join(", ")));
+ if(entry.detail)box.append(line("语法信息",Object.entries(entry.detail).map(([k,v])=>k+"="+v).join("; ")));
+ if(entry.notes?.length)box.append(line("编纂注释",entry.notes.join("；")));
+ if(entry.source?.length)box.append(line("资料文件",entry.source.map(s=>s.split("/").at(-1)).join("、")));
+ detail.append(summary,box);root.append(detail);
+ return root;
+}
+function draw(){
+ const box=q("records");box.replaceChildren();
+ const slice=matched.slice(0,limit);
+ for(const item of slice)box.append(buildCard(item));
+ if(!slice.length){box.append(node("p","small",data?"未找到匹配词条。":"词典资料暂时无法载入。"))}
+ q("summary").textContent="找到 "+matched.length+" 条，当前显示 "+slice.length+" 条";
+ q("more").hidden=matched.length<=limit;
+}
+function filter(){
+ const term=normalize(q("search").value.trim()),pos=q("pos").value,stage=q("stage").value;
+ matched=data.entries.filter(e=>{
+  if(pos!=="all"&&e.pos!==pos)return false;
+  if(stage!=="all"&&e.stage!==stage)return false;
+  if(!term)return true;
+  return normalize([e.gloss,...e.aliases,e.proto,e.forms?.N,e.forms?.SE,e.forms?.W,...(e.ruleIds||[])].join(" ")).includes(term);
+ });
+ limit=30;draw();
+}
+async function start(){
+ try{
+  const res=await fetch("../assets/data/zagren-dictionary-v01.json",{cache:"no-cache"});
+  if(!res.ok)throw new Error("HTTP "+res.status);
+  data=await res.json();
+  if(!Array.isArray(data.entries)||data.entries.length!==data.stats.total)throw new Error("词条数量与索引不一致");
+  q("countAll").textContent=data.stats.total;q("countTri").textContent=data.stats.withThreeForms;
+  q("countModern").textContent=data.stats.byStage.v06+data.stats.byStage.modernNew;
+  options(q("pos"),Object.entries(posText).map(([a,b])=>[a,b]));
+  options(q("stage"),Object.entries(stageText).map(([a,b])=>[a,b]));
+  ["search","pos","stage"].forEach(id=>q(id).addEventListener(id==="search"?"input":"change",filter));
+  q("loadMore").addEventListener("click",()=>{limit+=30;draw()});
+  filter();
+ }catch(e){q("summary").textContent="读取失败："+e.message;q("records").append(node("p","small","请通过上方 TXT 或 JSON 链接查看资料。"))}
+}
+start();
+</script>
+</body></html>
