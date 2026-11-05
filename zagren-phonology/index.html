@@ -29,13 +29,13 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:.65rem .
 <p class="lead">在保留原21条V0.6音变的基础上，把同源词跨词性继承、历史词干与现代书写衔接起来。规则必须适用于声明的词根、音位环境及方言，不得机械地把一个例词的所有变化施加给整个词典。</p>
 <div class="metrics">
 <div class="metric"><b>151</b><span>原旧词条审阅</span></div>
-<div class="metric"><b>4</b><span>正式同词根修订</span></div>
+<div class="metric"><b>7</b><span>现代词典原形校订</span></div>
 <div class="metric"><b>1,005</b><span>现行三方言原形音位</span></div>
 <div class="metric"><b>80</b><span>方言元音核数不相同的词</span></div>
 </div>
-<div class="note">重音、辅音连读、真实音节边界和方言声调目前尚未被规范化。这里的“元音核”仅是书写统计，不是发音认证。另有4个只有祖语构拟的旧词获得候选不定式，但<strong>未纳入正式词典原形</strong>。</div>
+<div class="note">重音、辅音连读、真实音节边界和方言声调目前尚未被规范化。这里的“元音核”仅是书写统计，不是发音认证。另有4个只有祖语构拟的旧词仍仅有候选不定式，但<strong>未纳入正式词典原形</strong>。</div>
 <section>
-<h2>V0.8 词族同步修订</h2>
+<h2>V0.8 词族与现代原形校订</h2>
 <div id="revisions" class="cards"></div>
 </section>
 <section>
@@ -48,9 +48,10 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:.65rem .
 <p id="nucleiStatus" class="small"></p></section>
 <section>
 <h2>研究资料与版本边界</h2>
+<p class="small">本轮对原有151条历史阶段词条完成复查：5条已现代化、142条沿用先前原形、4条暂只有祖语；另外对新录的2条词汇进行同环境音变校订。143项历史变位、形容词和分词形式经过生成器复核。<a href="../assets/data/zagren-v08-morphology-regression.json">查看143项格位对照</a>。</p>
 <p class="muted">旧版格位、动词和分词数据按历史阶段保留。V0.8为能够追溯到原有音变的同源词添加新书写结果，绝不宣称所有未改变的旧词已经完成完整现代屈折校准。</p>
-<p><a href="../assets/data/zagren-phonology-v08.json">V0.8音系规则与统计JSON</a> · <a href="../assets/data/zagren-v08-lexical-audit.json">151条旧词审阅清单</a> · <a href="../assets/data/zagren-dictionary-v04.txt">339条完整字典TXT</a></p>
-</section><footer>Žaġręn V0.8 · 历时音系与原形升级第一期 · 俄庇娜百科</footer>
+<p><a href="../assets/data/zagren-v08-diachrony.json">V0.8历时音变与词族规范JSON</a> · <a href="../assets/data/zagren-v08-lexicon-review.json">339条当前音变审阅清单</a> · <a href="../assets/data/zagren-dictionary-v04.txt">339条完整字典TXT</a></p>
+</section><footer>Žaġręn V0.8 · 历时音系与原形升级第二期 · 俄庇娜百科</footer>
 </main>
 <script type="module">
 const $=s=>document.getElementById(s);
