@@ -2,9 +2,9 @@
   "language": "Žaġręn",
   "chinese": "藏朔原语（扎格伦语）",
   "date": "2026-11-05",
-  "languageStage": "V0.6",
+  "languageStage": "V0.7-core-1",
   "dictionaryEdition": "V0.2",
-  "authority": "现行规范优先查总纲与V0.2词典；V0.1–V0.5诸形态学原始记录保留作历史阶段，不将历史格位直接视为全新V0.6格位。",
+  "authority": "核心句法/格位与体时态遵循 V0.7；音位、拼写和词典原形仍为V0.6；字典版本V0.2。原历史范式作为可追溯基线，不把尚无证据的新词变格强行通用化。",
   "dialects": {
     "N": {
       "name": "珀璃璐卡",
@@ -169,7 +169,11 @@
     "currentCorpusSentences": 50,
     "currentCorpusDialectRealizations": 150,
     "modernPhonologyRules": 21,
-    "oldMorphologyEngineSlots": 2025
+    "oldMorphologyEngineSlots": 2025,
+    "syntaxRulesV07": 28,
+    "syntaxExamplesV07": 16,
+    "syntaxDialectRealizationsV07": 48,
+    "syntaxMachineComparedForms": 42
   },
   "availableSources": {
     "main": "_articles/article-451.md",
@@ -192,7 +196,11 @@
     "hub": "zagren/index.html",
     "offlineCompendium": "assets/data/zagren-language-compendium-v06.txt",
     "dictionaryOldBaseline": "assets/data/zagren-dictionary-v01.json",
-    "fiveSentenceAudit": "assets/data/zagren-v06-five-sentence-audit.json"
+    "fiveSentenceAudit": "assets/data/zagren-v06-five-sentence-audit.json",
+    "architectureRules": "assets/data/zagren-syntax-v07.json",
+    "architectureRegression": "assets/data/zagren-syntax-tests-v07.json",
+    "architectureComposer": "assets/js/zagren-syntax-v07.js",
+    "architectureUI": "zagren-architecture/index.html"
   },
   "principles": [
     "句义清晰、表达简洁，避免增加无意义词长",
@@ -202,7 +210,7 @@
     "历史语法记录与现代词典原形不混写",
     "新100词目前只声明词典原形，不虚构六格变位"
   ],
-  "dataStatus": "已完成文件结构与数量一致性校验；网页在线部署、词汇重音及所有现代范式仍需单独验证",
+  "dataStatus": "V0.7核心句法第一阶段已提交；28条规则与16组测试。词汇重音、复杂从句、尚未登记的新词完整屈折仍未完成。",
   "verification": {
     "status": "pass",
     "filesChecked": 15,
@@ -214,6 +222,10 @@
     "controlledSentences": 50,
     "limits": "Validated file contents, cross-references and in-memory JS compilation; live GitHub Pages HTTP was inaccessible from this environment.",
     "fiveSentenceRows": 5,
-    "fiveSentenceDialectRealizations": 15
-  }
+    "fiveSentenceDialectRealizations": 15,
+    "syntaxCore": "V0.7-core-1",
+    "syntaxCompared": 42,
+    "syntaxMismatch": 0
+  },
+  "phonologyStage": "V0.6"
 }
