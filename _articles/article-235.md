@@ -21,7 +21,7 @@ ai_search: true
 
 北部代表方言称**Pęrlÿkań**，东南称**Lipańsë**，西部称**Reśinąmp**。藏朔原没有统一官方语言，各部族内外仍存在其他地方语、过渡方言与跨区域的工业、贸易用语。
 
-语言的系统性研究和祖语43词比较见[《藏朔原语》]({{ '/articles/article-451/' | relative_url }})；六格、单双数、14组名词范式和七组代词见[《藏朔原语形态学 I》]({{ '/articles/article-452/' | relative_url }})。
+语言的系统性研究和祖语43词比较见[《藏朔原语》]({{ '/articles/article-451/' | relative_url }})；六格、单双数、14组名词范式和七组代词见[《藏朔原语形态学 I》]({{ '/articles/article-452/' | relative_url }})；动词、体、时态与祈使见[《藏朔原语形态学 II：动词、体、时态与语气》]({{ '/articles/article-453/' | relative_url }})。
 
 ## 地方宗教：炉膛信仰
 

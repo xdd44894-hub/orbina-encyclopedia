@@ -455,3 +455,8 @@ O类阳性有生名词的ACC采用GEN形式：单数`*-a`、复数`*-ov`。N类�
 | 在羊羔旁（处所形式） | SG LOC | ŵ jaġnęte | v jagnete | ŵ jaġnęt |
 | 管道（宾语） | SG ACC | ťrubu | trubu | þrubu |
 | 骨头（属格） | SG GEN | od kośťi | od kośći | od košti |
+
+
+## 已完成的后续研究
+
+第三卷[《藏朔原语形态学 II：动词、体、时态与语气》]({{ '/articles/article-453/' | relative_url }})已补充三大方言动词体系，并直接复用本卷名词六格、代词及西部有生宾语标记，提供60个跨方言句形。
