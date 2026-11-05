@@ -1,0 +1,621 @@
+{
+  "title": "Žaġręn V0.6 · 50句受控语料",
+  "version": "v06-50",
+  "date": "2026-11-05",
+  "scope": "使用已证实的 V0.3 / V0.2 格位与新增 V0.6 词典原形构造；不代表完整现代语法通过专家复核",
+  "sources": [
+    "assets/data/zagren-dictionary-v02.json",
+    "assets/data/zagren-nominal-morphology-v02.json",
+    "assets/data/zagren-verbal-morphology-v03.json"
+  ],
+  "counts": {
+    "sentences": 50,
+    "threeDialectRealizations": 150,
+    "byGroup": {
+      "陈述": 15,
+      "及物": 10,
+      "性质": 10,
+      "疑问与否定": 7,
+      "将来": 5,
+      "书写语气": 3
+    }
+  },
+  "rules": [
+    "新100词中名词仅作为主格主语；不擅自生成其余五格",
+    "新形容词只使用已确定的阳性主格原形与阳性名词搭配",
+    "谓语动词取V0.3已有的非过去时（按V0.6已确认词干进行有限音变）",
+    "直接引语的‘有’沿用V0.5实见形式，而非凭空构造",
+    "书写符号 §、¡、¿、！、？、•、/与\\ 依当前V0.6规范"
+  ],
+  "rows": [
+    {
+      "id": "E01",
+      "group": "陈述",
+      "zh": "孩子在睡觉。",
+      "N": "detę spat.",
+      "SE": "dete spat.",
+      "W": "det spat.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "孩子"
+      ]
+    },
+    {
+      "id": "E02",
+      "group": "陈述",
+      "zh": "父亲在说话。",
+      "N": "otec ġoŵorit.",
+      "SE": "otec govorit.",
+      "W": "otec ġoŵorit.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "父亲"
+      ]
+    },
+    {
+      "id": "E03",
+      "group": "陈述",
+      "zh": "朋友在等候。",
+      "N": "druġ ždat.",
+      "SE": "drug ždat.",
+      "W": "dru ždat.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "朋友"
+      ]
+    },
+    {
+      "id": "E04",
+      "group": "陈述",
+      "zh": "邻居在奔跑。",
+      "N": "sused beġat.",
+      "SE": "sused begat.",
+      "W": "sused beġat.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "邻居"
+      ]
+    },
+    {
+      "id": "E05",
+      "group": "陈述",
+      "zh": "客人正在到来。",
+      "N": "ġost prÿħodit.",
+      "SE": "gost prihodit.",
+      "W": "ġost prÿħodit.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "客人"
+      ]
+    },
+    {
+      "id": "E06",
+      "group": "陈述",
+      "zh": "工人在喊叫。",
+      "N": "trudnik kričat.",
+      "SE": "trudnik kričat.",
+      "W": "trudnik kričat.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "工人"
+      ]
+    },
+    {
+      "id": "E07",
+      "group": "陈述",
+      "zh": "教师在书写。",
+      "N": "učitel pisat.",
+      "SE": "učitel pisat.",
+      "W": "učiteł pisat.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "教师"
+      ]
+    },
+    {
+      "id": "E08",
+      "group": "陈述",
+      "zh": "医生在等待。",
+      "N": "lekar ždat.",
+      "SE": "lekar ždat.",
+      "W": "łekar ždat.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "医生"
+      ]
+    },
+    {
+      "id": "E09",
+      "group": "陈述",
+      "zh": "祖母在睡觉。",
+      "N": "baba spat.",
+      "SE": "baba spat.",
+      "W": "bab spat.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "祖母"
+      ]
+    },
+    {
+      "id": "E10",
+      "group": "陈述",
+      "zh": "这个人活着。",
+      "N": "lud ẑiŵet.",
+      "SE": "lud živet.",
+      "W": "łud žiŵet.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "人"
+      ]
+    },
+    {
+      "id": "E11",
+      "group": "陈述",
+      "zh": "母亲在说话。",
+      "N": "mať ġoŵorit.",
+      "SE": "mat govorit.",
+      "W": "maþ ġoŵorit.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "母亲"
+      ]
+    },
+    {
+      "id": "E12",
+      "group": "陈述",
+      "zh": "兄弟在奔跑。",
+      "N": "brat beġat.",
+      "SE": "brat begat.",
+      "W": "brat beġat.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "兄弟"
+      ]
+    },
+    {
+      "id": "E13",
+      "group": "陈述",
+      "zh": "太阳正在升起（字面：到来）。",
+      "N": "solnce prÿħodit.",
+      "SE": "solnce prihodit.",
+      "W": "sołnc prÿħodit.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "太阳"
+      ]
+    },
+    {
+      "id": "E14",
+      "group": "陈述",
+      "zh": "孩子在呼唤。",
+      "N": "detę zŵat.",
+      "SE": "dete zvat.",
+      "W": "det zŵat.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "孩子"
+      ]
+    },
+    {
+      "id": "E15",
+      "group": "陈述",
+      "zh": "朋友在书写。",
+      "N": "druġ pisat.",
+      "SE": "drug pisat.",
+      "W": "dru pisat.",
+      "notes": "主格名词 + 有据可查的V0.3第三人称动词；个别自然意象采用拟人表达",
+      "headwords": [
+        "朋友"
+      ]
+    },
+    {
+      "id": "E16",
+      "group": "及物",
+      "zh": "我看见雪。",
+      "N": "ja ŵidem sęġ.",
+      "SE": "ja videm seg.",
+      "W": "ja ŵidem sne.",
+      "notes": "宾格来源V0.2历史范式；已备案音变作用于特定词干",
+      "headwords": [
+        "雪"
+      ]
+    },
+    {
+      "id": "E17",
+      "group": "及物",
+      "zh": "我看见火。",
+      "N": "ja ŵidem ӧġń.",
+      "SE": "ja videm oң.",
+      "W": "ja ŵidem oġn.",
+      "notes": "宾格来源V0.2历史范式；已备案音变作用于特定词干",
+      "headwords": [
+        "火"
+      ]
+    },
+    {
+      "id": "E18",
+      "group": "及物",
+      "zh": "我看见山。",
+      "N": "ja ŵidem ġoru.",
+      "SE": "ja videm goru.",
+      "W": "ja ŵidem ġoru.",
+      "notes": "宾格来源V0.2历史范式；已备案音变作用于特定词干",
+      "headwords": [
+        "山"
+      ]
+    },
+    {
+      "id": "E19",
+      "group": "及物",
+      "zh": "我看见阴影。",
+      "N": "ja ŵidem ťęń.",
+      "SE": "ja videm ten.",
+      "W": "ja ŵidem þęn.",
+      "notes": "宾格来源V0.2历史范式；已备案音变作用于特定词干",
+      "headwords": [
+        "阴影"
+      ]
+    },
+    {
+      "id": "E20",
+      "group": "及物",
+      "zh": "我看见母亲。",
+      "N": "ja ŵidem mať.",
+      "SE": "ja videm mat.",
+      "W": "ja ŵidem maþ.",
+      "notes": "宾格来源V0.2历史范式；已备案音变作用于特定词干",
+      "headwords": [
+        "母亲"
+      ]
+    },
+    {
+      "id": "E21",
+      "group": "及物",
+      "zh": "我看见兄弟。",
+      "N": "ja ŵidem brata.",
+      "SE": "ja videm brata.",
+      "W": "ja ŵidem brat.",
+      "notes": "宾格来源V0.2历史范式；已备案音变作用于特定词干",
+      "headwords": [
+        "兄弟"
+      ]
+    },
+    {
+      "id": "E22",
+      "group": "及物",
+      "zh": "我守卫家。",
+      "N": "ja ħranim dom.",
+      "SE": "ja hranim dom.",
+      "W": "ja ħranim dom.",
+      "notes": "宾格来源V0.2历史范式；已备案音变作用于特定词干",
+      "headwords": [
+        "房屋"
+      ]
+    },
+    {
+      "id": "E23",
+      "group": "及物",
+      "zh": "我携带管道。",
+      "N": "ja nesem ṱrubu.",
+      "SE": "ja nesem trubu.",
+      "W": "ja nesem þřubu.",
+      "notes": "宾格来源V0.2历史范式；已备案音变作用于特定词干",
+      "headwords": [
+        "管道"
+      ]
+    },
+    {
+      "id": "E24",
+      "group": "及物",
+      "zh": "我知道这个家。",
+      "N": "ja znam dom.",
+      "SE": "ja znam dom.",
+      "W": "ja znam dom.",
+      "notes": "宾格来源V0.2历史范式；已备案音变作用于特定词干",
+      "headwords": [
+        "房屋"
+      ]
+    },
+    {
+      "id": "E25",
+      "group": "及物",
+      "zh": "我看见骨头。",
+      "N": "ja ŵidem kӧśť.",
+      "SE": "ja videm kość.",
+      "W": "ja ŵidem košt.",
+      "notes": "宾格来源V0.2历史范式；已备案音变作用于特定词干",
+      "headwords": [
+        "骨"
+      ]
+    },
+    {
+      "id": "E26",
+      "group": "性质",
+      "zh": "汤是热的。",
+      "N": "sup jest ġoračÿ.",
+      "SE": "sup jest gorači.",
+      "W": "sup jest ġoračÿ.",
+      "notes": "仅使用阳性主格形容词词典原形，未推断未核验的其他性数格",
+      "headwords": [
+        "汤",
+        "炎热"
+      ]
+    },
+    {
+      "id": "E27",
+      "group": "性质",
+      "zh": "茶是苦的。",
+      "N": "čaj jest ġorkÿ.",
+      "SE": "čaj jest gorki.",
+      "W": "čaj jest ġorkÿ.",
+      "notes": "仅使用阳性主格形容词词典原形，未推断未核验的其他性数格",
+      "headwords": [
+        "茶",
+        "苦"
+      ]
+    },
+    {
+      "id": "E28",
+      "group": "性质",
+      "zh": "面包是甜的。",
+      "N": "ħleb jest sladkÿ.",
+      "SE": "hleb jest sladki.",
+      "W": "ħłeb jest sładkÿ.",
+      "notes": "仅使用阳性主格形容词词典原形，未推断未核验的其他性数格",
+      "headwords": [
+        "面包",
+        "甜"
+      ]
+    },
+    {
+      "id": "E29",
+      "group": "性质",
+      "zh": "桥梁是安全的。",
+      "N": "most jest bezpečnÿ.",
+      "SE": "most jest bezpečni.",
+      "W": "most jest bezpečnÿ.",
+      "notes": "仅使用阳性主格形容词词典原形，未推断未核验的其他性数格",
+      "headwords": [
+        "桥梁",
+        "安全"
+      ]
+    },
+    {
+      "id": "E30",
+      "group": "性质",
+      "zh": "车辆是空置的。",
+      "N": "ŵoz jest praznÿ.",
+      "SE": "voz jest prazni.",
+      "W": "ŵoz jest praznÿ.",
+      "notes": "仅使用阳性主格形容词词典原形，未推断未核验的其他性数格",
+      "headwords": [
+        "车辆",
+        "空置"
+      ]
+    },
+    {
+      "id": "E31",
+      "group": "性质",
+      "zh": "客人饿了（字面：是饥饿的）。",
+      "N": "ġost jest ġolodnÿ.",
+      "SE": "gost jest golodni.",
+      "W": "ġost jest ġołodnÿ.",
+      "notes": "仅使用阳性主格形容词词典原形，未推断未核验的其他性数格",
+      "headwords": [
+        "客人",
+        "饥饿"
+      ]
+    },
+    {
+      "id": "E32",
+      "group": "性质",
+      "zh": "朋友口渴了。",
+      "N": "druġ jest žadnÿ.",
+      "SE": "drug jest žadni.",
+      "W": "dru jest žadnÿ.",
+      "notes": "仅使用阳性主格形容词词典原形，未推断未核验的其他性数格",
+      "headwords": [
+        "朋友",
+        "口渴"
+      ]
+    },
+    {
+      "id": "E33",
+      "group": "性质",
+      "zh": "这个人是干净的。",
+      "N": "lud jest čistÿ.",
+      "SE": "lud jest čisti.",
+      "W": "łud jest čistÿ.",
+      "notes": "仅使用阳性主格形容词词典原形，未推断未核验的其他性数格",
+      "headwords": [
+        "人",
+        "洁净"
+      ]
+    },
+    {
+      "id": "E34",
+      "group": "性质",
+      "zh": "车辆很脏。",
+      "N": "ŵoz jest ġrjaznÿ.",
+      "SE": "voz jest grjazni.",
+      "W": "ŵoz jest ġrjaznÿ.",
+      "notes": "仅使用阳性主格形容词词典原形，未推断未核验的其他性数格",
+      "headwords": [
+        "车辆",
+        "肮脏"
+      ]
+    },
+    {
+      "id": "E35",
+      "group": "性质",
+      "zh": "这位邻居很危险。",
+      "N": "sused jest opasnÿ.",
+      "SE": "sused jest opasni.",
+      "W": "sused jest opasnÿ.",
+      "notes": "仅使用阳性主格形容词词典原形，未推断未核验的其他性数格",
+      "headwords": [
+        "邻居",
+        "危险"
+      ]
+    },
+    {
+      "id": "E36",
+      "group": "疑问与否定",
+      "zh": "你看见雪吗？",
+      "N": "tÿ ŵideš sęġ？",
+      "SE": "ti videš seg？",
+      "W": "tÿ ŵideš sne？",
+      "notes": "V0.3 否定词+动词或现行V0.6句末语气符号；询问语气不改变词序",
+      "headwords": []
+    },
+    {
+      "id": "E37",
+      "group": "疑问与否定",
+      "zh": "你看见火吗？",
+      "N": "tÿ ŵideš ӧġń？",
+      "SE": "ti videš oң？",
+      "W": "tÿ ŵideš oġn？",
+      "notes": "V0.3 否定词+动词或现行V0.6句末语气符号；询问语气不改变词序",
+      "headwords": []
+    },
+    {
+      "id": "E38",
+      "group": "疑问与否定",
+      "zh": "母亲还在等吗？（微疑）",
+      "N": "mať še ždat¿",
+      "SE": "mat še ždat¿",
+      "W": "maþ še ždat¿",
+      "notes": "V0.3 否定词+动词或现行V0.6句末语气符号；询问语气不改变词序",
+      "headwords": []
+    },
+    {
+      "id": "E39",
+      "group": "疑问与否定",
+      "zh": "我看不见雪。",
+      "N": "ja ńe ŵidem sęġ.",
+      "SE": "ja ne videm seg.",
+      "W": "ja n ŵidem sne.",
+      "notes": "V0.3 否定词+动词或现行V0.6句末语气符号；询问语气不改变词序",
+      "headwords": []
+    },
+    {
+      "id": "E40",
+      "group": "疑问与否定",
+      "zh": "我不说话。",
+      "N": "ja ńe ġoŵorim.",
+      "SE": "ja ne govorim.",
+      "W": "ja n ġoŵorim.",
+      "notes": "V0.3 否定词+动词或现行V0.6句末语气符号；询问语气不改变词序",
+      "headwords": []
+    },
+    {
+      "id": "E41",
+      "group": "疑问与否定",
+      "zh": "我不喊叫。",
+      "N": "ja ńe kričam.",
+      "SE": "ja ne kričam.",
+      "W": "ja n kričam.",
+      "notes": "V0.3 否定词+动词或现行V0.6句末语气符号；询问语气不改变词序",
+      "headwords": []
+    },
+    {
+      "id": "E42",
+      "group": "疑问与否定",
+      "zh": "我不去。",
+      "N": "ja ńe idu.",
+      "SE": "ja ne idu.",
+      "W": "ja n idu.",
+      "notes": "V0.3 否定词+动词或现行V0.6句末语气符号；询问语气不改变词序",
+      "headwords": []
+    },
+    {
+      "id": "E43",
+      "group": "将来",
+      "zh": "我们将会走。",
+      "N": "mÿ bu iť.",
+      "SE": "mi bu it.",
+      "W": "mÿ b iþ.",
+      "notes": "V0.3 未完成体分析式将来，动词不定式未超出可验证的源词条",
+      "headwords": []
+    },
+    {
+      "id": "E44",
+      "group": "将来",
+      "zh": "我们将会写。",
+      "N": "mÿ bu pisať.",
+      "SE": "mi bu pisat.",
+      "W": "mÿ b pisaþ.",
+      "notes": "V0.3 未完成体分析式将来，动词不定式未超出可验证的源词条",
+      "headwords": []
+    },
+    {
+      "id": "E45",
+      "group": "将来",
+      "zh": "我们将会说话。",
+      "N": "mÿ bu ġoŵoriť.",
+      "SE": "mi bu govorit.",
+      "W": "mÿ b ġoŵoriþ.",
+      "notes": "V0.3 未完成体分析式将来，动词不定式未超出可验证的源词条",
+      "headwords": []
+    },
+    {
+      "id": "E46",
+      "group": "将来",
+      "zh": "明天我们将会走。",
+      "N": "jutro mÿ bu iť.",
+      "SE": "jutro mi bu it.",
+      "W": "jutro mÿ b iþ.",
+      "notes": "V0.3 未完成体分析式将来，动词不定式未超出可验证的源词条",
+      "headwords": [
+        "明天"
+      ]
+    },
+    {
+      "id": "E47",
+      "group": "将来",
+      "zh": "我将会睡觉。",
+      "N": "ja bu spať.",
+      "SE": "ja bu spat.",
+      "W": "ja b spaþ.",
+      "notes": "V0.3 未完成体分析式将来，动词不定式未超出可验证的源词条",
+      "headwords": []
+    },
+    {
+      "id": "E48",
+      "group": "书写语气",
+      "zh": "母亲郑重地说：“我们还有火。”",
+      "N": "mať ġoŵorit: §“mÿ še imame •ӧġń•.”",
+      "SE": "mat govorit: §“mi še imame •oң•.”",
+      "W": "maþ ġoŵorit: §“mÿ še imam •oġn•.”",
+      "notes": "§ 与 •…• 根据V0.6书写规则；‘有’沿用V0.5 S28的实见词形",
+      "headwords": [
+        "火",
+        "仍然"
+      ]
+    },
+    {
+      "id": "E49",
+      "group": "书写语气",
+      "zh": "雪竟然又下了！（轻微惊讶）",
+      "N": "sęġ znoŵ padat¡",
+      "SE": "seg znov padat¡",
+      "W": "sne znoŵ padat¡",
+      "notes": "动词padat、再一次副词znov见V0.5 S21；本句测试轻惊符¡",
+      "headwords": [
+        "雪"
+      ]
+    },
+    {
+      "id": "E50",
+      "group": "书写语气",
+      "zh": "纸上写着“火”这个词（仅引用文字）。",
+      "N": "na liste: /ӧġń\\.",
+      "SE": "na liste: /oң\\.",
+      "W": "na łist: /oġn\\.",
+      "notes": "引用的是可见文字；斜杠不是发言，采用V0.5 S19 / S27 的位置短语",
+      "headwords": [
+        "火"
+      ]
+    }
+  ]
+}
