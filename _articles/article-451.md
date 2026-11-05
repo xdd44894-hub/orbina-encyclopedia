@@ -358,3 +358,9 @@ ai_search: true
 有来源的例子：北部雪 NOM `sneġ→sęġ`，东南雪 GEN `snega→sega`，西部雪 GEN `sneġ→sne`，东南火 GEN `ogna→oңa`，北部管道 ACC `ťrubu→ṱrubu`，北部“生活”第三人称单数 `žiŵet→ẑiŵet`。未来分析式仍依据 V0.3 结构，只对未完成体动词提供。
 
 后续必须完成：音变的派生词/复合词范围、名词词干交替、形容词一致、重音及 IPA，以及四条新构拟祖语词根的可信变格。在此之前，程序不声称能任意输入新词并推断所有格位。
+
+## 《扎格伦字典》V0.1（2026-11-05）
+
+已将前期语音、形态学和 V0.6 新词形统一整理为第一版可检索汇编词典。**《扎格伦字典》V0.1** 共179条，175条有三地词形；其中27条采用 V0.6 新阶段词形，旧版词汇、语料形和祖语构拟严格标注，不互相冒充。
+
+**[打开交互式字典]({{ '/zagren-dictionary/' | relative_url }})** · [百科编纂说明]({{ '/articles/article-456/' | relative_url }}) · [完整TXT]({{ '/assets/data/zagren-dictionary-v01.txt' | relative_url }}) · [机器可读JSON]({{ '/assets/data/zagren-dictionary-v01.json' | relative_url }})。
