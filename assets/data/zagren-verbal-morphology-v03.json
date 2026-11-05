@@ -1,0 +1,4383 @@
+{
+  "title": "原始藏朔原语形态学II",
+  "version": "0.3",
+  "source": "音韵学V0.1 / 名词形态学V0.2",
+  "branches": [
+    "N",
+    "SE",
+    "W"
+  ],
+  "stats": {
+    "lemmas": 36,
+    "finite_protos": 216,
+    "past_protos": 144,
+    "imperative_protos": 105,
+    "dialect_forms": 1395,
+    "sentences": 60
+  },
+  "lexicon": [
+    {
+      "id": "V01",
+      "proto": "*pisatʲ",
+      "meaning": "写",
+      "class": "A",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC",
+      "N": "pisať",
+      "SE": "pisat",
+      "W": "pisaþ"
+    },
+    {
+      "id": "V02",
+      "proto": "*slÿšatʲ",
+      "meaning": "听见、听",
+      "class": "A",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC",
+      "N": "slÿšať",
+      "SE": "slišat",
+      "W": "słÿšaþ"
+    },
+    {
+      "id": "V03",
+      "proto": "*begatʲ",
+      "meaning": "奔跑（反复）",
+      "class": "A",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "—",
+      "N": "beġať",
+      "SE": "begat",
+      "W": "beġaþ"
+    },
+    {
+      "id": "V04",
+      "proto": "*delatʲ",
+      "meaning": "制作、做",
+      "class": "A",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC",
+      "N": "delať",
+      "SE": "delat",
+      "W": "dełaþ"
+    },
+    {
+      "id": "V05",
+      "proto": "*ščadovatʲ",
+      "meaning": "饶恕",
+      "class": "A",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC",
+      "N": "ščadoŵať",
+      "SE": "ščadovat",
+      "W": "ščadoŵaþ"
+    },
+    {
+      "id": "V06",
+      "proto": "*kričatʲ",
+      "meaning": "喊叫",
+      "class": "A",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "—",
+      "N": "kričať",
+      "SE": "kričat",
+      "W": "kričaþ"
+    },
+    {
+      "id": "V07",
+      "proto": "*ždatʲ",
+      "meaning": "等候",
+      "class": "A",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC/GEN",
+      "N": "ždať",
+      "SE": "ždat",
+      "W": "ždaþ"
+    },
+    {
+      "id": "V08",
+      "proto": "*zvatʲ",
+      "meaning": "呼唤",
+      "class": "A",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC",
+      "N": "zŵať",
+      "SE": "zvat",
+      "W": "zŵaþ"
+    },
+    {
+      "id": "V09",
+      "proto": "*znatʲ",
+      "meaning": "知道",
+      "class": "A",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC",
+      "N": "znať",
+      "SE": "znat",
+      "W": "znaþ"
+    },
+    {
+      "id": "V10",
+      "proto": "*spatʲ",
+      "meaning": "睡眠",
+      "class": "A",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "—",
+      "N": "spať",
+      "SE": "spat",
+      "W": "spaþ"
+    },
+    {
+      "id": "V11",
+      "proto": "*patritʲ",
+      "meaning": "注视",
+      "class": "I",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC",
+      "N": "patriť",
+      "SE": "patrit",
+      "W": "patriþ"
+    },
+    {
+      "id": "V12",
+      "proto": "*xranitʲ",
+      "meaning": "守卫、保护",
+      "class": "I",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC",
+      "N": "ħraniť",
+      "SE": "hranit",
+      "W": "ħraniþ"
+    },
+    {
+      "id": "V13",
+      "proto": "*govoritʲ",
+      "meaning": "讲话",
+      "class": "I",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "—/s+INS",
+      "N": "ġoŵoriť",
+      "SE": "govorit",
+      "W": "ġoŵoriþ"
+    },
+    {
+      "id": "V14",
+      "proto": "*prÿxoditʲ",
+      "meaning": "走来、抵达（过程）",
+      "class": "I",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "—/v+ACC",
+      "N": "prÿħodiť",
+      "SE": "prihodit",
+      "W": "prÿħodiþ"
+    },
+    {
+      "id": "V15",
+      "proto": "*stavitʲ",
+      "meaning": "安放、放置",
+      "class": "I",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC+na+ACC",
+      "N": "staŵiť",
+      "SE": "stavit",
+      "W": "staŵiþ"
+    },
+    {
+      "id": "V16",
+      "proto": "*nositʲ",
+      "meaning": "反复搬运",
+      "class": "I",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC",
+      "N": "nosiť",
+      "SE": "nosit",
+      "W": "nosiþ"
+    },
+    {
+      "id": "V17",
+      "proto": "*xoditʲ",
+      "meaning": "来回走动",
+      "class": "I",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "—",
+      "N": "ħodiť",
+      "SE": "hodit",
+      "W": "ħodiþ"
+    },
+    {
+      "id": "V18",
+      "proto": "*videtʲ",
+      "meaning": "看见",
+      "class": "E",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC",
+      "N": "ŵideť",
+      "SE": "videt",
+      "W": "ŵideþ"
+    },
+    {
+      "id": "V19",
+      "proto": "*nesetʲ",
+      "meaning": "携带（单次过程）",
+      "class": "E",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "ACC",
+      "N": "neseť",
+      "SE": "neset",
+      "W": "neseþ"
+    },
+    {
+      "id": "V20",
+      "proto": "*živetʲ",
+      "meaning": "生活",
+      "class": "E",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "—/v+LOC",
+      "N": "žiŵeť",
+      "SE": "živet",
+      "W": "žiŵeþ"
+    },
+    {
+      "id": "V21",
+      "proto": "*goretʲ",
+      "meaning": "燃烧",
+      "class": "E",
+      "aspect": "IPFV",
+      "kind": "productive",
+      "valency": "—",
+      "N": "ġoreť",
+      "SE": "goret",
+      "W": "ġoreþ"
+    },
+    {
+      "id": "V22",
+      "proto": "*itʲ",
+      "meaning": "去、前往",
+      "class": "IRR-GO",
+      "aspect": "IPFV",
+      "kind": "irregular",
+      "valency": "—/v+ACC",
+      "N": "iť",
+      "SE": "it",
+      "W": "iþ"
+    },
+    {
+      "id": "V23",
+      "proto": "*datʲ",
+      "meaning": "给予",
+      "class": "IRR-GIVE",
+      "aspect": "PFV",
+      "kind": "irregular",
+      "valency": "ACC+DAT",
+      "N": "dať",
+      "SE": "dat",
+      "W": "daþ"
+    },
+    {
+      "id": "V24",
+      "proto": "*bytʲ",
+      "meaning": "存在、是",
+      "class": "IRR-BE",
+      "aspect": "IPFV",
+      "kind": "irregular",
+      "valency": "NOM/LOC",
+      "N": "byť",
+      "SE": "byt",
+      "W": "byþ"
+    },
+    {
+      "id": "V25",
+      "proto": "*moxtʲ",
+      "meaning": "能够",
+      "class": "IRR-CAN",
+      "aspect": "IPFV",
+      "kind": "irregular",
+      "valency": "INF",
+      "N": "moħť",
+      "SE": "moht",
+      "W": "moħþ"
+    },
+    {
+      "id": "V26",
+      "proto": "*napisatʲ",
+      "meaning": "写完",
+      "class": "A",
+      "aspect": "PFV",
+      "kind": "strict",
+      "valency": "ACC",
+      "N": "napisať",
+      "SE": "napisat",
+      "W": "napisaþ"
+    },
+    {
+      "id": "V27",
+      "proto": "*uslÿšatʲ",
+      "meaning": "听到（有结果）",
+      "class": "A",
+      "aspect": "PFV",
+      "kind": "strict",
+      "valency": "ACC",
+      "N": "uslÿšať",
+      "SE": "uslišat",
+      "W": "usłÿšaþ"
+    },
+    {
+      "id": "V28",
+      "proto": "*sdelatʲ",
+      "meaning": "做成",
+      "class": "A",
+      "aspect": "PFV",
+      "kind": "strict",
+      "valency": "ACC",
+      "N": "sdelať",
+      "SE": "sdelat",
+      "W": "sdełaþ"
+    },
+    {
+      "id": "V29",
+      "proto": "*poščadovatʲ",
+      "meaning": "饶恕一次",
+      "class": "A",
+      "aspect": "PFV",
+      "kind": "strict",
+      "valency": "ACC",
+      "N": "poščadoŵať",
+      "SE": "poščadovat",
+      "W": "poščadoŵaþ"
+    },
+    {
+      "id": "V30",
+      "proto": "*zakričatʲ",
+      "meaning": "开始喊叫",
+      "class": "A",
+      "aspect": "PFV",
+      "kind": "inchoative",
+      "valency": "—",
+      "N": "zakričať",
+      "SE": "zakričat",
+      "W": "zakričaþ"
+    },
+    {
+      "id": "V31",
+      "proto": "*pospatʲ",
+      "meaning": "睡一阵",
+      "class": "A",
+      "aspect": "PFV",
+      "kind": "delimitative",
+      "valency": "—",
+      "N": "pospať",
+      "SE": "pospat",
+      "W": "pospaþ"
+    },
+    {
+      "id": "V32",
+      "proto": "*postavitʲ",
+      "meaning": "安放完成",
+      "class": "I",
+      "aspect": "PFV",
+      "kind": "strict",
+      "valency": "ACC+na+ACC",
+      "N": "postaŵiť",
+      "SE": "postavit",
+      "W": "postaŵiþ"
+    },
+    {
+      "id": "V33",
+      "proto": "*doprÿxoditʲ",
+      "meaning": "抵达终点",
+      "class": "I",
+      "aspect": "PFV",
+      "kind": "telic",
+      "valency": "—/v+ACC",
+      "N": "doprÿħodiť",
+      "SE": "doprihodit",
+      "W": "doprÿħodiþ"
+    },
+    {
+      "id": "V34",
+      "proto": "*uvidetʲ",
+      "meaning": "看见（一次实现）",
+      "class": "E",
+      "aspect": "PFV",
+      "kind": "strict",
+      "valency": "ACC",
+      "N": "uŵideť",
+      "SE": "uvidet",
+      "W": "uŵideþ"
+    },
+    {
+      "id": "V35",
+      "proto": "*prinesetʲ",
+      "meaning": "带来",
+      "class": "E",
+      "aspect": "PFV",
+      "kind": "directional",
+      "valency": "ACC",
+      "N": "prineseť",
+      "SE": "prineset",
+      "W": "prineseþ"
+    },
+    {
+      "id": "V36",
+      "proto": "*progovoritʲ",
+      "meaning": "把话说完",
+      "class": "I",
+      "aspect": "PFV",
+      "kind": "bounded",
+      "valency": "—/s+INS",
+      "N": "proġoŵoriť",
+      "SE": "progovorit",
+      "W": "proġoŵoriþ"
+    }
+  ],
+  "person_suffixes": {
+    "A": {
+      "1SG": "m",
+      "2SG": "š",
+      "3SG": "t",
+      "1PL": "me",
+      "2PL": "te",
+      "3PL": "jąt"
+    },
+    "I": {
+      "1SG": "m",
+      "2SG": "š",
+      "3SG": "t",
+      "1PL": "me",
+      "2PL": "te",
+      "3PL": "ęt"
+    },
+    "E": {
+      "1SG": "m",
+      "2SG": "š",
+      "3SG": "t",
+      "1PL": "me",
+      "2PL": "te",
+      "3PL": "ut"
+    }
+  },
+  "auxiliary": {
+    "future": {
+      "N": "bu",
+      "SE": "bu",
+      "W": "b"
+    },
+    "conditional": {
+      "N": "bÿ",
+      "SE": "bi",
+      "W": "bÿ"
+    },
+    "negative": {
+      "N": "ńe",
+      "SE": "ne",
+      "W": "n"
+    }
+  },
+  "finite": [
+    {
+      "id": "V01",
+      "person": "1SG",
+      "proto": "*pisam",
+      "N": "pisam",
+      "SE": "pisam",
+      "W": "pisam"
+    },
+    {
+      "id": "V01",
+      "person": "2SG",
+      "proto": "*pisaš",
+      "N": "pisaš",
+      "SE": "pisaš",
+      "W": "pisaš"
+    },
+    {
+      "id": "V01",
+      "person": "3SG",
+      "proto": "*pisat",
+      "N": "pisat",
+      "SE": "pisat",
+      "W": "pisat"
+    },
+    {
+      "id": "V01",
+      "person": "1PL",
+      "proto": "*pisame",
+      "N": "pisame",
+      "SE": "pisame",
+      "W": "pisam"
+    },
+    {
+      "id": "V01",
+      "person": "2PL",
+      "proto": "*pisate",
+      "N": "pisate",
+      "SE": "pisate",
+      "W": "pisat"
+    },
+    {
+      "id": "V01",
+      "person": "3PL",
+      "proto": "*pisająt",
+      "N": "pisająt",
+      "SE": "pisajot",
+      "W": "pisająt"
+    },
+    {
+      "id": "V02",
+      "person": "1SG",
+      "proto": "*slÿšam",
+      "N": "slÿšam",
+      "SE": "slišam",
+      "W": "słÿšam"
+    },
+    {
+      "id": "V02",
+      "person": "2SG",
+      "proto": "*slÿšaš",
+      "N": "slÿšaš",
+      "SE": "slišaš",
+      "W": "słÿšaš"
+    },
+    {
+      "id": "V02",
+      "person": "3SG",
+      "proto": "*slÿšat",
+      "N": "slÿšat",
+      "SE": "slišat",
+      "W": "słÿšat"
+    },
+    {
+      "id": "V02",
+      "person": "1PL",
+      "proto": "*slÿšame",
+      "N": "slÿšame",
+      "SE": "slišame",
+      "W": "słÿšam"
+    },
+    {
+      "id": "V02",
+      "person": "2PL",
+      "proto": "*slÿšate",
+      "N": "slÿšate",
+      "SE": "slišate",
+      "W": "słÿšat"
+    },
+    {
+      "id": "V02",
+      "person": "3PL",
+      "proto": "*slÿšająt",
+      "N": "slÿšająt",
+      "SE": "slišajot",
+      "W": "słÿšająt"
+    },
+    {
+      "id": "V03",
+      "person": "1SG",
+      "proto": "*begam",
+      "N": "beġam",
+      "SE": "begam",
+      "W": "beġam"
+    },
+    {
+      "id": "V03",
+      "person": "2SG",
+      "proto": "*begaš",
+      "N": "beġaš",
+      "SE": "begaš",
+      "W": "beġaš"
+    },
+    {
+      "id": "V03",
+      "person": "3SG",
+      "proto": "*begat",
+      "N": "beġat",
+      "SE": "begat",
+      "W": "beġat"
+    },
+    {
+      "id": "V03",
+      "person": "1PL",
+      "proto": "*begame",
+      "N": "beġame",
+      "SE": "begame",
+      "W": "beġam"
+    },
+    {
+      "id": "V03",
+      "person": "2PL",
+      "proto": "*begate",
+      "N": "beġate",
+      "SE": "begate",
+      "W": "beġat"
+    },
+    {
+      "id": "V03",
+      "person": "3PL",
+      "proto": "*begająt",
+      "N": "beġająt",
+      "SE": "begajot",
+      "W": "beġająt"
+    },
+    {
+      "id": "V04",
+      "person": "1SG",
+      "proto": "*delam",
+      "N": "delam",
+      "SE": "delam",
+      "W": "dełam"
+    },
+    {
+      "id": "V04",
+      "person": "2SG",
+      "proto": "*delaš",
+      "N": "delaš",
+      "SE": "delaš",
+      "W": "dełaš"
+    },
+    {
+      "id": "V04",
+      "person": "3SG",
+      "proto": "*delat",
+      "N": "delat",
+      "SE": "delat",
+      "W": "dełat"
+    },
+    {
+      "id": "V04",
+      "person": "1PL",
+      "proto": "*delame",
+      "N": "delame",
+      "SE": "delame",
+      "W": "dełam"
+    },
+    {
+      "id": "V04",
+      "person": "2PL",
+      "proto": "*delate",
+      "N": "delate",
+      "SE": "delate",
+      "W": "dełat"
+    },
+    {
+      "id": "V04",
+      "person": "3PL",
+      "proto": "*delająt",
+      "N": "delająt",
+      "SE": "delajot",
+      "W": "dełająt"
+    },
+    {
+      "id": "V05",
+      "person": "1SG",
+      "proto": "*ščadovam",
+      "N": "ščadoŵam",
+      "SE": "ščadovam",
+      "W": "ščadoŵam"
+    },
+    {
+      "id": "V05",
+      "person": "2SG",
+      "proto": "*ščadovaš",
+      "N": "ščadoŵaš",
+      "SE": "ščadovaš",
+      "W": "ščadoŵaš"
+    },
+    {
+      "id": "V05",
+      "person": "3SG",
+      "proto": "*ščadovat",
+      "N": "ščadoŵat",
+      "SE": "ščadovat",
+      "W": "ščadoŵat"
+    },
+    {
+      "id": "V05",
+      "person": "1PL",
+      "proto": "*ščadovame",
+      "N": "ščadoŵame",
+      "SE": "ščadovame",
+      "W": "ščadoŵam"
+    },
+    {
+      "id": "V05",
+      "person": "2PL",
+      "proto": "*ščadovate",
+      "N": "ščadoŵate",
+      "SE": "ščadovate",
+      "W": "ščadoŵat"
+    },
+    {
+      "id": "V05",
+      "person": "3PL",
+      "proto": "*ščadovająt",
+      "N": "ščadoŵająt",
+      "SE": "ščadovajot",
+      "W": "ščadoŵająt"
+    },
+    {
+      "id": "V06",
+      "person": "1SG",
+      "proto": "*kričam",
+      "N": "kričam",
+      "SE": "kričam",
+      "W": "kričam"
+    },
+    {
+      "id": "V06",
+      "person": "2SG",
+      "proto": "*kričaš",
+      "N": "kričaš",
+      "SE": "kričaš",
+      "W": "kričaš"
+    },
+    {
+      "id": "V06",
+      "person": "3SG",
+      "proto": "*kričat",
+      "N": "kričat",
+      "SE": "kričat",
+      "W": "kričat"
+    },
+    {
+      "id": "V06",
+      "person": "1PL",
+      "proto": "*kričame",
+      "N": "kričame",
+      "SE": "kričame",
+      "W": "kričam"
+    },
+    {
+      "id": "V06",
+      "person": "2PL",
+      "proto": "*kričate",
+      "N": "kričate",
+      "SE": "kričate",
+      "W": "kričat"
+    },
+    {
+      "id": "V06",
+      "person": "3PL",
+      "proto": "*kričająt",
+      "N": "kričająt",
+      "SE": "kričajot",
+      "W": "kričająt"
+    },
+    {
+      "id": "V07",
+      "person": "1SG",
+      "proto": "*ždam",
+      "N": "ždam",
+      "SE": "ždam",
+      "W": "ždam"
+    },
+    {
+      "id": "V07",
+      "person": "2SG",
+      "proto": "*ždaš",
+      "N": "ždaš",
+      "SE": "ždaš",
+      "W": "ždaš"
+    },
+    {
+      "id": "V07",
+      "person": "3SG",
+      "proto": "*ždat",
+      "N": "ždat",
+      "SE": "ždat",
+      "W": "ždat"
+    },
+    {
+      "id": "V07",
+      "person": "1PL",
+      "proto": "*ždame",
+      "N": "ždame",
+      "SE": "ždame",
+      "W": "ždam"
+    },
+    {
+      "id": "V07",
+      "person": "2PL",
+      "proto": "*ždate",
+      "N": "ždate",
+      "SE": "ždate",
+      "W": "ždat"
+    },
+    {
+      "id": "V07",
+      "person": "3PL",
+      "proto": "*ždająt",
+      "N": "ždająt",
+      "SE": "ždajot",
+      "W": "ždająt"
+    },
+    {
+      "id": "V08",
+      "person": "1SG",
+      "proto": "*zvam",
+      "N": "zŵam",
+      "SE": "zvam",
+      "W": "zŵam"
+    },
+    {
+      "id": "V08",
+      "person": "2SG",
+      "proto": "*zvaš",
+      "N": "zŵaš",
+      "SE": "zvaš",
+      "W": "zŵaš"
+    },
+    {
+      "id": "V08",
+      "person": "3SG",
+      "proto": "*zvat",
+      "N": "zŵat",
+      "SE": "zvat",
+      "W": "zŵat"
+    },
+    {
+      "id": "V08",
+      "person": "1PL",
+      "proto": "*zvame",
+      "N": "zŵame",
+      "SE": "zvame",
+      "W": "zŵam"
+    },
+    {
+      "id": "V08",
+      "person": "2PL",
+      "proto": "*zvate",
+      "N": "zŵate",
+      "SE": "zvate",
+      "W": "zŵat"
+    },
+    {
+      "id": "V08",
+      "person": "3PL",
+      "proto": "*zvająt",
+      "N": "zŵająt",
+      "SE": "zvajot",
+      "W": "zŵająt"
+    },
+    {
+      "id": "V09",
+      "person": "1SG",
+      "proto": "*znam",
+      "N": "znam",
+      "SE": "znam",
+      "W": "znam"
+    },
+    {
+      "id": "V09",
+      "person": "2SG",
+      "proto": "*znaš",
+      "N": "znaš",
+      "SE": "znaš",
+      "W": "znaš"
+    },
+    {
+      "id": "V09",
+      "person": "3SG",
+      "proto": "*znat",
+      "N": "znat",
+      "SE": "znat",
+      "W": "znat"
+    },
+    {
+      "id": "V09",
+      "person": "1PL",
+      "proto": "*zname",
+      "N": "zname",
+      "SE": "zname",
+      "W": "znam"
+    },
+    {
+      "id": "V09",
+      "person": "2PL",
+      "proto": "*znate",
+      "N": "znate",
+      "SE": "znate",
+      "W": "znat"
+    },
+    {
+      "id": "V09",
+      "person": "3PL",
+      "proto": "*znająt",
+      "N": "znająt",
+      "SE": "znajot",
+      "W": "znająt"
+    },
+    {
+      "id": "V10",
+      "person": "1SG",
+      "proto": "*spam",
+      "N": "spam",
+      "SE": "spam",
+      "W": "spam"
+    },
+    {
+      "id": "V10",
+      "person": "2SG",
+      "proto": "*spaš",
+      "N": "spaš",
+      "SE": "spaš",
+      "W": "spaš"
+    },
+    {
+      "id": "V10",
+      "person": "3SG",
+      "proto": "*spat",
+      "N": "spat",
+      "SE": "spat",
+      "W": "spat"
+    },
+    {
+      "id": "V10",
+      "person": "1PL",
+      "proto": "*spame",
+      "N": "spame",
+      "SE": "spame",
+      "W": "spam"
+    },
+    {
+      "id": "V10",
+      "person": "2PL",
+      "proto": "*spate",
+      "N": "spate",
+      "SE": "spate",
+      "W": "spat"
+    },
+    {
+      "id": "V10",
+      "person": "3PL",
+      "proto": "*spająt",
+      "N": "spająt",
+      "SE": "spajot",
+      "W": "spająt"
+    },
+    {
+      "id": "V11",
+      "person": "1SG",
+      "proto": "*patrim",
+      "N": "patrim",
+      "SE": "patrim",
+      "W": "patrim"
+    },
+    {
+      "id": "V11",
+      "person": "2SG",
+      "proto": "*patriš",
+      "N": "patriš",
+      "SE": "patriš",
+      "W": "patriš"
+    },
+    {
+      "id": "V11",
+      "person": "3SG",
+      "proto": "*patrit",
+      "N": "patrit",
+      "SE": "patrit",
+      "W": "patrit"
+    },
+    {
+      "id": "V11",
+      "person": "1PL",
+      "proto": "*patrime",
+      "N": "patrime",
+      "SE": "patrime",
+      "W": "patrim"
+    },
+    {
+      "id": "V11",
+      "person": "2PL",
+      "proto": "*patrite",
+      "N": "patrite",
+      "SE": "patrite",
+      "W": "patrit"
+    },
+    {
+      "id": "V11",
+      "person": "3PL",
+      "proto": "*patrięt",
+      "N": "patrięt",
+      "SE": "patriet",
+      "W": "patrięt"
+    },
+    {
+      "id": "V12",
+      "person": "1SG",
+      "proto": "*xranim",
+      "N": "ħranim",
+      "SE": "hranim",
+      "W": "ħranim"
+    },
+    {
+      "id": "V12",
+      "person": "2SG",
+      "proto": "*xraniš",
+      "N": "ħraniš",
+      "SE": "hraniš",
+      "W": "ħraniš"
+    },
+    {
+      "id": "V12",
+      "person": "3SG",
+      "proto": "*xranit",
+      "N": "ħranit",
+      "SE": "hranit",
+      "W": "ħranit"
+    },
+    {
+      "id": "V12",
+      "person": "1PL",
+      "proto": "*xranime",
+      "N": "ħranime",
+      "SE": "hranime",
+      "W": "ħranim"
+    },
+    {
+      "id": "V12",
+      "person": "2PL",
+      "proto": "*xranite",
+      "N": "ħranite",
+      "SE": "hranite",
+      "W": "ħranit"
+    },
+    {
+      "id": "V12",
+      "person": "3PL",
+      "proto": "*xranięt",
+      "N": "ħranięt",
+      "SE": "hraniet",
+      "W": "ħranięt"
+    },
+    {
+      "id": "V13",
+      "person": "1SG",
+      "proto": "*govorim",
+      "N": "ġoŵorim",
+      "SE": "govorim",
+      "W": "ġoŵorim"
+    },
+    {
+      "id": "V13",
+      "person": "2SG",
+      "proto": "*govoriš",
+      "N": "ġoŵoriš",
+      "SE": "govoriš",
+      "W": "ġoŵoriš"
+    },
+    {
+      "id": "V13",
+      "person": "3SG",
+      "proto": "*govorit",
+      "N": "ġoŵorit",
+      "SE": "govorit",
+      "W": "ġoŵorit"
+    },
+    {
+      "id": "V13",
+      "person": "1PL",
+      "proto": "*govorime",
+      "N": "ġoŵorime",
+      "SE": "govorime",
+      "W": "ġoŵorim"
+    },
+    {
+      "id": "V13",
+      "person": "2PL",
+      "proto": "*govorite",
+      "N": "ġoŵorite",
+      "SE": "govorite",
+      "W": "ġoŵorit"
+    },
+    {
+      "id": "V13",
+      "person": "3PL",
+      "proto": "*govorięt",
+      "N": "ġoŵorięt",
+      "SE": "govoriet",
+      "W": "ġoŵorięt"
+    },
+    {
+      "id": "V14",
+      "person": "1SG",
+      "proto": "*prÿxodim",
+      "N": "prÿħodim",
+      "SE": "prihodim",
+      "W": "prÿħodim"
+    },
+    {
+      "id": "V14",
+      "person": "2SG",
+      "proto": "*prÿxodiš",
+      "N": "prÿħodiš",
+      "SE": "prihodiš",
+      "W": "prÿħodiš"
+    },
+    {
+      "id": "V14",
+      "person": "3SG",
+      "proto": "*prÿxodit",
+      "N": "prÿħodit",
+      "SE": "prihodit",
+      "W": "prÿħodit"
+    },
+    {
+      "id": "V14",
+      "person": "1PL",
+      "proto": "*prÿxodime",
+      "N": "prÿħodime",
+      "SE": "prihodime",
+      "W": "prÿħodim"
+    },
+    {
+      "id": "V14",
+      "person": "2PL",
+      "proto": "*prÿxodite",
+      "N": "prÿħodite",
+      "SE": "prihodite",
+      "W": "prÿħodit"
+    },
+    {
+      "id": "V14",
+      "person": "3PL",
+      "proto": "*prÿxodięt",
+      "N": "prÿħodięt",
+      "SE": "prihodiet",
+      "W": "prÿħodięt"
+    },
+    {
+      "id": "V15",
+      "person": "1SG",
+      "proto": "*stavim",
+      "N": "staŵim",
+      "SE": "stavim",
+      "W": "staŵim"
+    },
+    {
+      "id": "V15",
+      "person": "2SG",
+      "proto": "*staviš",
+      "N": "staŵiš",
+      "SE": "staviš",
+      "W": "staŵiš"
+    },
+    {
+      "id": "V15",
+      "person": "3SG",
+      "proto": "*stavit",
+      "N": "staŵit",
+      "SE": "stavit",
+      "W": "staŵit"
+    },
+    {
+      "id": "V15",
+      "person": "1PL",
+      "proto": "*stavime",
+      "N": "staŵime",
+      "SE": "stavime",
+      "W": "staŵim"
+    },
+    {
+      "id": "V15",
+      "person": "2PL",
+      "proto": "*stavite",
+      "N": "staŵite",
+      "SE": "stavite",
+      "W": "staŵit"
+    },
+    {
+      "id": "V15",
+      "person": "3PL",
+      "proto": "*stavięt",
+      "N": "staŵięt",
+      "SE": "staviet",
+      "W": "staŵięt"
+    },
+    {
+      "id": "V16",
+      "person": "1SG",
+      "proto": "*nosim",
+      "N": "nosim",
+      "SE": "nosim",
+      "W": "nosim"
+    },
+    {
+      "id": "V16",
+      "person": "2SG",
+      "proto": "*nosiš",
+      "N": "nosiš",
+      "SE": "nosiš",
+      "W": "nosiš"
+    },
+    {
+      "id": "V16",
+      "person": "3SG",
+      "proto": "*nosit",
+      "N": "nosit",
+      "SE": "nosit",
+      "W": "nosit"
+    },
+    {
+      "id": "V16",
+      "person": "1PL",
+      "proto": "*nosime",
+      "N": "nosime",
+      "SE": "nosime",
+      "W": "nosim"
+    },
+    {
+      "id": "V16",
+      "person": "2PL",
+      "proto": "*nosite",
+      "N": "nosite",
+      "SE": "nosite",
+      "W": "nosit"
+    },
+    {
+      "id": "V16",
+      "person": "3PL",
+      "proto": "*nosięt",
+      "N": "nosięt",
+      "SE": "nosiet",
+      "W": "nosięt"
+    },
+    {
+      "id": "V17",
+      "person": "1SG",
+      "proto": "*xodim",
+      "N": "ħodim",
+      "SE": "hodim",
+      "W": "ħodim"
+    },
+    {
+      "id": "V17",
+      "person": "2SG",
+      "proto": "*xodiš",
+      "N": "ħodiš",
+      "SE": "hodiš",
+      "W": "ħodiš"
+    },
+    {
+      "id": "V17",
+      "person": "3SG",
+      "proto": "*xodit",
+      "N": "ħodit",
+      "SE": "hodit",
+      "W": "ħodit"
+    },
+    {
+      "id": "V17",
+      "person": "1PL",
+      "proto": "*xodime",
+      "N": "ħodime",
+      "SE": "hodime",
+      "W": "ħodim"
+    },
+    {
+      "id": "V17",
+      "person": "2PL",
+      "proto": "*xodite",
+      "N": "ħodite",
+      "SE": "hodite",
+      "W": "ħodit"
+    },
+    {
+      "id": "V17",
+      "person": "3PL",
+      "proto": "*xodięt",
+      "N": "ħodięt",
+      "SE": "hodiet",
+      "W": "ħodięt"
+    },
+    {
+      "id": "V18",
+      "person": "1SG",
+      "proto": "*videm",
+      "N": "ŵidem",
+      "SE": "videm",
+      "W": "ŵidem"
+    },
+    {
+      "id": "V18",
+      "person": "2SG",
+      "proto": "*videš",
+      "N": "ŵideš",
+      "SE": "videš",
+      "W": "ŵideš"
+    },
+    {
+      "id": "V18",
+      "person": "3SG",
+      "proto": "*videt",
+      "N": "ŵidet",
+      "SE": "videt",
+      "W": "ŵidet"
+    },
+    {
+      "id": "V18",
+      "person": "1PL",
+      "proto": "*videme",
+      "N": "ŵideme",
+      "SE": "videme",
+      "W": "ŵidem"
+    },
+    {
+      "id": "V18",
+      "person": "2PL",
+      "proto": "*videte",
+      "N": "ŵidete",
+      "SE": "videte",
+      "W": "ŵidet"
+    },
+    {
+      "id": "V18",
+      "person": "3PL",
+      "proto": "*videut",
+      "N": "ŵideut",
+      "SE": "videut",
+      "W": "ŵideut"
+    },
+    {
+      "id": "V19",
+      "person": "1SG",
+      "proto": "*nesem",
+      "N": "nesem",
+      "SE": "nesem",
+      "W": "nesem"
+    },
+    {
+      "id": "V19",
+      "person": "2SG",
+      "proto": "*neseš",
+      "N": "neseš",
+      "SE": "neseš",
+      "W": "neseš"
+    },
+    {
+      "id": "V19",
+      "person": "3SG",
+      "proto": "*neset",
+      "N": "neset",
+      "SE": "neset",
+      "W": "neset"
+    },
+    {
+      "id": "V19",
+      "person": "1PL",
+      "proto": "*neseme",
+      "N": "neseme",
+      "SE": "neseme",
+      "W": "nesem"
+    },
+    {
+      "id": "V19",
+      "person": "2PL",
+      "proto": "*nesete",
+      "N": "nesete",
+      "SE": "nesete",
+      "W": "neset"
+    },
+    {
+      "id": "V19",
+      "person": "3PL",
+      "proto": "*neseut",
+      "N": "neseut",
+      "SE": "neseut",
+      "W": "neseut"
+    },
+    {
+      "id": "V20",
+      "person": "1SG",
+      "proto": "*živem",
+      "N": "žiŵem",
+      "SE": "živem",
+      "W": "žiŵem"
+    },
+    {
+      "id": "V20",
+      "person": "2SG",
+      "proto": "*živeš",
+      "N": "žiŵeš",
+      "SE": "živeš",
+      "W": "žiŵeš"
+    },
+    {
+      "id": "V20",
+      "person": "3SG",
+      "proto": "*živet",
+      "N": "žiŵet",
+      "SE": "živet",
+      "W": "žiŵet"
+    },
+    {
+      "id": "V20",
+      "person": "1PL",
+      "proto": "*živeme",
+      "N": "žiŵeme",
+      "SE": "živeme",
+      "W": "žiŵem"
+    },
+    {
+      "id": "V20",
+      "person": "2PL",
+      "proto": "*živete",
+      "N": "žiŵete",
+      "SE": "živete",
+      "W": "žiŵet"
+    },
+    {
+      "id": "V20",
+      "person": "3PL",
+      "proto": "*živeut",
+      "N": "žiŵeut",
+      "SE": "živeut",
+      "W": "žiŵeut"
+    },
+    {
+      "id": "V21",
+      "person": "1SG",
+      "proto": "*gorem",
+      "N": "ġorem",
+      "SE": "gorem",
+      "W": "ġorem"
+    },
+    {
+      "id": "V21",
+      "person": "2SG",
+      "proto": "*goreš",
+      "N": "ġoreš",
+      "SE": "goreš",
+      "W": "ġoreš"
+    },
+    {
+      "id": "V21",
+      "person": "3SG",
+      "proto": "*goret",
+      "N": "ġoret",
+      "SE": "goret",
+      "W": "ġoret"
+    },
+    {
+      "id": "V21",
+      "person": "1PL",
+      "proto": "*goreme",
+      "N": "ġoreme",
+      "SE": "goreme",
+      "W": "ġorem"
+    },
+    {
+      "id": "V21",
+      "person": "2PL",
+      "proto": "*gorete",
+      "N": "ġorete",
+      "SE": "gorete",
+      "W": "ġoret"
+    },
+    {
+      "id": "V21",
+      "person": "3PL",
+      "proto": "*goreut",
+      "N": "ġoreut",
+      "SE": "goreut",
+      "W": "ġoreut"
+    },
+    {
+      "id": "V22",
+      "person": "1SG",
+      "proto": "*idu",
+      "N": "idu",
+      "SE": "idu",
+      "W": "idu"
+    },
+    {
+      "id": "V22",
+      "person": "2SG",
+      "proto": "*ideš",
+      "N": "ideš",
+      "SE": "ideš",
+      "W": "ideš"
+    },
+    {
+      "id": "V22",
+      "person": "3SG",
+      "proto": "*idet",
+      "N": "idet",
+      "SE": "idet",
+      "W": "idet"
+    },
+    {
+      "id": "V22",
+      "person": "1PL",
+      "proto": "*ideme",
+      "N": "ideme",
+      "SE": "ideme",
+      "W": "idem"
+    },
+    {
+      "id": "V22",
+      "person": "2PL",
+      "proto": "*idete",
+      "N": "idete",
+      "SE": "idete",
+      "W": "idet"
+    },
+    {
+      "id": "V22",
+      "person": "3PL",
+      "proto": "*idut",
+      "N": "idut",
+      "SE": "idut",
+      "W": "idut"
+    },
+    {
+      "id": "V23",
+      "person": "1SG",
+      "proto": "*dam",
+      "N": "dam",
+      "SE": "dam",
+      "W": "dam"
+    },
+    {
+      "id": "V23",
+      "person": "2SG",
+      "proto": "*daš",
+      "N": "daš",
+      "SE": "daš",
+      "W": "daš"
+    },
+    {
+      "id": "V23",
+      "person": "3SG",
+      "proto": "*dast",
+      "N": "dast",
+      "SE": "dast",
+      "W": "dast"
+    },
+    {
+      "id": "V23",
+      "person": "1PL",
+      "proto": "*dame",
+      "N": "dame",
+      "SE": "dame",
+      "W": "dam"
+    },
+    {
+      "id": "V23",
+      "person": "2PL",
+      "proto": "*date",
+      "N": "date",
+      "SE": "date",
+      "W": "dat"
+    },
+    {
+      "id": "V23",
+      "person": "3PL",
+      "proto": "*dadut",
+      "N": "dadut",
+      "SE": "dadut",
+      "W": "dadut"
+    },
+    {
+      "id": "V24",
+      "person": "1SG",
+      "proto": "*jesm",
+      "N": "jesm",
+      "SE": "jesm",
+      "W": "jesm"
+    },
+    {
+      "id": "V24",
+      "person": "2SG",
+      "proto": "*jesi",
+      "N": "jesi",
+      "SE": "jesi",
+      "W": "jesi"
+    },
+    {
+      "id": "V24",
+      "person": "3SG",
+      "proto": "*jest",
+      "N": "jest",
+      "SE": "jest",
+      "W": "jest"
+    },
+    {
+      "id": "V24",
+      "person": "1PL",
+      "proto": "*jesme",
+      "N": "jesme",
+      "SE": "jesme",
+      "W": "jesm"
+    },
+    {
+      "id": "V24",
+      "person": "2PL",
+      "proto": "*jeste",
+      "N": "jeste",
+      "SE": "jeste",
+      "W": "jest"
+    },
+    {
+      "id": "V24",
+      "person": "3PL",
+      "proto": "*sut",
+      "N": "sut",
+      "SE": "sut",
+      "W": "sut"
+    },
+    {
+      "id": "V25",
+      "person": "1SG",
+      "proto": "*mogu",
+      "N": "moġu",
+      "SE": "mogu",
+      "W": "moġu"
+    },
+    {
+      "id": "V25",
+      "person": "2SG",
+      "proto": "*možeš",
+      "N": "možeš",
+      "SE": "možeš",
+      "W": "možeš"
+    },
+    {
+      "id": "V25",
+      "person": "3SG",
+      "proto": "*možet",
+      "N": "možet",
+      "SE": "možet",
+      "W": "možet"
+    },
+    {
+      "id": "V25",
+      "person": "1PL",
+      "proto": "*možeme",
+      "N": "možeme",
+      "SE": "možeme",
+      "W": "možem"
+    },
+    {
+      "id": "V25",
+      "person": "2PL",
+      "proto": "*možete",
+      "N": "možete",
+      "SE": "možete",
+      "W": "možet"
+    },
+    {
+      "id": "V25",
+      "person": "3PL",
+      "proto": "*mogut",
+      "N": "moġut",
+      "SE": "mogut",
+      "W": "moġut"
+    },
+    {
+      "id": "V26",
+      "person": "1SG",
+      "proto": "*napisam",
+      "N": "napisam",
+      "SE": "napisam",
+      "W": "napisam"
+    },
+    {
+      "id": "V26",
+      "person": "2SG",
+      "proto": "*napisaš",
+      "N": "napisaš",
+      "SE": "napisaš",
+      "W": "napisaš"
+    },
+    {
+      "id": "V26",
+      "person": "3SG",
+      "proto": "*napisat",
+      "N": "napisat",
+      "SE": "napisat",
+      "W": "napisat"
+    },
+    {
+      "id": "V26",
+      "person": "1PL",
+      "proto": "*napisame",
+      "N": "napisame",
+      "SE": "napisame",
+      "W": "napisam"
+    },
+    {
+      "id": "V26",
+      "person": "2PL",
+      "proto": "*napisate",
+      "N": "napisate",
+      "SE": "napisate",
+      "W": "napisat"
+    },
+    {
+      "id": "V26",
+      "person": "3PL",
+      "proto": "*napisająt",
+      "N": "napisająt",
+      "SE": "napisajot",
+      "W": "napisająt"
+    },
+    {
+      "id": "V27",
+      "person": "1SG",
+      "proto": "*uslÿšam",
+      "N": "uslÿšam",
+      "SE": "uslišam",
+      "W": "usłÿšam"
+    },
+    {
+      "id": "V27",
+      "person": "2SG",
+      "proto": "*uslÿšaš",
+      "N": "uslÿšaš",
+      "SE": "uslišaš",
+      "W": "usłÿšaš"
+    },
+    {
+      "id": "V27",
+      "person": "3SG",
+      "proto": "*uslÿšat",
+      "N": "uslÿšat",
+      "SE": "uslišat",
+      "W": "usłÿšat"
+    },
+    {
+      "id": "V27",
+      "person": "1PL",
+      "proto": "*uslÿšame",
+      "N": "uslÿšame",
+      "SE": "uslišame",
+      "W": "usłÿšam"
+    },
+    {
+      "id": "V27",
+      "person": "2PL",
+      "proto": "*uslÿšate",
+      "N": "uslÿšate",
+      "SE": "uslišate",
+      "W": "usłÿšat"
+    },
+    {
+      "id": "V27",
+      "person": "3PL",
+      "proto": "*uslÿšająt",
+      "N": "uslÿšająt",
+      "SE": "uslišajot",
+      "W": "usłÿšająt"
+    },
+    {
+      "id": "V28",
+      "person": "1SG",
+      "proto": "*sdelam",
+      "N": "sdelam",
+      "SE": "sdelam",
+      "W": "sdełam"
+    },
+    {
+      "id": "V28",
+      "person": "2SG",
+      "proto": "*sdelaš",
+      "N": "sdelaš",
+      "SE": "sdelaš",
+      "W": "sdełaš"
+    },
+    {
+      "id": "V28",
+      "person": "3SG",
+      "proto": "*sdelat",
+      "N": "sdelat",
+      "SE": "sdelat",
+      "W": "sdełat"
+    },
+    {
+      "id": "V28",
+      "person": "1PL",
+      "proto": "*sdelame",
+      "N": "sdelame",
+      "SE": "sdelame",
+      "W": "sdełam"
+    },
+    {
+      "id": "V28",
+      "person": "2PL",
+      "proto": "*sdelate",
+      "N": "sdelate",
+      "SE": "sdelate",
+      "W": "sdełat"
+    },
+    {
+      "id": "V28",
+      "person": "3PL",
+      "proto": "*sdelająt",
+      "N": "sdelająt",
+      "SE": "sdelajot",
+      "W": "sdełająt"
+    },
+    {
+      "id": "V29",
+      "person": "1SG",
+      "proto": "*poščadovam",
+      "N": "poščadoŵam",
+      "SE": "poščadovam",
+      "W": "poščadoŵam"
+    },
+    {
+      "id": "V29",
+      "person": "2SG",
+      "proto": "*poščadovaš",
+      "N": "poščadoŵaš",
+      "SE": "poščadovaš",
+      "W": "poščadoŵaš"
+    },
+    {
+      "id": "V29",
+      "person": "3SG",
+      "proto": "*poščadovat",
+      "N": "poščadoŵat",
+      "SE": "poščadovat",
+      "W": "poščadoŵat"
+    },
+    {
+      "id": "V29",
+      "person": "1PL",
+      "proto": "*poščadovame",
+      "N": "poščadoŵame",
+      "SE": "poščadovame",
+      "W": "poščadoŵam"
+    },
+    {
+      "id": "V29",
+      "person": "2PL",
+      "proto": "*poščadovate",
+      "N": "poščadoŵate",
+      "SE": "poščadovate",
+      "W": "poščadoŵat"
+    },
+    {
+      "id": "V29",
+      "person": "3PL",
+      "proto": "*poščadovająt",
+      "N": "poščadoŵająt",
+      "SE": "poščadovajot",
+      "W": "poščadoŵająt"
+    },
+    {
+      "id": "V30",
+      "person": "1SG",
+      "proto": "*zakričam",
+      "N": "zakričam",
+      "SE": "zakričam",
+      "W": "zakričam"
+    },
+    {
+      "id": "V30",
+      "person": "2SG",
+      "proto": "*zakričaš",
+      "N": "zakričaš",
+      "SE": "zakričaš",
+      "W": "zakričaš"
+    },
+    {
+      "id": "V30",
+      "person": "3SG",
+      "proto": "*zakričat",
+      "N": "zakričat",
+      "SE": "zakričat",
+      "W": "zakričat"
+    },
+    {
+      "id": "V30",
+      "person": "1PL",
+      "proto": "*zakričame",
+      "N": "zakričame",
+      "SE": "zakričame",
+      "W": "zakričam"
+    },
+    {
+      "id": "V30",
+      "person": "2PL",
+      "proto": "*zakričate",
+      "N": "zakričate",
+      "SE": "zakričate",
+      "W": "zakričat"
+    },
+    {
+      "id": "V30",
+      "person": "3PL",
+      "proto": "*zakričająt",
+      "N": "zakričająt",
+      "SE": "zakričajot",
+      "W": "zakričająt"
+    },
+    {
+      "id": "V31",
+      "person": "1SG",
+      "proto": "*pospam",
+      "N": "pospam",
+      "SE": "pospam",
+      "W": "pospam"
+    },
+    {
+      "id": "V31",
+      "person": "2SG",
+      "proto": "*pospaš",
+      "N": "pospaš",
+      "SE": "pospaš",
+      "W": "pospaš"
+    },
+    {
+      "id": "V31",
+      "person": "3SG",
+      "proto": "*pospat",
+      "N": "pospat",
+      "SE": "pospat",
+      "W": "pospat"
+    },
+    {
+      "id": "V31",
+      "person": "1PL",
+      "proto": "*pospame",
+      "N": "pospame",
+      "SE": "pospame",
+      "W": "pospam"
+    },
+    {
+      "id": "V31",
+      "person": "2PL",
+      "proto": "*pospate",
+      "N": "pospate",
+      "SE": "pospate",
+      "W": "pospat"
+    },
+    {
+      "id": "V31",
+      "person": "3PL",
+      "proto": "*pospająt",
+      "N": "pospająt",
+      "SE": "pospajot",
+      "W": "pospająt"
+    },
+    {
+      "id": "V32",
+      "person": "1SG",
+      "proto": "*postavim",
+      "N": "postaŵim",
+      "SE": "postavim",
+      "W": "postaŵim"
+    },
+    {
+      "id": "V32",
+      "person": "2SG",
+      "proto": "*postaviš",
+      "N": "postaŵiš",
+      "SE": "postaviš",
+      "W": "postaŵiš"
+    },
+    {
+      "id": "V32",
+      "person": "3SG",
+      "proto": "*postavit",
+      "N": "postaŵit",
+      "SE": "postavit",
+      "W": "postaŵit"
+    },
+    {
+      "id": "V32",
+      "person": "1PL",
+      "proto": "*postavime",
+      "N": "postaŵime",
+      "SE": "postavime",
+      "W": "postaŵim"
+    },
+    {
+      "id": "V32",
+      "person": "2PL",
+      "proto": "*postavite",
+      "N": "postaŵite",
+      "SE": "postavite",
+      "W": "postaŵit"
+    },
+    {
+      "id": "V32",
+      "person": "3PL",
+      "proto": "*postavięt",
+      "N": "postaŵięt",
+      "SE": "postaviet",
+      "W": "postaŵięt"
+    },
+    {
+      "id": "V33",
+      "person": "1SG",
+      "proto": "*doprÿxodim",
+      "N": "doprÿħodim",
+      "SE": "doprihodim",
+      "W": "doprÿħodim"
+    },
+    {
+      "id": "V33",
+      "person": "2SG",
+      "proto": "*doprÿxodiš",
+      "N": "doprÿħodiš",
+      "SE": "doprihodiš",
+      "W": "doprÿħodiš"
+    },
+    {
+      "id": "V33",
+      "person": "3SG",
+      "proto": "*doprÿxodit",
+      "N": "doprÿħodit",
+      "SE": "doprihodit",
+      "W": "doprÿħodit"
+    },
+    {
+      "id": "V33",
+      "person": "1PL",
+      "proto": "*doprÿxodime",
+      "N": "doprÿħodime",
+      "SE": "doprihodime",
+      "W": "doprÿħodim"
+    },
+    {
+      "id": "V33",
+      "person": "2PL",
+      "proto": "*doprÿxodite",
+      "N": "doprÿħodite",
+      "SE": "doprihodite",
+      "W": "doprÿħodit"
+    },
+    {
+      "id": "V33",
+      "person": "3PL",
+      "proto": "*doprÿxodięt",
+      "N": "doprÿħodięt",
+      "SE": "doprihodiet",
+      "W": "doprÿħodięt"
+    },
+    {
+      "id": "V34",
+      "person": "1SG",
+      "proto": "*uvidem",
+      "N": "uŵidem",
+      "SE": "uvidem",
+      "W": "uŵidem"
+    },
+    {
+      "id": "V34",
+      "person": "2SG",
+      "proto": "*uvideš",
+      "N": "uŵideš",
+      "SE": "uvideš",
+      "W": "uŵideš"
+    },
+    {
+      "id": "V34",
+      "person": "3SG",
+      "proto": "*uvidet",
+      "N": "uŵidet",
+      "SE": "uvidet",
+      "W": "uŵidet"
+    },
+    {
+      "id": "V34",
+      "person": "1PL",
+      "proto": "*uvideme",
+      "N": "uŵideme",
+      "SE": "uvideme",
+      "W": "uŵidem"
+    },
+    {
+      "id": "V34",
+      "person": "2PL",
+      "proto": "*uvidete",
+      "N": "uŵidete",
+      "SE": "uvidete",
+      "W": "uŵidet"
+    },
+    {
+      "id": "V34",
+      "person": "3PL",
+      "proto": "*uvideut",
+      "N": "uŵideut",
+      "SE": "uvideut",
+      "W": "uŵideut"
+    },
+    {
+      "id": "V35",
+      "person": "1SG",
+      "proto": "*prinesem",
+      "N": "prinesem",
+      "SE": "prinesem",
+      "W": "prinesem"
+    },
+    {
+      "id": "V35",
+      "person": "2SG",
+      "proto": "*prineseš",
+      "N": "prineseš",
+      "SE": "prineseš",
+      "W": "prineseš"
+    },
+    {
+      "id": "V35",
+      "person": "3SG",
+      "proto": "*prineset",
+      "N": "prineset",
+      "SE": "prineset",
+      "W": "prineset"
+    },
+    {
+      "id": "V35",
+      "person": "1PL",
+      "proto": "*prineseme",
+      "N": "prineseme",
+      "SE": "prineseme",
+      "W": "prinesem"
+    },
+    {
+      "id": "V35",
+      "person": "2PL",
+      "proto": "*prinesete",
+      "N": "prinesete",
+      "SE": "prinesete",
+      "W": "prineset"
+    },
+    {
+      "id": "V35",
+      "person": "3PL",
+      "proto": "*prineseut",
+      "N": "prineseut",
+      "SE": "prineseut",
+      "W": "prineseut"
+    },
+    {
+      "id": "V36",
+      "person": "1SG",
+      "proto": "*progovorim",
+      "N": "proġoŵorim",
+      "SE": "progovorim",
+      "W": "proġoŵorim"
+    },
+    {
+      "id": "V36",
+      "person": "2SG",
+      "proto": "*progovoriš",
+      "N": "proġoŵoriš",
+      "SE": "progovoriš",
+      "W": "proġoŵoriš"
+    },
+    {
+      "id": "V36",
+      "person": "3SG",
+      "proto": "*progovorit",
+      "N": "proġoŵorit",
+      "SE": "progovorit",
+      "W": "proġoŵorit"
+    },
+    {
+      "id": "V36",
+      "person": "1PL",
+      "proto": "*progovorime",
+      "N": "proġoŵorime",
+      "SE": "progovorime",
+      "W": "proġoŵorim"
+    },
+    {
+      "id": "V36",
+      "person": "2PL",
+      "proto": "*progovorite",
+      "N": "proġoŵorite",
+      "SE": "progovorite",
+      "W": "proġoŵorit"
+    },
+    {
+      "id": "V36",
+      "person": "3PL",
+      "proto": "*progovorięt",
+      "N": "proġoŵorięt",
+      "SE": "progovoriet",
+      "W": "proġoŵorięt"
+    }
+  ],
+  "past": [
+    {
+      "id": "V01",
+      "gender": "M",
+      "proto": "*pisal",
+      "N": "pisal",
+      "SE": "pisal",
+      "W": "pisał"
+    },
+    {
+      "id": "V01",
+      "gender": "F",
+      "proto": "*pisala",
+      "N": "pisala",
+      "SE": "pisala",
+      "W": "pisał"
+    },
+    {
+      "id": "V01",
+      "gender": "N",
+      "proto": "*pisalo",
+      "N": "pisalo",
+      "SE": "pisalo",
+      "W": "pisał"
+    },
+    {
+      "id": "V01",
+      "gender": "PL",
+      "proto": "*pisali",
+      "N": "pisali",
+      "SE": "pisali",
+      "W": "pisałi"
+    },
+    {
+      "id": "V02",
+      "gender": "M",
+      "proto": "*slÿšal",
+      "N": "slÿšal",
+      "SE": "slišal",
+      "W": "słÿšał"
+    },
+    {
+      "id": "V02",
+      "gender": "F",
+      "proto": "*slÿšala",
+      "N": "slÿšala",
+      "SE": "slišala",
+      "W": "słÿšał"
+    },
+    {
+      "id": "V02",
+      "gender": "N",
+      "proto": "*slÿšalo",
+      "N": "slÿšalo",
+      "SE": "slišalo",
+      "W": "słÿšał"
+    },
+    {
+      "id": "V02",
+      "gender": "PL",
+      "proto": "*slÿšali",
+      "N": "slÿšali",
+      "SE": "slišali",
+      "W": "słÿšałi"
+    },
+    {
+      "id": "V03",
+      "gender": "M",
+      "proto": "*begal",
+      "N": "beġal",
+      "SE": "begal",
+      "W": "beġał"
+    },
+    {
+      "id": "V03",
+      "gender": "F",
+      "proto": "*begala",
+      "N": "beġala",
+      "SE": "begala",
+      "W": "beġał"
+    },
+    {
+      "id": "V03",
+      "gender": "N",
+      "proto": "*begalo",
+      "N": "beġalo",
+      "SE": "begalo",
+      "W": "beġał"
+    },
+    {
+      "id": "V03",
+      "gender": "PL",
+      "proto": "*begali",
+      "N": "beġali",
+      "SE": "begali",
+      "W": "beġałi"
+    },
+    {
+      "id": "V04",
+      "gender": "M",
+      "proto": "*delal",
+      "N": "delal",
+      "SE": "delal",
+      "W": "dełał"
+    },
+    {
+      "id": "V04",
+      "gender": "F",
+      "proto": "*delala",
+      "N": "delala",
+      "SE": "delala",
+      "W": "dełał"
+    },
+    {
+      "id": "V04",
+      "gender": "N",
+      "proto": "*delalo",
+      "N": "delalo",
+      "SE": "delalo",
+      "W": "dełał"
+    },
+    {
+      "id": "V04",
+      "gender": "PL",
+      "proto": "*delali",
+      "N": "delali",
+      "SE": "delali",
+      "W": "dełałi"
+    },
+    {
+      "id": "V05",
+      "gender": "M",
+      "proto": "*ščadoval",
+      "N": "ščadoŵal",
+      "SE": "ščadoval",
+      "W": "ščadoŵał"
+    },
+    {
+      "id": "V05",
+      "gender": "F",
+      "proto": "*ščadovala",
+      "N": "ščadoŵala",
+      "SE": "ščadovala",
+      "W": "ščadoŵał"
+    },
+    {
+      "id": "V05",
+      "gender": "N",
+      "proto": "*ščadovalo",
+      "N": "ščadoŵalo",
+      "SE": "ščadovalo",
+      "W": "ščadoŵał"
+    },
+    {
+      "id": "V05",
+      "gender": "PL",
+      "proto": "*ščadovali",
+      "N": "ščadoŵali",
+      "SE": "ščadovali",
+      "W": "ščadoŵałi"
+    },
+    {
+      "id": "V06",
+      "gender": "M",
+      "proto": "*kričal",
+      "N": "kričal",
+      "SE": "kričal",
+      "W": "kričał"
+    },
+    {
+      "id": "V06",
+      "gender": "F",
+      "proto": "*kričala",
+      "N": "kričala",
+      "SE": "kričala",
+      "W": "kričał"
+    },
+    {
+      "id": "V06",
+      "gender": "N",
+      "proto": "*kričalo",
+      "N": "kričalo",
+      "SE": "kričalo",
+      "W": "kričał"
+    },
+    {
+      "id": "V06",
+      "gender": "PL",
+      "proto": "*kričali",
+      "N": "kričali",
+      "SE": "kričali",
+      "W": "kričałi"
+    },
+    {
+      "id": "V07",
+      "gender": "M",
+      "proto": "*ždal",
+      "N": "ždal",
+      "SE": "ždal",
+      "W": "ždał"
+    },
+    {
+      "id": "V07",
+      "gender": "F",
+      "proto": "*ždala",
+      "N": "ždala",
+      "SE": "ždala",
+      "W": "ždał"
+    },
+    {
+      "id": "V07",
+      "gender": "N",
+      "proto": "*ždalo",
+      "N": "ždalo",
+      "SE": "ždalo",
+      "W": "ždał"
+    },
+    {
+      "id": "V07",
+      "gender": "PL",
+      "proto": "*ždali",
+      "N": "ždali",
+      "SE": "ždali",
+      "W": "ždałi"
+    },
+    {
+      "id": "V08",
+      "gender": "M",
+      "proto": "*zval",
+      "N": "zŵal",
+      "SE": "zval",
+      "W": "zŵał"
+    },
+    {
+      "id": "V08",
+      "gender": "F",
+      "proto": "*zvala",
+      "N": "zŵala",
+      "SE": "zvala",
+      "W": "zŵał"
+    },
+    {
+      "id": "V08",
+      "gender": "N",
+      "proto": "*zvalo",
+      "N": "zŵalo",
+      "SE": "zvalo",
+      "W": "zŵał"
+    },
+    {
+      "id": "V08",
+      "gender": "PL",
+      "proto": "*zvali",
+      "N": "zŵali",
+      "SE": "zvali",
+      "W": "zŵałi"
+    },
+    {
+      "id": "V09",
+      "gender": "M",
+      "proto": "*znal",
+      "N": "znal",
+      "SE": "znal",
+      "W": "znał"
+    },
+    {
+      "id": "V09",
+      "gender": "F",
+      "proto": "*znala",
+      "N": "znala",
+      "SE": "znala",
+      "W": "znał"
+    },
+    {
+      "id": "V09",
+      "gender": "N",
+      "proto": "*znalo",
+      "N": "znalo",
+      "SE": "znalo",
+      "W": "znał"
+    },
+    {
+      "id": "V09",
+      "gender": "PL",
+      "proto": "*znali",
+      "N": "znali",
+      "SE": "znali",
+      "W": "znałi"
+    },
+    {
+      "id": "V10",
+      "gender": "M",
+      "proto": "*spal",
+      "N": "spal",
+      "SE": "spal",
+      "W": "spał"
+    },
+    {
+      "id": "V10",
+      "gender": "F",
+      "proto": "*spala",
+      "N": "spala",
+      "SE": "spala",
+      "W": "spał"
+    },
+    {
+      "id": "V10",
+      "gender": "N",
+      "proto": "*spalo",
+      "N": "spalo",
+      "SE": "spalo",
+      "W": "spał"
+    },
+    {
+      "id": "V10",
+      "gender": "PL",
+      "proto": "*spali",
+      "N": "spali",
+      "SE": "spali",
+      "W": "spałi"
+    },
+    {
+      "id": "V11",
+      "gender": "M",
+      "proto": "*patril",
+      "N": "patril",
+      "SE": "patril",
+      "W": "patrił"
+    },
+    {
+      "id": "V11",
+      "gender": "F",
+      "proto": "*patrila",
+      "N": "patrila",
+      "SE": "patrila",
+      "W": "patrił"
+    },
+    {
+      "id": "V11",
+      "gender": "N",
+      "proto": "*patrilo",
+      "N": "patrilo",
+      "SE": "patrilo",
+      "W": "patrił"
+    },
+    {
+      "id": "V11",
+      "gender": "PL",
+      "proto": "*patrili",
+      "N": "patrili",
+      "SE": "patrili",
+      "W": "patriłi"
+    },
+    {
+      "id": "V12",
+      "gender": "M",
+      "proto": "*xranil",
+      "N": "ħranil",
+      "SE": "hranil",
+      "W": "ħranił"
+    },
+    {
+      "id": "V12",
+      "gender": "F",
+      "proto": "*xranila",
+      "N": "ħranila",
+      "SE": "hranila",
+      "W": "ħranił"
+    },
+    {
+      "id": "V12",
+      "gender": "N",
+      "proto": "*xranilo",
+      "N": "ħranilo",
+      "SE": "hranilo",
+      "W": "ħranił"
+    },
+    {
+      "id": "V12",
+      "gender": "PL",
+      "proto": "*xranili",
+      "N": "ħranili",
+      "SE": "hranili",
+      "W": "ħraniłi"
+    },
+    {
+      "id": "V13",
+      "gender": "M",
+      "proto": "*govoril",
+      "N": "ġoŵoril",
+      "SE": "govoril",
+      "W": "ġoŵorił"
+    },
+    {
+      "id": "V13",
+      "gender": "F",
+      "proto": "*govorila",
+      "N": "ġoŵorila",
+      "SE": "govorila",
+      "W": "ġoŵorił"
+    },
+    {
+      "id": "V13",
+      "gender": "N",
+      "proto": "*govorilo",
+      "N": "ġoŵorilo",
+      "SE": "govorilo",
+      "W": "ġoŵorił"
+    },
+    {
+      "id": "V13",
+      "gender": "PL",
+      "proto": "*govorili",
+      "N": "ġoŵorili",
+      "SE": "govorili",
+      "W": "ġoŵoriłi"
+    },
+    {
+      "id": "V14",
+      "gender": "M",
+      "proto": "*prÿxodil",
+      "N": "prÿħodil",
+      "SE": "prihodil",
+      "W": "prÿħodił"
+    },
+    {
+      "id": "V14",
+      "gender": "F",
+      "proto": "*prÿxodila",
+      "N": "prÿħodila",
+      "SE": "prihodila",
+      "W": "prÿħodił"
+    },
+    {
+      "id": "V14",
+      "gender": "N",
+      "proto": "*prÿxodilo",
+      "N": "prÿħodilo",
+      "SE": "prihodilo",
+      "W": "prÿħodił"
+    },
+    {
+      "id": "V14",
+      "gender": "PL",
+      "proto": "*prÿxodili",
+      "N": "prÿħodili",
+      "SE": "prihodili",
+      "W": "prÿħodiłi"
+    },
+    {
+      "id": "V15",
+      "gender": "M",
+      "proto": "*stavil",
+      "N": "staŵil",
+      "SE": "stavil",
+      "W": "staŵił"
+    },
+    {
+      "id": "V15",
+      "gender": "F",
+      "proto": "*stavila",
+      "N": "staŵila",
+      "SE": "stavila",
+      "W": "staŵił"
+    },
+    {
+      "id": "V15",
+      "gender": "N",
+      "proto": "*stavilo",
+      "N": "staŵilo",
+      "SE": "stavilo",
+      "W": "staŵił"
+    },
+    {
+      "id": "V15",
+      "gender": "PL",
+      "proto": "*stavili",
+      "N": "staŵili",
+      "SE": "stavili",
+      "W": "staŵiłi"
+    },
+    {
+      "id": "V16",
+      "gender": "M",
+      "proto": "*nosil",
+      "N": "nosil",
+      "SE": "nosil",
+      "W": "nosił"
+    },
+    {
+      "id": "V16",
+      "gender": "F",
+      "proto": "*nosila",
+      "N": "nosila",
+      "SE": "nosila",
+      "W": "nosił"
+    },
+    {
+      "id": "V16",
+      "gender": "N",
+      "proto": "*nosilo",
+      "N": "nosilo",
+      "SE": "nosilo",
+      "W": "nosił"
+    },
+    {
+      "id": "V16",
+      "gender": "PL",
+      "proto": "*nosili",
+      "N": "nosili",
+      "SE": "nosili",
+      "W": "nosiłi"
+    },
+    {
+      "id": "V17",
+      "gender": "M",
+      "proto": "*xodil",
+      "N": "ħodil",
+      "SE": "hodil",
+      "W": "ħodił"
+    },
+    {
+      "id": "V17",
+      "gender": "F",
+      "proto": "*xodila",
+      "N": "ħodila",
+      "SE": "hodila",
+      "W": "ħodił"
+    },
+    {
+      "id": "V17",
+      "gender": "N",
+      "proto": "*xodilo",
+      "N": "ħodilo",
+      "SE": "hodilo",
+      "W": "ħodił"
+    },
+    {
+      "id": "V17",
+      "gender": "PL",
+      "proto": "*xodili",
+      "N": "ħodili",
+      "SE": "hodili",
+      "W": "ħodiłi"
+    },
+    {
+      "id": "V18",
+      "gender": "M",
+      "proto": "*videl",
+      "N": "ŵidel",
+      "SE": "videl",
+      "W": "ŵideł"
+    },
+    {
+      "id": "V18",
+      "gender": "F",
+      "proto": "*videla",
+      "N": "ŵidela",
+      "SE": "videla",
+      "W": "ŵideł"
+    },
+    {
+      "id": "V18",
+      "gender": "N",
+      "proto": "*videlo",
+      "N": "ŵidelo",
+      "SE": "videlo",
+      "W": "ŵideł"
+    },
+    {
+      "id": "V18",
+      "gender": "PL",
+      "proto": "*videli",
+      "N": "ŵideli",
+      "SE": "videli",
+      "W": "ŵidełi"
+    },
+    {
+      "id": "V19",
+      "gender": "M",
+      "proto": "*nesel",
+      "N": "nesel",
+      "SE": "nesel",
+      "W": "neseł"
+    },
+    {
+      "id": "V19",
+      "gender": "F",
+      "proto": "*nesela",
+      "N": "nesela",
+      "SE": "nesela",
+      "W": "neseł"
+    },
+    {
+      "id": "V19",
+      "gender": "N",
+      "proto": "*neselo",
+      "N": "neselo",
+      "SE": "neselo",
+      "W": "neseł"
+    },
+    {
+      "id": "V19",
+      "gender": "PL",
+      "proto": "*neseli",
+      "N": "neseli",
+      "SE": "neseli",
+      "W": "nesełi"
+    },
+    {
+      "id": "V20",
+      "gender": "M",
+      "proto": "*živel",
+      "N": "žiŵel",
+      "SE": "živel",
+      "W": "žiŵeł"
+    },
+    {
+      "id": "V20",
+      "gender": "F",
+      "proto": "*živela",
+      "N": "žiŵela",
+      "SE": "živela",
+      "W": "žiŵeł"
+    },
+    {
+      "id": "V20",
+      "gender": "N",
+      "proto": "*živelo",
+      "N": "žiŵelo",
+      "SE": "živelo",
+      "W": "žiŵeł"
+    },
+    {
+      "id": "V20",
+      "gender": "PL",
+      "proto": "*živeli",
+      "N": "žiŵeli",
+      "SE": "živeli",
+      "W": "žiŵełi"
+    },
+    {
+      "id": "V21",
+      "gender": "M",
+      "proto": "*gorel",
+      "N": "ġorel",
+      "SE": "gorel",
+      "W": "ġoreł"
+    },
+    {
+      "id": "V21",
+      "gender": "F",
+      "proto": "*gorela",
+      "N": "ġorela",
+      "SE": "gorela",
+      "W": "ġoreł"
+    },
+    {
+      "id": "V21",
+      "gender": "N",
+      "proto": "*gorelo",
+      "N": "ġorelo",
+      "SE": "gorelo",
+      "W": "ġoreł"
+    },
+    {
+      "id": "V21",
+      "gender": "PL",
+      "proto": "*goreli",
+      "N": "ġoreli",
+      "SE": "goreli",
+      "W": "ġorełi"
+    },
+    {
+      "id": "V22",
+      "gender": "M",
+      "proto": "*šel",
+      "N": "šel",
+      "SE": "šel",
+      "W": "šeł"
+    },
+    {
+      "id": "V22",
+      "gender": "F",
+      "proto": "*šela",
+      "N": "šela",
+      "SE": "šela",
+      "W": "šeł"
+    },
+    {
+      "id": "V22",
+      "gender": "N",
+      "proto": "*šelo",
+      "N": "šelo",
+      "SE": "šelo",
+      "W": "šeł"
+    },
+    {
+      "id": "V22",
+      "gender": "PL",
+      "proto": "*šeli",
+      "N": "šeli",
+      "SE": "šeli",
+      "W": "šełi"
+    },
+    {
+      "id": "V23",
+      "gender": "M",
+      "proto": "*dal",
+      "N": "dal",
+      "SE": "dal",
+      "W": "dał"
+    },
+    {
+      "id": "V23",
+      "gender": "F",
+      "proto": "*dala",
+      "N": "dala",
+      "SE": "dala",
+      "W": "dał"
+    },
+    {
+      "id": "V23",
+      "gender": "N",
+      "proto": "*dalo",
+      "N": "dalo",
+      "SE": "dalo",
+      "W": "dał"
+    },
+    {
+      "id": "V23",
+      "gender": "PL",
+      "proto": "*dali",
+      "N": "dali",
+      "SE": "dali",
+      "W": "dałi"
+    },
+    {
+      "id": "V24",
+      "gender": "M",
+      "proto": "*bÿl",
+      "N": "bÿl",
+      "SE": "bil",
+      "W": "bÿł"
+    },
+    {
+      "id": "V24",
+      "gender": "F",
+      "proto": "*bÿla",
+      "N": "bÿla",
+      "SE": "bila",
+      "W": "bÿł"
+    },
+    {
+      "id": "V24",
+      "gender": "N",
+      "proto": "*bÿlo",
+      "N": "bÿlo",
+      "SE": "bilo",
+      "W": "bÿł"
+    },
+    {
+      "id": "V24",
+      "gender": "PL",
+      "proto": "*bÿli",
+      "N": "bÿli",
+      "SE": "bili",
+      "W": "bÿłi"
+    },
+    {
+      "id": "V25",
+      "gender": "M",
+      "proto": "*mogl",
+      "N": "moġł",
+      "SE": "mogl",
+      "W": "moġł"
+    },
+    {
+      "id": "V25",
+      "gender": "F",
+      "proto": "*mogla",
+      "N": "moġła",
+      "SE": "mogla",
+      "W": "moġł"
+    },
+    {
+      "id": "V25",
+      "gender": "N",
+      "proto": "*moglo",
+      "N": "moġło",
+      "SE": "moglo",
+      "W": "moġł"
+    },
+    {
+      "id": "V25",
+      "gender": "PL",
+      "proto": "*mogli",
+      "N": "moġłi",
+      "SE": "mogli",
+      "W": "moġłi"
+    },
+    {
+      "id": "V26",
+      "gender": "M",
+      "proto": "*napisal",
+      "N": "napisal",
+      "SE": "napisal",
+      "W": "napisał"
+    },
+    {
+      "id": "V26",
+      "gender": "F",
+      "proto": "*napisala",
+      "N": "napisala",
+      "SE": "napisala",
+      "W": "napisał"
+    },
+    {
+      "id": "V26",
+      "gender": "N",
+      "proto": "*napisalo",
+      "N": "napisalo",
+      "SE": "napisalo",
+      "W": "napisał"
+    },
+    {
+      "id": "V26",
+      "gender": "PL",
+      "proto": "*napisali",
+      "N": "napisali",
+      "SE": "napisali",
+      "W": "napisałi"
+    },
+    {
+      "id": "V27",
+      "gender": "M",
+      "proto": "*uslÿšal",
+      "N": "uslÿšal",
+      "SE": "uslišal",
+      "W": "usłÿšał"
+    },
+    {
+      "id": "V27",
+      "gender": "F",
+      "proto": "*uslÿšala",
+      "N": "uslÿšala",
+      "SE": "uslišala",
+      "W": "usłÿšał"
+    },
+    {
+      "id": "V27",
+      "gender": "N",
+      "proto": "*uslÿšalo",
+      "N": "uslÿšalo",
+      "SE": "uslišalo",
+      "W": "usłÿšał"
+    },
+    {
+      "id": "V27",
+      "gender": "PL",
+      "proto": "*uslÿšali",
+      "N": "uslÿšali",
+      "SE": "uslišali",
+      "W": "usłÿšałi"
+    },
+    {
+      "id": "V28",
+      "gender": "M",
+      "proto": "*sdelal",
+      "N": "sdelal",
+      "SE": "sdelal",
+      "W": "sdełał"
+    },
+    {
+      "id": "V28",
+      "gender": "F",
+      "proto": "*sdelala",
+      "N": "sdelala",
+      "SE": "sdelala",
+      "W": "sdełał"
+    },
+    {
+      "id": "V28",
+      "gender": "N",
+      "proto": "*sdelalo",
+      "N": "sdelalo",
+      "SE": "sdelalo",
+      "W": "sdełał"
+    },
+    {
+      "id": "V28",
+      "gender": "PL",
+      "proto": "*sdelali",
+      "N": "sdelali",
+      "SE": "sdelali",
+      "W": "sdełałi"
+    },
+    {
+      "id": "V29",
+      "gender": "M",
+      "proto": "*poščadoval",
+      "N": "poščadoŵal",
+      "SE": "poščadoval",
+      "W": "poščadoŵał"
+    },
+    {
+      "id": "V29",
+      "gender": "F",
+      "proto": "*poščadovala",
+      "N": "poščadoŵala",
+      "SE": "poščadovala",
+      "W": "poščadoŵał"
+    },
+    {
+      "id": "V29",
+      "gender": "N",
+      "proto": "*poščadovalo",
+      "N": "poščadoŵalo",
+      "SE": "poščadovalo",
+      "W": "poščadoŵał"
+    },
+    {
+      "id": "V29",
+      "gender": "PL",
+      "proto": "*poščadovali",
+      "N": "poščadoŵali",
+      "SE": "poščadovali",
+      "W": "poščadoŵałi"
+    },
+    {
+      "id": "V30",
+      "gender": "M",
+      "proto": "*zakričal",
+      "N": "zakričal",
+      "SE": "zakričal",
+      "W": "zakričał"
+    },
+    {
+      "id": "V30",
+      "gender": "F",
+      "proto": "*zakričala",
+      "N": "zakričala",
+      "SE": "zakričala",
+      "W": "zakričał"
+    },
+    {
+      "id": "V30",
+      "gender": "N",
+      "proto": "*zakričalo",
+      "N": "zakričalo",
+      "SE": "zakričalo",
+      "W": "zakričał"
+    },
+    {
+      "id": "V30",
+      "gender": "PL",
+      "proto": "*zakričali",
+      "N": "zakričali",
+      "SE": "zakričali",
+      "W": "zakričałi"
+    },
+    {
+      "id": "V31",
+      "gender": "M",
+      "proto": "*pospal",
+      "N": "pospal",
+      "SE": "pospal",
+      "W": "pospał"
+    },
+    {
+      "id": "V31",
+      "gender": "F",
+      "proto": "*pospala",
+      "N": "pospala",
+      "SE": "pospala",
+      "W": "pospał"
+    },
+    {
+      "id": "V31",
+      "gender": "N",
+      "proto": "*pospalo",
+      "N": "pospalo",
+      "SE": "pospalo",
+      "W": "pospał"
+    },
+    {
+      "id": "V31",
+      "gender": "PL",
+      "proto": "*pospali",
+      "N": "pospali",
+      "SE": "pospali",
+      "W": "pospałi"
+    },
+    {
+      "id": "V32",
+      "gender": "M",
+      "proto": "*postavil",
+      "N": "postaŵil",
+      "SE": "postavil",
+      "W": "postaŵił"
+    },
+    {
+      "id": "V32",
+      "gender": "F",
+      "proto": "*postavila",
+      "N": "postaŵila",
+      "SE": "postavila",
+      "W": "postaŵił"
+    },
+    {
+      "id": "V32",
+      "gender": "N",
+      "proto": "*postavilo",
+      "N": "postaŵilo",
+      "SE": "postavilo",
+      "W": "postaŵił"
+    },
+    {
+      "id": "V32",
+      "gender": "PL",
+      "proto": "*postavili",
+      "N": "postaŵili",
+      "SE": "postavili",
+      "W": "postaŵiłi"
+    },
+    {
+      "id": "V33",
+      "gender": "M",
+      "proto": "*doprÿxodil",
+      "N": "doprÿħodil",
+      "SE": "doprihodil",
+      "W": "doprÿħodił"
+    },
+    {
+      "id": "V33",
+      "gender": "F",
+      "proto": "*doprÿxodila",
+      "N": "doprÿħodila",
+      "SE": "doprihodila",
+      "W": "doprÿħodił"
+    },
+    {
+      "id": "V33",
+      "gender": "N",
+      "proto": "*doprÿxodilo",
+      "N": "doprÿħodilo",
+      "SE": "doprihodilo",
+      "W": "doprÿħodił"
+    },
+    {
+      "id": "V33",
+      "gender": "PL",
+      "proto": "*doprÿxodili",
+      "N": "doprÿħodili",
+      "SE": "doprihodili",
+      "W": "doprÿħodiłi"
+    },
+    {
+      "id": "V34",
+      "gender": "M",
+      "proto": "*uvidel",
+      "N": "uŵidel",
+      "SE": "uvidel",
+      "W": "uŵideł"
+    },
+    {
+      "id": "V34",
+      "gender": "F",
+      "proto": "*uvidela",
+      "N": "uŵidela",
+      "SE": "uvidela",
+      "W": "uŵideł"
+    },
+    {
+      "id": "V34",
+      "gender": "N",
+      "proto": "*uvidelo",
+      "N": "uŵidelo",
+      "SE": "uvidelo",
+      "W": "uŵideł"
+    },
+    {
+      "id": "V34",
+      "gender": "PL",
+      "proto": "*uvideli",
+      "N": "uŵideli",
+      "SE": "uvideli",
+      "W": "uŵidełi"
+    },
+    {
+      "id": "V35",
+      "gender": "M",
+      "proto": "*prinesel",
+      "N": "prinesel",
+      "SE": "prinesel",
+      "W": "prineseł"
+    },
+    {
+      "id": "V35",
+      "gender": "F",
+      "proto": "*prinesela",
+      "N": "prinesela",
+      "SE": "prinesela",
+      "W": "prineseł"
+    },
+    {
+      "id": "V35",
+      "gender": "N",
+      "proto": "*prineselo",
+      "N": "prineselo",
+      "SE": "prineselo",
+      "W": "prineseł"
+    },
+    {
+      "id": "V35",
+      "gender": "PL",
+      "proto": "*prineseli",
+      "N": "prineseli",
+      "SE": "prineseli",
+      "W": "prinesełi"
+    },
+    {
+      "id": "V36",
+      "gender": "M",
+      "proto": "*progovoril",
+      "N": "proġoŵoril",
+      "SE": "progovoril",
+      "W": "proġoŵorił"
+    },
+    {
+      "id": "V36",
+      "gender": "F",
+      "proto": "*progovorila",
+      "N": "proġoŵorila",
+      "SE": "progovorila",
+      "W": "proġoŵorił"
+    },
+    {
+      "id": "V36",
+      "gender": "N",
+      "proto": "*progovorilo",
+      "N": "proġoŵorilo",
+      "SE": "progovorilo",
+      "W": "proġoŵorił"
+    },
+    {
+      "id": "V36",
+      "gender": "PL",
+      "proto": "*progovorili",
+      "N": "proġoŵorili",
+      "SE": "progovorili",
+      "W": "proġoŵoriłi"
+    }
+  ],
+  "imperative": [
+    {
+      "id": "V01",
+      "person": "2SG",
+      "proto": "*pisaj",
+      "N": "pisaj",
+      "SE": "pisaj",
+      "W": "pisaj"
+    },
+    {
+      "id": "V01",
+      "person": "2PL",
+      "proto": "*pisajte",
+      "N": "pisajte",
+      "SE": "pisajte",
+      "W": "pisajt"
+    },
+    {
+      "id": "V01",
+      "person": "1PL",
+      "proto": "*pisajme",
+      "N": "pisajme",
+      "SE": "pisajme",
+      "W": "pisajm"
+    },
+    {
+      "id": "V02",
+      "person": "2SG",
+      "proto": "*slÿšaj",
+      "N": "slÿšaj",
+      "SE": "slišaj",
+      "W": "słÿšaj"
+    },
+    {
+      "id": "V02",
+      "person": "2PL",
+      "proto": "*slÿšajte",
+      "N": "slÿšajte",
+      "SE": "slišajte",
+      "W": "słÿšajt"
+    },
+    {
+      "id": "V02",
+      "person": "1PL",
+      "proto": "*slÿšajme",
+      "N": "slÿšajme",
+      "SE": "slišajme",
+      "W": "słÿšajm"
+    },
+    {
+      "id": "V03",
+      "person": "2SG",
+      "proto": "*begaj",
+      "N": "beġaj",
+      "SE": "begaj",
+      "W": "beġaj"
+    },
+    {
+      "id": "V03",
+      "person": "2PL",
+      "proto": "*begajte",
+      "N": "beġajte",
+      "SE": "begajte",
+      "W": "beġajt"
+    },
+    {
+      "id": "V03",
+      "person": "1PL",
+      "proto": "*begajme",
+      "N": "beġajme",
+      "SE": "begajme",
+      "W": "beġajm"
+    },
+    {
+      "id": "V04",
+      "person": "2SG",
+      "proto": "*delaj",
+      "N": "delaj",
+      "SE": "delaj",
+      "W": "dełaj"
+    },
+    {
+      "id": "V04",
+      "person": "2PL",
+      "proto": "*delajte",
+      "N": "delajte",
+      "SE": "delajte",
+      "W": "dełajt"
+    },
+    {
+      "id": "V04",
+      "person": "1PL",
+      "proto": "*delajme",
+      "N": "delajme",
+      "SE": "delajme",
+      "W": "dełajm"
+    },
+    {
+      "id": "V05",
+      "person": "2SG",
+      "proto": "*ščadovaj",
+      "N": "ščadoŵaj",
+      "SE": "ščadovaj",
+      "W": "ščadoŵaj"
+    },
+    {
+      "id": "V05",
+      "person": "2PL",
+      "proto": "*ščadovajte",
+      "N": "ščadoŵajte",
+      "SE": "ščadovajte",
+      "W": "ščadoŵajt"
+    },
+    {
+      "id": "V05",
+      "person": "1PL",
+      "proto": "*ščadovajme",
+      "N": "ščadoŵajme",
+      "SE": "ščadovajme",
+      "W": "ščadoŵajm"
+    },
+    {
+      "id": "V06",
+      "person": "2SG",
+      "proto": "*kričaj",
+      "N": "kričaj",
+      "SE": "kričaj",
+      "W": "kričaj"
+    },
+    {
+      "id": "V06",
+      "person": "2PL",
+      "proto": "*kričajte",
+      "N": "kričajte",
+      "SE": "kričajte",
+      "W": "kričajt"
+    },
+    {
+      "id": "V06",
+      "person": "1PL",
+      "proto": "*kričajme",
+      "N": "kričajme",
+      "SE": "kričajme",
+      "W": "kričajm"
+    },
+    {
+      "id": "V07",
+      "person": "2SG",
+      "proto": "*ždaj",
+      "N": "ždaj",
+      "SE": "ždaj",
+      "W": "ždaj"
+    },
+    {
+      "id": "V07",
+      "person": "2PL",
+      "proto": "*ždajte",
+      "N": "ždajte",
+      "SE": "ždajte",
+      "W": "ždajt"
+    },
+    {
+      "id": "V07",
+      "person": "1PL",
+      "proto": "*ždajme",
+      "N": "ždajme",
+      "SE": "ždajme",
+      "W": "ždajm"
+    },
+    {
+      "id": "V08",
+      "person": "2SG",
+      "proto": "*zvaj",
+      "N": "zŵaj",
+      "SE": "zvaj",
+      "W": "zŵaj"
+    },
+    {
+      "id": "V08",
+      "person": "2PL",
+      "proto": "*zvajte",
+      "N": "zŵajte",
+      "SE": "zvajte",
+      "W": "zŵajt"
+    },
+    {
+      "id": "V08",
+      "person": "1PL",
+      "proto": "*zvajme",
+      "N": "zŵajme",
+      "SE": "zvajme",
+      "W": "zŵajm"
+    },
+    {
+      "id": "V09",
+      "person": "2SG",
+      "proto": "*znaj",
+      "N": "znaj",
+      "SE": "znaj",
+      "W": "znaj"
+    },
+    {
+      "id": "V09",
+      "person": "2PL",
+      "proto": "*znajte",
+      "N": "znajte",
+      "SE": "znajte",
+      "W": "znajt"
+    },
+    {
+      "id": "V09",
+      "person": "1PL",
+      "proto": "*znajme",
+      "N": "znajme",
+      "SE": "znajme",
+      "W": "znajm"
+    },
+    {
+      "id": "V10",
+      "person": "2SG",
+      "proto": "*spaj",
+      "N": "spaj",
+      "SE": "spaj",
+      "W": "spaj"
+    },
+    {
+      "id": "V10",
+      "person": "2PL",
+      "proto": "*spajte",
+      "N": "spajte",
+      "SE": "spajte",
+      "W": "spajt"
+    },
+    {
+      "id": "V10",
+      "person": "1PL",
+      "proto": "*spajme",
+      "N": "spajme",
+      "SE": "spajme",
+      "W": "spajm"
+    },
+    {
+      "id": "V11",
+      "person": "2SG",
+      "proto": "*patri",
+      "N": "patri",
+      "SE": "patri",
+      "W": "patri"
+    },
+    {
+      "id": "V11",
+      "person": "2PL",
+      "proto": "*patrite",
+      "N": "patrite",
+      "SE": "patrite",
+      "W": "patrit"
+    },
+    {
+      "id": "V11",
+      "person": "1PL",
+      "proto": "*patrime",
+      "N": "patrime",
+      "SE": "patrime",
+      "W": "patrim"
+    },
+    {
+      "id": "V12",
+      "person": "2SG",
+      "proto": "*xrani",
+      "N": "ħrani",
+      "SE": "hrani",
+      "W": "ħrani"
+    },
+    {
+      "id": "V12",
+      "person": "2PL",
+      "proto": "*xranite",
+      "N": "ħranite",
+      "SE": "hranite",
+      "W": "ħranit"
+    },
+    {
+      "id": "V12",
+      "person": "1PL",
+      "proto": "*xranime",
+      "N": "ħranime",
+      "SE": "hranime",
+      "W": "ħranim"
+    },
+    {
+      "id": "V13",
+      "person": "2SG",
+      "proto": "*govori",
+      "N": "ġoŵori",
+      "SE": "govori",
+      "W": "ġoŵori"
+    },
+    {
+      "id": "V13",
+      "person": "2PL",
+      "proto": "*govorite",
+      "N": "ġoŵorite",
+      "SE": "govorite",
+      "W": "ġoŵorit"
+    },
+    {
+      "id": "V13",
+      "person": "1PL",
+      "proto": "*govorime",
+      "N": "ġoŵorime",
+      "SE": "govorime",
+      "W": "ġoŵorim"
+    },
+    {
+      "id": "V14",
+      "person": "2SG",
+      "proto": "*prÿxodi",
+      "N": "prÿħodi",
+      "SE": "prihodi",
+      "W": "prÿħodi"
+    },
+    {
+      "id": "V14",
+      "person": "2PL",
+      "proto": "*prÿxodite",
+      "N": "prÿħodite",
+      "SE": "prihodite",
+      "W": "prÿħodit"
+    },
+    {
+      "id": "V14",
+      "person": "1PL",
+      "proto": "*prÿxodime",
+      "N": "prÿħodime",
+      "SE": "prihodime",
+      "W": "prÿħodim"
+    },
+    {
+      "id": "V15",
+      "person": "2SG",
+      "proto": "*stavi",
+      "N": "staŵi",
+      "SE": "stavi",
+      "W": "staŵi"
+    },
+    {
+      "id": "V15",
+      "person": "2PL",
+      "proto": "*stavite",
+      "N": "staŵite",
+      "SE": "stavite",
+      "W": "staŵit"
+    },
+    {
+      "id": "V15",
+      "person": "1PL",
+      "proto": "*stavime",
+      "N": "staŵime",
+      "SE": "stavime",
+      "W": "staŵim"
+    },
+    {
+      "id": "V16",
+      "person": "2SG",
+      "proto": "*nosi",
+      "N": "nosi",
+      "SE": "nosi",
+      "W": "nosi"
+    },
+    {
+      "id": "V16",
+      "person": "2PL",
+      "proto": "*nosite",
+      "N": "nosite",
+      "SE": "nosite",
+      "W": "nosit"
+    },
+    {
+      "id": "V16",
+      "person": "1PL",
+      "proto": "*nosime",
+      "N": "nosime",
+      "SE": "nosime",
+      "W": "nosim"
+    },
+    {
+      "id": "V17",
+      "person": "2SG",
+      "proto": "*xodi",
+      "N": "ħodi",
+      "SE": "hodi",
+      "W": "ħodi"
+    },
+    {
+      "id": "V17",
+      "person": "2PL",
+      "proto": "*xodite",
+      "N": "ħodite",
+      "SE": "hodite",
+      "W": "ħodit"
+    },
+    {
+      "id": "V17",
+      "person": "1PL",
+      "proto": "*xodime",
+      "N": "ħodime",
+      "SE": "hodime",
+      "W": "ħodim"
+    },
+    {
+      "id": "V18",
+      "person": "2SG",
+      "proto": "*vidi",
+      "N": "ŵidi",
+      "SE": "vidi",
+      "W": "ŵidi"
+    },
+    {
+      "id": "V18",
+      "person": "2PL",
+      "proto": "*vidite",
+      "N": "ŵidite",
+      "SE": "vidite",
+      "W": "ŵidit"
+    },
+    {
+      "id": "V18",
+      "person": "1PL",
+      "proto": "*vidime",
+      "N": "ŵidime",
+      "SE": "vidime",
+      "W": "ŵidim"
+    },
+    {
+      "id": "V19",
+      "person": "2SG",
+      "proto": "*nesi",
+      "N": "nesi",
+      "SE": "nesi",
+      "W": "nesi"
+    },
+    {
+      "id": "V19",
+      "person": "2PL",
+      "proto": "*nesite",
+      "N": "nesite",
+      "SE": "nesite",
+      "W": "nesit"
+    },
+    {
+      "id": "V19",
+      "person": "1PL",
+      "proto": "*nesime",
+      "N": "nesime",
+      "SE": "nesime",
+      "W": "nesim"
+    },
+    {
+      "id": "V20",
+      "person": "2SG",
+      "proto": "*živi",
+      "N": "žiŵi",
+      "SE": "živi",
+      "W": "žiŵi"
+    },
+    {
+      "id": "V20",
+      "person": "2PL",
+      "proto": "*živite",
+      "N": "žiŵite",
+      "SE": "živite",
+      "W": "žiŵit"
+    },
+    {
+      "id": "V20",
+      "person": "1PL",
+      "proto": "*živime",
+      "N": "žiŵime",
+      "SE": "živime",
+      "W": "žiŵim"
+    },
+    {
+      "id": "V21",
+      "person": "2SG",
+      "proto": "*gori",
+      "N": "ġori",
+      "SE": "gori",
+      "W": "ġori"
+    },
+    {
+      "id": "V21",
+      "person": "2PL",
+      "proto": "*gorite",
+      "N": "ġorite",
+      "SE": "gorite",
+      "W": "ġorit"
+    },
+    {
+      "id": "V21",
+      "person": "1PL",
+      "proto": "*gorime",
+      "N": "ġorime",
+      "SE": "gorime",
+      "W": "ġorim"
+    },
+    {
+      "id": "V22",
+      "person": "2SG",
+      "proto": "*idi",
+      "N": "idi",
+      "SE": "idi",
+      "W": "idi"
+    },
+    {
+      "id": "V22",
+      "person": "2PL",
+      "proto": "*idite",
+      "N": "idite",
+      "SE": "idite",
+      "W": "idit"
+    },
+    {
+      "id": "V22",
+      "person": "1PL",
+      "proto": "*idime",
+      "N": "idime",
+      "SE": "idime",
+      "W": "idim"
+    },
+    {
+      "id": "V23",
+      "person": "2SG",
+      "proto": "*daj",
+      "N": "daj",
+      "SE": "daj",
+      "W": "daj"
+    },
+    {
+      "id": "V23",
+      "person": "2PL",
+      "proto": "*dajte",
+      "N": "dajte",
+      "SE": "dajte",
+      "W": "dajt"
+    },
+    {
+      "id": "V23",
+      "person": "1PL",
+      "proto": "*dajme",
+      "N": "dajme",
+      "SE": "dajme",
+      "W": "dajm"
+    },
+    {
+      "id": "V24",
+      "person": "2SG",
+      "proto": "*budi",
+      "N": "budi",
+      "SE": "budi",
+      "W": "budi"
+    },
+    {
+      "id": "V24",
+      "person": "2PL",
+      "proto": "*budite",
+      "N": "budite",
+      "SE": "budite",
+      "W": "budit"
+    },
+    {
+      "id": "V24",
+      "person": "1PL",
+      "proto": "*budime",
+      "N": "budime",
+      "SE": "budime",
+      "W": "budim"
+    },
+    {
+      "id": "V26",
+      "person": "2SG",
+      "proto": "*napisaj",
+      "N": "napisaj",
+      "SE": "napisaj",
+      "W": "napisaj"
+    },
+    {
+      "id": "V26",
+      "person": "2PL",
+      "proto": "*napisajte",
+      "N": "napisajte",
+      "SE": "napisajte",
+      "W": "napisajt"
+    },
+    {
+      "id": "V26",
+      "person": "1PL",
+      "proto": "*napisajme",
+      "N": "napisajme",
+      "SE": "napisajme",
+      "W": "napisajm"
+    },
+    {
+      "id": "V27",
+      "person": "2SG",
+      "proto": "*uslÿšaj",
+      "N": "uslÿšaj",
+      "SE": "uslišaj",
+      "W": "usłÿšaj"
+    },
+    {
+      "id": "V27",
+      "person": "2PL",
+      "proto": "*uslÿšajte",
+      "N": "uslÿšajte",
+      "SE": "uslišajte",
+      "W": "usłÿšajt"
+    },
+    {
+      "id": "V27",
+      "person": "1PL",
+      "proto": "*uslÿšajme",
+      "N": "uslÿšajme",
+      "SE": "uslišajme",
+      "W": "usłÿšajm"
+    },
+    {
+      "id": "V28",
+      "person": "2SG",
+      "proto": "*sdelaj",
+      "N": "sdelaj",
+      "SE": "sdelaj",
+      "W": "sdełaj"
+    },
+    {
+      "id": "V28",
+      "person": "2PL",
+      "proto": "*sdelajte",
+      "N": "sdelajte",
+      "SE": "sdelajte",
+      "W": "sdełajt"
+    },
+    {
+      "id": "V28",
+      "person": "1PL",
+      "proto": "*sdelajme",
+      "N": "sdelajme",
+      "SE": "sdelajme",
+      "W": "sdełajm"
+    },
+    {
+      "id": "V29",
+      "person": "2SG",
+      "proto": "*poščadovaj",
+      "N": "poščadoŵaj",
+      "SE": "poščadovaj",
+      "W": "poščadoŵaj"
+    },
+    {
+      "id": "V29",
+      "person": "2PL",
+      "proto": "*poščadovajte",
+      "N": "poščadoŵajte",
+      "SE": "poščadovajte",
+      "W": "poščadoŵajt"
+    },
+    {
+      "id": "V29",
+      "person": "1PL",
+      "proto": "*poščadovajme",
+      "N": "poščadoŵajme",
+      "SE": "poščadovajme",
+      "W": "poščadoŵajm"
+    },
+    {
+      "id": "V30",
+      "person": "2SG",
+      "proto": "*zakričaj",
+      "N": "zakričaj",
+      "SE": "zakričaj",
+      "W": "zakričaj"
+    },
+    {
+      "id": "V30",
+      "person": "2PL",
+      "proto": "*zakričajte",
+      "N": "zakričajte",
+      "SE": "zakričajte",
+      "W": "zakričajt"
+    },
+    {
+      "id": "V30",
+      "person": "1PL",
+      "proto": "*zakričajme",
+      "N": "zakričajme",
+      "SE": "zakričajme",
+      "W": "zakričajm"
+    },
+    {
+      "id": "V31",
+      "person": "2SG",
+      "proto": "*pospaj",
+      "N": "pospaj",
+      "SE": "pospaj",
+      "W": "pospaj"
+    },
+    {
+      "id": "V31",
+      "person": "2PL",
+      "proto": "*pospajte",
+      "N": "pospajte",
+      "SE": "pospajte",
+      "W": "pospajt"
+    },
+    {
+      "id": "V31",
+      "person": "1PL",
+      "proto": "*pospajme",
+      "N": "pospajme",
+      "SE": "pospajme",
+      "W": "pospajm"
+    },
+    {
+      "id": "V32",
+      "person": "2SG",
+      "proto": "*postavi",
+      "N": "postaŵi",
+      "SE": "postavi",
+      "W": "postaŵi"
+    },
+    {
+      "id": "V32",
+      "person": "2PL",
+      "proto": "*postavite",
+      "N": "postaŵite",
+      "SE": "postavite",
+      "W": "postaŵit"
+    },
+    {
+      "id": "V32",
+      "person": "1PL",
+      "proto": "*postavime",
+      "N": "postaŵime",
+      "SE": "postavime",
+      "W": "postaŵim"
+    },
+    {
+      "id": "V33",
+      "person": "2SG",
+      "proto": "*doprÿxodi",
+      "N": "doprÿħodi",
+      "SE": "doprihodi",
+      "W": "doprÿħodi"
+    },
+    {
+      "id": "V33",
+      "person": "2PL",
+      "proto": "*doprÿxodite",
+      "N": "doprÿħodite",
+      "SE": "doprihodite",
+      "W": "doprÿħodit"
+    },
+    {
+      "id": "V33",
+      "person": "1PL",
+      "proto": "*doprÿxodime",
+      "N": "doprÿħodime",
+      "SE": "doprihodime",
+      "W": "doprÿħodim"
+    },
+    {
+      "id": "V34",
+      "person": "2SG",
+      "proto": "*uvidi",
+      "N": "uŵidi",
+      "SE": "uvidi",
+      "W": "uŵidi"
+    },
+    {
+      "id": "V34",
+      "person": "2PL",
+      "proto": "*uvidite",
+      "N": "uŵidite",
+      "SE": "uvidite",
+      "W": "uŵidit"
+    },
+    {
+      "id": "V34",
+      "person": "1PL",
+      "proto": "*uvidime",
+      "N": "uŵidime",
+      "SE": "uvidime",
+      "W": "uŵidim"
+    },
+    {
+      "id": "V35",
+      "person": "2SG",
+      "proto": "*prinesi",
+      "N": "prinesi",
+      "SE": "prinesi",
+      "W": "prinesi"
+    },
+    {
+      "id": "V35",
+      "person": "2PL",
+      "proto": "*prinesite",
+      "N": "prinesite",
+      "SE": "prinesite",
+      "W": "prinesit"
+    },
+    {
+      "id": "V35",
+      "person": "1PL",
+      "proto": "*prinesime",
+      "N": "prinesime",
+      "SE": "prinesime",
+      "W": "prinesim"
+    },
+    {
+      "id": "V36",
+      "person": "2SG",
+      "proto": "*progovori",
+      "N": "proġoŵori",
+      "SE": "progovori",
+      "W": "proġoŵori"
+    },
+    {
+      "id": "V36",
+      "person": "2PL",
+      "proto": "*progovorite",
+      "N": "proġoŵorite",
+      "SE": "progovorite",
+      "W": "proġoŵorit"
+    },
+    {
+      "id": "V36",
+      "person": "1PL",
+      "proto": "*progovorime",
+      "N": "proġoŵorime",
+      "SE": "progovorime",
+      "W": "proġoŵorim"
+    }
+  ],
+  "corpus": [
+    {
+      "id": "C01",
+      "meaning": "我看见阴影",
+      "gloss": "1SG + 见(1SG) + 阴影.ACC",
+      "N": "ja ŵidem ťęń",
+      "SE": "ja videm ten",
+      "W": "ja ŵidem þęn"
+    },
+    {
+      "id": "C02",
+      "meaning": "我们守卫房屋",
+      "gloss": "1PL + 守卫(1PL) + 房屋.ACC",
+      "N": "mÿ ħranime dom",
+      "SE": "mi hranime dom",
+      "W": "mÿ ħranim dom"
+    },
+    {
+      "id": "C03",
+      "meaning": "母亲看见神明",
+      "gloss": "母亲.NOM + 见(3SG) + 神明.ACC",
+      "N": "mať ŵidet boġa",
+      "SE": "mat videt boga",
+      "W": "maþ ŵidet za boġ"
+    },
+    {
+      "id": "C04",
+      "meaning": "火在房屋里燃烧",
+      "gloss": "火.NOM + 燃(3SG) + v 房屋.LOC",
+      "N": "oġń ġoret ŵ dome",
+      "SE": "ogon goret v dome",
+      "W": "oġn ġoret ŵ dom"
+    },
+    {
+      "id": "C05",
+      "meaning": "我们将守卫房屋",
+      "gloss": "1PL + FUT + 守卫.INF + 房屋.ACC",
+      "N": "mÿ bu ħraniť dom",
+      "SE": "mi bu hranit dom",
+      "W": "mÿ b ħraniþ dom"
+    },
+    {
+      "id": "C06",
+      "meaning": "我们将做成",
+      "gloss": "1PL + PFV-做成(1PL)",
+      "N": "mÿ sdelame",
+      "SE": "mi sdelame",
+      "W": "mÿ sdełam"
+    },
+    {
+      "id": "C07",
+      "meaning": "我没有看见阴影",
+      "gloss": "1SG + NEG + 见(1SG) + 阴影.ACC",
+      "N": "ja ńe ŵidem ťęń",
+      "SE": "ja ne videm ten",
+      "W": "ja n ŵidem þęn"
+    },
+    {
+      "id": "C08",
+      "meaning": "他曾守卫房屋",
+      "gloss": "3SG.M + 守卫.PAST.M + 房屋.ACC",
+      "N": "on ħranil dom",
+      "SE": "on hranil dom",
+      "W": "on ħranił dom"
+    },
+    {
+      "id": "C09",
+      "meaning": "她曾守卫房屋",
+      "gloss": "3SG.F + 守卫.PAST.F + 房屋.ACC",
+      "N": "ona ħranila dom",
+      "SE": "ona hranila dom",
+      "W": "ona ħranił dom"
+    },
+    {
+      "id": "C10",
+      "meaning": "他们曾守卫房屋",
+      "gloss": "3PL + 守卫.PAST.PL + 房屋.ACC",
+      "N": "oni ħranili dom",
+      "SE": "oni hranili dom",
+      "W": "oni ħraniłi dom"
+    },
+    {
+      "id": "C11",
+      "meaning": "我会守卫房屋（条件）",
+      "gloss": "1SG + COND + 守卫.PAST.M + 房屋.ACC",
+      "N": "ja bÿ ħranil dom",
+      "SE": "ja bi hranil dom",
+      "W": "ja bÿ ħranił dom"
+    },
+    {
+      "id": "C12",
+      "meaning": "守卫房屋！（对单人）",
+      "gloss": "守卫.IMP.2SG + 房屋.ACC",
+      "N": "ħrani dom",
+      "SE": "hrani dom",
+      "W": "ħrani dom"
+    },
+    {
+      "id": "C13",
+      "meaning": "守卫房屋！（对多人）",
+      "gloss": "守卫.IMP.2PL + 房屋.ACC",
+      "N": "ħranite dom",
+      "SE": "hranite dom",
+      "W": "ħranit dom"
+    },
+    {
+      "id": "C14",
+      "meaning": "我将听到",
+      "gloss": "1SG + PFV-听(1SG)",
+      "N": "ja uslÿšam",
+      "SE": "ja uslišam",
+      "W": "ja usłÿšam"
+    },
+    {
+      "id": "C15",
+      "meaning": "他将抵达终点",
+      "gloss": "3SG.M + PFV-抵达(3SG)",
+      "N": "on doprÿħodit",
+      "SE": "on doprihodit",
+      "W": "on doprÿħodit"
+    },
+    {
+      "id": "C16",
+      "meaning": "我们已经写完",
+      "gloss": "1PL + PFV-写.PAST.PL",
+      "N": "mÿ napisali",
+      "SE": "mi napisali",
+      "W": "mÿ napisałi"
+    },
+    {
+      "id": "C17",
+      "meaning": "别喊！（单数）",
+      "gloss": "NEG + 喊.IMP.2SG",
+      "N": "ńe kričaj",
+      "SE": "ne kričaj",
+      "W": "n kričaj"
+    },
+    {
+      "id": "C18",
+      "meaning": "你能够去",
+      "gloss": "2SG + 能(2SG) + 去.INF",
+      "N": "tÿ možeš iť",
+      "SE": "ti možeš it",
+      "W": "tÿ možeš iþ"
+    },
+    {
+      "id": "C19",
+      "meaning": "我正在说话",
+      "gloss": "1SG + IPFV-说(1SG)",
+      "N": "ja ġoŵorim",
+      "SE": "ja govorim",
+      "W": "ja ġoŵorim"
+    },
+    {
+      "id": "C20",
+      "meaning": "他们将说完",
+      "gloss": "3PL + PFV-说完(3PL)",
+      "N": "oni proġoŵorięt",
+      "SE": "oni progovoriet",
+      "W": "oni proġoŵorięt"
+    }
+  ]
+}
