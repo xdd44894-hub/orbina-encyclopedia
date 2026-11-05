@@ -1,0 +1,1561 @@
+《扎格伦字典》V0.2
+Žaġręn Dictionary V0.2
+藏朔原语 · 三方言统一编纂 · 2026-11-05
+
+本版共279条；新增100高频词；继承V0.1所有179条。
+词典最新阶段 V0.6，旧版词条与完整变格资料仍然保留，但不冒充现代格位。
+IPA 为按音值规则转写的宽式音位，尚无统一词汇重音和语流音变。现代高频新词有词典原形，但不可擅自生成未验证的全部屈折形式。
+§ 郑言，¡ 轻惊，¿ 微疑，！ 大惊，？ 标准问，•…• 强调，/…\ 引用文字。
+
+【统计】总词条279；三方言原形齐备275；现代阶段词条127；IPA三方言转写825个。
+名词：93
+动词：65
+形容词：59
+分词：20
+代词：7
+副词：11
+介词：6
+连词：5
+助词：4
+指示词：2
+疑问词：2
+感叹词：3
+数词：2
+
+【词典正文】
+
+—— 名词 ——
+D0001 傍晚 [名词 · V0.5语料可见词形，完整范式未核定]
+  N: ŵečer /wet͡ʃer/ | SE: večer /vet͡ʃer/ | W: ŵečer /wet͡ʃer/
+  祖语：未定；来源：assets/data/zagren-public-corpus-v05.json
+  注：来自V0.5 S22主格；词典形尚待详细音系核定
+
+D0002 边界 [名词 · V0.6已衍变的旧词]
+  N: ġranca /ɣrant͡sa/ | SE: granca /ɡrant͡sa/ | W: ġranc /ɣrant͡s/
+  祖语：*granica；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N ġranica | SE granica | W ġranic
+  音变依据：C02
+
+D0003 冰 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: led /led/ | SE: led /led/ | W: łed /ɫed/
+  祖语：*led；来源：assets/data/zagren-modifier-morphology-v04.json
+
+D0004 冰脊 [名词 · V0.6新构词原形；未完成变格]
+  N: rjүd /rjyd/ | SE: rud /rud/ | W: řүd /r̝yd/
+  祖语：*rʲud；来源：assets/data/zagren-v06-phonology-lexicon.json
+  音变依据：N16, N17, SE15, W14
+  注：词典形已建立，完整变格仍待构拟
+
+D0005 城镇 [名词 · V0.6已衍变的旧词]
+  N: ġrad /ɣrad/ | SE: grad /ɡrad/ | W: ġrad /ɣrad/
+  祖语：*grad；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-v06-phonology-lexicon.json；assets/data/zagren-modifier-morphology-v04.json
+  旧版：N ġrad | SE grad | W ġrad
+
+D0006 词／单词 [名词 · V0.5语料可见词形，完整范式未核定]
+  N: sloŵo /slowo/ | SE: slovo /slovo/ | W: słoŵ /sɫow/
+  祖语：未定；来源：assets/data/zagren-public-corpus-v05.json
+  注：来自V0.5 S19的宾格；中性主宾可能同形，但未独立核定变格
+
+D0007 村庄 [名词 · V0.5语料可见词形，完整范式未核定]
+  N: ŵes /wes/ | SE: ves /ves/ | W: ŵes /wes/
+  祖语：未定；来源：assets/data/zagren-public-corpus-v05.json
+  注：来自V0.5 S01主格上下文；祖语重建未定
+
+D0008 大门 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ŵrata /wrata/ | SE: vrata /vrata/ | W: ŵrat /wrat/
+  祖语：*vrata；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0009 道路 [名词 · V0.6已衍变的旧词]
+  N: droġa /droɣa/ | SE: droga /droɡa/ | W: dro /dro/
+  祖语：*droga；来源：assets/data/zagren-v06-phonology-lexicon.json；assets/data/zagren-public-corpus-v05.json
+  旧版：N droġa | SE droga | W droġ
+  音变依据：W11
+  注：
+
+D0010 地区 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: strana /strana/ | SE: strana /strana/ | W: stran /stran/
+  祖语：*strana；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0011 冬季 [名词 · V0.6已衍变的旧词]
+  N: zÿma /zɨma/ | SE: ẑima /ʑima/ | W: zÿm /zɨm/
+  祖语：*zÿma；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N zÿma | SE zima | W zÿm
+  音变依据：SE12
+
+D0012 风 [名词 · V0.6已衍变的旧词]
+  N: ŵer /wer/ | SE: ver /ver/ | W: ŵer /wer/
+  祖语：*vetr；来源：assets/data/zagren-v06-phonology-lexicon.json；assets/data/zagren-public-corpus-v05.json
+  旧版：N ŵetr | SE vetr | W ŵetr
+  音变依据：C04
+  注：
+
+D0013 骨 [名词 · V0.6已衍变的旧词]
+  N: kӧśť /køɕtʲ/ | SE: kość /koɕt͡ɕ/ | W: košt /koʃt/
+  祖语：*kosʲtʲ；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N kośť | SE kość | W košt
+  音变依据：N12
+
+D0014 挂钩 [名词 · V0.6新构词原形；未完成变格]
+  N: ǩүta /kʲyta/ | SE: ćuta /t͡ɕuta/ | W: ǩүt /kʲyt/
+  祖语：*kʲuta；来源：assets/data/zagren-v06-phonology-lexicon.json
+  音变依据：N16, N17, SE15, W14, W15
+  注：词典形已建立，完整变格仍待构拟
+
+D0015 管道 [名词 · V0.6已衍变的旧词]
+  N: ṱruba /tʰruba/ | SE: truba /truba/ | W: þřub /θr̝ub/
+  祖语：*tʲruba；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N ťruba | SE truba | W þrub
+  音变依据：N14, W12
+
+D0016 寒冷 [名词 · V0.6已衍变的旧词]
+  N: ħold /χold/ | SE: hȯld /xɵld/ | W: ħołd /χoɫd/
+  祖语：*xolod；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N ħolod | SE holod | W ħołod
+  音变依据：C01, SE13
+
+D0017 河流 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: reka /reka/ | SE: reka /reka/ | W: rek /rek/
+  祖语：*reka；来源：assets/data/zagren-modifier-morphology-v04.json
+
+D0018 灰烬 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: pepel /pepel/ | SE: pepel /pepel/ | W: pepeł /pepeɫ/
+  祖语：*pepel；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0019 火 [名词 · V0.6已衍变的旧词]
+  N: ӧġń /øɣɲ/ | SE: oң /oŋ/ | W: oġn /oɣn/
+  祖语：*ognʲ；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N oġń | SE ogon | W oġn
+  音变依据：N12, SE14
+
+D0020 家 [名词 · V0.6已衍变的旧词]
+  N: dom /dom/ | SE: dom /dom/ | W: dom /dom/
+  祖语：*dom；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N dom | SE dom | W dom
+
+D0021 结扣 [名词 · V0.6新构词原形；未完成变格]
+  N: ǩel /kʲel/ | SE: ćel /t͡ɕel/ | W: ǩel /kʲel/
+  祖语：*kʲel；来源：assets/data/zagren-v06-phonology-lexicon.json
+  音变依据：N17, SE15, W14
+  注：词典形已建立，完整变格仍待构拟
+
+D0022 界线 [名词 · V0.6新构词原形；未完成变格]
+  N: meďa /medʲa/ | SE: meҗa /med͡ʒa/ | W: meẑ /meʑ/
+  祖语：*medja；来源：assets/data/zagren-v06-phonology-lexicon.json
+  音变依据：N17, SE15, W14, W15
+  注：词典形已建立，完整变格仍待构拟
+
+D0023 雷鸣 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ġrom /ɣrom/ | SE: grom /ɡrom/ | W: ġrom /ɣrom/
+  祖语：*grom；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0024 炉 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: peč /pet͡ʃ/ | SE: peč /pet͡ʃ/ | W: peč /pet͡ʃ/
+  祖语：*peč；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-modifier-morphology-v04.json
+
+D0025 母亲 [名词 · V0.6已衍变的旧词]
+  N: mať /matʲ/ | SE: mat /mat/ | W: maþ /maθ/
+  祖语：*matʲ；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N mať | SE mat | W maþ
+
+D0026 男子 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: muž /muʒ/ | SE: muž /muʒ/ | W: muž /muʒ/
+  祖语：*muž；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0027 女人 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: žena /ʒena/ | SE: žena /ʒena/ | W: žen /ʒen/
+  祖语：*žena；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0028 皮肤 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: koža /koʒa/ | SE: koža /koʒa/ | W: kož /koʒ/
+  祖语：*koža；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0029 清晨 [名词 · V0.6已衍变的旧词]
+  N: utr /utr/ | SE: utro /utro/ | W: utr /utr/
+  祖语：*utro；来源：assets/data/zagren-v06-phonology-lexicon.json；assets/data/zagren-public-corpus-v05.json
+  旧版：N utro | SE utro | W utr
+  音变依据：N15
+  注：
+
+D0030 荣耀 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: slaŵa /slawa/ | SE: slava /slava/ | W: słaŵ /sɫaw/
+  祖语：*slava；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0031 乳 [名词 · V0.6已衍变的旧词]
+  N: molko /molko/ | SE: mȯlko /mɵlko/ | W: mołk /moɫk/
+  祖语：*moloko；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N moloko | SE moloko | W mołok
+  音变依据：C01, SE13
+
+D0032 森林 [名词 · V0.6已衍变的旧词]
+  N: les /les/ | SE: les /les/ | W: łes /ɫes/
+  祖语：*les；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-v06-phonology-lexicon.json；assets/data/zagren-modifier-morphology-v04.json
+  旧版：N les | SE les | W łes
+
+D0033 山 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ġora /ɣora/ | SE: gora /ɡora/ | W: ġor /ɣor/
+  祖语：*gora；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json
+
+D0034 神明 [名词 · V0.6已衍变的旧词]
+  N: boġ /boɣ/ | SE: bog /boɡ/ | W: bo /bo/
+  祖语：*bog；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N boġ | SE bog | W boġ
+  音变依据：W11
+
+D0035 生命 [名词 · V0.6已衍变的旧词]
+  N: ẑiŵot /ʑiwot/ | SE: život /ʒivot/ | W: žiŵot /ʒiwot/
+  祖语：*život；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N žiŵot | SE život | W žiŵot
+  音变依据：N13
+
+D0036 尸体 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: trup /trup/ | SE: trup /trup/ | W: trup /trup/
+  祖语：*trup；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0037 石头 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: kamęń /kamɛ̃ɲ/ | SE: kamen /kamen/ | W: kamęn /kamɛ̃n/
+  祖语：*kamenʲ；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0038 手 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ręka /rɛ̃ka/ | SE: renka /renka/ | W: ręk /rɛ̃k/
+  祖语：*ręka；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json
+
+D0039 水 [名词 · V0.6已衍变的旧词]
+  N: ŵoda /woda/ | SE: voda /voda/ | W: ŵod /wod/
+  祖语：*voda；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N ŵoda | SE voda | W ŵod
+
+D0040 死亡 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: smerť /smertʲ/ | SE: smert /smert/ | W: smerþ /smerθ/
+  祖语：*smertʲ；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json
+
+D0041 铁 [名词 · V0.6已衍变的旧词]
+  N: ẑelezo /ʑelezo/ | SE: železo /ʒelezo/ | W: žłez /ʒɫez/
+  祖语：*železo；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N železo | SE železo | W žełez
+  音变依据：N13, W13
+
+D0042 头颅 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ġłaŵa /ɣɫawa/ | SE: glava /ɡlava/ | W: ġłaŵ /ɣɫaw/
+  祖语：*glava；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json
+
+D0043 兄弟 [名词 · V0.6已衍变的旧词]
+  N: brat /brat/ | SE: brat /brat/ | W: brat /brat/
+  祖语：*brat；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N brat | SE brat | W brat
+
+D0044 雪 [名词 · V0.6已衍变的旧词]
+  N: sęġ /sɛ̃ɣ/ | SE: seg /seɡ/ | W: sne /sne/
+  祖语：*sneg；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N sneġ | SE sneg | W sneġ
+  音变依据：N11, SE11, W11
+
+D0045 羊羔 [名词 · V0.6已衍变的旧词]
+  N: jaġnę /jaɣnɛ̃/ | SE: jaңe /jaŋe/ | W: jaġn /jaɣn/
+  祖语：*jagnę；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N jaġnę | SE jagne | W jaġn
+  音变依据：SE14
+
+D0046 夜晚 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: noč /not͡ʃ/ | SE: noč /not͡ʃ/ | W: noč /not͡ʃ/
+  祖语：*noč；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-modifier-morphology-v04.json
+
+D0047 阴影 [名词 · V0.6已衍变的旧词]
+  N: ťęń /tʲɛ̃ɲ/ | SE: ten /ten/ | W: þęn /θɛ̃n/
+  祖语：*tʲenʲ；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json；assets/data/zagren-v06-phonology-lexicon.json
+  旧版：N ťęń | SE ten | W þęn
+
+D0048 鱼 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: rÿba /rɨba/ | SE: riba /riba/ | W: rÿb /rɨb/
+  祖语：*rÿba；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0049 噪声 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: šum /ʃum/ | SE: šum /ʃum/ | W: šum /ʃum/
+  祖语：*šum；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0050 真实 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: praŵda /prawda/ | SE: pravda /pravda/ | W: praŵd /prawd/
+  祖语：*pravda；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0051 纸页 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: list /list/ | SE: list /list/ | W: łist /ɫist/
+  祖语：*list；来源：assets/data/zagren-modifier-morphology-v04.json
+
+D0052 桌子 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: stol /stol/ | SE: stol /stol/ | W: stoł /stoɫ/
+  祖语：*stol；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+D0053 姊妹 [名词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: sestra /sestra/ | SE: sestra /sestra/ | W: sestr /sestr/
+  祖语：*sestra；来源：assets/data/zagren-comparative-lexicon-v01.json
+
+
+—— 动词 ——
+D0054 安放、放置 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: staŵiť /stawitʲ/ | SE: stavit /stavit/ | W: staŵiþ /stawiθ/
+  祖语：*stavitʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0055 安放完成 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: postaŵiť /postawitʲ/ | SE: postavit /postavit/ | W: postaŵiþ /postawiθ/
+  祖语：*postavitʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0056 把话说完 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: proġoŵoriť /proɣoworitʲ/ | SE: progovorit /proɡovorit/ | W: proġoŵoriþ /proɣoworiθ/
+  祖语：*progovoritʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0057 奔跑（反复） [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: beġať /beɣatʲ/ | SE: begat /beɡat/ | W: beġaþ /beɣaθ/
+  祖语：*begatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0058 存在、是 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: byť /bytʲ/ | SE: byt /byt/ | W: byþ /byθ/
+  祖语：*bytʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0059 带来 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: prineseť /prinesetʲ/ | SE: prineset /prineset/ | W: prineseþ /prineseθ/
+  祖语：*prinesetʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0060 等候 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ždať /ʒdatʲ/ | SE: ždat /ʒdat/ | W: ždaþ /ʒdaθ/
+  祖语：*ždatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0061 抵达终点 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: doprÿħodiť /doprɨχoditʲ/ | SE: doprihodit /doprixodit/ | W: doprÿħodiþ /doprɨχodiθ/
+  祖语：*doprÿxoditʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0062 反复搬运 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: nosiť /nositʲ/ | SE: nosit /nosit/ | W: nosiþ /nosiθ/
+  祖语：*nositʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0063 给予 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: dať /datʲ/ | SE: dat /dat/ | W: daþ /daθ/
+  祖语：*datʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0064 喊叫 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: kričať /krit͡ʃatʲ/ | SE: kričat /krit͡ʃat/ | W: kričaþ /krit͡ʃaθ/
+  祖语：*kričatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0065 呼唤 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: zŵať /zwatʲ/ | SE: zvat /zvat/ | W: zŵaþ /zwaθ/
+  祖语：*zvatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0066 讲话 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ġoŵoriť /ɣoworitʲ/ | SE: govorit /ɡovorit/ | W: ġoŵoriþ /ɣoworiθ/
+  祖语：*govoritʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0067 结冻、冻结 [动词 · 仅祖语词根或语法研究基础，现代方言原形未核定]
+  现代词形尚未确立
+  祖语：*zamrznutʲ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
+
+D0068 开始喊叫 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: zakričať /zakrit͡ʃatʲ/ | SE: zakričat /zakrit͡ʃat/ | W: zakričaþ /zakrit͡ʃaθ/
+  祖语：*zakričatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0069 看见 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ŵideť /widetʲ/ | SE: videt /videt/ | W: ŵideþ /wideθ/
+  祖语：*videtʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0070 看见（一次实现） [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: uŵideť /uwidetʲ/ | SE: uvidet /uvidet/ | W: uŵideþ /uwideθ/
+  祖语：*uvidetʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0071 来回走动 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ħodiť /χoditʲ/ | SE: hodit /xodit/ | W: ħodiþ /χodiθ/
+  祖语：*xoditʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0072 能够 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: moħť /moχtʲ/ | SE: moht /moxt/ | W: moħþ /moχθ/
+  祖语：*moxtʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0073 去、前往 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: iť /itʲ/ | SE: it /it/ | W: iþ /iθ/
+  祖语：*itʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0074 燃烧 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ġoreť /ɣoretʲ/ | SE: goret /ɡoret/ | W: ġoreþ /ɣoreθ/
+  祖语：*goretʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0075 饶恕 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ščadoŵať /ʃt͡ʃadowatʲ/ | SE: ščadovat /ʃt͡ʃadovat/ | W: ščadoŵaþ /ʃt͡ʃadowaθ/
+  祖语：*ščadovatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0076 饶恕一次 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: poščadoŵať /poʃt͡ʃadowatʲ/ | SE: poščadovat /poʃt͡ʃadovat/ | W: poščadoŵaþ /poʃt͡ʃadowaθ/
+  祖语：*poščadovatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0077 融化 [动词 · 仅祖语词根或语法研究基础，现代方言原形未核定]
+  现代词形尚未确立
+  祖语：*tajatʲ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
+
+D0078 生活 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: žiŵeť /ʒiwetʲ/ | SE: živet /ʒivet/ | W: žiŵeþ /ʒiweθ/
+  祖语：*živetʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0079 使……冰封 [动词 · 仅祖语词根或语法研究基础，现代方言原形未核定]
+  现代词形尚未确立
+  祖语：*zamrazitʲ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
+
+D0080 守卫、保护 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ħraniť /χranitʲ/ | SE: hranit /xranit/ | W: ħraniþ /χraniθ/
+  祖语：*xranitʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0081 睡眠 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: spať /spatʲ/ | SE: spat /spat/ | W: spaþ /spaθ/
+  祖语：*spatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0082 睡一阵 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: pospať /pospatʲ/ | SE: pospat /pospat/ | W: pospaþ /pospaθ/
+  祖语：*pospatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0083 听到（有结果） [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: uslÿšať /uslɨʃatʲ/ | SE: uslišat /usliʃat/ | W: usłÿšaþ /usɫɨʃaθ/
+  祖语：*uslÿšatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0084 听见、听 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: slÿšať /slɨʃatʲ/ | SE: slišat /sliʃat/ | W: słÿšaþ /sɫɨʃaθ/
+  祖语：*slÿšatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0085 忘记 [动词 · 仅祖语词根或语法研究基础，现代方言原形未核定]
+  现代词形尚未确立
+  祖语：*zabÿtʲ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
+
+D0086 携带（单次过程） [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: neseť /nesetʲ/ | SE: neset /neset/ | W: neseþ /neseθ/
+  祖语：*nesetʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0087 写 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: pisať /pisatʲ/ | SE: pisat /pisat/ | W: pisaþ /pisaθ/
+  祖语：*pisatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0088 写完 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: napisať /napisatʲ/ | SE: napisat /napisat/ | W: napisaþ /napisaθ/
+  祖语：*napisatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0089 知道 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: znať /znatʲ/ | SE: znat /znat/ | W: znaþ /znaθ/
+  祖语：*znatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0090 制作、做 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: delať /delatʲ/ | SE: delat /delat/ | W: dełaþ /deɫaθ/
+  祖语：*delatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0091 注视 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: patriť /patritʲ/ | SE: patrit /patrit/ | W: patriþ /patriθ/
+  祖语：*patritʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0092 走来、抵达（过程） [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: prÿħodiť /prɨχoditʲ/ | SE: prihodit /prixodit/ | W: prÿħodiþ /prɨχodiθ/
+  祖语：*prÿxoditʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0093 做成 [动词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: sdelať /sdelatʲ/ | SE: sdelat /sdelat/ | W: sdełaþ /sdeɫaθ/
+  祖语：*sdelatʲ；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+
+—— 形容词 ——
+D0094 白色 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: belÿ /belɨ/ | SE: beli /beli/ | W: bełÿ /beɫɨ/
+  祖语：*belÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0095 北方的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: seŵernÿ /sewernɨ/ | SE: severni /severni/ | W: seŵernÿ /sewernɨ/
+  祖语：*severnÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0096 冰质的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ledenÿ /ledenɨ/ | SE: ledeni /ledeni/ | W: łedenÿ /ɫedenɨ/
+  祖语：*ledenÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0097 潮冷 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: sÿrÿ /sɨrɨ/ | SE: siri /siri/ | W: sÿrÿ /sɨrɨ/
+  祖语：*sÿrÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0098 潮湿 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: mokrÿ /mokrɨ/ | SE: mokri /mokri/ | W: mokrÿ /mokrɨ/
+  祖语：*mokrÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0099 沉重 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: tjažkÿ /tjaʒkɨ/ | SE: tjažki /tjaʒki/ | W: tjažkÿ /tjaʒkɨ/
+  祖语：*tjažkÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0100 冬季的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: zimnÿ /zimnɨ/ | SE: zimni /zimni/ | W: zimnÿ /zimnɨ/
+  祖语：*zimnÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0101 干燥 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: suħÿ /suχɨ/ | SE: suhi /suxi/ | W: suħÿ /suχɨ/
+  祖语：*suxÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0102 工业的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: zaŵodnÿ /zawodnɨ/ | SE: zavodni /zavodni/ | W: zaŵodnÿ /zawodnɨ/
+  祖语：*zavodnÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0103 古老 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: starÿ /starɨ/ | SE: stari /stari/ | W: starÿ /starɨ/
+  祖语：*starÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0104 寒冷 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: studenÿ /studenɨ/ | SE: studeni /studeni/ | W: studenÿ /studenɨ/
+  祖语：*studenÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0105 黑色 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: černÿ /t͡ʃernɨ/ | SE: černi /t͡ʃerni/ | W: černÿ /t͡ʃernɨ/
+  祖语：*černÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0106 荒凉 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: pustÿ /pustɨ/ | SE: pusti /pusti/ | W: pustÿ /pustɨ/
+  祖语：*pustÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0107 昏暗 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: temnÿ /temnɨ/ | SE: temni /temni/ | W: temnÿ /temnɨ/
+  祖语：*temnÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0108 活体的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: žiŵÿ /ʒiwɨ/ | SE: živi /ʒivi/ | W: žiŵÿ /ʒiwɨ/
+  祖语：*živÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0109 寂静 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: tiħÿ /tiχɨ/ | SE: tihi /tixi/ | W: tiħÿ /tiχɨ/
+  祖语：*tixÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0110 坚硬 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: tŵerdÿ /twerdɨ/ | SE: tverdi /tverdi/ | W: tŵerdÿ /twerdɨ/
+  祖语：*tverdÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0111 巨大 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ŵelikÿ /welikɨ/ | SE: veliki /veliki/ | W: ŵełikÿ /weɫikɨ/
+  祖语：*velikÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0112 可怖 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: strašnÿ /straʃnɨ/ | SE: strašni /straʃni/ | W: strašnÿ /straʃnɨ/
+  祖语：*strašnÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0113 蓝色 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: sińi /siɲi/ | SE: sini /sini/ | W: sini /sini/
+  祖语：*sinʲi；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0114 邻近 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: blizńi /blizɲi/ | SE: blizni /blizni/ | W: błizni /bɫizni/
+  祖语：*bliznʲi；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0115 林地的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: lesnÿ /lesnɨ/ | SE: lesni /lesni/ | W: łesnÿ /ɫesnɨ/
+  祖语：*lesnÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0116 漫长 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: dolġÿ /dolɣɨ/ | SE: dolgi /dolɡi/ | W: dołġÿ /doɫɣɨ/
+  祖语：*dolgÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0117 明亮 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: sŵetlÿ /swetlɨ/ | SE: svetli /svetli/ | W: sŵetłÿ /swetɫɨ/
+  祖语：*svetlÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0118 内部的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ŵnutreńi /wnutreɲi/ | SE: vnutreni /vnutreni/ | W: ŵnutreni /wnutreni/
+  祖语：*vnutrenʲi；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0119 年轻 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: mladÿ /mladɨ/ | SE: mladi /mladi/ | W: mładÿ /mɫadɨ/
+  祖语：*mladÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0120 强壮 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: silnÿ /silnɨ/ | SE: silni /silni/ | W: siłnÿ /siɫnɨ/
+  祖语：*silnÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0121 清晰 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: jasnÿ /jasnɨ/ | SE: jasni /jasni/ | W: jasnÿ /jasnɨ/
+  祖语：*jasnÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0122 秋季的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: osenńi /osenɲi/ | SE: osenni /osenni/ | W: osenni /osenni/
+  祖语：*osennʲi；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0123 软弱 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: slabÿ /slabɨ/ | SE: slabi /slabi/ | W: słabÿ /sɫabɨ/
+  祖语：*slabÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0124 山区的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ġornÿ /ɣornɨ/ | SE: gorni /ɡorni/ | W: ġornÿ /ɣornɨ/
+  祖语：*gornÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0125 深 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ġłubokÿ /ɣɫubokɨ/ | SE: gluboki /ɡluboki/ | W: ġłubokÿ /ɣɫubokɨ/
+  祖语：*glubokÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0126 石制的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: kamennÿ /kamennɨ/ | SE: kamenni /kamenni/ | W: kamennÿ /kamennɨ/
+  祖语：*kamennÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0127 死去的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: mertŵÿ /mertwɨ/ | SE: mertvi /mertvi/ | W: mertŵÿ /mertwɨ/
+  祖语：*mertvÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0128 铁锈色的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: rÿžÿ /rɨʒɨ/ | SE: riži /riʒi/ | W: rÿžÿ /rɨʒɨ/
+  祖语：*rÿžÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0129 铁制的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: železnÿ /ʒeleznɨ/ | SE: železni /ʒelezni/ | W: žełeznÿ /ʒeɫeznɨ/
+  祖语：*železnÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0130 温暖 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: teplÿ /teplɨ/ | SE: tepli /tepli/ | W: tepłÿ /tepɫɨ/
+  祖语：*teplÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0131 夏季的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: letńi /letɲi/ | SE: letni /letni/ | W: łetni /ɫetni/
+  祖语：*letnʲi；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0132 小 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: malÿ /malɨ/ | SE: mali /mali/ | W: małÿ /maɫɨ/
+  祖语：*malÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0133 新 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: noŵÿ /nowɨ/ | SE: novi /novi/ | W: noŵÿ /nowɨ/
+  祖语：*novÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0134 血缘的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: kroŵnÿ /krownɨ/ | SE: krovni /krovni/ | W: kroŵnÿ /krownɨ/
+  祖语：*krovnÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+D0135 迅速 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: bÿstrÿ /bɨstrɨ/ | SE: bistri /bistri/ | W: bÿstrÿ /bɨstrɨ/
+  祖语：*bÿstrÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0136 遥远 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: dalekÿ /dalekɨ/ | SE: daleki /daleki/ | W: dałekÿ /daɫekɨ/
+  祖语：*dalekÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：已登记比较级构词机制；本条显示原级阳性主格
+
+D0137 最后的 [形容词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: posledńi /posledɲi/ | SE: posledni /posledni/ | W: posłedni /posɫedni/
+  祖语：*poslednʲi；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：关系形容词不登记普通综合比较级
+
+
+—— 分词 ——
+D0138 安放好的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: postaŵenÿ /postawenɨ/ | SE: postaveni /postaveni/ | W: postaŵenÿ /postawenɨ/
+  祖语：*postavenÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0139 被冰封的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: zamrazenÿ /zamrazenɨ/ | SE: zamrazeni /zamrazeni/ | W: zamrazenÿ /zamrazenɨ/
+  祖语：*zamrazenÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0140 被带来的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: prinesenÿ /prinesenɨ/ | SE: prineseni /prineseni/ | W: prinesenÿ /prinesenɨ/
+  祖语：*prinesenÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0141 被看见的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: uŵidenÿ /uwidenɨ/ | SE: uvideni /uvideni/ | W: uŵidenÿ /uwidenɨ/
+  祖语：*uvidenÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0142 被饶恕的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: poščadoŵanÿ /poʃt͡ʃadowanɨ/ | SE: poščadovani /poʃt͡ʃadovani/ | W: poščadoŵanÿ /poʃt͡ʃadowanɨ/
+  祖语：*poščadovanÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0143 被遗忘的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: zabÿtÿ /zabɨtɨ/ | SE: zabiti /zabiti/ | W: zabÿtÿ /zabɨtɨ/
+  祖语：*zabÿtÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0144 喊叫中的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: kričającÿ /krit͡ʃajɔ̃t͡sɨ/ | SE: kričajoci /krit͡ʃajot͡si/ | W: kričającÿ /krit͡ʃajɔ̃t͡sɨ/
+  祖语：*kričającÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0145 讲话中的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ġoŵorijącÿ /ɣoworijɔ̃t͡sɨ/ | SE: govorijoci /ɡovorijot͡si/ | W: ġoŵorijącÿ /ɣoworijɔ̃t͡sɨ/
+  祖语：*govorijącÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0146 燃烧中的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ġorejącÿ /ɣorejɔ̃t͡sɨ/ | SE: gorejoci /ɡorejot͡si/ | W: ġorejącÿ /ɣorejɔ̃t͡sɨ/
+  祖语：*gorejącÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0147 生活中的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: žiŵejącÿ /ʒiwejɔ̃t͡sɨ/ | SE: živejoci /ʒivejot͡si/ | W: žiŵejącÿ /ʒiwejɔ̃t͡sɨ/
+  祖语：*živejącÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0148 守护、保卫中的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ħranijącÿ /χranijɔ̃t͡sɨ/ | SE: hranijoci /xranijot͡si/ | W: ħranijącÿ /χranijɔ̃t͡sɨ/
+  祖语：*xranijącÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0149 听见、听中的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: slÿšającÿ /slɨʃajɔ̃t͡sɨ/ | SE: slišajoci /sliʃajot͡si/ | W: słÿšającÿ /sɫɨʃajɔ̃t͡sɨ/
+  祖语：*slÿšającÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0150 携带（单次过程）中的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: nesejącÿ /nesejɔ̃t͡sɨ/ | SE: nesejoci /nesejot͡si/ | W: nesejącÿ /nesejɔ̃t͡sɨ/
+  祖语：*nesejącÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0151 写成的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: napisanÿ /napisanɨ/ | SE: napisani /napisani/ | W: napisanÿ /napisanɨ/
+  祖语：*napisanÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0152 已讲述的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: proġoŵorenÿ /proɣoworenɨ/ | SE: progovoreni /proɡovoreni/ | W: proġoŵorenÿ /proɣoworenɨ/
+  祖语：*progovorenÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0153 已经结冻的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: zamrzlÿ /zamrzlɨ/ | SE: zamrzli /zamrzli/ | W: zamrzłÿ /zamrzɫɨ/
+  祖语：*zamrzlÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0154 正在融化的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: tajającÿ /tajajɔ̃t͡sɨ/ | SE: tajajoci /tajajot͡si/ | W: tajającÿ /tajajɔ̃t͡sɨ/
+  祖语：*tajającÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0155 注视中的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: patrijącÿ /patrijɔ̃t͡sɨ/ | SE: patrijoci /patrijot͡si/ | W: patrijącÿ /patrijɔ̃t͡sɨ/
+  祖语：*patrijącÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0156 走来、抵达（过程）中的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: prÿħodijącÿ /prɨχodijɔ̃t͡sɨ/ | SE: prihodijoci /prixodijot͡si/ | W: prÿħodijącÿ /prɨχodijɔ̃t͡sɨ/
+  祖语：*prÿxodijącÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+D0157 做成的 [分词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: sdelanÿ /sdelanɨ/ | SE: sdelani /sdelani/ | W: sdełanÿ /sdeɫanɨ/
+  祖语：*sdelanÿ；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：本条显示分词阳性主格，非独立动词词典原形
+
+
+—— 代词 ——
+D0158 你 [代词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: tÿ /tɨ/ | SE: ti /ti/ | W: tÿ /tɨ/
+  祖语：*tÿ；来源：assets/data/zagren-nominal-morphology-v02.json
+  注：本条显示代词主格，六格见原始范式
+
+D0159 你们 [代词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ŵÿ /wɨ/ | SE: vi /vi/ | W: ŵÿ /wɨ/
+  祖语：*vÿ；来源：assets/data/zagren-nominal-morphology-v02.json
+  注：本条显示代词主格，六格见原始范式
+
+D0160 他 [代词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: on /on/ | SE: on /on/ | W: on /on/
+  祖语：*on；来源：assets/data/zagren-nominal-morphology-v02.json
+  注：本条显示代词主格，六格见原始范式
+
+D0161 他们／她们 [代词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: oni /oni/ | SE: oni /oni/ | W: oni /oni/
+  祖语：*oni；来源：assets/data/zagren-nominal-morphology-v02.json
+  注：本条显示代词主格，六格见原始范式
+
+D0162 她 [代词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ona /ona/ | SE: ona /ona/ | W: ona /ona/
+  祖语：*ona；来源：assets/data/zagren-nominal-morphology-v02.json
+  注：本条显示代词主格，六格见原始范式
+
+D0163 我 [代词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ja /ja/ | SE: ja /ja/ | W: ja /ja/
+  祖语：*ja；来源：assets/data/zagren-nominal-morphology-v02.json
+  注：本条显示代词主格，六格见原始范式
+
+D0164 我们 [代词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: mÿ /mɨ/ | SE: mi /mi/ | W: mÿ /mɨ/
+  祖语：*mÿ；来源：assets/data/zagren-nominal-morphology-v02.json
+  注：本条显示代词主格，六格见原始范式
+
+
+—— 副词 ——
+D0165 今天 [副词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: dnes /dnes/ | SE: dnes /dnes/ | W: dnes /dnes/
+  祖语：未定；来源：assets/data/zagren-public-corpus-v05.json
+  注：语料S08：已见功能或形式；不是完整语义边界的最终定义
+
+D0166 明天 [副词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: jutro /jutro/ | SE: jutro /jutro/ | W: jutro /jutro/
+  祖语：未定；来源：assets/data/zagren-public-corpus-v05.json
+  注：语料S31：已见功能或形式；不是完整语义边界的最终定义
+
+D0167 仍然 [副词 · V0.6已衍变的旧词]
+  N: še /ʃe/ | SE: še /ʃe/ | W: še /ʃe/
+  祖语：*ešče；来源：assets/data/zagren-v06-phonology-lexicon.json；assets/data/zagren-public-corpus-v05.json
+  旧版：N ešče | SE ešče | W ešče
+  音变依据：C03
+  注：
+
+
+—— 介词 ——
+D0168 从…… [介词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: od /od/ | SE: od /od/ | W: od /od/
+  祖语：未定；来源：assets/data/zagren-nominal-morphology-v02.json
+  注：V0.2介词：已见功能或形式；不是完整语义边界的最终定义
+
+D0169 到……旁 [介词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: k /k/ | SE: k /k/ | W: k /k/
+  祖语：未定；来源：assets/data/zagren-public-corpus-v05.json
+  注：语料S17：已见功能或形式；不是完整语义边界的最终定义
+
+D0170 与……一起 [介词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: s /s/ | SE: s /s/ | W: s /s/
+  祖语：未定；来源：assets/data/zagren-nominal-morphology-v02.json
+  注：V0.2介词：已见功能或形式；不是完整语义边界的最终定义
+
+D0171 在……里面 [介词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ŵ /w/ | SE: v /v/ | W: ŵ /w/
+  祖语：未定；来源：assets/data/zagren-nominal-morphology-v02.json
+  注：V0.2介词：已见功能或形式；不是完整语义边界的最终定义
+
+D0172 在……旁 [介词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: u /u/ | SE: u /u/ | W: u /u/
+  祖语：未定；来源：assets/data/zagren-public-corpus-v05.json
+  注：语料S29：已见功能或形式；不是完整语义边界的最终定义
+
+D0173 在……上 [介词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: na /na/ | SE: na /na/ | W: na /na/
+  祖语：未定；来源：assets/data/zagren-nominal-morphology-v02.json
+  注：V0.2介词：已见功能或形式；不是完整语义边界的最终定义
+
+
+—— 连词 ——
+D0174 比…… [连词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: než /neʒ/ | SE: než /neʒ/ | W: než /neʒ/
+  祖语：未定；来源：assets/data/zagren-modifier-morphology-v04.json
+  注：V0.4比较句：已见功能或形式；不是完整语义边界的最终定义
+
+D0175 但是 [连词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: no /no/ | SE: no /no/ | W: no /no/
+  祖语：未定；来源：assets/data/zagren-public-corpus-v05.json
+  注：语料S20：已见功能或形式；不是完整语义边界的最终定义
+
+D0176 和／并且 [连词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: i /i/ | SE: i /i/ | W: i /i/
+  祖语：未定；来源：assets/data/zagren-public-corpus-v05.json
+  注：语料S03、S06：已见功能或形式；不是完整语义边界的最终定义
+
+
+—— 助词 ——
+D0177 不／否定 [助词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: ńe /ɲe/ | SE: ne /ne/ | W: n /n/
+  祖语：未定；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：V0.3否定助词：已见功能或形式；不是完整语义边界的最终定义
+
+D0178 条件式助词 [助词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: bÿ /bɨ/ | SE: bi /bi/ | W: bÿ /bɨ/
+  祖语：未定；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：V0.3条件式：已见功能或形式；不是完整语义边界的最终定义
+
+D0179 未完成体将来助词 [助词 · 继承自V0.1–V0.5，尚未单独升级]
+  N: bu /bu/ | SE: bu /bu/ | W: b /b/
+  祖语：未定；来源：assets/data/zagren-verbal-morphology-v03.json
+  注：V0.3分析式将来：已见功能或形式；不是完整语义边界的最终定义
+
+
+—— 名词 ——
+D0180 人 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: lud /lud/ | SE: lud /lud/ | W: łud /ɫud/
+  祖语：*lud；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0181 孩子 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: detę /detɛ̃/ | SE: dete /dete/ | W: det /det/
+  祖语：*detę；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0182 父亲 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: otec /otet͡s/ | SE: otec /otet͡s/ | W: otec /otet͡s/
+  祖语：*otec；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0183 朋友 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: druġ /druɣ/ | SE: drug /druɡ/ | W: dru /dru/
+  祖语：*drug；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0184 邻居 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: sused /sused/ | SE: sused /sused/ | W: sused /sused/
+  祖语：*sused；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0185 客人 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ġost /ɣost/ | SE: gost /ɡost/ | W: ġost /ɣost/
+  祖语：*gost；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0186 工人 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: trudnik /trudnik/ | SE: trudnik /trudnik/ | W: trudnik /trudnik/
+  祖语：*trudnik；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0187 教师 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: učitel /ut͡ʃitel/ | SE: učitel /ut͡ʃitel/ | W: učiteł /ut͡ʃiteɫ/
+  祖语：*učitel；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0188 医生 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: lekar /lekar/ | SE: lekar /lekar/ | W: łekar /ɫekar/
+  祖语：*lekar；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0189 祖母 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: baba /baba/ | SE: baba /baba/ | W: bab /bab/
+  祖语：*baba；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0190 门 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: dŵera /dwera/ | SE: dvera /dvera/ | W: dŵer /dwer/
+  祖语：*dvera；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0191 窗户 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: okno /okno/ | SE: okno /okno/ | W: okn /okn/
+  祖语：*okno；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0192 墙 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: stena /stena/ | SE: stena /stena/ | W: sten /sten/
+  祖语：*stena；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0193 屋顶 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: kroŵa /krowa/ | SE: krova /krova/ | W: kroŵ /krow/
+  祖语：*krova；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0194 床 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ležka /leʒka/ | SE: ležka /leʒka/ | W: łežk /ɫeʒk/
+  祖语：*ležka；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0195 灯 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: sŵeta /sweta/ | SE: sveta /sveta/ | W: sŵet /swet/
+  祖语：*sveta；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0196 椅子 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: sedlo /sedlo/ | SE: sedlo /sedlo/ | W: sedł /sedɫ/
+  祖语：*sedlo；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0197 杯子 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: kupa /kupa/ | SE: kupa /kupa/ | W: kup /kup/
+  祖语：*kupa；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0198 碗 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: misa /misa/ | SE: misa /misa/ | W: mis /mis/
+  祖语：*misa；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0199 锅 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: kotla /kotla/ | SE: kotla /kotla/ | W: kotł /kotɫ/
+  祖语：*kotla；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0200 衣服 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: odeŵa /odewa/ | SE: odeva /odeva/ | W: odeŵ /odew/
+  祖语：*odeva；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0201 鞋 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: obuta /obuta/ | SE: obuta /obuta/ | W: obut /obut/
+  祖语：*obuta；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0202 手套 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: rukaŵa /rukawa/ | SE: rukava /rukava/ | W: rukaŵ /rukaw/
+  祖语：*rukava；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0203 面包 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ħleb /χleb/ | SE: hleb /xleb/ | W: ħłeb /χɫeb/
+  祖语：*xleb；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0204 汤 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: sup /sup/ | SE: sup /sup/ | W: sup /sup/
+  祖语：*sup；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0205 盐 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: sol /sol/ | SE: sol /sol/ | W: soł /soɫ/
+  祖语：*sol；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0206 肉 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: męso /mɛ̃so/ | SE: meso /meso/ | W: męs /mɛ̃s/
+  祖语：*męso；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0207 果实 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: plod /plod/ | SE: plod /plod/ | W: płod /pɫod/
+  祖语：*plod；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0208 茶 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: čaj /t͡ʃaj/ | SE: čaj /t͡ʃaj/ | W: čaj /t͡ʃaj/
+  祖语：*čaj；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0209 鸡蛋 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: jajce /jajt͡se/ | SE: jajce /jajt͡se/ | W: jajc /jajt͡s/
+  祖语：*jajce；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0210 车辆 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ŵoz /woz/ | SE: voz /voz/ | W: ŵoz /woz/
+  祖语：*voz；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0211 桥梁 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: most /most/ | SE: most /most/ | W: most /most/
+  祖语：*most；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0212 河岸 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: breġa /breɣa/ | SE: brega /breɡa/ | W: bre /bre/
+  祖语：*brega；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0213 湖泊 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ozero /ozero/ | SE: ozero /ozero/ | W: ozer /ozer/
+  祖语：*ozero；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0214 雨 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: dožda /doʒda/ | SE: dožda /doʒda/ | W: dožd /doʒd/
+  祖语：*dožda；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0215 云 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: oblaka /oblaka/ | SE: oblaka /oblaka/ | W: obłak /obɫak/
+  祖语：*oblaka；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0216 太阳 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: solnce /solnt͡se/ | SE: solnce /solnt͡se/ | W: sołnc /soɫnt͡s/
+  祖语：*solnce；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0217 月亮 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: luna /luna/ | SE: luna /luna/ | W: łun /ɫun/
+  祖语：*luna；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0218 树木 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: dreŵo /drewo/ | SE: drevo /drevo/ | W: dreŵ /drew/
+  祖语：*drevo；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0219 草 [名词 · V0.6现代高频新词原形；未完成变格变位]
+  N: traŵa /trawa/ | SE: trava /trava/ | W: traŵ /traw/
+  祖语：*trava；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+
+—— 动词 ——
+D0220 吃 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: jedať /jedatʲ/ | SE: jedat /jedat/ | W: jedaþ /jedaθ/
+  祖语：*jedatʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0221 喝 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: piŵať /piwatʲ/ | SE: pivat /pivat/ | W: piŵaþ /piwaθ/
+  祖语：*pivatʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0222 烹煮 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ŵariť /waritʲ/ | SE: varit /varit/ | W: ŵariþ /wariθ/
+  祖语：*varitʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0223 打开 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: otŵoriť /otworitʲ/ | SE: otvorit /otvorit/ | W: otŵoriþ /otworiθ/
+  祖语：*otvoritʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0224 关闭 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: zakriť /zakritʲ/ | SE: zakrit /zakrit/ | W: zakriþ /zakriθ/
+  祖语：*zakritʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0225 拿起 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: podneť /podnetʲ/ | SE: podnet /podnet/ | W: podneþ /podneθ/
+  祖语：*podnetʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0226 放下 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: kladeť /kladetʲ/ | SE: kladet /kladet/ | W: kładeþ /kɫadeθ/
+  祖语：*kladetʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0227 寻找 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: iskať /iskatʲ/ | SE: iskat /iskat/ | W: iskaþ /iskaθ/
+  祖语：*iskatʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0228 找到 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: najdiť /najditʲ/ | SE: najdit /najdit/ | W: najdiþ /najdiθ/
+  祖语：*najditʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0229 询问 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: pytať /pytatʲ/ | SE: pytat /pytat/ | W: pytaþ /pytaθ/
+  祖语：*pytatʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0230 回答 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: otŵetiť /otwetitʲ/ | SE: otvetit /otvetit/ | W: otŵetiþ /otwetiθ/
+  祖语：*otvetitʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0231 学习 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: učať /ut͡ʃatʲ/ | SE: učat /ut͡ʃat/ | W: učaþ /ut͡ʃaθ/
+  祖语：*učatʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0232 教授 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: učiť /ut͡ʃitʲ/ | SE: učit /ut͡ʃit/ | W: učiþ /ut͡ʃiθ/
+  祖语：*učitʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0233 购买 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: kupiť /kupitʲ/ | SE: kupit /kupit/ | W: kupiþ /kupiθ/
+  祖语：*kupitʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0234 售卖 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: prodať /prodatʲ/ | SE: prodat /prodat/ | W: prodaþ /prodaθ/
+  祖语：*prodatʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0235 付款 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: platiť /platitʲ/ | SE: platit /platit/ | W: płatiþ /pɫatiθ/
+  祖语：*platitʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0236 步行 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: stupať /stupatʲ/ | SE: stupat /stupat/ | W: stupaþ /stupaθ/
+  祖语：*stupatʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0237 停下 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ostať /ostatʲ/ | SE: ostat /ostat/ | W: ostaþ /ostaθ/
+  祖语：*ostatʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0238 坐着 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: sedeť /sedetʲ/ | SE: sedet /sedet/ | W: sedeþ /sedeθ/
+  祖语：*sedetʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0239 站立 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: stojať /stojatʲ/ | SE: stojat /stojat/ | W: stojaþ /stojaθ/
+  祖语：*stojatʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0240 帮助 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: pomoġať /pomoɣatʲ/ | SE: pomogat /pomoɡat/ | W: pomoġaþ /pomoɣaθ/
+  祖语：*pomogatʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0241 修理 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: praŵiť /prawitʲ/ | SE: pravit /pravit/ | W: praŵiþ /prawiθ/
+  祖语：*pravitʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0242 洗净 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: myť /mytʲ/ | SE: myt /myt/ | W: myþ /myθ/
+  祖语：*mytʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0243 切割 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: rezať /rezatʲ/ | SE: rezat /rezat/ | W: rezaþ /rezaθ/
+  祖语：*rezatʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0244 记住 [动词 · V0.6现代高频新词原形；未完成变格变位]
+  N: pametať /pametatʲ/ | SE: pametat /pametat/ | W: pametaþ /pametaθ/
+  祖语：*pametatʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+
+—— 形容词 ——
+D0245 红色 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: rudenÿ /rudenɨ/ | SE: rudeni /rudeni/ | W: rudenÿ /rudenɨ/
+  祖语：*rudenÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0246 绿色 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: zelenÿ /zelenɨ/ | SE: zeleni /zeleni/ | W: zełenÿ /zeɫenɨ/
+  祖语：*zelenÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0247 炎热 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ġoračÿ /ɣorat͡ʃɨ/ | SE: gorači /ɡorat͡ʃi/ | W: ġoračÿ /ɣorat͡ʃɨ/
+  祖语：*goračÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0248 凉爽 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ħladenÿ /χladenɨ/ | SE: hladeni /xladeni/ | W: ħładenÿ /χɫadenɨ/
+  祖语：*xladenÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0249 甜 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: sladkÿ /sladkɨ/ | SE: sladki /sladki/ | W: sładkÿ /sɫadkɨ/
+  祖语：*sladkÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0250 苦 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ġorkÿ /ɣorkɨ/ | SE: gorki /ɡorki/ | W: ġorkÿ /ɣorkɨ/
+  祖语：*gorkÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0251 咸 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: solnÿ /solnɨ/ | SE: solni /solni/ | W: sołnÿ /soɫnɨ/
+  祖语：*solnÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0252 洁净 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: čistÿ /t͡ʃistɨ/ | SE: čisti /t͡ʃisti/ | W: čistÿ /t͡ʃistɨ/
+  祖语：*čistÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0253 肮脏 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ġrjaznÿ /ɣrjaznɨ/ | SE: grjazni /ɡrjazni/ | W: ġrjaznÿ /ɣrjaznɨ/
+  祖语：*grjaznÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0254 安全 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: bezpečnÿ /bezpet͡ʃnɨ/ | SE: bezpečni /bezpet͡ʃni/ | W: bezpečnÿ /bezpet͡ʃnɨ/
+  祖语：*bezpečnÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0255 危险 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: opasnÿ /opasnɨ/ | SE: opasni /opasni/ | W: opasnÿ /opasnɨ/
+  祖语：*opasnÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0256 空置 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: praznÿ /praznɨ/ | SE: prazni /prazni/ | W: praznÿ /praznɨ/
+  祖语：*praznÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0257 饱满 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: polnÿ /polnɨ/ | SE: polni /polni/ | W: połnÿ /poɫnɨ/
+  祖语：*polnÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0258 饥饿 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ġolodnÿ /ɣolodnɨ/ | SE: golodni /ɡolodni/ | W: ġołodnÿ /ɣoɫodnɨ/
+  祖语：*golodnÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0259 口渴 [形容词 · V0.6现代高频新词原形；未完成变格变位]
+  N: žadnÿ /ʒadnɨ/ | SE: žadni /ʒadni/ | W: žadnÿ /ʒadnɨ/
+  祖语：*žadnÿ；来源：assets/data/zagren-core100-v06.json
+  音变依据：BASE-N, BASE-SE, BASE-W
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+
+—— 指示词 ——
+D0260 这 [指示词 · V0.6现代高频新词原形；未完成变格变位]
+  N: se /se/ | SE: se /se/ | W: se /se/
+  祖语：*se；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0261 那 [指示词 · V0.6现代高频新词原形；未完成变格变位]
+  N: to /to/ | SE: to /to/ | W: to /to/
+  祖语：*to；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+
+—— 副词 ——
+D0262 这里 [副词 · V0.6现代高频新词原形；未完成变格变位]
+  N: sed /sed/ | SE: sede /sede/ | W: sed /sed/
+  祖语：*sede；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0263 那里 [副词 · V0.6现代高频新词原形；未完成变格变位]
+  N: tad /tad/ | SE: tade /tade/ | W: tad /tad/
+  祖语：*tade；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0264 现在 [副词 · V0.6现代高频新词原形；未完成变格变位]
+  N: nÿn /nɨn/ | SE: nin /nin/ | W: nÿn /nɨn/
+  祖语：*nÿne；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0265 刚才 [副词 · V0.6现代高频新词原形；未完成变格变位]
+  N: prÿd /prɨd/ | SE: prid /prid/ | W: prÿd /prɨd/
+  祖语：*prÿde；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0266 已经 [副词 · V0.6现代高频新词原形；未完成变格变位]
+  N: už /uʒ/ | SE: už /uʒ/ | W: už /uʒ/
+  祖语：*už；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0267 尚未 [副词 · V0.6现代高频新词原形；未完成变格变位]
+  N: ńež /ɲeʒ/ | SE: neže /neʒe/ | W: neže /neʒe/
+  祖语：*neže；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证；高频词经历史短化形成；保留专属缩约词源，不在其他词自动套用
+
+D0268 经常 [副词 · V0.6现代高频新词原形；未完成变格变位]
+  N: čast /t͡ʃast/ | SE: často /t͡ʃasto/ | W: čast /t͡ʃast/
+  祖语：*často；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0269 有时 [副词 · V0.6现代高频新词原形；未完成变格变位]
+  N: inoġa /inoɣa/ | SE: inoga /inoɡa/ | W: inoġ /inoɣ/
+  祖语：*inoga；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+
+—— 疑问词 ——
+D0270 为什么 [疑问词 · V0.6现代高频新词原形；未完成变格变位]
+  N: začo /zat͡ʃo/ | SE: začo /zat͡ʃo/ | W: začo /zat͡ʃo/
+  祖语：*začo；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0271 怎么 [疑问词 · V0.6现代高频新词原形；未完成变格变位]
+  N: kak /kak/ | SE: kak /kak/ | W: kak /kak/
+  祖语：*kak；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+
+—— 连词 ——
+D0272 因为 [连词 · V0.6现代高频新词原形；未完成变格变位]
+  N: zat /zat/ | SE: zato /zato/ | W: zat /zat/
+  祖语：*zatogo；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：现代词典原形已建；完整格位与动词变位需以独立范式验证；高频词经历史短化形成；保留专属缩约词源，不在其他词自动套用
+
+D0273 如果 [连词 · V0.6现代高频新词原形；未完成变格变位]
+  N: jel /jel/ | SE: jeli /jeli/ | W: jel /jel/
+  祖语：*jeli；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+
+—— 助词 ——
+D0274 请 [助词 · V0.6现代高频新词原形；未完成变格变位]
+  N: proś /proɕ/ | SE: pros /pros/ | W: proś /proɕ/
+  祖语：*prositʲ；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+
+—— 感叹词 ——
+D0275 感谢 [感叹词 · V0.6现代高频新词原形；未完成变格变位]
+  N: blaġ /blaɣ/ | SE: blag /blaɡ/ | W: błaġ /bɫaɣ/
+  祖语：*blagodar；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0276 问候 [感叹词 · V0.6现代高频新词原形；未完成变格变位]
+  N: zdran /zdran/ | SE: zdran /zdran/ | W: zdran /zdran/
+  祖语：*zdravin；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0277 告别 [感叹词 · V0.6现代高频新词原形；未完成变格变位]
+  N: doŵid /dowid/ | SE: dovid /dovid/ | W: doŵid /dowid/
+  祖语：*dovid；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+
+—— 数词 ——
+D0278 一 [数词 · V0.6现代高频新词原形；未完成变格变位]
+  N: jedn /jedn/ | SE: jedn /jedn/ | W: jedn /jedn/
+  祖语：*jedn；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+D0279 二 [数词 · V0.6现代高频新词原形；未完成变格变位]
+  N: dŵa /dwa/ | SE: dva /dva/ | W: dŵa /dwa/
+  祖语：*dva；来源：assets/data/zagren-core100-v06.json
+  音变依据：LEX-C
+  注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+
+【旧版与来源】
+V0.1 词典仍保留为只读历史基准，不可将279条错误统计为279项已验完整屈折。
+（完）
