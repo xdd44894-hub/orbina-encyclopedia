@@ -12,6 +12,8 @@ ai_search: true
 
 本条是**现行规范唯一总入口**。早期形态学和原始比较词汇仍保留为历史语料；只要 V0.6 与旧版出现词形冲突，先查本条的书写规范与 [V0.2《扎格伦字典》]({{ '/zagren-dictionary/' | relative_url }})，再查原始屈折格位，不能混为同一历史时段。未完成验证的格尾、重音或现代动词系统不会被擅自宣称已完成。
 
+**[进入藏朔原语统一资料中心]({{ '/zagren/' | relative_url }})** · [下载统一资料总卷]({{ '/assets/data/zagren-language-compendium-v06.txt' | relative_url }})
+
 ## 一、统一资料入口
 
 | 资料 | 作用 |
