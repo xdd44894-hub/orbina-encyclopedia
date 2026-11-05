@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="俄庇娜百科 · 扎格伦字典 V0.1，179条带出处的三方言词汇，按中文、词根、拼写与词性搜索。">
-<title>《扎格伦字典》V0.1 · Žaġręn Dictionary</title>
+<meta name="description" content="俄庇娜百科 · 扎格伦字典 V0.2，279条带出处的三方言词汇，按中文、词根、拼写、IPA与词性搜索。">
+<title>《扎格伦字典》V0.2 · Žaġręn Dictionary</title>
 <style>
 :root{color-scheme:dark;--bg:#0d1720;--nav:#12232d;--p:#172a35;--fg:#edf5f7;--muted:#a7c0ce;--border:#385361;--teal:#a4d6dd}
 *{box-sizing:border-box}
@@ -47,30 +47,34 @@ button:hover{background:#355969}.center{text-align:center;padding:1.4rem}
 footer{border-top:1px solid var(--border);margin-top:3rem;padding:1rem 0;color:var(--muted);font-size:.82rem}
 @media(max-width:750px){.records,.examples{grid-template-columns:1fr}.controls{grid-template-columns:1fr 1fr}.controls label:first-child{grid-column:1/-1}.metrics{grid-template-columns:1fr 1fr}}
 @media(max-width:380px){.formgrid{grid-template-columns:1fr}.form{display:flex;gap:.8rem;align-items:center}.form .tag{min-width:50px}.form strong{display:inline}}
-</style>
+.form .ipa{color:#8daebb;font-size:.75rem;overflow-wrap:anywhere;margin-top:.12rem} .lead2{color:var(--muted);font-size:.9rem} </style>
 </head>
 <body>
-<nav><a class="brand" href="../">俄庇娜百科</a><div class="links"><a href="../zagren-grammar/">词形生成器</a><a href="../zagren-showcase/">V0.5文学语料</a><a href="../articles/article-451/">历史音变</a></div></nav>
+<nav><a class="brand" href="../">俄庇娜百科</a><div class="links"><a href="../zagren/">语言总览</a><a href="../zagren-grammar/">词形生成器</a><a href="../zagren-showcase/">V0.5文学语料</a><a href="../articles/article-451/">历史音变</a></div></nav>
 <main>
-<div class="eyebrow">Žaġręn · Dictionary V0.1 · 三部族比较词典</div>
+<div class="eyebrow">Žaġręn · Dictionary V0.2 · 三部族比较词典</div>
 <h1>扎格伦字典</h1>
-<p class="lead">藏朔原语的第一版汇编字典。每条记录都有中文释义、可考的三方言词形、来源与版本阶段；V0.6 已演化词形和此前 V0.1–V0.5 的历史词形严格区分。</p>
+<p class="lead">藏朔原语的第二版统一汇编字典。每条记录都有中文释义、可考的三方言词形、来源与版本阶段；V0.6 已演化词形和此前 V0.1–V0.5 的历史词形严格区分。</p>
 <div class="metrics">
-<div class="metric"><b id="countAll">179</b><span>词典条目</span></div>
-<div class="metric"><b id="countTri">175</b><span>三方言词形齐全</span></div>
-<div class="metric"><b id="countModern">27</b><span>V0.6 新词形条目</span></div>
+<div class="metric"><b id="countAll">279</b><span>词典条目</span></div>
+<div class="metric"><b id="countTri">275</b><span>三方言词形齐全</span></div>
+<div class="metric"><b id="countModern">127</b><span>V0.6 现代原形条目</span></div>
 <div class="metric"><b>3</b><span>区域中心方言</span></div>
 </div>
-<p class="small"><a href="../assets/data/zagren-dictionary-v01.txt" download="扎格伦字典V0.1.txt">下载完整 TXT 词典</a>　·　<a href="../assets/data/zagren-dictionary-v01.json">查看结构化 JSON</a>　·　<a href="../articles/article-456/">阅读词典前言与编写规范</a></p>
+<p class="small"><a href="../assets/data/zagren-dictionary-v02.txt" download="扎格伦字典V0.2.txt">下载完整 TXT 词典</a>　·　<a href="../assets/data/zagren-dictionary-v02.json">查看结构化 JSON</a>　·　<a href="../articles/article-456/">阅读词典前言与编写规范</a></p>
 <div class="controls">
-<label>查词：中文、词根、三地拼写、音变编号<input id="search" type="search" placeholder="例如：雪 / sęġ / *sneg / N11" spellcheck="false" autocomplete="off"></label>
+<label>查词：中文、词根、三地拼写、IPA、音变编号<input id="search" type="search" placeholder="例如：雪 / sęġ / *sneg / N11" spellcheck="false" autocomplete="off"></label>
 <label>词性<select id="pos"><option value="all">全部词性</option></select></label>
 <label>版本状态<select id="stage"><option value="all">全部阶段</option></select></label>
 </div>
 <div class="listhead"><h2>字典正文</h2><div class="small" id="summary" role="status" aria-live="polite">读取中……</div></div>
 <div id="records" class="records" aria-live="polite"></div>
 <div id="more" class="center" hidden><button type="button" id="loadMore">显示更多条目</button></div>
-<div class="note"><b>读法说明：</b>与“现实斯拉夫语相似”不等于可以直接互译。V0.6 标为已演化的词形，只表示对应第一阶段音变及词典原形已有来源；完整变格、重音和独立 IPA 尚需逐步校验。未注明的 V0.6 语法变化不得从旧版字典自行推断。</div>
+<div class="note"><b>词典版本说明：</b>本版沿用179条 V0.1 条目，并加入100条高频现代词形；旧范式与新词典原形不会被混为一谈。现在显示的IPA是逐字母规则生成的宽式音位，<b>尚未标注重音、语流音变</b>，不能当作最终准确口音。<br><b>读法说明：</b>与“现实斯拉夫语相似”不等于可以直接互译。V0.6 标为现代的词形，只表示对应第一阶段音变及词典原形已有来源；完整变格、重音和独立 IPA 尚需逐步校验。未注明的 V0.6 语法变化不得从旧版字典自行推断。</div>
+<section class="section">
+<h2>例句与语法索引</h2>
+<p class="small"><a href="../zagren-corpus/">阅读50句三方言V0.6受控语料</a>　·　<a href="../zagren-grammar/">打开格位与动词生成器</a>　·　<a href="../articles/article-451/">查看现行语言总纲</a>　·　<a href="../assets/data/zagren-corpus-v06-50.json">语料 JSON</a></p>
+</section>
 <section class="section">
 <h2>书写符号简表</h2>
 <p><code>§</code> 郑重发言　<code>¡</code> 小惊　<code>¿</code> 微微疑惑　<code>！</code> 大惊　<code>？</code> 标准疑问　<code>•…•</code> 重点标记　<code>/…\</code> 文字引用（非口头发言）。</p>
@@ -88,8 +92,8 @@ footer{border-top:1px solid var(--border);margin-top:3rem;padding:1rem 0;color:v
 <script type="module">
 const q=(id)=>document.getElementById(id);
 let data=null,matched=[],limit=30;
-const posText={noun:"名词",verb:"动词",adj:"形容词",participle:"分词",pronoun:"代词",adverb:"副词",preposition:"介词",conjunction:"连词",particle:"助词"};
-const stageText={"v06":"V0.6已演化","v06-new-root":"V0.6新词根","legacy":"继承旧版","attested":"语料实见","proto-only":"仅祖语构拟"};
+const posText={noun:"名词",verb:"动词",adj:"形容词",participle:"分词",pronoun:"代词",adverb:"副词",preposition:"介词",conjunction:"连词",particle:"助词",demonstrative:"指示词",interrogative:"疑问词",interjection:"感叹词",numeral:"数词"};
+const stageText={"v06":"V0.6已演化","v06-new-root":"V0.6新词根","v06-core":"V0.6核心新词","legacy":"继承旧版","attested":"语料实见","proto-only":"仅祖语构拟"};
 function node(tag,cl,value){const x=document.createElement(tag);if(cl)x.className=cl;if(value!==undefined)x.textContent=value;return x}
 function normalize(x){return String(x||"").normalize("NFC").toLocaleLowerCase()}
 function options(sel,items){for(const [value,label] of items){const op=document.createElement("option");op.value=value;op.textContent=label;sel.append(op)}}
@@ -100,7 +104,7 @@ function buildCard(entry){
  head.append(title,node("span","type",posText[entry.pos]||entry.pos));root.append(head);
  root.append(node("div","stage",stageText[entry.stage]||entry.stage));
  const grid=node("div","formgrid");for(const [key,label] of [["N","北部"],["SE","东南"],["W","西部"]]){
-  const c=node("div","form");c.append(node("span","tag",label),node("strong",null,entry.forms?.[key]||"待构拟"));grid.append(c);
+  const c=node("div","form");c.append(node("span","tag",label),node("strong",null,entry.forms?.[key]||"待构拟"));if(entry.ipa?.[key])c.append(node("div","ipa",entry.ipa[key]));grid.append(c);
  }
  root.append(grid);
  const detail=node("details"),summary=node("summary",null,"查看词源、语法与来源"),box=node("div","details");
@@ -109,6 +113,8 @@ function buildCard(entry){
  if(entry.ruleIds?.length)box.append(line("已登记音变",entry.ruleIds.join(", ")));
  if(entry.detail)box.append(line("语法信息",Object.entries(entry.detail).map(([k,v])=>k+"="+v).join("; ")));
  if(entry.notes?.length)box.append(line("编纂注释",entry.notes.join("；")));
+ if(entry.ipaStatus)box.append(line("IPA状态",entry.ipaStatus));
+ if(entry.inflectionCoverage)box.append(line("屈折完整性",entry.inflectionCoverage==="lemma-only"?"仅词典原形；不得推断完整屈折":entry.inflectionCoverage==="historic-documented"?"有旧版历史范式；未必全部更新到V0.6":entry.inflectionCoverage));
  if(entry.source?.length)box.append(line("资料文件",entry.source.map(s=>s.split("/").at(-1)).join("、")));
  detail.append(summary,box);root.append(detail);
  return root;
@@ -127,7 +133,7 @@ function filter(){
   if(pos!=="all"&&e.pos!==pos)return false;
   if(stage!=="all"&&e.stage!==stage)return false;
   if(!term)return true;
-  return normalize([e.gloss,...e.aliases,e.proto,e.forms?.N,e.forms?.SE,e.forms?.W,...(e.ruleIds||[])].join(" ")).includes(term);
+  return normalize([e.gloss,...e.aliases,e.proto,e.forms?.N,e.forms?.SE,e.forms?.W,e.ipa?.N,e.ipa?.SE,e.ipa?.W,...(e.ruleIds||[])].join(" ")).includes(term);
  });
  limit=30;draw();
 }
@@ -138,7 +144,7 @@ async function start(){
   data=await res.json();
   if(!Array.isArray(data.entries)||data.entries.length!==data.stats.total)throw new Error("词条数量与索引不一致");
   q("countAll").textContent=data.stats.total;q("countTri").textContent=data.stats.withThreeForms;
-  q("countModern").textContent=data.stats.byStage.v06+data.stats.byStage.modernNew;
+  q("countModern").textContent=data.stats.modernHeadwordCount;
   options(q("pos"),Object.entries(posText).map(([a,b])=>[a,b]));
   options(q("stage"),Object.entries(stageText).map(([a,b])=>[a,b]));
   ["search","pos","stage"].forEach(id=>q(id).addEventListener(id==="search"?"input":"change",filter));
