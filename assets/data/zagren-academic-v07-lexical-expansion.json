@@ -44,54 +44,9 @@
     "completeDialectForms": 180
   },
   "homographNotes": {
-    "N": [
-      {
-        "form": "praŵda",
-        "glosses": [
-          "真实",
-          "真相"
-        ]
-      },
-      {
-        "form": "tiħÿ",
-        "glosses": [
-          "寂静",
-          "安静"
-        ]
-      }
-    ],
-    "SE": [
-      {
-        "form": "pravda",
-        "glosses": [
-          "真实",
-          "真相"
-        ]
-      },
-      {
-        "form": "tihi",
-        "glosses": [
-          "寂静",
-          "安静"
-        ]
-      }
-    ],
-    "W": [
-      {
-        "form": "praŵd",
-        "glosses": [
-          "真实",
-          "真相"
-        ]
-      },
-      {
-        "form": "tiħÿ",
-        "glosses": [
-          "寂静",
-          "安静"
-        ]
-      }
-    ]
+    "N": [],
+    "SE": [],
+    "W": []
   },
   "entries": [
     {
@@ -871,17 +826,17 @@
       "pos": "noun",
       "gloss": "真相",
       "aliases": [],
-      "russianReference": "правда",
-      "proto": "*pravda",
+      "russianReference": "истина",
+      "proto": "*istina",
       "forms": {
-        "N": "praŵda",
-        "SE": "pravda",
-        "W": "praŵd"
+        "N": "istina",
+        "SE": "istina",
+        "W": "istin"
       },
       "ipa": {
-        "N": "/prawda/",
-        "SE": "/pravda/",
-        "W": "/prawd/"
+        "N": "/istina/",
+        "SE": "/istina/",
+        "W": "/istin/"
       },
       "stage": "v07-lexicon",
       "source": [
@@ -2407,19 +2362,19 @@
     {
       "id": "D0337",
       "pos": "adj",
-      "gloss": "安静",
+      "gloss": "平静",
       "aliases": [],
-      "russianReference": "тихий",
-      "proto": "*tixÿ",
+      "russianReference": "спокойный",
+      "proto": "*spokojnÿ",
       "forms": {
-        "N": "tiħÿ",
-        "SE": "tihi",
-        "W": "tiħÿ"
+        "N": "spokojnÿ",
+        "SE": "spokojni",
+        "W": "spokojnÿ"
       },
       "ipa": {
-        "N": "/tiχɨ/",
-        "SE": "/tixi/",
-        "W": "/tiχɨ/"
+        "N": "/spokojnɨ/",
+        "SE": "/spokojni/",
+        "W": "/spokojnɨ/"
       },
       "stage": "v07-lexicon",
       "source": [
