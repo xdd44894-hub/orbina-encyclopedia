@@ -1,0 +1,294 @@
+{
+  "title": "Žaġręn V0.7 · 核心语法回归集",
+  "version": "V0.7-core-1",
+  "date": "2026-11-05",
+  "description": "5个V0.6已核验句子 + 11个依据已有历史范式构造的句子/短语；不能推断未登记新词的全部格位",
+  "stats": {
+    "examples": 16,
+    "threeDialectRealizations": 48,
+    "completeSentences": 12,
+    "phrases": 4,
+    "modernFive": 5,
+    "historicalReconciled": 11
+  },
+  "rows": [
+    {
+      "id": "A01",
+      "zh": "兄弟给了你一张纸。",
+      "type": "sentence",
+      "patterns": [
+        "S02",
+        "M03",
+        "V02"
+      ],
+      "forms": {
+        "N": "brat dal tebi list.",
+        "SE": "brat dal tebi list.",
+        "W": "brat dał tebi łist."
+      },
+      "reference": "V0.6-T01",
+      "status": "verified-v06"
+    },
+    {
+      "id": "A02",
+      "zh": "母亲给了我们一张纸。",
+      "type": "sentence",
+      "patterns": [
+        "S02",
+        "M03",
+        "V02"
+      ],
+      "forms": {
+        "N": "mať dala nam list.",
+        "SE": "mat dala nam list.",
+        "W": "maþ dał nam łist."
+      },
+      "reference": "V0.6-T02",
+      "status": "verified-v06"
+    },
+    {
+      "id": "A03",
+      "zh": "我们守卫新的铁制管道。",
+      "type": "sentence",
+      "patterns": [
+        "S04",
+        "M08",
+        "V01",
+        "P01"
+      ],
+      "forms": {
+        "N": "mÿ ħranime noŵu ẑeleznu ṱrubu.",
+        "SE": "mi hranime novu železnu trubu.",
+        "W": "mÿ ħranim noŵu žłeznu þřubu."
+      },
+      "reference": "V0.6-T03",
+      "status": "verified-v06"
+    },
+    {
+      "id": "A04",
+      "zh": "我们在森林里看不见雪。",
+      "type": "sentence",
+      "patterns": [
+        "S03",
+        "S05",
+        "M06"
+      ],
+      "forms": {
+        "N": "mÿ ŵ lese ńe ŵideme sęġ.",
+        "SE": "mi v lese ne videme seg.",
+        "W": "mÿ ŵ łes n ŵidem sne."
+      },
+      "reference": "V0.6-T04",
+      "status": "verified-v06"
+    },
+    {
+      "id": "A05",
+      "zh": "母亲郑重地说：“火还在燃烧吗？”",
+      "type": "sentence",
+      "patterns": [
+        "S06",
+        "S07",
+        "P03"
+      ],
+      "forms": {
+        "N": "mať ġoŵorit: §“ӧġń še ġoret？”",
+        "SE": "mat govorit: §“oң še goret？”",
+        "W": "maþ ġoŵorit: §“oġn še ġoret？”"
+      },
+      "reference": "V0.6-T05",
+      "status": "verified-v06"
+    },
+    {
+      "id": "A06",
+      "zh": "我看见兄弟。",
+      "type": "sentence",
+      "patterns": [
+        "S01",
+        "M02",
+        "M07",
+        "V01"
+      ],
+      "forms": {
+        "N": "ja ŵidem brata.",
+        "SE": "ja videm brata.",
+        "W": "ja ŵidem za brat."
+      },
+      "notes": "西部阳性有生宾格名词短语使用 za；旧版名词宾格仅列裸词干",
+      "reference": "V0.2 M06 / V0.4 C09",
+      "status": "historical-form-reconciled"
+    },
+    {
+      "id": "A07",
+      "zh": "我们将守卫房屋。",
+      "type": "sentence",
+      "patterns": [
+        "S01",
+        "V03",
+        "V07"
+      ],
+      "forms": {
+        "N": "mÿ bu ħraniť dom.",
+        "SE": "mi bu hranit dom.",
+        "W": "mÿ b ħraniþ dom."
+      },
+      "notes": "未完成体助词 + 不定式；不额外声明完成体",
+      "reference": "V0.3 C05",
+      "status": "historical-form-reconciled"
+    },
+    {
+      "id": "A08",
+      "zh": "他将抵达终点。",
+      "type": "sentence",
+      "patterns": [
+        "S01",
+        "V04",
+        "V07"
+      ],
+      "forms": {
+        "N": "on doprÿħodit.",
+        "SE": "on doprihodit.",
+        "W": "on doprÿħodit."
+      },
+      "notes": "完成体非过去时具有将来完成意义",
+      "reference": "V0.3 C15",
+      "status": "historical-form-reconciled"
+    },
+    {
+      "id": "A09",
+      "zh": "假设我会守卫房屋。",
+      "type": "sentence",
+      "patterns": [
+        "S01",
+        "V05",
+        "V02"
+      ],
+      "forms": {
+        "N": "ja bÿ ħranil dom.",
+        "SE": "ja bi hranil dom.",
+        "W": "ja bÿ ħranił dom."
+      },
+      "notes": "条件式助词 + 过去时阳性，取说话者为阳性例句",
+      "reference": "V0.3 C11",
+      "status": "historical-form-reconciled"
+    },
+    {
+      "id": "A10",
+      "zh": "不要喊叫。",
+      "type": "sentence",
+      "patterns": [
+        "S05",
+        "V06"
+      ],
+      "forms": {
+        "N": "ńe kričaj.",
+        "SE": "ne kričaj.",
+        "W": "n kričaj."
+      },
+      "notes": "否定词在祈使动词前；不把命令自动标成大惊号",
+      "reference": "V0.3 C17",
+      "status": "historical-form-reconciled"
+    },
+    {
+      "id": "A11",
+      "zh": "我看见活着的兄弟。",
+      "type": "sentence",
+      "patterns": [
+        "S01",
+        "S04",
+        "M07"
+      ],
+      "forms": {
+        "N": "ja ŵidem žiŵoġo brata.",
+        "SE": "ja videm živogo brata.",
+        "W": "ja ŵidem za žiŵoġ brat."
+      },
+      "notes": "宾格与修饰语一致，西部 za 管辖整个名词短语",
+      "reference": "V0.4 C09",
+      "status": "historical-form-reconciled"
+    },
+    {
+      "id": "A12",
+      "zh": "在黑色的山上。",
+      "type": "phrase",
+      "patterns": [
+        "S04",
+        "M06"
+      ],
+      "forms": {
+        "N": "na černoją ġore.",
+        "SE": "na černojo gore.",
+        "W": "na černoj ġor."
+      },
+      "notes": "介词 na + 处所格；本条是短语不是独立谓语句",
+      "reference": "V0.4 C03",
+      "status": "historical-form-reconciled"
+    },
+    {
+      "id": "A13",
+      "zh": "正在燃烧的火。",
+      "type": "phrase",
+      "patterns": [
+        "S04",
+        "P01"
+      ],
+      "forms": {
+        "N": "ġorejącÿ ӧġń.",
+        "SE": "gorejoci oң.",
+        "W": "ġorejącÿ oġn."
+      },
+      "notes": "原历史分词保持同格，火词干升级至V0.6词典形",
+      "reference": "V0.4 C15 / V0.6 火",
+      "status": "historical-form-reconciled"
+    },
+    {
+      "id": "A14",
+      "zh": "从房屋出发（起点短语）。",
+      "type": "phrase",
+      "patterns": [
+        "M04"
+      ],
+      "forms": {
+        "N": "od doma.",
+        "SE": "od doma.",
+        "W": "od dom."
+      },
+      "notes": "od + GEN；不当作完整动词句",
+      "reference": "V0.2 GEN preposition",
+      "status": "historical-form-reconciled"
+    },
+    {
+      "id": "A15",
+      "zh": "用手（工具短语）。",
+      "type": "phrase",
+      "patterns": [
+        "M05"
+      ],
+      "forms": {
+        "N": "s rękoją.",
+        "SE": "s renkojo.",
+        "W": "s rękoj."
+      },
+      "notes": "s + INS；不当作完整动词句",
+      "reference": "V0.2 INS preposition",
+      "status": "historical-form-reconciled"
+    },
+    {
+      "id": "A16",
+      "zh": "母亲看见神明。",
+      "type": "sentence",
+      "patterns": [
+        "S01",
+        "M07",
+        "P01"
+      ],
+      "forms": {
+        "N": "mať ŵidet boġa.",
+        "SE": "mat videt boga.",
+        "W": "maþ ŵidet za boġ."
+      },
+      "notes": "西部神明主格现代 bo，宾格保留 za boġ；格标记不能通过查原形省去",
+      "reference": "V0.3 C03",
+      "status": "historical-form-reconciled"
+    }
+  ]
+}
