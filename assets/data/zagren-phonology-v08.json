@@ -1,13 +1,16 @@
 {
   "title": "藏朔原语 Žaġręn V0.8：历史音系与词形表面一致性框架",
   "date": "2026-11-06",
-  "stage": "V0.8-phonology-1",
+  "stage": "V0.8-phonology-2",
   "status": "canonical-family-updates; stress-and-full-syllabification-unresolved",
   "sourceFiles": [
     "assets/data/zagren-dictionary-v04.json",
     "assets/data/zagren-v06-phonology-lexicon.json",
     "assets/data/zagren-v08-lexical-audit.json",
-    "assets/js/zagren-phonology-v08.js"
+    "assets/js/zagren-phonology-v08.js",
+    "assets/data/zagren-v08-diachrony.json",
+    "assets/data/zagren-v08-lexicon-review.json",
+    "assets/data/zagren-v08-morphology-regression.json"
   ],
   "normativePrinciples": [
     "保留V0.6已有21条音变及其明示语境，不把例外词的缩略机械扩展到全部相似词根。",
@@ -239,40 +242,94 @@
   ],
   "familyExtensions": [
     {
-      "id": "N13-F-LIVE",
+      "id": "N13",
+      "gloss": "女人",
+      "branch": "N",
+      "sourceLaw": "N13",
+      "family": "*žena",
+      "historicalForm": "žena",
+      "modernForm": "ẑena",
+      "reason": "*žen- 中 ž /ʒ/ 在 e 前北部软化"
+    },
+    {
+      "id": "N13",
       "gloss": "生活",
       "branch": "N",
       "sourceLaw": "N13",
-      "family": "*živ-",
-      "matchPrefix": "^ži",
-      "newPrefix": "ẑi"
+      "family": "*živetʲ",
+      "historicalForm": "žiŵeť",
+      "modernForm": "ẑiŵeť",
+      "reason": "*živ- 动词词干与既有生命词族统一"
     },
     {
-      "id": "N13-F-LIVE-ADJ",
-      "gloss": "活体的",
+      "id": "V08-STEM-ZYM",
+      "gloss": "冬季的",
       "branch": "N",
-      "sourceLaw": "N13",
-      "family": "*živ-",
-      "matchPrefix": "^ži",
-      "newPrefix": "ẑi"
+      "sourceLaw": "V08-STEM-ZYM",
+      "family": "*zimnÿ",
+      "historicalForm": "zimnÿ",
+      "modernForm": "zÿmnÿ",
+      "reason": "北部冬季 zÿma 的同源关系形容词词干类推"
     },
     {
-      "id": "N13-F-LIVE-PTCP",
-      "gloss": "生活中的",
-      "branch": "N",
-      "sourceLaw": "N13",
-      "family": "*živ-",
-      "matchPrefix": "^ži",
-      "newPrefix": "ẑi"
-    },
-    {
-      "id": "SE12-F-WINTER",
+      "id": "SE12",
       "gloss": "冬季的",
       "branch": "SE",
       "sourceLaw": "SE12",
-      "family": "*zim-",
-      "matchPrefix": "^zi",
-      "newPrefix": "ẑi"
+      "family": "*zimnÿ",
+      "historicalForm": "zimni",
+      "modernForm": "ẑimni",
+      "reason": "与东南冬季 ẑima 的 /z/ 软化一致"
+    },
+    {
+      "id": "V08-STEM-ZYM",
+      "gloss": "冬季的",
+      "branch": "W",
+      "sourceLaw": "V08-STEM-ZYM",
+      "family": "*zimnÿ",
+      "historicalForm": "zimnÿ",
+      "modernForm": "zÿmnÿ",
+      "reason": "西部冬季 zÿm 与其关系形容词词干类推"
+    },
+    {
+      "id": "N13",
+      "gloss": "活体的",
+      "branch": "N",
+      "sourceLaw": "N13",
+      "family": "*živÿ",
+      "historicalForm": "žiŵÿ",
+      "modernForm": "ẑiŵÿ",
+      "reason": "*živ- 关系形容词统一北部 /ʑ/"
+    },
+    {
+      "id": "N13",
+      "gloss": "生活中的",
+      "branch": "N",
+      "sourceLaw": "N13",
+      "family": "*živejącÿ",
+      "historicalForm": "žiŵejącÿ",
+      "modernForm": "ẑiŵejącÿ",
+      "reason": "*živ- 分词词干继承北部 /ʑ/"
+    },
+    {
+      "id": "N13",
+      "gloss": "句子",
+      "branch": "N",
+      "sourceLaw": "N13",
+      "family": "*predloženie",
+      "historicalForm": "predloženie",
+      "modernForm": "predloẑenie",
+      "reason": "词中 ž+e 触发北部 /ʒ/→/ʑ/"
+    },
+    {
+      "id": "SE12",
+      "gloss": "语言",
+      "branch": "SE",
+      "sourceLaw": "SE12",
+      "family": "*jazÿk",
+      "historicalForm": "jazik",
+      "modernForm": "jaẑik",
+      "reason": "东南同环境 z+i /z/→/ʑ/ 词汇类推"
     }
   ],
   "vowelNucleusAudit": {
@@ -1084,6 +1141,27 @@
   },
   "modernizedOldRoots": [
     {
+      "id": "D0027",
+      "gloss": "女人",
+      "pos": "noun",
+      "old": {
+        "N": "žena",
+        "SE": "žena",
+        "W": "žen"
+      },
+      "new": {
+        "N": "ẑena",
+        "SE": "žena",
+        "W": "žen"
+      },
+      "ruleIds": [
+        "N13"
+      ],
+      "changedBranches": [
+        "N"
+      ]
+    },
+    {
       "id": "D0078",
       "gloss": "生活",
       "pos": "verb",
@@ -1098,7 +1176,10 @@
         "W": "žiŵeþ"
       },
       "ruleIds": [
-        "N13-F-LIVE"
+        "N13"
+      ],
+      "changedBranches": [
+        "N"
       ]
     },
     {
@@ -1111,12 +1192,18 @@
         "W": "zimnÿ"
       },
       "new": {
-        "N": "zimnÿ",
+        "N": "zÿmnÿ",
         "SE": "ẑimni",
-        "W": "zimnÿ"
+        "W": "zÿmnÿ"
       },
       "ruleIds": [
-        "SE12-F-WINTER"
+        "V08-STEM-ZYM",
+        "SE12"
+      ],
+      "changedBranches": [
+        "N",
+        "SE",
+        "W"
       ]
     },
     {
@@ -1134,7 +1221,10 @@
         "W": "žiŵÿ"
       },
       "ruleIds": [
-        "N13-F-LIVE-ADJ"
+        "N13"
+      ],
+      "changedBranches": [
+        "N"
       ]
     },
     {
@@ -1152,7 +1242,52 @@
         "W": "žiŵejącÿ"
       },
       "ruleIds": [
-        "N13-F-LIVE-PTCP"
+        "N13"
+      ],
+      "changedBranches": [
+        "N"
+      ]
+    },
+    {
+      "id": "D0283",
+      "gloss": "句子",
+      "pos": "noun",
+      "old": {
+        "N": "predloženie",
+        "SE": "predloženie",
+        "W": "predłoženi"
+      },
+      "new": {
+        "N": "predloẑenie",
+        "SE": "predloženie",
+        "W": "predłoženi"
+      },
+      "ruleIds": [
+        "N13"
+      ],
+      "changedBranches": [
+        "N"
+      ]
+    },
+    {
+      "id": "D0288",
+      "gloss": "语言",
+      "pos": "noun",
+      "old": {
+        "N": "jazÿk",
+        "SE": "jazik",
+        "W": "jazÿk"
+      },
+      "new": {
+        "N": "jazÿk",
+        "SE": "jaẑik",
+        "W": "jazÿk"
+      },
+      "ruleIds": [
+        "SE12"
+      ],
+      "changedBranches": [
+        "SE"
       ]
     }
   ],
@@ -1170,9 +1305,13 @@
   },
   "review": {
     "oldEntriesConsidered": 151,
-    "retainedOldForms": 143,
-    "updatedHeadwords": 4,
+    "retainedOldForms": 142,
+    "updatedHeadwords": 5,
     "protoOnlyProposals": 4,
-    "updatedInflectedFormsPreviouslyChecked": 91
+    "updatedInflectedFormsPreviouslyChecked": 91,
+    "relatedInflectionFormsCheckedV08": 143,
+    "allDictionaryModernLemmas": 193,
+    "editedDialectHeadwordForms": 9,
+    "editedHeadwordEntries": 7
   }
 }
