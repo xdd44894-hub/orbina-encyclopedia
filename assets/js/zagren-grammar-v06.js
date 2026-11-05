@@ -16,12 +16,16 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null,m
   if(branch==="N"){
    change("N11",gloss==="雪",s=>s.replace(/^sneġ/u,"sęġ"));
    change("N12",["火","骨"].includes(gloss),s=>s.replace(/o(?=(?:ġń|śť))/u,"ӧ"));
-   change("N13",["铁","生命","生活","铁制的"].includes(gloss),s=>s.replace(/ž(?=[ei])/gu,"ẑ"));
+   change("N13",["铁","生命","铁制的"].includes(gloss),s=>s.replace(/ž(?=[ei])/gu,"ẑ"));
+   change("N13-F-LIVE",gloss==="生活",s=>s.replace(/^ži/u,"ẑi"));
+   change("N13-F-LIVE-ADJ",gloss==="活体的",s=>s.replace(/^ži/u,"ẑi"));
+   change("N13-F-LIVE-PTCP",gloss==="生活中的",s=>s.replace(/^ži/u,"ẑi"));
    change("N14",gloss==="管道",s=>s.replace(/^ťr/u,"ṱr"));
    change("N15",gloss==="清晨",s=>s.replace(/^utro$/u,"utr"));
   }else if(branch==="SE"){
    change("SE11",gloss==="雪",s=>s.replace(/^sneg/u,"seg"));
    change("SE12",gloss==="冬季",s=>s.replace(/^zi/u,"ẑi"));
+   change("SE12-F-WINTER",gloss==="冬季的",s=>s.replace(/^zi/u,"ẑi"));
    change("SE13",["寒冷","乳"].includes(gloss),s=>s.replace(/o(?=[lł])/u,"ȯ"));
    change("SE14",gloss==="火",s=>s.replace(/^ogon/u,"oң").replace(/^ogn/u,"oң"));
    change("SE14",gloss==="羊羔",s=>s.replace(/^jagn/u,"jaң"));
@@ -65,6 +69,15 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null,m
   if(!entry||!row)throw new Error("Unattested adjective slot: "+id+"/"+gender+"/"+gramCase);
   return {id,meaning:entry.meaning,gender,case:gramCase,degree,branch,...soundShift(row[branch],{branch,gloss:entry.meaning})};
  }
+ function participle(id,gender,gramCase,branch,opts={}){
+  assertBranch(branch);
+  if(!modifier)throw new Error("Missing participle dataset");
+  const {animateAcc=0}=opts;
+  const entry=modifier.participles.find(x=>x.id===id);
+  const row=modifier.participle_forms.find(x=>x.id===id&&x.gender===gender&&x.case===gramCase&&(x.animate_acc??0)===animateAcc);
+  if(!entry||!row)throw new Error("Unattested participle slot: "+id+"/"+gender+"/"+gramCase+"/"+animateAcc);
+  return {id,meaning:entry.meaning,gender,case:gramCase,branch,...soundShift(row[branch],{branch,gloss:entry.meaning})};
+ }
  function future(id,branch){
   const inf=verb(id,"infinitive",null,branch);
   if(inf.aspect!=="IPFV")throw new Error("Analytic future is IPFV only");
@@ -100,5 +113,5 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null,m
   }
   return {status:differences.length||errors.length?"fail":"pass",checkedLemmas:checked,changedLemmas:changed,differences,slots,totalSlots:Object.values(slots).reduce((a,b)=>a+b,0),errors};
  }
- return {dialects,noun,pronoun,verb,adjective,future,lemma,audit};
+ return {dialects,noun,pronoun,verb,adjective,participle,future,lemma,audit};
 }
