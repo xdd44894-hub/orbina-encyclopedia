@@ -1,0 +1,1097 @@
+《扎格伦字典》V0.1
+Žaġręn Dictionary V0.1
+俄庇娜百科 · 藏朔原三部族对照词典 · 2026-11-05
+
+【编辑说明】
+本书编号 V0.1，所参照的语言最新阶段为 Žaġręn V0.6。它是第一版词典，不意味着全部词条已完成 V0.6 词形演化。
+N=北部珀璃璐卡；SE=东南丽庞萨；W=西部雷西尼昂帕。
+V0.6=已按现有规则升级；新构=V0.6新构祖语词原形；旧版=沿用V0.1–V0.5；语料=语料见证；仅祖语=尚无现代三方言词典原形。
+星号*表示语言学重建的祖语词根，不是现代使用者应直接朗读的词。
+词条数不等于唯一语义数、屈折形式总数，也不等于全部 V0.6 已定稿词形。
+音标重音、完整范式及部分衍生语义仍需后续审订。
+
+【统计】
+词条 179，三方言词形齐备 175。
+名词：53
+动词：40
+形容词：44
+分词：20
+代词：7
+副词：3
+介词：6
+连词：3
+助词：3
+V0.6已衍变的旧词：23
+undefined：4
+继承自V0.1–V0.5，尚未单独升级：145
+V0.5语料可见词形，完整范式未核定：3
+undefined：4
+
+【词典正文】
+
+—— 名词 ——
+
+D0001  傍晚 [名词]
+  北部：ŵečer | 东南：večer | 西部：ŵečer
+  祖语：未定；阶段：V0.5语料可见词形，完整范式未核定
+  注释：来自V0.5 S22主格；词典形尚待详细音系核定
+
+D0002  边界 [名词]
+  北部：ġranca | 东南：granca | 西部：ġranc
+  祖语：*granica；阶段：V0.6已衍变的旧词
+  旧形：N ġranica / SE granica / W ġranic
+  音变规则：C02
+
+D0003  冰 [名词]
+  北部：led | 东南：led | 西部：łed
+  祖语：*led；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=O; gender=阳; animacy=无生
+
+D0004  冰脊 [名词]
+  北部：rjүd | 东南：rud | 西部：řүd
+  祖语：*rʲud；阶段：V0.6新构词原形；未完成变格
+  音变规则：N16, N17, SE15, W14
+  注释：词典形已建立，完整变格仍待构拟
+
+D0005  城镇（亦作：城市） [名词]
+  北部：ġrad | 东南：grad | 西部：ġrad
+  祖语：*grad；阶段：V0.6已衍变的旧词
+  旧形：N ġrad / SE grad / W ġrad
+
+D0006  词／单词 [名词]
+  北部：sloŵo | 东南：slovo | 西部：słoŵ
+  祖语：未定；阶段：V0.5语料可见词形，完整范式未核定
+  注释：来自V0.5 S19的宾格；中性主宾可能同形，但未独立核定变格
+
+D0007  村庄 [名词]
+  北部：ŵes | 东南：ves | 西部：ŵes
+  祖语：未定；阶段：V0.5语料可见词形，完整范式未核定
+  注释：来自V0.5 S01主格上下文；祖语重建未定
+
+D0008  大门 [名词]
+  北部：ŵrata | 东南：vrata | 西部：ŵrat
+  祖语：*vrata；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0009  道路 [名词]
+  北部：droġa | 东南：droga | 西部：dro
+  祖语：*droga；阶段：V0.6已衍变的旧词
+  旧形：N droġa / SE droga / W droġ
+  音变规则：W11
+  注释：
+
+D0010  地区 [名词]
+  北部：strana | 东南：strana | 西部：stran
+  祖语：*strana；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0011  冬季 [名词]
+  北部：zÿma | 东南：ẑima | 西部：zÿm
+  祖语：*zÿma；阶段：V0.6已衍变的旧词
+  旧形：N zÿma / SE zima / W zÿm
+  音变规则：SE12
+
+D0012  风 [名词]
+  北部：ŵer | 东南：ver | 西部：ŵer
+  祖语：*vetr；阶段：V0.6已衍变的旧词
+  旧形：N ŵetr / SE vetr / W ŵetr
+  音变规则：C04
+  注释：
+
+D0013  骨 [名词]
+  北部：kӧśť | 东南：kość | 西部：košt
+  祖语：*kosʲtʲ；阶段：V0.6已衍变的旧词
+  旧形：N kośť / SE kość / W košt
+  音变规则：N12
+  形态：gender=阴; class=I; animacy=无生
+
+D0014  挂钩 [名词]
+  北部：ǩүta | 东南：ćuta | 西部：ǩүt
+  祖语：*kʲuta；阶段：V0.6新构词原形；未完成变格
+  音变规则：N16, N17, SE15, W14, W15
+  注释：词典形已建立，完整变格仍待构拟
+
+D0015  管道 [名词]
+  北部：ṱruba | 东南：truba | 西部：þřub
+  祖语：*tʲruba；阶段：V0.6已衍变的旧词
+  旧形：N ťruba / SE truba / W þrub
+  音变规则：N14, W12
+  形态：gender=阴; class=A; animacy=无生
+
+D0016  寒冷 [名词]
+  北部：ħold | 东南：hȯld | 西部：ħołd
+  祖语：*xolod；阶段：V0.6已衍变的旧词
+  旧形：N ħolod / SE holod / W ħołod
+  音变规则：C01, SE13
+
+D0017  河流 [名词]
+  北部：reka | 东南：reka | 西部：rek
+  祖语：*reka；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; gender=阴; animacy=无生
+
+D0018  灰烬 [名词]
+  北部：pepel | 东南：pepel | 西部：pepeł
+  祖语：*pepel；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0019  火 [名词]
+  北部：ӧġń | 东南：oң | 西部：oġn
+  祖语：*ognʲ；阶段：V0.6已衍变的旧词
+  旧形：N oġń / SE ogon / W oġn
+  音变规则：N12, SE14
+  形态：gender=阳; class=J; animacy=无生
+
+D0020  家 [名词]
+  北部：dom | 东南：dom | 西部：dom
+  祖语：*dom；阶段：V0.6已衍变的旧词
+  旧形：N dom / SE dom / W dom
+  形态：gender=阳; class=O; animacy=无生
+
+D0021  结扣 [名词]
+  北部：ǩel | 东南：ćel | 西部：ǩel
+  祖语：*kʲel；阶段：V0.6新构词原形；未完成变格
+  音变规则：N17, SE15, W14
+  注释：词典形已建立，完整变格仍待构拟
+
+D0022  界线 [名词]
+  北部：meďa | 东南：meҗa | 西部：meẑ
+  祖语：*medja；阶段：V0.6新构词原形；未完成变格
+  音变规则：N17, SE15, W14, W15
+  注释：词典形已建立，完整变格仍待构拟
+
+D0023  雷鸣 [名词]
+  北部：ġrom | 东南：grom | 西部：ġrom
+  祖语：*grom；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0024  炉 [名词]
+  北部：peč | 东南：peč | 西部：peč
+  祖语：*peč；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0025  母亲 [名词]
+  北部：mať | 东南：mat | 西部：maþ
+  祖语：*matʲ；阶段：V0.6已衍变的旧词
+  旧形：N mať / SE mat / W maþ
+  形态：gender=阴; class=IRR; animacy=有生
+
+D0026  男子 [名词]
+  北部：muž | 东南：muž | 西部：muž
+  祖语：*muž；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0027  女人 [名词]
+  北部：žena | 东南：žena | 西部：žen
+  祖语：*žena；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0028  皮肤 [名词]
+  北部：koža | 东南：koža | 西部：kož
+  祖语：*koža；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0029  清晨 [名词]
+  北部：utr | 东南：utro | 西部：utr
+  祖语：*utro；阶段：V0.6已衍变的旧词
+  旧形：N utro / SE utro / W utr
+  音变规则：N15
+  注释：
+
+D0030  荣耀 [名词]
+  北部：slaŵa | 东南：slava | 西部：słaŵ
+  祖语：*slava；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0031  乳 [名词]
+  北部：molko | 东南：mȯlko | 西部：mołk
+  祖语：*moloko；阶段：V0.6已衍变的旧词
+  旧形：N moloko / SE moloko / W mołok
+  音变规则：C01, SE13
+
+D0032  森林 [名词]
+  北部：les | 东南：les | 西部：łes
+  祖语：*les；阶段：V0.6已衍变的旧词
+  旧形：N les / SE les / W łes
+
+D0033  山 [名词]
+  北部：ġora | 东南：gora | 西部：ġor
+  祖语：*gora；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：gender=阴; class=A; animacy=无生
+
+D0034  神明 [名词]
+  北部：boġ | 东南：bog | 西部：bo
+  祖语：*bog；阶段：V0.6已衍变的旧词
+  旧形：N boġ / SE bog / W boġ
+  音变规则：W11
+  形态：gender=阳; class=O; animacy=有生
+
+D0035  生命 [名词]
+  北部：ẑiŵot | 东南：život | 西部：žiŵot
+  祖语：*život；阶段：V0.6已衍变的旧词
+  旧形：N žiŵot / SE život / W žiŵot
+  音变规则：N13
+
+D0036  尸体 [名词]
+  北部：trup | 东南：trup | 西部：trup
+  祖语：*trup；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0037  石头 [名词]
+  北部：kamęń | 东南：kamen | 西部：kamęn
+  祖语：*kamenʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0038  手 [名词]
+  北部：ręka | 东南：renka | 西部：ręk
+  祖语：*ręka；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：gender=阴; class=A; animacy=无生
+
+D0039  水 [名词]
+  北部：ŵoda | 东南：voda | 西部：ŵod
+  祖语：*voda；阶段：V0.6已衍变的旧词
+  旧形：N ŵoda / SE voda / W ŵod
+
+D0040  死亡 [名词]
+  北部：smerť | 东南：smert | 西部：smerþ
+  祖语：*smertʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：gender=阴; class=I; animacy=无生
+
+D0041  铁 [名词]
+  北部：ẑelezo | 东南：železo | 西部：žłez
+  祖语：*železo；阶段：V0.6已衍变的旧词
+  旧形：N železo / SE železo / W žełez
+  音变规则：N13, W13
+
+D0042  头颅 [名词]
+  北部：ġłaŵa | 东南：glava | 西部：ġłaŵ
+  祖语：*glava；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：gender=阴; class=A; animacy=无生
+
+D0043  兄弟 [名词]
+  北部：brat | 东南：brat | 西部：brat
+  祖语：*brat；阶段：V0.6已衍变的旧词
+  旧形：N brat / SE brat / W brat
+  形态：gender=阳; class=O; animacy=有生
+
+D0044  雪 [名词]
+  北部：sęġ | 东南：seg | 西部：sne
+  祖语：*sneg；阶段：V0.6已衍变的旧词
+  旧形：N sneġ / SE sneg / W sneġ
+  音变规则：N11, SE11, W11
+  形态：gender=阳; class=O; animacy=无生
+
+D0045  羊羔 [名词]
+  北部：jaġnę | 东南：jaңe | 西部：jaġn
+  祖语：*jagnę；阶段：V0.6已衍变的旧词
+  旧形：N jaġnę / SE jagne / W jaġn
+  音变规则：SE14
+  形态：gender=中; class=N; animacy=有生
+
+D0046  夜晚 [名词]
+  北部：noč | 东南：noč | 西部：noč
+  祖语：*noč；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0047  阴影 [名词]
+  北部：ťęń | 东南：ten | 西部：þęn
+  祖语：*tʲenʲ；阶段：V0.6已衍变的旧词
+  旧形：N ťęń / SE ten / W þęn
+  形态：gender=阳; class=J; animacy=无生
+
+D0048  鱼 [名词]
+  北部：rÿba | 东南：riba | 西部：rÿb
+  祖语：*rÿba；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0049  噪声 [名词]
+  北部：šum | 东南：šum | 西部：šum
+  祖语：*šum；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0050  真实 [名词]
+  北部：praŵda | 东南：pravda | 西部：praŵd
+  祖语：*pravda；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0051  纸页 [名词]
+  北部：list | 东南：list | 西部：łist
+  祖语：*list；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=O; gender=阳; animacy=无生
+
+D0052  桌子 [名词]
+  北部：stol | 东南：stol | 西部：stoł
+  祖语：*stol；阶段：继承自V0.1–V0.5，尚未单独升级
+
+D0053  姊妹 [名词]
+  北部：sestra | 东南：sestra | 西部：sestr
+  祖语：*sestra；阶段：继承自V0.1–V0.5，尚未单独升级
+
+
+—— 动词 ——
+
+D0054  安放、放置 [动词]
+  北部：staŵiť | 东南：stavit | 西部：staŵiþ
+  祖语：*stavitʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=I; aspect=IPFV; valency=ACC+na+ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0055  安放完成 [动词]
+  北部：postaŵiť | 东南：postavit | 西部：postaŵiþ
+  祖语：*postavitʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=I; aspect=PFV; valency=ACC+na+ACC; kind=strict
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0056  把话说完 [动词]
+  北部：proġoŵoriť | 东南：progovorit | 西部：proġoŵoriþ
+  祖语：*progovoritʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=I; aspect=PFV; valency=—/s+INS; kind=bounded
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0057  奔跑（反复） [动词]
+  北部：beġať | 东南：begat | 西部：beġaþ
+  祖语：*begatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=IPFV; valency=—; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0058  存在、是 [动词]
+  北部：byť | 东南：byt | 西部：byþ
+  祖语：*bytʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=IRR-BE; aspect=IPFV; valency=NOM/LOC; kind=irregular
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0059  带来 [动词]
+  北部：prineseť | 东南：prineset | 西部：prineseþ
+  祖语：*prinesetʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=E; aspect=PFV; valency=ACC; kind=directional
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0060  等候 [动词]
+  北部：ždať | 东南：ždat | 西部：ždaþ
+  祖语：*ždatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=IPFV; valency=ACC/GEN; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0061  抵达终点 [动词]
+  北部：doprÿħodiť | 东南：doprihodit | 西部：doprÿħodiþ
+  祖语：*doprÿxoditʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=I; aspect=PFV; valency=—/v+ACC; kind=telic
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0062  反复搬运 [动词]
+  北部：nosiť | 东南：nosit | 西部：nosiþ
+  祖语：*nositʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=I; aspect=IPFV; valency=ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0063  给予 [动词]
+  北部：dať | 东南：dat | 西部：daþ
+  祖语：*datʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=IRR-GIVE; aspect=PFV; valency=ACC+DAT; kind=irregular
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0064  喊叫 [动词]
+  北部：kričať | 东南：kričat | 西部：kričaþ
+  祖语：*kričatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=IPFV; valency=—; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0065  呼唤 [动词]
+  北部：zŵať | 东南：zvat | 西部：zŵaþ
+  祖语：*zvatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=IPFV; valency=ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0066  讲话 [动词]
+  北部：ġoŵoriť | 东南：govorit | 西部：ġoŵoriþ
+  祖语：*govoritʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=I; aspect=IPFV; valency=—/s+INS; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0067  结冻、冻结 [动词]
+  北部：待构拟 | 东南：待构拟 | 西部：待构拟
+  祖语：*zamrznutʲ；阶段：仅祖语词根或语法研究基础，现代方言原形未核定
+  形态：aspect=PFV; valency=—
+  注释：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
+
+D0068  开始喊叫 [动词]
+  北部：zakričať | 东南：zakričat | 西部：zakričaþ
+  祖语：*zakričatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=PFV; valency=—; kind=inchoative
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0069  看见 [动词]
+  北部：ŵideť | 东南：videt | 西部：ŵideþ
+  祖语：*videtʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=E; aspect=IPFV; valency=ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0070  看见（一次实现） [动词]
+  北部：uŵideť | 东南：uvidet | 西部：uŵideþ
+  祖语：*uvidetʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=E; aspect=PFV; valency=ACC; kind=strict
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0071  来回走动 [动词]
+  北部：ħodiť | 东南：hodit | 西部：ħodiþ
+  祖语：*xoditʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=I; aspect=IPFV; valency=—; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0072  能够 [动词]
+  北部：moħť | 东南：moht | 西部：moħþ
+  祖语：*moxtʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=IRR-CAN; aspect=IPFV; valency=INF; kind=irregular
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0073  去、前往 [动词]
+  北部：iť | 东南：it | 西部：iþ
+  祖语：*itʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=IRR-GO; aspect=IPFV; valency=—/v+ACC; kind=irregular
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0074  燃烧 [动词]
+  北部：ġoreť | 东南：goret | 西部：ġoreþ
+  祖语：*goretʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=E; aspect=IPFV; valency=—; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0075  饶恕 [动词]
+  北部：ščadoŵať | 东南：ščadovat | 西部：ščadoŵaþ
+  祖语：*ščadovatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=IPFV; valency=ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0076  饶恕一次 [动词]
+  北部：poščadoŵať | 东南：poščadovat | 西部：poščadoŵaþ
+  祖语：*poščadovatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=PFV; valency=ACC; kind=strict
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0077  融化 [动词]
+  北部：待构拟 | 东南：待构拟 | 西部：待构拟
+  祖语：*tajatʲ；阶段：仅祖语词根或语法研究基础，现代方言原形未核定
+  形态：aspect=IPFV; valency=—
+  注释：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
+
+D0078  生活 [动词]
+  北部：žiŵeť | 东南：živet | 西部：žiŵeþ
+  祖语：*živetʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=E; aspect=IPFV; valency=—/v+LOC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0079  使……冰封 [动词]
+  北部：待构拟 | 东南：待构拟 | 西部：待构拟
+  祖语：*zamrazitʲ；阶段：仅祖语词根或语法研究基础，现代方言原形未核定
+  形态：aspect=PFV; valency=ACC
+  注释：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
+
+D0080  守卫、保护 [动词]
+  北部：ħraniť | 东南：hranit | 西部：ħraniþ
+  祖语：*xranitʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=I; aspect=IPFV; valency=ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0081  睡眠 [动词]
+  北部：spať | 东南：spat | 西部：spaþ
+  祖语：*spatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=IPFV; valency=—; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0082  睡一阵 [动词]
+  北部：pospať | 东南：pospat | 西部：pospaþ
+  祖语：*pospatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=PFV; valency=—; kind=delimitative
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0083  听到（有结果） [动词]
+  北部：uslÿšať | 东南：uslišat | 西部：usłÿšaþ
+  祖语：*uslÿšatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=PFV; valency=ACC; kind=strict
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0084  听见、听 [动词]
+  北部：slÿšať | 东南：slišat | 西部：słÿšaþ
+  祖语：*slÿšatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=IPFV; valency=ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0085  忘记 [动词]
+  北部：待构拟 | 东南：待构拟 | 西部：待构拟
+  祖语：*zabÿtʲ；阶段：仅祖语词根或语法研究基础，现代方言原形未核定
+  形态：aspect=PFV; valency=ACC
+  注释：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
+
+D0086  携带（单次过程） [动词]
+  北部：neseť | 东南：neset | 西部：neseþ
+  祖语：*nesetʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=E; aspect=IPFV; valency=ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0087  写 [动词]
+  北部：pisať | 东南：pisat | 西部：pisaþ
+  祖语：*pisatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=IPFV; valency=ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0088  写完 [动词]
+  北部：napisať | 东南：napisat | 西部：napisaþ
+  祖语：*napisatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=PFV; valency=ACC; kind=strict
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0089  知道 [动词]
+  北部：znať | 东南：znat | 西部：znaþ
+  祖语：*znatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=IPFV; valency=ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0090  制作、做 [动词]
+  北部：delať | 东南：delat | 西部：dełaþ
+  祖语：*delatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=IPFV; valency=ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0091  注视 [动词]
+  北部：patriť | 东南：patrit | 西部：patriþ
+  祖语：*patritʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=I; aspect=IPFV; valency=ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0092  走来、抵达（过程） [动词]
+  北部：prÿħodiť | 东南：prihodit | 西部：prÿħodiþ
+  祖语：*prÿxoditʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=I; aspect=IPFV; valency=—/v+ACC; kind=productive
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+D0093  做成 [动词]
+  北部：sdelať | 东南：sdelat | 西部：sdełaþ
+  祖语：*sdelatʲ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=A; aspect=PFV; valency=ACC; kind=strict
+  注释：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验
+
+
+—— 形容词 ——
+
+D0094  白色 [形容词]
+  北部：belÿ | 东南：beli | 西部：bełÿ
+  祖语：*belÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0095  北方的 [形容词]
+  北部：seŵernÿ | 东南：severni | 西部：seŵernÿ
+  祖语：*severnÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0096  冰质的 [形容词]
+  北部：ledenÿ | 东南：ledeni | 西部：łedenÿ
+  祖语：*ledenÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0097  潮冷 [形容词]
+  北部：sÿrÿ | 东南：siri | 西部：sÿrÿ
+  祖语：*sÿrÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0098  潮湿 [形容词]
+  北部：mokrÿ | 东南：mokri | 西部：mokrÿ
+  祖语：*mokrÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0099  沉重 [形容词]
+  北部：tjažkÿ | 东南：tjažki | 西部：tjažkÿ
+  祖语：*tjažkÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0100  冬季的 [形容词]
+  北部：zimnÿ | 东南：zimni | 西部：zimnÿ
+  祖语：*zimnÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0101  干燥 [形容词]
+  北部：suħÿ | 东南：suhi | 西部：suħÿ
+  祖语：*suxÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0102  工业的 [形容词]
+  北部：zaŵodnÿ | 东南：zavodni | 西部：zaŵodnÿ
+  祖语：*zavodnÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0103  古老 [形容词]
+  北部：starÿ | 东南：stari | 西部：starÿ
+  祖语：*starÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0104  寒冷 [形容词]
+  北部：studenÿ | 东南：studeni | 西部：studenÿ
+  祖语：*studenÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0105  黑色 [形容词]
+  北部：černÿ | 东南：černi | 西部：černÿ
+  祖语：*černÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0106  荒凉 [形容词]
+  北部：pustÿ | 东南：pusti | 西部：pustÿ
+  祖语：*pustÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0107  昏暗 [形容词]
+  北部：temnÿ | 东南：temni | 西部：temnÿ
+  祖语：*temnÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0108  活体的 [形容词]
+  北部：žiŵÿ | 东南：živi | 西部：žiŵÿ
+  祖语：*živÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0109  寂静 [形容词]
+  北部：tiħÿ | 东南：tihi | 西部：tiħÿ
+  祖语：*tixÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0110  坚硬 [形容词]
+  北部：tŵerdÿ | 东南：tverdi | 西部：tŵerdÿ
+  祖语：*tverdÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0111  巨大 [形容词]
+  北部：ŵelikÿ | 东南：veliki | 西部：ŵełikÿ
+  祖语：*velikÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0112  可怖 [形容词]
+  北部：strašnÿ | 东南：strašni | 西部：strašnÿ
+  祖语：*strašnÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0113  蓝色 [形容词]
+  北部：sińi | 东南：sini | 西部：sini
+  祖语：*sinʲi；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=S; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0114  邻近 [形容词]
+  北部：blizńi | 东南：blizni | 西部：błizni
+  祖语：*bliznʲi；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=S; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0115  林地的 [形容词]
+  北部：lesnÿ | 东南：lesni | 西部：łesnÿ
+  祖语：*lesnÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0116  漫长 [形容词]
+  北部：dolġÿ | 东南：dolgi | 西部：dołġÿ
+  祖语：*dolgÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0117  明亮 [形容词]
+  北部：sŵetlÿ | 东南：svetli | 西部：sŵetłÿ
+  祖语：*svetlÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0118  内部的 [形容词]
+  北部：ŵnutreńi | 东南：vnutreni | 西部：ŵnutreni
+  祖语：*vnutrenʲi；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=S; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0119  年轻 [形容词]
+  北部：mladÿ | 东南：mladi | 西部：mładÿ
+  祖语：*mladÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0120  强壮 [形容词]
+  北部：silnÿ | 东南：silni | 西部：siłnÿ
+  祖语：*silnÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0121  清晰 [形容词]
+  北部：jasnÿ | 东南：jasni | 西部：jasnÿ
+  祖语：*jasnÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0122  秋季的 [形容词]
+  北部：osenńi | 东南：osenni | 西部：osenni
+  祖语：*osennʲi；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=S; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0123  软弱 [形容词]
+  北部：slabÿ | 东南：slabi | 西部：słabÿ
+  祖语：*slabÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0124  山区的 [形容词]
+  北部：ġornÿ | 东南：gorni | 西部：ġornÿ
+  祖语：*gornÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0125  深 [形容词]
+  北部：ġłubokÿ | 东南：gluboki | 西部：ġłubokÿ
+  祖语：*glubokÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0126  石制的 [形容词]
+  北部：kamennÿ | 东南：kamenni | 西部：kamennÿ
+  祖语：*kamennÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0127  死去的 [形容词]
+  北部：mertŵÿ | 东南：mertvi | 西部：mertŵÿ
+  祖语：*mertvÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0128  铁锈色的 [形容词]
+  北部：rÿžÿ | 东南：riži | 西部：rÿžÿ
+  祖语：*rÿžÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0129  铁制的 [形容词]
+  北部：železnÿ | 东南：železni | 西部：žełeznÿ
+  祖语：*železnÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0130  温暖 [形容词]
+  北部：teplÿ | 东南：tepli | 西部：tepłÿ
+  祖语：*teplÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0131  夏季的 [形容词]
+  北部：letńi | 东南：letni | 西部：łetni
+  祖语：*letnʲi；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=S; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0132  小 [形容词]
+  北部：malÿ | 东南：mali | 西部：małÿ
+  祖语：*malÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0133  新 [形容词]
+  北部：noŵÿ | 东南：novi | 西部：noŵÿ
+  祖语：*novÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0134  血缘的 [形容词]
+  北部：kroŵnÿ | 东南：krovni | 西部：kroŵnÿ
+  祖语：*krovnÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+D0135  迅速 [形容词]
+  北部：bÿstrÿ | 东南：bistri | 西部：bÿstrÿ
+  祖语：*bÿstrÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0136  遥远 [形容词]
+  北部：dalekÿ | 东南：daleki | 西部：dałekÿ
+  祖语：*dalekÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=H; degreeType=QUAL
+  注释：已登记比较级构词机制；本条显示原级阳性主格
+
+D0137  最后的 [形容词]
+  北部：posledńi | 东南：posledni | 西部：posłedni
+  祖语：*poslednʲi；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：class=S; degreeType=REL
+  注释：关系形容词不登记普通综合比较级
+
+
+—— 分词 ——
+
+D0138  安放好的 [分词]
+  北部：postaŵenÿ | 东南：postaveni | 西部：postaŵenÿ
+  祖语：*postavenÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=PASS.PST; aspect=PFV; verb=*postavitʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0139  被冰封的 [分词]
+  北部：zamrazenÿ | 东南：zamrazeni | 西部：zamrazenÿ
+  祖语：*zamrazenÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=PASS.PST; aspect=PFV; verb=*zamrazitʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0140  被带来的 [分词]
+  北部：prinesenÿ | 东南：prineseni | 西部：prinesenÿ
+  祖语：*prinesenÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=PASS.PST; aspect=PFV; verb=*prinesetʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0141  被看见的 [分词]
+  北部：uŵidenÿ | 东南：uvideni | 西部：uŵidenÿ
+  祖语：*uvidenÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=PASS.PST; aspect=PFV; verb=*uvidetʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0142  被饶恕的 [分词]
+  北部：poščadoŵanÿ | 东南：poščadovani | 西部：poščadoŵanÿ
+  祖语：*poščadovanÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=PASS.PST; aspect=PFV; verb=*poščadovatʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0143  被遗忘的 [分词]
+  北部：zabÿtÿ | 东南：zabiti | 西部：zabÿtÿ
+  祖语：*zabÿtÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=PASS.PST; aspect=PFV; verb=*zabÿtʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0144  喊叫中的 [分词]
+  北部：kričającÿ | 东南：kričajoci | 西部：kričającÿ
+  祖语：*kričającÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=ACT.PRS; aspect=IPFV; verb=*kričatʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0145  讲话中的 [分词]
+  北部：ġoŵorijącÿ | 东南：govorijoci | 西部：ġoŵorijącÿ
+  祖语：*govorijącÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=ACT.PRS; aspect=IPFV; verb=*govoritʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0146  燃烧中的 [分词]
+  北部：ġorejącÿ | 东南：gorejoci | 西部：ġorejącÿ
+  祖语：*gorejącÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=ACT.PRS; aspect=IPFV; verb=*goretʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0147  生活中的 [分词]
+  北部：žiŵejącÿ | 东南：živejoci | 西部：žiŵejącÿ
+  祖语：*živejącÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=ACT.PRS; aspect=IPFV; verb=*živetʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0148  守护、保卫中的 [分词]
+  北部：ħranijącÿ | 东南：hranijoci | 西部：ħranijącÿ
+  祖语：*xranijącÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=ACT.PRS; aspect=IPFV; verb=*xranitʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0149  听见、听中的 [分词]
+  北部：slÿšającÿ | 东南：slišajoci | 西部：słÿšającÿ
+  祖语：*slÿšającÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=ACT.PRS; aspect=IPFV; verb=*slÿšatʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0150  携带（单次过程）中的 [分词]
+  北部：nesejącÿ | 东南：nesejoci | 西部：nesejącÿ
+  祖语：*nesejącÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=ACT.PRS; aspect=IPFV; verb=*nesetʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0151  写成的 [分词]
+  北部：napisanÿ | 东南：napisani | 西部：napisanÿ
+  祖语：*napisanÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=PASS.PST; aspect=PFV; verb=*napisatʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0152  已讲述的 [分词]
+  北部：proġoŵorenÿ | 东南：progovoreni | 西部：proġoŵorenÿ
+  祖语：*progovorenÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=PASS.PST; aspect=PFV; verb=*progovoritʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0153  已经结冻的 [分词]
+  北部：zamrzlÿ | 东南：zamrzli | 西部：zamrzłÿ
+  祖语：*zamrzlÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=RES.PST; aspect=PFV; verb=*zamrznutʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0154  正在融化的 [分词]
+  北部：tajającÿ | 东南：tajajoci | 西部：tajającÿ
+  祖语：*tajającÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=ACT.PRS; aspect=IPFV; verb=*tajatʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0155  注视中的 [分词]
+  北部：patrijącÿ | 东南：patrijoci | 西部：patrijącÿ
+  祖语：*patrijącÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=ACT.PRS; aspect=IPFV; verb=*patritʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0156  走来、抵达（过程）中的 [分词]
+  北部：prÿħodijącÿ | 东南：prihodijoci | 西部：prÿħodijącÿ
+  祖语：*prÿxodijącÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=ACT.PRS; aspect=IPFV; verb=*prÿxoditʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+D0157  做成的 [分词]
+  北部：sdelanÿ | 东南：sdelani | 西部：sdełanÿ
+  祖语：*sdelanÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：partClass=PASS.PST; aspect=PFV; verb=*sdelatʲ
+  注释：本条显示分词阳性主格，非独立动词词典原形
+
+
+—— 代词 ——
+
+D0158  你 [代词]
+  北部：tÿ | 东南：ti | 西部：tÿ
+  祖语：*tÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：person=2SG
+  注释：本条显示代词主格，六格见原始范式
+
+D0159  你们 [代词]
+  北部：ŵÿ | 东南：vi | 西部：ŵÿ
+  祖语：*vÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：person=2PL
+  注释：本条显示代词主格，六格见原始范式
+
+D0160  他 [代词]
+  北部：on | 东南：on | 西部：on
+  祖语：*on；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：person=3SG.M
+  注释：本条显示代词主格，六格见原始范式
+
+D0161  他们／她们 [代词]
+  北部：oni | 东南：oni | 西部：oni
+  祖语：*oni；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：person=3PL
+  注释：本条显示代词主格，六格见原始范式
+
+D0162  她 [代词]
+  北部：ona | 东南：ona | 西部：ona
+  祖语：*ona；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：person=3SG.F
+  注释：本条显示代词主格，六格见原始范式
+
+D0163  我 [代词]
+  北部：ja | 东南：ja | 西部：ja
+  祖语：*ja；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：person=1SG
+  注释：本条显示代词主格，六格见原始范式
+
+D0164  我们 [代词]
+  北部：mÿ | 东南：mi | 西部：mÿ
+  祖语：*mÿ；阶段：继承自V0.1–V0.5，尚未单独升级
+  形态：person=1PL
+  注释：本条显示代词主格，六格见原始范式
+
+
+—— 副词 ——
+
+D0165  今天 [副词]
+  北部：dnes | 东南：dnes | 西部：dnes
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：语料S08：已见功能或形式；不是完整语义边界的最终定义
+
+D0166  明天 [副词]
+  北部：jutro | 东南：jutro | 西部：jutro
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：语料S31：已见功能或形式；不是完整语义边界的最终定义
+
+D0167  仍然 [副词]
+  北部：še | 东南：še | 西部：še
+  祖语：*ešče；阶段：V0.6已衍变的旧词
+  旧形：N ešče / SE ešče / W ešče
+  音变规则：C03
+  注释：
+
+
+—— 介词 ——
+
+D0168  从…… [介词]
+  北部：od | 东南：od | 西部：od
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：V0.2介词：已见功能或形式；不是完整语义边界的最终定义
+
+D0169  到……旁 [介词]
+  北部：k | 东南：k | 西部：k
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：语料S17：已见功能或形式；不是完整语义边界的最终定义
+
+D0170  与……一起 [介词]
+  北部：s | 东南：s | 西部：s
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：V0.2介词：已见功能或形式；不是完整语义边界的最终定义
+
+D0171  在……里面 [介词]
+  北部：ŵ | 东南：v | 西部：ŵ
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：V0.2介词：已见功能或形式；不是完整语义边界的最终定义
+
+D0172  在……旁 [介词]
+  北部：u | 东南：u | 西部：u
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：语料S29：已见功能或形式；不是完整语义边界的最终定义
+
+D0173  在……上 [介词]
+  北部：na | 东南：na | 西部：na
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：V0.2介词：已见功能或形式；不是完整语义边界的最终定义
+
+
+—— 连词 ——
+
+D0174  比…… [连词]
+  北部：než | 东南：než | 西部：než
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：V0.4比较句：已见功能或形式；不是完整语义边界的最终定义
+
+D0175  但是 [连词]
+  北部：no | 东南：no | 西部：no
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：语料S20：已见功能或形式；不是完整语义边界的最终定义
+
+D0176  和／并且 [连词]
+  北部：i | 东南：i | 西部：i
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：语料S03、S06：已见功能或形式；不是完整语义边界的最终定义
+
+
+—— 助词 ——
+
+D0177  不／否定 [助词]
+  北部：ńe | 东南：ne | 西部：n
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：V0.3否定助词：已见功能或形式；不是完整语义边界的最终定义
+
+D0178  条件式助词 [助词]
+  北部：bÿ | 东南：bi | 西部：bÿ
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：V0.3条件式：已见功能或形式；不是完整语义边界的最终定义
+
+D0179  未完成体将来助词 [助词]
+  北部：bu | 东南：bu | 西部：b
+  祖语：未定；阶段：继承自V0.1–V0.5，尚未单独升级
+  注释：V0.3分析式将来：已见功能或形式；不是完整语义边界的最终定义
+
+【书写标点简表】
+§：郑重发言；¡：小惊；¿：微微疑惑；！：大惊；？：标准疑惑；•…•：重点；/…\：文字引用（非说话）。
+仅四种句末语气符号互斥；§与语气符号可组合；聚焦符和文引符必须成对。
+
+【示例（V0.6试验）】
+Utr prÿħodit; ŵer ŵejat ŵ lese. —— 清晨到来，风吹过森林。
+Mať ġoŵorit: §“Mÿ še imame •ӧġń•, i mÿ še imame dom.” —— 母亲郑重地说：“我们还有火，也还有家。”
+
+【原始资料文件】
+assets/data/zagren-comparative-lexicon-v01.json
+assets/data/zagren-nominal-morphology-v02.json
+assets/data/zagren-verbal-morphology-v03.json
+assets/data/zagren-modifier-morphology-v04.json
+assets/data/zagren-v06-phonology-lexicon.json
+assets/data/zagren-public-corpus-v05.json
+
+（完）
