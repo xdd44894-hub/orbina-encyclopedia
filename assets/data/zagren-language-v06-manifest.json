@@ -256,7 +256,25 @@
     "headwordCompleteTrio": 335,
     "lexiconInflectionsNotValidated": true,
     "offlineCompendiumEntries": 339,
-    "oldV06OfflinePreserved": true
+    "oldV06OfflinePreserved": true,
+    "currentEdition": "V0.3",
+    "uniqueEntryIds": true,
+    "allNewHeadwordsUnique": true,
+    "duplicateGlossExplanations": [
+      {
+        "gloss": "寒冷",
+        "entryIds": [
+          "D0016",
+          "D0104"
+        ],
+        "reason": "旧版分别作为名词和形容词收录；并非新增词重复"
+      }
+    ],
+    "punctuationExamplesPassed": "8/8",
+    "newLemmaLookupsPassed": true,
+    "oldGrammarSlotAudit": "2025/2025",
+    "webJavascriptSyntaxChecked": true,
+    "liveGithubPagesNotConfirmed": true
   },
   "phonologyStage": "V0.6",
   "pilotStage": "V0.7 morphology analogical pilot"
