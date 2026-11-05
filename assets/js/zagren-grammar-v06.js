@@ -16,16 +16,16 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null,m
   if(branch==="N"){
    change("N11",gloss==="雪",s=>s.replace(/^sneġ/u,"sęġ"));
    change("N12",["火","骨"].includes(gloss),s=>s.replace(/o(?=(?:ġń|śť))/u,"ӧ"));
-   change("N13",["铁","生命","铁制的"].includes(gloss),s=>s.replace(/ž(?=[ei])/gu,"ẑ"));
-   change("N13-F-LIVE",gloss==="生活",s=>s.replace(/^ži/u,"ẑi"));
-   change("N13-F-LIVE-ADJ",gloss==="活体的",s=>s.replace(/^ži/u,"ẑi"));
-   change("N13-F-LIVE-PTCP",gloss==="生活中的",s=>s.replace(/^ži/u,"ẑi"));
+   change("N13",["铁","生命","铁制的","女人","生活","活体的","生活中的","句子"].includes(gloss),s=>s.replace(/ž(?=[ei])/gu,"ẑ"));
+
+
+
    change("N14",gloss==="管道",s=>s.replace(/^ťr/u,"ṱr"));
    change("N15",gloss==="清晨",s=>s.replace(/^utro$/u,"utr"));
   }else if(branch==="SE"){
    change("SE11",gloss==="雪",s=>s.replace(/^sneg/u,"seg"));
-   change("SE12",gloss==="冬季",s=>s.replace(/^zi/u,"ẑi"));
-   change("SE12-F-WINTER",gloss==="冬季的",s=>s.replace(/^zi/u,"ẑi"));
+   change("SE12",["冬季","冬季的","语言"].includes(gloss),s=>s.replace(/z(?=i)/gu,"ẑ"));
+
    change("SE13",["寒冷","乳"].includes(gloss),s=>s.replace(/o(?=[lł])/u,"ȯ"));
    change("SE14",gloss==="火",s=>s.replace(/^ogon/u,"oң").replace(/^ogn/u,"oң"));
    change("SE14",gloss==="羊羔",s=>s.replace(/^jagn/u,"jaң"));
