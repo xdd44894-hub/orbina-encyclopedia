@@ -1,0 +1,161 @@
+{
+  "title": "Žaġręn V0.7 第二阶段：限定类推形态试验",
+  "version": "V0.7-core-2-pilot",
+  "date": "2026-11-06",
+  "status": "candidate-not-canonized",
+  "disclaimer": "经旧范式校准的类推结果；未直接收录为正式词典屈折。新词的词典原形仍以字典V0.2为准。",
+  "sources": [
+    "assets/data/zagren-core100-v06.json",
+    "assets/data/zagren-nominal-morphology-v02.json",
+    "assets/data/zagren-verbal-morphology-v03.json"
+  ],
+  "calibration": {
+    "historicalNounSlotsCompared": 288,
+    "historicalVerbFormsCompared": 1014,
+    "historicalMismatches": 0
+  },
+  "nouns": [
+    {
+      "gloss": "祖母",
+      "class": "A",
+      "gender": "F",
+      "animate": true
+    },
+    {
+      "gloss": "门",
+      "class": "A",
+      "gender": "F",
+      "animate": false
+    },
+    {
+      "gloss": "墙",
+      "class": "A",
+      "gender": "F",
+      "animate": false
+    },
+    {
+      "gloss": "屋顶",
+      "class": "A",
+      "gender": "F",
+      "animate": false
+    },
+    {
+      "gloss": "杯子",
+      "class": "A",
+      "gender": "F",
+      "animate": false
+    },
+    {
+      "gloss": "碗",
+      "class": "A",
+      "gender": "F",
+      "animate": false
+    },
+    {
+      "gloss": "月亮",
+      "class": "A",
+      "gender": "F",
+      "animate": false
+    },
+    {
+      "gloss": "人",
+      "class": "O",
+      "gender": "M",
+      "animate": true
+    },
+    {
+      "gloss": "朋友",
+      "class": "O",
+      "gender": "M",
+      "animate": true,
+      "stemOverride": {
+        "W": "druġ"
+      },
+      "note": "西部词典主格dru；其他格暂作druġ-类推。"
+    },
+    {
+      "gloss": "邻居",
+      "class": "O",
+      "gender": "M",
+      "animate": true
+    },
+    {
+      "gloss": "工人",
+      "class": "O",
+      "gender": "M",
+      "animate": true
+    },
+    {
+      "gloss": "医生",
+      "class": "O",
+      "gender": "M",
+      "animate": true
+    },
+    {
+      "gloss": "面包",
+      "class": "O",
+      "gender": "M",
+      "animate": false
+    },
+    {
+      "gloss": "桥梁",
+      "class": "O",
+      "gender": "M",
+      "animate": false
+    }
+  ],
+  "verbs": [
+    {
+      "gloss": "吃",
+      "class": "A",
+      "aspect": "IPFV"
+    },
+    {
+      "gloss": "喝",
+      "class": "A",
+      "aspect": "IPFV"
+    },
+    {
+      "gloss": "寻找",
+      "class": "A",
+      "aspect": "IPFV"
+    },
+    {
+      "gloss": "帮助",
+      "class": "A",
+      "aspect": "IPFV"
+    },
+    {
+      "gloss": "烹煮",
+      "class": "I",
+      "aspect": "IPFV"
+    },
+    {
+      "gloss": "打开",
+      "class": "I",
+      "aspect": "IPFV"
+    },
+    {
+      "gloss": "关闭",
+      "class": "I",
+      "aspect": "IPFV"
+    },
+    {
+      "gloss": "购买",
+      "class": "I",
+      "aspect": "IPFV"
+    }
+  ],
+  "metrics": {
+    "nounLemmas": 14,
+    "verbLemmas": 8,
+    "dialectNounForms": 504,
+    "dialectVerbForms": 336,
+    "totalCandidateForms": 840
+  },
+  "stressPolicy": {
+    "status": "unassigned",
+    "nucleusVowels": "a,e,i,o,u,y,ÿ,ë,ę,ą,ӧ,ү,ȯ",
+    "scope": "仅计算书写元音核，暂不标记词汇重音、实音节边界和连读。"
+  }
+}
