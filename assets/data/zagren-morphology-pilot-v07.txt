@@ -1,0 +1,356 @@
+《扎格伦语V0.7 · 屈折试验范式》
+Żaġręn V0.7 pilot morphology · 2026-11-06
+
+重要：本文件是类推候选范式，不等于全部词形已经被正式核定。历史 A/O 名词与 A/I 动词范式完成1302格位回归，以下840新格位仍须通过语料检验。
+
+格位标记：NOM主 GEN属 DAT与 ACC宾 INS工具 LOC处所；数SG单PL复；动词非过去时FINITE、过去PAST、祈使IMP、原形INF。
+
+第一卷：名词
+
+## 祖母 (A类；F；有生)
+词典原形：北部 baba / 东南 baba / 西部 bab
+SG.NOM | 北部：baba | 东南：baba | 西部：bab
+SG.GEN | 北部：babÿ | 东南：babi | 西部：babÿ
+SG.DAT | 北部：babi | 东南：babi | 西部：babi
+SG.ACC | 北部：babu | 东南：babu | 西部：babu
+SG.INS | 北部：baboją | 东南：babojo | 西部：baboj
+SG.LOC | 北部：babe | 东南：babe | 西部：bab
+PL.NOM | 北部：babÿ | 东南：babi | 西部：babÿ
+PL.GEN | 北部：bab | 东南：bab | 西部：bab
+PL.DAT | 北部：babam | 东南：babam | 西部：babam
+PL.ACC | 北部：babÿ | 东南：babi | 西部：babÿ
+PL.INS | 北部：babami | 东南：babami | 西部：babami
+PL.LOC | 北部：babaħ | 东南：babah | 西部：babaħ
+
+## 门 (A类；F；无生)
+词典原形：北部 dŵera / 东南 dvera / 西部 dŵer
+SG.NOM | 北部：dŵera | 东南：dvera | 西部：dŵer
+SG.GEN | 北部：dŵerÿ | 东南：dveri | 西部：dŵerÿ
+SG.DAT | 北部：dŵeri | 东南：dveri | 西部：dŵeri
+SG.ACC | 北部：dŵeru | 东南：dveru | 西部：dŵeru
+SG.INS | 北部：dŵeroją | 东南：dverojo | 西部：dŵeroj
+SG.LOC | 北部：dŵere | 东南：dvere | 西部：dŵer
+PL.NOM | 北部：dŵerÿ | 东南：dveri | 西部：dŵerÿ
+PL.GEN | 北部：dŵer | 东南：dver | 西部：dŵer
+PL.DAT | 北部：dŵeram | 东南：dveram | 西部：dŵeram
+PL.ACC | 北部：dŵerÿ | 东南：dveri | 西部：dŵerÿ
+PL.INS | 北部：dŵerami | 东南：dverami | 西部：dŵerami
+PL.LOC | 北部：dŵeraħ | 东南：dverah | 西部：dŵeraħ
+
+## 墙 (A类；F；无生)
+词典原形：北部 stena / 东南 stena / 西部 sten
+SG.NOM | 北部：stena | 东南：stena | 西部：sten
+SG.GEN | 北部：stenÿ | 东南：steni | 西部：stenÿ
+SG.DAT | 北部：steni | 东南：steni | 西部：steni
+SG.ACC | 北部：stenu | 东南：stenu | 西部：stenu
+SG.INS | 北部：stenoją | 东南：stenojo | 西部：stenoj
+SG.LOC | 北部：stene | 东南：stene | 西部：sten
+PL.NOM | 北部：stenÿ | 东南：steni | 西部：stenÿ
+PL.GEN | 北部：sten | 东南：sten | 西部：sten
+PL.DAT | 北部：stenam | 东南：stenam | 西部：stenam
+PL.ACC | 北部：stenÿ | 东南：steni | 西部：stenÿ
+PL.INS | 北部：stenami | 东南：stenami | 西部：stenami
+PL.LOC | 北部：stenaħ | 东南：stenah | 西部：stenaħ
+
+## 屋顶 (A类；F；无生)
+词典原形：北部 kroŵa / 东南 krova / 西部 kroŵ
+SG.NOM | 北部：kroŵa | 东南：krova | 西部：kroŵ
+SG.GEN | 北部：kroŵÿ | 东南：krovi | 西部：kroŵÿ
+SG.DAT | 北部：kroŵi | 东南：krovi | 西部：kroŵi
+SG.ACC | 北部：kroŵu | 东南：krovu | 西部：kroŵu
+SG.INS | 北部：kroŵoją | 东南：krovojo | 西部：kroŵoj
+SG.LOC | 北部：kroŵe | 东南：krove | 西部：kroŵ
+PL.NOM | 北部：kroŵÿ | 东南：krovi | 西部：kroŵÿ
+PL.GEN | 北部：kroŵ | 东南：krov | 西部：kroŵ
+PL.DAT | 北部：kroŵam | 东南：krovam | 西部：kroŵam
+PL.ACC | 北部：kroŵÿ | 东南：krovi | 西部：kroŵÿ
+PL.INS | 北部：kroŵami | 东南：krovami | 西部：kroŵami
+PL.LOC | 北部：kroŵaħ | 东南：krovah | 西部：kroŵaħ
+
+## 杯子 (A类；F；无生)
+词典原形：北部 kupa / 东南 kupa / 西部 kup
+SG.NOM | 北部：kupa | 东南：kupa | 西部：kup
+SG.GEN | 北部：kupÿ | 东南：kupi | 西部：kupÿ
+SG.DAT | 北部：kupi | 东南：kupi | 西部：kupi
+SG.ACC | 北部：kupu | 东南：kupu | 西部：kupu
+SG.INS | 北部：kupoją | 东南：kupojo | 西部：kupoj
+SG.LOC | 北部：kupe | 东南：kupe | 西部：kup
+PL.NOM | 北部：kupÿ | 东南：kupi | 西部：kupÿ
+PL.GEN | 北部：kup | 东南：kup | 西部：kup
+PL.DAT | 北部：kupam | 东南：kupam | 西部：kupam
+PL.ACC | 北部：kupÿ | 东南：kupi | 西部：kupÿ
+PL.INS | 北部：kupami | 东南：kupami | 西部：kupami
+PL.LOC | 北部：kupaħ | 东南：kupah | 西部：kupaħ
+
+## 碗 (A类；F；无生)
+词典原形：北部 misa / 东南 misa / 西部 mis
+SG.NOM | 北部：misa | 东南：misa | 西部：mis
+SG.GEN | 北部：misÿ | 东南：misi | 西部：misÿ
+SG.DAT | 北部：misi | 东南：misi | 西部：misi
+SG.ACC | 北部：misu | 东南：misu | 西部：misu
+SG.INS | 北部：misoją | 东南：misojo | 西部：misoj
+SG.LOC | 北部：mise | 东南：mise | 西部：mis
+PL.NOM | 北部：misÿ | 东南：misi | 西部：misÿ
+PL.GEN | 北部：mis | 东南：mis | 西部：mis
+PL.DAT | 北部：misam | 东南：misam | 西部：misam
+PL.ACC | 北部：misÿ | 东南：misi | 西部：misÿ
+PL.INS | 北部：misami | 东南：misami | 西部：misami
+PL.LOC | 北部：misaħ | 东南：misah | 西部：misaħ
+
+## 月亮 (A类；F；无生)
+词典原形：北部 luna / 东南 luna / 西部 łun
+SG.NOM | 北部：luna | 东南：luna | 西部：łun
+SG.GEN | 北部：lunÿ | 东南：luni | 西部：łunÿ
+SG.DAT | 北部：luni | 东南：luni | 西部：łuni
+SG.ACC | 北部：lunu | 东南：lunu | 西部：łunu
+SG.INS | 北部：lunoją | 东南：lunojo | 西部：łunoj
+SG.LOC | 北部：lune | 东南：lune | 西部：łun
+PL.NOM | 北部：lunÿ | 东南：luni | 西部：łunÿ
+PL.GEN | 北部：lun | 东南：lun | 西部：łun
+PL.DAT | 北部：lunam | 东南：lunam | 西部：łunam
+PL.ACC | 北部：lunÿ | 东南：luni | 西部：łunÿ
+PL.INS | 北部：lunami | 东南：lunami | 西部：łunami
+PL.LOC | 北部：lunaħ | 东南：lunah | 西部：łunaħ
+
+## 人 (O类；M；有生)
+词典原形：北部 lud / 东南 lud / 西部 łud
+SG.NOM | 北部：lud | 东南：lud | 西部：łud
+SG.GEN | 北部：luda | 东南：luda | 西部：łud
+SG.DAT | 北部：ludu | 东南：ludu | 西部：łudu
+SG.ACC | 北部：luda | 东南：luda | 西部：za łud
+SG.INS | 北部：ludom | 东南：ludom | 西部：łudom
+SG.LOC | 北部：lude | 东南：lude | 西部：łud
+PL.NOM | 北部：ludÿ | 东南：ludi | 西部：łudÿ
+PL.GEN | 北部：ludoŵ | 东南：ludov | 西部：łudoŵ
+PL.DAT | 北部：ludam | 东南：ludam | 西部：łudam
+PL.ACC | 北部：ludoŵ | 东南：ludov | 西部：łudoŵ
+PL.INS | 北部：ludami | 东南：ludami | 西部：łudami
+PL.LOC | 北部：ludaħ | 东南：ludah | 西部：łudaħ
+
+## 朋友 (O类；M；有生)
+词典原形：北部 druġ / 东南 drug / 西部 dru
+警告：西部修复词干尚为候选；西部词典主格dru；其他格暂作druġ-类推。
+SG.NOM | 北部：druġ | 东南：drug | 西部：dru
+SG.GEN | 北部：druġa | 东南：druga | 西部：druġ
+SG.DAT | 北部：druġu | 东南：drugu | 西部：druġu
+SG.ACC | 北部：druġa | 东南：druga | 西部：za druġ
+SG.INS | 北部：druġom | 东南：drugom | 西部：druġom
+SG.LOC | 北部：druġe | 东南：druge | 西部：druġ
+PL.NOM | 北部：druġÿ | 东南：drugi | 西部：druġÿ
+PL.GEN | 北部：druġoŵ | 东南：drugov | 西部：druġoŵ
+PL.DAT | 北部：druġam | 东南：drugam | 西部：druġam
+PL.ACC | 北部：druġoŵ | 东南：drugov | 西部：druġoŵ
+PL.INS | 北部：druġami | 东南：drugami | 西部：druġami
+PL.LOC | 北部：druġaħ | 东南：drugah | 西部：druġaħ
+
+## 邻居 (O类；M；有生)
+词典原形：北部 sused / 东南 sused / 西部 sused
+SG.NOM | 北部：sused | 东南：sused | 西部：sused
+SG.GEN | 北部：suseda | 东南：suseda | 西部：sused
+SG.DAT | 北部：susedu | 东南：susedu | 西部：susedu
+SG.ACC | 北部：suseda | 东南：suseda | 西部：za sused
+SG.INS | 北部：susedom | 东南：susedom | 西部：susedom
+SG.LOC | 北部：susede | 东南：susede | 西部：sused
+PL.NOM | 北部：susedÿ | 东南：susedi | 西部：susedÿ
+PL.GEN | 北部：susedoŵ | 东南：susedov | 西部：susedoŵ
+PL.DAT | 北部：susedam | 东南：susedam | 西部：susedam
+PL.ACC | 北部：susedoŵ | 东南：susedov | 西部：susedoŵ
+PL.INS | 北部：susedami | 东南：susedami | 西部：susedami
+PL.LOC | 北部：susedaħ | 东南：susedah | 西部：susedaħ
+
+## 工人 (O类；M；有生)
+词典原形：北部 trudnik / 东南 trudnik / 西部 trudnik
+SG.NOM | 北部：trudnik | 东南：trudnik | 西部：trudnik
+SG.GEN | 北部：trudnika | 东南：trudnika | 西部：trudnik
+SG.DAT | 北部：trudniku | 东南：trudniku | 西部：trudniku
+SG.ACC | 北部：trudnika | 东南：trudnika | 西部：za trudnik
+SG.INS | 北部：trudnikom | 东南：trudnikom | 西部：trudnikom
+SG.LOC | 北部：trudnike | 东南：trudnike | 西部：trudnik
+PL.NOM | 北部：trudnikÿ | 东南：trudniki | 西部：trudnikÿ
+PL.GEN | 北部：trudnikoŵ | 东南：trudnikov | 西部：trudnikoŵ
+PL.DAT | 北部：trudnikam | 东南：trudnikam | 西部：trudnikam
+PL.ACC | 北部：trudnikoŵ | 东南：trudnikov | 西部：trudnikoŵ
+PL.INS | 北部：trudnikami | 东南：trudnikami | 西部：trudnikami
+PL.LOC | 北部：trudnikaħ | 东南：trudnikah | 西部：trudnikaħ
+
+## 医生 (O类；M；有生)
+词典原形：北部 lekar / 东南 lekar / 西部 łekar
+SG.NOM | 北部：lekar | 东南：lekar | 西部：łekar
+SG.GEN | 北部：lekara | 东南：lekara | 西部：łekar
+SG.DAT | 北部：lekaru | 东南：lekaru | 西部：łekaru
+SG.ACC | 北部：lekara | 东南：lekara | 西部：za łekar
+SG.INS | 北部：lekarom | 东南：lekarom | 西部：łekarom
+SG.LOC | 北部：lekare | 东南：lekare | 西部：łekar
+PL.NOM | 北部：lekarÿ | 东南：lekari | 西部：łekarÿ
+PL.GEN | 北部：lekaroŵ | 东南：lekarov | 西部：łekaroŵ
+PL.DAT | 北部：lekaram | 东南：lekaram | 西部：łekaram
+PL.ACC | 北部：lekaroŵ | 东南：lekarov | 西部：łekaroŵ
+PL.INS | 北部：lekarami | 东南：lekarami | 西部：łekarami
+PL.LOC | 北部：lekaraħ | 东南：lekarah | 西部：łekaraħ
+
+## 面包 (O类；M；无生)
+词典原形：北部 ħleb / 东南 hleb / 西部 ħłeb
+SG.NOM | 北部：ħleb | 东南：hleb | 西部：ħłeb
+SG.GEN | 北部：ħleba | 东南：hleba | 西部：ħłeb
+SG.DAT | 北部：ħlebu | 东南：hlebu | 西部：ħłebu
+SG.ACC | 北部：ħleb | 东南：hleb | 西部：ħłeb
+SG.INS | 北部：ħlebom | 东南：hlebom | 西部：ħłebom
+SG.LOC | 北部：ħlebe | 东南：hlebe | 西部：ħłeb
+PL.NOM | 北部：ħlebÿ | 东南：hlebi | 西部：ħłebÿ
+PL.GEN | 北部：ħleboŵ | 东南：hlebov | 西部：ħłeboŵ
+PL.DAT | 北部：ħlebam | 东南：hlebam | 西部：ħłebam
+PL.ACC | 北部：ħlebÿ | 东南：hlebi | 西部：ħłebÿ
+PL.INS | 北部：ħlebami | 东南：hlebami | 西部：ħłebami
+PL.LOC | 北部：ħlebaħ | 东南：hlebah | 西部：ħłebaħ
+
+## 桥梁 (O类；M；无生)
+词典原形：北部 most / 东南 most / 西部 most
+SG.NOM | 北部：most | 东南：most | 西部：most
+SG.GEN | 北部：mosta | 东南：mosta | 西部：most
+SG.DAT | 北部：mostu | 东南：mostu | 西部：mostu
+SG.ACC | 北部：most | 东南：most | 西部：most
+SG.INS | 北部：mostom | 东南：mostom | 西部：mostom
+SG.LOC | 北部：moste | 东南：moste | 西部：most
+PL.NOM | 北部：mostÿ | 东南：mosti | 西部：mostÿ
+PL.GEN | 北部：mostoŵ | 东南：mostov | 西部：mostoŵ
+PL.DAT | 北部：mostam | 东南：mostam | 西部：mostam
+PL.ACC | 北部：mostÿ | 东南：mosti | 西部：mostÿ
+PL.INS | 北部：mostami | 东南：mostami | 西部：mostami
+PL.LOC | 北部：mostaħ | 东南：mostah | 西部：mostaħ
+
+第二卷：动词
+
+## 吃 (A类；IPFV)
+INF | 北部：jedať | 东南：jedat | 西部：jedaþ
+PRS.1SG | 北部：jedam | 东南：jedam | 西部：jedam
+PRS.2SG | 北部：jedaš | 东南：jedaš | 西部：jedaš
+PRS.3SG | 北部：jedat | 东南：jedat | 西部：jedat
+PRS.1PL | 北部：jedame | 东南：jedame | 西部：jedam
+PRS.2PL | 北部：jedate | 东南：jedate | 西部：jedat
+PRS.3PL | 北部：jedająt | 东南：jedajot | 西部：jedająt
+PST.M | 北部：jedal | 东南：jedal | 西部：jedał
+PST.F | 北部：jedala | 东南：jedala | 西部：jedał
+PST.N | 北部：jedalo | 东南：jedalo | 西部：jedał
+PST.PL | 北部：jedali | 东南：jedali | 西部：jedałi
+IMP.2SG | 北部：jedaj | 东南：jedaj | 西部：jedaj
+IMP.2PL | 北部：jedajte | 东南：jedajte | 西部：jedajt
+IMP.1PL | 北部：jedajme | 东南：jedajme | 西部：jedajm
+
+## 喝 (A类；IPFV)
+INF | 北部：piŵať | 东南：pivat | 西部：piŵaþ
+PRS.1SG | 北部：piŵam | 东南：pivam | 西部：piŵam
+PRS.2SG | 北部：piŵaš | 东南：pivaš | 西部：piŵaš
+PRS.3SG | 北部：piŵat | 东南：pivat | 西部：piŵat
+PRS.1PL | 北部：piŵame | 东南：pivame | 西部：piŵam
+PRS.2PL | 北部：piŵate | 东南：pivate | 西部：piŵat
+PRS.3PL | 北部：piŵająt | 东南：pivajot | 西部：piŵająt
+PST.M | 北部：piŵal | 东南：pival | 西部：piŵał
+PST.F | 北部：piŵala | 东南：pivala | 西部：piŵał
+PST.N | 北部：piŵalo | 东南：pivalo | 西部：piŵał
+PST.PL | 北部：piŵali | 东南：pivali | 西部：piŵałi
+IMP.2SG | 北部：piŵaj | 东南：pivaj | 西部：piŵaj
+IMP.2PL | 北部：piŵajte | 东南：pivajte | 西部：piŵajt
+IMP.1PL | 北部：piŵajme | 东南：pivajme | 西部：piŵajm
+
+## 寻找 (A类；IPFV)
+INF | 北部：iskať | 东南：iskat | 西部：iskaþ
+PRS.1SG | 北部：iskam | 东南：iskam | 西部：iskam
+PRS.2SG | 北部：iskaš | 东南：iskaš | 西部：iskaš
+PRS.3SG | 北部：iskat | 东南：iskat | 西部：iskat
+PRS.1PL | 北部：iskame | 东南：iskame | 西部：iskam
+PRS.2PL | 北部：iskate | 东南：iskate | 西部：iskat
+PRS.3PL | 北部：iskająt | 东南：iskajot | 西部：iskająt
+PST.M | 北部：iskal | 东南：iskal | 西部：iskał
+PST.F | 北部：iskala | 东南：iskala | 西部：iskał
+PST.N | 北部：iskalo | 东南：iskalo | 西部：iskał
+PST.PL | 北部：iskali | 东南：iskali | 西部：iskałi
+IMP.2SG | 北部：iskaj | 东南：iskaj | 西部：iskaj
+IMP.2PL | 北部：iskajte | 东南：iskajte | 西部：iskajt
+IMP.1PL | 北部：iskajme | 东南：iskajme | 西部：iskajm
+
+## 帮助 (A类；IPFV)
+INF | 北部：pomoġať | 东南：pomogat | 西部：pomoġaþ
+PRS.1SG | 北部：pomoġam | 东南：pomogam | 西部：pomoġam
+PRS.2SG | 北部：pomoġaš | 东南：pomogaš | 西部：pomoġaš
+PRS.3SG | 北部：pomoġat | 东南：pomogat | 西部：pomoġat
+PRS.1PL | 北部：pomoġame | 东南：pomogame | 西部：pomoġam
+PRS.2PL | 北部：pomoġate | 东南：pomogate | 西部：pomoġat
+PRS.3PL | 北部：pomoġająt | 东南：pomogajot | 西部：pomoġająt
+PST.M | 北部：pomoġal | 东南：pomogal | 西部：pomoġał
+PST.F | 北部：pomoġala | 东南：pomogala | 西部：pomoġał
+PST.N | 北部：pomoġalo | 东南：pomogalo | 西部：pomoġał
+PST.PL | 北部：pomoġali | 东南：pomogali | 西部：pomoġałi
+IMP.2SG | 北部：pomoġaj | 东南：pomogaj | 西部：pomoġaj
+IMP.2PL | 北部：pomoġajte | 东南：pomogajte | 西部：pomoġajt
+IMP.1PL | 北部：pomoġajme | 东南：pomogajme | 西部：pomoġajm
+
+## 烹煮 (I类；IPFV)
+INF | 北部：ŵariť | 东南：varit | 西部：ŵariþ
+PRS.1SG | 北部：ŵarim | 东南：varim | 西部：ŵarim
+PRS.2SG | 北部：ŵariš | 东南：variš | 西部：ŵariš
+PRS.3SG | 北部：ŵarit | 东南：varit | 西部：ŵarit
+PRS.1PL | 北部：ŵarime | 东南：varime | 西部：ŵarim
+PRS.2PL | 北部：ŵarite | 东南：varite | 西部：ŵarit
+PRS.3PL | 北部：ŵarięt | 东南：variet | 西部：ŵarięt
+PST.M | 北部：ŵaril | 东南：varil | 西部：ŵarił
+PST.F | 北部：ŵarila | 东南：varila | 西部：ŵarił
+PST.N | 北部：ŵarilo | 东南：varilo | 西部：ŵarił
+PST.PL | 北部：ŵarili | 东南：varili | 西部：ŵariłi
+IMP.2SG | 北部：ŵari | 东南：vari | 西部：ŵari
+IMP.2PL | 北部：ŵarite | 东南：varite | 西部：ŵarit
+IMP.1PL | 北部：ŵarime | 东南：varime | 西部：ŵarim
+
+## 打开 (I类；IPFV)
+INF | 北部：otŵoriť | 东南：otvorit | 西部：otŵoriþ
+PRS.1SG | 北部：otŵorim | 东南：otvorim | 西部：otŵorim
+PRS.2SG | 北部：otŵoriš | 东南：otvoriš | 西部：otŵoriš
+PRS.3SG | 北部：otŵorit | 东南：otvorit | 西部：otŵorit
+PRS.1PL | 北部：otŵorime | 东南：otvorime | 西部：otŵorim
+PRS.2PL | 北部：otŵorite | 东南：otvorite | 西部：otŵorit
+PRS.3PL | 北部：otŵorięt | 东南：otvoriet | 西部：otŵorięt
+PST.M | 北部：otŵoril | 东南：otvoril | 西部：otŵorił
+PST.F | 北部：otŵorila | 东南：otvorila | 西部：otŵorił
+PST.N | 北部：otŵorilo | 东南：otvorilo | 西部：otŵorił
+PST.PL | 北部：otŵorili | 东南：otvorili | 西部：otŵoriłi
+IMP.2SG | 北部：otŵori | 东南：otvori | 西部：otŵori
+IMP.2PL | 北部：otŵorite | 东南：otvorite | 西部：otŵorit
+IMP.1PL | 北部：otŵorime | 东南：otvorime | 西部：otŵorim
+
+## 关闭 (I类；IPFV)
+INF | 北部：zakriť | 东南：zakrit | 西部：zakriþ
+PRS.1SG | 北部：zakrim | 东南：zakrim | 西部：zakrim
+PRS.2SG | 北部：zakriš | 东南：zakriš | 西部：zakriš
+PRS.3SG | 北部：zakrit | 东南：zakrit | 西部：zakrit
+PRS.1PL | 北部：zakrime | 东南：zakrime | 西部：zakrim
+PRS.2PL | 北部：zakrite | 东南：zakrite | 西部：zakrit
+PRS.3PL | 北部：zakrięt | 东南：zakriet | 西部：zakrięt
+PST.M | 北部：zakril | 东南：zakril | 西部：zakrił
+PST.F | 北部：zakrila | 东南：zakrila | 西部：zakrił
+PST.N | 北部：zakrilo | 东南：zakrilo | 西部：zakrił
+PST.PL | 北部：zakrili | 东南：zakrili | 西部：zakriłi
+IMP.2SG | 北部：zakri | 东南：zakri | 西部：zakri
+IMP.2PL | 北部：zakrite | 东南：zakrite | 西部：zakrit
+IMP.1PL | 北部：zakrime | 东南：zakrime | 西部：zakrim
+
+## 购买 (I类；IPFV)
+INF | 北部：kupiť | 东南：kupit | 西部：kupiþ
+PRS.1SG | 北部：kupim | 东南：kupim | 西部：kupim
+PRS.2SG | 北部：kupiš | 东南：kupiš | 西部：kupiš
+PRS.3SG | 北部：kupit | 东南：kupit | 西部：kupit
+PRS.1PL | 北部：kupime | 东南：kupime | 西部：kupim
+PRS.2PL | 北部：kupite | 东南：kupite | 西部：kupit
+PRS.3PL | 北部：kupięt | 东南：kupiet | 西部：kupięt
+PST.M | 北部：kupil | 东南：kupil | 西部：kupił
+PST.F | 北部：kupila | 东南：kupila | 西部：kupił
+PST.N | 北部：kupilo | 东南：kupilo | 西部：kupił
+PST.PL | 北部：kupili | 东南：kupili | 西部：kupiłi
+IMP.2SG | 北部：kupi | 东南：kupi | 西部：kupi
+IMP.2PL | 北部：kupite | 东南：kupite | 西部：kupit
+IMP.1PL | 北部：kupime | 东南：kupime | 西部：kupim
+
+第三卷：重音说明
+词汇重音尚未决定，本文不使用带ˈ的IPA；仅可以从原形计算正字法元音核数。
+所有词的词典原形、现代发音基础，以《扎格伦字典V0.2》为准。
+
+试验统计：名词504个、动词336个、合计840个方言屈折候选形式。
+（完）
