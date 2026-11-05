@@ -1,8 +1,8 @@
 {
   "title": "Žaġręn V0.9 · 受控语料现代形态审订与历史范式隔离",
-  "version": "V0.9-morphology-2",
+  "version": "V0.9-morphology-3-historical-grammar",
   "date": "2026-11-06",
-  "approach": "对选定9个名词、7个动词逐格核查古典范式与V0.5词典原形；仅对既有V0.6核验句与V0.7协调语料所覆盖的确定位置予以受限现行用法确认。未出现的格位保留为历史资料或候选，不得一键转正。",
+  "approach": "对选定9个名词、7个动词逐格核查古典范式与V0.5词典原形；仅对既有V0.6核验句与V0.7协调语料所覆盖的确定位置予以受限现行用法确认。未出现的格位保留为历史资料或候选，不得一键转正。 另据创作者决定，旧范式作为世界观内部的早期三支书面语文法正史保留；星号祖语重建与后来现代方言的规范层仍分别管理。",
   "sources": [
     "assets/data/zagren-nominal-morphology-v02.json",
     "assets/data/zagren-verbal-morphology-v03.json",
@@ -26,7 +26,10 @@
     "approvedControlledSlots": 16,
     "approvedDialectRealizations": 48,
     "modernNewWordsAdded": 0,
-    "modernDictionaryEntries": 339
+    "modernDictionaryEntries": 339,
+    "earlyWrittenParadigmPositions": 597,
+    "modernExplicitCorrespondencePositions": 27,
+    "modernUnresolvedOfDriftPositions": 82
   },
   "nounLexemes": [
     {
@@ -681,6 +684,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -696,6 +706,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -711,6 +728,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -726,6 +750,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -741,6 +772,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -756,6 +794,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -771,6 +816,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -786,6 +838,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -801,6 +860,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -816,6 +882,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -831,6 +904,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -846,6 +926,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -861,6 +948,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -876,6 +970,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -891,6 +992,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -906,6 +1014,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -921,6 +1036,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -936,6 +1058,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -951,6 +1080,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -966,6 +1102,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -981,6 +1124,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -996,6 +1146,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1011,6 +1168,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1026,6 +1190,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1041,6 +1212,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": true
       }
     },
     {
@@ -1056,6 +1234,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1071,6 +1256,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1086,6 +1278,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": true
       }
     },
     {
@@ -1101,6 +1300,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1116,6 +1322,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1131,6 +1344,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1146,6 +1366,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1161,6 +1388,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1176,6 +1410,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1191,6 +1432,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1206,6 +1454,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1221,6 +1476,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1236,6 +1498,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1251,6 +1520,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1266,6 +1542,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1281,6 +1564,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1296,6 +1586,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1311,6 +1608,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1326,6 +1630,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1341,6 +1652,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1356,6 +1674,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1371,6 +1696,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1386,6 +1718,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1401,6 +1740,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1416,6 +1762,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1431,6 +1784,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1446,6 +1806,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1461,6 +1828,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1476,6 +1850,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1491,6 +1872,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1506,6 +1894,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1521,6 +1916,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1536,6 +1938,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1551,6 +1960,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1566,6 +1982,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1581,6 +2004,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": true
       }
     },
     {
@@ -1596,6 +2026,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1611,6 +2048,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1626,6 +2070,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": true
       }
     },
     {
@@ -1641,6 +2092,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1656,6 +2114,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1671,6 +2136,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1686,6 +2158,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1701,6 +2180,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1716,6 +2202,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1731,6 +2224,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1746,6 +2246,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1761,6 +2268,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": true,
+        "W": true
       }
     },
     {
@@ -1776,6 +2290,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1791,6 +2312,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1806,6 +2334,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": true,
+        "W": true
       }
     },
     {
@@ -1821,6 +2356,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1836,6 +2378,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1851,6 +2400,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1866,6 +2422,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1881,6 +2444,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1896,6 +2466,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1911,6 +2488,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1926,6 +2510,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historical-form-lemma-drift-review-required"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1941,6 +2532,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": true,
+        "W": false
       }
     },
     {
@@ -1956,6 +2554,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1971,6 +2576,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -1986,6 +2598,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2001,6 +2620,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2016,6 +2642,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2031,6 +2664,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2046,6 +2686,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2061,6 +2708,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2076,6 +2730,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2091,6 +2752,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2106,6 +2774,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historical-form-lemma-drift-review-required",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2121,6 +2796,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2136,6 +2818,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2151,6 +2840,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2166,6 +2862,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2181,6 +2884,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2196,6 +2906,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2211,6 +2928,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2226,6 +2950,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2241,6 +2972,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2256,6 +2994,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2271,6 +3016,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2286,6 +3038,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2301,6 +3060,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2316,6 +3082,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2331,6 +3104,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2346,6 +3126,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2361,6 +3148,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2376,6 +3170,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2391,6 +3192,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2406,6 +3214,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2421,6 +3236,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2436,6 +3258,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2451,6 +3280,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2466,6 +3302,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2481,6 +3324,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2496,6 +3346,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2511,6 +3368,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2526,6 +3390,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2541,6 +3412,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2556,6 +3434,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2571,6 +3456,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2586,6 +3478,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2601,6 +3500,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2616,6 +3522,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2631,6 +3544,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2646,6 +3566,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2661,6 +3588,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2676,6 +3610,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2691,6 +3632,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2706,6 +3654,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2721,6 +3676,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2736,6 +3698,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2751,6 +3720,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2766,6 +3742,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2781,6 +3764,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2796,6 +3786,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2811,6 +3808,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2826,6 +3830,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2841,6 +3852,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2856,6 +3874,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2871,6 +3896,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2886,6 +3918,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2901,6 +3940,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2916,6 +3962,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2931,6 +3984,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2946,6 +4006,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2961,6 +4028,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2976,6 +4050,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -2991,6 +4072,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3006,6 +4094,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3021,6 +4116,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3036,6 +4138,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3051,6 +4160,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3066,6 +4182,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3081,6 +4204,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3096,6 +4226,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3111,6 +4248,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3126,6 +4270,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3141,6 +4292,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3156,6 +4314,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3171,6 +4336,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3186,6 +4358,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3201,6 +4380,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3216,6 +4402,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3231,6 +4424,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3246,6 +4446,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3261,6 +4468,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3276,6 +4490,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3291,6 +4512,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3306,6 +4534,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3321,6 +4556,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3336,6 +4578,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3351,6 +4600,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3366,6 +4622,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3381,6 +4644,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3396,6 +4666,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3411,6 +4688,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3426,6 +4710,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3441,6 +4732,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3456,6 +4754,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3471,6 +4776,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3486,6 +4798,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3501,6 +4820,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3516,6 +4842,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3531,6 +4864,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3546,6 +4886,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3561,6 +4908,13 @@
         "N": "historical-form-lemma-drift-review-required",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": true,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3576,6 +4930,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3591,6 +4952,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3606,6 +4974,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3621,6 +4996,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3636,6 +5018,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     },
     {
@@ -3651,6 +5040,13 @@
         "N": "historic-paradigm-lemma-compatible-not-modern-approved",
         "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
         "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      },
+      "historicalStatus": "accepted-as-early-written-paradigm-in-world",
+      "historicalStage": "Early Branch Literary Žaġręn (three distinct dialect traditions)",
+      "hasModernEvidence": {
+        "N": false,
+        "SE": false,
+        "W": false
       }
     }
   ],
@@ -3661,5 +5057,1532 @@
     "北部N13对生活词族的映射须遵守V0.8限定范围；并非全词典批量替换",
     "M04管道、M07神明、M08雪、M11火词根发生过现代音变，旧史范式中未核对的格位不得未经审查入现代词典",
     "尚未为新登记的四个V0.9动词补充无依据的人称变位与重音"
-  ]
+  ],
+  "historyPolicy": {
+    "doctrine": "V0.9历史文法正史化：此前V0.2名词与代词、V0.3动词与体、V0.4修饰词范式，在俄庇娜世界观内部作为早期三支书面语之文法体系保存，不再以所谓错误现代拼写处理；所保留的星号祖语形式仍然仅为比较构拟，不能把它们当作可直接使用的古典书面语形。",
+    "chronology": [
+      {
+        "id": "P",
+        "name": "Proto-Žaġręn（原始藏朔原语）",
+        "meaning": "共同祖语的比较重建层",
+        "dataLayer": "reconstructed roots and phonological correspondences",
+        "authority": "not a directly attested written dialect"
+      },
+      {
+        "id": "E",
+        "name": "Early Literary Žaġręn（早期藏朔原三支书面语）",
+        "meaning": "三方言已经分化、仍保留较完整的历史屈折范式与旧词根的书面传统",
+        "dataLayer": "V0.2 nominal / V0.3 verbal / V0.4 modifiers",
+        "authority": "canonical historical language layer within Orbina; not modern usage; no absolute in-world date assigned"
+      },
+      {
+        "id": "T",
+        "name": "Transitional Dialect Literature（过渡期三方言文学语）",
+        "meaning": "书面旧式与逐渐固定的新式并存；早期文献不必逐字改写为现代语",
+        "dataLayer": "V0.5 comparative literature",
+        "authority": "historical textual layer; mixed forms must be discussed case by case"
+      },
+      {
+        "id": "M",
+        "name": "Modern Žaġręn（现代藏朔原语）",
+        "meaning": "V0.8历史音系、V0.7核心句法、V0.5现代字典和V0.9受控现代用法",
+        "dataLayer": "current canonical references",
+        "authority": "normative for specific confirmed forms and rules, not for unverified complete paradigms"
+      }
+    ],
+    "protection": [
+      "旧文法作为早期三支书面语的历史正史，不同于后来被判定是误录或相互矛盾的样例；发现明确逻辑或录入矛盾时仍应做内部校勘",
+      "历史资料的星号*形式属于重建祖语，不具有已发现母语者语料的效力",
+      "早期三种方言的词尾不能合并为一种统一的早期通用口语，亦不假设统一国家/官方语言",
+      "V0.6以后正字法变化、音系演化和V0.7语法再分析需要独立说明；历史形态不自动被现代重用",
+      "语法层面za宾格标记不应混同于历史词根音变",
+      "109处标记是语法位置×方言的审查覆盖项，其中只有部分有直接现代用法证据；不得称109项都已被替换或判错",
+      "不凭现有证据发明绝对年代、历史战争或宗教机构作为语言改革解释"
+    ],
+    "classificationCounts": {
+      "modern-lemma-direct": 8,
+      "unresolved-modern-inflection": 82,
+      "modern-controlled-usage": 6,
+      "modern-rule-derived-not-independent-attestation": 13
+    },
+    "dataAudit": {
+      "historicalParadigmSlotRows": 199,
+      "branchesPerRow": 3,
+      "historicalForms": 597,
+      "lemmaCompatiblePositions": 488,
+      "lemmaDriftReviewPositions": 109,
+      "modernSpecificCorrespondences": 27,
+      "remainingUnresolvedPositions": 82,
+      "modernDirectLemmaCount": 8,
+      "modernControlledUsageCount": 6,
+      "modernRuleDerivedCount": 13
+    },
+    "keyChanges": [
+      {
+        "family": "管道",
+        "from": "北部早期ťruba → 现代ṱruba；西部早期þrub → 现代þřub",
+        "rules": [
+          "N14",
+          "W12"
+        ],
+        "note": "宾格已在T03受控文本核对，其他格仍需验证"
+      },
+      {
+        "family": "神明",
+        "from": "西部早期主格boġ → 现代bo；旧宾格boġ → 现代短语za boġ",
+        "rules": [
+          "W11",
+          "V0.7 S10"
+        ],
+        "note": "主格词尾脱落与宾格标记重新分析是两个不同过程"
+      },
+      {
+        "family": "雪",
+        "from": "早期sneġ/sneg/sneġ → 现代sęġ/seg/sne",
+        "rules": [
+          "N11",
+          "SE11",
+          "W11"
+        ],
+        "note": "主格已登记；受控T04明确现代宾格用法"
+      },
+      {
+        "family": "火",
+        "from": "北部oġń → ӧġń；东南ogon → oң",
+        "rules": [
+          "N12",
+          "SE14"
+        ],
+        "note": "现在主格已登记，不意味着历史工具格等自动改定"
+      },
+      {
+        "family": "生活",
+        "from": "北部早期žiŵeť → 现代ẑiŵeť",
+        "rules": [
+          "N13"
+        ],
+        "note": "历史动词13个位置有受限规则生成对应，但不等于直接自然语料"
+      }
+    ],
+    "transitions": [
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.NOM",
+        "historical": "ťruba",
+        "modern": "ṱruba",
+        "modernStatus": "modern-lemma-direct",
+        "basis": "V0.5 dictionary (D0015)",
+        "changeRule": "N14",
+        "explanation": "现代主格原形有正式词典证据"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.NOM",
+        "historical": "þrub",
+        "modern": "þřub",
+        "modernStatus": "modern-lemma-direct",
+        "basis": "V0.5 dictionary (D0015)",
+        "changeRule": "W12",
+        "explanation": "现代主格原形有正式词典证据"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.GEN",
+        "historical": "ťrubÿ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.GEN",
+        "historical": "þrubÿ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.DAT",
+        "historical": "ťrubi",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.DAT",
+        "historical": "þrubi",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.ACC",
+        "historical": "ťrubu",
+        "modern": "ṱrubu",
+        "modernStatus": "modern-controlled-usage",
+        "basis": "V0.6 T03",
+        "changeRule": "N14",
+        "explanation": "N14复辅音演化；宾格用法已有受控句"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.ACC",
+        "historical": "þrubu",
+        "modern": "þřubu",
+        "modernStatus": "modern-controlled-usage",
+        "basis": "V0.6 T03",
+        "changeRule": "W12",
+        "explanation": "W12词干辅音演化；宾格用法已有受控句"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.INS",
+        "historical": "ťruboją",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.INS",
+        "historical": "þruboj",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.LOC",
+        "historical": "ťrube",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.LOC",
+        "historical": "þrub",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.NOM",
+        "historical": "ťrubÿ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.NOM",
+        "historical": "þrubÿ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.GEN",
+        "historical": "ťrub",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.GEN",
+        "historical": "þrub",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.DAT",
+        "historical": "ťrubam",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.DAT",
+        "historical": "þrubam",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.ACC",
+        "historical": "ťrubÿ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.ACC",
+        "historical": "þrubÿ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.INS",
+        "historical": "ťrubami",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.INS",
+        "historical": "þrubami",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.LOC",
+        "historical": "ťrubaħ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M04",
+        "gloss": "管道",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.LOC",
+        "historical": "þrubaħ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M07",
+        "gloss": "神明",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.NOM",
+        "historical": "boġ",
+        "modern": "bo",
+        "modernStatus": "modern-lemma-direct",
+        "basis": "V0.5 dictionary (D0034)",
+        "changeRule": "W11 and V0.7 animate ACC za",
+        "explanation": "现代主格原形有正式词典证据"
+      },
+      {
+        "lexemeId": "M07",
+        "gloss": "神明",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.GEN",
+        "historical": "boġ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11 and V0.7 animate ACC za",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M07",
+        "gloss": "神明",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.DAT",
+        "historical": "boġu",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11 and V0.7 animate ACC za",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M07",
+        "gloss": "神明",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.ACC",
+        "historical": "boġ",
+        "modern": "za boġ",
+        "modernStatus": "modern-controlled-usage",
+        "basis": "V0.7 A16",
+        "changeRule": "W11 and V0.7 animate ACC za",
+        "explanation": "阳性有生宾格采用za短语标记；ġ在非主格保留"
+      },
+      {
+        "lexemeId": "M07",
+        "gloss": "神明",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.INS",
+        "historical": "boġom",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11 and V0.7 animate ACC za",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M07",
+        "gloss": "神明",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.LOC",
+        "historical": "boġ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11 and V0.7 animate ACC za",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M07",
+        "gloss": "神明",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.NOM",
+        "historical": "boġÿ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11 and V0.7 animate ACC za",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M07",
+        "gloss": "神明",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.GEN",
+        "historical": "boġoŵ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11 and V0.7 animate ACC za",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M07",
+        "gloss": "神明",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.DAT",
+        "historical": "boġam",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11 and V0.7 animate ACC za",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M07",
+        "gloss": "神明",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.ACC",
+        "historical": "boġoŵ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11 and V0.7 animate ACC za",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M07",
+        "gloss": "神明",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.INS",
+        "historical": "boġami",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11 and V0.7 animate ACC za",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M07",
+        "gloss": "神明",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.LOC",
+        "historical": "boġaħ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11 and V0.7 animate ACC za",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.NOM",
+        "historical": "sneġ",
+        "modern": "sęġ",
+        "modernStatus": "modern-lemma-direct",
+        "basis": "V0.5 dictionary (D0044)",
+        "changeRule": "N11",
+        "explanation": "现代主格原形有正式词典证据"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "SG.NOM",
+        "historical": "sneg",
+        "modern": "seg",
+        "modernStatus": "modern-lemma-direct",
+        "basis": "V0.5 dictionary (D0044)",
+        "changeRule": "SE11",
+        "explanation": "现代主格原形有正式词典证据"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.NOM",
+        "historical": "sneġ",
+        "modern": "sne",
+        "modernStatus": "modern-lemma-direct",
+        "basis": "V0.5 dictionary (D0044)",
+        "changeRule": "W11",
+        "explanation": "现代主格原形有正式词典证据"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.GEN",
+        "historical": "sneġa",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "SG.GEN",
+        "historical": "snega",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.GEN",
+        "historical": "sneġ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.DAT",
+        "historical": "sneġu",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "SG.DAT",
+        "historical": "snegu",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.DAT",
+        "historical": "sneġu",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.ACC",
+        "historical": "sneġ",
+        "modern": "sęġ",
+        "modernStatus": "modern-controlled-usage",
+        "basis": "V0.6 T04",
+        "changeRule": "N11",
+        "explanation": "N11鼻化；雪宾格用法已有受控句"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "SG.ACC",
+        "historical": "sneg",
+        "modern": "seg",
+        "modernStatus": "modern-controlled-usage",
+        "basis": "V0.6 T04",
+        "changeRule": "SE11",
+        "explanation": "SE11简化；雪宾格用法已有受控句"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.ACC",
+        "historical": "sneġ",
+        "modern": "sne",
+        "modernStatus": "modern-controlled-usage",
+        "basis": "V0.6 T04",
+        "changeRule": "W11",
+        "explanation": "W11词尾ġ脱落；雪宾格用法已有受控句"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.INS",
+        "historical": "sneġom",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "SG.INS",
+        "historical": "snegom",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.INS",
+        "historical": "sneġom",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.LOC",
+        "historical": "sneġe",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "SG.LOC",
+        "historical": "snege",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "SG.LOC",
+        "historical": "sneġ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.NOM",
+        "historical": "sneġÿ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "PL.NOM",
+        "historical": "snegi",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.NOM",
+        "historical": "sneġÿ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.GEN",
+        "historical": "sneġoŵ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "PL.GEN",
+        "historical": "snegov",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.GEN",
+        "historical": "sneġoŵ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.DAT",
+        "historical": "sneġam",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "PL.DAT",
+        "historical": "snegam",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.DAT",
+        "historical": "sneġam",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.ACC",
+        "historical": "sneġÿ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "PL.ACC",
+        "historical": "snegi",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.ACC",
+        "historical": "sneġÿ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.INS",
+        "historical": "sneġami",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "PL.INS",
+        "historical": "snegami",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.INS",
+        "historical": "sneġami",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.LOC",
+        "historical": "sneġaħ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "PL.LOC",
+        "historical": "snegah",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M08",
+        "gloss": "雪",
+        "dialect": "西部雷西尼昂帕",
+        "branch": "W",
+        "position": "PL.LOC",
+        "historical": "sneġaħ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "W11",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.NOM",
+        "historical": "oġń",
+        "modern": "ӧġń",
+        "modernStatus": "modern-lemma-direct",
+        "basis": "V0.5 dictionary (D0019)",
+        "changeRule": "N12",
+        "explanation": "现代主格原形有正式词典证据"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "SG.NOM",
+        "historical": "ogon",
+        "modern": "oң",
+        "modernStatus": "modern-lemma-direct",
+        "basis": "V0.5 dictionary (D0019)",
+        "changeRule": "SE14",
+        "explanation": "现代主格原形有正式词典证据"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.GEN",
+        "historical": "oġńa",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "SG.GEN",
+        "historical": "ogna",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.DAT",
+        "historical": "oġńu",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "SG.DAT",
+        "historical": "ognu",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.ACC",
+        "historical": "oġń",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "SG.ACC",
+        "historical": "ogon",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.INS",
+        "historical": "oġńem",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "SG.INS",
+        "historical": "ognem",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "SG.LOC",
+        "historical": "oġńe",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "SG.LOC",
+        "historical": "ogne",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.NOM",
+        "historical": "oġńi",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "PL.NOM",
+        "historical": "ogni",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.GEN",
+        "historical": "oġńeŵ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "PL.GEN",
+        "historical": "ognev",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.DAT",
+        "historical": "oġńam",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "PL.DAT",
+        "historical": "ognam",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.ACC",
+        "historical": "oġńi",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "PL.ACC",
+        "historical": "ogni",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.INS",
+        "historical": "oġńami",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "PL.INS",
+        "historical": "ognami",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "PL.LOC",
+        "historical": "oġńaħ",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "N12",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "M11",
+        "gloss": "火",
+        "dialect": "东南丽庞萨",
+        "branch": "SE",
+        "position": "PL.LOC",
+        "historical": "ognah",
+        "modern": null,
+        "modernStatus": "unresolved-modern-inflection",
+        "basis": "现代词干已经变化，但本格位尚无逐格证明",
+        "changeRule": "SE14",
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "finite.1SG",
+        "historical": "žiŵem",
+        "modern": "ẑiŵem",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "finite.2SG",
+        "historical": "žiŵeš",
+        "modern": "ẑiŵeš",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "finite.3SG",
+        "historical": "žiŵet",
+        "modern": "ẑiŵet",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "finite.1PL",
+        "historical": "žiŵeme",
+        "modern": "ẑiŵeme",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "finite.2PL",
+        "historical": "žiŵete",
+        "modern": "ẑiŵete",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "finite.3PL",
+        "historical": "žiŵeut",
+        "modern": "ẑiŵeut",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "past.M",
+        "historical": "žiŵel",
+        "modern": "ẑiŵel",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "past.F",
+        "historical": "žiŵela",
+        "modern": "ẑiŵela",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "past.N",
+        "historical": "žiŵelo",
+        "modern": "ẑiŵelo",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "past.PL",
+        "historical": "žiŵeli",
+        "modern": "ẑiŵeli",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "imperative.2SG",
+        "historical": "žiŵi",
+        "modern": "ẑiŵi",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "imperative.2PL",
+        "historical": "žiŵite",
+        "modern": "ẑiŵite",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      },
+      {
+        "lexemeId": "V20",
+        "gloss": "生活",
+        "dialect": "北部珀璃璐卡",
+        "branch": "N",
+        "position": "imperative.1PL",
+        "historical": "žiŵime",
+        "modern": "ẑiŵime",
+        "modernStatus": "modern-rule-derived-not-independent-attestation",
+        "basis": "V0.8 N13 morphology regression",
+        "changeRule": "N13",
+        "explanation": "限定*živ-词族N13词干继承的生成式对应，不能视为母语真实语料"
+      }
+    ]
+  },
+  "historyPolicyRef": "this document: historyPolicy"
 }
