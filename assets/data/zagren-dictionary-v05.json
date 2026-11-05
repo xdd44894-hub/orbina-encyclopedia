@@ -1,5 +1,5 @@
 {
-  "title": "《扎格伦字典》V0.4",
+  "title": "《扎格伦字典》V0.5",
   "language": "Žaġręn",
   "dictVersion": "0.5",
   "basedOnLanguageVersion": "Žaġręn V0.9词典原形补全（沿用V0.8音系、V0.7核心句法）",
@@ -14161,6 +14161,8 @@
         "decision": "registered-modern-infinitive-lemma-only"
       }
     ],
-    "disclaimer": "根据世界观既有音系与旧分词形态做出的新规范决定；并非现实语言实证材料，不允许由不定式自动宣称整个现代动词范式已核定。"
+    "disclaimer": "根据世界观既有音系与旧分词形态做出的新规范决定；并非现实语言实证材料，不允许由不定式自动宣称整个现代动词范式已核定。",
+    "morphologyAudit": "assets/data/zagren-v09-morphology-audit.json",
+    "morphologyStatus": "16个指定受控语法位置的48个方言实现已对照V0.6/V0.7语料；未核验现代格位与变位仍保持试验地位"
   }
 }
