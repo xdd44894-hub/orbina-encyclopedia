@@ -12,7 +12,7 @@ ai_search: true
 
 **[在线搜索339条词典]({{ '/zagren-dictionary/' | relative_url }})** · [完整TXT]({{ '/assets/data/zagren-dictionary-v05.txt' | relative_url }}) · [结构化JSON]({{ '/assets/data/zagren-dictionary-v05.json' | relative_url }}) · [统一语言总纲]({{ '/articles/article-451/' | relative_url }})
 
-[完整V0.7语言资料总卷]({{ '/assets/data/zagren-language-compendium-v09.txt' | relative_url }})
+[完整V0.9语言资料总卷]({{ '/assets/data/zagren-language-compendium-v09.txt' | relative_url }})
 
 ## 规模
 
@@ -62,6 +62,10 @@ ai_search: true
 后续V0.9形态研究按旧动词35、旧名词26、旧形容词41、旧分词19、功能词21的队列推进。尤其是“忘记”的不规则变位与“冻结”的词干交替，不应从不定式直接反推。
 
 [查看V0.9四词审订与142旧词分类数据]({{ '/assets/data/zagren-v09-lemma-audit.json' | relative_url }}) · [现行字典TXT]({{ '/assets/data/zagren-dictionary-v05.txt' | relative_url }}) · [现行字典JSON]({{ '/assets/data/zagren-dictionary-v05.json' | relative_url }})
+
+## 早期三支书面语法正式纳入语言史
+
+旧V0.2名词代词、V0.3动词、V0.4形容词/分词范式正式属于**早期藏朔原三支书面语**，不再作为“需要删除的现代错误”处理。109项是需要古今核对的词形位置，其中27项有现代对应，82项未定现代格位。带`*`的祖语重建不等于古典三支书面语。详见[统一语言总纲]({{ '/articles/article-451/' | relative_url }})与[逐格审计]({{ '/assets/data/zagren-v09-morphology-audit.json' | relative_url }})。
 
 ## V0.9第二阶段：受控形态审订
 
