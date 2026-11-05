@@ -1,13 +1,12 @@
-《藏朔原语统一资料总卷》Žaġręn V0.8
-俄庇娜百科 · 字典 V0.4 · 2026-11-06
+《藏朔原语统一资料总卷》Žaġręn V0.8 · 第二阶段修订
+俄庇娜百科 · 《扎格伦字典 V0.4》 · 2026-11-06
 
-含现行历时音系与词汇审阅结论、339条词典原形、V0.7句法背景、V0.6的50句受控语料、V0.5的32句历史文学文本和早期形态研究。
-旧词升级范围：151条审阅，4条实际修订，143条词典原形保持不变，4条仅附候选；没有将全部历史变格宣称为V0.8完整现代范式。
-音位转写仍没有词汇重音和连读；双层聚焦按V0.7原文/引用者层次定义。
-统一索引：https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-language-v06-manifest.json
+本卷整合现行V0.8历史音变与旧词校订、339条三方言字典、V0.7句法、V0.6的50句受控语料、V0.5的32句文学历史文本和早期词法。
+历史或仅有祖语阶段的151条旧词本轮共有5条升级、142条保留原形、4条尚无正式现代原形；另对V0.7新增词的2处语音环境进行了校订。合计7词条9处方言拼写变化。
+关联形态已校验143个对应形式；核心历史格位生成器2025项继续通过；所有宽式IPA暂不标注词汇重音。
+旧版本语料及历史变格保持原貌，不应将早期写法混作V0.8全现代范式。
 
 ================= 第一编　现行统一语言总纲 =================
-
 
 # 藏朔原语 Žaġręn
 
@@ -70,34 +69,44 @@
 
 ## V0.8：历时音系与原有旧词现代化
 
-*[V0.8历史音系与词族变更检索](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-phonology/)** · [完整音系与重音前期核查JSON](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-phonology-v08.json) · [151个旧词逐条审阅记录](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-v08-lexical-audit.json) · [正式V0.4字典](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-dictionary/)
+**[历时音系及词族对照](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-phonology/)** · [V0.8音变规则与词族定义](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-v08-diachrony.json) · [339词全面审查清单](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-v08-lexicon-review.json) · [143项相关现代形态对照](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-v08-morphology-regression.json) · [正式V0.4词典](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-dictionary/)
 
-这是对现有V0.6 **21条音变的作用范围进行正式整理**，而不是无证据地增加一批全词典通用的音变。V0.8补充4项已确认的同源词族范围，使词典原形与动词、形容词和分词范式不再互相冲突。
+V0.8 仍使用 **21条现有音变**，补充其历史作用顺序、格位边界以及有证据的同源词族衍变。原有V0.8首轮4词修订保留；本轮扩展为 **7个词条、9处方言词形校订**。**V08-STEM-ZYM** 是限于“冬季—冬季的”的词干类推，不应被误计为第22条普适音变。
 
-| 词义 | 方言 | 旧词形 | V0.8词典原形 | 依据 |
+| 词义 | 方言 | 历史词形 | V0.8现代词典原形 | 规则或词干依据 |
 | --- | --- | --- | --- | --- |
-| 生活（动词） | 北部 | `žiŵeť` | **`ẑiŵeť`** | N13词族延伸 |
-| 活体的 | 北部 | `žiŵÿ` | **`ẑiŵÿ`** | N13词族延伸 |
-| 生活中的（分词） | 北部 | `žiŵejącÿ` | **`ẑiŵejącÿ`** | N13词族延伸 |
-| 冬季的 | 东南 | `zimni` | **`ẑimni`** | SE12词族延伸 |
+| 女人 | 北部 | `žena` | **`ẑena`** | N13：ž+e → ẑe |
+| 生活（动词） | 北部 | `žiŵeť` | **`ẑiŵeť`** | N13：*živ-词族 |
+| 活体的 | 北部 | `žiŵÿ` | **`ẑiŵÿ`** | N13：*živ-词族 |
+| 生活中的（分词） | 北部 | `žiŵejącÿ` | **`ẑiŵejącÿ`** | N13：*živ-词族 |
+| 冬季的 | 北部 | `zimnÿ` | **`zÿmnÿ`** | 与冬季 `zÿma` 的词干类推 |
+| 冬季的 | 东南 | `zimni` | **`ẑimni`** | SE12：与 `ẑima` 同源 |
+| 冬季的 | 西部 | `zimnÿ` | **`zÿmnÿ`** | 与冬季 `zÿm` 的词干类推 |
+| 句子 | 北部 | `predloženie` | **`predloẑenie`** | N13：词内 ž+e → ẑe |
+| 语言 | 东南 | `jazik` | **`jaẑik`** | SE12：已登记 zi 软化环境的同族类推 |
 
-旧词词典原形共审阅**151条**：**4条**获得新的正式现代词形，**143条**保留现行原形并标明“原形审阅／完整屈折待核”，另**4条**仍只有构拟祖语词根，本轮仅添加非正式三方言不定式提案。**这些提案不计入正式335条三方言原形和1,005个宽式IPA统计。**
+### 旧词升级的边界
 
-同步调整后的词法查询器在历史V0.3动词、V0.4形容词和分词上检查了 **91个相关屈折位置**，能沿词根传播上述修订；原有**2,025项**名词、代词与动词格位的基础校验继续通过。历史底稿仍保留，不能被误写为已直接改动原始语言史。
+本次对V0.3的339条词典原形进行音变适用性复查。其中此前属于历史或仅祖语状态的 **151条**：**5条升级为V0.8现代词典原形，142条在当前受限规则下保留原形，4条仍只有祖语构拟**；此外，对V0.7新录的“句子”和“语言”校正了两处方言拼写。由此现有339个词条中，**193条属于已登记现代原形，142条标记为已审查保留原形，另4条尚未有正式现代原形**。
+
+保留原形是当前规范的审查结论，**不等于全部现代变格、音节划分、重音都已经被证实**。四条仅祖语的动词仍只保留非正式构拟；它们不计入335条三方言原形与1,005条宽式IPA。
+
+### 词法回归验证
+
+语法生成器沿受限的 N13、SE12 与冬季词干类推规则转换了旧版形态记录：北部“生活”动词13个位置、“活体的”形容词26个位置、“生活中的”分词26个位置、东南“冬季的”26个位置，以及北部／西部“冬季的”52个位置，共 **143个相关形式，全部生成并符合所声明的规则**。原有 **2,025个名词、代词与动词历史格位**的整体校验仍通过。源V0.3/V0.4完整范式保存为历史数据，没有被直接改写成现代文献。
 
 ### 音系演化层次
 
-1. 世界观内部构拟的祖语词根与早期历史对照（** 不代表现实学界认证的原始斯拉夫语）。
-2. V0.6既定共同音变 C01–C04；特定词项和弱读环境受到严格限制。
-3. 北部 N11–N17、东南 SE11–SE15、西部 W11–W15；词干与格尾结合的位置不能随意省去条件。
-4. V0.8上述4项跨词性同源音变及词根的类推传播。
-5. 现代词典原形和已登记历史屈折分别输出，最后才讨论语流与重音。
+1. 世界观内部构拟的祖语词根及旧地球移民语言来源（不等同于现实语言学界的原始斯拉夫语重建）。
+2. 共享的受限词汇化音变 C01–C04：先确认语义词族与历史弱读条件。
+3. 三地各自的历史创新 N11–N17、SE11–SE15、W11–W15；词中辅音变化先于词尾省略和格位重新分析。
+4. 限定的同源词干类推，例如 *zim-/*zÿm- 的“冬季—冬季的”；**类推不是通用音变**。
+5. 现代原形与早期格位分层记录。特别是西部“神明”现代主格 `bo` 与宾格 `za boġ`，不得删除宾格内部的 `ġ`。
 
 ### 词汇重音与音节结构仍须实证
 
-本轮对V0.4字典**335条三方言原形，共1,005个书写词形**重新统计：**80条词汇的三个方言书写元音核数量不同**，同时仍有**11个形式没有书写元音**，主要是介词或西部附着助词。`bab`、`n`、`b` 等不能直接据此机械补出词汇重音。
+此前对V0.4词典335条三方言原形（1,005个书写词形）的元音核预审显示，部分方言之间有不同的可见元音核数量，且部分介词与助词不含书写元音。**核数不等于音节界，也不能用来虚构词汇重音**。目前IPA仍只给宽式音位，不加入无依据的 `ˈ` 或口语连读规则。
 
-当前只记录音值、可见元音核以及部分常见初辅音串；**没有**伪造完整声学数据、音节边界或带 `ˈ` 的重音IPA。下一期要以格尾分布、附着词、词根历史及真实对立例证建设三地重音规则。
 
 ## V0.7：学术俄语参照的新增六十词
 
@@ -119,7 +128,7 @@
 
 | 资料 | 作用 |
 | --- | --- |
-| **[《扎格伦字典 V0.3》](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-dictionary/)** | 339词条、三方言词形、规则宽式IPA、词源、词性与版本状态 |
+| **[《扎格伦字典 V0.4》](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-dictionary/)** | 339词条、三方言词形、规则宽式IPA、词源、词性与版本状态 |
 | **[语法实验室](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-grammar/)** | V0.2/0.3有依据的名词/代词/动词格位，按限定音变呈现V0.6形态 |
 | **[50句日常受控语料](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-corpus/)** | 50句 × 3方言，测试陈述、及物、形容词、疑问、将来和标点 |
 | **[《雪原上的一天》](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-showcase/)** | V0.5保留的32句比较文学历史基准，含旧版IPA |
@@ -164,7 +173,7 @@
 
 ### IPA标注边界
 
-V0.3字典已为 **335个三方言原形词条**给出 **1,005条**按字母音值推导的**宽式音位转写**，尚未完成词汇重音、语音同化、连读和精确元音变体的实证校准。因此当前转写适合**查字母读法**，不是宣称真实民族口音已经被完全确定。
+V0.4字典已为 **335个三方言原形词条**给出 **1,005条**按字母音值推导的**宽式音位转写**，尚未完成词汇重音、语音同化、连读和精确元音变体的实证校准。因此当前转写适合**查字母读法**，不是宣称真实民族口音已经被完全确定。
 
 ## 四、正式语用标点
 
@@ -253,7 +262,7 @@ V0.3字典已为 **335个三方言原形词条**给出 **1,005条**按字母音�
 
 - **339个词典条目**：在V0.2的279条基础上新增60条，历史179条与V0.6核心100条全部保留。
 - **335条**具有三个方言的词典原形；另4条仍只有祖语构拟。
-- **192条**属于已登记现代化原形（此前188条和本轮4条同源词修订）；**143条**旧词在V0.8审阅后保留原形，但不能据此宣称其完整现代变格已完成；另有**4条**仍只有祖语构拟，仅附非正式候选不定式。
+- **193条**属于已登记现代化原形（此前188条及本轮5条历史词升级）；**142条**旧词在V0.8审阅后保留原形，但不能据此宣称全部现代屈折已确定；另有**4条**仍只有祖语构拟，仅附非正式候选不定式。
 - 词典中的“词条”不等同于独立词根数、所有义项数或已经核定的屈折格位数。
 
 优先选择具有完整日常语义、简洁词长且词源可解释的词形；不为了提高陌生感而拉长词或增添装饰字母。斯拉夫语背景者或可认出部分词根，但互懂程度尚无正式实验数据。
@@ -284,7 +293,7 @@ V0.5《雪原上的一天》32句仍是早期的文学实验文本。不能将�
 
 ## 九、参考卷和资料优先级
 
-现行：本条与字典V0.4（词典原形）→ V0.6音变数据（词根规则）→ 已验证格位生成器（受限格位）；历史参考：[名词形态学I](https://xdd44894-hub.github.io/orbina-encyclopedia/articles/article-452/)、[动词形态学II](https://xdd44894-hub.github.io/orbina-encyclopedia/articles/article-453/)、[形容词与分词](https://xdd44894-hub.github.io/orbina-encyclopedia/articles/article-454/)、[V0.5文学语料](https://xdd44894-hub.github.io/orbina-encyclopedia/articles/article-455/)。
+现行：本条与字典V0.4（词典原形）→ V0.8历时音变规则（词根及格位限定）→ 已验证格位生成器（受限格位）；历史参考：[名词形态学I](https://xdd44894-hub.github.io/orbina-encyclopedia/articles/article-452/)、[动词形态学II](https://xdd44894-hub.github.io/orbina-encyclopedia/articles/article-453/)、[形容词与分词](https://xdd44894-hub.github.io/orbina-encyclopedia/articles/article-454/)、[V0.5文学语料](https://xdd44894-hub.github.io/orbina-encyclopedia/articles/article-455/)。
 
 保留旧资料的目的在于解释词形来自哪里，而不是让不同阶段互相竞争“最新正史”地位。未来修订应直接改动本总纲与对应规范化数据，不再将同一主题拆成无穷追加的待归档页。
 
@@ -296,7 +305,7 @@ V0.5《雪原上的一天》32句仍是早期的文学实验文本。不能将�
 
 ## 附录：初期比较音韵与词源对照（历史阶段）
 
-以下原始30条音变规则及43条共同词根来自第一卷早期重建，仍为可追溯的原始比较数据。**附录不是当前V0.6词典形式清单**；以最新词形为准。
+以下原始30条音变规则及43条共同词根来自第一卷早期重建，仍为可追溯的原始比较数据。**附录不是当前V0.8词典形式清单**；以最新词形为准。
 
 ## 第一批历史音变：30条
 
@@ -401,2812 +410,2555 @@ V0.5《雪原上的一天》32句仍是早期的文学实验文本。不能将�
 
 《扎格伦字典 V0.4》
 Žaġręn Dictionary V0.4
-藏朔原语 V0.8 音系与旧词整合首期 · 2026-11-06
+藏朔原语 Žaġręn · V0.8 音系／历史词干 · 2026-11-06
 
-【版本说明】
-保留V0.3全部339个条目；对151条原旧词作系统审阅，其中143条保留词典原形、4条同源词正式修订、4条仅有祖语形式的词另列不入正文的候选不定式。
-本版本不新增词典条目，且不将历史变位格尾自动等同现行全部完整范式；旧词审订是词典原形核查，而非整个语言的重音与屈折已经完全确定。
-现行V0.8沿用原V0.6的21条音变，扩充4个词族修订；宽式IPA未标注重音和实际语流。
+【现行版本】
+V0.4 保留前版339个词典条目，系统审查旧阶段151个词条：5个旧词条已完成现代词形修订，142个目前维持原形，4个仍仅有祖语构拟；V0.7新录词另有2个词条校正。7个词条共9处方言拼写升级。
+本书不将早期形态学格位擅自宣布为已验证的V0.8完整现代范式；已有名词、动词、形容词范式仍作为历史记录，并由语法生成器按受限规则转换。
+21条既有音变仍有效；V08-STEM-ZYM 是“冬季—冬季的”词族的限定词干类推，并不是随便在所有词中替换 i→ÿ 的音变。
+所有 IPA 都是按字母映射得到的宽式音位，词汇重音、节奏与连读尚未确立。
+古老的V0.3词形保存在每条发生变化的词条中；未改变的条目也完成了当前作用域内的音变排查。
 
-【形式统计】
-总条目：339
-三方言正式词典原形齐备：335
-正式词典原形的三方言宽式IPA：1005
-已登记V0.6–V0.8现代词形：192
-旧词审阅：151；旧形保留：143；正式改形：4；祖语候选：4
+【统计】词条 339；三方言原形 335；宽式IPA 1005；已登记现代原形 193；本轮词条变化 7，方言拼写变化 9。
+名词：132
+动词：73
+形容词：67
+分词：20
+代词：7
+副词：16
+介词：6
+连词：5
+助词：4
+指示词：2
+疑问词：2
+感叹词：3
+数词：2
 
-【全书条目】
+【现代化实例】
+女人 N：žena → ẑena
+生活 N：žiŵeť → ẑiŵeť
+冬季的 N／SE／W：zimnÿ / zimni / zimnÿ → zÿmnÿ / ẑimni / zÿmnÿ
+活体的 N：žiŵÿ → ẑiŵÿ；生活中的 N：žiŵejącÿ → ẑiŵejącÿ
+句子 N：predloženie → predloẑenie；语言 SE：jazik → jaẑik
 
-=== 名词 ===
+【全书词条】
 
-D0001 傍晚 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+━━━━ 名词 ━━━━
+
+D0001 傍晚 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ŵečer /wet͡ʃer/ | SE: večer /vet͡ʃer/ | W: ŵečer /wet͡ʃer/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：来自V0.5 S22主格；词典形尚待详细音系核定；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：暂未确定
+  备注：来自V0.5 S22主格；词典形尚待详细音系核定；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0002 边界 [名词；V0.6已衍变的旧词]
+D0002 边界 [名词 · V0.6已衍变的旧词]
   N: ġranca /ɣrant͡sa/ | SE: granca /ɡrant͡sa/ | W: ġranc /ɣrant͡s/
-  内部构拟祖语：*granica
-  历史词形：N ġranica / SE granica / W ġranic
-  音变依据：C02
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*granica
+  旧阶段词形：N ġranica；SE granica；W ġranic
+  音变与对应：C02
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0003 冰 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0003 冰 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: led /led/ | SE: led /led/ | W: łed /ɫed/
-  内部构拟祖语：*led
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=O；gender=阳；animacy=无生
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*led
+  词法标签：class=O；gender=阳；animacy=无生
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0004 冰脊 [名词；V0.6新构词原形；未完成变格]
+D0004 冰脊 [名词 · V0.6新构词原形；未完成变格]
   N: rjүd /rjyd/ | SE: rud /rud/ | W: řүd /r̝yd/
-  内部构拟祖语：*rʲud
-  音变依据：N16, N17, SE15, W14
-  说明：词典形已建立，完整变格仍待构拟
-  资料：assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*rʲud
+  音变与对应：N16、N17、SE15、W14
+  备注：词典形已建立，完整变格仍待构拟
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0005 城镇（城市） [名词；V0.6已衍变的旧词]
+D0005 城镇（城市） [名词 · V0.6已衍变的旧词]
   N: ġrad /ɣrad/ | SE: grad /ɡrad/ | W: ġrad /ɣrad/
-  内部构拟祖语：*grad
-  历史词形：N ġrad / SE grad / W ġrad
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-v06-phonology-lexicon.json、assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*grad
+  旧阶段词形：N ġrad；SE grad；W ġrad
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0006 词／单词 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0006 词／单词 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: sloŵo /slowo/ | SE: slovo /slovo/ | W: słoŵ /sɫow/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：来自V0.5 S19的宾格；中性主宾可能同形，但未独立核定变格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：暂未确定
+  备注：来自V0.5 S19的宾格；中性主宾可能同形，但未独立核定变格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0007 村庄 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0007 村庄 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ŵes /wes/ | SE: ves /ves/ | W: ŵes /wes/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：来自V0.5 S01主格上下文；祖语重建未定；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：暂未确定
+  备注：来自V0.5 S01主格上下文；祖语重建未定；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0008 大门 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0008 大门 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ŵrata /wrata/ | SE: vrata /vrata/ | W: ŵrat /wrat/
-  内部构拟祖语：*vrata
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*vrata
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0009 道路 [名词；V0.6已衍变的旧词]
+D0009 道路 [名词 · V0.6已衍变的旧词]
   N: droġa /droɣa/ | SE: droga /droɡa/ | W: dro /dro/
-  内部构拟祖语：*droga
-  历史词形：N droġa / SE droga / W droġ
-  音变依据：W11
-  说明：
-  资料：assets/data/zagren-v06-phonology-lexicon.json、assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：*droga
+  旧阶段词形：N droġa；SE droga；W droġ
+  音变与对应：W11
+  备注：
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0010 地区 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0010 地区 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: strana /strana/ | SE: strana /strana/ | W: stran /stran/
-  内部构拟祖语：*strana
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*strana
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0011 冬季 [名词；V0.6已衍变的旧词]
+D0011 冬季 [名词 · V0.6已衍变的旧词]
   N: zÿma /zɨma/ | SE: ẑima /ʑima/ | W: zÿm /zɨm/
-  内部构拟祖语：*zÿma
-  历史词形：N zÿma / SE zima / W zÿm
-  音变依据：SE12
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*zÿma
+  旧阶段词形：N zÿma；SE zima；W zÿm
+  音变与对应：SE12
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0012 风 [名词；V0.6已衍变的旧词]
+D0012 风 [名词 · V0.6已衍变的旧词]
   N: ŵer /wer/ | SE: ver /ver/ | W: ŵer /wer/
-  内部构拟祖语：*vetr
-  历史词形：N ŵetr / SE vetr / W ŵetr
-  音变依据：C04
-  说明：
-  资料：assets/data/zagren-v06-phonology-lexicon.json、assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：*vetr
+  旧阶段词形：N ŵetr；SE vetr；W ŵetr
+  音变与对应：C04
+  备注：
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0013 骨 [名词；V0.6已衍变的旧词]
+D0013 骨 [名词 · V0.6已衍变的旧词]
   N: kӧśť /køɕtʲ/ | SE: kość /koɕt͡ɕ/ | W: košt /koʃt/
-  内部构拟祖语：*kosʲtʲ
-  历史词形：N kośť / SE kość / W košt
-  形态：gender=阴；class=I；animacy=无生
-  音变依据：N12
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*kosʲtʲ
+  旧阶段词形：N kośť；SE kość；W košt
+  词法标签：gender=阴；class=I；animacy=无生
+  音变与对应：N12
 
-D0014 挂钩 [名词；V0.6新构词原形；未完成变格]
+D0014 挂钩 [名词 · V0.6新构词原形；未完成变格]
   N: ǩүta /kʲyta/ | SE: ćuta /t͡ɕuta/ | W: ǩүt /kʲyt/
-  内部构拟祖语：*kʲuta
-  音变依据：N16, N17, SE15, W14, W15
-  说明：词典形已建立，完整变格仍待构拟
-  资料：assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*kʲuta
+  音变与对应：N16、N17、SE15、W14、W15
+  备注：词典形已建立，完整变格仍待构拟
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0015 管道 [名词；V0.6已衍变的旧词]
+D0015 管道 [名词 · V0.6已衍变的旧词]
   N: ṱruba /tʰruba/ | SE: truba /truba/ | W: þřub /θr̝ub/
-  内部构拟祖语：*tʲruba
-  历史词形：N ťruba / SE truba / W þrub
-  形态：gender=阴；class=A；animacy=无生
-  音变依据：N14, W12
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*tʲruba
+  旧阶段词形：N ťruba；SE truba；W þrub
+  词法标签：gender=阴；class=A；animacy=无生
+  音变与对应：N14、W12
 
-D0016 寒冷 [名词；V0.6已衍变的旧词]
+D0016 寒冷 [名词 · V0.6已衍变的旧词]
   N: ħold /χold/ | SE: hȯld /xɵld/ | W: ħołd /χoɫd/
-  内部构拟祖语：*xolod
-  历史词形：N ħolod / SE holod / W ħołod
-  音变依据：C01, SE13
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*xolod
+  旧阶段词形：N ħolod；SE holod；W ħołod
+  音变与对应：C01、SE13
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0017 河流 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0017 河流 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: reka /reka/ | SE: reka /reka/ | W: rek /rek/
-  内部构拟祖语：*reka
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；gender=阴；animacy=无生
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*reka
+  词法标签：class=A；gender=阴；animacy=无生
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0018 灰烬 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0018 灰烬 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: pepel /pepel/ | SE: pepel /pepel/ | W: pepeł /pepeɫ/
-  内部构拟祖语：*pepel
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*pepel
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0019 火 [名词；V0.6已衍变的旧词]
+D0019 火 [名词 · V0.6已衍变的旧词]
   N: ӧġń /øɣɲ/ | SE: oң /oŋ/ | W: oġn /oɣn/
-  内部构拟祖语：*ognʲ
-  历史词形：N oġń / SE ogon / W oġn
-  形态：gender=阳；class=J；animacy=无生
-  音变依据：N12, SE14
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*ognʲ
+  旧阶段词形：N oġń；SE ogon；W oġn
+  词法标签：gender=阳；class=J；animacy=无生
+  音变与对应：N12、SE14
 
-D0020 家（房屋） [名词；V0.6已衍变的旧词]
+D0020 家（房屋） [名词 · V0.6已衍变的旧词]
   N: dom /dom/ | SE: dom /dom/ | W: dom /dom/
-  内部构拟祖语：*dom
-  历史词形：N dom / SE dom / W dom
-  形态：gender=阳；class=O；animacy=无生
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*dom
+  旧阶段词形：N dom；SE dom；W dom
+  词法标签：gender=阳；class=O；animacy=无生
 
-D0021 结扣 [名词；V0.6新构词原形；未完成变格]
+D0021 结扣 [名词 · V0.6新构词原形；未完成变格]
   N: ǩel /kʲel/ | SE: ćel /t͡ɕel/ | W: ǩel /kʲel/
-  内部构拟祖语：*kʲel
-  音变依据：N17, SE15, W14
-  说明：词典形已建立，完整变格仍待构拟
-  资料：assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*kʲel
+  音变与对应：N17、SE15、W14
+  备注：词典形已建立，完整变格仍待构拟
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0022 界线 [名词；V0.6新构词原形；未完成变格]
+D0022 界线 [名词 · V0.6新构词原形；未完成变格]
   N: meďa /medʲa/ | SE: meҗa /med͡ʒa/ | W: meẑ /meʑ/
-  内部构拟祖语：*medja
-  音变依据：N17, SE15, W14, W15
-  说明：词典形已建立，完整变格仍待构拟
-  资料：assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*medja
+  音变与对应：N17、SE15、W14、W15
+  备注：词典形已建立，完整变格仍待构拟
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0023 雷鸣 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0023 雷鸣 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ġrom /ɣrom/ | SE: grom /ɡrom/ | W: ġrom /ɣrom/
-  内部构拟祖语：*grom
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*grom
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0024 炉 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0024 炉 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: peč /pet͡ʃ/ | SE: peč /pet͡ʃ/ | W: peč /pet͡ʃ/
-  内部构拟祖语：*peč
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*peč
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0025 母亲 [名词；V0.6已衍变的旧词]
+D0025 母亲 [名词 · V0.6已衍变的旧词]
   N: mať /matʲ/ | SE: mat /mat/ | W: maþ /maθ/
-  内部构拟祖语：*matʲ
-  历史词形：N mať / SE mat / W maþ
-  形态：gender=阴；class=IRR；animacy=有生
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*matʲ
+  旧阶段词形：N mať；SE mat；W maþ
+  词法标签：gender=阴；class=IRR；animacy=有生
 
-D0026 男子 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0026 男子 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: muž /muʒ/ | SE: muž /muʒ/ | W: muž /muʒ/
-  内部构拟祖语：*muž
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*muž
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0027 女人 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
-  N: žena /ʒena/ | SE: žena /ʒena/ | W: žen /ʒen/
-  内部构拟祖语：*žena
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+D0027 女人 [名词 · V0.8同源词干修订（现代原形）]
+  N: ẑena /ʑena/ | SE: žena /ʒena/ | W: žen /ʒen/
+  祖语重建／内部词源：*žena
+  旧阶段词形：N žena；SE žena；W žen
+  音变与对应：N13
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证；V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0028 皮肤 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0028 皮肤 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: koža /koʒa/ | SE: koža /koʒa/ | W: kož /koʒ/
-  内部构拟祖语：*koža
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*koža
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0029 清晨 [名词；V0.6已衍变的旧词]
+D0029 清晨 [名词 · V0.6已衍变的旧词]
   N: utr /utr/ | SE: utro /utro/ | W: utr /utr/
-  内部构拟祖语：*utro
-  历史词形：N utro / SE utro / W utr
-  音变依据：N15
-  说明：
-  资料：assets/data/zagren-v06-phonology-lexicon.json、assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：*utro
+  旧阶段词形：N utro；SE utro；W utr
+  音变与对应：N15
+  备注：
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0030 荣耀 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0030 荣耀 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: slaŵa /slawa/ | SE: slava /slava/ | W: słaŵ /sɫaw/
-  内部构拟祖语：*slava
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*slava
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0031 乳 [名词；V0.6已衍变的旧词]
+D0031 乳 [名词 · V0.6已衍变的旧词]
   N: molko /molko/ | SE: mȯlko /mɵlko/ | W: mołk /moɫk/
-  内部构拟祖语：*moloko
-  历史词形：N moloko / SE moloko / W mołok
-  音变依据：C01, SE13
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*moloko
+  旧阶段词形：N moloko；SE moloko；W mołok
+  音变与对应：C01、SE13
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0032 森林 [名词；V0.6已衍变的旧词]
+D0032 森林 [名词 · V0.6已衍变的旧词]
   N: les /les/ | SE: les /les/ | W: łes /ɫes/
-  内部构拟祖语：*les
-  历史词形：N les / SE les / W łes
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-v06-phonology-lexicon.json、assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*les
+  旧阶段词形：N les；SE les；W łes
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0033 山 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0033 山 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ġora /ɣora/ | SE: gora /ɡora/ | W: ġor /ɣor/
-  内部构拟祖语：*gora
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：gender=阴；class=A；animacy=无生
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：*gora
+  词法标签：gender=阴；class=A；animacy=无生
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0034 神明 [名词；V0.6已衍变的旧词]
+D0034 神明 [名词 · V0.6已衍变的旧词]
   N: boġ /boɣ/ | SE: bog /boɡ/ | W: bo /bo/
-  内部构拟祖语：*bog
-  历史词形：N boġ / SE bog / W boġ
-  形态：gender=阳；class=O；animacy=有生
-  音变依据：W11
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*bog
+  旧阶段词形：N boġ；SE bog；W boġ
+  词法标签：gender=阳；class=O；animacy=有生
+  音变与对应：W11
 
-D0035 生命 [名词；V0.6已衍变的旧词]
+D0035 生命 [名词 · V0.6已衍变的旧词]
   N: ẑiŵot /ʑiwot/ | SE: život /ʒivot/ | W: žiŵot /ʒiwot/
-  内部构拟祖语：*život
-  历史词形：N žiŵot / SE život / W žiŵot
-  音变依据：N13
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*život
+  旧阶段词形：N žiŵot；SE život；W žiŵot
+  音变与对应：N13
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0036 尸体 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0036 尸体 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: trup /trup/ | SE: trup /trup/ | W: trup /trup/
-  内部构拟祖语：*trup
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*trup
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0037 石头 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0037 石头 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: kamęń /kamɛ̃ɲ/ | SE: kamen /kamen/ | W: kamęn /kamɛ̃n/
-  内部构拟祖语：*kamenʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*kamenʲ
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0038 手 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0038 手 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ręka /rɛ̃ka/ | SE: renka /renka/ | W: ręk /rɛ̃k/
-  内部构拟祖语：*ręka
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：gender=阴；class=A；animacy=无生
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：*ręka
+  词法标签：gender=阴；class=A；animacy=无生
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0039 水 [名词；V0.6已衍变的旧词]
+D0039 水 [名词 · V0.6已衍变的旧词]
   N: ŵoda /woda/ | SE: voda /voda/ | W: ŵod /wod/
-  内部构拟祖语：*voda
-  历史词形：N ŵoda / SE voda / W ŵod
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*voda
+  旧阶段词形：N ŵoda；SE voda；W ŵod
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0040 死亡 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0040 死亡 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: smerť /smertʲ/ | SE: smert /smert/ | W: smerþ /smerθ/
-  内部构拟祖语：*smertʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：gender=阴；class=I；animacy=无生
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：*smertʲ
+  词法标签：gender=阴；class=I；animacy=无生
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0041 铁 [名词；V0.6已衍变的旧词]
+D0041 铁 [名词 · V0.6已衍变的旧词]
   N: ẑelezo /ʑelezo/ | SE: železo /ʒelezo/ | W: žłez /ʒɫez/
-  内部构拟祖语：*železo
-  历史词形：N železo / SE železo / W žełez
-  音变依据：N13, W13
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*železo
+  旧阶段词形：N železo；SE železo；W žełez
+  音变与对应：N13、W13
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0042 头颅 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0042 头颅 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ġłaŵa /ɣɫawa/ | SE: glava /ɡlava/ | W: ġłaŵ /ɣɫaw/
-  内部构拟祖语：*glava
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：gender=阴；class=A；animacy=无生
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：*glava
+  词法标签：gender=阴；class=A；animacy=无生
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0043 兄弟 [名词；V0.6已衍变的旧词]
+D0043 兄弟 [名词 · V0.6已衍变的旧词]
   N: brat /brat/ | SE: brat /brat/ | W: brat /brat/
-  内部构拟祖语：*brat
-  历史词形：N brat / SE brat / W brat
-  形态：gender=阳；class=O；animacy=有生
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*brat
+  旧阶段词形：N brat；SE brat；W brat
+  词法标签：gender=阳；class=O；animacy=有生
 
-D0044 雪 [名词；V0.6已衍变的旧词]
+D0044 雪 [名词 · V0.6已衍变的旧词]
   N: sęġ /sɛ̃ɣ/ | SE: seg /seɡ/ | W: sne /sne/
-  内部构拟祖语：*sneg
-  历史词形：N sneġ / SE sneg / W sneġ
-  形态：gender=阳；class=O；animacy=无生
-  音变依据：N11, SE11, W11
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*sneg
+  旧阶段词形：N sneġ；SE sneg；W sneġ
+  词法标签：gender=阳；class=O；animacy=无生
+  音变与对应：N11、SE11、W11
 
-D0045 羊羔 [名词；V0.6已衍变的旧词]
+D0045 羊羔 [名词 · V0.6已衍变的旧词]
   N: jaġnę /jaɣnɛ̃/ | SE: jaңe /jaŋe/ | W: jaġn /jaɣn/
-  内部构拟祖语：*jagnę
-  历史词形：N jaġnę / SE jagne / W jaġn
-  形态：gender=中；class=N；animacy=有生
-  音变依据：SE14
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*jagnę
+  旧阶段词形：N jaġnę；SE jagne；W jaġn
+  词法标签：gender=中；class=N；animacy=有生
+  音变与对应：SE14
 
-D0046 夜晚 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0046 夜晚 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: noč /not͡ʃ/ | SE: noč /not͡ʃ/ | W: noč /not͡ʃ/
-  内部构拟祖语：*noč
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*noč
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0047 阴影 [名词；V0.6已衍变的旧词]
+D0047 阴影 [名词 · V0.6已衍变的旧词]
   N: ťęń /tʲɛ̃ɲ/ | SE: ten /ten/ | W: þęn /θɛ̃n/
-  内部构拟祖语：*tʲenʲ
-  历史词形：N ťęń / SE ten / W þęn
-  形态：gender=阳；class=J；animacy=无生
-  资料：assets/data/zagren-comparative-lexicon-v01.json、assets/data/zagren-nominal-morphology-v02.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*tʲenʲ
+  旧阶段词形：N ťęń；SE ten；W þęn
+  词法标签：gender=阳；class=J；animacy=无生
 
-D0048 鱼 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0048 鱼 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: rÿba /rɨba/ | SE: riba /riba/ | W: rÿb /rɨb/
-  内部构拟祖语：*rÿba
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*rÿba
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0049 噪声 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0049 噪声 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: šum /ʃum/ | SE: šum /ʃum/ | W: šum /ʃum/
-  内部构拟祖语：*šum
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*šum
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0050 真实 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0050 真实 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: praŵda /prawda/ | SE: pravda /pravda/ | W: praŵd /prawd/
-  内部构拟祖语：*pravda
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*pravda
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0051 纸页 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0051 纸页 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: list /list/ | SE: list /list/ | W: łist /ɫist/
-  内部构拟祖语：*list
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=O；gender=阳；animacy=无生
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*list
+  词法标签：class=O；gender=阳；animacy=无生
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0052 桌子 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0052 桌子 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: stol /stol/ | SE: stol /stol/ | W: stoł /stoɫ/
-  内部构拟祖语：*stol
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*stol
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0053 姊妹 [名词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0053 姊妹 [名词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: sestra /sestra/ | SE: sestra /sestra/ | W: sestr /sestr/
-  内部构拟祖语：*sestra
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-comparative-lexicon-v01.json
+  祖语重建／内部词源：*sestra
+  备注：V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 动词 ===
+━━━━ 动词 ━━━━
 
-D0054 安放、放置 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0054 安放、放置 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: staŵiť /stawitʲ/ | SE: stavit /stavit/ | W: staŵiþ /stawiθ/
-  内部构拟祖语：*stavitʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=I；aspect=IPFV；valency=ACC+na+ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*stavitʲ
+  词法标签：class=I；aspect=IPFV；valency=ACC+na+ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0055 安放完成 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0055 安放完成 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: postaŵiť /postawitʲ/ | SE: postavit /postavit/ | W: postaŵiþ /postawiθ/
-  内部构拟祖语：*postavitʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=I；aspect=PFV；valency=ACC+na+ACC；kind=strict
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*postavitʲ
+  词法标签：class=I；aspect=PFV；valency=ACC+na+ACC；kind=strict
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0056 把话说完 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0056 把话说完 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: proġoŵoriť /proɣoworitʲ/ | SE: progovorit /proɡovorit/ | W: proġoŵoriþ /proɣoworiθ/
-  内部构拟祖语：*progovoritʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=I；aspect=PFV；valency=—/s+INS；kind=bounded
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*progovoritʲ
+  词法标签：class=I；aspect=PFV；valency=—/s+INS；kind=bounded
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0057 奔跑（反复） [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0057 奔跑（反复） [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: beġať /beɣatʲ/ | SE: begat /beɡat/ | W: beġaþ /beɣaθ/
-  内部构拟祖语：*begatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=IPFV；valency=—；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*begatʲ
+  词法标签：class=A；aspect=IPFV；valency=—；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0058 存在、是 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0058 存在、是 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: byť /bytʲ/ | SE: byt /byt/ | W: byþ /byθ/
-  内部构拟祖语：*bytʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=IRR-BE；aspect=IPFV；valency=NOM/LOC；kind=irregular
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*bytʲ
+  词法标签：class=IRR-BE；aspect=IPFV；valency=NOM/LOC；kind=irregular
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0059 带来 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0059 带来 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: prineseť /prinesetʲ/ | SE: prineset /prineset/ | W: prineseþ /prineseθ/
-  内部构拟祖语：*prinesetʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=E；aspect=PFV；valency=ACC；kind=directional
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*prinesetʲ
+  词法标签：class=E；aspect=PFV；valency=ACC；kind=directional
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0060 等候 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0060 等候 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ždať /ʒdatʲ/ | SE: ždat /ʒdat/ | W: ždaþ /ʒdaθ/
-  内部构拟祖语：*ždatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=IPFV；valency=ACC/GEN；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*ždatʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC/GEN；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0061 抵达终点 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0061 抵达终点 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: doprÿħodiť /doprɨχoditʲ/ | SE: doprihodit /doprixodit/ | W: doprÿħodiþ /doprɨχodiθ/
-  内部构拟祖语：*doprÿxoditʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=I；aspect=PFV；valency=—/v+ACC；kind=telic
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*doprÿxoditʲ
+  词法标签：class=I；aspect=PFV；valency=—/v+ACC；kind=telic
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0062 反复搬运 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0062 反复搬运 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: nosiť /nositʲ/ | SE: nosit /nosit/ | W: nosiþ /nosiθ/
-  内部构拟祖语：*nositʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=I；aspect=IPFV；valency=ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*nositʲ
+  词法标签：class=I；aspect=IPFV；valency=ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0063 给予 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0063 给予 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: dať /datʲ/ | SE: dat /dat/ | W: daþ /daθ/
-  内部构拟祖语：*datʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=IRR-GIVE；aspect=PFV；valency=ACC+DAT；kind=irregular
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*datʲ
+  词法标签：class=IRR-GIVE；aspect=PFV；valency=ACC+DAT；kind=irregular
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0064 喊叫 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0064 喊叫 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: kričať /krit͡ʃatʲ/ | SE: kričat /krit͡ʃat/ | W: kričaþ /krit͡ʃaθ/
-  内部构拟祖语：*kričatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=IPFV；valency=—；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*kričatʲ
+  词法标签：class=A；aspect=IPFV；valency=—；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0065 呼唤 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0065 呼唤 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: zŵať /zwatʲ/ | SE: zvat /zvat/ | W: zŵaþ /zwaθ/
-  内部构拟祖语：*zvatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=IPFV；valency=ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*zvatʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0066 讲话 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0066 讲话 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ġoŵoriť /ɣoworitʲ/ | SE: govorit /ɡovorit/ | W: ġoŵoriþ /ɣoworiθ/
-  内部构拟祖语：*govoritʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=I；aspect=IPFV；valency=—/s+INS；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*govoritʲ
+  词法标签：class=I；aspect=IPFV；valency=—/s+INS；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0067 结冻、冻结 [动词；仅祖语词根或语法研究基础，现代方言原形未核定]
-  正式三方言词典原形：尚未核定
-  V0.8 未核定候选（不得视为正式词条）：N zamrznuť /zamrznutʲ/ / SE zamrznut /zamrznut/ / W zamrznuþ /zamrznuθ/
-  内部构拟祖语：*zamrznutʲ
-  形态：aspect=PFV；valency=—
-  说明：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
-  资料：assets/data/zagren-modifier-morphology-v04.json
+D0067 结冻、冻结 [动词 · 仅祖语词根或语法研究基础，现代方言原形未核定]
+  只有重建祖语词根；现代三方言原形未核定
+  祖语重建／内部词源：*zamrznutʲ
+  词法标签：aspect=PFV；valency=—
+  备注：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0068 开始喊叫 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0068 开始喊叫 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: zakričať /zakrit͡ʃatʲ/ | SE: zakričat /zakrit͡ʃat/ | W: zakričaþ /zakrit͡ʃaθ/
-  内部构拟祖语：*zakričatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=PFV；valency=—；kind=inchoative
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*zakričatʲ
+  词法标签：class=A；aspect=PFV；valency=—；kind=inchoative
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0069 看见 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0069 看见 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ŵideť /widetʲ/ | SE: videt /videt/ | W: ŵideþ /wideθ/
-  内部构拟祖语：*videtʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=E；aspect=IPFV；valency=ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*videtʲ
+  词法标签：class=E；aspect=IPFV；valency=ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0070 看见（一次实现） [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0070 看见（一次实现） [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: uŵideť /uwidetʲ/ | SE: uvidet /uvidet/ | W: uŵideþ /uwideθ/
-  内部构拟祖语：*uvidetʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=E；aspect=PFV；valency=ACC；kind=strict
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*uvidetʲ
+  词法标签：class=E；aspect=PFV；valency=ACC；kind=strict
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0071 来回走动 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0071 来回走动 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ħodiť /χoditʲ/ | SE: hodit /xodit/ | W: ħodiþ /χodiθ/
-  内部构拟祖语：*xoditʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=I；aspect=IPFV；valency=—；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*xoditʲ
+  词法标签：class=I；aspect=IPFV；valency=—；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0072 能够 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0072 能够 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: moħť /moχtʲ/ | SE: moht /moxt/ | W: moħþ /moχθ/
-  内部构拟祖语：*moxtʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=IRR-CAN；aspect=IPFV；valency=INF；kind=irregular
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*moxtʲ
+  词法标签：class=IRR-CAN；aspect=IPFV；valency=INF；kind=irregular
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0073 去、前往 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0073 去、前往 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: iť /itʲ/ | SE: it /it/ | W: iþ /iθ/
-  内部构拟祖语：*itʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=IRR-GO；aspect=IPFV；valency=—/v+ACC；kind=irregular
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*itʲ
+  词法标签：class=IRR-GO；aspect=IPFV；valency=—/v+ACC；kind=irregular
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0074 燃烧 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0074 燃烧 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ġoreť /ɣoretʲ/ | SE: goret /ɡoret/ | W: ġoreþ /ɣoreθ/
-  内部构拟祖语：*goretʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=E；aspect=IPFV；valency=—；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*goretʲ
+  词法标签：class=E；aspect=IPFV；valency=—；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0075 饶恕 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0075 饶恕 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ščadoŵať /ʃt͡ʃadowatʲ/ | SE: ščadovat /ʃt͡ʃadovat/ | W: ščadoŵaþ /ʃt͡ʃadowaθ/
-  内部构拟祖语：*ščadovatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=IPFV；valency=ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*ščadovatʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0076 饶恕一次 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0076 饶恕一次 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: poščadoŵať /poʃt͡ʃadowatʲ/ | SE: poščadovat /poʃt͡ʃadovat/ | W: poščadoŵaþ /poʃt͡ʃadowaθ/
-  内部构拟祖语：*poščadovatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=PFV；valency=ACC；kind=strict
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*poščadovatʲ
+  词法标签：class=A；aspect=PFV；valency=ACC；kind=strict
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0077 融化 [动词；仅祖语词根或语法研究基础，现代方言原形未核定]
-  正式三方言词典原形：尚未核定
-  V0.8 未核定候选（不得视为正式词条）：N tajať /tajatʲ/ / SE tajat /tajat/ / W tajaþ /tajaθ/
-  内部构拟祖语：*tajatʲ
-  形态：aspect=IPFV；valency=—
-  说明：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
-  资料：assets/data/zagren-modifier-morphology-v04.json
+D0077 融化 [动词 · 仅祖语词根或语法研究基础，现代方言原形未核定]
+  只有重建祖语词根；现代三方言原形未核定
+  祖语重建／内部词源：*tajatʲ
+  词法标签：aspect=IPFV；valency=—
+  备注：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0078 生活 [动词；V0.8同源词干修订（现代原形）]
+D0078 生活 [动词 · V0.8同源词干修订（现代原形）]
   N: ẑiŵeť /ʑiwetʲ/ | SE: živet /ʒivet/ | W: žiŵeþ /ʒiweθ/
-  内部构拟祖语：*živetʲ
-  历史词形：N žiŵeť / SE živet / W žiŵeþ
-  V0.8审阅：词典原形审订，非全部现代格位验证；与已正式登记的同根音变统一
-  形态：class=E；aspect=IPFV；valency=—/v+LOC；kind=productive
-  音变依据：N13-F-LIVE
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*živetʲ
+  旧阶段词形：N žiŵeť；SE živet；W žiŵeþ
+  词法标签：class=E；aspect=IPFV；valency=—/v+LOC；kind=productive
+  音变与对应：N13-F-LIVE、N13
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变；V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查
 
-D0079 使……冰封 [动词；仅祖语词根或语法研究基础，现代方言原形未核定]
-  正式三方言词典原形：尚未核定
-  V0.8 未核定候选（不得视为正式词条）：N zamraziť /zamrazitʲ/ / SE zamrazit /zamrazit/ / W zamraziþ /zamraziθ/
-  内部构拟祖语：*zamrazitʲ
-  形态：aspect=PFV；valency=ACC
-  说明：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
-  资料：assets/data/zagren-modifier-morphology-v04.json
+D0079 使……冰封 [动词 · 仅祖语词根或语法研究基础，现代方言原形未核定]
+  只有重建祖语词根；现代三方言原形未核定
+  祖语重建／内部词源：*zamrazitʲ
+  词法标签：aspect=PFV；valency=ACC
+  备注：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0080 守卫、保护 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0080 守卫、保护 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ħraniť /χranitʲ/ | SE: hranit /xranit/ | W: ħraniþ /χraniθ/
-  内部构拟祖语：*xranitʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=I；aspect=IPFV；valency=ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*xranitʲ
+  词法标签：class=I；aspect=IPFV；valency=ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0081 睡眠 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0081 睡眠 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: spať /spatʲ/ | SE: spat /spat/ | W: spaþ /spaθ/
-  内部构拟祖语：*spatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=IPFV；valency=—；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*spatʲ
+  词法标签：class=A；aspect=IPFV；valency=—；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0082 睡一阵 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0082 睡一阵 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: pospať /pospatʲ/ | SE: pospat /pospat/ | W: pospaþ /pospaθ/
-  内部构拟祖语：*pospatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=PFV；valency=—；kind=delimitative
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*pospatʲ
+  词法标签：class=A；aspect=PFV；valency=—；kind=delimitative
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0083 听到（有结果） [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0083 听到（有结果） [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: uslÿšať /uslɨʃatʲ/ | SE: uslišat /usliʃat/ | W: usłÿšaþ /usɫɨʃaθ/
-  内部构拟祖语：*uslÿšatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=PFV；valency=ACC；kind=strict
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*uslÿšatʲ
+  词法标签：class=A；aspect=PFV；valency=ACC；kind=strict
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0084 听见、听 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0084 听见、听 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: slÿšať /slɨʃatʲ/ | SE: slišat /sliʃat/ | W: słÿšaþ /sɫɨʃaθ/
-  内部构拟祖语：*slÿšatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=IPFV；valency=ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*slÿšatʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0085 忘记 [动词；仅祖语词根或语法研究基础，现代方言原形未核定]
-  正式三方言词典原形：尚未核定
-  V0.8 未核定候选（不得视为正式词条）：N zabÿť /zabɨtʲ/ / SE zabit /zabit/ / W zabÿþ /zabɨθ/
-  内部构拟祖语：*zabÿtʲ
-  形态：aspect=PFV；valency=ACC
-  说明：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
-  资料：assets/data/zagren-modifier-morphology-v04.json
+D0085 忘记 [动词 · 仅祖语词根或语法研究基础，现代方言原形未核定]
+  只有重建祖语词根；现代三方言原形未核定
+  祖语重建／内部词源：*zabÿtʲ
+  词法标签：aspect=PFV；valency=ACC
+  备注：仅记录祖语词根及分词研究用途，暂不编造三方言不定式
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0086 携带（单次过程） [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0086 携带（单次过程） [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: neseť /nesetʲ/ | SE: neset /neset/ | W: neseþ /neseθ/
-  内部构拟祖语：*nesetʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=E；aspect=IPFV；valency=ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*nesetʲ
+  词法标签：class=E；aspect=IPFV；valency=ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0087 写 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0087 写 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: pisať /pisatʲ/ | SE: pisat /pisat/ | W: pisaþ /pisaθ/
-  内部构拟祖语：*pisatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=IPFV；valency=ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*pisatʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0088 写完 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0088 写完 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: napisať /napisatʲ/ | SE: napisat /napisat/ | W: napisaþ /napisaθ/
-  内部构拟祖语：*napisatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=PFV；valency=ACC；kind=strict
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*napisatʲ
+  词法标签：class=A；aspect=PFV；valency=ACC；kind=strict
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0089 知道 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0089 知道 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: znať /znatʲ/ | SE: znat /znat/ | W: znaþ /znaθ/
-  内部构拟祖语：*znatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=IPFV；valency=ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*znatʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0090 制作、做 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0090 制作、做 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: delať /delatʲ/ | SE: delat /delat/ | W: dełaþ /deɫaθ/
-  内部构拟祖语：*delatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=IPFV；valency=ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*delatʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0091 注视 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0091 注视 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: patriť /patritʲ/ | SE: patrit /patrit/ | W: patriþ /patriθ/
-  内部构拟祖语：*patritʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=I；aspect=IPFV；valency=ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*patritʲ
+  词法标签：class=I；aspect=IPFV；valency=ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0092 走来、抵达（过程） [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0092 走来、抵达（过程） [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: prÿħodiť /prɨχoditʲ/ | SE: prihodit /prixodit/ | W: prÿħodiþ /prɨχodiθ/
-  内部构拟祖语：*prÿxoditʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=I；aspect=IPFV；valency=—/v+ACC；kind=productive
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*prÿxoditʲ
+  词法标签：class=I；aspect=IPFV；valency=—/v+ACC；kind=productive
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0093 做成 [动词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0093 做成 [动词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: sdelať /sdelatʲ/ | SE: sdelat /sdelat/ | W: sdełaþ /sdeɫaθ/
-  内部构拟祖语：*sdelatʲ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=A；aspect=PFV；valency=ACC；kind=strict
-  说明：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：*sdelatʲ
+  词法标签：class=A；aspect=PFV；valency=ACC；kind=strict
+  备注：旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-=== 形容词 ===
+━━━━ 形容词 ━━━━
 
-D0094 白色 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0094 白色 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: belÿ /belɨ/ | SE: beli /beli/ | W: bełÿ /beɫɨ/
-  内部构拟祖语：*belÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*belÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0095 北方的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0095 北方的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: seŵernÿ /sewernɨ/ | SE: severni /severni/ | W: seŵernÿ /sewernɨ/
-  内部构拟祖语：*severnÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*severnÿ
+  词法标签：class=H；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0096 冰质的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0096 冰质的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ledenÿ /ledenɨ/ | SE: ledeni /ledeni/ | W: łedenÿ /ɫedenɨ/
-  内部构拟祖语：*ledenÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*ledenÿ
+  词法标签：class=H；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0097 潮冷 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0097 潮冷 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: sÿrÿ /sɨrɨ/ | SE: siri /siri/ | W: sÿrÿ /sɨrɨ/
-  内部构拟祖语：*sÿrÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*sÿrÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0098 潮湿 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0098 潮湿 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: mokrÿ /mokrɨ/ | SE: mokri /mokri/ | W: mokrÿ /mokrɨ/
-  内部构拟祖语：*mokrÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*mokrÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0099 沉重 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0099 沉重 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: tjažkÿ /tjaʒkɨ/ | SE: tjažki /tjaʒki/ | W: tjažkÿ /tjaʒkɨ/
-  内部构拟祖语：*tjažkÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*tjažkÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0100 冬季的 [形容词；V0.8同源词干修订（现代原形）]
-  N: zimnÿ /zimnɨ/ | SE: ẑimni /ʑimni/ | W: zimnÿ /zimnɨ/
-  内部构拟祖语：*zimnÿ
-  历史词形：N zimnÿ / SE zimni / W zimnÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；与已正式登记的同根音变统一
-  形态：class=H；degreeType=REL
-  音变依据：SE12-F-WINTER
-  说明：关系形容词不登记普通综合比较级；V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变
-  资料：assets/data/zagren-modifier-morphology-v04.json
+D0100 冬季的 [形容词 · V0.8同源词干修订（现代原形）]
+  N: zÿmnÿ /zɨmnɨ/ | SE: ẑimni /ʑimni/ | W: zÿmnÿ /zɨmnɨ/
+  祖语重建／内部词源：*zimnÿ
+  旧阶段词形：N zimnÿ；SE zimni；W zimnÿ
+  词法标签：class=H；degreeType=REL
+  音变与对应：SE12-F-WINTER、V08-STEM-ZYM、SE12
+  备注：关系形容词不登记普通综合比较级；V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变；V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查
 
-D0101 干燥 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0101 干燥 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: suħÿ /suχɨ/ | SE: suhi /suxi/ | W: suħÿ /suχɨ/
-  内部构拟祖语：*suxÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*suxÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0102 工业的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0102 工业的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: zaŵodnÿ /zawodnɨ/ | SE: zavodni /zavodni/ | W: zaŵodnÿ /zawodnɨ/
-  内部构拟祖语：*zavodnÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*zavodnÿ
+  词法标签：class=H；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0103 古老 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0103 古老 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: starÿ /starɨ/ | SE: stari /stari/ | W: starÿ /starɨ/
-  内部构拟祖语：*starÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*starÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0104 寒冷 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0104 寒冷 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: studenÿ /studenɨ/ | SE: studeni /studeni/ | W: studenÿ /studenɨ/
-  内部构拟祖语：*studenÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*studenÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0105 黑色 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0105 黑色 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: černÿ /t͡ʃernɨ/ | SE: černi /t͡ʃerni/ | W: černÿ /t͡ʃernɨ/
-  内部构拟祖语：*černÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*černÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0106 荒凉 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0106 荒凉 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: pustÿ /pustɨ/ | SE: pusti /pusti/ | W: pustÿ /pustɨ/
-  内部构拟祖语：*pustÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*pustÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0107 昏暗 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0107 昏暗 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: temnÿ /temnɨ/ | SE: temni /temni/ | W: temnÿ /temnɨ/
-  内部构拟祖语：*temnÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*temnÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0108 活体的 [形容词；V0.8同源词干修订（现代原形）]
+D0108 活体的 [形容词 · V0.8同源词干修订（现代原形）]
   N: ẑiŵÿ /ʑiwɨ/ | SE: živi /ʒivi/ | W: žiŵÿ /ʒiwɨ/
-  内部构拟祖语：*živÿ
-  历史词形：N žiŵÿ / SE živi / W žiŵÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；与已正式登记的同根音变统一
-  形态：class=H；degreeType=REL
-  音变依据：N13-F-LIVE-ADJ
-  说明：关系形容词不登记普通综合比较级；V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*živÿ
+  旧阶段词形：N žiŵÿ；SE živi；W žiŵÿ
+  词法标签：class=H；degreeType=REL
+  音变与对应：N13-F-LIVE-ADJ、N13
+  备注：关系形容词不登记普通综合比较级；V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变；V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查
 
-D0109 寂静 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0109 寂静 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: tiħÿ /tiχɨ/ | SE: tihi /tixi/ | W: tiħÿ /tiχɨ/
-  内部构拟祖语：*tixÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*tixÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0110 坚硬 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0110 坚硬 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: tŵerdÿ /twerdɨ/ | SE: tverdi /tverdi/ | W: tŵerdÿ /twerdɨ/
-  内部构拟祖语：*tverdÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*tverdÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0111 巨大 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0111 巨大 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ŵelikÿ /welikɨ/ | SE: veliki /veliki/ | W: ŵełikÿ /weɫikɨ/
-  内部构拟祖语：*velikÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*velikÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0112 可怖 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0112 可怖 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: strašnÿ /straʃnɨ/ | SE: strašni /straʃni/ | W: strašnÿ /straʃnɨ/
-  内部构拟祖语：*strašnÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*strašnÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0113 蓝色 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0113 蓝色 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: sińi /siɲi/ | SE: sini /sini/ | W: sini /sini/
-  内部构拟祖语：*sinʲi
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=S；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*sinʲi
+  词法标签：class=S；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0114 邻近 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0114 邻近 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: blizńi /blizɲi/ | SE: blizni /blizni/ | W: błizni /bɫizni/
-  内部构拟祖语：*bliznʲi
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=S；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*bliznʲi
+  词法标签：class=S；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0115 林地的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0115 林地的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: lesnÿ /lesnɨ/ | SE: lesni /lesni/ | W: łesnÿ /ɫesnɨ/
-  内部构拟祖语：*lesnÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*lesnÿ
+  词法标签：class=H；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0116 漫长 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0116 漫长 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: dolġÿ /dolɣɨ/ | SE: dolgi /dolɡi/ | W: dołġÿ /doɫɣɨ/
-  内部构拟祖语：*dolgÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*dolgÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0117 明亮 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0117 明亮 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: sŵetlÿ /swetlɨ/ | SE: svetli /svetli/ | W: sŵetłÿ /swetɫɨ/
-  内部构拟祖语：*svetlÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*svetlÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0118 内部的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0118 内部的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ŵnutreńi /wnutreɲi/ | SE: vnutreni /vnutreni/ | W: ŵnutreni /wnutreni/
-  内部构拟祖语：*vnutrenʲi
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=S；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*vnutrenʲi
+  词法标签：class=S；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0119 年轻 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0119 年轻 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: mladÿ /mladɨ/ | SE: mladi /mladi/ | W: mładÿ /mɫadɨ/
-  内部构拟祖语：*mladÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*mladÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0120 强壮 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0120 强壮 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: silnÿ /silnɨ/ | SE: silni /silni/ | W: siłnÿ /siɫnɨ/
-  内部构拟祖语：*silnÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*silnÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0121 清晰 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0121 清晰 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: jasnÿ /jasnɨ/ | SE: jasni /jasni/ | W: jasnÿ /jasnɨ/
-  内部构拟祖语：*jasnÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*jasnÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0122 秋季的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0122 秋季的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: osenńi /osenɲi/ | SE: osenni /osenni/ | W: osenni /osenni/
-  内部构拟祖语：*osennʲi
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=S；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*osennʲi
+  词法标签：class=S；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0123 软弱 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0123 软弱 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: slabÿ /slabɨ/ | SE: slabi /slabi/ | W: słabÿ /sɫabɨ/
-  内部构拟祖语：*slabÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*slabÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0124 山区的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0124 山区的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ġornÿ /ɣornɨ/ | SE: gorni /ɡorni/ | W: ġornÿ /ɣornɨ/
-  内部构拟祖语：*gornÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*gornÿ
+  词法标签：class=H；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0125 深 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0125 深 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ġłubokÿ /ɣɫubokɨ/ | SE: gluboki /ɡluboki/ | W: ġłubokÿ /ɣɫubokɨ/
-  内部构拟祖语：*glubokÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*glubokÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0126 石制的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0126 石制的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: kamennÿ /kamennɨ/ | SE: kamenni /kamenni/ | W: kamennÿ /kamennɨ/
-  内部构拟祖语：*kamennÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*kamennÿ
+  词法标签：class=H；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0127 死去的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0127 死去的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: mertŵÿ /mertwɨ/ | SE: mertvi /mertvi/ | W: mertŵÿ /mertwɨ/
-  内部构拟祖语：*mertvÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*mertvÿ
+  词法标签：class=H；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0128 铁锈色的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0128 铁锈色的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: rÿžÿ /rɨʒɨ/ | SE: riži /riʒi/ | W: rÿžÿ /rɨʒɨ/
-  内部构拟祖语：*rÿžÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*rÿžÿ
+  词法标签：class=H；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0129 铁制的 [形容词；V0.6已衍变的旧词]
+D0129 铁制的 [形容词 · V0.6已衍变的旧词]
   N: ẑeleznÿ /ʑeleznɨ/ | SE: železni /ʒelezni/ | W: žłeznÿ /ʒɫeznɨ/
-  内部构拟祖语：*železnÿ
-  历史词形：N železnÿ / SE železni / W žełeznÿ
-  形态：class=H；degreeType=REL
-  音变依据：N13, W13
-  说明：关系形容词不登记普通综合比较级；V0.6 同根一致修订：*železn- 继承“铁”词根，在北部应用 N13 /ʒ/>/ʑ/、在西部应用 W13 词首弱元音脱落；历史 V0.4 形式单列于 older
-  资料：assets/data/zagren-modifier-morphology-v04.json、assets/data/zagren-v06-phonology-lexicon.json
+  祖语重建／内部词源：*železnÿ
+  旧阶段词形：N železnÿ；SE železni；W žełeznÿ
+  词法标签：class=H；degreeType=REL
+  音变与对应：N13、W13
+  备注：关系形容词不登记普通综合比较级；V0.6 同根一致修订：*železn- 继承“铁”词根，在北部应用 N13 /ʒ/>/ʑ/、在西部应用 W13 词首弱元音脱落；历史 V0.4 形式单列于 older
 
-D0130 温暖 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0130 温暖 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: teplÿ /teplɨ/ | SE: tepli /tepli/ | W: tepłÿ /tepɫɨ/
-  内部构拟祖语：*teplÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*teplÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0131 夏季的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0131 夏季的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: letńi /letɲi/ | SE: letni /letni/ | W: łetni /ɫetni/
-  内部构拟祖语：*letnʲi
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=S；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*letnʲi
+  词法标签：class=S；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0132 小 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0132 小 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: malÿ /malɨ/ | SE: mali /mali/ | W: małÿ /maɫɨ/
-  内部构拟祖语：*malÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*malÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0133 新 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0133 新 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: noŵÿ /nowɨ/ | SE: novi /novi/ | W: noŵÿ /nowɨ/
-  内部构拟祖语：*novÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*novÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0134 血缘的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0134 血缘的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: kroŵnÿ /krownɨ/ | SE: krovni /krovni/ | W: kroŵnÿ /krownɨ/
-  内部构拟祖语：*krovnÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*krovnÿ
+  词法标签：class=H；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0135 迅速 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0135 迅速 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: bÿstrÿ /bɨstrɨ/ | SE: bistri /bistri/ | W: bÿstrÿ /bɨstrɨ/
-  内部构拟祖语：*bÿstrÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*bÿstrÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0136 遥远 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0136 遥远 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: dalekÿ /dalekɨ/ | SE: daleki /daleki/ | W: dałekÿ /daɫekɨ/
-  内部构拟祖语：*dalekÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=H；degreeType=QUAL
-  说明：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*dalekÿ
+  词法标签：class=H；degreeType=QUAL
+  备注：已登记比较级构词机制；本条显示原级阳性主格；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0137 最后的 [形容词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0137 最后的 [形容词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: posledńi /posledɲi/ | SE: posledni /posledni/ | W: posłedni /posɫedni/
-  内部构拟祖语：*poslednʲi
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：class=S；degreeType=REL
-  说明：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*poslednʲi
+  词法标签：class=S；degreeType=REL
+  备注：关系形容词不登记普通综合比较级；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-=== 分词 ===
+━━━━ 分词 ━━━━
 
-D0138 安放好的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0138 安放好的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: postaŵenÿ /postawenɨ/ | SE: postaveni /postaveni/ | W: postaŵenÿ /postawenɨ/
-  内部构拟祖语：*postavenÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=PASS.PST；aspect=PFV；verb=*postavitʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*postavenÿ
+  词法标签：partClass=PASS.PST；aspect=PFV；verb=*postavitʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0139 被冰封的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0139 被冰封的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: zamrazenÿ /zamrazenɨ/ | SE: zamrazeni /zamrazeni/ | W: zamrazenÿ /zamrazenɨ/
-  内部构拟祖语：*zamrazenÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=PASS.PST；aspect=PFV；verb=*zamrazitʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*zamrazenÿ
+  词法标签：partClass=PASS.PST；aspect=PFV；verb=*zamrazitʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0140 被带来的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0140 被带来的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: prinesenÿ /prinesenɨ/ | SE: prineseni /prineseni/ | W: prinesenÿ /prinesenɨ/
-  内部构拟祖语：*prinesenÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=PASS.PST；aspect=PFV；verb=*prinesetʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*prinesenÿ
+  词法标签：partClass=PASS.PST；aspect=PFV；verb=*prinesetʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0141 被看见的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0141 被看见的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: uŵidenÿ /uwidenɨ/ | SE: uvideni /uvideni/ | W: uŵidenÿ /uwidenɨ/
-  内部构拟祖语：*uvidenÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=PASS.PST；aspect=PFV；verb=*uvidetʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*uvidenÿ
+  词法标签：partClass=PASS.PST；aspect=PFV；verb=*uvidetʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0142 被饶恕的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0142 被饶恕的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: poščadoŵanÿ /poʃt͡ʃadowanɨ/ | SE: poščadovani /poʃt͡ʃadovani/ | W: poščadoŵanÿ /poʃt͡ʃadowanɨ/
-  内部构拟祖语：*poščadovanÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=PASS.PST；aspect=PFV；verb=*poščadovatʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*poščadovanÿ
+  词法标签：partClass=PASS.PST；aspect=PFV；verb=*poščadovatʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0143 被遗忘的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0143 被遗忘的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: zabÿtÿ /zabɨtɨ/ | SE: zabiti /zabiti/ | W: zabÿtÿ /zabɨtɨ/
-  内部构拟祖语：*zabÿtÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=PASS.PST；aspect=PFV；verb=*zabÿtʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*zabÿtÿ
+  词法标签：partClass=PASS.PST；aspect=PFV；verb=*zabÿtʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0144 喊叫中的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0144 喊叫中的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: kričającÿ /krit͡ʃajɔ̃t͡sɨ/ | SE: kričajoci /krit͡ʃajot͡si/ | W: kričającÿ /krit͡ʃajɔ̃t͡sɨ/
-  内部构拟祖语：*kričającÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=ACT.PRS；aspect=IPFV；verb=*kričatʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*kričającÿ
+  词法标签：partClass=ACT.PRS；aspect=IPFV；verb=*kričatʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0145 讲话中的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0145 讲话中的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ġoŵorijącÿ /ɣoworijɔ̃t͡sɨ/ | SE: govorijoci /ɡovorijot͡si/ | W: ġoŵorijącÿ /ɣoworijɔ̃t͡sɨ/
-  内部构拟祖语：*govorijącÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=ACT.PRS；aspect=IPFV；verb=*govoritʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*govorijącÿ
+  词法标签：partClass=ACT.PRS；aspect=IPFV；verb=*govoritʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0146 燃烧中的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0146 燃烧中的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ġorejącÿ /ɣorejɔ̃t͡sɨ/ | SE: gorejoci /ɡorejot͡si/ | W: ġorejącÿ /ɣorejɔ̃t͡sɨ/
-  内部构拟祖语：*gorejącÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=ACT.PRS；aspect=IPFV；verb=*goretʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*gorejącÿ
+  词法标签：partClass=ACT.PRS；aspect=IPFV；verb=*goretʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0147 生活中的 [分词；V0.8同源词干修订（现代原形）]
+D0147 生活中的 [分词 · V0.8同源词干修订（现代原形）]
   N: ẑiŵejącÿ /ʑiwejɔ̃t͡sɨ/ | SE: živejoci /ʒivejot͡si/ | W: žiŵejącÿ /ʒiwejɔ̃t͡sɨ/
-  内部构拟祖语：*živejącÿ
-  历史词形：N žiŵejącÿ / SE živejoci / W žiŵejącÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；与已正式登记的同根音变统一
-  形态：partClass=ACT.PRS；aspect=IPFV；verb=*živetʲ
-  音变依据：N13-F-LIVE-PTCP
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*živejącÿ
+  旧阶段词形：N žiŵejącÿ；SE živejoci；W žiŵejącÿ
+  词法标签：partClass=ACT.PRS；aspect=IPFV；verb=*živetʲ
+  音变与对应：N13-F-LIVE-PTCP、N13
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变；V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查
 
-D0148 守护、保卫中的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0148 守护、保卫中的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ħranijącÿ /χranijɔ̃t͡sɨ/ | SE: hranijoci /xranijot͡si/ | W: ħranijącÿ /χranijɔ̃t͡sɨ/
-  内部构拟祖语：*xranijącÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=ACT.PRS；aspect=IPFV；verb=*xranitʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*xranijącÿ
+  词法标签：partClass=ACT.PRS；aspect=IPFV；verb=*xranitʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0149 听见、听中的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0149 听见、听中的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: slÿšającÿ /slɨʃajɔ̃t͡sɨ/ | SE: slišajoci /sliʃajot͡si/ | W: słÿšającÿ /sɫɨʃajɔ̃t͡sɨ/
-  内部构拟祖语：*slÿšającÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=ACT.PRS；aspect=IPFV；verb=*slÿšatʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*slÿšającÿ
+  词法标签：partClass=ACT.PRS；aspect=IPFV；verb=*slÿšatʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0150 携带（单次过程）中的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0150 携带（单次过程）中的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: nesejącÿ /nesejɔ̃t͡sɨ/ | SE: nesejoci /nesejot͡si/ | W: nesejącÿ /nesejɔ̃t͡sɨ/
-  内部构拟祖语：*nesejącÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=ACT.PRS；aspect=IPFV；verb=*nesetʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*nesejącÿ
+  词法标签：partClass=ACT.PRS；aspect=IPFV；verb=*nesetʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0151 写成的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0151 写成的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: napisanÿ /napisanɨ/ | SE: napisani /napisani/ | W: napisanÿ /napisanɨ/
-  内部构拟祖语：*napisanÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=PASS.PST；aspect=PFV；verb=*napisatʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*napisanÿ
+  词法标签：partClass=PASS.PST；aspect=PFV；verb=*napisatʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0152 已讲述的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0152 已讲述的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: proġoŵorenÿ /proɣoworenɨ/ | SE: progovoreni /proɡovoreni/ | W: proġoŵorenÿ /proɣoworenɨ/
-  内部构拟祖语：*progovorenÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=PASS.PST；aspect=PFV；verb=*progovoritʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*progovorenÿ
+  词法标签：partClass=PASS.PST；aspect=PFV；verb=*progovoritʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0153 已经结冻的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0153 已经结冻的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: zamrzlÿ /zamrzlɨ/ | SE: zamrzli /zamrzli/ | W: zamrzłÿ /zamrzɫɨ/
-  内部构拟祖语：*zamrzlÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=RES.PST；aspect=PFV；verb=*zamrznutʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*zamrzlÿ
+  词法标签：partClass=RES.PST；aspect=PFV；verb=*zamrznutʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0154 正在融化的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0154 正在融化的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: tajającÿ /tajajɔ̃t͡sɨ/ | SE: tajajoci /tajajot͡si/ | W: tajającÿ /tajajɔ̃t͡sɨ/
-  内部构拟祖语：*tajającÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=ACT.PRS；aspect=IPFV；verb=*tajatʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*tajającÿ
+  词法标签：partClass=ACT.PRS；aspect=IPFV；verb=*tajatʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0155 注视中的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0155 注视中的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: patrijącÿ /patrijɔ̃t͡sɨ/ | SE: patrijoci /patrijot͡si/ | W: patrijącÿ /patrijɔ̃t͡sɨ/
-  内部构拟祖语：*patrijącÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=ACT.PRS；aspect=IPFV；verb=*patritʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*patrijącÿ
+  词法标签：partClass=ACT.PRS；aspect=IPFV；verb=*patritʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0156 走来、抵达（过程）中的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0156 走来、抵达（过程）中的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: prÿħodijącÿ /prɨχodijɔ̃t͡sɨ/ | SE: prihodijoci /prixodijot͡si/ | W: prÿħodijącÿ /prɨχodijɔ̃t͡sɨ/
-  内部构拟祖语：*prÿxodijącÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=ACT.PRS；aspect=IPFV；verb=*prÿxoditʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*prÿxodijącÿ
+  词法标签：partClass=ACT.PRS；aspect=IPFV；verb=*prÿxoditʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0157 做成的 [分词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0157 做成的 [分词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: sdelanÿ /sdelanɨ/ | SE: sdelani /sdelani/ | W: sdełanÿ /sdeɫanɨ/
-  内部构拟祖语：*sdelanÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：partClass=PASS.PST；aspect=PFV；verb=*sdelatʲ
-  说明：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：*sdelanÿ
+  词法标签：partClass=PASS.PST；aspect=PFV；verb=*sdelatʲ
+  备注：本条显示分词阳性主格，非独立动词词典原形；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-=== 代词 ===
+━━━━ 代词 ━━━━
 
-D0158 你 [代词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0158 你 [代词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: tÿ /tɨ/ | SE: ti /ti/ | W: tÿ /tɨ/
-  内部构拟祖语：*tÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：person=2SG
-  说明：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：*tÿ
+  词法标签：person=2SG
+  备注：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0159 你们 [代词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0159 你们 [代词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ŵÿ /wɨ/ | SE: vi /vi/ | W: ŵÿ /wɨ/
-  内部构拟祖语：*vÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：person=2PL
-  说明：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：*vÿ
+  词法标签：person=2PL
+  备注：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0160 他 [代词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0160 他 [代词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: on /on/ | SE: on /on/ | W: on /on/
-  内部构拟祖语：*on
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：person=3SG.M
-  说明：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：*on
+  词法标签：person=3SG.M
+  备注：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0161 他们／她们 [代词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0161 他们／她们 [代词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: oni /oni/ | SE: oni /oni/ | W: oni /oni/
-  内部构拟祖语：*oni
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：person=3PL
-  说明：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：*oni
+  词法标签：person=3PL
+  备注：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0162 她 [代词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0162 她 [代词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ona /ona/ | SE: ona /ona/ | W: ona /ona/
-  内部构拟祖语：*ona
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：person=3SG.F
-  说明：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：*ona
+  词法标签：person=3SG.F
+  备注：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0163 我 [代词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0163 我 [代词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ja /ja/ | SE: ja /ja/ | W: ja /ja/
-  内部构拟祖语：*ja
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：person=1SG
-  说明：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：*ja
+  词法标签：person=1SG
+  备注：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-D0164 我们 [代词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0164 我们 [代词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: mÿ /mɨ/ | SE: mi /mi/ | W: mÿ /mɨ/
-  内部构拟祖语：*mÿ
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  形态：person=1PL
-  说明：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：*mÿ
+  词法标签：person=1PL
+  备注：本条显示代词主格，六格见原始范式；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
 
-=== 副词 ===
+━━━━ 副词 ━━━━
 
-D0165 今天 [副词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0165 今天 [副词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: dnes /dnes/ | SE: dnes /dnes/ | W: dnes /dnes/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：语料S08：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：暂未确定
+  备注：语料S08：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0166 明天 [副词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0166 明天 [副词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: jutro /jutro/ | SE: jutro /jutro/ | W: jutro /jutro/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：语料S31：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：暂未确定
+  备注：语料S31：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0167 仍然 [副词；V0.6已衍变的旧词]
+D0167 仍然 [副词 · V0.6已衍变的旧词]
   N: še /ʃe/ | SE: še /ʃe/ | W: še /ʃe/
-  内部构拟祖语：*ešče
-  历史词形：N ešče / SE ešče / W ešče
-  音变依据：C03
-  说明：
-  资料：assets/data/zagren-v06-phonology-lexicon.json、assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：*ešče
+  旧阶段词形：N ešče；SE ešče；W ešče
+  音变与对应：C03
+  备注：
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 介词 ===
+━━━━ 介词 ━━━━
 
-D0168 从…… [介词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0168 从…… [介词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: od /od/ | SE: od /od/ | W: od /od/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.2介词：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：暂未确定
+  备注：V0.2介词：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0169 到……旁 [介词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0169 到……旁 [介词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: k /k/ | SE: k /k/ | W: k /k/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：语料S17：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：暂未确定
+  备注：语料S17：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0170 与……一起 [介词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0170 与……一起 [介词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: s /s/ | SE: s /s/ | W: s /s/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.2介词：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：暂未确定
+  备注：V0.2介词：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0171 在……里面 [介词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0171 在……里面 [介词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ŵ /w/ | SE: v /v/ | W: ŵ /w/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.2介词：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：暂未确定
+  备注：V0.2介词：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0172 在……旁 [介词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0172 在……旁 [介词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: u /u/ | SE: u /u/ | W: u /u/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：语料S29：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：暂未确定
+  备注：语料S29：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0173 在……上 [介词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0173 在……上 [介词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: na /na/ | SE: na /na/ | W: na /na/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.2介词：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-nominal-morphology-v02.json
+  祖语重建／内部词源：暂未确定
+  备注：V0.2介词：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 连词 ===
+━━━━ 连词 ━━━━
 
-D0174 比…… [连词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0174 比…… [连词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: než /neʒ/ | SE: než /neʒ/ | W: než /neʒ/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.4比较句：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-modifier-morphology-v04.json
+  祖语重建／内部词源：暂未确定
+  备注：V0.4比较句：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0175 但是 [连词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0175 但是 [连词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: no /no/ | SE: no /no/ | W: no /no/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：语料S20：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：暂未确定
+  备注：语料S20：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0176 和／并且 [连词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0176 和／并且 [连词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: i /i/ | SE: i /i/ | W: i /i/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：语料S03、S06：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-public-corpus-v05.json
+  祖语重建／内部词源：暂未确定
+  备注：语料S03、S06：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 助词 ===
+━━━━ 助词 ━━━━
 
-D0177 不／否定 [助词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0177 不／否定 [助词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: ńe /ɲe/ | SE: ne /ne/ | W: n /n/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.3否定助词：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：暂未确定
+  备注：V0.3否定助词：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0178 条件式助词 [助词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0178 条件式助词 [助词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: bÿ /bɨ/ | SE: bi /bi/ | W: bÿ /bɨ/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.3条件式：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：暂未确定
+  备注：V0.3条件式：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0179 未完成体将来助词 [助词；V0.8已审阅保留旧原形（完整现代屈折待复核）]
+D0179 未完成体将来助词 [助词 · V0.8已审阅保留旧原形（完整现代屈折待复核）]
   N: bu /bu/ | SE: bu /bu/ | W: b /b/
-  内部构拟祖语：无定论
-  V0.8审阅：词典原形审订，非全部现代格位验证；既有词典原形符合本阶段已明确音变；当前不增添无依据的规则
-  说明：V0.3分析式将来：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
-  资料：assets/data/zagren-verbal-morphology-v03.json
+  祖语重建／内部词源：暂未确定
+  备注：V0.3分析式将来：已见功能或形式；不是完整语义边界的最终定义；V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 名词 ===
+━━━━ 名词 ━━━━
 
-D0180 人 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0180 人 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: lud /lud/ | SE: lud /lud/ | W: łud /ɫud/
-  内部构拟祖语：*lud
-  形态：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*lud
+  词法标签：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0181 孩子 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0181 孩子 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: detę /detɛ̃/ | SE: dete /dete/ | W: det /det/
-  内部构拟祖语：*detę
-  形态：gender=中；number=SG；group=人物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*detę
+  词法标签：gender=中；number=SG；group=人物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0182 父亲 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0182 父亲 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: otec /otet͡s/ | SE: otec /otet͡s/ | W: otec /otet͡s/
-  内部构拟祖语：*otec
-  形态：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*otec
+  词法标签：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0183 朋友 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0183 朋友 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: druġ /druɣ/ | SE: drug /druɡ/ | W: dru /dru/
-  内部构拟祖语：*drug
-  形态：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*drug
+  词法标签：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0184 邻居 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0184 邻居 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: sused /sused/ | SE: sused /sused/ | W: sused /sused/
-  内部构拟祖语：*sused
-  形态：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*sused
+  词法标签：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0185 客人 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0185 客人 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: ġost /ɣost/ | SE: gost /ɡost/ | W: ġost /ɣost/
-  内部构拟祖语：*gost
-  形态：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*gost
+  词法标签：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0186 工人 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0186 工人 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: trudnik /trudnik/ | SE: trudnik /trudnik/ | W: trudnik /trudnik/
-  内部构拟祖语：*trudnik
-  形态：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*trudnik
+  词法标签：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0187 教师 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0187 教师 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: učitel /ut͡ʃitel/ | SE: učitel /ut͡ʃitel/ | W: učiteł /ut͡ʃiteɫ/
-  内部构拟祖语：*učitel
-  形态：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*učitel
+  词法标签：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0188 医生 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0188 医生 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: lekar /lekar/ | SE: lekar /lekar/ | W: łekar /ɫekar/
-  内部构拟祖语：*lekar
-  形态：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*lekar
+  词法标签：gender=阳；number=SG；group=人物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0189 祖母 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0189 祖母 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: baba /baba/ | SE: baba /baba/ | W: bab /bab/
-  内部构拟祖语：*baba
-  形态：gender=阴；number=SG；group=人物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*baba
+  词法标签：gender=阴；number=SG；group=人物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0190 门 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0190 门 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: dŵera /dwera/ | SE: dvera /dvera/ | W: dŵer /dwer/
-  内部构拟祖语：*dvera
-  形态：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*dvera
+  词法标签：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0191 窗户 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0191 窗户 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: okno /okno/ | SE: okno /okno/ | W: okn /okn/
-  内部构拟祖语：*okno
-  形态：gender=中；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*okno
+  词法标签：gender=中；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0192 墙 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0192 墙 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: stena /stena/ | SE: stena /stena/ | W: sten /sten/
-  内部构拟祖语：*stena
-  形态：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*stena
+  词法标签：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0193 屋顶 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0193 屋顶 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: kroŵa /krowa/ | SE: krova /krova/ | W: kroŵ /krow/
-  内部构拟祖语：*krova
-  形态：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*krova
+  词法标签：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0194 床 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0194 床 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: ležka /leʒka/ | SE: ležka /leʒka/ | W: łežk /ɫeʒk/
-  内部构拟祖语：*ležka
-  形态：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*ležka
+  词法标签：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0195 灯 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0195 灯 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: sŵeta /sweta/ | SE: sveta /sveta/ | W: sŵet /swet/
-  内部构拟祖语：*sveta
-  形态：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*sveta
+  词法标签：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0196 椅子 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0196 椅子 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: sedlo /sedlo/ | SE: sedlo /sedlo/ | W: sedł /sedɫ/
-  内部构拟祖语：*sedlo
-  形态：gender=中；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*sedlo
+  词法标签：gender=中；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0197 杯子 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0197 杯子 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: kupa /kupa/ | SE: kupa /kupa/ | W: kup /kup/
-  内部构拟祖语：*kupa
-  形态：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*kupa
+  词法标签：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0198 碗 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0198 碗 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: misa /misa/ | SE: misa /misa/ | W: mis /mis/
-  内部构拟祖语：*misa
-  形态：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*misa
+  词法标签：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0199 锅 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0199 锅 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: kotla /kotla/ | SE: kotla /kotla/ | W: kotł /kotɫ/
-  内部构拟祖语：*kotla
-  形态：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*kotla
+  词法标签：gender=阴；number=SG；group=住宅；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0200 衣服 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0200 衣服 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: odeŵa /odewa/ | SE: odeva /odeva/ | W: odeŵ /odew/
-  内部构拟祖语：*odeva
-  形态：gender=阴；number=SG；group=生活；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*odeva
+  词法标签：gender=阴；number=SG；group=生活；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0201 鞋 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0201 鞋 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: obuta /obuta/ | SE: obuta /obuta/ | W: obut /obut/
-  内部构拟祖语：*obuta
-  形态：gender=阴；number=SG；group=生活；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*obuta
+  词法标签：gender=阴；number=SG；group=生活；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0202 手套 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0202 手套 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: rukaŵa /rukawa/ | SE: rukava /rukava/ | W: rukaŵ /rukaw/
-  内部构拟祖语：*rukava
-  形态：gender=阴；number=SG；group=生活；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*rukava
+  词法标签：gender=阴；number=SG；group=生活；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0203 面包 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0203 面包 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: ħleb /χleb/ | SE: hleb /xleb/ | W: ħłeb /χɫeb/
-  内部构拟祖语：*xleb
-  形态：gender=阳；number=SG；group=食物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*xleb
+  词法标签：gender=阳；number=SG；group=食物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0204 汤 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0204 汤 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: sup /sup/ | SE: sup /sup/ | W: sup /sup/
-  内部构拟祖语：*sup
-  形态：gender=阳；number=SG；group=食物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*sup
+  词法标签：gender=阳；number=SG；group=食物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0205 盐 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0205 盐 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: sol /sol/ | SE: sol /sol/ | W: soł /soɫ/
-  内部构拟祖语：*sol
-  形态：gender=阳；number=SG；group=食物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*sol
+  词法标签：gender=阳；number=SG；group=食物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0206 肉 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0206 肉 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: męso /mɛ̃so/ | SE: meso /meso/ | W: męs /mɛ̃s/
-  内部构拟祖语：*męso
-  形态：gender=中；number=SG；group=食物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*męso
+  词法标签：gender=中；number=SG；group=食物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0207 果实 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0207 果实 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: plod /plod/ | SE: plod /plod/ | W: płod /pɫod/
-  内部构拟祖语：*plod
-  形态：gender=阳；number=SG；group=食物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*plod
+  词法标签：gender=阳；number=SG；group=食物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0208 茶 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0208 茶 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: čaj /t͡ʃaj/ | SE: čaj /t͡ʃaj/ | W: čaj /t͡ʃaj/
-  内部构拟祖语：*čaj
-  形态：gender=阳；number=SG；group=食物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*čaj
+  词法标签：gender=阳；number=SG；group=食物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0209 鸡蛋 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0209 鸡蛋 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: jajce /jajt͡se/ | SE: jajce /jajt͡se/ | W: jajc /jajt͡s/
-  内部构拟祖语：*jajce
-  形态：gender=中；number=SG；group=食物；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*jajce
+  词法标签：gender=中；number=SG；group=食物；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0210 车辆 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0210 车辆 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: ŵoz /woz/ | SE: voz /voz/ | W: ŵoz /woz/
-  内部构拟祖语：*voz
-  形态：gender=阳；number=SG；group=交通；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*voz
+  词法标签：gender=阳；number=SG；group=交通；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0211 桥梁 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0211 桥梁 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: most /most/ | SE: most /most/ | W: most /most/
-  内部构拟祖语：*most
-  形态：gender=阳；number=SG；group=交通；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*most
+  词法标签：gender=阳；number=SG；group=交通；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0212 河岸 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0212 河岸 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: breġa /breɣa/ | SE: brega /breɡa/ | W: bre /bre/
-  内部构拟祖语：*brega
-  形态：gender=阴；number=SG；group=地理；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*brega
+  词法标签：gender=阴；number=SG；group=地理；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0213 湖泊 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0213 湖泊 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: ozero /ozero/ | SE: ozero /ozero/ | W: ozer /ozer/
-  内部构拟祖语：*ozero
-  形态：gender=中；number=SG；group=地理；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*ozero
+  词法标签：gender=中；number=SG；group=地理；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0214 雨 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0214 雨 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: dožda /doʒda/ | SE: dožda /doʒda/ | W: dožd /doʒd/
-  内部构拟祖语：*dožda
-  形态：gender=阴；number=SG；group=自然；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*dožda
+  词法标签：gender=阴；number=SG；group=自然；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0215 云 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0215 云 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: oblaka /oblaka/ | SE: oblaka /oblaka/ | W: obłak /obɫak/
-  内部构拟祖语：*oblaka
-  形态：gender=阴；number=SG；group=自然；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*oblaka
+  词法标签：gender=阴；number=SG；group=自然；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0216 太阳 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0216 太阳 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: solnce /solnt͡se/ | SE: solnce /solnt͡se/ | W: sołnc /soɫnt͡s/
-  内部构拟祖语：*solnce
-  形态：gender=中；number=SG；group=自然；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*solnce
+  词法标签：gender=中；number=SG；group=自然；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0217 月亮 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0217 月亮 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: luna /luna/ | SE: luna /luna/ | W: łun /ɫun/
-  内部构拟祖语：*luna
-  形态：gender=阴；number=SG；group=自然；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*luna
+  词法标签：gender=阴；number=SG；group=自然；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0218 树木 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0218 树木 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: dreŵo /drewo/ | SE: drevo /drevo/ | W: dreŵ /drew/
-  内部构拟祖语：*drevo
-  形态：gender=中；number=SG；group=自然；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*drevo
+  词法标签：gender=中；number=SG；group=自然；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0219 草 [名词；V0.6现代高频新词原形；未完成变格变位]
+D0219 草 [名词 · V0.6现代高频新词原形；未完成变格变位]
   N: traŵa /trawa/ | SE: trava /trava/ | W: traŵ /traw/
-  内部构拟祖语：*trava
-  形态：gender=阴；number=SG；group=自然；paradigm=noun-inflection-unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*trava
+  词法标签：gender=阴；number=SG；group=自然；paradigm=noun-inflection-unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 动词 ===
+━━━━ 动词 ━━━━
 
-D0220 吃 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0220 吃 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: jedať /jedatʲ/ | SE: jedat /jedat/ | W: jedaþ /jedaθ/
-  内部构拟祖语：*jedatʲ
-  形态：aspect=IPFV；group=饮食；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*jedatʲ
+  词法标签：aspect=IPFV；group=饮食；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0221 喝 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0221 喝 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: piŵať /piwatʲ/ | SE: pivat /pivat/ | W: piŵaþ /piwaθ/
-  内部构拟祖语：*pivatʲ
-  形态：aspect=IPFV；group=饮食；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*pivatʲ
+  词法标签：aspect=IPFV；group=饮食；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0222 烹煮 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0222 烹煮 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: ŵariť /waritʲ/ | SE: varit /varit/ | W: ŵariþ /wariθ/
-  内部构拟祖语：*varitʲ
-  形态：aspect=IPFV；group=饮食；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*varitʲ
+  词法标签：aspect=IPFV；group=饮食；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0223 打开 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0223 打开 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: otŵoriť /otworitʲ/ | SE: otvorit /otvorit/ | W: otŵoriþ /otworiθ/
-  内部构拟祖语：*otvoritʲ
-  形态：aspect=IPFV；group=生活；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*otvoritʲ
+  词法标签：aspect=IPFV；group=生活；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0224 关闭 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0224 关闭 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: zakriť /zakritʲ/ | SE: zakrit /zakrit/ | W: zakriþ /zakriθ/
-  内部构拟祖语：*zakritʲ
-  形态：aspect=IPFV；group=生活；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*zakritʲ
+  词法标签：aspect=IPFV；group=生活；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0225 拿起 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0225 拿起 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: podneť /podnetʲ/ | SE: podnet /podnet/ | W: podneþ /podneθ/
-  内部构拟祖语：*podnetʲ
-  形态：aspect=PFV；group=动作；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*podnetʲ
+  词法标签：aspect=PFV；group=动作；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0226 放下 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0226 放下 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: kladeť /kladetʲ/ | SE: kladet /kladet/ | W: kładeþ /kɫadeθ/
-  内部构拟祖语：*kladetʲ
-  形态：aspect=IPFV；group=动作；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*kladetʲ
+  词法标签：aspect=IPFV；group=动作；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0227 寻找 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0227 寻找 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: iskať /iskatʲ/ | SE: iskat /iskat/ | W: iskaþ /iskaθ/
-  内部构拟祖语：*iskatʲ
-  形态：aspect=IPFV；group=认知；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*iskatʲ
+  词法标签：aspect=IPFV；group=认知；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0228 找到 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0228 找到 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: najdiť /najditʲ/ | SE: najdit /najdit/ | W: najdiþ /najdiθ/
-  内部构拟祖语：*najditʲ
-  形态：aspect=PFV；group=认知；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*najditʲ
+  词法标签：aspect=PFV；group=认知；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0229 询问 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0229 询问 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: pytať /pytatʲ/ | SE: pytat /pytat/ | W: pytaþ /pytaθ/
-  内部构拟祖语：*pytatʲ
-  形态：aspect=IPFV；group=交流；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*pytatʲ
+  词法标签：aspect=IPFV；group=交流；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0230 回答 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0230 回答 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: otŵetiť /otwetitʲ/ | SE: otvetit /otvetit/ | W: otŵetiþ /otwetiθ/
-  内部构拟祖语：*otvetitʲ
-  形态：aspect=IPFV；group=交流；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*otvetitʲ
+  词法标签：aspect=IPFV；group=交流；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0231 学习 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0231 学习 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: učať /ut͡ʃatʲ/ | SE: učat /ut͡ʃat/ | W: učaþ /ut͡ʃaθ/
-  内部构拟祖语：*učatʲ
-  形态：aspect=IPFV；group=交流；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*učatʲ
+  词法标签：aspect=IPFV；group=交流；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0232 教授 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0232 教授 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: učiť /ut͡ʃitʲ/ | SE: učit /ut͡ʃit/ | W: učiþ /ut͡ʃiθ/
-  内部构拟祖语：*učitʲ
-  形态：aspect=IPFV；group=交流；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*učitʲ
+  词法标签：aspect=IPFV；group=交流；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0233 购买 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0233 购买 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: kupiť /kupitʲ/ | SE: kupit /kupit/ | W: kupiþ /kupiθ/
-  内部构拟祖语：*kupitʲ
-  形态：aspect=IPFV；group=交易；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*kupitʲ
+  词法标签：aspect=IPFV；group=交易；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0234 售卖 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0234 售卖 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: prodať /prodatʲ/ | SE: prodat /prodat/ | W: prodaþ /prodaθ/
-  内部构拟祖语：*prodatʲ
-  形态：aspect=IPFV；group=交易；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*prodatʲ
+  词法标签：aspect=IPFV；group=交易；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0235 付款 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0235 付款 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: platiť /platitʲ/ | SE: platit /platit/ | W: płatiþ /pɫatiθ/
-  内部构拟祖语：*platitʲ
-  形态：aspect=IPFV；group=交易；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*platitʲ
+  词法标签：aspect=IPFV；group=交易；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0236 步行 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0236 步行 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: stupať /stupatʲ/ | SE: stupat /stupat/ | W: stupaþ /stupaθ/
-  内部构拟祖语：*stupatʲ
-  形态：aspect=IPFV；group=行动；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*stupatʲ
+  词法标签：aspect=IPFV；group=行动；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0237 停下 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0237 停下 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: ostať /ostatʲ/ | SE: ostat /ostat/ | W: ostaþ /ostaθ/
-  内部构拟祖语：*ostatʲ
-  形态：aspect=PFV；group=行动；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*ostatʲ
+  词法标签：aspect=PFV；group=行动；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0238 坐着 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0238 坐着 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: sedeť /sedetʲ/ | SE: sedet /sedet/ | W: sedeþ /sedeθ/
-  内部构拟祖语：*sedetʲ
-  形态：aspect=IPFV；group=行动；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*sedetʲ
+  词法标签：aspect=IPFV；group=行动；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0239 站立 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0239 站立 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: stojať /stojatʲ/ | SE: stojat /stojat/ | W: stojaþ /stojaθ/
-  内部构拟祖语：*stojatʲ
-  形态：aspect=IPFV；group=行动；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*stojatʲ
+  词法标签：aspect=IPFV；group=行动；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0240 帮助 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0240 帮助 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: pomoġať /pomoɣatʲ/ | SE: pomogat /pomoɡat/ | W: pomoġaþ /pomoɣaθ/
-  内部构拟祖语：*pomogatʲ
-  形态：aspect=IPFV；group=生活；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*pomogatʲ
+  词法标签：aspect=IPFV；group=生活；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0241 修理 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0241 修理 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: praŵiť /prawitʲ/ | SE: pravit /pravit/ | W: praŵiþ /prawiθ/
-  内部构拟祖语：*pravitʲ
-  形态：aspect=IPFV；group=生活；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*pravitʲ
+  词法标签：aspect=IPFV；group=生活；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0242 洗净 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0242 洗净 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: myť /mytʲ/ | SE: myt /myt/ | W: myþ /myθ/
-  内部构拟祖语：*mytʲ
-  形态：aspect=IPFV；group=生活；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*mytʲ
+  词法标签：aspect=IPFV；group=生活；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0243 切割 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0243 切割 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: rezať /rezatʲ/ | SE: rezat /rezat/ | W: rezaþ /rezaθ/
-  内部构拟祖语：*rezatʲ
-  形态：aspect=IPFV；group=生活；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*rezatʲ
+  词法标签：aspect=IPFV；group=生活；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0244 记住 [动词；V0.6现代高频新词原形；未完成变格变位]
+D0244 记住 [动词 · V0.6现代高频新词原形；未完成变格变位]
   N: pametať /pametatʲ/ | SE: pametat /pametat/ | W: pametaþ /pametaθ/
-  内部构拟祖语：*pametatʲ
-  形态：aspect=IPFV；group=认知；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*pametatʲ
+  词法标签：aspect=IPFV；group=认知；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 形容词 ===
+━━━━ 形容词 ━━━━
 
-D0245 红色 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0245 红色 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: rudenÿ /rudenɨ/ | SE: rudeni /rudeni/ | W: rudenÿ /rudenɨ/
-  内部构拟祖语：*rudenÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*rudenÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0246 绿色 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0246 绿色 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: zelenÿ /zelenɨ/ | SE: zeleni /zeleni/ | W: zełenÿ /zeɫenɨ/
-  内部构拟祖语：*zelenÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*zelenÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0247 炎热 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0247 炎热 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: ġoračÿ /ɣorat͡ʃɨ/ | SE: gorači /ɡorat͡ʃi/ | W: ġoračÿ /ɣorat͡ʃɨ/
-  内部构拟祖语：*goračÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*goračÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0248 凉爽 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0248 凉爽 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: ħladenÿ /χladenɨ/ | SE: hladeni /xladeni/ | W: ħładenÿ /χɫadenɨ/
-  内部构拟祖语：*xladenÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*xladenÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0249 甜 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0249 甜 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: sladkÿ /sladkɨ/ | SE: sladki /sladki/ | W: sładkÿ /sɫadkɨ/
-  内部构拟祖语：*sladkÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*sladkÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0250 苦 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0250 苦 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: ġorkÿ /ɣorkɨ/ | SE: gorki /ɡorki/ | W: ġorkÿ /ɣorkɨ/
-  内部构拟祖语：*gorkÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*gorkÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0251 咸 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0251 咸 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: solnÿ /solnɨ/ | SE: solni /solni/ | W: sołnÿ /soɫnɨ/
-  内部构拟祖语：*solnÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*solnÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0252 洁净 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0252 洁净 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: čistÿ /t͡ʃistɨ/ | SE: čisti /t͡ʃisti/ | W: čistÿ /t͡ʃistɨ/
-  内部构拟祖语：*čistÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*čistÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0253 肮脏 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0253 肮脏 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: ġrjaznÿ /ɣrjaznɨ/ | SE: grjazni /ɡrjazni/ | W: ġrjaznÿ /ɣrjaznɨ/
-  内部构拟祖语：*grjaznÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*grjaznÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0254 安全 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0254 安全 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: bezpečnÿ /bezpet͡ʃnɨ/ | SE: bezpečni /bezpet͡ʃni/ | W: bezpečnÿ /bezpet͡ʃnɨ/
-  内部构拟祖语：*bezpečnÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*bezpečnÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0255 危险 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0255 危险 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: opasnÿ /opasnɨ/ | SE: opasni /opasni/ | W: opasnÿ /opasnɨ/
-  内部构拟祖语：*opasnÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*opasnÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0256 空置 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0256 空置 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: praznÿ /praznɨ/ | SE: prazni /prazni/ | W: praznÿ /praznɨ/
-  内部构拟祖语：*praznÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*praznÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0257 饱满 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0257 饱满 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: polnÿ /polnɨ/ | SE: polni /polni/ | W: połnÿ /poɫnɨ/
-  内部构拟祖语：*polnÿ
-  形态：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*polnÿ
+  词法标签：morph=H；degree=QUAL；group=性质；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0258 饥饿 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0258 饥饿 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: ġolodnÿ /ɣolodnɨ/ | SE: golodni /ɡolodni/ | W: ġołodnÿ /ɣoɫodnɨ/
-  内部构拟祖语：*golodnÿ
-  形态：morph=H；degree=QUAL；group=状态；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*golodnÿ
+  词法标签：morph=H；degree=QUAL；group=状态；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0259 口渴 [形容词；V0.6现代高频新词原形；未完成变格变位]
+D0259 口渴 [形容词 · V0.6现代高频新词原形；未完成变格变位]
   N: žadnÿ /ʒadnɨ/ | SE: žadni /ʒadni/ | W: žadnÿ /ʒadnɨ/
-  内部构拟祖语：*žadnÿ
-  形态：morph=H；degree=QUAL；group=状态；form=阳性主格；inflection=not-yet-validated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*žadnÿ
+  词法标签：morph=H；degree=QUAL；group=状态；form=阳性主格；inflection=not-yet-validated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 指示词 ===
+━━━━ 指示词 ━━━━
 
-D0260 这 [指示词；V0.6现代高频新词原形；未完成变格变位]
+D0260 这 [指示词 · V0.6现代高频新词原形；未完成变格变位]
   N: se /se/ | SE: se /se/ | W: se /se/
-  内部构拟祖语：*se
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*se
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0261 那 [指示词；V0.6现代高频新词原形；未完成变格变位]
+D0261 那 [指示词 · V0.6现代高频新词原形；未完成变格变位]
   N: to /to/ | SE: to /to/ | W: to /to/
-  内部构拟祖语：*to
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*to
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 副词 ===
+━━━━ 副词 ━━━━
 
-D0262 这里 [副词；V0.6现代高频新词原形；未完成变格变位]
+D0262 这里 [副词 · V0.6现代高频新词原形；未完成变格变位]
   N: sed /sed/ | SE: sede /sede/ | W: sed /sed/
-  内部构拟祖语：*sede
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*sede
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0263 那里 [副词；V0.6现代高频新词原形；未完成变格变位]
+D0263 那里 [副词 · V0.6现代高频新词原形；未完成变格变位]
   N: tad /tad/ | SE: tade /tade/ | W: tad /tad/
-  内部构拟祖语：*tade
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*tade
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0264 现在 [副词；V0.6现代高频新词原形；未完成变格变位]
+D0264 现在 [副词 · V0.6现代高频新词原形；未完成变格变位]
   N: nÿn /nɨn/ | SE: nin /nin/ | W: nÿn /nɨn/
-  内部构拟祖语：*nÿne
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*nÿne
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0265 刚才 [副词；V0.6现代高频新词原形；未完成变格变位]
+D0265 刚才 [副词 · V0.6现代高频新词原形；未完成变格变位]
   N: prÿd /prɨd/ | SE: prid /prid/ | W: prÿd /prɨd/
-  内部构拟祖语：*prÿde
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*prÿde
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0266 已经 [副词；V0.6现代高频新词原形；未完成变格变位]
+D0266 已经 [副词 · V0.6现代高频新词原形；未完成变格变位]
   N: už /uʒ/ | SE: už /uʒ/ | W: už /uʒ/
-  内部构拟祖语：*už
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*už
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0267 尚未 [副词；V0.6现代高频新词原形；未完成变格变位]
+D0267 尚未 [副词 · V0.6现代高频新词原形；未完成变格变位]
   N: ńež /ɲeʒ/ | SE: neže /neʒe/ | W: neže /neʒe/
-  内部构拟祖语：*neže
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证；高频词经历史短化形成；保留专属缩约词源，不在其他词自动套用
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*neže
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证；高频词经历史短化形成；保留专属缩约词源，不在其他词自动套用
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0268 经常 [副词；V0.6现代高频新词原形；未完成变格变位]
+D0268 经常 [副词 · V0.6现代高频新词原形；未完成变格变位]
   N: čast /t͡ʃast/ | SE: často /t͡ʃasto/ | W: čast /t͡ʃast/
-  内部构拟祖语：*často
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*často
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0269 有时 [副词；V0.6现代高频新词原形；未完成变格变位]
+D0269 有时 [副词 · V0.6现代高频新词原形；未完成变格变位]
   N: inoġa /inoɣa/ | SE: inoga /inoɡa/ | W: inoġ /inoɣ/
-  内部构拟祖语：*inoga
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*inoga
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 疑问词 ===
+━━━━ 疑问词 ━━━━
 
-D0270 为什么 [疑问词；V0.6现代高频新词原形；未完成变格变位]
+D0270 为什么 [疑问词 · V0.6现代高频新词原形；未完成变格变位]
   N: začo /zat͡ʃo/ | SE: začo /zat͡ʃo/ | W: začo /zat͡ʃo/
-  内部构拟祖语：*začo
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*začo
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0271 怎么 [疑问词；V0.6现代高频新词原形；未完成变格变位]
+D0271 怎么 [疑问词 · V0.6现代高频新词原形；未完成变格变位]
   N: kak /kak/ | SE: kak /kak/ | W: kak /kak/
-  内部构拟祖语：*kak
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*kak
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 连词 ===
+━━━━ 连词 ━━━━
 
-D0272 因为 [连词；V0.6现代高频新词原形；未完成变格变位]
+D0272 因为 [连词 · V0.6现代高频新词原形；未完成变格变位]
   N: zat /zat/ | SE: zato /zato/ | W: zat /zat/
-  内部构拟祖语：*zatogo
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：现代词典原形已建；完整格位与动词变位需以独立范式验证；高频词经历史短化形成；保留专属缩约词源，不在其他词自动套用
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*zatogo
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：现代词典原形已建；完整格位与动词变位需以独立范式验证；高频词经历史短化形成；保留专属缩约词源，不在其他词自动套用
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0273 如果 [连词；V0.6现代高频新词原形；未完成变格变位]
+D0273 如果 [连词 · V0.6现代高频新词原形；未完成变格变位]
   N: jel /jel/ | SE: jeli /jeli/ | W: jel /jel/
-  内部构拟祖语：*jeli
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*jeli
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 助词 ===
+━━━━ 助词 ━━━━
 
-D0274 请 [助词；V0.6现代高频新词原形；未完成变格变位]
+D0274 请 [助词 · V0.6现代高频新词原形；未完成变格变位]
   N: proś /proɕ/ | SE: pros /pros/ | W: proś /proɕ/
-  内部构拟祖语：*prositʲ
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*prositʲ
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 感叹词 ===
+━━━━ 感叹词 ━━━━
 
-D0275 感谢 [感叹词；V0.6现代高频新词原形；未完成变格变位]
+D0275 感谢 [感叹词 · V0.6现代高频新词原形；未完成变格变位]
   N: blaġ /blaɣ/ | SE: blag /blaɡ/ | W: błaġ /bɫaɣ/
-  内部构拟祖语：*blagodar
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*blagodar
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0276 问候 [感叹词；V0.6现代高频新词原形；未完成变格变位]
+D0276 问候 [感叹词 · V0.6现代高频新词原形；未完成变格变位]
   N: zdran /zdran/ | SE: zdran /zdran/ | W: zdran /zdran/
-  内部构拟祖语：*zdravin
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*zdravin
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0277 告别 [感叹词；V0.6现代高频新词原形；未完成变格变位]
+D0277 告别 [感叹词 · V0.6现代高频新词原形；未完成变格变位]
   N: doŵid /dowid/ | SE: dovid /dovid/ | W: doŵid /dowid/
-  内部构拟祖语：*dovid
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*dovid
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 数词 ===
+━━━━ 数词 ━━━━
 
-D0278 一 [数词；V0.6现代高频新词原形；未完成变格变位]
+D0278 一 [数词 · V0.6现代高频新词原形；未完成变格变位]
   N: jedn /jedn/ | SE: jedn /jedn/ | W: jedn /jedn/
-  内部构拟祖语：*jedn
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*jedn
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0279 二 [数词；V0.6现代高频新词原形；未完成变格变位]
+D0279 二 [数词 · V0.6现代高频新词原形；未完成变格变位]
   N: dŵa /dwa/ | SE: dva /dva/ | W: dŵa /dwa/
-  内部构拟祖语：*dva
-  形态：group=基本功能词；form=不屈折词/独立感叹词
-  音变依据：LEX-C
-  说明：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
-  资料：assets/data/zagren-core100-v06.json
+  祖语重建／内部词源：*dva
+  词法标签：group=基本功能词；form=不屈折词/独立感叹词
+  音变与对应：LEX-C
+  备注：词汇化高频缩约，不能将此缩略规则机械套用到其他词；现代词典原形已建；完整格位与动词变位需以独立范式验证
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 名词 ===
+━━━━ 名词 ━━━━
 
-D0280 书 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：книга（仅为来源及选词参考）
+D0280 书 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：книга（仅供语义/字形比较）
   N: kniġa /kniɣa/ | SE: kniga /kniɡa/ | W: kniġ /kniɣ/
-  内部构拟祖语：*kniga
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*kniga
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0281 书页 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：страница（仅为来源及选词参考）
+D0281 书页 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：страница（仅供语义/字形比较）
   N: stranica /stranit͡sa/ | SE: stranica /stranit͡sa/ | W: stranic /stranit͡s/
-  内部构拟祖语：*stranica
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：比旧条目“纸页”更专指装订书页；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*stranica
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：比旧条目“纸页”更专指装订书页；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0282 字母 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：буква（仅为来源及选词参考）
+D0282 字母 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：буква（仅供语义/字形比较）
   N: bukŵa /bukwa/ | SE: bukva /bukva/ | W: bukŵ /bukw/
-  内部构拟祖语：*bukva
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*bukva
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0283 句子 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：предложение（仅为来源及选词参考）
-  N: predloženie /predloʒenie/ | SE: predloženie /predloʒenie/ | W: predłoženi /predɫoʒeni/
-  内部构拟祖语：*predloženie
-  形态：gender=中；classProvisional=IRR；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：当前只登记词典原形；不同于“提议”的义项；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+D0283 句子 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：предложение（仅供语义/字形比较）
+  N: predloẑenie /predloʑenie/ | SE: predloženie /predloʒenie/ | W: predłoženi /predɫoʒeni/
+  祖语重建／内部词源：*predloženie
+  旧阶段词形：N predloženie；SE predloženie；W predłoženi
+  词法标签：gender=中；classProvisional=IRR；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W、N13
+  备注：当前只登记词典原形；不同于“提议”的义项；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定；V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0284 文章 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：статья（仅为来源及选词参考）
+D0284 文章 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：статья（仅供语义/字形比较）
   N: staťa /statʲa/ | SE: stata /stata/ | W: staþ /staθ/
-  内部构拟祖语：*statʲa
-  形态：gender=阴；classProvisional=A-soft；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*statʲa
+  词法标签：gender=阴；classProvisional=A-soft；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0285 故事 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：рассказ（仅为来源及选词参考）
+D0285 故事 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：рассказ（仅供语义/字形比较）
   N: raskaz /raskaz/ | SE: raskaz /raskaz/ | W: raskaz /raskaz/
-  内部构拟祖语：*raskaz
-  形态：gender=阳；classProvisional=O；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*raskaz
+  词法标签：gender=阳；classProvisional=O；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0286 诗歌 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：стих（仅为来源及选词参考）
+D0286 诗歌 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：стих（仅供语义/字形比较）
   N: stiħ /stiχ/ | SE: stih /stix/ | W: stiħ /stiχ/
-  内部构拟祖语：*stix
-  形态：gender=阳；classProvisional=O；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*stix
+  词法标签：gender=阳；classProvisional=O；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0287 词典 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：словарь（仅为来源及选词参考）
+D0287 词典 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：словарь（仅供语义/字形比较）
   N: sloŵarj /slowarj/ | SE: slovar /slovar/ | W: słoŵař /sɫowar̝/
-  内部构拟祖语：*slovarʲ
-  形态：gender=阳；classProvisional=O-soft；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：指词典，不等于“词／单词”；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*slovarʲ
+  词法标签：gender=阳；classProvisional=O-soft；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：指词典，不等于“词／单词”；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0288 语言 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：язык（仅为来源及选词参考）
-  N: jazÿk /jazɨk/ | SE: jazik /jazik/ | W: jazÿk /jazɨk/
-  内部构拟祖语：*jazÿk
-  形态：gender=阳；classProvisional=O；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：语言系统；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+D0288 语言 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：язык（仅供语义/字形比较）
+  N: jazÿk /jazɨk/ | SE: jaẑik /jaʑik/ | W: jazÿk /jazɨk/
+  祖语重建／内部词源：*jazÿk
+  旧阶段词形：N jazÿk；SE jazik；W jazÿk
+  词法标签：gender=阳；classProvisional=O；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W、SE12
+  备注：语言系统；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定；V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0289 含义 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：смысл（仅为来源及选词参考）
+D0289 含义 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：смысл（仅供语义/字形比较）
   N: smÿsl /smɨsl/ | SE: smisl /smisl/ | W: smÿsł /smɨsɫ/
-  内部构拟祖语：*smÿsl
-  形态：gender=阳；classProvisional=O；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：语义／含义，不是“价值”；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*smÿsl
+  词法标签：gender=阳；classProvisional=O；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：语义／含义，不是“价值”；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0290 名字 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：имя（仅为来源及选词参考）
+D0290 名字 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：имя（仅供语义/字形比较）
   N: imę /imɛ̃/ | SE: ime /ime/ | W: im /im/
-  内部构拟祖语：*imę
-  形态：gender=中；classProvisional=IRR；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：中性不规则词干暂不推断六格；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*imę
+  词法标签：gender=中；classProvisional=IRR；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：中性不规则词干暂不推断六格；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0291 纸张 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：бумага（仅为来源及选词参考）
+D0291 纸张 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：бумага（仅供语义/字形比较）
   N: bumaġa /bumaɣa/ | SE: bumaga /bumaɡa/ | W: bumaġ /bumaɣ/
-  内部构拟祖语：*bumaga
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：纸张材料；与纸页、书页区分；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*bumaga
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：纸张材料；与纸页、书页区分；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0292 笔 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：ручка（仅为来源及选词参考）
+D0292 笔 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：ручка（仅供语义/字形比较）
   N: ručka /rut͡ʃka/ | SE: ručka /rut͡ʃka/ | W: ručk /rut͡ʃk/
-  内部构拟祖语：*ručka
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：本词限定为书写用笔；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*ručka
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：本词限定为书写用笔；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0293 图画 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：картина（仅为来源及选词参考）
+D0293 图画 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：картина（仅供语义/字形比较）
   N: kartina /kartina/ | SE: kartina /kartina/ | W: kartin /kartin/
-  内部构拟祖语：*kartina
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*kartina
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0294 课堂 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：урок（仅为来源及选词参考）
+D0294 课堂 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：урок（仅供语义/字形比较）
   N: urok /urok/ | SE: urok /urok/ | W: urok /urok/
-  内部构拟祖语：*urok
-  形态：gender=阳；classProvisional=O；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：指一节课／课堂教学活动；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*urok
+  词法标签：gender=阳；classProvisional=O；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：指一节课／课堂教学活动；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0295 学生 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：ученик（仅为来源及选词参考）
+D0295 学生 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：ученик（仅供语义/字形比较）
   N: učenik /ut͡ʃenik/ | SE: učenik /ut͡ʃenik/ | W: učenik /ut͡ʃenik/
-  内部构拟祖语：*učenik
-  形态：gender=阳；classProvisional=O；animacy=有生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*učenik
+  词法标签：gender=阳；classProvisional=O；animacy=有生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 动词 ===
+━━━━ 动词 ━━━━
 
-D0296 读 [动词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：читать（仅为来源及选词参考）
+D0296 读 [动词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：читать（仅供语义/字形比较）
   N: čitať /t͡ʃitatʲ/ | SE: čitat /t͡ʃitat/ | W: čitaþ /t͡ʃitaθ/
-  内部构拟祖语：*čitatʲ
-  形态：classProvisional=IPFV；aspect=A；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：阅读的未完成体；不是“读完”；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*čitatʲ
+  词法标签：classProvisional=IPFV；aspect=A；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：阅读的未完成体；不是“读完”；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0297 记录 [动词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：записывать（仅为来源及选词参考）
+D0297 记录 [动词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：записывать（仅供语义/字形比较）
   N: zapisÿŵať /zapisɨwatʲ/ | SE: zapisivat /zapisivat/ | W: zapisÿŵaþ /zapisɨwaθ/
-  内部构拟祖语：*zapisÿvatʲ
-  形态：classProvisional=IPFV；aspect=A；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：写下并保存记录；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*zapisÿvatʲ
+  词法标签：classProvisional=IPFV；aspect=A；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：写下并保存记录；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 名词 ===
+━━━━ 名词 ━━━━
 
-D0298 大人 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：взрослый（仅为来源及选词参考）
+D0298 大人 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：взрослый（仅供语义/字形比较）
   N: ŵzrosl /wzrosl/ | SE: vzrosl /vzrosl/ | W: ŵzrosł /wzrosɫ/
-  内部构拟祖语：*vzrosl
-  形态：gender=阳；classProvisional=O；animacy=有生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：从俄语形容词词干构拟为藏朔原独立实体名词，非直接借用俄语整词；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*vzrosl
+  词法标签：gender=阳；classProvisional=O；animacy=有生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：从俄语形容词词干构拟为藏朔原独立实体名词，非直接借用俄语整词；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0299 真相 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：истина（仅为来源及选词参考）
+D0299 真相 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：истина（仅供语义/字形比较）
   N: istina /istina/ | SE: istina /istina/ | W: istin /istin/
-  内部构拟祖语：*istina
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：现实事实的真相，不泛指一切理论正确性；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*istina
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：现实事实的真相，不泛指一切理论正确性；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0300 谎言 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：ложь（仅为来源及选词参考）
+D0300 谎言 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：ложь（仅供语义/字形比较）
   N: lož /loʒ/ | SE: lož /loʒ/ | W: łož /ɫoʒ/
-  内部构拟祖语：*lož
-  形态：gender=阴；classProvisional=I；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：阴性软音来源；当代词典原形暂不自动变格；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*lož
+  词法标签：gender=阴；classProvisional=I；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：阴性软音来源；当代词典原形暂不自动变格；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0301 声音 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：голос（仅为来源及选词参考）
+D0301 声音 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：голос（仅供语义/字形比较）
   N: ġolos /ɣolos/ | SE: golos /ɡolos/ | W: ġołos /ɣoɫos/
-  内部构拟祖语：*golos
-  形态：gender=阳；classProvisional=O；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：指人或物的声音；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*golos
+  词法标签：gender=阳；classProvisional=O；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：指人或物的声音；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0302 承诺 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：обещание（仅为来源及选词参考）
+D0302 承诺 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：обещание（仅供语义/字形比较）
   N: obeščanie /obeʃt͡ʃanie/ | SE: obeščanie /obeʃt͡ʃanie/ | W: obeščani /obeʃt͡ʃani/
-  内部构拟祖语：*obeščanie
-  形态：gender=中；classProvisional=IRR；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：说出或许下的承诺；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*obeščanie
+  词法标签：gender=中；classProvisional=IRR；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：说出或许下的承诺；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0303 信任 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：доверие（仅为来源及选词参考）
+D0303 信任 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：доверие（仅供语义/字形比较）
   N: doŵerie /dowerie/ | SE: doverie /doverie/ | W: doŵeri /doweri/
-  内部构拟祖语：*doverie
-  形态：gender=中；classProvisional=IRR；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：关系或态度意义；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*doverie
+  词法标签：gender=中；classProvisional=IRR；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：关系或态度意义；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 动词 ===
+━━━━ 动词 ━━━━
 
-D0304 欺骗 [动词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：обмануть（仅为来源及选词参考）
+D0304 欺骗 [动词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：обмануть（仅供语义/字形比较）
   N: obmanuť /obmanutʲ/ | SE: obmanut /obmanut/ | W: obmanuþ /obmanuθ/
-  内部构拟祖语：*obmanutʲ
-  形态：classProvisional=PFV；aspect=IRR；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：一次完成的欺骗；持续／反复意义需另建未完成体；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*obmanutʲ
+  词法标签：classProvisional=PFV；aspect=IRR；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：一次完成的欺骗；持续／反复意义需另建未完成体；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0305 说谎 [动词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：лгать（仅为来源及选词参考）
+D0305 说谎 [动词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：лгать（仅供语义/字形比较）
   N: lġať /lɣatʲ/ | SE: lgat /lɡat/ | W: łġaþ /ɫɣaθ/
-  内部构拟祖语：*lgatʲ
-  形态：classProvisional=IPFV；aspect=IRR；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：不规则词根；不得套普通A类完整变位；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*lgatʲ
+  词法标签：classProvisional=IPFV；aspect=IRR；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：不规则词根；不得套普通A类完整变位；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0306 解释 [动词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：объяснять（仅为来源及选词参考）
+D0306 解释 [动词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：объяснять（仅供语义/字形比较）
   N: objasńať /objasɲatʲ/ | SE: objasnat /objasnat/ | W: objasńaþ /objasɲaθ/
-  内部构拟祖语：*objasnʲatʲ
-  形态：classProvisional=IPFV；aspect=A；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：解释、说明，不保证语义与俄语一模一样；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*objasnʲatʲ
+  词法标签：classProvisional=IPFV；aspect=A；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：解释、说明，不保证语义与俄语一模一样；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0307 理解 [动词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：понимать（仅为来源及选词参考）
+D0307 理解 [动词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：понимать（仅供语义/字形比较）
   N: ponimať /ponimatʲ/ | SE: ponimat /ponimat/ | W: ponimaþ /ponimaθ/
-  内部构拟祖语：*ponimatʲ
-  形态：classProvisional=IPFV；aspect=A；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*ponimatʲ
+  词法标签：classProvisional=IPFV；aspect=A；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0308 认为 [动词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：считать（仅为来源及选词参考）
+D0308 认为 [动词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：считать（仅供语义/字形比较）
   N: sčitať /st͡ʃitatʲ/ | SE: sčitat /st͡ʃitat/ | W: sčitaþ /st͡ʃitaθ/
-  内部构拟祖语：*sčitatʲ
-  形态：classProvisional=IPFV；aspect=A；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：表示主观判断，不是数学计数；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*sčitatʲ
+  词法标签：classProvisional=IPFV；aspect=A；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：表示主观判断，不是数学计数；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0309 请求 [动词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：просить（仅为来源及选词参考）
+D0309 请求 [动词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：просить（仅供语义/字形比较）
   N: prosiť /prositʲ/ | SE: prosit /prosit/ | W: prosiþ /prosiθ/
-  内部构拟祖语：*prositʲ
-  形态：classProvisional=IPFV；aspect=I；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：请求某人做事，不自动生成未知的论元格位；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*prositʲ
+  词法标签：classProvisional=IPFV；aspect=I；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：请求某人做事，不自动生成未知的论元格位；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 副词 ===
+━━━━ 副词 ━━━━
 
-D0310 昨天 [副词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：вчера（仅为来源及选词参考）
+D0310 昨天 [副词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：вчера（仅供语义/字形比较）
   N: ŵčera /wt͡ʃera/ | SE: včera /vt͡ʃera/ | W: ŵčera /wt͡ʃera/
-  内部构拟祖语：*včera
-  形态：category=时间与位置
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*včera
+  词法标签：category=时间与位置
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 名词 ===
+━━━━ 名词 ━━━━
 
-D0311 日子 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：день（仅为来源及选词参考）
+D0311 日子 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：день（仅供语义/字形比较）
   N: deń /deɲ/ | SE: den /den/ | W: deń /deɲ/
-  内部构拟祖语：*denʲ
-  形态：gender=阳；classProvisional=O-soft；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：一天、特定的一日；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*denʲ
+  词法标签：gender=阳；classProvisional=O-soft；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：一天、特定的一日；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0312 年 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：год（仅为来源及选词参考）
+D0312 年 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：год（仅供语义/字形比较）
   N: ġod /ɣod/ | SE: god /ɡod/ | W: ġod /ɣod/
-  内部构拟祖语：*god
-  形态：gender=阳；classProvisional=O；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*god
+  词法标签：gender=阳；classProvisional=O；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0313 小时 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：час（仅为来源及选词参考）
+D0313 小时 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：час（仅供语义/字形比较）
   N: čas /t͡ʃas/ | SE: čas /t͡ʃas/ | W: čas /t͡ʃas/
-  内部构拟祖语：*čas
-  形态：gender=阳；classProvisional=O；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：60分钟的时间单位；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*čas
+  词法标签：gender=阳；classProvisional=O；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：60分钟的时间单位；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0314 分钟 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：минута（仅为来源及选词参考）
+D0314 分钟 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：минута（仅供语义/字形比较）
   N: minuta /minuta/ | SE: minuta /minuta/ | W: minut /minut/
-  内部构拟祖语：*minuta
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*minuta
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 副词 ===
+━━━━ 副词 ━━━━
 
-D0315 左边 [副词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：слева（仅为来源及选词参考）
+D0315 左边 [副词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：слева（仅供语义/字形比较）
   N: sleŵa /slewa/ | SE: sleva /sleva/ | W: słeŵa /sɫewa/
-  内部构拟祖语：*sleva
-  形态：category=时间与位置
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：位置副词；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*sleva
+  词法标签：category=时间与位置
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：位置副词；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0316 右边 [副词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：справа（仅为来源及选词参考）
+D0316 右边 [副词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：справа（仅供语义/字形比较）
   N: spraŵa /sprawa/ | SE: sprava /sprava/ | W: spraŵa /sprawa/
-  内部构拟祖语：*sprava
-  形态：category=时间与位置
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：位置副词；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*sprava
+  词法标签：category=时间与位置
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：位置副词；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0317 上方 [副词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：наверху（仅为来源及选词参考）
+D0317 上方 [副词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：наверху（仅供语义/字形比较）
   N: naŵerħu /nawerχu/ | SE: naverhu /naverxu/ | W: naŵerħu /nawerχu/
-  内部构拟祖语：*naverxu
-  形态：category=时间与位置
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：位置副词；不能自动代替介词na＋处所格；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*naverxu
+  词法标签：category=时间与位置
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：位置副词；不能自动代替介词na＋处所格；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0318 下方 [副词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：внизу（仅为来源及选词参考）
+D0318 下方 [副词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：внизу（仅供语义/字形比较）
   N: ŵnizu /wnizu/ | SE: vnizu /vnizu/ | W: ŵnizu /wnizu/
-  内部构拟祖语：*vnizu
-  形态：category=时间与位置
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：位置副词；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*vnizu
+  词法标签：category=时间与位置
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：位置副词；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 名词 ===
+━━━━ 名词 ━━━━
 
-D0319 日期 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：дата（仅为来源及选词参考）
+D0319 日期 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：дата（仅供语义/字形比较）
   N: data /data/ | SE: data /data/ | W: dat /dat/
-  内部构拟祖语：*data
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*data
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0320 房间 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：комната（仅为来源及选词参考）
+D0320 房间 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：комната（仅供语义/字形比较）
   N: komnata /komnata/ | SE: komnata /komnata/ | W: komnat /komnat/
-  内部构拟祖语：*komnata
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*komnata
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0321 钥匙 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：ключ（仅为来源及选词参考）
+D0321 钥匙 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：ключ（仅供语义/字形比较）
   N: ključ /kljut͡ʃ/ | SE: ključ /kljut͡ʃ/ | W: kłjuč /kɫjut͡ʃ/
-  内部构拟祖语：*ključ
-  形态：gender=阳；classProvisional=O；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：用于开锁的钥匙；不含音乐调号意义；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*ključ
+  词法标签：gender=阳；classProvisional=O；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：用于开锁的钥匙；不含音乐调号意义；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0322 箱子 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：коробка（仅为来源及选词参考）
+D0322 箱子 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：коробка（仅供语义/字形比较）
   N: korobka /korobka/ | SE: korobka /korobka/ | W: korobk /korobk/
-  内部构拟祖语：*korobka
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*korobka
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0323 蜡烛 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：свеча（仅为来源及选词参考）
+D0323 蜡烛 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：свеча（仅供语义/字形比较）
   N: sŵeča /swet͡ʃa/ | SE: sveča /svet͡ʃa/ | W: sŵeč /swet͡ʃ/
-  内部构拟祖语：*sveča
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*sveča
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0324 羊 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：овца（仅为来源及选词参考）
+D0324 羊 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：овца（仅供语义/字形比较）
   N: oŵca /owt͡sa/ | SE: ovca /ovt͡sa/ | W: oŵc /owt͡s/
-  内部构拟祖语：*ovca
-  形态：gender=阴；classProvisional=A；animacy=有生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：成年羊泛称；不同于“羊羔”；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*ovca
+  词法标签：gender=阴；classProvisional=A；animacy=有生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：成年羊泛称；不同于“羊羔”；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0325 猫 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：кот（仅为来源及选词参考）
+D0325 猫 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：кот（仅供语义/字形比较）
   N: kot /kot/ | SE: kot /kot/ | W: kot /kot/
-  内部构拟祖语：*kot
-  形态：gender=阳；classProvisional=O；animacy=有生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：猫的一般泛称，语义不限定性别；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*kot
+  词法标签：gender=阳；classProvisional=O；animacy=有生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：猫的一般泛称，语义不限定性别；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0326 狗 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：собака（仅为来源及选词参考）
+D0326 狗 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：собака（仅供语义/字形比较）
   N: sobaka /sobaka/ | SE: sobaka /sobaka/ | W: sobak /sobak/
-  内部构拟祖语：*sobaka
-  形态：gender=阴；classProvisional=A；animacy=有生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：狗的一般泛称，语义不限定性别；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*sobaka
+  词法标签：gender=阴；classProvisional=A；animacy=有生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：狗的一般泛称，语义不限定性别；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0327 花 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：цветок（仅为来源及选词参考）
+D0327 花 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：цветок（仅供语义/字形比较）
   N: cŵetok /t͡swetok/ | SE: cvetok /t͡svetok/ | W: cŵetok /t͡swetok/
-  内部构拟祖语：*cvetok
-  形态：gender=阳；classProvisional=O；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：植物的花；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*cvetok
+  词法标签：gender=阳；classProvisional=O；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：植物的花；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0328 土地 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：земля（仅为来源及选词参考）
+D0328 土地 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：земля（仅供语义/字形比较）
   N: zemlja /zemlja/ | SE: zemlja /zemlja/ | W: zemłj /zemɫj/
-  内部构拟祖语：*zemlja
-  形态：gender=阴；classProvisional=A-soft；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：土壤或土地；不等于整个行星；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*zemlja
+  词法标签：gender=阴；classProvisional=A-soft；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：土壤或土地；不等于整个行星；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0329 雨伞 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：зонт（仅为来源及选词参考）
+D0329 雨伞 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：зонт（仅供语义/字形比较）
   N: zont /zont/ | SE: zont /zont/ | W: zont /zont/
-  内部构拟祖语：*zont
-  形态：gender=阳；classProvisional=O；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*zont
+  词法标签：gender=阳；classProvisional=O；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0330 水果 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：фрукт（仅为来源及选词参考）
+D0330 水果 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：фрукт（仅供语义/字形比较）
   N: frukt /frukt/ | SE: frukt /frukt/ | W: frukt /frukt/
-  内部构拟祖语：*frukt
-  形态：gender=阳；classProvisional=O；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：水果总称，单复数语义待定；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*frukt
+  词法标签：gender=阳；classProvisional=O；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：水果总称，单复数语义待定；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0331 食物 [名词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：еда（仅为来源及选词参考）
+D0331 食物 [名词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：еда（仅供语义/字形比较）
   N: jeda /jeda/ | SE: jeda /jeda/ | W: jed /jed/
-  内部构拟祖语：*jeda
-  形态：gender=阴；classProvisional=A；animacy=无生
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：广义食物，与‘配给’等军事专业词分开；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*jeda
+  词法标签：gender=阴；classProvisional=A；animacy=无生
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：广义食物，与‘配给’等军事专业词分开；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-=== 形容词 ===
+━━━━ 形容词 ━━━━
 
-D0332 重要 [形容词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：важный（仅为来源及选词参考）
+D0332 重要 [形容词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：важный（仅供语义/字形比较）
   N: ŵažnÿ /waʒnɨ/ | SE: važni /vaʒni/ | W: ŵažnÿ /waʒnɨ/
-  内部构拟祖语：*važnÿ
-  形态：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：强调重要性，不自动触发§；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*važnÿ
+  词法标签：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：强调重要性，不自动触发§；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0333 困难 [形容词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：трудный（仅为来源及选词参考）
+D0333 困难 [形容词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：трудный（仅供语义/字形比较）
   N: trudnÿ /trudnɨ/ | SE: trudni /trudni/ | W: trudnÿ /trudnɨ/
-  内部构拟祖语：*trudnÿ
-  形态：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*trudnÿ
+  词法标签：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0334 容易 [形容词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：лёгкий（仅为来源及选词参考）
+D0334 容易 [形容词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：лёгкий（仅供语义/字形比较）
   N: leġkÿ /leɣkɨ/ | SE: legki /leɡki/ | W: łeġkÿ /ɫeɣkɨ/
-  内部构拟祖语：*legkÿ
-  形态：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：此处指难易程度，不表示重量轻；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*legkÿ
+  词法标签：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：此处指难易程度，不表示重量轻；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0335 真实的 [形容词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：правдивый（仅为来源及选词参考）
+D0335 真实的 [形容词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：правдивый（仅供语义/字形比较）
   N: praŵdiŵÿ /prawdiwɨ/ | SE: pravdivi /pravdivi/ | W: praŵdiŵÿ /prawdiwɨ/
-  内部构拟祖语：*pravdivÿ
-  形态：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：强调真实而非虚构；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*pravdivÿ
+  词法标签：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：强调真实而非虚构；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0336 陌生的 [形容词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：незнакомый（仅为来源及选词参考）
+D0336 陌生的 [形容词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：незнакомый（仅供语义/字形比较）
   N: neznakomÿ /neznakomɨ/ | SE: neznakomi /neznakomi/ | W: neznakomÿ /neznakomɨ/
-  内部构拟祖语：*neznakomÿ
-  形态：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：陌生、不熟悉；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*neznakomÿ
+  词法标签：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：陌生、不熟悉；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0337 平静 [形容词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：спокойный（仅为来源及选词参考）
+D0337 平静 [形容词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：спокойный（仅供语义/字形比较）
   N: spokojnÿ /spokojnɨ/ | SE: spokojni /spokojni/ | W: spokojnÿ /spokojnɨ/
-  内部构拟祖语：*spokojnÿ
-  形态：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：不吵闹；不同于“安静地”副词；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*spokojnÿ
+  词法标签：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：不吵闹；不同于“安静地”副词；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0338 温柔 [形容词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：нежный（仅为来源及选词参考）
+D0338 温柔 [形容词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：нежный（仅供语义/字形比较）
   N: nežnÿ /neʒnɨ/ | SE: nežni /neʒni/ | W: nežnÿ /neʒnɨ/
-  内部构拟祖语：*nežnÿ
-  形态：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*nežnÿ
+  词法标签：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-D0339 严肃 [形容词；V0.7新增词典原形；完整屈折与重音尚未核定]
-  现实俄语参考：серьёзный（仅为来源及选词参考）
+D0339 严肃 [形容词 · V0.7新增词典原形；完整屈折与重音尚未核定]
+  俄语词形参照：серьёзный（仅供语义/字形比较）
   N: serjoznÿ /serjoznɨ/ | SE: serjozni /serjozni/ | W: serjoznÿ /serjoznɨ/
-  内部构拟祖语：*serjoznÿ
-  形态：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
-  音变依据：BASE-N, BASE-SE, BASE-W
-  说明：严肃、认真，不自动标记郑言符；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
-  资料：assets/data/zagren-academic-v07-lexical-expansion.json
+  祖语重建／内部词源：*serjoznÿ
+  词法标签：form=阳性单数主格；classProvisional=QUAL；inflection=unvalidated
+  音变与对应：BASE-N、BASE-SE、BASE-W
+  备注：严肃、认真，不自动标记郑言符；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
+  屈折边界：仅词典原形；不可直接推断全部变格／变位
 
-【分层规范与来源】
-V0.8历时音系/现代拼写：assets/data/zagren-phonology-v08.json
-151条原旧词审阅记录：assets/data/zagren-v08-lexical-audit.json
-V0.8词族规则生成器：assets/js/zagren-phonology-v08.js
-旧字典V0.3：assets/data/zagren-dictionary-v03.json
-跨引文双层聚焦规范：assets/data/zagren-punctuation-layers-v07.json
-
+【版本与研究资料】
+V0.8现行规则：assets/data/zagren-v08-diachrony.json
+339条逐词审查记录：assets/data/zagren-v08-lexicon-review.json
+原始V0.3词典：assets/data/zagren-dictionary-v03.json
 （完）
 
 ================= 第三编　V0.6五十句受控三方言语料 =================
