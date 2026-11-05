@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Žaġręn V0.6 · 核心语法实验室 · 俄庇娜百科</title>
+<meta name="description" content="藏朔原语 V0.6：三方言名词、代词、动词变格变位与音变溯源实验室">
+<style>
+:root{color-scheme:dark;--bg:#0d1720;--panel:#172934;--line:#34505e;--fg:#e8f1f4;--sub:#adc3cf;--accent:#94d7dc}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Noto Sans",sans-serif;line-height:1.6}
+a{color:var(--accent)}.bar{border-bottom:1px solid var(--line);background:#13232e;padding:1rem max(1rem,calc((100% - 1000px)/2))}
+main{max-width:1000px;margin:0 auto;padding:2rem 1rem 4rem}h1{font-size:clamp(2rem,6vw,3.4rem);letter-spacing:-.05em;line-height:1.17;margin:.2rem 0 .5rem}
+h2{font-size:1.2rem;margin:.5rem 0}.lead,.quiet{color:var(--sub)}.lead{max-width:760px}.tag{font-size:.78rem;letter-spacing:.16em;font-weight:700;color:var(--accent)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.3rem;margin:1.5rem 0}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem}
+label{display:flex;flex-direction:column;gap:.35rem;font-size:.86rem;color:var(--sub)}
+select{font:inherit;width:100%;color:var(--fg);border:1px solid #537182;border-radius:8px;background:#0e1d27;padding:.6rem .7rem;min-width:0}
+#message{margin:1rem 0;color:var(--sub)}table{width:100%;border-collapse:collapse;min-width:540px}
+th,td{text-align:left;border-bottom:1px solid var(--line);padding:.7rem .65rem;vertical-align:top}th{color:var(--sub);font-size:.84rem}td.mainform{font-size:1.25rem;font-weight:650;letter-spacing:.015em}
+.tablewrap{overflow-x:auto}code{font-size:.92em;color:#c6e0ed;overflow-wrap:anywhere}small{color:var(--sub)}
+.hidden{display:none!important}footer{border-top:1px solid var(--line);padding:1rem 0;color:var(--sub);font-size:.86rem}
+@media(max-width:650px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.card{padding:1rem}}
+</style></head>
+<body>
+<header class="bar"><a href="../">俄庇娜百科</a>　·　<a href="../zagren-showcase/">V0.5 文学对照</a>　·　<a href="../articles/article-451/">音变学正文</a></header>
+<main>
+<div class="tag">ŽAĠRĘN · V0.6 · MORPHOLOGY LAB</div>
+<h1>藏朔原语语法实验室</h1>
+<p class="lead">选择词汇、方言与格位，查看 V0.6 生成词形、V0.5 对照与实际应用的音变规则。基于已存在的名词、代词、动词范式及第一批 V0.6 词典形，并非不受限制的自然语言翻译器。</p>
+<section class="card" aria-label="生成器配置">
+<h2>词形生成</h2>
+<div class="controls">
+<label>词汇类别<select id="category"><option value="noun">名词变格</option><option value="pronoun">人称代词</option><option value="verb">动词变位</option><option value="lemma">V0.6 词典形</option></select></label>
+<label>选择词汇<select id="entry"></select></label>
+<label id="numfield">数<select id="number"><option value="SG">单数</option><option value="PL">复数</option></select></label>
+<label id="casefield">格<select id="case"><option value="NOM">主格 NOM</option><option value="GEN">属格 GEN</option><option value="DAT">与格 DAT</option><option value="ACC">宾格 ACC</option><option value="INS">工具格 INS</option><option value="LOC">处所格 LOC</option></select></label>
+<label id="kindfield" class="hidden">动词范畴<select id="kind"><option value="finite">非过去时</option><option value="past">过去时</option><option value="imperative">祈使式</option><option value="infinitive">不定式</option><option value="future">分析式未来（未完成体）</option></select></label>
+<label id="slotfield" class="hidden">人称 / 性数<select id="slot"></select></label>
+</div>
+<p id="message" role="status" aria-live="polite">正在读取百科数据库……</p>
+</section>
+<section class="card" aria-label="三方言结果">
+<h2>三大方言生成结果</h2>
+<div class="tablewrap"><table><thead><tr><th>方言</th><th>V0.6</th><th>旧词形 / 依据</th><th>音变编号</th></tr></thead><tbody id="results"></tbody></table></div>
+</section>
+<section class="card">
+<h2>目前的能力边界</h2>
+<p>已经覆盖 V0.2 / V0.3 中有来源的 <strong>2,025 个屈折格位</strong>，并校验第一批 V0.6 的69个旧词典形。对未构建变格的四个新祖语词根，只提供现代词典形，不自动臆造六格。</p>
+<p>词形演化优先使用已确认词根和受限音变；不是把每个词都强行改写。当前页面不提供语音合成，也不声称新版 IPA 或自由造句已经完成。</p>
+<p class="quiet"><a href="../assets/data/zagren-v06-phonology-lexicon.json">词根与音变数据</a>　·　<a href="../assets/js/zagren-grammar-v06.js">生成器源码</a></p>
+</section>
+<footer>Žaġręn V0.6 · 2026-11-05 · 原始 V0.5 范式作为历史数据保留</footer>
+</main>
+<script type="module">
+import {createZagrenGrammarV06} from "../assets/js/zagren-grammar-v06.js";
+const q=id=>document.getElementById(id);
+const branches=[["N","北部 · 珀璃璐卡"],["SE","东南 · 丽庞萨"],["W","西部 · 雷西尼昂帕"]];
+let nominal,verbal,lexicon,grammar;
+function choices(el,items){
+ const was=el.value;el.replaceChildren();
+ items.forEach(([v,title])=>{const op=document.createElement("option");op.value=v;op.textContent=title;el.append(op)});
+ if(items.some(x=>x[0]===was))el.value=was;
+}
+function show(el,value){q(el).classList.toggle("hidden",!value)}
+function entries(){
+ const kind=q("category").value;
+ if(kind==="noun")choices(q("entry"),[...new Map(nominal.nouns.map(x=>[x.id,[x.id,x.meaning+" · "+x.id]])).values()]);
+ if(kind==="pronoun")choices(q("entry"),[...new Map(nominal.pronouns.map(x=>[x.person,[x.person,x.meaning+" · "+x.person]])).values()]);
+ if(kind==="verb")choices(q("entry"),verbal.lexicon.map(x=>[x.id,x.meaning+" · "+x.id+" · "+x.aspect]));
+ if(kind==="lemma")choices(q("entry"),lexicon.rows.map(x=>[x.gloss,x.gloss]));
+ show("numfield",kind==="noun");show("casefield",kind==="noun"||kind==="pronoun");
+ show("kindfield",kind==="verb");show("slotfield",kind==="verb"&&["finite","past","imperative"].includes(q("kind").value));
+ slots();
+}
+function slots(){
+ if(q("category").value!=="verb")return;
+ const kind=q("kind").value,id=q("entry").value;
+ show("slotfield",["finite","past","imperative"].includes(kind));
+ if(!["finite","past","imperative"].includes(kind))return;
+ const ids=[...new Set(verbal[kind].filter(x=>x.id===id).map(x=>kind==="past"?x.gender:x.person))];
+ const order=kind==="past"?["M","F","N","PL"]:["1SG","2SG","3SG","1PL","2PL","3PL"];
+ choices(q("slot"),order.filter(x=>ids.includes(x)).map(x=>[x,x]));
+}
+function resultRow(name,info){
+ const tr=document.createElement("tr");
+ const cells=[name,info.form,info.baseForm??(info.origin||"新拟词根，尚无V0.5词形"),info.appliedRules?.join(", ")||"—"];
+ cells.forEach((v,i)=>{const td=document.createElement("td");td.textContent=v;if(i===1)td.className="mainform";tr.append(td)});
+ return tr;
+}
+function render(){
+ const kind=q("category").value,id=q("entry").value,num=q("number").value,gramCase=q("case").value,verbKind=q("kind").value,slot=q("slot").value;
+ const tbody=q("results");tbody.replaceChildren();
+ let failures=[];
+ for(const [b,name] of branches){
+  try{
+   let info;
+   if(kind==="noun")info=grammar.noun(id,num,gramCase,b);
+   else if(kind==="pronoun")info=grammar.pronoun(id,gramCase,b);
+   else if(kind==="lemma")info=grammar.lemma(id,b);
+   else if(verbKind==="future")info=grammar.future(id,b);
+   else info=grammar.verb(id,verbKind,slot,b);
+   tbody.append(resultRow(name,info));
+  }catch(e){failures.push(name+"："+e.message)}
+ }
+ q("message").textContent=failures.length?failures.join("；"):"三方言词形已生成。若无音变编号，表示此格位继承旧词形。";
+}
+async function main(){
+ try{
+  const files=["zagren-nominal-morphology-v02.json","zagren-verbal-morphology-v03.json","zagren-v06-phonology-lexicon.json"];
+  const responses=await Promise.all(files.map(x=>fetch("../assets/data/"+x)));
+  if(responses.some(x=>!x.ok))throw Error("源数据读取失败，请检查网站部署。");
+  [nominal,verbal,lexicon]=await Promise.all(responses.map(x=>x.json()));
+  grammar=createZagrenGrammarV06({nominal,verbal,lexicon});
+  const report=grammar.audit();
+  if(report.status!=="pass")throw Error("核心语法自检失败，请核对语料库。");
+  for(const name of ["category","entry","number","case","kind","slot"])q(name).addEventListener("change",()=>{
+   if(name==="category")entries();
+   if(name==="kind"||name==="entry")slots();
+   render();
+  });
+  entries();render();
+ }catch(e){q("message").textContent="生成器未能启动："+e.message;}
+}
+main();
+</script>
+</body></html>
