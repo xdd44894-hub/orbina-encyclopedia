@@ -2737,5 +2737,21 @@
       "SE": "od kośći",
       "W": "od košti"
     }
-  ]
+  ],
+  "historicalLinguisticLayer": {
+    "canon": "Early Literary Žaġręn / 早期藏朔原三支书面语（属于俄庇娜虚构历史的正式语言阶段）",
+    "versionStage": "V0.2",
+    "sphere": "名词六格、单双数与代词",
+    "position": "after Proto-Žaġręn reconstruction and prior to present-day modern Žaġręn",
+    "languageBranches": [
+      "Pęrlÿkań",
+      "Lipańsë",
+      "Reśinąmp"
+    ],
+    "literaryStatus": "historical-written-standard: normative within the historical stage, not the modern full paradigm",
+    "reconstructionPolicy": "星号原始构拟词仍是祖语比较重建；早期三方言范式才是各支历史书面语系统。历史规范来自世界观创作确立，不等于现实古文献出土认证。",
+    "usage": "原始V0.2/V0.3/V0.4资料中的三方言格位/变位作为古典书面传统保留；现代拼写与词干、语法再分析按V0.5词典及V0.9统一总纲逐项核实。历史来源内部的确切不规则词形仍允许校勘。",
+    "authority": "_articles/article-451.md and assets/data/zagren-v09-morphology-audit.json",
+    "fixedAt": "2026-11-06"
+  }
 }
