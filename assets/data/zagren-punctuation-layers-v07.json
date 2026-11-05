@@ -1,0 +1,108 @@
+{
+  "title": "Žaġręn V0.7 · 文引／聚焦跨层书写规范",
+  "version": "V0.7-orthography-2",
+  "date": "2026-11-06",
+  "normative": true,
+  "characters": {
+    "focus": "•",
+    "quoteStart": "/",
+    "quoteEnd": "\\",
+    "solemn": "§"
+  },
+  "levels": [
+    {
+      "id": "NARRATOR",
+      "name": "叙述者层",
+      "focusEffect": "对整段书面引文的引用行为加重强调",
+      "level": 0
+    },
+    {
+      "id": "SOURCE",
+      "name": "书面原文层",
+      "focusEffect": "引用对象内部原本印有的重点符号",
+      "level": 1
+    }
+  ],
+  "rules": [
+    {
+      "id": "PQ01",
+      "text": "聚焦符成对标记，其有效作用域以所在语义层为准，不得在同一层重复自嵌套。"
+    },
+    {
+      "id": "PQ02",
+      "text": "文引符 /…\\ 引用已存在的书面文字，内部的 •…• 属于原文自身；外部的 •…• 属于引用者。"
+    },
+    {
+      "id": "PQ03",
+      "text": "允许跨文引层的双层聚焦 •/•原文•\\•；其强度接近 §，但只涉及引用材料及叙述关注，不代表人物发言。"
+    },
+    {
+      "id": "PQ04",
+      "text": "不允许互相交叉、错层关闭或缺少配对的 •、/、\\。"
+    },
+    {
+      "id": "PQ05",
+      "text": "§ 只标记发言郑重，不自动等价于双层聚焦；需要引用已有文字时仍应使用文引符而非 §。"
+    },
+    {
+      "id": "PQ06",
+      "text": "四种句末语气符号 ¡、¿、！、？仍互斥；句末符号所属层次由其所在文引符内外判定。"
+    }
+  ],
+  "examples": [
+    {
+      "id": "P01",
+      "text": "书上写着：•/如果生活欺骗了你\\•",
+      "meaning": "叙述者强调所引文字；书面原文不一定带重点记号",
+      "model": "FOCUS_NARRATOR(CITATION(TEXT))",
+      "expected": "valid"
+    },
+    {
+      "id": "P02",
+      "text": "书上写着：/•如果生活欺骗了你•\\",
+      "meaning": "引用的书面原文本身带有聚焦记号；叙述者没有额外强调",
+      "model": "CITATION(FOCUS_SOURCE(TEXT))",
+      "expected": "valid"
+    },
+    {
+      "id": "P03",
+      "text": "•/•我是一个大人•\\•",
+      "meaning": "双层聚焦：原文有重点，叙述者再强调它；强度近于郑言符但不等同于人物发言",
+      "model": "FOCUS_NARRATOR(CITATION(FOCUS_SOURCE(TEXT)))",
+      "expected": "valid"
+    },
+    {
+      "id": "P04",
+      "text": "/普通的一天\\",
+      "meaning": "仅引用已有书面文字",
+      "model": "CITATION(TEXT)",
+      "expected": "valid"
+    },
+    {
+      "id": "P05",
+      "text": "•一句话•",
+      "meaning": "普通叙述层聚焦",
+      "model": "FOCUS_NARRATOR(TEXT)",
+      "expected": "valid"
+    },
+    {
+      "id": "P06",
+      "text": "•/重点•\\",
+      "meaning": "错误：焦点在书面引用内未配对关闭，不可跨文引符错层闭合",
+      "expected": "invalid"
+    },
+    {
+      "id": "P07",
+      "text": "/•重点\\•",
+      "meaning": "错误：聚焦尚未闭合却提前结束文引",
+      "expected": "invalid"
+    },
+    {
+      "id": "P08",
+      "text": "••文本••",
+      "meaning": "错误：空焦点／同一层语义上重复使用聚焦符",
+      "expected": "invalid"
+    }
+  ],
+  "source": "User-approved Žaġręn punctuation design; scope clarified without changing existing punctuation meanings."
+}
