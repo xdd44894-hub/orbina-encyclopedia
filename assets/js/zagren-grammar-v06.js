@@ -17,6 +17,7 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null,m
    change("N11",gloss==="雪",s=>s.replace(/^sneġ/u,"sęġ"));
    change("N12",["火","骨"].includes(gloss),s=>s.replace(/o(?=(?:ġń|śť))/u,"ӧ"));
    change("N13",["铁","生命","铁制的","女人","生活","活体的","生活中的","句子"].includes(gloss),s=>s.replace(/ž(?=[ei])/gu,"ẑ"));
+   change("V08-STEM-ZYM",gloss==="冬季的",s=>s.replace(/^zimn/u,"zÿmn"));
 
 
 
@@ -33,6 +34,7 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null,m
    change("W11",["雪","道路"].includes(gloss)||(gloss==="神明"&&(gramCase===null||gramCase==="NOM")),s=>s.replace(/ġ$/u,""));
    change("W12",gloss==="管道",s=>s.replace(/^þr/u,"þř"));
    change("W13",["铁","铁制的"].includes(gloss),s=>s.replace(/^žeł/u,"žł"));
+   change("V08-STEM-ZYM",gloss==="冬季的",s=>s.replace(/^zimn/u,"zÿmn"));
   }
   return {form,baseForm:base,appliedRules:rules};
  }
