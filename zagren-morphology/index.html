@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Žaġręn V0.7 · 名词动词试验形态学</title>
+<meta name="description" content="藏朔原语V0.7名词与动词类推试验：14个名词、8个动词、三方言840个候选词形">
+<style>
+:root{color-scheme:dark;--bg:#0d1821;--panel:#192b36;--line:#3b5663;--text:#edf4f6;--muted:#b4c9cf;--accent:#a0d8e1}
+*{box-sizing:border-box}body{background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Noto Sans",sans-serif;margin:0}
+header{background:#13242d;border-bottom:1px solid var(--line);padding:.9rem max(1rem,calc((100% - 980px)/2))}
+a{color:var(--accent)}main{max-width:980px;margin:auto;padding:2rem 1rem 3rem}
+h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1.2;margin:.2rem 0;letter-spacing:-.04em}h2{font-size:1.15rem;margin:0 0 .6rem}
+.lead{color:var(--muted);max-width:850px}.note{border-left:3px solid #91b9bd;color:var(--muted);background:#132631;padding:.8rem 1rem;margin:1.2rem 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin:1.4rem 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:.9rem}.stat strong{font-size:1.8rem;display:block}.stat small{color:var(--muted)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1.2rem;margin:1rem 0}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}
+label{color:var(--muted);font-size:.78rem;display:flex;flex-direction:column;gap:.25rem}
+select{width:100%;min-width:0;background:#0e202a;border:1px solid #668694;border-radius:8px;color:var(--text);font:inherit;padding:.55rem .65rem}
+.hidden{display:none!important}table{border-collapse:collapse;width:100%;min-width:600px}th,td{padding:.65rem .7rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:.78rem;color:var(--muted)}td b{font-size:1.18rem}.scroll{overflow-x:auto}.sub{font-size:.81rem;color:var(--muted)}
+.links{display:flex;gap:1rem;flex-wrap:wrap;font-size:.85rem}
+footer{border-top:1px solid var(--line);color:var(--muted);padding:1.2rem 0;font-size:.82rem;margin-top:2rem}
+@media(max-width:620px){.controls{grid-template-columns:1fr 1fr}.controls label:nth-child(2){grid-column:1/-1}.stat strong{font-size:1.45rem}}
+</style></head><body>
+<header><a href="../">俄庇娜百科</a>　·　<a href="../zagren/">语言总览</a>　·　<a href="../zagren-architecture/">V0.7架构</a>　·　<a href="../zagren-dictionary/">字典</a></header>
+<main>
+<div class="sub">ŽAĠRĘN V0.7 · RESTRICTED MORPHOLOGY PILOT</div>
+<h1>形态学试验室</h1>
+<p class="lead">从现有历史格位模板，为14个名词和8个动词产生三大方言的试验性形式，同时查看词干交替及词典原形元音核数。</p>
+<div class="stats"><div class="stat"><strong>14</strong><small>新名词范式</small></div><div class="stat"><strong>8</strong><small>新动词范式</small></div><div class="stat"><strong>840</strong><small>三方言候选形式</small></div></div>
+<div class="note"><strong>请注意：</strong>这些是经过旧范式1302项回归校准的<strong>类推候选词形</strong>，并非840个已经正式核定的新词。现行词典原形不变；重音与语流读音仍待确定。</div>
+<section class="panel"><h2>选择词汇与变化</h2><div class="controls">
+<label>词性<select id="pos"><option value="noun">名词</option><option value="verb">动词</option></select></label>
+<label>词条<select id="gloss"></select></label>
+<label id="numberbox">数<select id="number"><option value="SG">单数 SG</option><option value="PL">复数 PL</option></select></label>
+<label id="casebox">格<select id="case"><option value="NOM">主格</option><option value="GEN">属格</option><option value="DAT">与格</option><option value="ACC">宾格</option><option value="INS">工具格</option><option value="LOC">处所格</option></select></label>
+<label id="kindbox" class="hidden">动词范畴<select id="kind"><option value="infinitive">原形</option><option value="finite">非过去时</option><option value="past">过去时</option><option value="imperative">祈使式</option><option value="futureIPFV">分析式将来（未完成体）</option></select></label>
+<label id="slotbox" class="hidden">人称／性数<select id="slot"></select></label>
+</div><p id="status" class="sub" role="status">读取中……</p></section>
+<section class="panel"><h2>三方言对照结果</h2>
+<div class="scroll"><table><thead><tr><th>方言</th><th>候选形式</th><th>词典原形</th><th>元音核数*</th></tr></thead><tbody id="results"></tbody></table></div>
+<p class="sub">* 只对词典原形计算书写元音核数。元音核数不等于已确定的重音或完整音节划分。西部有生阳性单数宾格短语可另加 za。</p></section>
+<section class="panel"><h2>完整试验范式</h2>
+<div class="links"><a href="../assets/data/zagren-morphology-pilot-v07.txt">阅读840个候选形式（TXT）</a><a href="../assets/data/zagren-morphology-pilot-v07.json">核对词条与限制条件（JSON）</a><a href="../assets/js/zagren-morphology-pilot-v07.js">查看生成器源代码</a></div>
+</section>
+<footer>Žaġręn V0.7 · 第二阶段类推试验 · 现行词典原形仍以《扎格伦字典V0.2》为准</footer>
+</main>
+<script type="module">
+import {createZagrenMorphologyPilotV07} from "../assets/js/zagren-morphology-pilot-v07.js";
+const $=id=>document.getElementById(id);let pilot,dict,gen;
+const branches=[["N","北部 · 珀璃璐卡"],["SE","东南 · 丽庞萨"],["W","西部 · 雷西尼昂帕"]];
+function choices(sel,opts){const old=sel.value;sel.replaceChildren();for(const [value,title] of opts){const op=document.createElement("option");op.value=value;op.textContent=title;sel.append(op)}if(opts.some(x=>x[0]===old))sel.value=old}
+function show(id,value){$(id).classList.toggle("hidden",!value)}
+function refreshGloss(){const isN=$("pos").value==="noun";choices($("gloss"),(isN?pilot.nouns:pilot.verbs).map(x=>[x.gloss,x.gloss+" · "+x.class+"类"]));show("numberbox",isN);show("casebox",isN);show("kindbox",!isN);refreshSlot()}
+function refreshSlot(){const noun=$("pos").value==="noun",kind=$("kind").value;show("slotbox",!noun&&["finite","past","imperative"].includes(kind));if(noun)return;
+ const opts=kind==="finite"?gen.persons:kind==="past"?gen.pastSlots:kind==="imperative"?gen.imperatives:[];choices($("slot"),opts.map(x=>[x,x]))}
+function render(){
+ const body=$("results");body.replaceChildren();const noun=$("pos").value==="noun",gloss=$("gloss").value;let bad=[];
+ for(const [b,label] of branches){
+  try{const x=noun?gen.pilotNounPhrase(gloss,$("number").value,$("case").value,b):gen.pilotVerb(gloss,$("kind").value,$("slot").value,b);
+   const sk=gen.syllableSketch(x.lemma,b);const row=document.createElement("tr");
+   for(const [i,val] of [label,x.form,x.lemma,sk.nuclei].entries()){const cell=document.createElement("td");if(i===1){const strong=document.createElement("b");strong.textContent=String(val);cell.append(strong)}else cell.textContent=String(val);row.append(cell)}body.append(row);
+  }catch(e){bad.push(label+": "+e.message)}
+ }
+ $("status").textContent=bad.length?bad.join("；"):"三大方言候选形式已生成。请勿将试验格位误认为全部核定。";
+}
+async function init(){
+ try{const rs=await Promise.all(["zagren-morphology-pilot-v07.json","zagren-dictionary-v02.json"].map(f=>fetch("../assets/data/"+f)));
+ if(rs.some(x=>!x.ok))throw Error("数据库读取失败");
+ [pilot,dict]=await Promise.all(rs.map(x=>x.json()));gen=createZagrenMorphologyPilotV07({dictionary:dict,pilot});
+ for(const id of ["pos","gloss","number","case","kind","slot"])$(id).addEventListener("change",()=>{if(id==="pos")refreshGloss();if(id==="kind")refreshSlot();render()});
+ refreshGloss();render();
+ }catch(e){$("status").textContent="加载失败："+e.message;}
+}
+init();
+</script></body></html>
