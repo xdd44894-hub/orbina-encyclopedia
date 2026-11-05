@@ -583,11 +583,11 @@
     {
       "id": "E48",
       "group": "书写语气",
-      "zh": "母亲郑重地说：“我们还有火。”",
-      "N": "mať ġoŵorit: §“mÿ še imame •ӧġń•.”",
-      "SE": "mat govorit: §“mi še imame •oң•.”",
-      "W": "maþ ġoŵorit: §“mÿ še imam •oġn•.”",
-      "notes": "§ 与 •…• 根据V0.6书写规则；‘有’沿用V0.5 S28的实见词形",
+      "zh": "母亲郑重而惊讶地说：“我们还有火！”",
+      "N": "mať ġoŵorit: §“mÿ še imame •ӧġń•！”",
+      "SE": "mat govorit: §“mi še imame •oң•！”",
+      "W": "maþ ġoŵorit: §“mÿ še imam •oġn•！”",
+      "notes": "郑言符§、聚焦符•…•和大惊符！合法叠加；不表示必然提高音量；‘有’沿用V0.5语料实见词形",
       "headwords": [
         "火",
         "仍然"
