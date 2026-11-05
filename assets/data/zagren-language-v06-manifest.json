@@ -188,7 +188,10 @@
     "historicVerbs": "assets/data/zagren-verbal-morphology-v03.json",
     "historicModifiers": "assets/data/zagren-modifier-morphology-v04.json",
     "historicLiterature": "assets/data/zagren-public-corpus-v05.json",
-    "historicLiteratureUI": "zagren-showcase/index.html"
+    "historicLiteratureUI": "zagren-showcase/index.html",
+    "hub": "zagren/index.html",
+    "offlineCompendium": "assets/data/zagren-language-compendium-v06.txt",
+    "dictionaryOldBaseline": "assets/data/zagren-dictionary-v01.json"
   },
   "principles": [
     "句义清晰、表达简洁，避免增加无意义词长",
