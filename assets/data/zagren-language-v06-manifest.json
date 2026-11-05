@@ -301,7 +301,7 @@
     "nucleusVariationModern": 80,
     "latestV08QA": {
       "date": "2026-11-06",
-      "status": "reconciliation-in-progress",
+      "status": "pass",
       "dictionaryEntries": 339,
       "completeDialectHeadwords": 335,
       "ipaTranscriptions": 1005,
@@ -319,7 +319,9 @@
       "dialectNucleusVariations": 80,
       "webScriptSyntaxChecked": true,
       "livePagesLoading": "not independently verified",
-      "editedDialectForms": 9
+      "editedDialectForms": 9,
+      "filesChecked": 20,
+      "checksPassed": 28
     },
     "v08EditedDialectForms": 9,
     "revisionVersion": "V0.8-phonology-2"
