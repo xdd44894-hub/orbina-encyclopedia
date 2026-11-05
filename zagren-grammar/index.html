@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Žaġręn V0.6 · 核心语法实验室 · 俄庇娜百科</title>
-<meta name="description" content="藏朔原语 V0.6：三方言名词、代词、动词变格变位与音变溯源实验室">
+<title>Žaġręn V0.8 · 核心语法实验室 · 俄庇娜百科</title>
+<meta name="description" content="藏朔原语 V0.8：三方言名词、代词、动词、形容词与分词同源音变查询">
 <style>
 :root{color-scheme:dark;--bg:#0d1720;--panel:#172934;--line:#34505e;--fg:#e8f1f4;--sub:#adc3cf;--accent:#94d7dc}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Noto Sans",sans-serif;line-height:1.6}
@@ -29,10 +29,12 @@ th,td{text-align:left;border-bottom:1px solid var(--line);padding:.7rem .65rem;v
 <section class="card" aria-label="生成器配置">
 <h2>词形生成</h2>
 <div class="controls">
-<label>词汇类别<select id="category"><option value="noun">名词变格</option><option value="pronoun">人称代词</option><option value="verb">动词变位</option><option value="lemma">V0.3字典：335条词典原形</option></select></label>
+<label>词汇类别<select id="category"><option value="noun">名词变格</option><option value="pronoun">人称代词</option><option value="adjective">形容词一致</option><option value="participle">分词一致</option><option value="verb">动词变位</option><option value="lemma">V0.4字典：335条正式原形</option></select></label>
 <label>选择词汇<select id="entry"></select></label>
 <label id="numfield">数<select id="number"><option value="SG">单数</option><option value="PL">复数</option></select></label>
 <label id="casefield">格<select id="case"><option value="NOM">主格 NOM</option><option value="GEN">属格 GEN</option><option value="DAT">与格 DAT</option><option value="ACC">宾格 ACC</option><option value="INS">工具格 INS</option><option value="LOC">处所格 LOC</option></select></label>
+<label id="genderfield" class="hidden">性数<select id="gender"><option value="M">阳性单数</option><option value="F">阴性单数</option><option value="N">中性单数</option><option value="PL">复数</option></select></label>
+<label id="animatefield" class="hidden">宾格有生性<select id="animateAcc"><option value="0">无生／其他</option><option value="1">有生宾格</option></select></label>
 <label id="kindfield" class="hidden">动词范畴<select id="kind"><option value="finite">非过去时</option><option value="past">过去时</option><option value="imperative">祈使式</option><option value="infinitive">不定式</option><option value="future">分析式未来（未完成体）</option></select></label>
 <label id="slotfield" class="hidden">人称 / 性数<select id="slot"></select></label>
 </div>
@@ -40,21 +42,21 @@ th,td{text-align:left;border-bottom:1px solid var(--line);padding:.7rem .65rem;v
 </section>
 <section class="card" aria-label="三方言结果">
 <h2>三大方言生成结果</h2>
-<div class="tablewrap"><table><thead><tr><th>方言</th><th>V0.6</th><th>旧词形 / 依据</th><th>音变编号</th></tr></thead><tbody id="results"></tbody></table></div>
+<div class="tablewrap"><table><thead><tr><th>方言</th><th>V0.8规则输出</th><th>旧词形 / 依据</th><th>音变编号</th></tr></thead><tbody id="results"></tbody></table></div>
 </section>
 <section class="card">
 <h2>目前的能力边界</h2>
 <p>已经覆盖 V0.2 / V0.3 中有来源的 <strong>2,025 个屈折格位</strong>，并校验第一批 V0.6 的69个旧词典形。对未构建变格的四个新祖语词根，只提供现代词典形，不自动臆造六格。</p>
-<p>词形演化优先使用已确认词根和受限音变；不是把每个词都强行改写。当前页面不提供语音合成。现代词典原形可显示规则宽式IPA，但词汇重音与自由造句尚未全部校定；只有旧范式已登记格位可执行变格。</p>
+<p>词形演化优先使用已确认词根、V0.8同源族演化和受限音变；不是把每个词都强行改写。当前页面不提供语音合成。新增的旧版形容词与分词范式可查询，但不得由此推断新60词已完成全部词形变化。现代词典原形可显示规则宽式IPA，但词汇重音与自由造句尚未全部校定；只有旧范式已登记格位可执行变格。</p>
 <p class="quiet"><a href="../assets/data/zagren-v06-phonology-lexicon.json">词根与音变数据</a>　·　<a href="../assets/js/zagren-grammar-v06.js">生成器源码</a></p>
 </section>
-<footer>Žaġręn V0.6 · 2026-11-05 · 原始 V0.5 范式作为历史数据保留</footer>
+<footer>Žaġręn V0.8 · 2026-11-06 · 原始 V0.5 范式作为历史数据保留</footer>
 </main>
 <script type="module">
 import {createZagrenGrammarV06} from "../assets/js/zagren-grammar-v06.js";
 const q=id=>document.getElementById(id);
 const branches=[["N","北部 · 珀璃璐卡"],["SE","东南 · 丽庞萨"],["W","西部 · 雷西尼昂帕"]];
-let nominal,verbal,lexicon,dictionary,grammar;
+let nominal,verbal,lexicon,dictionary,modifier,grammar;
 function choices(el,items){
  const was=el.value;el.replaceChildren();
  items.forEach(([v,title])=>{const op=document.createElement("option");op.value=v;op.textContent=title;el.append(op)});
@@ -63,11 +65,15 @@ function choices(el,items){
 function show(el,value){q(el).classList.toggle("hidden",!value)}
 function entries(){
  const kind=q("category").value;
- if(kind==="noun")choices(q("entry"),[...new Map(nominal.nouns.map(x=>[x.id,[x.id,x.meaning+" · "+x.id]])).values()]);
+ if(kind==="noun")choices(q("entry"),[...new Map([...nominal.nouns,...modifier.extended_noun_forms].map(x=>[x.id,[x.id,x.meaning+" · "+x.id]])).values()]);
+ if(kind==="adjective")choices(q("entry"),modifier.adjectives.map(x=>[x.id,x.meaning+" · "+x.id]));
+ if(kind==="participle")choices(q("entry"),modifier.participles.map(x=>[x.id,x.meaning+" · "+x.id]));
  if(kind==="pronoun")choices(q("entry"),[...new Map(nominal.pronouns.map(x=>[x.person,[x.person,x.meaning+" · "+x.person]])).values()]);
  if(kind==="verb")choices(q("entry"),verbal.lexicon.map(x=>[x.id,x.meaning+" · "+x.id+" · "+x.aspect]));
  if(kind==="lemma")choices(q("entry"),dictionary.entries.filter(x=>x.forms).map(x=>[x.gloss,x.gloss+" · "+(dictionary.posGuide[x.pos]||x.pos)]));
- show("numfield",kind==="noun");show("casefield",kind==="noun"||kind==="pronoun");
+ show("numfield",kind==="noun");show("casefield",["noun","pronoun","adjective","participle"].includes(kind));
+ show("genderfield",["adjective","participle"].includes(kind));
+ show("animatefield",["adjective","participle"].includes(kind)&&q("case").value==="ACC");
  show("kindfield",kind==="verb");show("slotfield",kind==="verb"&&["finite","past","imperative"].includes(q("kind").value));
  slots();
 }
@@ -95,6 +101,8 @@ function render(){
    let info;
    if(kind==="noun")info=grammar.noun(id,num,gramCase,b);
    else if(kind==="pronoun")info=grammar.pronoun(id,gramCase,b);
+   else if(kind==="adjective")info=grammar.adjective(id,q("gender").value,gramCase,b,{animateAcc:Number(q("animateAcc").value)});
+   else if(kind==="participle")info=grammar.participle(id,q("gender").value,gramCase,b,{animateAcc:Number(q("animateAcc").value)});
    else if(kind==="lemma")info=grammar.lemma(id,b);
    else if(verbKind==="future")info=grammar.future(id,b);
    else info=grammar.verb(id,verbKind,slot,b);
@@ -105,16 +113,17 @@ function render(){
 }
 async function main(){
  try{
-  const files=["zagren-nominal-morphology-v02.json","zagren-verbal-morphology-v03.json","zagren-v06-phonology-lexicon.json","zagren-dictionary-v03.json"];
+  const files=["zagren-nominal-morphology-v02.json","zagren-verbal-morphology-v03.json","zagren-v06-phonology-lexicon.json","zagren-dictionary-v04.json","zagren-modifier-morphology-v04.json"];
   const responses=await Promise.all(files.map(x=>fetch("../assets/data/"+x)));
   if(responses.some(x=>!x.ok))throw Error("源数据读取失败，请检查网站部署。");
-  [nominal,verbal,lexicon,dictionary]=await Promise.all(responses.map(x=>x.json()));
-  grammar=createZagrenGrammarV06({nominal,verbal,lexicon,dictionary});
+  [nominal,verbal,lexicon,dictionary,modifier]=await Promise.all(responses.map(x=>x.json()));
+  grammar=createZagrenGrammarV06({nominal,verbal,lexicon,dictionary,modifier});
   const report=grammar.audit();
   if(report.status!=="pass")throw Error("核心语法自检失败，请核对语料库。");
-  for(const name of ["category","entry","number","case","kind","slot"])q(name).addEventListener("change",()=>{
+  for(const name of ["category","entry","number","case","gender","animateAcc","kind","slot"])q(name).addEventListener("change",()=>{
    if(name==="category")entries();
    if(name==="kind"||name==="entry")slots();
+   if(name==="case")show("animatefield",["adjective","participle"].includes(q("category").value)&&q("case").value==="ACC");
    render();
   });
   entries();render();
