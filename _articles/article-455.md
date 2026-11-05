@@ -95,7 +95,7 @@ mÿ doprÿħodiłi od zaŵodÿ ŵ dom. noč prÿħodit; ŵetr ešče ŵejat ŵ �
 
 同时正式登记 `i`（和）、`no`（但是）、`dnes`（今天）、`jutro`（明天）、`znov`（再次）、`ešče`（仍然）、`než`（比）、`v`（进入／在……内）、`na`（在……上）、`od`（从）、`u`（在旁）、`k`（朝向）等语法词。由于《词法学》此前尚未包含一般性的中性-o词干，本篇明确补入其主宾同形与斜格形式。新增词根和构拟规则均作为版本增量登记。
 
-**完整版逐词语法标注（213格位）、全部32句三方言逐句IPA、机器生成脚本与错误审校清单**另以公开展示工作包形式保存。本文在百科中提供三套可直接阅读的原文与结构化句子数据，不把仍缺证据的自然重音模式伪装成已确定史实。
+**完整研究资料已开放：**[213个逐词语法标注（CSV）]({{ '/assets/data/zagren-showcase-gloss-v05.csv' | relative_url }})、[32句三方言原文、宽式IPA和中文译文（CSV）]({{ '/assets/data/zagren-showcase-sentences-v05.csv' | relative_url }})、[逐句机器可读语料（JSON）]({{ '/assets/data/zagren-public-corpus-v05.json' | relative_url }})。三部族原文与逐句发音也可在[在线展示页面]({{ '/zagren-showcase/' | relative_url }})直接对照。
 
 ## 相关语言学研究
 
