@@ -1,0 +1,684 @@
+{
+  "title": "Žaġręn V0.6 · 第一阶段音变与词典形",
+  "version": "0.6-stage-1",
+  "date": "2026-11-05",
+  "status": "第一批现代词典形；变格变位尚未统一改版",
+  "baseline": "V0.5 syllable and orthographic data retained unchanged",
+  "dialects": {
+    "N": "珀璃璐卡",
+    "SE": "丽庞萨",
+    "W": "雷西尼昂帕"
+  },
+  "notes": [
+    "现代三方言形态从V0.5各支历史形直接演变；新拟祖语词根另外标记",
+    "字母对应独立音值；非装饰替换",
+    "不能从27个词典形推定全语言的格和动词规则",
+    "§/¡/¿/！/？/•...• 和 /...\\ 遵循article-451规范"
+  ],
+  "rules": [
+    {
+      "id": "C01",
+      "scope": "三地",
+      "description": "词根内部 /l,ɫ/ + 弱读 /o/ + /k,d/ 的元音脱落",
+      "example": "ħolod→ħold / holod→hold / ħołod→ħołd；moloko→molko",
+      "caveat": "限于可确认弱读的词根；不机械删除全部o"
+    },
+    {
+      "id": "C02",
+      "scope": "三地",
+      "description": "边界类派生词中 -nic(a) / -nic 失去弱读 i，成为 -nc(a) / -nc",
+      "example": "ġranica→ġranca；granica→granca；ġranic→ġranc",
+      "caveat": "现阶段仅验证这一派生词族"
+    },
+    {
+      "id": "C03",
+      "scope": "三地",
+      "description": "高频弱读副词 ešče 的 e- 脱落及 šč > š 合流",
+      "example": "ešče→še",
+      "caveat": "词汇化缩约，不任意推广到所有 šč 词根"
+    },
+    {
+      "id": "C04",
+      "scope": "三地",
+      "description": "高频风词词干末 -etr > -er（/t/ 在复杂韵尾中脱落）",
+      "example": "ŵetr→ŵer；vetr→ver",
+      "caveat": "暂限气象词及经验证的同源词"
+    },
+    {
+      "id": "N11",
+      "scope": "北部",
+      "description": "词首 /sne/ > /sę/（鼻音失去辅音地位，元音鼻化）",
+      "example": "sneġ→sęġ",
+      "caveat": "也可作用于复合词词根的起始位置"
+    },
+    {
+      "id": "N12",
+      "scope": "北部",
+      "description": "历史软音节尾触发 /o/ 前化为 /ø/，后经类推推广到全词干",
+      "example": "oġń→ӧġń；kośť→kӧśť",
+      "caveat": "词干音变；不能见软音就无条件换字"
+    },
+    {
+      "id": "N13",
+      "scope": "北部",
+      "description": "/ʒ/ 在后接 /e,i/ 环境软化成 /ʑ/，写ẑ",
+      "example": "železo→ẑelezo；žiŵot→ẑiŵot",
+      "caveat": "不影响后接 a、o 的 ž"
+    },
+    {
+      "id": "N14",
+      "scope": "北部",
+      "description": "历史 /tʲr/ > /tʰr/；新增字母 ṱ = /tʰ/，区别于 ť、t",
+      "example": "ťruba→ṱruba；ťrubu→ṱrubu",
+      "caveat": "仅该音丛起源，不把所有t变送气"
+    },
+    {
+      "id": "N15",
+      "scope": "北部",
+      "description": "高频中性时间词 utro 末尾 -o 弱化脱落",
+      "example": "utro→utr",
+      "caveat": "词形类推后需重新推导变格"
+    },
+    {
+      "id": "N16",
+      "scope": "北部",
+      "description": "新祖语软化辅音 /kʲ,rʲ/ 后 /u/ 前化为 /y/，写 ү",
+      "example": "*kʲuta→ǩүta；*rʲud→rjүd",
+      "caveat": "不能把普通u全部换成ү"
+    },
+    {
+      "id": "N17",
+      "scope": "北部",
+      "description": "新祖语 *kʲ > ǩ，*dj > ď，*rʲ > rj",
+      "example": "*kʲel→ǩel；*medja→meďa；*rʲud→rjүd",
+      "caveat": "新增祖语词根的示范性演变"
+    },
+    {
+      "id": "SE11",
+      "scope": "东南",
+      "description": "词首 /sne/ > /se/，失去鼻音但不保留鼻化",
+      "example": "sneg→seg",
+      "caveat": "与北部N11形成同源对应"
+    },
+    {
+      "id": "SE12",
+      "scope": "东南",
+      "description": "/z/ 在 /i/ 前软化为 /ʑ/，写ẑ",
+      "example": "zima→ẑima",
+      "caveat": "先验证稳定的该词根"
+    },
+    {
+      "id": "SE13",
+      "scope": "东南",
+      "description": "/o/ 在 /l/ 之前于指定词根中央化为 /ɵ/，写ȯ",
+      "example": "holod→hȯld；moloko→mȯlko",
+      "caveat": "同期先应用C01；需核对其他含ol词根"
+    },
+    {
+      "id": "SE14",
+      "scope": "东南",
+      "description": "/gn/ > /ŋ/ 写ң；旧 ogon 经次音节脱落 ogn 再同化",
+      "example": "jagne→jaңe；ogon→ogn→oң",
+      "caveat": "保留相关词汇历史层级，不得无根据把单独g或n写作ң"
+    },
+    {
+      "id": "SE15",
+      "scope": "东南",
+      "description": "新祖语 *kʲ > ć，*dj > җ，*rʲ > r",
+      "example": "*kʲuta→ćuta；*medja→meҗa；*rʲud→rud",
+      "caveat": "源于不同的祖语对立"
+    },
+    {
+      "id": "W11",
+      "scope": "西部",
+      "description": "词末 /ɣ/ 在元音之后脱落（词中、带词尾时不自动脱落）",
+      "example": "sneġ→sne；boġ→bo；droġ→dro",
+      "caveat": "造成词干与带格尾形的交替，后续重造范式"
+    },
+    {
+      "id": "W12",
+      "scope": "西部",
+      "description": "/r/ 在 /θ/（þ）后强化为 /r̝/，写ř",
+      "example": "þrub→þřub",
+      "caveat": "先验证此辅音丛，不影响全部r"
+    },
+    {
+      "id": "W13",
+      "scope": "西部",
+      "description": "词首 /ʒeɫ/ > /ʒɫ/ 的弱元音脱落",
+      "example": "žełez→žłez",
+      "caveat": "可能受语速及重音限制；先验证冶金词根"
+    },
+    {
+      "id": "W14",
+      "scope": "西部",
+      "description": "新祖语 *kʲ > ǩ，*dj > ẑ，*rʲ > ř；软化辅音后u > ү",
+      "example": "*kʲuta→ǩүt；*medja→meẑ；*rʲud→řүd",
+      "caveat": "以具体祖语词根与音变路径为限"
+    },
+    {
+      "id": "W15",
+      "scope": "西部",
+      "description": "沿用V0.5既有W09：多音节实词非重读-a词尾脱落",
+      "example": "*kʲuta→ǩүt；*medja→meẑ",
+      "caveat": "不能对所有单音节词或有意义格尾做任意删尾"
+    }
+  ],
+  "rows": [
+    {
+      "id": "L01",
+      "gloss": "雪",
+      "source": "V0.5比较词典",
+      "proto": "*sneg",
+      "v05": {
+        "N": "sneġ",
+        "SE": "sneg",
+        "W": "sneġ"
+      },
+      "v06": {
+        "N": "sęġ",
+        "SE": "seg",
+        "W": "sne"
+      },
+      "rules": [
+        "N11",
+        "SE11",
+        "W11"
+      ]
+    },
+    {
+      "id": "L02",
+      "gloss": "火",
+      "source": "V0.5比较词典",
+      "proto": "*ognʲ",
+      "v05": {
+        "N": "oġń",
+        "SE": "ogon",
+        "W": "oġn"
+      },
+      "v06": {
+        "N": "ӧġń",
+        "SE": "oң",
+        "W": "oġn"
+      },
+      "rules": [
+        "N12",
+        "SE14"
+      ]
+    },
+    {
+      "id": "L03",
+      "gloss": "骨",
+      "source": "V0.5比较词典",
+      "proto": "*kosʲtʲ",
+      "v05": {
+        "N": "kośť",
+        "SE": "kość",
+        "W": "košt"
+      },
+      "v06": {
+        "N": "kӧśť",
+        "SE": "kość",
+        "W": "košt"
+      },
+      "rules": [
+        "N12"
+      ]
+    },
+    {
+      "id": "L04",
+      "gloss": "冬季",
+      "source": "V0.5比较词典",
+      "proto": "*zÿma",
+      "v05": {
+        "N": "zÿma",
+        "SE": "zima",
+        "W": "zÿm"
+      },
+      "v06": {
+        "N": "zÿma",
+        "SE": "ẑima",
+        "W": "zÿm"
+      },
+      "rules": [
+        "SE12"
+      ]
+    },
+    {
+      "id": "L05",
+      "gloss": "水",
+      "source": "V0.5比较词典",
+      "proto": "*voda",
+      "v05": {
+        "N": "ŵoda",
+        "SE": "voda",
+        "W": "ŵod"
+      },
+      "v06": {
+        "N": "ŵoda",
+        "SE": "voda",
+        "W": "ŵod"
+      },
+      "rules": []
+    },
+    {
+      "id": "L06",
+      "gloss": "家",
+      "source": "V0.5比较词典",
+      "proto": "*dom",
+      "v05": {
+        "N": "dom",
+        "SE": "dom",
+        "W": "dom"
+      },
+      "v06": {
+        "N": "dom",
+        "SE": "dom",
+        "W": "dom"
+      },
+      "rules": []
+    },
+    {
+      "id": "L07",
+      "gloss": "森林",
+      "source": "V0.5比较词典",
+      "proto": "*les",
+      "v05": {
+        "N": "les",
+        "SE": "les",
+        "W": "łes"
+      },
+      "v06": {
+        "N": "les",
+        "SE": "les",
+        "W": "łes"
+      },
+      "rules": []
+    },
+    {
+      "id": "L08",
+      "gloss": "管道",
+      "source": "V0.5比较词典",
+      "proto": "*tʲruba",
+      "v05": {
+        "N": "ťruba",
+        "SE": "truba",
+        "W": "þrub"
+      },
+      "v06": {
+        "N": "ṱruba",
+        "SE": "truba",
+        "W": "þřub"
+      },
+      "rules": [
+        "N14",
+        "W12"
+      ]
+    },
+    {
+      "id": "L09",
+      "gloss": "铁",
+      "source": "V0.5比较词典",
+      "proto": "*železo",
+      "v05": {
+        "N": "železo",
+        "SE": "železo",
+        "W": "žełez"
+      },
+      "v06": {
+        "N": "ẑelezo",
+        "SE": "železo",
+        "W": "žłez"
+      },
+      "rules": [
+        "N13",
+        "W13"
+      ]
+    },
+    {
+      "id": "L10",
+      "gloss": "寒冷",
+      "source": "V0.5比较词典",
+      "proto": "*xolod",
+      "v05": {
+        "N": "ħolod",
+        "SE": "holod",
+        "W": "ħołod"
+      },
+      "v06": {
+        "N": "ħold",
+        "SE": "hȯld",
+        "W": "ħołd"
+      },
+      "rules": [
+        "C01",
+        "SE13"
+      ]
+    },
+    {
+      "id": "L11",
+      "gloss": "乳",
+      "source": "V0.5比较词典",
+      "proto": "*moloko",
+      "v05": {
+        "N": "moloko",
+        "SE": "moloko",
+        "W": "mołok"
+      },
+      "v06": {
+        "N": "molko",
+        "SE": "mȯlko",
+        "W": "mołk"
+      },
+      "rules": [
+        "C01",
+        "SE13"
+      ]
+    },
+    {
+      "id": "L12",
+      "gloss": "边界",
+      "source": "V0.5比较词典",
+      "proto": "*granica",
+      "v05": {
+        "N": "ġranica",
+        "SE": "granica",
+        "W": "ġranic"
+      },
+      "v06": {
+        "N": "ġranca",
+        "SE": "granca",
+        "W": "ġranc"
+      },
+      "rules": [
+        "C02"
+      ]
+    },
+    {
+      "id": "L13",
+      "gloss": "羊羔",
+      "source": "V0.5比较词典",
+      "proto": "*jagnę",
+      "v05": {
+        "N": "jaġnę",
+        "SE": "jagne",
+        "W": "jaġn"
+      },
+      "v06": {
+        "N": "jaġnę",
+        "SE": "jaңe",
+        "W": "jaġn"
+      },
+      "rules": [
+        "SE14"
+      ]
+    },
+    {
+      "id": "L14",
+      "gloss": "神明",
+      "source": "V0.5比较词典",
+      "proto": "*bog",
+      "v05": {
+        "N": "boġ",
+        "SE": "bog",
+        "W": "boġ"
+      },
+      "v06": {
+        "N": "boġ",
+        "SE": "bog",
+        "W": "bo"
+      },
+      "rules": [
+        "W11"
+      ]
+    },
+    {
+      "id": "L15",
+      "gloss": "生命",
+      "source": "V0.5比较词典",
+      "proto": "*život",
+      "v05": {
+        "N": "žiŵot",
+        "SE": "život",
+        "W": "žiŵot"
+      },
+      "v06": {
+        "N": "ẑiŵot",
+        "SE": "život",
+        "W": "žiŵot"
+      },
+      "rules": [
+        "N13"
+      ]
+    },
+    {
+      "id": "L16",
+      "gloss": "城镇",
+      "source": "V0.5比较词典",
+      "proto": "*grad",
+      "v05": {
+        "N": "ġrad",
+        "SE": "grad",
+        "W": "ġrad"
+      },
+      "v06": {
+        "N": "ġrad",
+        "SE": "grad",
+        "W": "ġrad"
+      },
+      "rules": []
+    },
+    {
+      "id": "L17",
+      "gloss": "兄弟",
+      "source": "V0.5比较词典",
+      "proto": "*brat",
+      "v05": {
+        "N": "brat",
+        "SE": "brat",
+        "W": "brat"
+      },
+      "v06": {
+        "N": "brat",
+        "SE": "brat",
+        "W": "brat"
+      },
+      "rules": []
+    },
+    {
+      "id": "L18",
+      "gloss": "阴影",
+      "source": "V0.5比较词典",
+      "proto": "*tʲenʲ",
+      "v05": {
+        "N": "ťęń",
+        "SE": "ten",
+        "W": "þęn"
+      },
+      "v06": {
+        "N": "ťęń",
+        "SE": "ten",
+        "W": "þęn"
+      },
+      "rules": []
+    },
+    {
+      "id": "L19",
+      "gloss": "母亲",
+      "source": "V0.5比较词典",
+      "proto": "*matʲ",
+      "v05": {
+        "N": "mať",
+        "SE": "mat",
+        "W": "maþ"
+      },
+      "v06": {
+        "N": "mať",
+        "SE": "mat",
+        "W": "maþ"
+      },
+      "rules": []
+    },
+    {
+      "id": "L20",
+      "gloss": "风",
+      "source": "V0.5展示语料",
+      "proto": "*vetr",
+      "v05": {
+        "N": "ŵetr",
+        "SE": "vetr",
+        "W": "ŵetr"
+      },
+      "v06": {
+        "N": "ŵer",
+        "SE": "ver",
+        "W": "ŵer"
+      },
+      "rules": [
+        "C04"
+      ]
+    },
+    {
+      "id": "L21",
+      "gloss": "清晨",
+      "source": "V0.5展示语料",
+      "proto": "*utro",
+      "v05": {
+        "N": "utro",
+        "SE": "utro",
+        "W": "utr"
+      },
+      "v06": {
+        "N": "utr",
+        "SE": "utro",
+        "W": "utr"
+      },
+      "rules": [
+        "N15"
+      ]
+    },
+    {
+      "id": "L22",
+      "gloss": "仍然",
+      "source": "V0.5展示语料",
+      "proto": "*ešče",
+      "v05": {
+        "N": "ešče",
+        "SE": "ešče",
+        "W": "ešče"
+      },
+      "v06": {
+        "N": "še",
+        "SE": "še",
+        "W": "še"
+      },
+      "rules": [
+        "C03"
+      ]
+    },
+    {
+      "id": "L23",
+      "gloss": "道路",
+      "source": "V0.5展示语料",
+      "proto": "*droga",
+      "v05": {
+        "N": "droġa",
+        "SE": "droga",
+        "W": "droġ"
+      },
+      "v06": {
+        "N": "droġa",
+        "SE": "droga",
+        "W": "dro"
+      },
+      "rules": [
+        "W11"
+      ]
+    },
+    {
+      "id": "L24",
+      "gloss": "挂钩",
+      "source": "V0.6新增祖语构拟",
+      "proto": "*kʲuta",
+      "v05": null,
+      "v06": {
+        "N": "ǩүta",
+        "SE": "ćuta",
+        "W": "ǩүt"
+      },
+      "rules": [
+        "N16",
+        "N17",
+        "SE15",
+        "W14",
+        "W15"
+      ],
+      "note": "新拟祖语词；北西高前圆唇化、东南塞擦化"
+    },
+    {
+      "id": "L25",
+      "gloss": "结扣",
+      "source": "V0.6新增祖语构拟",
+      "proto": "*kʲel",
+      "v05": null,
+      "v06": {
+        "N": "ǩel",
+        "SE": "ćel",
+        "W": "ǩel"
+      },
+      "rules": [
+        "N17",
+        "SE15",
+        "W14"
+      ],
+      "note": "新拟祖语词；与挂钩共享*kʲ音变"
+    },
+    {
+      "id": "L26",
+      "gloss": "界线",
+      "source": "V0.6新增祖语构拟",
+      "proto": "*medja",
+      "v05": null,
+      "v06": {
+        "N": "meďa",
+        "SE": "meҗa",
+        "W": "meẑ"
+      },
+      "rules": [
+        "N17",
+        "SE15",
+        "W14",
+        "W15"
+      ],
+      "note": "具体的分隔线，区别于领土边界ġranca等"
+    },
+    {
+      "id": "L27",
+      "gloss": "冰脊",
+      "source": "V0.6新增祖语构拟",
+      "proto": "*rʲud",
+      "v05": null,
+      "v06": {
+        "N": "rjүd",
+        "SE": "rud",
+        "W": "řүd"
+      },
+      "rules": [
+        "N16",
+        "N17",
+        "SE15",
+        "W14"
+      ],
+      "note": "冻土或积雪中形成的狭长硬脊"
+    }
+  ],
+  "metrics": {
+    "row_count": 27,
+    "existing_gloss_count": 23,
+    "new_proto_count": 4,
+    "base_form_cells": 69,
+    "changed_form_cells": 31,
+    "original_character_count": 286,
+    "new_character_count": 258
+  }
+}
