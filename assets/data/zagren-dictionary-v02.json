@@ -71,15 +71,15 @@
     },
     "byStage": {
       "attested": 3,
-      "v06": 23,
-      "legacy": 145,
+      "v06": 24,
+      "legacy": 144,
       "v06-new-root": 4,
       "proto-only": 4,
       "v06-core": 100
     },
     "withThreeForms": 275,
     "broadIPATranscriptions": 825,
-    "modernHeadwordCount": 127,
+    "modernHeadwordCount": 128,
     "modernAddedThisEdition": 100,
     "legacyKept": 179
   },
@@ -4159,31 +4159,41 @@
       "gloss": "铁制的",
       "proto": "*železnÿ",
       "forms": {
+        "N": "ẑeleznÿ",
+        "SE": "železni",
+        "W": "žłeznÿ"
+      },
+      "older": {
         "N": "železnÿ",
         "SE": "železni",
         "W": "žełeznÿ"
       },
-      "older": null,
-      "stage": "legacy",
+      "stage": "v06",
       "source": [
-        "assets/data/zagren-modifier-morphology-v04.json"
+        "assets/data/zagren-modifier-morphology-v04.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
       ],
       "detail": {
         "class": "H",
         "degreeType": "REL"
       },
       "notes": [
-        "关系形容词不登记普通综合比较级"
+        "关系形容词不登记普通综合比较级",
+        "V0.6 同根一致修订：*železn- 继承“铁”词根，在北部应用 N13 /ʒ/>/ʑ/、在西部应用 W13 词首弱元音脱落；历史 V0.4 形式单列于 older"
       ],
       "id": "D0129",
       "aliases": [],
       "ipa": {
-        "N": "/ʒeleznɨ/",
+        "N": "/ʑeleznɨ/",
         "SE": "/ʒelezni/",
-        "W": "/ʒeɫeznɨ/"
+        "W": "/ʒɫeznɨ/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "historic-documented"
+      "inflectionCoverage": "historic-documented",
+      "ruleIds": [
+        "N13",
+        "W13"
+      ]
     },
     {
       "pos": "adj",
@@ -9540,6 +9550,18 @@
       ],
       "inflectionCoverage": "lemma-only",
       "sourceId": "C100"
+    }
+  ],
+  "errata": [
+    {
+      "id": "E-V06-A31",
+      "date": "2026-11-05",
+      "entry": "D0129",
+      "reason": "与“铁”的共源派生词现代化，统一句法与新词形",
+      "affectedRules": [
+        "N13",
+        "W13"
+      ]
     }
   ]
 }
