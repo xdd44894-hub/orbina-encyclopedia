@@ -231,3 +231,7 @@ A类通常使用祖语 *-aj；I类用词干末尾 *-i；E类将不定式前的�
 [下载动词形态学JSON]({{ '/assets/data/zagren-verbal-morphology-v03.json' | relative_url }})、[36词动词表]({{ '/assets/data/zagren-verb-lexicon-v03.csv' | relative_url }})、[20句比较语料]({{ '/assets/data/zagren-verbal-corpus-v03.csv' | relative_url }})。
 
 本卷的所有历史祖语形式属于俄庇娜世界观的语言学构拟文本。
+
+## 后续：动词分词与名词一致
+
+[《藏朔原语形态学 III：形容词、分词、比较级与语法一致》]({{ '/articles/article-454/' | relative_url }})将本卷的完成体、未完成体与动词及物性系统扩展为主动、被动、结果三类可变格分词。

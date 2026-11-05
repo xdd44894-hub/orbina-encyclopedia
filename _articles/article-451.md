@@ -159,3 +159,8 @@ ai_search: true
 三种方言的名词已经进入可验证的六格、单双数演算：14组名词共168个祖语格数位置，衍生三地504个词形；7组人称代词衍生126个词形。所有范式、形态历史和短语测试见 [《藏朔原语·名词、数、格与代词》]({{ '/articles/article-452/' | relative_url }})。
 
 数据下载：[比较词源JSON]({{ '/assets/data/zagren-comparative-lexicon-v01.json' | relative_url }})、[名词与代词范式JSON]({{ '/assets/data/zagren-nominal-morphology-v02.json' | relative_url }})。
+
+
+## 第四卷：形容词与比较级
+
+[《藏朔原语形态学 III：形容词、分词、比较级与语法一致》]({{ '/articles/article-454/' | relative_url }})承接前两部形态学研究，补齐形容词性数格一致、28个性质词的程度比较，以及20个分词的格变化。

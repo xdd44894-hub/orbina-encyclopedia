@@ -77,7 +77,7 @@ ai_search: true
 | 迅速 | *bÿstrÿ | bÿstrÿ | bistri | bÿstrÿ |
 | 沉重 | *tjažkÿ | tjažkÿ | tjažki | tjažkÿ |
 | 蓝色 | *sinʲi | sińi | sini | sini |
-| 邻近 | *bliznʲi | bliźńi | blizni | błizni |
+| 邻近 | *bliznʲi | blizńi | blizni | błizni |
 
 ### 关系形容词
 
