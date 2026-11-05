@@ -1,0 +1,90 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Žaġręn V0.8 · 历史音系与旧词升级</title>
+<meta name="description" content="藏朔原语V0.8 历时音变、三大方言发音差异、151条旧词审核、音节核统计和同源词修订。">
+<style>
+:root{color-scheme:dark;--bg:#101a23;--card:#1a2b36;--sub:#b8cbd0;--fg:#edf4f5;--line:#405c68;--accent:#a3dbe0}
+*{box-sizing:border-box}body{font-family:system-ui,-apple-system,"Noto Sans",sans-serif;color:var(--fg);background:var(--bg);margin:0;line-height:1.65}
+a{color:var(--accent)}header{background:#142630;border-bottom:1px solid var(--line);padding:1rem max(1rem,calc((100% - 1100px)/2))}
+nav{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}main{max-width:1100px;margin:0 auto;padding:2rem 1rem 4rem}
+.eyebrow{color:var(--accent);font-size:.76rem;font-weight:800;letter-spacing:.15em}
+h1{font-size:clamp(2rem,6vw,3.8rem);letter-spacing:-.05em;line-height:1.17;margin:.3rem 0 .6rem}
+h2{font-size:1.38rem;margin:1.8rem 0 .9rem}h3{font-size:1.02rem;margin:.1rem 0 .4rem}
+.lead,.muted{color:var(--sub)}.lead{font-size:1.05rem;max-width:900px}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem;margin:1.5rem 0}
+.metric{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:.9rem}.metric b{display:block;font-size:1.8rem}.metric span{font-size:.79rem;color:var(--sub)}
+.note{border-left:3px solid var(--accent);background:#172b33;padding:.85rem 1rem;margin:1.4rem 0;color:var(--sub)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}.card{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:.95rem}
+.card p{margin:.25rem 0;font-size:.92rem}.tag{font-size:.78rem;font-weight:800;color:var(--accent)}.small{font-size:.78rem;color:var(--sub)}
+input,select{font:inherit;background:#0c202a;color:var(--fg);border:1px solid #617f8d;border-radius:8px;padding:.6rem .7rem;width:100%}
+.toolbar{display:grid;grid-template-columns:1.3fr .75fr;gap:.7rem;margin:1rem 0}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:.65rem .5rem;vertical-align:top;border-bottom:1px solid var(--line)}th{font-size:.8rem;color:var(--sub)}
+.scroll{overflow-x:auto}.nobreak{white-space:nowrap}footer{border-top:1px solid var(--line);padding-top:1.2rem;font-size:.8rem;color:var(--sub);margin-top:2rem}
+@media(max-width:680px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.cards{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr}}
+</style></head><body>
+<header><nav><a href="../">俄庇娜百科</a><a href="../zagren/">语言总览</a><a href="../zagren-dictionary/">字典V0.4</a><a href="../zagren-architecture/">句法V0.7</a><a href="../zagren-morphology/">形态试验</a></nav></header>
+<main>
+<div class="eyebrow">ŽAĠRĘN · DIACHRONIC PHONOLOGY · V0.8</div>
+<h1>历史音系与旧词升级</h1>
+<p class="lead">在保留原21条V0.6音变的基础上，把同源词跨词性继承、历史词干与现代书写衔接起来。规则必须适用于声明的词根、音位环境及方言，不得机械地把一个例词的所有变化施加给整个词典。</p>
+<div class="metrics">
+<div class="metric"><b>151</b><span>原旧词条审阅</span></div>
+<div class="metric"><b>4</b><span>正式同词根修订</span></div>
+<div class="metric"><b>1,005</b><span>现行三方言原形音位</span></div>
+<div class="metric"><b>80</b><span>方言元音核数不相同的词</span></div>
+</div>
+<div class="note">重音、辅音连读、真实音节边界和方言声调目前尚未被规范化。这里的“元音核”仅是书写统计，不是发音认证。另有4个只有祖语构拟的旧词获得候选不定式，但<strong>未纳入正式词典原形</strong>。</div>
+<section>
+<h2>V0.8 词族同步修订</h2>
+<div id="revisions" class="cards"></div>
+</section>
+<section>
+<h2>历时音变规则</h2>
+<div class="toolbar"><input type="search" id="filter" placeholder="筛选：雪 / N13 / 北部 / 词首" spellcheck="false">
+<select id="region"><option value="all">全部地域</option><option value="shared">共同创新</option><option value="N">北部</option><option value="SE">东南</option><option value="W">西部</option></select></div>
+<p id="ruleStatus" class="small" role="status">载入中…</p><div id="rules" class="cards"></div>
+</section>
+<section><h2>书写元音核统计</h2><div class="scroll"><table><thead><tr><th>方言</th><th>无元音核</th><th>1核</th><th>2核</th><th>3核</th><th>4核及以上</th></tr></thead><tbody id="nuclei"></tbody></table></div>
+<p id="nucleiStatus" class="small"></p></section>
+<section>
+<h2>研究资料与版本边界</h2>
+<p class="muted">旧版格位、动词和分词数据按历史阶段保留。V0.8为能够追溯到原有音变的同源词添加新书写结果，绝不宣称所有未改变的旧词已经完成完整现代屈折校准。</p>
+<p><a href="../assets/data/zagren-phonology-v08.json">V0.8音系规则与统计JSON</a> · <a href="../assets/data/zagren-v08-lexical-audit.json">151条旧词审阅清单</a> · <a href="../assets/data/zagren-dictionary-v04.txt">339条完整字典TXT</a></p>
+</section><footer>Žaġręn V0.8 · 历时音系与原形升级第一期 · 俄庇娜百科</footer>
+</main>
+<script type="module">
+const $=s=>document.getElementById(s);
+function el(t,text,cl){const e=document.createElement(t);if(text!==undefined)e.textContent=text;if(cl)e.className=cl;return e}
+let data;
+function textField(parent,t,v){parent.append(el(t,v))}
+function showRules(){
+ if(!data)return;let term=$("filter").value.trim().toLowerCase(),region=$("region").value;
+ const scope=(x)=>region==="all"||(region==="shared"?x.id.startsWith("C"):x.id.startsWith(region));
+ const records=data.inheritedSoundLaws.filter(x=>scope(x)&&(!term||[x.id,x.scope,x.description,x.example,x.caveat].join(" ").toLowerCase().includes(term)));
+ const box=$("rules");box.replaceChildren();
+ for(const r of records){const cell=el("article",undefined,"card");cell.append(el("div",r.id+" · "+r.scope,"tag"),el("p",r.description),el("p","例如："+r.example,"small"),el("p","条件："+r.caveat,"small"));box.append(cell)}
+ $("ruleStatus").textContent="显示 "+records.length+" / "+data.inheritedSoundLaws.length+" 条已登记音变";
+}
+async function main(){
+ try{
+  const response=await fetch("../assets/data/zagren-phonology-v08.json",{cache:"no-cache"});
+  if(!response.ok)throw Error("数据请求失败");
+  data=await response.json();
+  if(data.inheritedSoundLaws.length!==21)throw Error("历史规则数量不匹配");
+  for(const x of data.modernizedOldRoots){
+   const div=el("article",undefined,"card");div.append(el("div",x.id+" · "+x.gloss,"tag"),el("h3",x.ruleIds.join(", ")));
+   const p=el("p");for(const [b,name] of [["N","北部"],["SE","东南"],["W","西部"]])if(x.old[b]!==x.new[b]){p.append(el("strong",name+"："),el("span",x.old[b]+" → "+x.new[b]));}
+   div.append(p);$("revisions").append(div);
+  }
+  const dist=data.vowelNucleusAudit.distribution;
+  for(const [key,word] of [["N","北部"],["SE","东南"],["W","西部"]]){
+   const r=el("tr");r.append(el("td",word));
+   for(const n of [0,1,2,3,"other"]){const v=n==="other"?Object.entries(dist[key]).filter(([k])=>Number(k)>=4).reduce((a,[,k])=>a+k,0):dist[key][n]||0;r.append(el("td",String(v),"nobreak"))}
+   $("nuclei").append(r);
+  }
+  $("nucleiStatus").textContent="共统计 "+data.vowelNucleusAudit.dialectFormCount+" 个原形；无书写元音核 "+data.vowelNucleusAudit.zeroNucleusCount+" 个。";
+  ["filter","region"].forEach(id=>$(id).addEventListener(id==="filter"?"input":"change",showRules));showRules();
+ }catch(e){$("ruleStatus").textContent="读取失败："+e.message}
+}
+main();
+</script></body></html>
