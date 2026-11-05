@@ -1,18 +1,18 @@
 ---
-title: "扎格伦字典 V0.4：三方言统一词典"
+title: "扎格伦字典 V0.5：三方言统一词典"
 category: "语言与文化"
 ai_search: true
 ---
 
-# 《扎格伦字典》V0.4
+# 《扎格伦字典》V0.5
 
-**Žaġręn Dictionary · 第四版 · 2026年11月6日**
+**Žaġręn Dictionary · 第五版（V0.9词形补全） · 2026年11月6日**
 
 这是藏朔原语的**现行词典**，使用 V0.7 核心句法及 V0.8 历时音系（继承V0.6正字法）。字典把当前词典原形、历史范式、造词所参照的现实俄语、语法完整性和音位转写明确分开，避免将三者混淆。
 
-**[在线搜索339条词典]({{ '/zagren-dictionary/' | relative_url }})** · [完整TXT]({{ '/assets/data/zagren-dictionary-v04.txt' | relative_url }}) · [结构化JSON]({{ '/assets/data/zagren-dictionary-v04.json' | relative_url }}) · [统一语言总纲]({{ '/articles/article-451/' | relative_url }})
+**[在线搜索339条词典]({{ '/zagren-dictionary/' | relative_url }})** · [完整TXT]({{ '/assets/data/zagren-dictionary-v05.txt' | relative_url }}) · [结构化JSON]({{ '/assets/data/zagren-dictionary-v05.json' | relative_url }}) · [统一语言总纲]({{ '/articles/article-451/' | relative_url }})
 
-[完整V0.7语言资料总卷]({{ '/assets/data/zagren-language-compendium-v08.txt' | relative_url }})
+[完整V0.7语言资料总卷]({{ '/assets/data/zagren-language-compendium-v09.txt' | relative_url }})
 
 ## 规模
 
@@ -21,11 +21,11 @@ ai_search: true
 | 词典条目 | **339** |
 | 继承旧版V0.2 | 279 |
 | V0.3阶段新增（本版沿用） | **60** |
-| 有北、东南、西三种原形 | 335 |
-| 宽式IPA音位转写 | 1,005 |
-| V0.6–V0.8已登记现代化原形 | 193 |
+| 有北、东南、西三种原形 | 339 |
+| 宽式IPA音位转写 | 1,017 |
+| V0.6–V0.9已登记现代原形 | 197 |
 | V0.8审阅保留旧原形（屈折待核） | 142 |
-| 仅有祖语构拟（另有候选） | 4 |
+| 仅有祖语构拟、无现代原形 | 0 |
 
 新60词包括：**阅读与教育18、交流与理解12、时间与位置10、生活与自然12、性质与状态8**。按词性统计是名词39、动词8、形容词8、副词5。
 
@@ -46,11 +46,28 @@ ai_search: true
 | 欺骗（完成体） | обмануть | obmanuť | obmanut | obmanuþ |
 | 真相 | истина | istina | istina | istin |
 
+## V0.9：四个祖语动词补全现代不定式词典原形
+
+本次依据V0.8已有的候选不定式、历史分词词根及三大方言不定式词尾对应，**正式确定四条词典原形**。这是一项俄庇娜世界观内部的新规范决定，不等于已核定各时态与人称变位。
+
+| 词义 | 北部 N | 东南 SE | 西部 W | 历史分词构词证据 |
+|---|---|---|---|---|
+| 结冻、冻结 | `zamrznuť` | `zamrznut` | `zamrznuþ` | *zamrznutʲ；zamrzl |
+| 融化 | `tajať` | `tajat` | `tajaþ` | *tajatʲ；tajając |
+| 使……冰封 | `zamraziť` | `zamrazit` | `zamraziþ` | *zamrazitʲ；zamrazen |
+| 忘记 | `zabÿť` | `zabit` | `zabÿþ` | *zabÿtʲ；zabÿt |
+
+**当前统计：339条词典条目、339条具有三方言现代原形、1,017条宽式IPA、197条已登记现代原形、142条V0.8审阅保留原形、0条仅祖语未定形。** 旧词保留原形不是否认其历史，也不表示现代屈折已全部验证。音系继续沿用V0.8现有21条音变，不添加不受约束的新音变。
+
+后续V0.9形态研究按旧动词35、旧名词26、旧形容词41、旧分词19、功能词21的队列推进。尤其是“忘记”的不规则变位与“冻结”的词干交替，不应从不定式直接反推。
+
+[查看V0.9四词审订与142旧词分类数据]({{ '/assets/data/zagren-v09-lemma-audit.json' | relative_url }}) · [现行字典TXT]({{ '/assets/data/zagren-dictionary-v05.txt' | relative_url }}) · [现行字典JSON]({{ '/assets/data/zagren-dictionary-v05.json' | relative_url }})
+
 ## V0.8：旧词词根与屈折同步修订
 
 **[历时音系与词族页面]({{ '/zagren-phonology/' | relative_url }})** · [339条最新音变审阅记录]({{ '/assets/data/zagren-v08-lexicon-review.json' | relative_url }}) · [V0.8音变与词干规范]({{ '/assets/data/zagren-v08-diachrony.json' | relative_url }}) · [143个相关词法位置]({{ '/assets/data/zagren-v08-morphology-regression.json' | relative_url }})
 
-V0.4不增加词典条目，但已核对339个词条并校正7个词条的9处三方言词形。最初151条历史或仅祖语记录中，5条升级为已登记现代原形，142条保留原形，另4条尚无正式现代原形；并校正V0.7新录的“句子”和“语言”。
+V0.8阶段不增加词典条目，但已核对339个词条并校正7个词条的9处三方言词形。最初151条历史或仅祖语记录中，5条升级为已登记现代原形，142条保留原形，另4条尚无正式现代原形；并校正V0.7新录的“句子”和“语言”。
 
 | 词义 | V0.8 升级 |
 | --- | --- |
@@ -78,7 +95,7 @@ V0.4不增加词典条目，但已核对339个词条并校正7个词条的9处�
 
 ## 使用限制与研究顺序
 
-字典现有1,005条IPA都是按字母规则得到的**宽式音位**，不等于已经确定词汇重音与连读。新增60词仅认定三大方言词典原形，完整六格、动词变位和形容词一致尚需依据V0.7既有范式进行验证。
+现行字典的1,017条IPA都是按字母规则得到的**宽式音位**，不等于已经确定词汇重音与连读。新增60词仅认定三大方言词典原形，完整六格、动词变位和形容词一致尚需依据V0.7既有范式进行验证。
 
 旧版[名词]({{ '/articles/article-452/' | relative_url }})、[动词]({{ '/articles/article-453/' | relative_url }})、[形容词与分词]({{ '/articles/article-454/' | relative_url }})研究保留为历史资料。此前的[279条V0.2词典JSON]({{ '/assets/data/zagren-dictionary-v02.json' | relative_url }})不再与现行页面争夺版本状态。
 
