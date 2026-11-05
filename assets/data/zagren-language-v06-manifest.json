@@ -2,9 +2,9 @@
   "language": "Žaġręn",
   "chinese": "藏朔原语（扎格伦语）",
   "date": "2026-11-05",
-  "languageStage": "V0.7-core-1",
+  "languageStage": "V0.7-core-2",
   "dictionaryEdition": "V0.2",
-  "authority": "核心句法/格位与体时态遵循 V0.7；音位、拼写和词典原形仍为V0.6；字典版本V0.2。原历史范式作为可追溯基线，不把尚无证据的新词变格强行通用化。",
+  "authority": "V0.7第一阶段已确立的句法规则有效；第二阶段14名词和8动词的840屈折形目前是试验候选，不改写V0.2字典原形或已证据化的历史格位。音系正字法仍依V0.6。",
   "dialects": {
     "N": {
       "name": "珀璃璐卡",
@@ -173,7 +173,14 @@
     "syntaxRulesV07": 28,
     "syntaxExamplesV07": 16,
     "syntaxDialectRealizationsV07": 48,
-    "syntaxMachineComparedForms": 42
+    "syntaxMachineComparedForms": 42,
+    "pilotNounLemmas": 14,
+    "pilotVerbLemmas": 8,
+    "pilotCandidateForms": 840,
+    "pilotHistoricalTemplateMatches": 1302,
+    "phonotacticFormsChecked": 825,
+    "zeroWrittenNucleusForms": 11,
+    "dialectNucleusDifferenceHeadwords": 59
   },
   "availableSources": {
     "main": "_articles/article-451.md",
@@ -200,7 +207,12 @@
     "architectureRules": "assets/data/zagren-syntax-v07.json",
     "architectureRegression": "assets/data/zagren-syntax-tests-v07.json",
     "architectureComposer": "assets/js/zagren-syntax-v07.js",
-    "architectureUI": "zagren-architecture/index.html"
+    "architectureUI": "zagren-architecture/index.html",
+    "pilotMorphologyData": "assets/data/zagren-morphology-pilot-v07.json",
+    "pilotMorphologyProgram": "assets/js/zagren-morphology-pilot-v07.js",
+    "pilotMorphologyTXT": "assets/data/zagren-morphology-pilot-v07.txt",
+    "pilotMorphologyPage": "zagren-morphology/index.html",
+    "phonotacticsAudit": "assets/data/zagren-phonotactics-audit-v07.json"
   },
   "principles": [
     "句义清晰、表达简洁，避免增加无意义词长",
@@ -210,7 +222,7 @@
     "历史语法记录与现代词典原形不混写",
     "新100词目前只声明词典原形，不虚构六格变位"
   ],
-  "dataStatus": "V0.7核心句法第一阶段已提交；28条规则与16组测试。词汇重音、复杂从句、尚未登记的新词完整屈折仍未完成。",
+  "dataStatus": "V0.7第二阶段类推范式已可操作，但840形式尚未作为完全核定的现代正史屈折；词汇重音未赋值。",
   "verification": {
     "status": "pass",
     "filesChecked": 15,
@@ -225,7 +237,12 @@
     "fiveSentenceDialectRealizations": 15,
     "syntaxCore": "V0.7-core-1",
     "syntaxCompared": 42,
-    "syntaxMismatch": 0
+    "syntaxMismatch": 0,
+    "pilotClassCalibration": "1,302/1,302",
+    "pilotFormGeneration": "840/840",
+    "pilotModernCanonized": false,
+    "stressAssigned": false
   },
-  "phonologyStage": "V0.6"
+  "phonologyStage": "V0.6",
+  "pilotStage": "V0.7 morphology analogical pilot"
 }
