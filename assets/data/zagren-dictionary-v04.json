@@ -5,7 +5,7 @@
   "basedOnLanguageVersion": "Žaġręn V0.8首期（继承并扩充V0.6音变）",
   "date": "2026-11-06",
   "normativeSource": "_articles/article-451.md",
-  "usage": "V0.8已审订先前151个未升级词条：4个同词根词汇正式修订，143个现有词典原形核对后保留，4个仅有祖语构拟的旧动词记录候选形式（非正式词典原形）。2025个历史变格变位不直接等同全现代系统。",
+  "usage": "V0.8复核了此前151个历史或仅有祖语的词典条目：5个历史词条正式修订（其中特定词有多方言更新），142个保留原形，4个仍仅有祖语构拟。另对V0.7新增词的两处同环境音变遗漏进行校订。原有2025个历史名词/动词格位不直接当作现代系统；词汇重音仍未核定。",
   "branches": {
     "N": "珀璃璐卡 Pęrlÿkań（北部）",
     "SE": "丽庞萨 Lipańsë（东南）",
@@ -76,21 +76,24 @@
       "numeral": 2
     },
     "byStage": {
-      "v08-reviewed": 143,
+      "v08-reviewed": 142,
       "v06": 24,
       "v06-new-root": 4,
+      "v08-revised": 5,
       "proto-only": 4,
-      "v08-revised": 4,
       "v06-core": 100,
       "v07-lexicon": 60
     },
     "withThreeForms": 335,
     "broadIPATranscriptions": 1005,
-    "modernHeadwordCount": 192,
-    "reviewedLegacyWithoutFormChange": 143,
-    "modernizedLegacyHeadwords": 4,
+    "modernHeadwordCount": 193,
+    "reviewedLegacyWithoutFormChange": 142,
+    "modernizedLegacyHeadwords": 5,
     "protoOnlyProposals": 4,
-    "oldEntriesReviewed": 151
+    "oldEntriesReviewed": 151,
+    "priorV07LemmaCorrections": 2,
+    "modernizedDialectForms": 9,
+    "modernizedHeadwordEntries": 7
   },
   "entries": [
     {
@@ -160,7 +163,11 @@
         "W": "/ɣrant͡s/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -233,7 +240,11 @@
         "W": "/r̝yd/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -268,7 +279,11 @@
         "W": "/ɣrad/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -409,7 +424,11 @@
         "W": "/dro/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -478,7 +497,11 @@
         "W": "/zɨm/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -514,7 +537,11 @@
         "W": "/wer/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -553,7 +580,11 @@
         "W": "/koʃt/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "historic-documented"
+      "inflectionCoverage": "historic-documented",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -588,7 +619,11 @@
         "W": "/kʲyt/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -628,7 +663,11 @@
         "W": "/θr̝ub/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "historic-documented"
+      "inflectionCoverage": "historic-documented",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -663,7 +702,11 @@
         "W": "/χoɫd/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -777,7 +820,11 @@
         "W": "/oɣn/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "historic-documented"
+      "inflectionCoverage": "historic-documented",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -816,7 +863,11 @@
         "W": "/dom/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "historic-documented"
+      "inflectionCoverage": "historic-documented",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -849,7 +900,11 @@
         "W": "/kʲel/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -883,7 +938,11 @@
         "W": "/meʑ/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -991,7 +1050,11 @@
         "W": "/maθ/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "historic-documented"
+      "inflectionCoverage": "historic-documented",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -1033,34 +1096,47 @@
       "gloss": "女人",
       "proto": "*žena",
       "forms": {
+        "N": "ẑena",
+        "SE": "žena",
+        "W": "žen"
+      },
+      "older": {
         "N": "žena",
         "SE": "žena",
         "W": "žen"
       },
-      "older": null,
-      "stage": "v08-reviewed",
+      "stage": "v08-revised",
       "source": [
-        "assets/data/zagren-comparative-lexicon-v01.json"
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-v08-diachrony.json"
       ],
       "detail": null,
-      "ruleIds": [],
+      "ruleIds": [
+        "N13"
+      ],
       "notes": [
-        "V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证"
+        "V0.8已复核保留词典原形；未据此承诺全部词缀和词汇重音已经完成验证",
+        "V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查"
       ],
       "id": "D0027",
       "aliases": [],
       "ipa": {
-        "N": "/ʒena/",
+        "N": "/ʑena/",
         "SE": "/ʒena/",
         "W": "/ʒen/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
       "inflectionCoverage": "lemma-only",
       "lexicalReviewV08": {
-        "status": "attested-surface-retained",
+        "status": "revised-modern-lemma",
         "previousStage": "legacy",
-        "scope": "词典原形审订，非全部现代格位验证",
-        "reason": "既有词典原形符合本阶段已明确音变；当前不增添无依据的规则"
+        "changedBranches": [
+          "N"
+        ],
+        "rules": [
+          "N13"
+        ],
+        "scope": "词典原形与宽式IPA升级；历史范式保留源版本，不构成所有现代格位已核定"
       }
     },
     {
@@ -1132,7 +1208,11 @@
         "W": "/utr/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -1202,7 +1282,11 @@
         "W": "/moɫk/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -1235,7 +1319,11 @@
         "W": "/ɫes/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -1314,7 +1402,11 @@
         "W": "/bo/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "historic-documented"
+      "inflectionCoverage": "historic-documented",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -1348,7 +1440,11 @@
         "W": "/ʒiwot/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -1490,7 +1586,11 @@
         "W": "/wod/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -1565,7 +1665,11 @@
         "W": "/ʒɫez/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -1642,7 +1746,11 @@
         "W": "/brat/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "historic-documented"
+      "inflectionCoverage": "historic-documented",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -1683,7 +1791,11 @@
         "W": "/sne/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "historic-documented"
+      "inflectionCoverage": "historic-documented",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -1722,7 +1834,11 @@
         "W": "/jaɣn/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "historic-documented"
+      "inflectionCoverage": "historic-documented",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -1795,7 +1911,11 @@
         "W": "/θɛ̃n/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "historic-documented"
+      "inflectionCoverage": "historic-documented",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "noun",
@@ -2566,6 +2686,10 @@
       "protoReview": {
         "status": "candidate-only",
         "note": "基于已知tʲ词尾和方言字母音值的候选不定式；未核定，不加入词典正式三方言原形及统计。"
+      },
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
       }
     },
     {
@@ -2963,6 +3087,10 @@
       "protoReview": {
         "status": "candidate-only",
         "note": "基于已知tʲ词尾和方言字母音值的候选不定式；未核定，不加入词典正式三方言原形及统计。"
+      },
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
       }
     },
     {
@@ -2981,7 +3109,8 @@
       },
       "stage": "v08-revised",
       "source": [
-        "assets/data/zagren-verbal-morphology-v03.json"
+        "assets/data/zagren-verbal-morphology-v03.json",
+        "assets/data/zagren-v08-diachrony.json"
       ],
       "detail": {
         "class": "E",
@@ -2991,7 +3120,8 @@
       },
       "notes": [
         "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验",
-        "V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变"
+        "V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变",
+        "V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查"
       ],
       "id": "D0078",
       "aliases": [],
@@ -3003,13 +3133,19 @@
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
       "inflectionCoverage": "historic-documented",
       "lexicalReviewV08": {
-        "status": "modernized-family-stem",
+        "status": "revised-modern-lemma",
         "previousStage": "legacy",
-        "scope": "词典原形审订，非全部现代格位验证",
-        "reason": "与已正式登记的同根音变统一"
+        "changedBranches": [
+          "N"
+        ],
+        "rules": [
+          "N13"
+        ],
+        "scope": "词典原形与宽式IPA升级；历史范式保留源版本，不构成所有现代格位已核定"
       },
       "ruleIds": [
-        "N13-F-LIVE"
+        "N13-F-LIVE",
+        "N13"
       ]
     },
     {
@@ -3047,6 +3183,10 @@
       "protoReview": {
         "status": "candidate-only",
         "note": "基于已知tʲ词尾和方言字母音值的候选不定式；未核定，不加入词典正式三方言原形及统计。"
+      },
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
       }
     },
     {
@@ -3284,6 +3424,10 @@
       "protoReview": {
         "status": "candidate-only",
         "note": "基于已知tʲ词尾和方言字母音值的候选不定式；未核定，不加入词典正式三方言原形及统计。"
+      },
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
       }
     },
     {
@@ -3839,9 +3983,9 @@
       "gloss": "冬季的",
       "proto": "*zimnÿ",
       "forms": {
-        "N": "zimnÿ",
+        "N": "zÿmnÿ",
         "SE": "ẑimni",
-        "W": "zimnÿ"
+        "W": "zÿmnÿ"
       },
       "older": {
         "N": "zimnÿ",
@@ -3850,7 +3994,8 @@
       },
       "stage": "v08-revised",
       "source": [
-        "assets/data/zagren-modifier-morphology-v04.json"
+        "assets/data/zagren-modifier-morphology-v04.json",
+        "assets/data/zagren-v08-diachrony.json"
       ],
       "detail": {
         "class": "H",
@@ -3858,25 +4003,36 @@
       },
       "notes": [
         "关系形容词不登记普通综合比较级",
-        "V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变"
+        "V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变",
+        "V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查"
       ],
       "id": "D0100",
       "aliases": [],
       "ipa": {
-        "N": "/zimnɨ/",
+        "N": "/zɨmnɨ/",
         "SE": "/ʑimni/",
-        "W": "/zimnɨ/"
+        "W": "/zɨmnɨ/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
       "inflectionCoverage": "historic-documented",
       "lexicalReviewV08": {
-        "status": "modernized-family-stem",
+        "status": "revised-modern-lemma",
         "previousStage": "legacy",
-        "scope": "词典原形审订，非全部现代格位验证",
-        "reason": "与已正式登记的同根音变统一"
+        "changedBranches": [
+          "N",
+          "SE",
+          "W"
+        ],
+        "rules": [
+          "V08-STEM-ZYM",
+          "SE12"
+        ],
+        "scope": "词典原形与宽式IPA升级；历史范式保留源版本，不构成所有现代格位已核定"
       },
       "ruleIds": [
-        "SE12-F-WINTER"
+        "SE12-F-WINTER",
+        "V08-STEM-ZYM",
+        "SE12"
       ]
     },
     {
@@ -4161,7 +4317,8 @@
       },
       "stage": "v08-revised",
       "source": [
-        "assets/data/zagren-modifier-morphology-v04.json"
+        "assets/data/zagren-modifier-morphology-v04.json",
+        "assets/data/zagren-v08-diachrony.json"
       ],
       "detail": {
         "class": "H",
@@ -4169,7 +4326,8 @@
       },
       "notes": [
         "关系形容词不登记普通综合比较级",
-        "V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变"
+        "V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变",
+        "V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查"
       ],
       "id": "D0108",
       "aliases": [],
@@ -4181,13 +4339,19 @@
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
       "inflectionCoverage": "historic-documented",
       "lexicalReviewV08": {
-        "status": "modernized-family-stem",
+        "status": "revised-modern-lemma",
         "previousStage": "legacy",
-        "scope": "词典原形审订，非全部现代格位验证",
-        "reason": "与已正式登记的同根音变统一"
+        "changedBranches": [
+          "N"
+        ],
+        "rules": [
+          "N13"
+        ],
+        "scope": "词典原形与宽式IPA升级；历史范式保留源版本，不构成所有现代格位已核定"
       },
       "ruleIds": [
-        "N13-F-LIVE-ADJ"
+        "N13-F-LIVE-ADJ",
+        "N13"
       ]
     },
     {
@@ -4989,7 +5153,11 @@
       "ruleIds": [
         "N13",
         "W13"
-      ]
+      ],
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "adj",
@@ -5662,7 +5830,8 @@
       },
       "stage": "v08-revised",
       "source": [
-        "assets/data/zagren-modifier-morphology-v04.json"
+        "assets/data/zagren-modifier-morphology-v04.json",
+        "assets/data/zagren-v08-diachrony.json"
       ],
       "detail": {
         "partClass": "ACT.PRS",
@@ -5671,7 +5840,8 @@
       },
       "notes": [
         "本条显示分词阳性主格，非独立动词词典原形",
-        "V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变"
+        "V0.8同源词干一致性修订；原V0.3词形保存在older，所选历史范式由生成器定向补充对应音变",
+        "V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查"
       ],
       "id": "D0147",
       "aliases": [],
@@ -5683,13 +5853,19 @@
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
       "inflectionCoverage": "historic-documented",
       "lexicalReviewV08": {
-        "status": "modernized-family-stem",
+        "status": "revised-modern-lemma",
         "previousStage": "legacy",
-        "scope": "词典原形审订，非全部现代格位验证",
-        "reason": "与已正式登记的同根音变统一"
+        "changedBranches": [
+          "N"
+        ],
+        "rules": [
+          "N13"
+        ],
+        "scope": "词典原形与宽式IPA升级；历史范式保留源版本，不构成所有现代格位已核定"
       },
       "ruleIds": [
-        "N13-F-LIVE-PTCP"
+        "N13-F-LIVE-PTCP",
+        "N13"
       ]
     },
     {
@@ -6445,7 +6621,11 @@
         "W": "/ʃe/"
       },
       "ipaStatus": "正字法规则推得的宽式音位，词汇重音、连读未标记",
-      "inflectionCoverage": "lemma-only"
+      "inflectionCoverage": "lemma-only",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "pos": "preposition",
@@ -6904,7 +7084,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C001"
+      "sourceId": "C001",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0181",
@@ -6943,7 +7127,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C002"
+      "sourceId": "C002",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0182",
@@ -6982,7 +7170,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C003"
+      "sourceId": "C003",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0183",
@@ -7021,7 +7213,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C004"
+      "sourceId": "C004",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0184",
@@ -7060,7 +7256,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C005"
+      "sourceId": "C005",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0185",
@@ -7099,7 +7299,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C006"
+      "sourceId": "C006",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0186",
@@ -7138,7 +7342,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C007"
+      "sourceId": "C007",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0187",
@@ -7177,7 +7385,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C008"
+      "sourceId": "C008",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0188",
@@ -7216,7 +7428,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C009"
+      "sourceId": "C009",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0189",
@@ -7255,7 +7471,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C010"
+      "sourceId": "C010",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0190",
@@ -7294,7 +7514,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C011"
+      "sourceId": "C011",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0191",
@@ -7333,7 +7557,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C012"
+      "sourceId": "C012",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0192",
@@ -7372,7 +7600,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C013"
+      "sourceId": "C013",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0193",
@@ -7411,7 +7643,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C014"
+      "sourceId": "C014",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0194",
@@ -7450,7 +7686,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C015"
+      "sourceId": "C015",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0195",
@@ -7489,7 +7729,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C016"
+      "sourceId": "C016",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0196",
@@ -7528,7 +7772,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C017"
+      "sourceId": "C017",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0197",
@@ -7567,7 +7815,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C018"
+      "sourceId": "C018",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0198",
@@ -7606,7 +7858,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C019"
+      "sourceId": "C019",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0199",
@@ -7645,7 +7901,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C020"
+      "sourceId": "C020",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0200",
@@ -7684,7 +7944,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C021"
+      "sourceId": "C021",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0201",
@@ -7723,7 +7987,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C022"
+      "sourceId": "C022",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0202",
@@ -7762,7 +8030,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C023"
+      "sourceId": "C023",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0203",
@@ -7801,7 +8073,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C024"
+      "sourceId": "C024",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0204",
@@ -7840,7 +8116,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C025"
+      "sourceId": "C025",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0205",
@@ -7879,7 +8159,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C026"
+      "sourceId": "C026",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0206",
@@ -7918,7 +8202,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C027"
+      "sourceId": "C027",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0207",
@@ -7957,7 +8245,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C028"
+      "sourceId": "C028",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0208",
@@ -7996,7 +8288,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C029"
+      "sourceId": "C029",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0209",
@@ -8035,7 +8331,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C030"
+      "sourceId": "C030",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0210",
@@ -8074,7 +8374,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C031"
+      "sourceId": "C031",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0211",
@@ -8113,7 +8417,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C032"
+      "sourceId": "C032",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0212",
@@ -8152,7 +8460,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C033"
+      "sourceId": "C033",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0213",
@@ -8191,7 +8503,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C034"
+      "sourceId": "C034",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0214",
@@ -8230,7 +8546,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C035"
+      "sourceId": "C035",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0215",
@@ -8269,7 +8589,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C036"
+      "sourceId": "C036",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0216",
@@ -8308,7 +8632,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C037"
+      "sourceId": "C037",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0217",
@@ -8347,7 +8675,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C038"
+      "sourceId": "C038",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0218",
@@ -8386,7 +8718,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C039"
+      "sourceId": "C039",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0219",
@@ -8425,7 +8761,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C040"
+      "sourceId": "C040",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0220",
@@ -8463,7 +8803,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C041"
+      "sourceId": "C041",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0221",
@@ -8501,7 +8845,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C042"
+      "sourceId": "C042",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0222",
@@ -8539,7 +8887,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C043"
+      "sourceId": "C043",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0223",
@@ -8577,7 +8929,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C044"
+      "sourceId": "C044",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0224",
@@ -8615,7 +8971,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C045"
+      "sourceId": "C045",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0225",
@@ -8653,7 +9013,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C046"
+      "sourceId": "C046",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0226",
@@ -8691,7 +9055,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C047"
+      "sourceId": "C047",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0227",
@@ -8729,7 +9097,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C048"
+      "sourceId": "C048",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0228",
@@ -8767,7 +9139,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C049"
+      "sourceId": "C049",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0229",
@@ -8805,7 +9181,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C050"
+      "sourceId": "C050",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0230",
@@ -8843,7 +9223,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C051"
+      "sourceId": "C051",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0231",
@@ -8881,7 +9265,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C052"
+      "sourceId": "C052",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0232",
@@ -8919,7 +9307,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C053"
+      "sourceId": "C053",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0233",
@@ -8957,7 +9349,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C054"
+      "sourceId": "C054",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0234",
@@ -8995,7 +9391,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C055"
+      "sourceId": "C055",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0235",
@@ -9033,7 +9433,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C056"
+      "sourceId": "C056",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0236",
@@ -9071,7 +9475,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C057"
+      "sourceId": "C057",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0237",
@@ -9109,7 +9517,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C058"
+      "sourceId": "C058",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0238",
@@ -9147,7 +9559,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C059"
+      "sourceId": "C059",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0239",
@@ -9185,7 +9601,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C060"
+      "sourceId": "C060",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0240",
@@ -9223,7 +9643,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C061"
+      "sourceId": "C061",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0241",
@@ -9261,7 +9685,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C062"
+      "sourceId": "C062",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0242",
@@ -9299,7 +9727,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C063"
+      "sourceId": "C063",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0243",
@@ -9337,7 +9769,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C064"
+      "sourceId": "C064",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0244",
@@ -9375,7 +9811,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C065"
+      "sourceId": "C065",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0245",
@@ -9415,7 +9855,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C066"
+      "sourceId": "C066",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0246",
@@ -9455,7 +9899,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C067"
+      "sourceId": "C067",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0247",
@@ -9495,7 +9943,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C068"
+      "sourceId": "C068",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0248",
@@ -9535,7 +9987,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C069"
+      "sourceId": "C069",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0249",
@@ -9575,7 +10031,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C070"
+      "sourceId": "C070",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0250",
@@ -9615,7 +10075,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C071"
+      "sourceId": "C071",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0251",
@@ -9655,7 +10119,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C072"
+      "sourceId": "C072",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0252",
@@ -9695,7 +10163,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C073"
+      "sourceId": "C073",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0253",
@@ -9735,7 +10207,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C074"
+      "sourceId": "C074",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0254",
@@ -9775,7 +10251,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C075"
+      "sourceId": "C075",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0255",
@@ -9815,7 +10295,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C076"
+      "sourceId": "C076",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0256",
@@ -9855,7 +10339,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C077"
+      "sourceId": "C077",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0257",
@@ -9895,7 +10383,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C078"
+      "sourceId": "C078",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0258",
@@ -9935,7 +10427,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C079"
+      "sourceId": "C079",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0259",
@@ -9975,7 +10471,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C080"
+      "sourceId": "C080",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0260",
@@ -10011,7 +10511,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C081"
+      "sourceId": "C081",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0261",
@@ -10047,7 +10551,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C082"
+      "sourceId": "C082",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0262",
@@ -10083,7 +10591,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C083"
+      "sourceId": "C083",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0263",
@@ -10119,7 +10631,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C084"
+      "sourceId": "C084",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0264",
@@ -10155,7 +10671,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C085"
+      "sourceId": "C085",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0265",
@@ -10191,7 +10711,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C086"
+      "sourceId": "C086",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0266",
@@ -10227,7 +10751,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C087"
+      "sourceId": "C087",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0267",
@@ -10263,7 +10791,11 @@
         "高频词经历史短化形成；保留专属缩约词源，不在其他词自动套用"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C088"
+      "sourceId": "C088",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0268",
@@ -10299,7 +10831,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C089"
+      "sourceId": "C089",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0269",
@@ -10335,7 +10871,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C090"
+      "sourceId": "C090",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0270",
@@ -10371,7 +10911,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C091"
+      "sourceId": "C091",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0271",
@@ -10407,7 +10951,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C092"
+      "sourceId": "C092",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0272",
@@ -10443,7 +10991,11 @@
         "高频词经历史短化形成；保留专属缩约词源，不在其他词自动套用"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C093"
+      "sourceId": "C093",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0273",
@@ -10479,7 +11031,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C094"
+      "sourceId": "C094",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0274",
@@ -10515,7 +11071,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C095"
+      "sourceId": "C095",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0275",
@@ -10551,7 +11111,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C096"
+      "sourceId": "C096",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0276",
@@ -10587,7 +11151,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C097"
+      "sourceId": "C097",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0277",
@@ -10623,7 +11191,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C098"
+      "sourceId": "C098",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0278",
@@ -10659,7 +11231,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C099"
+      "sourceId": "C099",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0279",
@@ -10695,7 +11271,11 @@
         "现代词典原形已建；完整格位与动词变位需以独立范式验证"
       ],
       "inflectionCoverage": "lemma-only",
-      "sourceId": "C100"
+      "sourceId": "C100",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0280",
@@ -10735,7 +11315,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0281",
@@ -10776,7 +11360,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0282",
@@ -10816,7 +11404,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0283",
@@ -10826,18 +11418,19 @@
       "russianReference": "предложение",
       "proto": "*predloženie",
       "forms": {
-        "N": "predloženie",
+        "N": "predloẑenie",
         "SE": "predloženie",
         "W": "predłoženi"
       },
       "ipa": {
-        "N": "/predloʒenie/",
+        "N": "/predloʑenie/",
         "SE": "/predloʒenie/",
         "W": "/predɫoʒeni/"
       },
       "stage": "v07-lexicon",
       "source": [
-        "assets/data/zagren-academic-v07-lexical-expansion.json"
+        "assets/data/zagren-academic-v07-lexical-expansion.json",
+        "assets/data/zagren-v08-diachrony.json"
       ],
       "ruEducationalTheme": "阅读与教育",
       "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
@@ -10849,15 +11442,33 @@
       "ruleIds": [
         "BASE-N",
         "BASE-SE",
-        "BASE-W"
+        "BASE-W",
+        "N13"
       ],
       "notes": [
         "当前只登记词典原形；不同于“提议”的义项",
         "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
-        "词典原形已登记；词尾、变位、重音尚未完整核定"
+        "词典原形已登记；词尾、变位、重音尚未完整核定",
+        "V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "older": {
+        "N": "predloženie",
+        "SE": "predloženie",
+        "W": "predłoženi"
+      },
+      "lexicalReviewV08": {
+        "status": "revised-modern-lemma",
+        "previousStage": "v07-lexicon",
+        "changedBranches": [
+          "N"
+        ],
+        "rules": [
+          "N13"
+        ],
+        "scope": "词典原形与宽式IPA升级；历史范式保留源版本，不构成所有现代格位已核定"
+      }
     },
     {
       "id": "D0284",
@@ -10897,7 +11508,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0285",
@@ -10937,7 +11552,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0286",
@@ -10977,7 +11596,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0287",
@@ -11018,7 +11641,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0288",
@@ -11029,17 +11656,18 @@
       "proto": "*jazÿk",
       "forms": {
         "N": "jazÿk",
-        "SE": "jazik",
+        "SE": "jaẑik",
         "W": "jazÿk"
       },
       "ipa": {
         "N": "/jazɨk/",
-        "SE": "/jazik/",
+        "SE": "/jaʑik/",
         "W": "/jazɨk/"
       },
       "stage": "v07-lexicon",
       "source": [
-        "assets/data/zagren-academic-v07-lexical-expansion.json"
+        "assets/data/zagren-academic-v07-lexical-expansion.json",
+        "assets/data/zagren-v08-diachrony.json"
       ],
       "ruEducationalTheme": "阅读与教育",
       "referenceKind": "Russian written lemma and pedagogical semantic theme; constructed Proto-Žaġręn is fictional",
@@ -11051,15 +11679,33 @@
       "ruleIds": [
         "BASE-N",
         "BASE-SE",
-        "BASE-W"
+        "BASE-W",
+        "SE12"
       ],
       "notes": [
         "语言系统",
         "俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据",
-        "词典原形已登记；词尾、变位、重音尚未完整核定"
+        "词典原形已登记；词尾、变位、重音尚未完整核定",
+        "V0.8已校定本条列出的现代原形；完整屈折形式仍按其已有证据级别分别审查"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "older": {
+        "N": "jazÿk",
+        "SE": "jazik",
+        "W": "jazÿk"
+      },
+      "lexicalReviewV08": {
+        "status": "revised-modern-lemma",
+        "previousStage": "v07-lexicon",
+        "changedBranches": [
+          "SE"
+        ],
+        "rules": [
+          "SE12"
+        ],
+        "scope": "词典原形与宽式IPA升级；历史范式保留源版本，不构成所有现代格位已核定"
+      }
     },
     {
       "id": "D0289",
@@ -11100,7 +11746,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0290",
@@ -11141,7 +11791,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0291",
@@ -11182,7 +11836,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0292",
@@ -11223,7 +11881,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0293",
@@ -11263,7 +11925,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0294",
@@ -11304,7 +11970,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0295",
@@ -11344,7 +12014,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0296",
@@ -11385,7 +12059,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0297",
@@ -11426,7 +12104,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0298",
@@ -11467,7 +12149,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0299",
@@ -11508,7 +12194,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0300",
@@ -11549,7 +12239,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0301",
@@ -11590,7 +12284,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0302",
@@ -11631,7 +12329,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0303",
@@ -11672,7 +12374,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0304",
@@ -11713,7 +12419,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0305",
@@ -11754,7 +12464,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0306",
@@ -11795,7 +12509,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0307",
@@ -11835,7 +12553,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0308",
@@ -11876,7 +12598,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0309",
@@ -11917,7 +12643,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0310",
@@ -11955,7 +12685,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0311",
@@ -11996,7 +12730,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0312",
@@ -12036,7 +12774,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0313",
@@ -12077,7 +12819,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0314",
@@ -12117,7 +12863,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0315",
@@ -12156,7 +12906,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0316",
@@ -12195,7 +12949,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0317",
@@ -12234,7 +12992,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0318",
@@ -12273,7 +13035,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0319",
@@ -12313,7 +13079,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0320",
@@ -12353,7 +13123,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0321",
@@ -12394,7 +13168,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0322",
@@ -12434,7 +13212,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0323",
@@ -12474,7 +13256,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0324",
@@ -12515,7 +13301,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0325",
@@ -12556,7 +13346,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0326",
@@ -12597,7 +13391,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0327",
@@ -12638,7 +13436,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0328",
@@ -12679,7 +13481,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0329",
@@ -12719,7 +13525,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0330",
@@ -12760,7 +13570,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0331",
@@ -12801,7 +13615,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0332",
@@ -12842,7 +13660,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0333",
@@ -12882,7 +13704,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0334",
@@ -12923,7 +13749,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0335",
@@ -12964,7 +13794,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0336",
@@ -13005,7 +13839,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0337",
@@ -13046,7 +13884,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0338",
@@ -13086,7 +13928,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     },
     {
       "id": "D0339",
@@ -13127,7 +13973,11 @@
         "词典原形已登记；词尾、变位、重音尚未完整核定"
       ],
       "inflectionCoverage": "lemma-only",
-      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音"
+      "ipaStatus": "根据V0.6字母音值生成的宽式IPA；未规定词汇重音",
+      "lexicalReviewV08": {
+        "status": "reviewed-unchanged",
+        "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      }
     }
   ],
   "errata": [
@@ -13160,5 +14010,7 @@
     }
   ],
   "orthographyLayers": "assets/data/zagren-punctuation-layers-v07.json",
-  "v08ReviewReport": "assets/data/zagren-v08-lexical-audit.json"
+  "v08ReviewReport": "assets/data/zagren-v08-lexicon-review.json",
+  "v08InitialReviewReport": "assets/data/zagren-v08-lexical-audit.json",
+  "v08Diachrony": "assets/data/zagren-v08-diachrony.json"
 }
