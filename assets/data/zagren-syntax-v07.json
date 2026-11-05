@@ -1,0 +1,415 @@
+{
+  "title": "藏朔原语 Žaġręn · V0.7 核心句法与形态架构",
+  "version": "V0.7-core-1",
+  "date": "2026-11-05",
+  "authority": "现行句法规则；V0.6音位与词典原形继续有效，旧格位表为具来源的词形基线。",
+  "scope": "优先冻结能稳定组合已记录词形的规则；尚未完成完整历史演化与所有新词变格",
+  "dialects": {
+    "N": "Pęrlÿkań（珀璃璐卡）",
+    "SE": "Lipańsë（丽庞萨）",
+    "W": "Reśinąmp（雷西尼昂帕）"
+  },
+  "normativeOrder": [
+    "本V0.7核心架构",
+    "V0.6音系/正字法",
+    "《扎格伦字典》V0.2词典原形",
+    "旧版V0.2名词/代词、V0.3动词、V0.4形容词范式"
+  ],
+  "caseSystem": [
+    "NOM",
+    "GEN",
+    "DAT",
+    "ACC",
+    "INS",
+    "LOC"
+  ],
+  "numberSystem": [
+    "SG",
+    "PL"
+  ],
+  "genderSystem": [
+    "M",
+    "F",
+    "N"
+  ],
+  "verbPersonSystem": [
+    "1SG",
+    "2SG",
+    "3SG",
+    "1PL",
+    "2PL",
+    "3PL"
+  ],
+  "rules": [
+    {
+      "id": "S01",
+      "domain": "syntax",
+      "statement": "基本陈述采用主语—谓语—宾语（SVO）；无宾语动词用SV",
+      "template": "NOM + FINITE + ACC",
+      "evidence": "V0.3 C01/C02",
+      "status": "adopted"
+    },
+    {
+      "id": "S02",
+      "domain": "syntax",
+      "statement": "给予等双宾语谓词按主语—谓语—与格受领者—宾格受事",
+      "template": "NOM + GIVE + DAT + ACC",
+      "evidence": "V0.6 five-sentence T01/T02",
+      "status": "adopted"
+    },
+    {
+      "id": "S03",
+      "domain": "syntax",
+      "statement": "地点介词短语可在谓语前提供场景，也可在谓语后出现；基本陈述不强制倒装",
+      "template": "SUBJ + PP.LOC + NEG + V + OBJ",
+      "evidence": "V0.6 T04 / V0.3 C04",
+      "status": "adopted"
+    },
+    {
+      "id": "S04",
+      "domain": "syntax",
+      "statement": "普通修饰形容词前置于名词，并与其性、数、格一致",
+      "template": "ADJ[gender,number,case] + NOUN[gender,number,case]",
+      "evidence": "V0.4 C04/C05 / V0.6 T03",
+      "status": "adopted"
+    },
+    {
+      "id": "S05",
+      "domain": "syntax",
+      "statement": "否定词紧邻所否定的有限动词或祈使动词之前",
+      "template": "SUBJ + NEG + FINITE + OBJ",
+      "evidence": "V0.3 C07/C17",
+      "status": "adopted"
+    },
+    {
+      "id": "S06",
+      "domain": "syntax",
+      "statement": "普通是非问句保留陈述词序，句尾用？；微疑用¿；不强制倒装",
+      "template": "SUBJ + (ADVERB) + FINITE + ？",
+      "evidence": "V0.6 T05",
+      "status": "adopted"
+    },
+    {
+      "id": "S07",
+      "domain": "syntax",
+      "statement": "§ 标记郑重发言，位于直接引语之前；作用域到匹配闭引号",
+      "template": "SAY: §“...？”",
+      "evidence": "V0.6 T05 / punctuation",
+      "status": "adopted"
+    },
+    {
+      "id": "S08",
+      "domain": "syntax",
+      "statement": "•…• 成对包围焦点成分，可跨词但不自嵌套",
+      "template": "•FOCUS•",
+      "evidence": "V0.6 punctuation/T03 history",
+      "status": "adopted"
+    },
+    {
+      "id": "S09",
+      "domain": "syntax",
+      "statement": "/…\\ 引用既存文字，不是人物开口讲话；可嵌于直接引语之内",
+      "template": "/written text\\",
+      "evidence": "V0.6 punctuation",
+      "status": "adopted"
+    },
+    {
+      "id": "M01",
+      "domain": "case",
+      "statement": "主格标记施事或不及物句主语",
+      "template": "SUBJ: NOM",
+      "evidence": "V0.2 nominal",
+      "status": "adopted"
+    },
+    {
+      "id": "M02",
+      "domain": "case",
+      "statement": "宾格标记常规直接受事；有生宾格不总等于主格",
+      "template": "OBJ: ACC",
+      "evidence": "V0.2 nominal / V0.6 T03",
+      "status": "adopted"
+    },
+    {
+      "id": "M03",
+      "domain": "case",
+      "statement": "与格标记给予动作的受领者",
+      "template": "RECIPIENT: DAT",
+      "evidence": "V0.6 T01/T02",
+      "status": "adopted"
+    },
+    {
+      "id": "M04",
+      "domain": "case",
+      "statement": "介词 od 支配属格，表示起点、来源；不据此推断全部属格语义",
+      "template": "od + GEN",
+      "evidence": "V0.2 nominal phrases",
+      "status": "adopted"
+    },
+    {
+      "id": "M05",
+      "domain": "case",
+      "statement": "介词 s 在工具用途支配工具格（INS）",
+      "template": "s + INS",
+      "evidence": "V0.2 nominal phrases",
+      "status": "adopted"
+    },
+    {
+      "id": "M06",
+      "domain": "case",
+      "statement": "处所义 ŵ（北西）/v（东南）和 na 支配处所格",
+      "template": "ŵ/v/na + LOC",
+      "evidence": "V0.2 nominal / V0.4 C03",
+      "status": "adopted"
+    },
+    {
+      "id": "M07",
+      "domain": "case",
+      "statement": "西部阳性有生单数宾格可用分析性 za 标记；它属于整个名词短语，而不是词根",
+      "template": "W: za + ADJ.ACC + NOUN.ACC",
+      "evidence": "V0.2 brother/god ACC phrases / V0.4 C09",
+      "status": "adopted"
+    },
+    {
+      "id": "M08",
+      "domain": "case",
+      "statement": "历史范式保留阳阴中三性、单双数、六格，类别与例外需要逐词指定",
+      "template": "3 genders × SG/PL × 6 cases",
+      "evidence": "V0.2 / V0.4",
+      "status": "adopted"
+    },
+    {
+      "id": "M09",
+      "domain": "case",
+      "statement": "新增100高频词目前只确认词典原形，不能直接从原形伪造其余格位",
+      "template": "lemma-only → block unsupported inflection",
+      "evidence": "Dictionary V0.2",
+      "status": "adopted"
+    },
+    {
+      "id": "V01",
+      "domain": "verb",
+      "statement": "非过去时有限动词与主语人称数一致，保留六个人称数位置",
+      "template": "1/2/3 SG/PL",
+      "evidence": "V0.3 finite / V0.6 T03",
+      "status": "adopted"
+    },
+    {
+      "id": "V02",
+      "domain": "verb",
+      "statement": "过去时与施事性/数一致，西部部分词形发生性别合流",
+      "template": "PAST.M / F / N / PL",
+      "evidence": "V0.3 past / V0.6 T01/T02",
+      "status": "adopted"
+    },
+    {
+      "id": "V03",
+      "domain": "verb",
+      "statement": "未完成体将来采用助词 bu（北东南）/b（西） + 未完成体不定式",
+      "template": "SUBJ + FUT.AUX + IPFV.INF",
+      "evidence": "V0.3 C05 / auxiliary",
+      "status": "adopted"
+    },
+    {
+      "id": "V04",
+      "domain": "verb",
+      "statement": "完成体非过去形可以表达将来实现，不与V03分析将来无条件叠加",
+      "template": "SUBJ + PFV.FINITE (prospective)",
+      "evidence": "V0.3 C06/C14/C15",
+      "status": "adopted"
+    },
+    {
+      "id": "V05",
+      "domain": "verb",
+      "statement": "条件式采用 bÿ（北西）/bi（东南）+过去式；动词仍按施事性数选择过去式",
+      "template": "SUBJ + COND + PAST",
+      "evidence": "V0.3 C11",
+      "status": "adopted"
+    },
+    {
+      "id": "V06",
+      "domain": "verb",
+      "statement": "第二人称祈使式保留单复数对立；禁止/劝阻用否定词置于祈使式前",
+      "template": "NEG + IMP.2SG/2PL",
+      "evidence": "V0.3 C12/C13/C17",
+      "status": "adopted"
+    },
+    {
+      "id": "V07",
+      "domain": "verb",
+      "statement": "体与时间不直接一一对应；IPFV表示过程/习惯/延续，PFV表示实现/界限",
+      "template": "IPFV/PFV",
+      "evidence": "V0.3 lexicon/corpus",
+      "status": "adopted"
+    },
+    {
+      "id": "P01",
+      "domain": "phonology",
+      "statement": "词的现代拼写以V0.6音变后的词干为准；复合或派生词应继承同源规则",
+      "template": "iron: ẑelez- / želez- / žłez-",
+      "evidence": "Dictionary V0.2 D0041 D0129",
+      "status": "adopted"
+    },
+    {
+      "id": "P02",
+      "domain": "phonology",
+      "statement": "宽式IPA按既有字母—音位映射构造，不自动推定词重音、连读或问句语调",
+      "template": "grapheme→phoneme; suprasegmentals TBC",
+      "evidence": "V0.6 manifest",
+      "status": "adopted"
+    },
+    {
+      "id": "P03",
+      "domain": "orthography",
+      "statement": "句末四种语气符号 ¡、¿、！、？互斥；普通陈述句以点号 . 结束",
+      "template": "one clause-final punctuation",
+      "evidence": "V0.6 punctuation",
+      "status": "adopted"
+    }
+  ],
+  "compositionTemplates": [
+    {
+      "id": "SV",
+      "roles": [
+        "subject:NOM",
+        "verb:FINITE"
+      ],
+      "example": "detę spat",
+      "meaning": "孩子在睡觉"
+    },
+    {
+      "id": "SVO",
+      "roles": [
+        "subject:NOM",
+        "verb:FINITE",
+        "object:ACC"
+      ],
+      "example": "ja ŵidem sęġ",
+      "meaning": "我看见雪"
+    },
+    {
+      "id": "SVDATACC",
+      "roles": [
+        "subject:NOM",
+        "verb:GIVE.PAST",
+        "recipient:DAT",
+        "theme:ACC"
+      ],
+      "example": "brat dal tebi list",
+      "meaning": "兄弟给了你纸"
+    },
+    {
+      "id": "SPPNEGVOBJ",
+      "roles": [
+        "subject:NOM",
+        "prep:ŵ/v",
+        "place:LOC",
+        "negative:NEG",
+        "verb:FINITE",
+        "theme:ACC"
+      ],
+      "example": "mÿ ŵ lese ńe ŵideme sęġ",
+      "meaning": "我们在森林里看不见雪"
+    },
+    {
+      "id": "SVAOBJ",
+      "roles": [
+        "subject:NOM",
+        "verb:FINITE",
+        "adjective:ACC",
+        "noun:ACC"
+      ],
+      "example": "mÿ ħranime noŵu ṱrubu",
+      "meaning": "我们守卫新管道"
+    },
+    {
+      "id": "SIPFVFUT",
+      "roles": [
+        "subject:NOM",
+        "aux:IPFV_FUT",
+        "verb:IPFV.INF",
+        "object:ACC"
+      ],
+      "example": "mÿ bu ħraniť dom",
+      "meaning": "我们将守卫房屋"
+    },
+    {
+      "id": "SNEGIMP",
+      "roles": [
+        "negative:NEG",
+        "verb:IMP.2SG"
+      ],
+      "example": "ńe kričaj",
+      "meaning": "别喊"
+    },
+    {
+      "id": "SROLECOND",
+      "roles": [
+        "subject:NOM",
+        "aux:COND",
+        "verb:PAST",
+        "object:ACC"
+      ],
+      "example": "ja bÿ ħranil dom",
+      "meaning": "我会守卫房屋"
+    }
+  ],
+  "openIssues": [
+    {
+      "id": "O01",
+      "problem": "正式词汇重音和问句语调尚未建立",
+      "blocks": [
+        "accented IPA",
+        "speech synthesis fidelity"
+      ],
+      "next": "通过词干重音类别与方言重音演变确定"
+    },
+    {
+      "id": "O02",
+      "problem": "100个新增高频词的六格、形容词一致、动词全人称变位尚未全面构拟",
+      "blocks": [
+        "unrestricted automatic sentence generation"
+      ],
+      "next": "先选14个新名词、8个新动词、5个新形容词逐范式测试"
+    },
+    {
+      "id": "O03",
+      "problem": "西部有生宾格的 za 在各名词类型、数与代词中的分布需扩大语料验证",
+      "blocks": [
+        "universal western animate-accusative rule"
+      ],
+      "next": "当前只落实已见的阳性有生单数名词短语"
+    },
+    {
+      "id": "O04",
+      "problem": "疑问词前置、从句连接、双重否定、比较级的自由语序仍未核定",
+      "blocks": [
+        "complex sentences"
+      ],
+      "next": "通过小型真实对话而非模仿旧地球语言推导"
+    },
+    {
+      "id": "O05",
+      "problem": "词典宽式IPA没有完成全语言的最小对立和音节重音验证",
+      "blocks": [
+        "phonetic standardization"
+      ],
+      "next": "为三方言设计最小对立与朗读测试"
+    },
+    {
+      "id": "O06",
+      "problem": "成句意义上的时态与体系统在复杂叙事中的协调仍需测试",
+      "blocks": [
+        "literary tense consistency"
+      ],
+      "next": "按过去/将来叙事测试连续20句"
+    }
+  ],
+  "sources": [
+    "assets/data/zagren-nominal-morphology-v02.json",
+    "assets/data/zagren-verbal-morphology-v03.json",
+    "assets/data/zagren-modifier-morphology-v04.json",
+    "assets/data/zagren-v06-five-sentence-audit.json",
+    "assets/data/zagren-dictionary-v02.json",
+    "assets/data/zagren-language-v06-manifest.json"
+  ]
+}
