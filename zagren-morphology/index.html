@@ -64,7 +64,7 @@ function render(){
  $("status").textContent=bad.length?bad.join("；"):"三大方言候选形式已生成。请勿将试验格位误认为全部核定。";
 }
 async function init(){
- try{const rs=await Promise.all(["zagren-morphology-pilot-v07.json","zagren-dictionary-v02.json"].map(f=>fetch("../assets/data/"+f)));
+ try{const rs=await Promise.all(["zagren-morphology-pilot-v07.json","zagren-dictionary-v04.json"].map(f=>fetch("../assets/data/"+f)));
  if(rs.some(x=>!x.ok))throw Error("数据库读取失败");
  [pilot,dict]=await Promise.all(rs.map(x=>x.json()));gen=createZagrenMorphologyPilotV07({dictionary:dict,pilot});
  for(const id of ["pos","gloss","number","case","kind","slot"])$(id).addEventListener("change",()=>{if(id==="pos")refreshGloss();if(id==="kind")refreshSlot();render()});
