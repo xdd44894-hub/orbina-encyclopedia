@@ -1,5 +1,5 @@
 /* Žaġręn V0.6: auditable morphology engine. Dependencies: existing V0.2/V0.3 datasets and V0.6 phonology. */
-export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null}){
+export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null,modifier=null}){
  const branches=["N","SE","W"];
  const dialects={N:"珀璃璐卡",SE:"丽庞萨",W:"雷西尼昂帕"};
  const assertBranch=(b)=>{if(!branches.includes(b))throw new Error("Unknown dialect "+b)};
@@ -16,7 +16,7 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null})
   if(branch==="N"){
    change("N11",gloss==="雪",s=>s.replace(/^sneġ/u,"sęġ"));
    change("N12",["火","骨"].includes(gloss),s=>s.replace(/o(?=(?:ġń|śť))/u,"ӧ"));
-   change("N13",["铁","生命","生活"].includes(gloss),s=>s.replace(/ž(?=[ei])/gu,"ẑ"));
+   change("N13",["铁","生命","生活","铁制的"].includes(gloss),s=>s.replace(/ž(?=[ei])/gu,"ẑ"));
    change("N14",gloss==="管道",s=>s.replace(/^ťr/u,"ṱr"));
    change("N15",gloss==="清晨",s=>s.replace(/^utro$/u,"utr"));
   }else if(branch==="SE"){
@@ -28,13 +28,13 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null})
   }else{
    change("W11",["雪","神明","道路"].includes(gloss),s=>s.replace(/ġ$/u,""));
    change("W12",gloss==="管道",s=>s.replace(/^þr/u,"þř"));
-   change("W13",gloss==="铁",s=>s.replace(/^žeł/u,"žł"));
+   change("W13",["铁","铁制的"].includes(gloss),s=>s.replace(/^žeł/u,"žł"));
   }
   return {form,baseForm:base,appliedRules:rules};
  }
  function noun(id,number,gramCase,branch){
   assertBranch(branch);
-  const row=nominal.nouns.find(x=>x.id===id&&x.number===number&&x.case===gramCase);
+  const row=nominal.nouns.find(x=>x.id===id&&x.number===number&&x.case===gramCase)??modifier?.extended_noun_forms?.find(x=>x.id===id&&x.number===number&&x.case===gramCase);
   if(!row)throw new Error("Unknown noun slot "+id+"/"+number+"/"+gramCase);
   return {id,meaning:row.meaning,number,case:gramCase,branch,...soundShift(row[branch],{branch,gloss:row.meaning})};
  }
@@ -55,6 +55,15 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null})
   else throw new Error("Unknown verb category "+kind);
   if(!row)throw new Error("Unknown verb slot "+id+"/"+kind+"/"+slot);
   return {id,meaning:entry.meaning,kind,slot:kind==="infinitive"?null:slot,aspect:entry.aspect,branch,...soundShift(row[branch],{branch,gloss:entry.meaning})};
+ }
+ function adjective(id,gender,gramCase,branch,opts={}){
+  assertBranch(branch);
+  if(!modifier)throw new Error("Missing adjective dataset");
+  const {degree="POS",animateAcc=0}=opts;
+  const entry=modifier.adjectives.find(x=>x.id===id);
+  const row=modifier.adjective_forms.find(x=>x.id===id&&x.degree===degree&&x.gender===gender&&x.case===gramCase&&(x.animate_acc??0)===animateAcc);
+  if(!entry||!row)throw new Error("Unattested adjective slot: "+id+"/"+gender+"/"+gramCase);
+  return {id,meaning:entry.meaning,gender,case:gramCase,degree,branch,...soundShift(row[branch],{branch,gloss:entry.meaning})};
  }
  function future(id,branch){
   const inf=verb(id,"infinitive",null,branch);
@@ -91,5 +100,5 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null})
   }
   return {status:differences.length||errors.length?"fail":"pass",checkedLemmas:checked,changedLemmas:changed,differences,slots,totalSlots:Object.values(slots).reduce((a,b)=>a+b,0),errors};
  }
- return {dialects,noun,pronoun,verb,future,lemma,audit};
+ return {dialects,noun,pronoun,verb,adjective,future,lemma,audit};
 }
