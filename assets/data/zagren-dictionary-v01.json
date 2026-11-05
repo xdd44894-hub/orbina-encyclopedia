@@ -1,0 +1,4451 @@
+{
+  "title": "《扎格伦字典》V0.1",
+  "language": "Žaġręn",
+  "dictVersion": "0.1",
+  "basedOnLanguageVersion": "V0.6 第一阶段",
+  "date": "2026-11-05",
+  "usage": "A documented lexicon of confirmed V0.6 headword forms alongside older V0.1–V0.5 headwords; NOT all entries are V0.6 recomposed.",
+  "branches": {
+    "N": "珀璃璐卡 Pęrlÿkań（北部）",
+    "SE": "丽庞萨 Lipańsë（东南）",
+    "W": "雷西尼昂帕 Reśinąmp（西部）"
+  },
+  "stageGuide": {
+    "v06": "V0.6已衍变的旧词",
+    "v06-new-root": "V0.6新构词原形；未完成变格",
+    "legacy": "继承自V0.1–V0.5，尚未单独升级",
+    "attested": "V0.5语料可见词形，完整范式未核定",
+    "proto-only": "仅祖语词根或语法研究基础，现代方言原形未核定"
+  },
+  "posGuide": {
+    "noun": "名词",
+    "verb": "动词",
+    "adj": "形容词",
+    "participle": "分词",
+    "pronoun": "代词",
+    "adverb": "副词",
+    "preposition": "介词",
+    "conjunction": "连词",
+    "particle": "助词"
+  },
+  "sourceFiles": [
+    "assets/data/zagren-comparative-lexicon-v01.json",
+    "assets/data/zagren-nominal-morphology-v02.json",
+    "assets/data/zagren-verbal-morphology-v03.json",
+    "assets/data/zagren-modifier-morphology-v04.json",
+    "assets/data/zagren-v06-phonology-lexicon.json",
+    "assets/data/zagren-public-corpus-v05.json"
+  ],
+  "stats": {
+    "total": 179,
+    "byPos": {
+      "noun": 53,
+      "verb": 40,
+      "adj": 44,
+      "participle": 20,
+      "pronoun": 7,
+      "adverb": 3,
+      "preposition": 6,
+      "conjunction": 3,
+      "particle": 3
+    },
+    "byStage": {
+      "v06": 23,
+      "modernNew": 4,
+      "legacy": 145,
+      "attested": 3,
+      "protoOnly": 4
+    },
+    "withThreeForms": 175
+  },
+  "entries": [
+    {
+      "pos": "noun",
+      "gloss": "傍晚",
+      "forms": {
+        "N": "ŵečer",
+        "SE": "večer",
+        "W": "ŵečer"
+      },
+      "notes": [
+        "来自V0.5 S22主格；词典形尚待详细音系核定"
+      ],
+      "proto": null,
+      "older": null,
+      "stage": "attested",
+      "source": [
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "detail": null,
+      "id": "D0001",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "边界",
+      "proto": "*granica",
+      "forms": {
+        "N": "ġranca",
+        "SE": "granca",
+        "W": "ġranc"
+      },
+      "older": {
+        "N": "ġranica",
+        "SE": "granica",
+        "W": "ġranic"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": null,
+      "ruleIds": [
+        "C02"
+      ],
+      "notes": [],
+      "id": "D0002",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "冰",
+      "proto": "*led",
+      "forms": {
+        "N": "led",
+        "SE": "led",
+        "W": "łed"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "O",
+        "gender": "阳",
+        "animacy": "无生"
+      },
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0003",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "冰脊",
+      "proto": "*rʲud",
+      "forms": {
+        "N": "rjүd",
+        "SE": "rud",
+        "W": "řүd"
+      },
+      "older": null,
+      "stage": "v06-new-root",
+      "source": [
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "ruleIds": [
+        "N16",
+        "N17",
+        "SE15",
+        "W14"
+      ],
+      "detail": null,
+      "notes": [
+        "词典形已建立，完整变格仍待构拟"
+      ],
+      "id": "D0004",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "城镇",
+      "proto": "*grad",
+      "forms": {
+        "N": "ġrad",
+        "SE": "grad",
+        "W": "ġrad"
+      },
+      "older": {
+        "N": "ġrad",
+        "SE": "grad",
+        "W": "ġrad"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-v06-phonology-lexicon.json",
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "aliases": [
+        "城市"
+      ],
+      "id": "D0005"
+    },
+    {
+      "pos": "noun",
+      "gloss": "词／单词",
+      "forms": {
+        "N": "sloŵo",
+        "SE": "slovo",
+        "W": "słoŵ"
+      },
+      "notes": [
+        "来自V0.5 S19的宾格；中性主宾可能同形，但未独立核定变格"
+      ],
+      "proto": null,
+      "older": null,
+      "stage": "attested",
+      "source": [
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "detail": null,
+      "id": "D0006",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "村庄",
+      "forms": {
+        "N": "ŵes",
+        "SE": "ves",
+        "W": "ŵes"
+      },
+      "notes": [
+        "来自V0.5 S01主格上下文；祖语重建未定"
+      ],
+      "proto": null,
+      "older": null,
+      "stage": "attested",
+      "source": [
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "detail": null,
+      "id": "D0007",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "大门",
+      "proto": "*vrata",
+      "forms": {
+        "N": "ŵrata",
+        "SE": "vrata",
+        "W": "ŵrat"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0008",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "道路",
+      "proto": "*droga",
+      "forms": {
+        "N": "droġa",
+        "SE": "droga",
+        "W": "dro"
+      },
+      "older": {
+        "N": "droġa",
+        "SE": "droga",
+        "W": "droġ"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-v06-phonology-lexicon.json",
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "ruleIds": [
+        "W11"
+      ],
+      "detail": null,
+      "notes": [
+        ""
+      ],
+      "id": "D0009",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "地区",
+      "proto": "*strana",
+      "forms": {
+        "N": "strana",
+        "SE": "strana",
+        "W": "stran"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0010",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "冬季",
+      "proto": "*zÿma",
+      "forms": {
+        "N": "zÿma",
+        "SE": "ẑima",
+        "W": "zÿm"
+      },
+      "older": {
+        "N": "zÿma",
+        "SE": "zima",
+        "W": "zÿm"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": null,
+      "ruleIds": [
+        "SE12"
+      ],
+      "notes": [],
+      "id": "D0011",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "风",
+      "proto": "*vetr",
+      "forms": {
+        "N": "ŵer",
+        "SE": "ver",
+        "W": "ŵer"
+      },
+      "older": {
+        "N": "ŵetr",
+        "SE": "vetr",
+        "W": "ŵetr"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-v06-phonology-lexicon.json",
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "ruleIds": [
+        "C04"
+      ],
+      "detail": null,
+      "notes": [
+        ""
+      ],
+      "id": "D0012",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "骨",
+      "proto": "*kosʲtʲ",
+      "forms": {
+        "N": "kӧśť",
+        "SE": "kość",
+        "W": "košt"
+      },
+      "older": {
+        "N": "kośť",
+        "SE": "kość",
+        "W": "košt"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": {
+        "gender": "阴",
+        "class": "I",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "N12"
+      ],
+      "notes": [],
+      "id": "D0013",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "挂钩",
+      "proto": "*kʲuta",
+      "forms": {
+        "N": "ǩүta",
+        "SE": "ćuta",
+        "W": "ǩүt"
+      },
+      "older": null,
+      "stage": "v06-new-root",
+      "source": [
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "ruleIds": [
+        "N16",
+        "N17",
+        "SE15",
+        "W14",
+        "W15"
+      ],
+      "detail": null,
+      "notes": [
+        "词典形已建立，完整变格仍待构拟"
+      ],
+      "id": "D0014",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "管道",
+      "proto": "*tʲruba",
+      "forms": {
+        "N": "ṱruba",
+        "SE": "truba",
+        "W": "þřub"
+      },
+      "older": {
+        "N": "ťruba",
+        "SE": "truba",
+        "W": "þrub"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": {
+        "gender": "阴",
+        "class": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "N14",
+        "W12"
+      ],
+      "notes": [],
+      "id": "D0015",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "寒冷",
+      "proto": "*xolod",
+      "forms": {
+        "N": "ħold",
+        "SE": "hȯld",
+        "W": "ħołd"
+      },
+      "older": {
+        "N": "ħolod",
+        "SE": "holod",
+        "W": "ħołod"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": null,
+      "ruleIds": [
+        "C01",
+        "SE13"
+      ],
+      "notes": [],
+      "id": "D0016",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "河流",
+      "proto": "*reka",
+      "forms": {
+        "N": "reka",
+        "SE": "reka",
+        "W": "rek"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "A",
+        "gender": "阴",
+        "animacy": "无生"
+      },
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0017",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "灰烬",
+      "proto": "*pepel",
+      "forms": {
+        "N": "pepel",
+        "SE": "pepel",
+        "W": "pepeł"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0018",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "火",
+      "proto": "*ognʲ",
+      "forms": {
+        "N": "ӧġń",
+        "SE": "oң",
+        "W": "oġn"
+      },
+      "older": {
+        "N": "oġń",
+        "SE": "ogon",
+        "W": "oġn"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": {
+        "gender": "阳",
+        "class": "J",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "N12",
+        "SE14"
+      ],
+      "notes": [],
+      "id": "D0019",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "家",
+      "proto": "*dom",
+      "forms": {
+        "N": "dom",
+        "SE": "dom",
+        "W": "dom"
+      },
+      "older": {
+        "N": "dom",
+        "SE": "dom",
+        "W": "dom"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": {
+        "gender": "阳",
+        "class": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0020",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "结扣",
+      "proto": "*kʲel",
+      "forms": {
+        "N": "ǩel",
+        "SE": "ćel",
+        "W": "ǩel"
+      },
+      "older": null,
+      "stage": "v06-new-root",
+      "source": [
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "ruleIds": [
+        "N17",
+        "SE15",
+        "W14"
+      ],
+      "detail": null,
+      "notes": [
+        "词典形已建立，完整变格仍待构拟"
+      ],
+      "id": "D0021",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "界线",
+      "proto": "*medja",
+      "forms": {
+        "N": "meďa",
+        "SE": "meҗa",
+        "W": "meẑ"
+      },
+      "older": null,
+      "stage": "v06-new-root",
+      "source": [
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "ruleIds": [
+        "N17",
+        "SE15",
+        "W14",
+        "W15"
+      ],
+      "detail": null,
+      "notes": [
+        "词典形已建立，完整变格仍待构拟"
+      ],
+      "id": "D0022",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "雷鸣",
+      "proto": "*grom",
+      "forms": {
+        "N": "ġrom",
+        "SE": "grom",
+        "W": "ġrom"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0023",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "炉",
+      "proto": "*peč",
+      "forms": {
+        "N": "peč",
+        "SE": "peč",
+        "W": "peč"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "aliases": [],
+      "id": "D0024"
+    },
+    {
+      "pos": "noun",
+      "gloss": "母亲",
+      "proto": "*matʲ",
+      "forms": {
+        "N": "mať",
+        "SE": "mat",
+        "W": "maþ"
+      },
+      "older": {
+        "N": "mať",
+        "SE": "mat",
+        "W": "maþ"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": {
+        "gender": "阴",
+        "class": "IRR",
+        "animacy": "有生"
+      },
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0025",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "男子",
+      "proto": "*muž",
+      "forms": {
+        "N": "muž",
+        "SE": "muž",
+        "W": "muž"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0026",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "女人",
+      "proto": "*žena",
+      "forms": {
+        "N": "žena",
+        "SE": "žena",
+        "W": "žen"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0027",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "皮肤",
+      "proto": "*koža",
+      "forms": {
+        "N": "koža",
+        "SE": "koža",
+        "W": "kož"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0028",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "清晨",
+      "proto": "*utro",
+      "forms": {
+        "N": "utr",
+        "SE": "utro",
+        "W": "utr"
+      },
+      "older": {
+        "N": "utro",
+        "SE": "utro",
+        "W": "utr"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-v06-phonology-lexicon.json",
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "ruleIds": [
+        "N15"
+      ],
+      "detail": null,
+      "notes": [
+        ""
+      ],
+      "id": "D0029",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "荣耀",
+      "proto": "*slava",
+      "forms": {
+        "N": "slaŵa",
+        "SE": "slava",
+        "W": "słaŵ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0030",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "乳",
+      "proto": "*moloko",
+      "forms": {
+        "N": "molko",
+        "SE": "mȯlko",
+        "W": "mołk"
+      },
+      "older": {
+        "N": "moloko",
+        "SE": "moloko",
+        "W": "mołok"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": null,
+      "ruleIds": [
+        "C01",
+        "SE13"
+      ],
+      "notes": [],
+      "id": "D0031",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "森林",
+      "proto": "*les",
+      "forms": {
+        "N": "les",
+        "SE": "les",
+        "W": "łes"
+      },
+      "older": {
+        "N": "les",
+        "SE": "les",
+        "W": "łes"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-v06-phonology-lexicon.json",
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "aliases": [],
+      "id": "D0032"
+    },
+    {
+      "pos": "noun",
+      "gloss": "山",
+      "proto": "*gora",
+      "forms": {
+        "N": "ġora",
+        "SE": "gora",
+        "W": "ġor"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": {
+        "gender": "阴",
+        "class": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0033",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "神明",
+      "proto": "*bog",
+      "forms": {
+        "N": "boġ",
+        "SE": "bog",
+        "W": "bo"
+      },
+      "older": {
+        "N": "boġ",
+        "SE": "bog",
+        "W": "boġ"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": {
+        "gender": "阳",
+        "class": "O",
+        "animacy": "有生"
+      },
+      "ruleIds": [
+        "W11"
+      ],
+      "notes": [],
+      "id": "D0034",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "生命",
+      "proto": "*život",
+      "forms": {
+        "N": "ẑiŵot",
+        "SE": "život",
+        "W": "žiŵot"
+      },
+      "older": {
+        "N": "žiŵot",
+        "SE": "život",
+        "W": "žiŵot"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": null,
+      "ruleIds": [
+        "N13"
+      ],
+      "notes": [],
+      "id": "D0035",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "尸体",
+      "proto": "*trup",
+      "forms": {
+        "N": "trup",
+        "SE": "trup",
+        "W": "trup"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0036",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "石头",
+      "proto": "*kamenʲ",
+      "forms": {
+        "N": "kamęń",
+        "SE": "kamen",
+        "W": "kamęn"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0037",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "手",
+      "proto": "*ręka",
+      "forms": {
+        "N": "ręka",
+        "SE": "renka",
+        "W": "ręk"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": {
+        "gender": "阴",
+        "class": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0038",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "水",
+      "proto": "*voda",
+      "forms": {
+        "N": "ŵoda",
+        "SE": "voda",
+        "W": "ŵod"
+      },
+      "older": {
+        "N": "ŵoda",
+        "SE": "voda",
+        "W": "ŵod"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0039",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "死亡",
+      "proto": "*smertʲ",
+      "forms": {
+        "N": "smerť",
+        "SE": "smert",
+        "W": "smerþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": {
+        "gender": "阴",
+        "class": "I",
+        "animacy": "无生"
+      },
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0040",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "铁",
+      "proto": "*železo",
+      "forms": {
+        "N": "ẑelezo",
+        "SE": "železo",
+        "W": "žłez"
+      },
+      "older": {
+        "N": "železo",
+        "SE": "železo",
+        "W": "žełez"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": null,
+      "ruleIds": [
+        "N13",
+        "W13"
+      ],
+      "notes": [],
+      "id": "D0041",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "头颅",
+      "proto": "*glava",
+      "forms": {
+        "N": "ġłaŵa",
+        "SE": "glava",
+        "W": "ġłaŵ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": {
+        "gender": "阴",
+        "class": "A",
+        "animacy": "无生"
+      },
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0042",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "兄弟",
+      "proto": "*brat",
+      "forms": {
+        "N": "brat",
+        "SE": "brat",
+        "W": "brat"
+      },
+      "older": {
+        "N": "brat",
+        "SE": "brat",
+        "W": "brat"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": {
+        "gender": "阳",
+        "class": "O",
+        "animacy": "有生"
+      },
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0043",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "雪",
+      "proto": "*sneg",
+      "forms": {
+        "N": "sęġ",
+        "SE": "seg",
+        "W": "sne"
+      },
+      "older": {
+        "N": "sneġ",
+        "SE": "sneg",
+        "W": "sneġ"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": {
+        "gender": "阳",
+        "class": "O",
+        "animacy": "无生"
+      },
+      "ruleIds": [
+        "N11",
+        "SE11",
+        "W11"
+      ],
+      "notes": [],
+      "id": "D0044",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "羊羔",
+      "proto": "*jagnę",
+      "forms": {
+        "N": "jaġnę",
+        "SE": "jaңe",
+        "W": "jaġn"
+      },
+      "older": {
+        "N": "jaġnę",
+        "SE": "jagne",
+        "W": "jaġn"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": {
+        "gender": "中",
+        "class": "N",
+        "animacy": "有生"
+      },
+      "ruleIds": [
+        "SE14"
+      ],
+      "notes": [],
+      "id": "D0045",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "夜晚",
+      "proto": "*noč",
+      "forms": {
+        "N": "noč",
+        "SE": "noč",
+        "W": "noč"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "aliases": [],
+      "id": "D0046"
+    },
+    {
+      "pos": "noun",
+      "gloss": "阴影",
+      "proto": "*tʲenʲ",
+      "forms": {
+        "N": "ťęń",
+        "SE": "ten",
+        "W": "þęn"
+      },
+      "older": {
+        "N": "ťęń",
+        "SE": "ten",
+        "W": "þęn"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json",
+        "assets/data/zagren-nominal-morphology-v02.json",
+        "assets/data/zagren-v06-phonology-lexicon.json"
+      ],
+      "detail": {
+        "gender": "阳",
+        "class": "J",
+        "animacy": "无生"
+      },
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0047",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "鱼",
+      "proto": "*rÿba",
+      "forms": {
+        "N": "rÿba",
+        "SE": "riba",
+        "W": "rÿb"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0048",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "噪声",
+      "proto": "*šum",
+      "forms": {
+        "N": "šum",
+        "SE": "šum",
+        "W": "šum"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0049",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "真实",
+      "proto": "*pravda",
+      "forms": {
+        "N": "praŵda",
+        "SE": "pravda",
+        "W": "praŵd"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0050",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "纸页",
+      "proto": "*list",
+      "forms": {
+        "N": "list",
+        "SE": "list",
+        "W": "łist"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "O",
+        "gender": "阳",
+        "animacy": "无生"
+      },
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0051",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "桌子",
+      "proto": "*stol",
+      "forms": {
+        "N": "stol",
+        "SE": "stol",
+        "W": "stoł"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0052",
+      "aliases": []
+    },
+    {
+      "pos": "noun",
+      "gloss": "姊妹",
+      "proto": "*sestra",
+      "forms": {
+        "N": "sestra",
+        "SE": "sestra",
+        "W": "sestr"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-comparative-lexicon-v01.json"
+      ],
+      "detail": null,
+      "ruleIds": [],
+      "notes": [],
+      "id": "D0053",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "安放、放置",
+      "proto": "*stavitʲ",
+      "forms": {
+        "N": "staŵiť",
+        "SE": "stavit",
+        "W": "staŵiþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "I",
+        "aspect": "IPFV",
+        "valency": "ACC+na+ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0054",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "安放完成",
+      "proto": "*postavitʲ",
+      "forms": {
+        "N": "postaŵiť",
+        "SE": "postavit",
+        "W": "postaŵiþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "I",
+        "aspect": "PFV",
+        "valency": "ACC+na+ACC",
+        "kind": "strict"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0055",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "把话说完",
+      "proto": "*progovoritʲ",
+      "forms": {
+        "N": "proġoŵoriť",
+        "SE": "progovorit",
+        "W": "proġoŵoriþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "I",
+        "aspect": "PFV",
+        "valency": "—/s+INS",
+        "kind": "bounded"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0056",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "奔跑（反复）",
+      "proto": "*begatʲ",
+      "forms": {
+        "N": "beġať",
+        "SE": "begat",
+        "W": "beġaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "—",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0057",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "存在、是",
+      "proto": "*bytʲ",
+      "forms": {
+        "N": "byť",
+        "SE": "byt",
+        "W": "byþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "IRR-BE",
+        "aspect": "IPFV",
+        "valency": "NOM/LOC",
+        "kind": "irregular"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0058",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "带来",
+      "proto": "*prinesetʲ",
+      "forms": {
+        "N": "prineseť",
+        "SE": "prineset",
+        "W": "prineseþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "E",
+        "aspect": "PFV",
+        "valency": "ACC",
+        "kind": "directional"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0059",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "等候",
+      "proto": "*ždatʲ",
+      "forms": {
+        "N": "ždať",
+        "SE": "ždat",
+        "W": "ždaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC/GEN",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0060",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "抵达终点",
+      "proto": "*doprÿxoditʲ",
+      "forms": {
+        "N": "doprÿħodiť",
+        "SE": "doprihodit",
+        "W": "doprÿħodiþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "I",
+        "aspect": "PFV",
+        "valency": "—/v+ACC",
+        "kind": "telic"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0061",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "反复搬运",
+      "proto": "*nositʲ",
+      "forms": {
+        "N": "nosiť",
+        "SE": "nosit",
+        "W": "nosiþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "I",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0062",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "给予",
+      "proto": "*datʲ",
+      "forms": {
+        "N": "dať",
+        "SE": "dat",
+        "W": "daþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "IRR-GIVE",
+        "aspect": "PFV",
+        "valency": "ACC+DAT",
+        "kind": "irregular"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0063",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "喊叫",
+      "proto": "*kričatʲ",
+      "forms": {
+        "N": "kričať",
+        "SE": "kričat",
+        "W": "kričaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "—",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0064",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "呼唤",
+      "proto": "*zvatʲ",
+      "forms": {
+        "N": "zŵať",
+        "SE": "zvat",
+        "W": "zŵaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0065",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "讲话",
+      "proto": "*govoritʲ",
+      "forms": {
+        "N": "ġoŵoriť",
+        "SE": "govorit",
+        "W": "ġoŵoriþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "I",
+        "aspect": "IPFV",
+        "valency": "—/s+INS",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0066",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "结冻、冻结",
+      "proto": "*zamrznutʲ",
+      "forms": null,
+      "older": null,
+      "stage": "proto-only",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "aspect": "PFV",
+        "valency": "—"
+      },
+      "notes": [
+        "仅记录祖语词根及分词研究用途，暂不编造三方言不定式"
+      ],
+      "id": "D0067",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "开始喊叫",
+      "proto": "*zakričatʲ",
+      "forms": {
+        "N": "zakričať",
+        "SE": "zakričat",
+        "W": "zakričaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "PFV",
+        "valency": "—",
+        "kind": "inchoative"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0068",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "看见",
+      "proto": "*videtʲ",
+      "forms": {
+        "N": "ŵideť",
+        "SE": "videt",
+        "W": "ŵideþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "E",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0069",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "看见（一次实现）",
+      "proto": "*uvidetʲ",
+      "forms": {
+        "N": "uŵideť",
+        "SE": "uvidet",
+        "W": "uŵideþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "E",
+        "aspect": "PFV",
+        "valency": "ACC",
+        "kind": "strict"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0070",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "来回走动",
+      "proto": "*xoditʲ",
+      "forms": {
+        "N": "ħodiť",
+        "SE": "hodit",
+        "W": "ħodiþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "I",
+        "aspect": "IPFV",
+        "valency": "—",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0071",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "能够",
+      "proto": "*moxtʲ",
+      "forms": {
+        "N": "moħť",
+        "SE": "moht",
+        "W": "moħþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "IRR-CAN",
+        "aspect": "IPFV",
+        "valency": "INF",
+        "kind": "irregular"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0072",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "去、前往",
+      "proto": "*itʲ",
+      "forms": {
+        "N": "iť",
+        "SE": "it",
+        "W": "iþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "IRR-GO",
+        "aspect": "IPFV",
+        "valency": "—/v+ACC",
+        "kind": "irregular"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0073",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "燃烧",
+      "proto": "*goretʲ",
+      "forms": {
+        "N": "ġoreť",
+        "SE": "goret",
+        "W": "ġoreþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "E",
+        "aspect": "IPFV",
+        "valency": "—",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0074",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "饶恕",
+      "proto": "*ščadovatʲ",
+      "forms": {
+        "N": "ščadoŵať",
+        "SE": "ščadovat",
+        "W": "ščadoŵaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0075",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "饶恕一次",
+      "proto": "*poščadovatʲ",
+      "forms": {
+        "N": "poščadoŵať",
+        "SE": "poščadovat",
+        "W": "poščadoŵaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "PFV",
+        "valency": "ACC",
+        "kind": "strict"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0076",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "融化",
+      "proto": "*tajatʲ",
+      "forms": null,
+      "older": null,
+      "stage": "proto-only",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "aspect": "IPFV",
+        "valency": "—"
+      },
+      "notes": [
+        "仅记录祖语词根及分词研究用途，暂不编造三方言不定式"
+      ],
+      "id": "D0077",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "生活",
+      "proto": "*živetʲ",
+      "forms": {
+        "N": "žiŵeť",
+        "SE": "živet",
+        "W": "žiŵeþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "E",
+        "aspect": "IPFV",
+        "valency": "—/v+LOC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0078",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "使……冰封",
+      "proto": "*zamrazitʲ",
+      "forms": null,
+      "older": null,
+      "stage": "proto-only",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "aspect": "PFV",
+        "valency": "ACC"
+      },
+      "notes": [
+        "仅记录祖语词根及分词研究用途，暂不编造三方言不定式"
+      ],
+      "id": "D0079",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "守卫、保护",
+      "proto": "*xranitʲ",
+      "forms": {
+        "N": "ħraniť",
+        "SE": "hranit",
+        "W": "ħraniþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "I",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0080",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "睡眠",
+      "proto": "*spatʲ",
+      "forms": {
+        "N": "spať",
+        "SE": "spat",
+        "W": "spaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "—",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0081",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "睡一阵",
+      "proto": "*pospatʲ",
+      "forms": {
+        "N": "pospať",
+        "SE": "pospat",
+        "W": "pospaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "PFV",
+        "valency": "—",
+        "kind": "delimitative"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0082",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "听到（有结果）",
+      "proto": "*uslÿšatʲ",
+      "forms": {
+        "N": "uslÿšať",
+        "SE": "uslišat",
+        "W": "usłÿšaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "PFV",
+        "valency": "ACC",
+        "kind": "strict"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0083",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "听见、听",
+      "proto": "*slÿšatʲ",
+      "forms": {
+        "N": "slÿšať",
+        "SE": "slišat",
+        "W": "słÿšaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0084",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "忘记",
+      "proto": "*zabÿtʲ",
+      "forms": null,
+      "older": null,
+      "stage": "proto-only",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "aspect": "PFV",
+        "valency": "ACC"
+      },
+      "notes": [
+        "仅记录祖语词根及分词研究用途，暂不编造三方言不定式"
+      ],
+      "id": "D0085",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "携带（单次过程）",
+      "proto": "*nesetʲ",
+      "forms": {
+        "N": "neseť",
+        "SE": "neset",
+        "W": "neseþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "E",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0086",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "写",
+      "proto": "*pisatʲ",
+      "forms": {
+        "N": "pisať",
+        "SE": "pisat",
+        "W": "pisaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0087",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "写完",
+      "proto": "*napisatʲ",
+      "forms": {
+        "N": "napisať",
+        "SE": "napisat",
+        "W": "napisaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "PFV",
+        "valency": "ACC",
+        "kind": "strict"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0088",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "知道",
+      "proto": "*znatʲ",
+      "forms": {
+        "N": "znať",
+        "SE": "znat",
+        "W": "znaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0089",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "制作、做",
+      "proto": "*delatʲ",
+      "forms": {
+        "N": "delať",
+        "SE": "delat",
+        "W": "dełaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0090",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "注视",
+      "proto": "*patritʲ",
+      "forms": {
+        "N": "patriť",
+        "SE": "patrit",
+        "W": "patriþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "I",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0091",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "走来、抵达（过程）",
+      "proto": "*prÿxoditʲ",
+      "forms": {
+        "N": "prÿħodiť",
+        "SE": "prihodit",
+        "W": "prÿħodiþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "I",
+        "aspect": "IPFV",
+        "valency": "—/v+ACC",
+        "kind": "productive"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0092",
+      "aliases": []
+    },
+    {
+      "pos": "verb",
+      "gloss": "做成",
+      "proto": "*sdelatʲ",
+      "forms": {
+        "N": "sdelať",
+        "SE": "sdelat",
+        "W": "sdełaþ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": {
+        "class": "A",
+        "aspect": "PFV",
+        "valency": "ACC",
+        "kind": "strict"
+      },
+      "notes": [
+        "旧版V0.3词典原形；V0.6该词的全套创新尚待逐词核验"
+      ],
+      "id": "D0093",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "白色",
+      "proto": "*belÿ",
+      "forms": {
+        "N": "belÿ",
+        "SE": "beli",
+        "W": "bełÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0094",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "北方的",
+      "proto": "*severnÿ",
+      "forms": {
+        "N": "seŵernÿ",
+        "SE": "severni",
+        "W": "seŵernÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0095",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "冰质的",
+      "proto": "*ledenÿ",
+      "forms": {
+        "N": "ledenÿ",
+        "SE": "ledeni",
+        "W": "łedenÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0096",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "潮冷",
+      "proto": "*sÿrÿ",
+      "forms": {
+        "N": "sÿrÿ",
+        "SE": "siri",
+        "W": "sÿrÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0097",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "潮湿",
+      "proto": "*mokrÿ",
+      "forms": {
+        "N": "mokrÿ",
+        "SE": "mokri",
+        "W": "mokrÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0098",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "沉重",
+      "proto": "*tjažkÿ",
+      "forms": {
+        "N": "tjažkÿ",
+        "SE": "tjažki",
+        "W": "tjažkÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0099",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "冬季的",
+      "proto": "*zimnÿ",
+      "forms": {
+        "N": "zimnÿ",
+        "SE": "zimni",
+        "W": "zimnÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0100",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "干燥",
+      "proto": "*suxÿ",
+      "forms": {
+        "N": "suħÿ",
+        "SE": "suhi",
+        "W": "suħÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0101",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "工业的",
+      "proto": "*zavodnÿ",
+      "forms": {
+        "N": "zaŵodnÿ",
+        "SE": "zavodni",
+        "W": "zaŵodnÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0102",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "古老",
+      "proto": "*starÿ",
+      "forms": {
+        "N": "starÿ",
+        "SE": "stari",
+        "W": "starÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0103",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "寒冷",
+      "proto": "*studenÿ",
+      "forms": {
+        "N": "studenÿ",
+        "SE": "studeni",
+        "W": "studenÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0104",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "黑色",
+      "proto": "*černÿ",
+      "forms": {
+        "N": "černÿ",
+        "SE": "černi",
+        "W": "černÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0105",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "荒凉",
+      "proto": "*pustÿ",
+      "forms": {
+        "N": "pustÿ",
+        "SE": "pusti",
+        "W": "pustÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0106",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "昏暗",
+      "proto": "*temnÿ",
+      "forms": {
+        "N": "temnÿ",
+        "SE": "temni",
+        "W": "temnÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0107",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "活体的",
+      "proto": "*živÿ",
+      "forms": {
+        "N": "žiŵÿ",
+        "SE": "živi",
+        "W": "žiŵÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0108",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "寂静",
+      "proto": "*tixÿ",
+      "forms": {
+        "N": "tiħÿ",
+        "SE": "tihi",
+        "W": "tiħÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0109",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "坚硬",
+      "proto": "*tverdÿ",
+      "forms": {
+        "N": "tŵerdÿ",
+        "SE": "tverdi",
+        "W": "tŵerdÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0110",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "巨大",
+      "proto": "*velikÿ",
+      "forms": {
+        "N": "ŵelikÿ",
+        "SE": "veliki",
+        "W": "ŵełikÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0111",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "可怖",
+      "proto": "*strašnÿ",
+      "forms": {
+        "N": "strašnÿ",
+        "SE": "strašni",
+        "W": "strašnÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0112",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "蓝色",
+      "proto": "*sinʲi",
+      "forms": {
+        "N": "sińi",
+        "SE": "sini",
+        "W": "sini"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "S",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0113",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "邻近",
+      "proto": "*bliznʲi",
+      "forms": {
+        "N": "blizńi",
+        "SE": "blizni",
+        "W": "błizni"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "S",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0114",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "林地的",
+      "proto": "*lesnÿ",
+      "forms": {
+        "N": "lesnÿ",
+        "SE": "lesni",
+        "W": "łesnÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0115",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "漫长",
+      "proto": "*dolgÿ",
+      "forms": {
+        "N": "dolġÿ",
+        "SE": "dolgi",
+        "W": "dołġÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0116",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "明亮",
+      "proto": "*svetlÿ",
+      "forms": {
+        "N": "sŵetlÿ",
+        "SE": "svetli",
+        "W": "sŵetłÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0117",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "内部的",
+      "proto": "*vnutrenʲi",
+      "forms": {
+        "N": "ŵnutreńi",
+        "SE": "vnutreni",
+        "W": "ŵnutreni"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "S",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0118",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "年轻",
+      "proto": "*mladÿ",
+      "forms": {
+        "N": "mladÿ",
+        "SE": "mladi",
+        "W": "mładÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0119",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "强壮",
+      "proto": "*silnÿ",
+      "forms": {
+        "N": "silnÿ",
+        "SE": "silni",
+        "W": "siłnÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0120",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "清晰",
+      "proto": "*jasnÿ",
+      "forms": {
+        "N": "jasnÿ",
+        "SE": "jasni",
+        "W": "jasnÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0121",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "秋季的",
+      "proto": "*osennʲi",
+      "forms": {
+        "N": "osenńi",
+        "SE": "osenni",
+        "W": "osenni"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "S",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0122",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "软弱",
+      "proto": "*slabÿ",
+      "forms": {
+        "N": "slabÿ",
+        "SE": "slabi",
+        "W": "słabÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0123",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "山区的",
+      "proto": "*gornÿ",
+      "forms": {
+        "N": "ġornÿ",
+        "SE": "gorni",
+        "W": "ġornÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0124",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "深",
+      "proto": "*glubokÿ",
+      "forms": {
+        "N": "ġłubokÿ",
+        "SE": "gluboki",
+        "W": "ġłubokÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0125",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "石制的",
+      "proto": "*kamennÿ",
+      "forms": {
+        "N": "kamennÿ",
+        "SE": "kamenni",
+        "W": "kamennÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0126",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "死去的",
+      "proto": "*mertvÿ",
+      "forms": {
+        "N": "mertŵÿ",
+        "SE": "mertvi",
+        "W": "mertŵÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0127",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "铁锈色的",
+      "proto": "*rÿžÿ",
+      "forms": {
+        "N": "rÿžÿ",
+        "SE": "riži",
+        "W": "rÿžÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0128",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "铁制的",
+      "proto": "*železnÿ",
+      "forms": {
+        "N": "železnÿ",
+        "SE": "železni",
+        "W": "žełeznÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0129",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "温暖",
+      "proto": "*teplÿ",
+      "forms": {
+        "N": "teplÿ",
+        "SE": "tepli",
+        "W": "tepłÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0130",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "夏季的",
+      "proto": "*letnʲi",
+      "forms": {
+        "N": "letńi",
+        "SE": "letni",
+        "W": "łetni"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "S",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0131",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "小",
+      "proto": "*malÿ",
+      "forms": {
+        "N": "malÿ",
+        "SE": "mali",
+        "W": "małÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0132",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "新",
+      "proto": "*novÿ",
+      "forms": {
+        "N": "noŵÿ",
+        "SE": "novi",
+        "W": "noŵÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0133",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "血缘的",
+      "proto": "*krovnÿ",
+      "forms": {
+        "N": "kroŵnÿ",
+        "SE": "krovni",
+        "W": "kroŵnÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0134",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "迅速",
+      "proto": "*bÿstrÿ",
+      "forms": {
+        "N": "bÿstrÿ",
+        "SE": "bistri",
+        "W": "bÿstrÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0135",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "遥远",
+      "proto": "*dalekÿ",
+      "forms": {
+        "N": "dalekÿ",
+        "SE": "daleki",
+        "W": "dałekÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "H",
+        "degreeType": "QUAL"
+      },
+      "notes": [
+        "已登记比较级构词机制；本条显示原级阳性主格"
+      ],
+      "id": "D0136",
+      "aliases": []
+    },
+    {
+      "pos": "adj",
+      "gloss": "最后的",
+      "proto": "*poslednʲi",
+      "forms": {
+        "N": "posledńi",
+        "SE": "posledni",
+        "W": "posłedni"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "class": "S",
+        "degreeType": "REL"
+      },
+      "notes": [
+        "关系形容词不登记普通综合比较级"
+      ],
+      "id": "D0137",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "安放好的",
+      "proto": "*postavenÿ",
+      "forms": {
+        "N": "postaŵenÿ",
+        "SE": "postaveni",
+        "W": "postaŵenÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "PASS.PST",
+        "aspect": "PFV",
+        "verb": "*postavitʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0138",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "被冰封的",
+      "proto": "*zamrazenÿ",
+      "forms": {
+        "N": "zamrazenÿ",
+        "SE": "zamrazeni",
+        "W": "zamrazenÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "PASS.PST",
+        "aspect": "PFV",
+        "verb": "*zamrazitʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0139",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "被带来的",
+      "proto": "*prinesenÿ",
+      "forms": {
+        "N": "prinesenÿ",
+        "SE": "prineseni",
+        "W": "prinesenÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "PASS.PST",
+        "aspect": "PFV",
+        "verb": "*prinesetʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0140",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "被看见的",
+      "proto": "*uvidenÿ",
+      "forms": {
+        "N": "uŵidenÿ",
+        "SE": "uvideni",
+        "W": "uŵidenÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "PASS.PST",
+        "aspect": "PFV",
+        "verb": "*uvidetʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0141",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "被饶恕的",
+      "proto": "*poščadovanÿ",
+      "forms": {
+        "N": "poščadoŵanÿ",
+        "SE": "poščadovani",
+        "W": "poščadoŵanÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "PASS.PST",
+        "aspect": "PFV",
+        "verb": "*poščadovatʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0142",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "被遗忘的",
+      "proto": "*zabÿtÿ",
+      "forms": {
+        "N": "zabÿtÿ",
+        "SE": "zabiti",
+        "W": "zabÿtÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "PASS.PST",
+        "aspect": "PFV",
+        "verb": "*zabÿtʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0143",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "喊叫中的",
+      "proto": "*kričającÿ",
+      "forms": {
+        "N": "kričającÿ",
+        "SE": "kričajoci",
+        "W": "kričającÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "ACT.PRS",
+        "aspect": "IPFV",
+        "verb": "*kričatʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0144",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "讲话中的",
+      "proto": "*govorijącÿ",
+      "forms": {
+        "N": "ġoŵorijącÿ",
+        "SE": "govorijoci",
+        "W": "ġoŵorijącÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "ACT.PRS",
+        "aspect": "IPFV",
+        "verb": "*govoritʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0145",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "燃烧中的",
+      "proto": "*gorejącÿ",
+      "forms": {
+        "N": "ġorejącÿ",
+        "SE": "gorejoci",
+        "W": "ġorejącÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "ACT.PRS",
+        "aspect": "IPFV",
+        "verb": "*goretʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0146",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "生活中的",
+      "proto": "*živejącÿ",
+      "forms": {
+        "N": "žiŵejącÿ",
+        "SE": "živejoci",
+        "W": "žiŵejącÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "ACT.PRS",
+        "aspect": "IPFV",
+        "verb": "*živetʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0147",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "守护、保卫中的",
+      "proto": "*xranijącÿ",
+      "forms": {
+        "N": "ħranijącÿ",
+        "SE": "hranijoci",
+        "W": "ħranijącÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "ACT.PRS",
+        "aspect": "IPFV",
+        "verb": "*xranitʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0148",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "听见、听中的",
+      "proto": "*slÿšającÿ",
+      "forms": {
+        "N": "slÿšającÿ",
+        "SE": "slišajoci",
+        "W": "słÿšającÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "ACT.PRS",
+        "aspect": "IPFV",
+        "verb": "*slÿšatʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0149",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "携带（单次过程）中的",
+      "proto": "*nesejącÿ",
+      "forms": {
+        "N": "nesejącÿ",
+        "SE": "nesejoci",
+        "W": "nesejącÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "ACT.PRS",
+        "aspect": "IPFV",
+        "verb": "*nesetʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0150",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "写成的",
+      "proto": "*napisanÿ",
+      "forms": {
+        "N": "napisanÿ",
+        "SE": "napisani",
+        "W": "napisanÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "PASS.PST",
+        "aspect": "PFV",
+        "verb": "*napisatʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0151",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "已讲述的",
+      "proto": "*progovorenÿ",
+      "forms": {
+        "N": "proġoŵorenÿ",
+        "SE": "progovoreni",
+        "W": "proġoŵorenÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "PASS.PST",
+        "aspect": "PFV",
+        "verb": "*progovoritʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0152",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "已经结冻的",
+      "proto": "*zamrzlÿ",
+      "forms": {
+        "N": "zamrzlÿ",
+        "SE": "zamrzli",
+        "W": "zamrzłÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "RES.PST",
+        "aspect": "PFV",
+        "verb": "*zamrznutʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0153",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "正在融化的",
+      "proto": "*tajającÿ",
+      "forms": {
+        "N": "tajającÿ",
+        "SE": "tajajoci",
+        "W": "tajającÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "ACT.PRS",
+        "aspect": "IPFV",
+        "verb": "*tajatʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0154",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "注视中的",
+      "proto": "*patrijącÿ",
+      "forms": {
+        "N": "patrijącÿ",
+        "SE": "patrijoci",
+        "W": "patrijącÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "ACT.PRS",
+        "aspect": "IPFV",
+        "verb": "*patritʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0155",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "走来、抵达（过程）中的",
+      "proto": "*prÿxodijącÿ",
+      "forms": {
+        "N": "prÿħodijącÿ",
+        "SE": "prihodijoci",
+        "W": "prÿħodijącÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "ACT.PRS",
+        "aspect": "IPFV",
+        "verb": "*prÿxoditʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0156",
+      "aliases": []
+    },
+    {
+      "pos": "participle",
+      "gloss": "做成的",
+      "proto": "*sdelanÿ",
+      "forms": {
+        "N": "sdelanÿ",
+        "SE": "sdelani",
+        "W": "sdełanÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": {
+        "partClass": "PASS.PST",
+        "aspect": "PFV",
+        "verb": "*sdelatʲ"
+      },
+      "notes": [
+        "本条显示分词阳性主格，非独立动词词典原形"
+      ],
+      "id": "D0157",
+      "aliases": []
+    },
+    {
+      "pos": "pronoun",
+      "gloss": "你",
+      "proto": "*tÿ",
+      "forms": {
+        "N": "tÿ",
+        "SE": "ti",
+        "W": "tÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": {
+        "person": "2SG"
+      },
+      "notes": [
+        "本条显示代词主格，六格见原始范式"
+      ],
+      "id": "D0158",
+      "aliases": []
+    },
+    {
+      "pos": "pronoun",
+      "gloss": "你们",
+      "proto": "*vÿ",
+      "forms": {
+        "N": "ŵÿ",
+        "SE": "vi",
+        "W": "ŵÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": {
+        "person": "2PL"
+      },
+      "notes": [
+        "本条显示代词主格，六格见原始范式"
+      ],
+      "id": "D0159",
+      "aliases": []
+    },
+    {
+      "pos": "pronoun",
+      "gloss": "他",
+      "proto": "*on",
+      "forms": {
+        "N": "on",
+        "SE": "on",
+        "W": "on"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": {
+        "person": "3SG.M"
+      },
+      "notes": [
+        "本条显示代词主格，六格见原始范式"
+      ],
+      "id": "D0160",
+      "aliases": []
+    },
+    {
+      "pos": "pronoun",
+      "gloss": "他们／她们",
+      "proto": "*oni",
+      "forms": {
+        "N": "oni",
+        "SE": "oni",
+        "W": "oni"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": {
+        "person": "3PL"
+      },
+      "notes": [
+        "本条显示代词主格，六格见原始范式"
+      ],
+      "id": "D0161",
+      "aliases": []
+    },
+    {
+      "pos": "pronoun",
+      "gloss": "她",
+      "proto": "*ona",
+      "forms": {
+        "N": "ona",
+        "SE": "ona",
+        "W": "ona"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": {
+        "person": "3SG.F"
+      },
+      "notes": [
+        "本条显示代词主格，六格见原始范式"
+      ],
+      "id": "D0162",
+      "aliases": []
+    },
+    {
+      "pos": "pronoun",
+      "gloss": "我",
+      "proto": "*ja",
+      "forms": {
+        "N": "ja",
+        "SE": "ja",
+        "W": "ja"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": {
+        "person": "1SG"
+      },
+      "notes": [
+        "本条显示代词主格，六格见原始范式"
+      ],
+      "id": "D0163",
+      "aliases": []
+    },
+    {
+      "pos": "pronoun",
+      "gloss": "我们",
+      "proto": "*mÿ",
+      "forms": {
+        "N": "mÿ",
+        "SE": "mi",
+        "W": "mÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": {
+        "person": "1PL"
+      },
+      "notes": [
+        "本条显示代词主格，六格见原始范式"
+      ],
+      "id": "D0164",
+      "aliases": []
+    },
+    {
+      "pos": "adverb",
+      "gloss": "今天",
+      "proto": null,
+      "forms": {
+        "N": "dnes",
+        "SE": "dnes",
+        "W": "dnes"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "detail": null,
+      "notes": [
+        "语料S08：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0165",
+      "aliases": []
+    },
+    {
+      "pos": "adverb",
+      "gloss": "明天",
+      "proto": null,
+      "forms": {
+        "N": "jutro",
+        "SE": "jutro",
+        "W": "jutro"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "detail": null,
+      "notes": [
+        "语料S31：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0166",
+      "aliases": []
+    },
+    {
+      "pos": "adverb",
+      "gloss": "仍然",
+      "proto": "*ešče",
+      "forms": {
+        "N": "še",
+        "SE": "še",
+        "W": "še"
+      },
+      "older": {
+        "N": "ešče",
+        "SE": "ešče",
+        "W": "ešče"
+      },
+      "stage": "v06",
+      "source": [
+        "assets/data/zagren-v06-phonology-lexicon.json",
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "ruleIds": [
+        "C03"
+      ],
+      "detail": null,
+      "notes": [
+        ""
+      ],
+      "id": "D0167",
+      "aliases": []
+    },
+    {
+      "pos": "preposition",
+      "gloss": "从……",
+      "proto": null,
+      "forms": {
+        "N": "od",
+        "SE": "od",
+        "W": "od"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": null,
+      "notes": [
+        "V0.2介词：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0168",
+      "aliases": []
+    },
+    {
+      "pos": "preposition",
+      "gloss": "到……旁",
+      "proto": null,
+      "forms": {
+        "N": "k",
+        "SE": "k",
+        "W": "k"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "detail": null,
+      "notes": [
+        "语料S17：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0169",
+      "aliases": []
+    },
+    {
+      "pos": "preposition",
+      "gloss": "与……一起",
+      "proto": null,
+      "forms": {
+        "N": "s",
+        "SE": "s",
+        "W": "s"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": null,
+      "notes": [
+        "V0.2介词：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0170",
+      "aliases": []
+    },
+    {
+      "pos": "preposition",
+      "gloss": "在……里面",
+      "proto": null,
+      "forms": {
+        "N": "ŵ",
+        "SE": "v",
+        "W": "ŵ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": null,
+      "notes": [
+        "V0.2介词：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0171",
+      "aliases": []
+    },
+    {
+      "pos": "preposition",
+      "gloss": "在……旁",
+      "proto": null,
+      "forms": {
+        "N": "u",
+        "SE": "u",
+        "W": "u"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "detail": null,
+      "notes": [
+        "语料S29：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0172",
+      "aliases": []
+    },
+    {
+      "pos": "preposition",
+      "gloss": "在……上",
+      "proto": null,
+      "forms": {
+        "N": "na",
+        "SE": "na",
+        "W": "na"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-nominal-morphology-v02.json"
+      ],
+      "detail": null,
+      "notes": [
+        "V0.2介词：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0173",
+      "aliases": []
+    },
+    {
+      "pos": "conjunction",
+      "gloss": "比……",
+      "proto": null,
+      "forms": {
+        "N": "než",
+        "SE": "než",
+        "W": "než"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-modifier-morphology-v04.json"
+      ],
+      "detail": null,
+      "notes": [
+        "V0.4比较句：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0174",
+      "aliases": []
+    },
+    {
+      "pos": "conjunction",
+      "gloss": "但是",
+      "proto": null,
+      "forms": {
+        "N": "no",
+        "SE": "no",
+        "W": "no"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "detail": null,
+      "notes": [
+        "语料S20：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0175",
+      "aliases": []
+    },
+    {
+      "pos": "conjunction",
+      "gloss": "和／并且",
+      "proto": null,
+      "forms": {
+        "N": "i",
+        "SE": "i",
+        "W": "i"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-public-corpus-v05.json"
+      ],
+      "detail": null,
+      "notes": [
+        "语料S03、S06：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0176",
+      "aliases": []
+    },
+    {
+      "pos": "particle",
+      "gloss": "不／否定",
+      "proto": null,
+      "forms": {
+        "N": "ńe",
+        "SE": "ne",
+        "W": "n"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": null,
+      "notes": [
+        "V0.3否定助词：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0177",
+      "aliases": []
+    },
+    {
+      "pos": "particle",
+      "gloss": "条件式助词",
+      "proto": null,
+      "forms": {
+        "N": "bÿ",
+        "SE": "bi",
+        "W": "bÿ"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": null,
+      "notes": [
+        "V0.3条件式：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0178",
+      "aliases": []
+    },
+    {
+      "pos": "particle",
+      "gloss": "未完成体将来助词",
+      "proto": null,
+      "forms": {
+        "N": "bu",
+        "SE": "bu",
+        "W": "b"
+      },
+      "older": null,
+      "stage": "legacy",
+      "source": [
+        "assets/data/zagren-verbal-morphology-v03.json"
+      ],
+      "detail": null,
+      "notes": [
+        "V0.3分析式将来：已见功能或形式；不是完整语义边界的最终定义"
+      ],
+      "id": "D0179",
+      "aliases": []
+    }
+  ]
+}
