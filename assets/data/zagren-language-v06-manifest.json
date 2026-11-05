@@ -161,8 +161,8 @@
   },
   "metrics": {
     "dictionaryEntries": 279,
-    "modernHeadwordEntries": 127,
-    "historicOrProtoEntries": 152,
+    "modernHeadwordEntries": 128,
+    "historicOrProtoEntries": 151,
     "completeDialectHeadwords": 275,
     "broadIPATranscriptions": 825,
     "addedHighFrequencyWords": 100,
@@ -191,7 +191,8 @@
     "historicLiteratureUI": "zagren-showcase/index.html",
     "hub": "zagren/index.html",
     "offlineCompendium": "assets/data/zagren-language-compendium-v06.txt",
-    "dictionaryOldBaseline": "assets/data/zagren-dictionary-v01.json"
+    "dictionaryOldBaseline": "assets/data/zagren-dictionary-v01.json",
+    "fiveSentenceAudit": "assets/data/zagren-v06-five-sentence-audit.json"
   },
   "principles": [
     "句义清晰、表达简洁，避免增加无意义词长",
@@ -207,10 +208,12 @@
     "filesChecked": 15,
     "checksPassed": 20,
     "dictionaryEntries": 279,
-    "modernHeadwords": 127,
+    "modernHeadwords": 128,
     "broadIPA": 825,
     "grammarSlotChecks": 2025,
     "controlledSentences": 50,
-    "limits": "Validated file contents, cross-references and in-memory JS compilation; live GitHub Pages HTTP was inaccessible from this environment."
+    "limits": "Validated file contents, cross-references and in-memory JS compilation; live GitHub Pages HTTP was inaccessible from this environment.",
+    "fiveSentenceRows": 5,
+    "fiveSentenceDialectRealizations": 15
   }
 }
