@@ -63,6 +63,10 @@ ai_search: true
 
 [查看V0.9四词审订与142旧词分类数据]({{ '/assets/data/zagren-v09-lemma-audit.json' | relative_url }}) · [现行字典TXT]({{ '/assets/data/zagren-dictionary-v05.txt' | relative_url }}) · [现行字典JSON]({{ '/assets/data/zagren-dictionary-v05.json' | relative_url }})
 
+## V0.9第二阶段：受控形态审订
+
+本轮已核对9个名词、7个动词的历史范式，并用五句V0.6核验语料及V0.7句法样本固定**16个语法位置、48个方言实现**。这批形式有明确的受控句子依据，但其余历史格位不自动变成现代规范；西部有生宾格`za`属于短语标记。详见[逐格核查JSON]({{ '/assets/data/zagren-v09-morphology-audit.json' | relative_url }})以及[统一语言总纲]({{ '/articles/article-451/' | relative_url }})。
+
 ## V0.8：旧词词根与屈折同步修订
 
 **[历时音系与词族页面]({{ '/zagren-phonology/' | relative_url }})** · [339条最新音变审阅记录]({{ '/assets/data/zagren-v08-lexicon-review.json' | relative_url }}) · [V0.8音变与词干规范]({{ '/assets/data/zagren-v08-diachrony.json' | relative_url }}) · [143个相关词法位置]({{ '/assets/data/zagren-v08-morphology-regression.json' | relative_url }})
