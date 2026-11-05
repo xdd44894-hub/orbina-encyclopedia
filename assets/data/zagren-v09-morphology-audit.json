@@ -1,0 +1,3665 @@
+{
+  "title": "Žaġręn V0.9 · 受控语料现代形态审订与历史范式隔离",
+  "version": "V0.9-morphology-2",
+  "date": "2026-11-06",
+  "approach": "对选定9个名词、7个动词逐格核查古典范式与V0.5词典原形；仅对既有V0.6核验句与V0.7协调语料所覆盖的确定位置予以受限现行用法确认。未出现的格位保留为历史资料或候选，不得一键转正。",
+  "sources": [
+    "assets/data/zagren-nominal-morphology-v02.json",
+    "assets/data/zagren-verbal-morphology-v03.json",
+    "assets/data/zagren-dictionary-v05.json",
+    "assets/data/zagren-v06-five-sentence-audit.json",
+    "assets/data/zagren-syntax-tests-v07.json",
+    "assets/data/zagren-v08-morphology-regression.json"
+  ],
+  "definitions": {
+    "historic-paradigm-lemma-compatible-not-modern-approved": "对应历史词典原形与当前原形一致；不保证该历史格位在现代仍然原样保留",
+    "historical-form-lemma-drift-review-required": "历史范式的词典原形已发生改变；不得自动把现代词干套到全部格位",
+    "approved-for-the-specified-controlled-grammatical-context-only": "在已核对受控句或形式对照中出现；此处承认该具体语法位置和搭配，不外推整张变格变位表"
+  },
+  "stats": {
+    "selectedNounLexemes": 9,
+    "selectedVerbLexemes": 7,
+    "historicalSlotRows": 199,
+    "historicalDialectFormPositions": 597,
+    "historicalFormsWithSameLemma": 488,
+    "historicalFormsRequiringStemReview": 109,
+    "approvedControlledSlots": 16,
+    "approvedDialectRealizations": 48,
+    "modernNewWordsAdded": 0,
+    "modernDictionaryEntries": 339
+  },
+  "nounLexemes": [
+    {
+      "id": "M01",
+      "dictId": "D0033",
+      "gloss": "山",
+      "proto": "*gora",
+      "cls": "A",
+      "gender": "阴",
+      "animacy": "无生",
+      "byBranch": {
+        "N": {
+          "legacy": "ġora",
+          "modern": "ġora",
+          "matches": true
+        },
+        "SE": {
+          "legacy": "gora",
+          "modern": "gora",
+          "matches": true
+        },
+        "W": {
+          "legacy": "ġor",
+          "modern": "ġor",
+          "matches": true
+        }
+      }
+    },
+    {
+      "id": "M02",
+      "dictId": "D0038",
+      "gloss": "手",
+      "proto": "*ręka",
+      "cls": "A",
+      "gender": "阴",
+      "animacy": "无生",
+      "byBranch": {
+        "N": {
+          "legacy": "ręka",
+          "modern": "ręka",
+          "matches": true
+        },
+        "SE": {
+          "legacy": "renka",
+          "modern": "renka",
+          "matches": true
+        },
+        "W": {
+          "legacy": "ręk",
+          "modern": "ręk",
+          "matches": true
+        }
+      }
+    },
+    {
+      "id": "M04",
+      "dictId": "D0015",
+      "gloss": "管道",
+      "proto": "*tʲruba",
+      "cls": "A",
+      "gender": "阴",
+      "animacy": "无生",
+      "byBranch": {
+        "N": {
+          "legacy": "ťruba",
+          "modern": "ṱruba",
+          "matches": false
+        },
+        "SE": {
+          "legacy": "truba",
+          "modern": "truba",
+          "matches": true
+        },
+        "W": {
+          "legacy": "þrub",
+          "modern": "þřub",
+          "matches": false
+        }
+      }
+    },
+    {
+      "id": "M05",
+      "dictId": "D0020",
+      "gloss": "房屋",
+      "proto": "*dom",
+      "cls": "O",
+      "gender": "阳",
+      "animacy": "无生",
+      "byBranch": {
+        "N": {
+          "legacy": "dom",
+          "modern": "dom",
+          "matches": true
+        },
+        "SE": {
+          "legacy": "dom",
+          "modern": "dom",
+          "matches": true
+        },
+        "W": {
+          "legacy": "dom",
+          "modern": "dom",
+          "matches": true
+        }
+      }
+    },
+    {
+      "id": "M06",
+      "dictId": "D0043",
+      "gloss": "兄弟",
+      "proto": "*brat",
+      "cls": "O",
+      "gender": "阳",
+      "animacy": "有生",
+      "byBranch": {
+        "N": {
+          "legacy": "brat",
+          "modern": "brat",
+          "matches": true
+        },
+        "SE": {
+          "legacy": "brat",
+          "modern": "brat",
+          "matches": true
+        },
+        "W": {
+          "legacy": "brat",
+          "modern": "brat",
+          "matches": true
+        }
+      }
+    },
+    {
+      "id": "M07",
+      "dictId": "D0034",
+      "gloss": "神明",
+      "proto": "*bog",
+      "cls": "O",
+      "gender": "阳",
+      "animacy": "有生",
+      "byBranch": {
+        "N": {
+          "legacy": "boġ",
+          "modern": "boġ",
+          "matches": true
+        },
+        "SE": {
+          "legacy": "bog",
+          "modern": "bog",
+          "matches": true
+        },
+        "W": {
+          "legacy": "boġ",
+          "modern": "bo",
+          "matches": false
+        }
+      }
+    },
+    {
+      "id": "M08",
+      "dictId": "D0044",
+      "gloss": "雪",
+      "proto": "*sneg",
+      "cls": "O",
+      "gender": "阳",
+      "animacy": "无生",
+      "byBranch": {
+        "N": {
+          "legacy": "sneġ",
+          "modern": "sęġ",
+          "matches": false
+        },
+        "SE": {
+          "legacy": "sneg",
+          "modern": "seg",
+          "matches": false
+        },
+        "W": {
+          "legacy": "sneġ",
+          "modern": "sne",
+          "matches": false
+        }
+      }
+    },
+    {
+      "id": "M11",
+      "dictId": "D0019",
+      "gloss": "火",
+      "proto": "*ognʲ",
+      "cls": "J",
+      "gender": "阳",
+      "animacy": "无生",
+      "byBranch": {
+        "N": {
+          "legacy": "oġń",
+          "modern": "ӧġń",
+          "matches": false
+        },
+        "SE": {
+          "legacy": "ogon",
+          "modern": "oң",
+          "matches": false
+        },
+        "W": {
+          "legacy": "oġn",
+          "modern": "oġn",
+          "matches": true
+        }
+      }
+    },
+    {
+      "id": "M14",
+      "dictId": "D0025",
+      "gloss": "母亲",
+      "proto": "*matʲ",
+      "cls": "IRR",
+      "gender": "阴",
+      "animacy": "有生",
+      "byBranch": {
+        "N": {
+          "legacy": "mať",
+          "modern": "mať",
+          "matches": true
+        },
+        "SE": {
+          "legacy": "mat",
+          "modern": "mat",
+          "matches": true
+        },
+        "W": {
+          "legacy": "maþ",
+          "modern": "maþ",
+          "matches": true
+        }
+      }
+    }
+  ],
+  "verbLexemes": [
+    {
+      "id": "V01",
+      "dictId": "D0087",
+      "gloss": "写",
+      "proto": "*pisatʲ",
+      "cls": "A",
+      "aspect": "IPFV",
+      "byBranch": {
+        "N": {
+          "legacy": "pisať",
+          "modern": "pisať",
+          "matches": true
+        },
+        "SE": {
+          "legacy": "pisat",
+          "modern": "pisat",
+          "matches": true
+        },
+        "W": {
+          "legacy": "pisaþ",
+          "modern": "pisaþ",
+          "matches": true
+        }
+      }
+    },
+    {
+      "id": "V12",
+      "dictId": "D0080",
+      "gloss": "守卫、保护",
+      "proto": "*xranitʲ",
+      "cls": "I",
+      "aspect": "IPFV",
+      "byBranch": {
+        "N": {
+          "legacy": "ħraniť",
+          "modern": "ħraniť",
+          "matches": true
+        },
+        "SE": {
+          "legacy": "hranit",
+          "modern": "hranit",
+          "matches": true
+        },
+        "W": {
+          "legacy": "ħraniþ",
+          "modern": "ħraniþ",
+          "matches": true
+        }
+      }
+    },
+    {
+      "id": "V13",
+      "dictId": "D0066",
+      "gloss": "讲话",
+      "proto": "*govoritʲ",
+      "cls": "I",
+      "aspect": "IPFV",
+      "byBranch": {
+        "N": {
+          "legacy": "ġoŵoriť",
+          "modern": "ġoŵoriť",
+          "matches": true
+        },
+        "SE": {
+          "legacy": "govorit",
+          "modern": "govorit",
+          "matches": true
+        },
+        "W": {
+          "legacy": "ġoŵoriþ",
+          "modern": "ġoŵoriþ",
+          "matches": true
+        }
+      }
+    },
+    {
+      "id": "V18",
+      "dictId": "D0069",
+      "gloss": "看见",
+      "proto": "*videtʲ",
+      "cls": "E",
+      "aspect": "IPFV",
+      "byBranch": {
+        "N": {
+          "legacy": "ŵideť",
+          "modern": "ŵideť",
+          "matches": true
+        },
+        "SE": {
+          "legacy": "videt",
+          "modern": "videt",
+          "matches": true
+        },
+        "W": {
+          "legacy": "ŵideþ",
+          "modern": "ŵideþ",
+          "matches": true
+        }
+      }
+    },
+    {
+      "id": "V20",
+      "dictId": "D0078",
+      "gloss": "生活",
+      "proto": "*živetʲ",
+      "cls": "E",
+      "aspect": "IPFV",
+      "byBranch": {
+        "N": {
+          "legacy": "žiŵeť",
+          "modern": "ẑiŵeť",
+          "matches": false
+        },
+        "SE": {
+          "legacy": "živet",
+          "modern": "živet",
+          "matches": true
+        },
+        "W": {
+          "legacy": "žiŵeþ",
+          "modern": "žiŵeþ",
+          "matches": true
+        }
+      }
+    },
+    {
+      "id": "V21",
+      "dictId": "D0074",
+      "gloss": "燃烧",
+      "proto": "*goretʲ",
+      "cls": "E",
+      "aspect": "IPFV",
+      "byBranch": {
+        "N": {
+          "legacy": "ġoreť",
+          "modern": "ġoreť",
+          "matches": true
+        },
+        "SE": {
+          "legacy": "goret",
+          "modern": "goret",
+          "matches": true
+        },
+        "W": {
+          "legacy": "ġoreþ",
+          "modern": "ġoreþ",
+          "matches": true
+        }
+      }
+    },
+    {
+      "id": "V23",
+      "dictId": "D0063",
+      "gloss": "给予",
+      "proto": "*datʲ",
+      "cls": "IRR-GIVE",
+      "aspect": "PFV",
+      "byBranch": {
+        "N": {
+          "legacy": "dať",
+          "modern": "dať",
+          "matches": true
+        },
+        "SE": {
+          "legacy": "dat",
+          "modern": "dat",
+          "matches": true
+        },
+        "W": {
+          "legacy": "daþ",
+          "modern": "daþ",
+          "matches": true
+        }
+      }
+    }
+  ],
+  "controlledMorphology": [
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "SG.NOM",
+      "source": "T01",
+      "sourceClass": "v06-verified-controlled-sentence",
+      "forms": {
+        "N": "brat",
+        "SE": "brat",
+        "W": "brat"
+      },
+      "gloss": "brother subject",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb",
+      "position": "past.M",
+      "source": "T01",
+      "sourceClass": "v06-verified-controlled-sentence",
+      "forms": {
+        "N": "dal",
+        "SE": "dal",
+        "W": "dał"
+      },
+      "gloss": "gave; masculine past",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "SG.NOM",
+      "source": "T02",
+      "sourceClass": "v06-verified-controlled-sentence",
+      "forms": {
+        "N": "mať",
+        "SE": "mat",
+        "W": "maþ"
+      },
+      "gloss": "mother subject",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb",
+      "position": "past.F",
+      "source": "T02",
+      "sourceClass": "v06-verified-controlled-sentence",
+      "forms": {
+        "N": "dala",
+        "SE": "dala",
+        "W": "dał"
+      },
+      "gloss": "gave; feminine past; W syncretic",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb",
+      "position": "finite.1PL",
+      "source": "T03",
+      "sourceClass": "v06-verified-controlled-sentence",
+      "forms": {
+        "N": "ħranime",
+        "SE": "hranime",
+        "W": "ħranim"
+      },
+      "gloss": "protect; 1PL",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "SG.ACC",
+      "source": "T03",
+      "sourceClass": "v06-verified-controlled-sentence",
+      "forms": {
+        "N": "ṱrubu",
+        "SE": "trubu",
+        "W": "þřubu"
+      },
+      "gloss": "pipe; direct object",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "SG.ACC",
+      "source": "T04",
+      "sourceClass": "v06-verified-controlled-sentence",
+      "forms": {
+        "N": "sęġ",
+        "SE": "seg",
+        "W": "sne"
+      },
+      "gloss": "snow; direct object",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb",
+      "position": "finite.1PL",
+      "source": "T04",
+      "sourceClass": "v06-verified-controlled-sentence",
+      "forms": {
+        "N": "ŵideme",
+        "SE": "videme",
+        "W": "ŵidem"
+      },
+      "gloss": "see; 1PL negated",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb",
+      "position": "finite.3SG",
+      "source": "T05",
+      "sourceClass": "v06-verified-controlled-sentence",
+      "forms": {
+        "N": "ġoŵorit",
+        "SE": "govorit",
+        "W": "ġoŵorit"
+      },
+      "gloss": "speak; 3SG",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "SG.NOM",
+      "source": "T05",
+      "sourceClass": "v06-verified-controlled-sentence",
+      "forms": {
+        "N": "ӧġń",
+        "SE": "oң",
+        "W": "oġn"
+      },
+      "gloss": "fire; subject",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb",
+      "position": "finite.3SG",
+      "source": "T05",
+      "sourceClass": "v06-verified-controlled-sentence",
+      "forms": {
+        "N": "ġoret",
+        "SE": "goret",
+        "W": "ġoret"
+      },
+      "gloss": "burn; 3SG",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "SG.ACC",
+      "source": "A06",
+      "sourceClass": "v07-historical-reconciled-controlled-sample",
+      "forms": {
+        "N": "brata",
+        "SE": "brata",
+        "W": "za brat"
+      },
+      "gloss": "brother accusative; W requires preposed za",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "SG.LOC",
+      "source": "A12",
+      "sourceClass": "v07-historical-reconciled-controlled-sample",
+      "forms": {
+        "N": "ġore",
+        "SE": "gore",
+        "W": "ġor"
+      },
+      "gloss": "mountain locative in na phrase",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "SG.GEN",
+      "source": "A14",
+      "sourceClass": "v07-historical-reconciled-controlled-sample",
+      "forms": {
+        "N": "doma",
+        "SE": "doma",
+        "W": "dom"
+      },
+      "gloss": "house genitive in od phrase",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "SG.INS",
+      "source": "A15",
+      "sourceClass": "v07-historical-reconciled-controlled-sample",
+      "forms": {
+        "N": "rękoją",
+        "SE": "renkojo",
+        "W": "rękoj"
+      },
+      "gloss": "hand instrumental in s phrase",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "SG.ACC",
+      "source": "A16",
+      "sourceClass": "v07-historical-reconciled-controlled-sample",
+      "forms": {
+        "N": "boġa",
+        "SE": "boga",
+        "W": "za boġ"
+      },
+      "gloss": "god accusative; W retains ġ with za",
+      "scope": "approved-for-the-specified-controlled-grammatical-context-only"
+    }
+  ],
+  "historicalParadigmSlots": [
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "SG.NOM",
+      "historical": {
+        "N": "ġora",
+        "SE": "gora",
+        "W": "ġor"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "SG.GEN",
+      "historical": {
+        "N": "ġorÿ",
+        "SE": "gori",
+        "W": "ġorÿ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "SG.DAT",
+      "historical": {
+        "N": "ġori",
+        "SE": "gori",
+        "W": "ġori"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "SG.ACC",
+      "historical": {
+        "N": "ġoru",
+        "SE": "goru",
+        "W": "ġoru"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "SG.INS",
+      "historical": {
+        "N": "ġoroją",
+        "SE": "gorojo",
+        "W": "ġoroj"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "SG.LOC",
+      "historical": {
+        "N": "ġore",
+        "SE": "gore",
+        "W": "ġor"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "PL.NOM",
+      "historical": {
+        "N": "ġorÿ",
+        "SE": "gori",
+        "W": "ġorÿ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "PL.GEN",
+      "historical": {
+        "N": "ġor",
+        "SE": "gor",
+        "W": "ġor"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "PL.DAT",
+      "historical": {
+        "N": "ġoram",
+        "SE": "goram",
+        "W": "ġoram"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "PL.ACC",
+      "historical": {
+        "N": "ġorÿ",
+        "SE": "gori",
+        "W": "ġorÿ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "PL.INS",
+      "historical": {
+        "N": "ġorami",
+        "SE": "gorami",
+        "W": "ġorami"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M01",
+      "category": "noun",
+      "position": "PL.LOC",
+      "historical": {
+        "N": "ġoraħ",
+        "SE": "gorah",
+        "W": "ġoraħ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "SG.NOM",
+      "historical": {
+        "N": "ręka",
+        "SE": "renka",
+        "W": "ręk"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "SG.GEN",
+      "historical": {
+        "N": "rękÿ",
+        "SE": "renki",
+        "W": "rękÿ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "SG.DAT",
+      "historical": {
+        "N": "ręki",
+        "SE": "renki",
+        "W": "ręki"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "SG.ACC",
+      "historical": {
+        "N": "ręku",
+        "SE": "renku",
+        "W": "ręku"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "SG.INS",
+      "historical": {
+        "N": "rękoją",
+        "SE": "renkojo",
+        "W": "rękoj"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "SG.LOC",
+      "historical": {
+        "N": "ręke",
+        "SE": "renke",
+        "W": "ręk"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "PL.NOM",
+      "historical": {
+        "N": "rękÿ",
+        "SE": "renki",
+        "W": "rękÿ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "PL.GEN",
+      "historical": {
+        "N": "ręk",
+        "SE": "renk",
+        "W": "ręk"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "PL.DAT",
+      "historical": {
+        "N": "rękam",
+        "SE": "renkam",
+        "W": "rękam"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "PL.ACC",
+      "historical": {
+        "N": "rękÿ",
+        "SE": "renki",
+        "W": "rękÿ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "PL.INS",
+      "historical": {
+        "N": "rękami",
+        "SE": "renkami",
+        "W": "rękami"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M02",
+      "category": "noun",
+      "position": "PL.LOC",
+      "historical": {
+        "N": "rękaħ",
+        "SE": "renkah",
+        "W": "rękaħ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "SG.NOM",
+      "historical": {
+        "N": "ťruba",
+        "SE": "truba",
+        "W": "þrub"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "SG.GEN",
+      "historical": {
+        "N": "ťrubÿ",
+        "SE": "trubi",
+        "W": "þrubÿ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "SG.DAT",
+      "historical": {
+        "N": "ťrubi",
+        "SE": "trubi",
+        "W": "þrubi"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "SG.ACC",
+      "historical": {
+        "N": "ťrubu",
+        "SE": "trubu",
+        "W": "þrubu"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "SG.INS",
+      "historical": {
+        "N": "ťruboją",
+        "SE": "trubojo",
+        "W": "þruboj"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "SG.LOC",
+      "historical": {
+        "N": "ťrube",
+        "SE": "trube",
+        "W": "þrub"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "PL.NOM",
+      "historical": {
+        "N": "ťrubÿ",
+        "SE": "trubi",
+        "W": "þrubÿ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "PL.GEN",
+      "historical": {
+        "N": "ťrub",
+        "SE": "trub",
+        "W": "þrub"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "PL.DAT",
+      "historical": {
+        "N": "ťrubam",
+        "SE": "trubam",
+        "W": "þrubam"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "PL.ACC",
+      "historical": {
+        "N": "ťrubÿ",
+        "SE": "trubi",
+        "W": "þrubÿ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "PL.INS",
+      "historical": {
+        "N": "ťrubami",
+        "SE": "trubami",
+        "W": "þrubami"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M04",
+      "category": "noun",
+      "position": "PL.LOC",
+      "historical": {
+        "N": "ťrubaħ",
+        "SE": "trubah",
+        "W": "þrubaħ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "SG.NOM",
+      "historical": {
+        "N": "dom",
+        "SE": "dom",
+        "W": "dom"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "SG.GEN",
+      "historical": {
+        "N": "doma",
+        "SE": "doma",
+        "W": "dom"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "SG.DAT",
+      "historical": {
+        "N": "domu",
+        "SE": "domu",
+        "W": "domu"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "SG.ACC",
+      "historical": {
+        "N": "dom",
+        "SE": "dom",
+        "W": "dom"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "SG.INS",
+      "historical": {
+        "N": "domom",
+        "SE": "domom",
+        "W": "domom"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "SG.LOC",
+      "historical": {
+        "N": "dome",
+        "SE": "dome",
+        "W": "dom"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "PL.NOM",
+      "historical": {
+        "N": "domÿ",
+        "SE": "domi",
+        "W": "domÿ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "PL.GEN",
+      "historical": {
+        "N": "domoŵ",
+        "SE": "domov",
+        "W": "domoŵ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "PL.DAT",
+      "historical": {
+        "N": "domam",
+        "SE": "domam",
+        "W": "domam"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "PL.ACC",
+      "historical": {
+        "N": "domÿ",
+        "SE": "domi",
+        "W": "domÿ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "PL.INS",
+      "historical": {
+        "N": "domami",
+        "SE": "domami",
+        "W": "domami"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M05",
+      "category": "noun",
+      "position": "PL.LOC",
+      "historical": {
+        "N": "domaħ",
+        "SE": "domah",
+        "W": "domaħ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "SG.NOM",
+      "historical": {
+        "N": "brat",
+        "SE": "brat",
+        "W": "brat"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "SG.GEN",
+      "historical": {
+        "N": "brata",
+        "SE": "brata",
+        "W": "brat"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "SG.DAT",
+      "historical": {
+        "N": "bratu",
+        "SE": "bratu",
+        "W": "bratu"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "SG.ACC",
+      "historical": {
+        "N": "brata",
+        "SE": "brata",
+        "W": "brat"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "SG.INS",
+      "historical": {
+        "N": "bratom",
+        "SE": "bratom",
+        "W": "bratom"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "SG.LOC",
+      "historical": {
+        "N": "brate",
+        "SE": "brate",
+        "W": "brat"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "PL.NOM",
+      "historical": {
+        "N": "bratÿ",
+        "SE": "brati",
+        "W": "bratÿ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "PL.GEN",
+      "historical": {
+        "N": "bratoŵ",
+        "SE": "bratov",
+        "W": "bratoŵ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "PL.DAT",
+      "historical": {
+        "N": "bratam",
+        "SE": "bratam",
+        "W": "bratam"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "PL.ACC",
+      "historical": {
+        "N": "bratoŵ",
+        "SE": "bratov",
+        "W": "bratoŵ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "PL.INS",
+      "historical": {
+        "N": "bratami",
+        "SE": "bratami",
+        "W": "bratami"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M06",
+      "category": "noun",
+      "position": "PL.LOC",
+      "historical": {
+        "N": "brataħ",
+        "SE": "bratah",
+        "W": "brataħ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "SG.NOM",
+      "historical": {
+        "N": "boġ",
+        "SE": "bog",
+        "W": "boġ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "SG.GEN",
+      "historical": {
+        "N": "boġa",
+        "SE": "boga",
+        "W": "boġ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "SG.DAT",
+      "historical": {
+        "N": "boġu",
+        "SE": "bogu",
+        "W": "boġu"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "SG.ACC",
+      "historical": {
+        "N": "boġa",
+        "SE": "boga",
+        "W": "boġ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "SG.INS",
+      "historical": {
+        "N": "boġom",
+        "SE": "bogom",
+        "W": "boġom"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "SG.LOC",
+      "historical": {
+        "N": "boġe",
+        "SE": "boge",
+        "W": "boġ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "PL.NOM",
+      "historical": {
+        "N": "boġÿ",
+        "SE": "bogi",
+        "W": "boġÿ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "PL.GEN",
+      "historical": {
+        "N": "boġoŵ",
+        "SE": "bogov",
+        "W": "boġoŵ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "PL.DAT",
+      "historical": {
+        "N": "boġam",
+        "SE": "bogam",
+        "W": "boġam"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "PL.ACC",
+      "historical": {
+        "N": "boġoŵ",
+        "SE": "bogov",
+        "W": "boġoŵ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "PL.INS",
+      "historical": {
+        "N": "boġami",
+        "SE": "bogami",
+        "W": "boġami"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M07",
+      "category": "noun",
+      "position": "PL.LOC",
+      "historical": {
+        "N": "boġaħ",
+        "SE": "bogah",
+        "W": "boġaħ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "SG.NOM",
+      "historical": {
+        "N": "sneġ",
+        "SE": "sneg",
+        "W": "sneġ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "SG.GEN",
+      "historical": {
+        "N": "sneġa",
+        "SE": "snega",
+        "W": "sneġ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "SG.DAT",
+      "historical": {
+        "N": "sneġu",
+        "SE": "snegu",
+        "W": "sneġu"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "SG.ACC",
+      "historical": {
+        "N": "sneġ",
+        "SE": "sneg",
+        "W": "sneġ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "SG.INS",
+      "historical": {
+        "N": "sneġom",
+        "SE": "snegom",
+        "W": "sneġom"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "SG.LOC",
+      "historical": {
+        "N": "sneġe",
+        "SE": "snege",
+        "W": "sneġ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "PL.NOM",
+      "historical": {
+        "N": "sneġÿ",
+        "SE": "snegi",
+        "W": "sneġÿ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "PL.GEN",
+      "historical": {
+        "N": "sneġoŵ",
+        "SE": "snegov",
+        "W": "sneġoŵ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "PL.DAT",
+      "historical": {
+        "N": "sneġam",
+        "SE": "snegam",
+        "W": "sneġam"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "PL.ACC",
+      "historical": {
+        "N": "sneġÿ",
+        "SE": "snegi",
+        "W": "sneġÿ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "PL.INS",
+      "historical": {
+        "N": "sneġami",
+        "SE": "snegami",
+        "W": "sneġami"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M08",
+      "category": "noun",
+      "position": "PL.LOC",
+      "historical": {
+        "N": "sneġaħ",
+        "SE": "snegah",
+        "W": "sneġaħ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historical-form-lemma-drift-review-required"
+      }
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "SG.NOM",
+      "historical": {
+        "N": "oġń",
+        "SE": "ogon",
+        "W": "oġn"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "SG.GEN",
+      "historical": {
+        "N": "oġńa",
+        "SE": "ogna",
+        "W": "oġn"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "SG.DAT",
+      "historical": {
+        "N": "oġńu",
+        "SE": "ognu",
+        "W": "oġnu"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "SG.ACC",
+      "historical": {
+        "N": "oġń",
+        "SE": "ogon",
+        "W": "oġn"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "SG.INS",
+      "historical": {
+        "N": "oġńem",
+        "SE": "ognem",
+        "W": "oġnem"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "SG.LOC",
+      "historical": {
+        "N": "oġńe",
+        "SE": "ogne",
+        "W": "oġn"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "PL.NOM",
+      "historical": {
+        "N": "oġńi",
+        "SE": "ogni",
+        "W": "oġni"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "PL.GEN",
+      "historical": {
+        "N": "oġńeŵ",
+        "SE": "ognev",
+        "W": "oġneŵ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "PL.DAT",
+      "historical": {
+        "N": "oġńam",
+        "SE": "ognam",
+        "W": "oġnam"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "PL.ACC",
+      "historical": {
+        "N": "oġńi",
+        "SE": "ogni",
+        "W": "oġni"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "PL.INS",
+      "historical": {
+        "N": "oġńami",
+        "SE": "ognami",
+        "W": "oġnami"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M11",
+      "category": "noun",
+      "position": "PL.LOC",
+      "historical": {
+        "N": "oġńaħ",
+        "SE": "ognah",
+        "W": "oġnaħ"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historical-form-lemma-drift-review-required",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "SG.NOM",
+      "historical": {
+        "N": "mať",
+        "SE": "mat",
+        "W": "maþ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "SG.GEN",
+      "historical": {
+        "N": "materi",
+        "SE": "materi",
+        "W": "materi"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "SG.DAT",
+      "historical": {
+        "N": "materi",
+        "SE": "materi",
+        "W": "materi"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "SG.ACC",
+      "historical": {
+        "N": "mať",
+        "SE": "mat",
+        "W": "maþ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "SG.INS",
+      "historical": {
+        "N": "materju",
+        "SE": "materju",
+        "W": "materju"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "SG.LOC",
+      "historical": {
+        "N": "materi",
+        "SE": "materi",
+        "W": "materi"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "PL.NOM",
+      "historical": {
+        "N": "materi",
+        "SE": "materi",
+        "W": "materi"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "PL.GEN",
+      "historical": {
+        "N": "materej",
+        "SE": "materej",
+        "W": "materej"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "PL.DAT",
+      "historical": {
+        "N": "materam",
+        "SE": "materam",
+        "W": "materam"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "PL.ACC",
+      "historical": {
+        "N": "materi",
+        "SE": "materi",
+        "W": "materi"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "PL.INS",
+      "historical": {
+        "N": "materami",
+        "SE": "materami",
+        "W": "materami"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "M14",
+      "category": "noun",
+      "position": "PL.LOC",
+      "historical": {
+        "N": "materaħ",
+        "SE": "materah",
+        "W": "materaħ"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-finite",
+      "position": "finite.1SG",
+      "historical": {
+        "N": "pisam",
+        "SE": "pisam",
+        "W": "pisam"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-finite",
+      "position": "finite.2SG",
+      "historical": {
+        "N": "pisaš",
+        "SE": "pisaš",
+        "W": "pisaš"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-finite",
+      "position": "finite.3SG",
+      "historical": {
+        "N": "pisat",
+        "SE": "pisat",
+        "W": "pisat"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-finite",
+      "position": "finite.1PL",
+      "historical": {
+        "N": "pisame",
+        "SE": "pisame",
+        "W": "pisam"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-finite",
+      "position": "finite.2PL",
+      "historical": {
+        "N": "pisate",
+        "SE": "pisate",
+        "W": "pisat"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-finite",
+      "position": "finite.3PL",
+      "historical": {
+        "N": "pisająt",
+        "SE": "pisajot",
+        "W": "pisająt"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-finite",
+      "position": "finite.1SG",
+      "historical": {
+        "N": "ħranim",
+        "SE": "hranim",
+        "W": "ħranim"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-finite",
+      "position": "finite.2SG",
+      "historical": {
+        "N": "ħraniš",
+        "SE": "hraniš",
+        "W": "ħraniš"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-finite",
+      "position": "finite.3SG",
+      "historical": {
+        "N": "ħranit",
+        "SE": "hranit",
+        "W": "ħranit"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-finite",
+      "position": "finite.1PL",
+      "historical": {
+        "N": "ħranime",
+        "SE": "hranime",
+        "W": "ħranim"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-finite",
+      "position": "finite.2PL",
+      "historical": {
+        "N": "ħranite",
+        "SE": "hranite",
+        "W": "ħranit"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-finite",
+      "position": "finite.3PL",
+      "historical": {
+        "N": "ħranięt",
+        "SE": "hraniet",
+        "W": "ħranięt"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-finite",
+      "position": "finite.1SG",
+      "historical": {
+        "N": "ġoŵorim",
+        "SE": "govorim",
+        "W": "ġoŵorim"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-finite",
+      "position": "finite.2SG",
+      "historical": {
+        "N": "ġoŵoriš",
+        "SE": "govoriš",
+        "W": "ġoŵoriš"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-finite",
+      "position": "finite.3SG",
+      "historical": {
+        "N": "ġoŵorit",
+        "SE": "govorit",
+        "W": "ġoŵorit"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-finite",
+      "position": "finite.1PL",
+      "historical": {
+        "N": "ġoŵorime",
+        "SE": "govorime",
+        "W": "ġoŵorim"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-finite",
+      "position": "finite.2PL",
+      "historical": {
+        "N": "ġoŵorite",
+        "SE": "govorite",
+        "W": "ġoŵorit"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-finite",
+      "position": "finite.3PL",
+      "historical": {
+        "N": "ġoŵorięt",
+        "SE": "govoriet",
+        "W": "ġoŵorięt"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-finite",
+      "position": "finite.1SG",
+      "historical": {
+        "N": "ŵidem",
+        "SE": "videm",
+        "W": "ŵidem"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-finite",
+      "position": "finite.2SG",
+      "historical": {
+        "N": "ŵideš",
+        "SE": "videš",
+        "W": "ŵideš"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-finite",
+      "position": "finite.3SG",
+      "historical": {
+        "N": "ŵidet",
+        "SE": "videt",
+        "W": "ŵidet"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-finite",
+      "position": "finite.1PL",
+      "historical": {
+        "N": "ŵideme",
+        "SE": "videme",
+        "W": "ŵidem"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-finite",
+      "position": "finite.2PL",
+      "historical": {
+        "N": "ŵidete",
+        "SE": "videte",
+        "W": "ŵidet"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-finite",
+      "position": "finite.3PL",
+      "historical": {
+        "N": "ŵideut",
+        "SE": "videut",
+        "W": "ŵideut"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-finite",
+      "position": "finite.1SG",
+      "historical": {
+        "N": "žiŵem",
+        "SE": "živem",
+        "W": "žiŵem"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-finite",
+      "position": "finite.2SG",
+      "historical": {
+        "N": "žiŵeš",
+        "SE": "živeš",
+        "W": "žiŵeš"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-finite",
+      "position": "finite.3SG",
+      "historical": {
+        "N": "žiŵet",
+        "SE": "živet",
+        "W": "žiŵet"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-finite",
+      "position": "finite.1PL",
+      "historical": {
+        "N": "žiŵeme",
+        "SE": "živeme",
+        "W": "žiŵem"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-finite",
+      "position": "finite.2PL",
+      "historical": {
+        "N": "žiŵete",
+        "SE": "živete",
+        "W": "žiŵet"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-finite",
+      "position": "finite.3PL",
+      "historical": {
+        "N": "žiŵeut",
+        "SE": "živeut",
+        "W": "žiŵeut"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-finite",
+      "position": "finite.1SG",
+      "historical": {
+        "N": "ġorem",
+        "SE": "gorem",
+        "W": "ġorem"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-finite",
+      "position": "finite.2SG",
+      "historical": {
+        "N": "ġoreš",
+        "SE": "goreš",
+        "W": "ġoreš"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-finite",
+      "position": "finite.3SG",
+      "historical": {
+        "N": "ġoret",
+        "SE": "goret",
+        "W": "ġoret"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-finite",
+      "position": "finite.1PL",
+      "historical": {
+        "N": "ġoreme",
+        "SE": "goreme",
+        "W": "ġorem"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-finite",
+      "position": "finite.2PL",
+      "historical": {
+        "N": "ġorete",
+        "SE": "gorete",
+        "W": "ġoret"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-finite",
+      "position": "finite.3PL",
+      "historical": {
+        "N": "ġoreut",
+        "SE": "goreut",
+        "W": "ġoreut"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-finite",
+      "position": "finite.1SG",
+      "historical": {
+        "N": "dam",
+        "SE": "dam",
+        "W": "dam"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-finite",
+      "position": "finite.2SG",
+      "historical": {
+        "N": "daš",
+        "SE": "daš",
+        "W": "daš"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-finite",
+      "position": "finite.3SG",
+      "historical": {
+        "N": "dast",
+        "SE": "dast",
+        "W": "dast"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-finite",
+      "position": "finite.1PL",
+      "historical": {
+        "N": "dame",
+        "SE": "dame",
+        "W": "dam"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-finite",
+      "position": "finite.2PL",
+      "historical": {
+        "N": "date",
+        "SE": "date",
+        "W": "dat"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-finite",
+      "position": "finite.3PL",
+      "historical": {
+        "N": "dadut",
+        "SE": "dadut",
+        "W": "dadut"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-past",
+      "position": "past.M",
+      "historical": {
+        "N": "pisal",
+        "SE": "pisal",
+        "W": "pisał"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-past",
+      "position": "past.F",
+      "historical": {
+        "N": "pisala",
+        "SE": "pisala",
+        "W": "pisał"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-past",
+      "position": "past.N",
+      "historical": {
+        "N": "pisalo",
+        "SE": "pisalo",
+        "W": "pisał"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-past",
+      "position": "past.PL",
+      "historical": {
+        "N": "pisali",
+        "SE": "pisali",
+        "W": "pisałi"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-past",
+      "position": "past.M",
+      "historical": {
+        "N": "ħranil",
+        "SE": "hranil",
+        "W": "ħranił"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-past",
+      "position": "past.F",
+      "historical": {
+        "N": "ħranila",
+        "SE": "hranila",
+        "W": "ħranił"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-past",
+      "position": "past.N",
+      "historical": {
+        "N": "ħranilo",
+        "SE": "hranilo",
+        "W": "ħranił"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-past",
+      "position": "past.PL",
+      "historical": {
+        "N": "ħranili",
+        "SE": "hranili",
+        "W": "ħraniłi"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-past",
+      "position": "past.M",
+      "historical": {
+        "N": "ġoŵoril",
+        "SE": "govoril",
+        "W": "ġoŵorił"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-past",
+      "position": "past.F",
+      "historical": {
+        "N": "ġoŵorila",
+        "SE": "govorila",
+        "W": "ġoŵorił"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-past",
+      "position": "past.N",
+      "historical": {
+        "N": "ġoŵorilo",
+        "SE": "govorilo",
+        "W": "ġoŵorił"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-past",
+      "position": "past.PL",
+      "historical": {
+        "N": "ġoŵorili",
+        "SE": "govorili",
+        "W": "ġoŵoriłi"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-past",
+      "position": "past.M",
+      "historical": {
+        "N": "ŵidel",
+        "SE": "videl",
+        "W": "ŵideł"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-past",
+      "position": "past.F",
+      "historical": {
+        "N": "ŵidela",
+        "SE": "videla",
+        "W": "ŵideł"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-past",
+      "position": "past.N",
+      "historical": {
+        "N": "ŵidelo",
+        "SE": "videlo",
+        "W": "ŵideł"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-past",
+      "position": "past.PL",
+      "historical": {
+        "N": "ŵideli",
+        "SE": "videli",
+        "W": "ŵidełi"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-past",
+      "position": "past.M",
+      "historical": {
+        "N": "žiŵel",
+        "SE": "živel",
+        "W": "žiŵeł"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-past",
+      "position": "past.F",
+      "historical": {
+        "N": "žiŵela",
+        "SE": "živela",
+        "W": "žiŵeł"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-past",
+      "position": "past.N",
+      "historical": {
+        "N": "žiŵelo",
+        "SE": "živelo",
+        "W": "žiŵeł"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-past",
+      "position": "past.PL",
+      "historical": {
+        "N": "žiŵeli",
+        "SE": "živeli",
+        "W": "žiŵełi"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-past",
+      "position": "past.M",
+      "historical": {
+        "N": "ġorel",
+        "SE": "gorel",
+        "W": "ġoreł"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-past",
+      "position": "past.F",
+      "historical": {
+        "N": "ġorela",
+        "SE": "gorela",
+        "W": "ġoreł"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-past",
+      "position": "past.N",
+      "historical": {
+        "N": "ġorelo",
+        "SE": "gorelo",
+        "W": "ġoreł"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-past",
+      "position": "past.PL",
+      "historical": {
+        "N": "ġoreli",
+        "SE": "goreli",
+        "W": "ġorełi"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-past",
+      "position": "past.M",
+      "historical": {
+        "N": "dal",
+        "SE": "dal",
+        "W": "dał"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-past",
+      "position": "past.F",
+      "historical": {
+        "N": "dala",
+        "SE": "dala",
+        "W": "dał"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-past",
+      "position": "past.N",
+      "historical": {
+        "N": "dalo",
+        "SE": "dalo",
+        "W": "dał"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-past",
+      "position": "past.PL",
+      "historical": {
+        "N": "dali",
+        "SE": "dali",
+        "W": "dałi"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-imperative",
+      "position": "imperative.2SG",
+      "historical": {
+        "N": "pisaj",
+        "SE": "pisaj",
+        "W": "pisaj"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-imperative",
+      "position": "imperative.2PL",
+      "historical": {
+        "N": "pisajte",
+        "SE": "pisajte",
+        "W": "pisajt"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V01",
+      "category": "verb-imperative",
+      "position": "imperative.1PL",
+      "historical": {
+        "N": "pisajme",
+        "SE": "pisajme",
+        "W": "pisajm"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-imperative",
+      "position": "imperative.2SG",
+      "historical": {
+        "N": "ħrani",
+        "SE": "hrani",
+        "W": "ħrani"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-imperative",
+      "position": "imperative.2PL",
+      "historical": {
+        "N": "ħranite",
+        "SE": "hranite",
+        "W": "ħranit"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V12",
+      "category": "verb-imperative",
+      "position": "imperative.1PL",
+      "historical": {
+        "N": "ħranime",
+        "SE": "hranime",
+        "W": "ħranim"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-imperative",
+      "position": "imperative.2SG",
+      "historical": {
+        "N": "ġoŵori",
+        "SE": "govori",
+        "W": "ġoŵori"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-imperative",
+      "position": "imperative.2PL",
+      "historical": {
+        "N": "ġoŵorite",
+        "SE": "govorite",
+        "W": "ġoŵorit"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V13",
+      "category": "verb-imperative",
+      "position": "imperative.1PL",
+      "historical": {
+        "N": "ġoŵorime",
+        "SE": "govorime",
+        "W": "ġoŵorim"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-imperative",
+      "position": "imperative.2SG",
+      "historical": {
+        "N": "ŵidi",
+        "SE": "vidi",
+        "W": "ŵidi"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-imperative",
+      "position": "imperative.2PL",
+      "historical": {
+        "N": "ŵidite",
+        "SE": "vidite",
+        "W": "ŵidit"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V18",
+      "category": "verb-imperative",
+      "position": "imperative.1PL",
+      "historical": {
+        "N": "ŵidime",
+        "SE": "vidime",
+        "W": "ŵidim"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-imperative",
+      "position": "imperative.2SG",
+      "historical": {
+        "N": "žiŵi",
+        "SE": "živi",
+        "W": "žiŵi"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-imperative",
+      "position": "imperative.2PL",
+      "historical": {
+        "N": "žiŵite",
+        "SE": "živite",
+        "W": "žiŵit"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V20",
+      "category": "verb-imperative",
+      "position": "imperative.1PL",
+      "historical": {
+        "N": "žiŵime",
+        "SE": "živime",
+        "W": "žiŵim"
+      },
+      "branchStatus": {
+        "N": "historical-form-lemma-drift-review-required",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-imperative",
+      "position": "imperative.2SG",
+      "historical": {
+        "N": "ġori",
+        "SE": "gori",
+        "W": "ġori"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-imperative",
+      "position": "imperative.2PL",
+      "historical": {
+        "N": "ġorite",
+        "SE": "gorite",
+        "W": "ġorit"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V21",
+      "category": "verb-imperative",
+      "position": "imperative.1PL",
+      "historical": {
+        "N": "ġorime",
+        "SE": "gorime",
+        "W": "ġorim"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-imperative",
+      "position": "imperative.2SG",
+      "historical": {
+        "N": "daj",
+        "SE": "daj",
+        "W": "daj"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-imperative",
+      "position": "imperative.2PL",
+      "historical": {
+        "N": "dajte",
+        "SE": "dajte",
+        "W": "dajt"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    },
+    {
+      "lexemeId": "V23",
+      "category": "verb-imperative",
+      "position": "imperative.1PL",
+      "historical": {
+        "N": "dajme",
+        "SE": "dajme",
+        "W": "dajm"
+      },
+      "branchStatus": {
+        "N": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "SE": "historic-paradigm-lemma-compatible-not-modern-approved",
+        "W": "historic-paradigm-lemma-compatible-not-modern-approved"
+      }
+    }
+  ],
+  "caveats": [
+    "历史记录不等于现代形态的独立实证；不能将古典范式整表自动录用",
+    "V0.6与V0.7语料是内部构造并审核的受控示例，不代表自然语料或母语者调查",
+    "W阳性有生宾格za是短语层标记，不应加入单词的词干或作为宾格单词前缀",
+    "北部N13对生活词族的映射须遵守V0.8限定范围；并非全词典批量替换",
+    "M04管道、M07神明、M08雪、M11火词根发生过现代音变，旧史范式中未核对的格位不得未经审查入现代词典",
+    "尚未为新登记的四个V0.9动词补充无依据的人称变位与重音"
+  ]
+}
