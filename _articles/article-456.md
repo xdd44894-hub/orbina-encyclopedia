@@ -1,16 +1,16 @@
 ---
-title: "扎格伦字典 V0.3：三方言统一词典"
+title: "扎格伦字典 V0.4：三方言统一词典"
 category: "语言与文化"
 ai_search: true
 ---
 
-# 《扎格伦字典》V0.3
+# 《扎格伦字典》V0.4
 
-**Žaġręn Dictionary · 第三版 · 2026年11月6日**
+**Žaġręn Dictionary · 第四版 · 2026年11月6日**
 
-这是藏朔原语的**现行词典**，使用 V0.7 核心语言架构和 V0.6 音系正字法。字典把当前词典原形、历史范式、造词所参照的现实俄语、语法完整性和音位转写明确分开，避免将三者混淆。
+这是藏朔原语的**现行词典**，使用 V0.7 核心句法及 V0.8 历时音系（继承V0.6正字法）。字典把当前词典原形、历史范式、造词所参照的现实俄语、语法完整性和音位转写明确分开，避免将三者混淆。
 
-**[在线搜索339条词典]({{ '/zagren-dictionary/' | relative_url }})** · [完整TXT]({{ '/assets/data/zagren-dictionary-v03.txt' | relative_url }}) · [结构化JSON]({{ '/assets/data/zagren-dictionary-v03.json' | relative_url }}) · [统一语言总纲]({{ '/articles/article-451/' | relative_url }})
+**[在线搜索339条词典]({{ '/zagren-dictionary/' | relative_url }})** · [完整TXT]({{ '/assets/data/zagren-dictionary-v04.txt' | relative_url }}) · [结构化JSON]({{ '/assets/data/zagren-dictionary-v04.json' | relative_url }}) · [统一语言总纲]({{ '/articles/article-451/' | relative_url }})
 
 [完整V0.7语言资料总卷]({{ '/assets/data/zagren-language-compendium-v07.txt' | relative_url }})
 
@@ -23,8 +23,9 @@ ai_search: true
 | 本版新增 | **60** |
 | 有北、东南、西三种原形 | 335 |
 | 宽式IPA音位转写 | 1,005 |
-| V0.6–V0.7已登记现代原形 | 188 |
-| 保留历史或仅祖语阶段的条目 | 151 |
+| V0.6–V0.8已登记现代化原形 | 192 |
+| V0.8审阅保留旧原形（屈折待核） | 143 |
+| 仅有祖语构拟（另有候选） | 4 |
 
 新60词包括：**阅读与教育18、交流与理解12、时间与位置10、生活与自然12、性质与状态8**。按词性统计是名词39、动词8、形容词8、副词5。
 
@@ -45,6 +46,22 @@ ai_search: true
 | 欺骗（完成体） | обмануть | obmanuť | obmanut | obmanuþ |
 | 真相 | истина | istina | istina | istin |
 
+## V0.8：旧词词根与屈折同步修订
+
+**[进入历时音系资料与旧词审阅页面]({{ '/zagren-phonology/' | relative_url }})** · [151词审阅数据]({{ '/assets/data/zagren-v08-lexical-audit.json' | relative_url }}) · [V0.8音系及元音核审计]({{ '/assets/data/zagren-phonology-v08.json' | relative_url }})
+
+本版**没有增加新词典条目**。从历史阶段的151条旧记录中，143条词典原形经检视保持不变，4条按已确定的同源音变正式修订，4条只保留祖语词根并提出不属于正式词典原形的三方言不定式候选。
+
+| 词义 | 北部／东南现代化变化 |
+| --- | --- |
+| 生活 | 北部 `žiŵeť → ẑiŵeť` |
+| 活体的 | 北部 `žiŵÿ → ẑiŵÿ` |
+| 生活中的 | 北部 `žiŵejącÿ → ẑiŵejącÿ` |
+| 冬季的 | 东南 `zimni → ẑimni` |
+
+同时通过与既有历史格位的映射，使这些词根的**91个相关动词、形容词和分词变化位置**遵守统一音变。该校验不等于所有历史格位都获得现代语言学审订。
+
+**统计口径：**词典总数339，335条有三方言正式原形，1,005条宽式IPA对应已登记原形。四个只有祖语词根的候选不进入这些统计；新词无完整屈折者仍保留其限制。
 ## 标点对应的两层引用
 
 聚焦符与文引符已正式区分**叙述者**和**书面原文**两个语义层，允许以下三种不同的形式：
