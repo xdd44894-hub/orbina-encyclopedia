@@ -1,0 +1,456 @@
+{
+  "title": "Žaġręn V0.7 · 正字法元音核与重音前期核查",
+  "date": "2026-11-06",
+  "version": "V0.7-core-2",
+  "status": "observational-not-stress-prescription",
+  "purpose": "统计元音核以暴露西部词尾弱化、无元音附着词及音节结构问题；不宣称已经设定重音规律。",
+  "source": "assets/data/zagren-dictionary-v02.json",
+  "meta": {
+    "headwordsWithThreeForms": 275,
+    "letterStringsExamined": 825,
+    "zeroWrittenVowelForms": 11,
+    "headwordsWithUnequalDialectNuclei": 59
+  },
+  "vowelInventory": [
+    "a",
+    "e",
+    "i",
+    "o",
+    "u",
+    "y",
+    "ÿ",
+    "ë",
+    "ę",
+    "ą",
+    "ӧ",
+    "ү",
+    "ȯ"
+  ],
+  "nucleusDistribution": {
+    "N": {
+      "0": 3,
+      "1": 78,
+      "2": 132,
+      "3": 42,
+      "4": 16,
+      "5": 4
+    },
+    "SE": {
+      "0": 3,
+      "1": 71,
+      "2": 139,
+      "3": 42,
+      "4": 16,
+      "5": 4
+    },
+    "W": {
+      "0": 5,
+      "1": 118,
+      "2": 98,
+      "3": 34,
+      "4": 16,
+      "5": 4
+    }
+  },
+  "zeroNucleusForms": [
+    {
+      "word": "到……旁",
+      "branch": "N",
+      "form": "k",
+      "pos": "preposition"
+    },
+    {
+      "word": "到……旁",
+      "branch": "SE",
+      "form": "k",
+      "pos": "preposition"
+    },
+    {
+      "word": "到……旁",
+      "branch": "W",
+      "form": "k",
+      "pos": "preposition"
+    },
+    {
+      "word": "与……一起",
+      "branch": "N",
+      "form": "s",
+      "pos": "preposition"
+    },
+    {
+      "word": "与……一起",
+      "branch": "SE",
+      "form": "s",
+      "pos": "preposition"
+    },
+    {
+      "word": "与……一起",
+      "branch": "W",
+      "form": "s",
+      "pos": "preposition"
+    },
+    {
+      "word": "在……里面",
+      "branch": "N",
+      "form": "ŵ",
+      "pos": "preposition"
+    },
+    {
+      "word": "在……里面",
+      "branch": "SE",
+      "form": "v",
+      "pos": "preposition"
+    },
+    {
+      "word": "在……里面",
+      "branch": "W",
+      "form": "ŵ",
+      "pos": "preposition"
+    },
+    {
+      "word": "不／否定",
+      "branch": "W",
+      "form": "n",
+      "pos": "particle"
+    },
+    {
+      "word": "未完成体将来助词",
+      "branch": "W",
+      "form": "b",
+      "pos": "particle"
+    }
+  ],
+  "dialectDifferenceExamples": [
+    {
+      "word": "边界",
+      "spellings": {
+        "N": "ġranca",
+        "SE": "granca",
+        "W": "ġranc"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "词／单词",
+      "spellings": {
+        "N": "sloŵo",
+        "SE": "slovo",
+        "W": "słoŵ"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "大门",
+      "spellings": {
+        "N": "ŵrata",
+        "SE": "vrata",
+        "W": "ŵrat"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "道路",
+      "spellings": {
+        "N": "droġa",
+        "SE": "droga",
+        "W": "dro"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "地区",
+      "spellings": {
+        "N": "strana",
+        "SE": "strana",
+        "W": "stran"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "冬季",
+      "spellings": {
+        "N": "zÿma",
+        "SE": "ẑima",
+        "W": "zÿm"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "挂钩",
+      "spellings": {
+        "N": "ǩүta",
+        "SE": "ćuta",
+        "W": "ǩүt"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "管道",
+      "spellings": {
+        "N": "ṱruba",
+        "SE": "truba",
+        "W": "þřub"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "河流",
+      "spellings": {
+        "N": "reka",
+        "SE": "reka",
+        "W": "rek"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "界线",
+      "spellings": {
+        "N": "meďa",
+        "SE": "meҗa",
+        "W": "meẑ"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "女人",
+      "spellings": {
+        "N": "žena",
+        "SE": "žena",
+        "W": "žen"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "皮肤",
+      "spellings": {
+        "N": "koža",
+        "SE": "koža",
+        "W": "kož"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "清晨",
+      "spellings": {
+        "N": "utr",
+        "SE": "utro",
+        "W": "utr"
+      },
+      "nucleusCounts": {
+        "N": 1,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "荣耀",
+      "spellings": {
+        "N": "slaŵa",
+        "SE": "slava",
+        "W": "słaŵ"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "乳",
+      "spellings": {
+        "N": "molko",
+        "SE": "mȯlko",
+        "W": "mołk"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "山",
+      "spellings": {
+        "N": "ġora",
+        "SE": "gora",
+        "W": "ġor"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "手",
+      "spellings": {
+        "N": "ręka",
+        "SE": "renka",
+        "W": "ręk"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "水",
+      "spellings": {
+        "N": "ŵoda",
+        "SE": "voda",
+        "W": "ŵod"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "铁",
+      "spellings": {
+        "N": "ẑelezo",
+        "SE": "železo",
+        "W": "žłez"
+      },
+      "nucleusCounts": {
+        "N": 3,
+        "SE": 3,
+        "W": 1
+      }
+    },
+    {
+      "word": "头颅",
+      "spellings": {
+        "N": "ġłaŵa",
+        "SE": "glava",
+        "W": "ġłaŵ"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "羊羔",
+      "spellings": {
+        "N": "jaġnę",
+        "SE": "jaңe",
+        "W": "jaġn"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "鱼",
+      "spellings": {
+        "N": "rÿba",
+        "SE": "riba",
+        "W": "rÿb"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "真实",
+      "spellings": {
+        "N": "praŵda",
+        "SE": "pravda",
+        "W": "praŵd"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "姊妹",
+      "spellings": {
+        "N": "sestra",
+        "SE": "sestra",
+        "W": "sestr"
+      },
+      "nucleusCounts": {
+        "N": 2,
+        "SE": 2,
+        "W": 1
+      }
+    },
+    {
+      "word": "铁制的",
+      "spellings": {
+        "N": "ẑeleznÿ",
+        "SE": "železni",
+        "W": "žłeznÿ"
+      },
+      "nucleusCounts": {
+        "N": 3,
+        "SE": 3,
+        "W": 2
+      }
+    }
+  ],
+  "nextSteps": [
+    "确定无书写元音助词在连读中的附着与音节化条件",
+    "建立词内合法辅音群与词缀边界的声明性规则",
+    "以词汇样本测试三地重音的继承/重新定位，不在现行宽式IPA自动添加重音",
+    "对西部词尾元音脱落导致的核数变化检查语法后缀是否保留音节核"
+  ]
+}
