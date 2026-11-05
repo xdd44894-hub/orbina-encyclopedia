@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="俄庇娜百科 · 扎格伦字典 V0.2，279条带出处的三方言词汇，按中文、词根、拼写、IPA与词性搜索。">
-<title>《扎格伦字典》V0.2 · Žaġręn Dictionary</title>
+<meta name="description" content="俄庇娜百科 · 扎格伦字典 V0.3，339条带出处的三方言词汇，按中文、词根、拼写、IPA与词性搜索。">
+<title>《扎格伦字典》V0.3 · Žaġręn Dictionary</title>
 <style>
 :root{color-scheme:dark;--bg:#0d1720;--nav:#12232d;--p:#172a35;--fg:#edf5f7;--muted:#a7c0ce;--border:#385361;--teal:#a4d6dd}
 *{box-sizing:border-box}
@@ -52,16 +52,16 @@ footer{border-top:1px solid var(--border);margin-top:3rem;padding:1rem 0;color:v
 <body>
 <nav><a class="brand" href="../">俄庇娜百科</a><div class="links"><a href="../zagren/">语言总览</a><a href="../zagren-grammar/">词形生成器</a><a href="../zagren-showcase/">V0.5文学语料</a><a href="../articles/article-451/">历史音变</a></div></nav>
 <main>
-<div class="eyebrow">Žaġręn · Dictionary V0.2 · 三部族比较词典</div>
+<div class="eyebrow">Žaġręn · Dictionary V0.3 · 三部族比较词典</div>
 <h1>扎格伦字典</h1>
 <p class="lead">藏朔原语的第二版统一汇编字典。每条记录都有中文释义、可考的三方言词形、来源与版本阶段；V0.6 已演化词形和此前 V0.1–V0.5 的历史词形严格区分。</p>
 <div class="metrics">
-<div class="metric"><b id="countAll">279</b><span>词典条目</span></div>
-<div class="metric"><b id="countTri">275</b><span>三方言词形齐全</span></div>
-<div class="metric"><b id="countModern">128</b><span>V0.6 现代原形条目</span></div>
+<div class="metric"><b id="countAll">339</b><span>词典条目</span></div>
+<div class="metric"><b id="countTri">335</b><span>三方言词形齐全</span></div>
+<div class="metric"><b id="countModern">188</b><span>V0.6–V0.7 现代原形条目</span></div>
 <div class="metric"><b>3</b><span>区域中心方言</span></div>
 </div>
-<p class="small"><a href="../assets/data/zagren-dictionary-v02.txt" download="扎格伦字典V0.2.txt">下载完整 TXT 词典</a>　·　<a href="../assets/data/zagren-dictionary-v02.json">查看结构化 JSON</a>　·　<a href="../articles/article-456/">阅读词典前言与编写规范</a>　·　<a href="../assets/data/zagren-language-compendium-v06.txt">统一语言总卷 TXT</a></p>
+<p class="small"><a href="../assets/data/zagren-dictionary-v03.txt" download="扎格伦字典V0.3.txt">下载完整 TXT 词典</a>　·　<a href="../assets/data/zagren-dictionary-v03.json">查看结构化 JSON</a>　·　<a href="../articles/article-456/">阅读词典前言与编写规范</a>　·　<a href="../assets/data/zagren-language-compendium-v06.txt">统一语言总卷 TXT</a></p>
 <div class="controls">
 <label>查词：中文、词根、三地拼写、IPA、音变编号<input id="search" type="search" placeholder="例如：雪 / sęġ / *sneg / N11" spellcheck="false" autocomplete="off"></label>
 <label>词性<select id="pos"><option value="all">全部词性</option></select></label>
@@ -70,7 +70,11 @@ footer{border-top:1px solid var(--border);margin-top:3rem;padding:1rem 0;color:v
 <div class="listhead"><h2>字典正文</h2><div class="small" id="summary" role="status" aria-live="polite">读取中……</div></div>
 <div id="records" class="records" aria-live="polite"></div>
 <div id="more" class="center" hidden><button type="button" id="loadMore">显示更多条目</button></div>
-<div class="note"><b>词典版本说明：</b>本版沿用179条 V0.1 条目，并加入100条高频现代词形；旧范式与新词典原形不会被混为一谈。现在显示的IPA是逐字母规则生成的宽式音位，<b>尚未标注重音、语流音变</b>，不能当作最终准确口音。<br><b>读法说明：</b>与“现实斯拉夫语相似”不等于可以直接互译。V0.6 标为现代的词形，只表示对应第一阶段音变及词典原形已有来源；完整变格、重音和独立 IPA 尚需逐步校验。未注明的 V0.6 语法变化不得从旧版字典自行推断。</div>
+<div class="note"><b>词典版本说明：</b>本版保留原279条词目，并新增60条教育、表达、生活与时间主题词形；旧范式与新词典原形不会被混为一谈。现在显示的IPA是逐字母规则生成的宽式音位，<b>尚未标注重音、语流音变</b>，不能当作最终准确口音。<br><b>读法说明：</b>与“现实斯拉夫语相似”不等于可以直接互译。V0.6 标为现代的词形，只表示对应第一阶段音变及词典原形已有来源；完整变格、重音和独立 IPA 尚需逐步校验。未注明的 V0.6 语法变化不得从旧版字典自行推断。</div>
+<section class="section">
+<h2>本轮新增词汇的参考来源</h2>
+<p class="small">俄语参照字形以 <a href="https://orfo.ruslang.ru/">俄罗斯科学院 Академос 正字法资源</a>及 <a href="https://ruslang.ru/normativnyje_slovari">国家规范词典目录</a>作为研究入口；选词围绕阅读、教育、交流、时间及生活主题。<strong>藏朔原语祖语形式和三方言是本项目自行构拟，不是俄罗斯机构出版的词条。</strong></p>
+</section>
 <section class="section">
 <h2>例句与语法索引</h2>
 <p class="small"><a href="../zagren-corpus/">阅读50句三方言V0.6受控语料</a>　·　<a href="../zagren-grammar/">打开格位与动词生成器</a>　·　<a href="../articles/article-451/">查看现行语言总纲</a>　·　<a href="../assets/data/zagren-corpus-v06-50.json">语料 JSON</a></p>
@@ -93,7 +97,7 @@ footer{border-top:1px solid var(--border);margin-top:3rem;padding:1rem 0;color:v
 const q=(id)=>document.getElementById(id);
 let data=null,matched=[],limit=30;
 const posText={noun:"名词",verb:"动词",adj:"形容词",participle:"分词",pronoun:"代词",adverb:"副词",preposition:"介词",conjunction:"连词",particle:"助词",demonstrative:"指示词",interrogative:"疑问词",interjection:"感叹词",numeral:"数词"};
-const stageText={"v06":"V0.6已演化","v06-new-root":"V0.6新词根","v06-core":"V0.6核心新词","legacy":"继承旧版","attested":"语料实见","proto-only":"仅祖语构拟"};
+const stageText={"v06":"V0.6已演化","v06-new-root":"V0.6新词根","v06-core":"V0.6核心新词","legacy":"继承旧版","attested":"语料实见","proto-only":"仅祖语构拟","v07-lexicon":"V0.7新录词"};
 function node(tag,cl,value){const x=document.createElement(tag);if(cl)x.className=cl;if(value!==undefined)x.textContent=value;return x}
 function normalize(x){return String(x||"").normalize("NFC").toLocaleLowerCase()}
 function options(sel,items){for(const [value,label] of items){const op=document.createElement("option");op.value=value;op.textContent=label;sel.append(op)}}
@@ -109,6 +113,7 @@ function buildCard(entry){
  root.append(grid);
  const detail=node("details"),summary=node("summary",null,"查看词源、语法与来源"),box=node("div","details");
  box.append(line("祖语",entry.proto||"未定"));
+ if(entry.russianReference)box.append(line("俄语参考",entry.russianReference+"（仅供对照词义与字形）"));
  if(entry.older)box.append(line("旧版三方言",["N","SE","W"].map(k=>k+" "+entry.older[k]).join(" · ")));
  if(entry.ruleIds?.length)box.append(line("已登记音变",entry.ruleIds.join(", ")));
  if(entry.detail)box.append(line("语法信息",Object.entries(entry.detail).map(([k,v])=>k+"="+v).join("; ")));
@@ -133,7 +138,7 @@ function filter(){
   if(pos!=="all"&&e.pos!==pos)return false;
   if(stage!=="all"&&e.stage!==stage)return false;
   if(!term)return true;
-  return normalize([e.gloss,...e.aliases,e.proto,e.forms?.N,e.forms?.SE,e.forms?.W,e.ipa?.N,e.ipa?.SE,e.ipa?.W,...(e.ruleIds||[])].join(" ")).includes(term);
+  return normalize([e.gloss,...e.aliases,e.proto,e.russianReference,e.ruEducationalTheme,e.forms?.N,e.forms?.SE,e.forms?.W,e.ipa?.N,e.ipa?.SE,e.ipa?.W,...(e.ruleIds||[])].join(" ")).includes(term);
  });
  limit=30;draw();
 }
