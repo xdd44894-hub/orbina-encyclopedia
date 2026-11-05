@@ -1,5 +1,5 @@
 /* Žaġręn V0.6: auditable morphology engine. Dependencies: existing V0.2/V0.3 datasets and V0.6 phonology. */
-export function createZagrenGrammarV06({nominal,verbal,lexicon}){
+export function createZagrenGrammarV06({nominal,verbal,lexicon,dictionary=null}){
  const branches=["N","SE","W"];
  const dialects={N:"珀璃璐卡",SE:"丽庞萨",W:"雷西尼昂帕"};
  const assertBranch=(b)=>{if(!branches.includes(b))throw new Error("Unknown dialect "+b)};
@@ -64,7 +64,12 @@ export function createZagrenGrammarV06({nominal,verbal,lexicon}){
  function lemma(gloss,branch){
   assertBranch(branch);
   const row=lexicon.rows.find(x=>x.gloss===gloss);
-  if(!row)throw new Error("Unknown V0.6 lexeme "+gloss);
+  if(!row){
+   const registered=dictionary?.entries?.find(x=>x.gloss===gloss);
+   if(!registered)throw new Error("Unknown dictionary lexeme "+gloss);
+   if(!registered.forms)throw new Error("Only ancestral root exists; no modern forms for "+gloss);
+   return {gloss,branch,form:registered.forms[branch],baseForm:registered.older?.[branch]??null,appliedRules:registered.ruleIds||[],ipa:registered.ipa?.[branch]??null,status:registered.inflectionCoverage==="lemma-only"?"lemma-only":"historical-paradigm"};
+  }
   if(!row.v05)return {gloss,branch,form:row.v06[branch],baseForm:null,appliedRules:[],status:"new-root-lemma-only"};
   return {gloss,branch,...soundShift(row.v05[branch],{branch,gloss}),status:"sound-shifted-lemma"};
  }
