@@ -6,7 +6,7 @@ ai_search: true
 
 
 
-> **文献阶段说明：** 本篇保存藏朔原语 V0.3 时期的动词与体研究原始资料，用于追溯历史词形。现行词典原形、正字法与术语以[统一语言总纲]({{ '/articles/article-451/' | relative_url }})及[《扎格伦字典 V0.4》]({{ '/zagren-dictionary/' | relative_url }})为准；旧版格位不能无条件替换成 V0.6 现代形。
+> **正史时代划分：**本卷的V0.3动词与体三方言范式，现作为**早期藏朔原三支书面语**（Early Literary Žaġręn）的历史文法正史保存。这里的北、东南、西三支已经分化；标题里的“原始”仍是旧研究卷名，不能将星号祖语重建误当成文献原文。这些历史形式不必改写为现代拼写，但也不能直接当作现行完整变格/变位。现代用法请参阅[统一语言总纲]({{ '/articles/article-451/' | relative_url }})与[《扎格伦字典 V0.5》]({{ '/zagren-dictionary/' | relative_url }})；[古今逐格对照]({{ '/assets/data/zagren-v09-morphology-audit.json' | relative_url }})。
 # 藏朔原语形态学 II
 
 **《原始藏朔原语形态学》第三卷 · V0.3。**
