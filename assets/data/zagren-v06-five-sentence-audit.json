@@ -1,0 +1,143 @@
+{
+  "title": "Žaġręn V0.6 · 五句三方言形态与音系一致性测试",
+  "version": "0.6-sentence-test-1",
+  "date": "2026-11-05",
+  "status": "已按现存历史格位、现行词典原形和声明的V0.6音变逐格核对；不声称已验证所有自由语句",
+  "counts": {
+    "sentences": 5,
+    "dialectRealizations": 15,
+    "broadIPA": 15
+  },
+  "sources": [
+    "assets/data/zagren-nominal-morphology-v02.json",
+    "assets/data/zagren-verbal-morphology-v03.json",
+    "assets/data/zagren-modifier-morphology-v04.json",
+    "assets/data/zagren-v06-phonology-lexicon.json",
+    "assets/data/zagren-dictionary-v02.json",
+    "assets/js/zagren-grammar-v06.js"
+  ],
+  "scope": [
+    "仅使用已登记词汇；书(book)尚无正式词条，使用纸页代替",
+    "给予的完成体过去时参照施事性别而不是受事或受领者",
+    "形容词依被修饰名词性数格一致，声学创新统一作用于铁词根及其形容词派生",
+    "§、？等标点不属于音位转写；整句IPA是无重音、无连读的宽式分段写法"
+  ],
+  "rows": [
+    {
+      "id": "T01",
+      "zh": "兄弟给了你一张纸。",
+      "focus": "阳性过去式／与格2SG／宾格纸页",
+      "forms": {
+        "N": "brat dal tebi list.",
+        "SE": "brat dal tebi list.",
+        "W": "brat dał tebi łist."
+      },
+      "IPA": {
+        "N": "/brat dal tebi list/",
+        "SE": "/brat dal tebi list/",
+        "W": "/brat daɫ tebi ɫist/"
+      },
+      "morph": [
+        "M06 SG.NOM",
+        "V23 PFV.PST.M",
+        "PRON.2SG.DAT",
+        "M21 SG.ACC"
+      ],
+      "notes": "名词‘纸页’的单数宾格来自V0.4补充名词范式；西部dał为历史阳性过去式。"
+    },
+    {
+      "id": "T02",
+      "zh": "母亲给了我们一张纸。",
+      "focus": "阴性过去式／与格1PL／西部性别词尾合流",
+      "forms": {
+        "N": "mať dala nam list.",
+        "SE": "mat dala nam list.",
+        "W": "maþ dał nam łist."
+      },
+      "IPA": {
+        "N": "/matʲ dala nam list/",
+        "SE": "/mat dala nam list/",
+        "W": "/maθ daɫ nam ɫist/"
+      },
+      "morph": [
+        "M14 SG.NOM",
+        "V23 PFV.PST.F",
+        "PRON.1PL.DAT",
+        "M21 SG.ACC"
+      ],
+      "notes": "北部/东南：阳性dal、阴性dala；西部音变将二者都并入dał。不可为恢复区别而随意改为dawa。"
+    },
+    {
+      "id": "T03",
+      "zh": "我们守卫新的铁制管道。",
+      "focus": "未完成体1PL／两形容词F.SG.ACC／管道F.SG.ACC",
+      "forms": {
+        "N": "mÿ ħranime noŵu ẑeleznu ṱrubu.",
+        "SE": "mi hranime novu železnu trubu.",
+        "W": "mÿ ħranim noŵu žłeznu þřubu."
+      },
+      "IPA": {
+        "N": "/mɨ χranime nowu ʑeleznu tʰrubu/",
+        "SE": "/mi xranime novu ʒeleznu trubu/",
+        "W": "/mɨ χranim nowu ʒɫeznu θr̝ubu/"
+      },
+      "morph": [
+        "PRON.1PL.NOM",
+        "V12 IPFV.PRS.1PL",
+        "A01 POS.F.SG.ACC",
+        "A31 POS.F.SG.ACC",
+        "M04 F.SG.ACC"
+      ],
+      "notes": "正式将历史‘铁制的’词干železn-/žełezn-升级到北部ẑelezn-、西部žłezn-，与现行铁 ẑelezo/žłez 同源。北部N14：ťr→ṱr；西部W12：þr→þř。"
+    },
+    {
+      "id": "T04",
+      "zh": "我们在森林里看不见雪。",
+      "focus": "介词处所格／否定／1PL非过去时／雪的鼻音对立",
+      "forms": {
+        "N": "mÿ ŵ lese ńe ŵideme sęġ.",
+        "SE": "mi v lese ne videme seg.",
+        "W": "mÿ ŵ łes n ŵidem sne."
+      },
+      "IPA": {
+        "N": "/mɨ w lese ɲe wideme sɛ̃ɣ/",
+        "SE": "/mi v lese ne videme seɡ/",
+        "W": "/mɨ w ɫes n widem sne/"
+      },
+      "morph": [
+        "PRON.1PL.NOM",
+        "PREP.ŵ/v+LOC",
+        "M20 SG.LOC",
+        "NEG",
+        "V18 IPFV.PRS.1PL",
+        "M08 SG.ACC"
+      ],
+      "notes": "西部处所格与词典原形łes同形，通过介词标明处所关系；雪的三地形式对应N11/SE11/W11音变。"
+    },
+    {
+      "id": "T05",
+      "zh": "母亲郑重地说：“火还在燃烧吗？”",
+      "focus": "郑言符§／标准疑问？／火字形与宽式IPA",
+      "forms": {
+        "N": "mať ġoŵorit: §“ӧġń še ġoret？”",
+        "SE": "mat govorit: §“oң še goret？”",
+        "W": "maþ ġoŵorit: §“oġn še ġoret？”"
+      },
+      "IPA": {
+        "N": "/matʲ ɣoworit øɣɲ ʃe ɣoret/",
+        "SE": "/mat ɡovorit oŋ ʃe ɡoret/",
+        "W": "/maθ ɣoworit oɣn ʃe ɣoret/"
+      },
+      "morph": [
+        "M14 SG.NOM",
+        "V13 IPFV.PRS.3SG",
+        "§ solemn-utterance",
+        "M11 SG.NOM",
+        "ADV še",
+        "V21 IPFV.PRS.3SG",
+        "？ ordinary question"
+      ],
+      "notes": "§只标记发言郑重，？只标记疑问，均不进入音位IPA；句子音调、词汇重音尚未标准化。"
+    }
+  ]
+}
