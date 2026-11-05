@@ -12,6 +12,8 @@ ai_search: true
 
 **[在线搜索339条词典]({{ '/zagren-dictionary/' | relative_url }})** · [完整TXT]({{ '/assets/data/zagren-dictionary-v03.txt' | relative_url }}) · [结构化JSON]({{ '/assets/data/zagren-dictionary-v03.json' | relative_url }}) · [统一语言总纲]({{ '/articles/article-451/' | relative_url }})
 
+[完整V0.7语言资料总卷]({{ '/assets/data/zagren-language-compendium-v07.txt' | relative_url }})
+
 ## 规模
 
 | 项目 | 数量 |
