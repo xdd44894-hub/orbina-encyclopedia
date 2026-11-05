@@ -127,7 +127,7 @@ D0019 火 [名词 · V0.6已衍变的旧词]
   旧版：N oġń | SE ogon | W oġn
   音变依据：N12, SE14
 
-D0020 家 [名词 · V0.6已衍变的旧词]
+D0020 家（亦指：房屋） [名词 · V0.6已衍变的旧词]
   N: dom /dom/ | SE: dom /dom/ | W: dom /dom/
   祖语：*dom；来源：assets/data/zagren-comparative-lexicon-v01.json；assets/data/zagren-nominal-morphology-v02.json；assets/data/zagren-v06-phonology-lexicon.json
   旧版：N dom | SE dom | W dom
