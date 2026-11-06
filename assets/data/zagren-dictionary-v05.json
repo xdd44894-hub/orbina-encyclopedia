@@ -14178,6 +14178,24 @@
     "detailedAudit": "assets/data/zagren-v09-morphology-audit.json",
     "policy": "V0.2–V0.4旧范式确认为历史书面语文法，不将它们视为现代拼写错误。其具体对应格位须有受控证据才能进入现代范式。现有597项历史形态比较中109项词典原形变化；27项具体对应有直接/规则来源，82项当前未确定。",
     "protoBoundary": "祖语*构拟形式并不是已经有文献证明的早期书面语，也不等同于可直接使用的现代形式",
-    "created": "2026-11-06"
+    "created": "2026-11-06",
+    "stage3MorphologyReview": {
+      "reference": "assets/data/zagren-v09-morphology-audit.json",
+      "historicalComparison": 597,
+      "oldToModernDrift": 109,
+      "modernEvidencePositions": 27,
+      "phonologicalCandidatesNotCertified": 62,
+      "insufficientEvidence": 20,
+      "stillUnverifiedModernParadigms": 82,
+      "ruleIds": [
+        "N14",
+        "W12",
+        "N11",
+        "SE11",
+        "N12",
+        "SE14"
+      ],
+      "rule": "推导候选以早期格尾保留为假设；字典V0.5的339正式原形未被修改。所有现代非主格形式仍须核定。"
+    }
   }
 }
