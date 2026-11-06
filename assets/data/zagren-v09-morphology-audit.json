@@ -1,6 +1,6 @@
 {
   "title": "Žaġręn V0.9 · 受控语料现代形态审订与历史范式隔离",
-  "version": "V0.9-morphology-3-historical-grammar",
+  "version": "V0.9-morphology-4-regular-phonological-candidates",
   "date": "2026-11-06",
   "approach": "对选定9个名词、7个动词逐格核查古典范式与V0.5词典原形；仅对既有V0.6核验句与V0.7协调语料所覆盖的确定位置予以受限现行用法确认。未出现的格位保留为历史资料或候选，不得一键转正。 另据创作者决定，旧范式作为世界观内部的早期三支书面语文法正史保留；星号祖语重建与后来现代方言的规范层仍分别管理。",
   "sources": [
@@ -29,7 +29,10 @@
     "modernDictionaryEntries": 339,
     "earlyWrittenParadigmPositions": 597,
     "modernExplicitCorrespondencePositions": 27,
-    "modernUnresolvedOfDriftPositions": 82
+    "modernUnresolvedOfDriftPositions": 82,
+    "v09Phase3SoundLawCandidatePositions": 62,
+    "v09Phase3StillWithoutSoundLawCandidate": 20,
+    "v09Phase3ModernUnverifiedPositions": 82
   },
   "nounLexemes": [
     {
@@ -5202,7 +5205,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ṱrubÿ",
+          "ruleId": "N14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5215,7 +5232,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "þřubÿ",
+          "ruleId": "W12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5228,7 +5259,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ṱrubi",
+          "ruleId": "N14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5241,7 +5286,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "þřubi",
+          "ruleId": "W12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5280,7 +5339,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ṱruboją",
+          "ruleId": "N14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5293,7 +5366,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "þřuboj",
+          "ruleId": "W12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5306,7 +5393,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ṱrube",
+          "ruleId": "N14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5319,7 +5420,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "þřub",
+          "ruleId": "W12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5332,7 +5447,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ṱrubÿ",
+          "ruleId": "N14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5345,7 +5474,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "þřubÿ",
+          "ruleId": "W12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5358,7 +5501,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ṱrub",
+          "ruleId": "N14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5371,7 +5528,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "þřub",
+          "ruleId": "W12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5384,7 +5555,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ṱrubam",
+          "ruleId": "N14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5397,7 +5582,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "þřubam",
+          "ruleId": "W12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5410,7 +5609,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ṱrubÿ",
+          "ruleId": "N14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5423,7 +5636,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "þřubÿ",
+          "ruleId": "W12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5436,7 +5663,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ṱrubami",
+          "ruleId": "N14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5449,7 +5690,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "þřubami",
+          "ruleId": "W12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5462,7 +5717,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ṱrubaħ",
+          "ruleId": "N14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M04",
@@ -5475,7 +5744,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "þřubaħ",
+          "ruleId": "W12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M07",
@@ -5501,7 +5784,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11 and V0.7 animate ACC za",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M07",
@@ -5514,7 +5799,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11 and V0.7 animate ACC za",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M07",
@@ -5540,7 +5827,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11 and V0.7 animate ACC za",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M07",
@@ -5553,7 +5842,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11 and V0.7 animate ACC za",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M07",
@@ -5566,7 +5857,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11 and V0.7 animate ACC za",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M07",
@@ -5579,7 +5872,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11 and V0.7 animate ACC za",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M07",
@@ -5592,7 +5887,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11 and V0.7 animate ACC za",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M07",
@@ -5605,7 +5902,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11 and V0.7 animate ACC za",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M07",
@@ -5618,7 +5917,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11 and V0.7 animate ACC za",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M07",
@@ -5631,7 +5932,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11 and V0.7 animate ACC za",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M08",
@@ -5683,7 +5986,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "sęġa",
+          "ruleId": "N11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5696,7 +6013,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "sega",
+          "ruleId": "SE11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5709,7 +6040,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M08",
@@ -5722,7 +6055,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "sęġu",
+          "ruleId": "N11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5735,7 +6082,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "segu",
+          "ruleId": "SE11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5748,7 +6109,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M08",
@@ -5800,7 +6163,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "sęġom",
+          "ruleId": "N11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5813,7 +6190,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "segom",
+          "ruleId": "SE11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5826,7 +6217,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M08",
@@ -5839,7 +6232,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "sęġe",
+          "ruleId": "N11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5852,7 +6259,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "sege",
+          "ruleId": "SE11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5865,7 +6286,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M08",
@@ -5878,7 +6301,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "sęġÿ",
+          "ruleId": "N11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5891,7 +6328,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "segi",
+          "ruleId": "SE11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5904,7 +6355,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M08",
@@ -5917,7 +6370,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "sęġoŵ",
+          "ruleId": "N11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5930,7 +6397,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "segov",
+          "ruleId": "SE11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5943,7 +6424,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M08",
@@ -5956,7 +6439,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "sęġam",
+          "ruleId": "N11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5969,7 +6466,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "segam",
+          "ruleId": "SE11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -5982,7 +6493,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M08",
@@ -5995,7 +6508,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "sęġÿ",
+          "ruleId": "N11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -6008,7 +6535,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "segi",
+          "ruleId": "SE11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -6021,7 +6562,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M08",
@@ -6034,7 +6577,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "sęġami",
+          "ruleId": "N11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -6047,7 +6604,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "segami",
+          "ruleId": "SE11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -6060,7 +6631,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M08",
@@ -6073,7 +6646,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "sęġaħ",
+          "ruleId": "N11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -6086,7 +6673,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "segah",
+          "ruleId": "SE11",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M08",
@@ -6099,7 +6700,9 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "W11",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": null,
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
       },
       {
         "lexemeId": "M11",
@@ -6138,7 +6741,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ӧġńa",
+          "ruleId": "N12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6151,7 +6768,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "oңa",
+          "ruleId": "SE14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6164,7 +6795,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ӧġńu",
+          "ruleId": "N12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6177,7 +6822,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "oңu",
+          "ruleId": "SE14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6190,7 +6849,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ӧġń",
+          "ruleId": "N12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6203,7 +6876,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "oң",
+          "ruleId": "SE14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6216,7 +6903,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ӧġńem",
+          "ruleId": "N12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6229,7 +6930,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "oңem",
+          "ruleId": "SE14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6242,7 +6957,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ӧġńe",
+          "ruleId": "N12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6255,7 +6984,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "oңe",
+          "ruleId": "SE14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6268,7 +7011,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ӧġńi",
+          "ruleId": "N12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6281,7 +7038,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "oңi",
+          "ruleId": "SE14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6294,7 +7065,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ӧġńeŵ",
+          "ruleId": "N12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6307,7 +7092,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "oңev",
+          "ruleId": "SE14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6320,7 +7119,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ӧġńam",
+          "ruleId": "N12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6333,7 +7146,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "oңam",
+          "ruleId": "SE14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6346,7 +7173,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ӧġńi",
+          "ruleId": "N12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6359,7 +7200,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "oңi",
+          "ruleId": "SE14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6372,7 +7227,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ӧġńami",
+          "ruleId": "N12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6385,7 +7254,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "oңami",
+          "ruleId": "SE14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6398,7 +7281,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "N12",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "ӧġńaħ",
+          "ruleId": "N12",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "M11",
@@ -6411,7 +7308,21 @@
         "modernStatus": "unresolved-modern-inflection",
         "basis": "现代词干已经变化，但本格位尚无逐格证明",
         "changeRule": "SE14",
-        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾"
+        "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
+        "reconstructedModernCandidate": {
+          "surface": "oңah",
+          "ruleId": "SE14",
+          "category": "sound-law-licensed-candidate",
+          "status": "provisional-phonological-form; full grammatical acceptance deferred",
+          "basis": "受V0.8已限定、已在词典原形中实施的词族音变约束；屈折格尾沿用早期书面语形式作为试验假设",
+          "notCertified": [
+            "现代格尾是否仍沿袭古典形态",
+            "重音与音节结构",
+            "语法搭配及同形冲突",
+            "自由语料实际用法"
+          ]
+        },
+        "nextAction": "核查现代格尾与语料；必要时调整格尾，而非取消已核定的词根音变"
       },
       {
         "lexemeId": "V20",
@@ -6584,5 +7495,114 @@
       }
     ]
   },
-  "historyPolicyRef": "this document: historyPolicy"
+  "historyPolicyRef": "this document: historyPolicy",
+  "nextStage": {
+    "title": "V0.9第三阶段：82项历史—现代未定格位的受限推导",
+    "scope": "82项均已核查；其中62项具有受原有词族音变约束的候选，余20项属于西部W11词末ġ脱落与格位重分析问题，暂不推断。62项并未正式核定为现代变格，只说明音段转换受既定规则许可。",
+    "previous": {
+      "modernEvidencePositions": 27,
+      "notYetModernApproved": 82
+    },
+    "candidatePositions": 62,
+    "requiresIndependentMorphologicalValidation": 62,
+    "noCandidatePositions": 20,
+    "alreadySupportedModernPositions": 27,
+    "modernUnverifiedPositions": 82,
+    "candidateCountsByRule": {
+      "N14": {
+        "lexeme": "M04",
+        "branch": "N",
+        "count": 10
+      },
+      "W12": {
+        "lexeme": "M04",
+        "branch": "W",
+        "count": 10
+      },
+      "N11": {
+        "lexeme": "M08",
+        "branch": "N",
+        "count": 10
+      },
+      "SE11": {
+        "lexeme": "M08",
+        "branch": "SE",
+        "count": 10
+      },
+      "N12": {
+        "lexeme": "M11",
+        "branch": "N",
+        "count": 11
+      },
+      "SE14": {
+        "lexeme": "M11",
+        "branch": "SE",
+        "count": 11
+      }
+    },
+    "blockedWesternObliques": {
+      "god": "M07/W",
+      "snow": "M08/W",
+      "count": 20,
+      "rule": "W11",
+      "reason": "历史部分斜格以裸-ġ结尾，现代格位保留程度尚未知；西部za只作用于已核定的阳性有生宾格短语"
+    },
+    "candidateStatus": "phonological-prediction-only",
+    "examples": [
+      {
+        "lexeme": "管道",
+        "branch": "N",
+        "position": "SG.GEN",
+        "old": "ťrubÿ",
+        "candidate": "ṱrubÿ",
+        "rule": "N14"
+      },
+      {
+        "lexeme": "管道",
+        "branch": "W",
+        "position": "SG.INS",
+        "old": "þruboj",
+        "candidate": "þřuboj",
+        "rule": "W12"
+      },
+      {
+        "lexeme": "雪",
+        "branch": "N",
+        "position": "SG.GEN",
+        "old": "sneġa",
+        "candidate": "sęġa",
+        "rule": "N11"
+      },
+      {
+        "lexeme": "雪",
+        "branch": "SE",
+        "position": "PL.NOM",
+        "old": "snegi",
+        "candidate": "segi",
+        "rule": "SE11"
+      },
+      {
+        "lexeme": "火",
+        "branch": "N",
+        "position": "SG.DAT",
+        "old": "oġńu",
+        "candidate": "ӧġńu",
+        "rule": "N12"
+      },
+      {
+        "lexeme": "火",
+        "branch": "SE",
+        "position": "SG.INS",
+        "old": "ognem",
+        "candidate": "oңem",
+        "rule": "SE14"
+      }
+    ],
+    "caveats": [
+      "这些候选不是正式现代格尾，也不是原始语言史证据。",
+      "只把指定已登记词族的音变应用于现有历史词尾模板，不能向其他词类推广。",
+      "旧范式继续属于历史正史；原27项具体现代依据不受影响。",
+      "现代字典继续保留339个已登记原形。"
+    ]
+  }
 }
