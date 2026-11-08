@@ -8,14 +8,16 @@ V0.9在V0.8音系及V0.7核心句法基础上，正式登记4条原仅有祖语�
 继承V0.8的142条旧词原形审查结论，本轮不为追求差异而强行改写。原V0.8七词九方言词形改定结果保持有效。
 历史V0.2至V0.4范式仍按原始研究层次保存；V0.8词典保留作可追溯基线。
 
-【现行统计】词条339；三方言正式原形339；宽式IPA 1017；已登记现代原形197；审查保留旧原形142；仅祖语尚无现代原形0。
-名词：132；动词：73；形容词：67；分词：20；代词：7；副词：16；介词：6；连词：5；助词：4；指示词：2；疑问词：2；感叹词：3；数词：2。
+【现行统计】词条360；三方言正式原形360；宽式IPA 1080；已登记现代原形218（含本轮21条新增）；审查保留旧原形142；仅祖语尚无现代原形0。
+名词：144；动词：82；形容词：67；分词：20；代词：7；副词：16；介词：6；连词：5；助词：4；指示词：2；疑问词：2；感叹词：3；数词：2。
 
 【本轮V0.9确定的四条不定式】
 D0067 结冻、冻结：N zamrznuť；SE zamrznut；W zamrznuþ
 D0077 融化：N tajať；SE tajat；W tajaþ
 D0079 使……冰封：N zamraziť；SE zamrazit；W zamraziþ
 D0085 忘记：N zabÿť；SE zabit；W zabÿþ
+
+【V0.9词汇扩充】新增21条正式三方言词典原形（名词12、动词9），均为世界观内部构拟；完整现代屈折与词汇重音未核定。旧339条内容原样保留。
 
 【全书词条】
 
@@ -2535,10 +2537,161 @@ D0339 严肃 [形容词 · V0.7新增词典原形；完整屈折与重音尚未�
   备注：严肃、认真，不自动标记郑言符；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
   屈折边界：仅词典原形；不可直接推断全部变格／变位
 
+
+
+【V0.9新增日常与生产词汇（正式词典原形）】
+D0340 枕头 [名词 · V0.9新增正式词典原形]
+  N: poduška /poduʃka/ | SE: poduška /poduʃka/ | W: podušk /poduʃk/
+  世界观内部构拟词根：*poduška
+  词法标签：class=A；gender=阴；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：床头用软枕
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0341 毯子 [名词 · V0.9新增正式词典原形]
+  N: pokrÿŵa /pokrɨwa/ | SE: pokriva /pokriva/ | W: pokrÿŵ /pokrɨw/
+  世界观内部构拟词根：*pokrÿva
+  词法标签：class=A；gender=阴；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：用于覆盖身体的毯子；与床上被褥可区分
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0342 毛巾 [名词 · V0.9新增正式词典原形]
+  N: ručnik /rut͡ʃnik/ | SE: ručnik /rut͡ʃnik/ | W: ručnik /rut͡ʃnik/
+  世界观内部构拟词根：*ručnik
+  词法标签：class=O；gender=阳；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：擦干手或身体用的布巾
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0343 肥皂 [名词 · V0.9新增正式词典原形]
+  N: mÿlo /mɨlo/ | SE: milo /milo/ | W: mÿł /mɨɫ/
+  世界观内部构拟词根：*mÿlo
+  词法标签：class=O；gender=中；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：清洁用皂类，不专指现代合成洗剂
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0344 镜子 [名词 · V0.9新增正式词典原形]
+  N: zerkalo /zerkalo/ | SE: zerkalo /zerkalo/ | W: zerkał /zerkaɫ/
+  世界观内部构拟词根：*zerkalo
+  词法标签：class=O；gender=中；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：用于照见影像的镜面器物
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0345 梯子 [名词 · V0.9新增正式词典原形]
+  N: lestŵa /lestwa/ | SE: lestva /lestva/ | W: łestŵ /ɫestw/
+  世界观内部构拟词根：*lestva
+  词法标签：class=A；gender=阴；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：可搬动的梯具，不表示整座建筑楼梯间
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0346 抽屉 [名词 · V0.9新增正式词典原形]
+  N: jaščik /jaʃt͡ʃik/ | SE: jaščik /jaʃt͡ʃik/ | W: jaščik /jaʃt͡ʃik/
+  世界观内部构拟词根：*jaščik
+  词法标签：class=O；gender=阳；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：可从桌柜中抽出的储物格
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0347 柜子 [名词 · V0.9新增正式词典原形]
+  N: škaf /ʃkaf/ | SE: škaf /ʃkaf/ | W: škaf /ʃkaf/
+  世界观内部构拟词根：*škaf
+  词法标签：class=O；gender=阳；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：带门或隔层的储物柜
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0348 口袋 [名词 · V0.9新增正式词典原形]
+  N: karman /karman/ | SE: karman /karman/ | W: karman /karman/
+  世界观内部构拟词根：*karman
+  词法标签：class=O；gender=阳；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：衣服或携行物上的收纳袋
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0349 船 [名词 · V0.9新增正式词典原形]
+  N: lodka /lodka/ | SE: lodka /lodka/ | W: łodk /ɫodk/
+  世界观内部构拟词根：*lodka
+  词法标签：class=A；gender=阴；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：小型船艇；不默认大型远洋舰船
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0350 窗帘 [名词 · V0.9新增正式词典原形]
+  N: zaŵesa /zawesa/ | SE: zavesa /zavesa/ | W: zaŵes /zawes/
+  世界观内部构拟词根：*zavesa
+  词法标签：class=A；gender=阴；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：悬于窗前的遮挡布料
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0351 水桶 [名词 · V0.9新增正式词典原形]
+  N: ŵedro /wedro/ | SE: vedro /vedro/ | W: ŵedr /wedr/
+  世界观内部构拟词根：*vedro
+  词法标签：class=O；gender=中；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：盛放水或其他液体的桶
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0352 折叠 [动词 · V0.9新增正式词典原形]
+  N: skladať /skladatʲ/ | SE: skladat /skladat/ | W: składaþ /skɫadaθ/
+  世界观内部构拟词根：*skladatʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：反复、持续地折起或整理可折物；不预设完成体对应
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0353 擦拭 [动词 · V0.9新增正式词典原形]
+  N: ŵÿtirať /wɨtiratʲ/ | SE: vitirat /vitirat/ | W: ŵÿtiraþ /wɨtiraθ/
+  世界观内部构拟词根：*vÿtiratʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：用布或手擦拭表面，不专指清洗整件物品
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0354 上锁（过程） [动词 · V0.9新增正式词典原形]
+  N: zapirať /zapiratʲ/ | SE: zapirat /zapirat/ | W: zapiraþ /zapiraθ/
+  世界观内部构拟词根：*zapiratʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：给门、柜等上锁的持续或习惯动作
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0355 开锁（过程） [动词 · V0.9新增正式词典原形]
+  N: otpirať /otpiratʲ/ | SE: otpirat /otpirat/ | W: otpiraþ /otpiraθ/
+  世界观内部构拟词根：*otpiratʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：解开锁具的持续或习惯动作
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0356 发光、照明 [动词 · V0.9新增正式词典原形]
+  N: sŵetiť /swetitʲ/ | SE: svetit /svetit/ | W: sŵetiþ /swetiθ/
+  世界观内部构拟词根：*svetitʲ
+  词法标签：class=I；aspect=IPFV；valency=—/ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：发出光亮或为某处提供照明
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0357 使……熄灭 [动词 · V0.9新增正式词典原形]
+  N: ġasiť /ɣasitʲ/ | SE: gasit /ɡasit/ | W: ġasiþ /ɣasiθ/
+  世界观内部构拟词根：*gasitʲ
+  词法标签：class=I；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：使火、灯等熄灭的持续或反复动作
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0358 测量 [动词 · V0.9新增正式词典原形]
+  N: meriť /meritʲ/ | SE: merit /merit/ | W: meriþ /meriθ/
+  世界观内部构拟词根：*meritʲ
+  词法标签：class=I；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：对长度、时间或其他量进行测定
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0359 归还 [动词 · V0.9新增正式词典原形]
+  N: ŵračať /wrat͡ʃatʲ/ | SE: vračat /vrat͡ʃat/ | W: ŵračaþ /wrat͡ʃaθ/
+  世界观内部构拟词根：*vračatʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC+DAT；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：把借来的物品返还给持有人
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0360 清扫、整理 [动词 · V0.9新增正式词典原形]
+  N: ubirať /ubiratʲ/ | SE: ubirat /ubirat/ | W: ubiraþ /ubiraθ/
+  世界观内部构拟词根：*ubiratʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：清理并整理场所或物品；不等同于已登记的‘洗净’
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
 【版本与研究资料】
 V0.9本轮定形审计：assets/data/zagren-v09-lemma-audit.json
 V0.8音系与词族仍有效；历史旧词审查结果不被覆写。
 V0.8现行规则：assets/data/zagren-v08-diachrony.json
-339条逐词审查记录：assets/data/zagren-v08-lexicon-review.json
+V0.8历史基线339条逐词审查记录：assets/data/zagren-v08-lexicon-review.json
 原始V0.3词典：assets/data/zagren-dictionary-v03.json
+V0.9新增21条：D0340–D0360，现行总词条360。
 （完）
