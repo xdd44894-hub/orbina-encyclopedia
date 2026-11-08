@@ -84,6 +84,7 @@ let data=null,all=[];
 const make=(tag,cls,value)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(value!==undefined)e.textContent=String(value);return e};
 function slotName(k){if(k.includes(".")){const [a,b]=k.split(".");if(a==="SG"||a==="PL")return (a==="SG"?"单数":"复数")+" · "+(caseNames[b]||b);if(a==="FIN")return "非过去时 · "+b;if(a==="PST")return "过去时 · "+b;if(a==="IMP")return "祈使式 · "+b;if(a==="FUT")return "分析式将来 · IPFV"}return bslots[k]||k}
 function sourceStatus(x,b,k){const row=x.branches[b],controlled=row.controlled?.find(z=>z.slot===k);if(controlled)return {label:"受控用法："+controlled.source,good:true,phrase:controlled.form};
+ const analytic=row.phrases?.[k];if(analytic)return {label:"西部za宾格词组（规则类推，个别用法待核）",good:false,phrase:analytic.text};
  if(k==="SG.NOM"||k==="INF")return {label:"正式现代词典原形",good:true};
  if(k==="FUT.IPFV")return {label:"V0.7分析将来结构；变位未独立校准",good:false};
  if(row.notes?.some(x=>x==="W11-oblique-open:"+k))return {label:"西部W11格位待核",good:false};
