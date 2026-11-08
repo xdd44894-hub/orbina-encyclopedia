@@ -7995,10 +7995,10 @@
       "overview": "_articles/article-451.md"
     },
     "vocabularyMetricsBaseline": {
-      "headwords": 339,
-      "dialectLemmasComplete": 339,
-      "broadIPA": 1017,
-      "registeredModernLemmas": 197,
+      "headwords": 360,
+      "dialectLemmasComplete": 360,
+      "broadIPA": 1080,
+      "registeredModernLemmas": 218,
       "reviewedRetainedLegacyLemmas": 142,
       "phonologyRules": 21,
       "syntaxRules": 28
@@ -8109,7 +8109,7 @@
         "id": "R03",
         "name": "名词、代词完整现代形态",
         "phase": "V0.9–V1.0前",
-        "state": "candidate-batch-index-in-progress",
+        "state": "expanded-144-noun-index; class-review-in-progress",
         "input": [
           "名词132条、代词7条",
           "历史A/O/I/J及不规则变格",
@@ -8138,7 +8138,7 @@
         "id": "R04",
         "name": "动词与体、时态、语气的现代形态",
         "phase": "V0.9–V1.0前",
-        "state": "candidate-batch-index-in-progress",
+        "state": "expanded-82-verb-index; class-review-in-progress",
         "input": [
           "动词73条",
           "历史V0.3规则及不规则动词",
@@ -8248,7 +8248,7 @@
         "id": "R08",
         "name": "词义、构词法、借词及社会语言地理",
         "phase": "V1.0后可扩展",
-        "state": "planned",
+        "state": "21-new-daily-lemmas-registered; word-family-study-open",
         "input": [
           "现有339词，含V0.7新录60词",
           "三大部族地理与旧地球斯拉夫语来源"
@@ -8304,14 +8304,14 @@
     ]
   },
   "modernBatchMorphologyV09": {
-    "version": "V0.9-morphology-batch-1",
+    "version": "V0.9-morphology-batch-2",
     "source": "assets/data/zagren-modern-morphology-v09.json",
-    "scope": "205个现代名词及动词的批量形态索引，不修改祖语与早期三支书面语",
+    "scope": "现行360词典中的144名词与82动词，226词条的分级现代形态索引；仅正式词典原形和已验证受控位置具有规范效力",
     "metrics": {
-      "totalDictionaryWords": 339,
-      "totalNouns": 132,
-      "totalVerbs": 73,
-      "coreExpected": 7818,
+      "totalDictionaryWords": 360,
+      "totalNouns": 144,
+      "totalVerbs": 82,
+      "coreExpected": 8628,
       "sourceTypes": {
         "lemma-only": 49,
         "early-noun-extended": 7,
@@ -8320,20 +8320,26 @@
         "shape-verb": 25,
         "pilot-noun": 14,
         "shape-noun": 52,
-        "pilot-verb": 8
+        "pilot-verb": 8,
+        "v09-noun-class-template": 9,
+        "v09-neuter-lemma-only": 3,
+        "v09-verb-class-template": 9
       },
-      "lexemesWithFullBasicParadigm": 153,
-      "lexemesWithAnyPredictedInflections": 156,
-      "corePositions": 7818,
-      "filledCorePositions": 6148,
-      "unfilledCorePositions": 1670,
-      "analyticFuturePositions": 141,
+      "lexemesWithFullBasicParadigm": 171,
+      "lexemesWithAnyPredictedInflections": 174,
+      "corePositions": 8628,
+      "filledCorePositions": 6859,
+      "unfilledCorePositions": 1769,
+      "analyticFuturePositions": 168,
       "sourceNounProfiles": 35,
       "sourceVerbProfiles": 44,
       "controlledGrammarPositions": 16,
       "controlledDialectUsages": 48,
       "protectedWesternObliques": 20,
-      "westAnimateAccConstructionEntries": 10
+      "westAnimateAccConstructionEntries": 10,
+      "newModernLexicalEntries": 21,
+      "newNounEntries": 12,
+      "newVerbEntries": 9
     },
     "regression": {
       "archivedV07PilotPositionsCompared": 840,
@@ -8341,14 +8347,62 @@
       "V08N13LivingInflectionPositionsCompared": 13,
       "V08N13LivingMismatches": 0,
       "priorControlledDialectUsagesRevalidated": 48,
-      "corePositionSum": 7818,
+      "corePositionSum": 8628,
       "testedSources": [
         "assets/data/zagren-morphology-pilot-v07.txt",
         "assets/data/zagren-v08-morphology-regression.json",
         "assets/data/zagren-v09-morphology-audit.json"
       ],
-      "level": "source-to-derived-record regression only; does not validate conjectured modern forms"
+      "level": "source-to-derived-record regression only; does not validate conjectured modern forms",
+      "lexicalGrowthRegression": {
+        "beforeLexemes": 205,
+        "added": 21,
+        "afterLexemes": 226,
+        "sourceV07PilotPreserved": 840,
+        "sourceV08N13Preserved": 13
+      },
+      "classShapeHoldout": {
+        "noun": 25,
+        "nounMatch": 25,
+        "verb": 40,
+        "verbMatch": 40,
+        "scope": "与已存在类目标签的旧词比对，不是新词类目自然语言实证"
+      },
+      "lexicalExpansion": {
+        "newEntries": 21,
+        "newNouns": 12,
+        "newVerbs": 9,
+        "newNeuterLemmasWithoutParadigm": 3,
+        "totalHeadwords": 360,
+        "nounVerbWords": 226,
+        "coreExpected": 8628,
+        "coreFilled": 6859,
+        "coreBlank": 1769
+      }
     },
-    "warning": "仅词典原形与受控语料有正式/限定效力；historical/pilot/shape推导属候选。西部20个W11未定斜格仍留空。"
+    "warning": "仅词典原形与受控语料有正式/限定效力；historical/pilot/shape推导属候选。西部20个W11未定斜格仍留空。",
+    "classReview": {
+      "total77": 77,
+      "sourceBreakdown": {
+        "noun52": 52,
+        "verb25": 25
+      },
+      "holdout": {
+        "noun": 25,
+        "verb": 40
+      },
+      "status": "reviewed-provisional-not-full-paradigm"
+    }
+  },
+  "v09LexicalWork": {
+    "date": "2026-11-09",
+    "dictionaryHeadwords": 360,
+    "newHeadwords": 21,
+    "newNouns": 12,
+    "newVerbs": 9,
+    "allDialectForms": 360,
+    "broadIPA": 1080,
+    "old339Unmodified": true,
+    "notes": "正式三方言原形及宽式IPA已入词典；21个新词的完整变格变位仅生成候选或保留未定"
   }
 }
