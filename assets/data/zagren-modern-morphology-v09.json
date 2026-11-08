@@ -1,7 +1,7 @@
 {
   "title": "Žaġręn V0.9 · 现代名词与动词批量形态学数据",
-  "version": "V0.9-morphology-batch-1",
-  "date": "2026-11-08",
+  "version": "V0.9-morphology-batch-2",
+  "date": "2026-11-09",
   "normativePolicy": "词典原形、V0.7核心句法及16组受控句中已核定的位置有效；本文件其余派生为历史转写、校准模板或词形推断候选，未声明完成全现代范式。",
   "source": [
     "assets/data/zagren-dictionary-v05.json",
@@ -9,7 +9,8 @@
     "assets/data/zagren-verbal-morphology-v03.json",
     "assets/data/zagren-modifier-morphology-v04.json",
     "assets/data/zagren-morphology-pilot-v07.json",
-    "assets/data/zagren-v09-morphology-audit.json"
+    "assets/data/zagren-v09-morphology-audit.json",
+    "V0.9词典新增D0340–D0360：21条现代词典原形"
   ],
   "operations": [
     "仅保留V0.5现代词典原形为无条件正式词形",
@@ -18,7 +19,8 @@
     "以现有性与词尾结构为其余词试分型，不足判型的词保持只有正式原形",
     "仅在已有例证支持的词族上执行限定音变；神明/雪西部20个格位仍未定",
     "保存既有16个受控语法位置在三方言中的48个原形/短语",
-    "未来完成完整屈折时逐格覆盖候选，而非重写历史文法"
+    "未来完成完整屈折时逐格覆盖候选，而非重写历史文法",
+    "为新增21词登记词类和已确定的三方言原形：9个可用现有A/O名词模板试算，3个中性名词不套男性O类模板；9个动词可试算A/I变位。"
   ],
   "authorityLayers": {
     "registeredHeadword": "forms.SG.NOM 或 forms.INF；直接来自V0.5词典，正式现行",
@@ -26,7 +28,8 @@
     "calibratedPilot": "sourceType=pilot-*；V0.7类推受历史模板校准；格位仍是现代候选",
     "shapeInferred": "sourceType=shape-*；仅据性/词典原形的形式进行弱推断，低置信度，不得直接引用为现代规范",
     "lemmaOnly": "sourceType=lemma-only；没有足够格位类型依据，不生成除词典原形/允许的分析未来外的词形",
-    "controlledException": "branches.*.controlled 内的每条有明确历史句型或现代受控句证据；其中短语za保留为词组，不进入词根"
+    "controlledException": "branches.*.controlled 内的每条有明确历史句型或现代受控句证据；其中短语za保留为词组，不进入词根",
+    "newV09": "新增名词A/O及动词A/I分类已指定，但除现行词典原形外，其余格尾是基于旧模板生成的待核候选；中性O类另需中性变格模板，不代用阳性O类"
   },
   "corePositions": {
     "nouns": 12,
@@ -64,10 +67,10 @@
     ]
   },
   "metrics": {
-    "totalDictionaryWords": 339,
-    "totalNouns": 132,
-    "totalVerbs": 73,
-    "coreExpected": 7818,
+    "totalDictionaryWords": 360,
+    "totalNouns": 144,
+    "totalVerbs": 82,
+    "coreExpected": 8628,
     "sourceTypes": {
       "lemma-only": 49,
       "early-noun-extended": 7,
@@ -76,27 +79,34 @@
       "shape-verb": 25,
       "pilot-noun": 14,
       "shape-noun": 52,
-      "pilot-verb": 8
+      "pilot-verb": 8,
+      "v09-noun-class-template": 9,
+      "v09-neuter-lemma-only": 3,
+      "v09-verb-class-template": 9
     },
-    "lexemesWithFullBasicParadigm": 153,
-    "lexemesWithAnyPredictedInflections": 156,
-    "corePositions": 7818,
-    "filledCorePositions": 6148,
-    "unfilledCorePositions": 1670,
-    "analyticFuturePositions": 141,
+    "lexemesWithFullBasicParadigm": 171,
+    "lexemesWithAnyPredictedInflections": 174,
+    "corePositions": 8628,
+    "filledCorePositions": 6859,
+    "unfilledCorePositions": 1769,
+    "analyticFuturePositions": 168,
     "sourceNounProfiles": 35,
     "sourceVerbProfiles": 44,
     "controlledGrammarPositions": 16,
     "controlledDialectUsages": 48,
     "protectedWesternObliques": 20,
-    "westAnimateAccConstructionEntries": 10
+    "westAnimateAccConstructionEntries": 10,
+    "newModernLexicalEntries": 21,
+    "newNounEntries": 12,
+    "newVerbEntries": 9
   },
   "safeguards": [
     "本文件格式不等于语言已被自然母语者验证。",
     "所有candidate即使可机械生成，也必须由语法、词源与受控句法核验才可成为正式词形。",
     "西部za短语规则仅允许阳性有生单数宾格的既定范围；不可改造词根。",
     "历史三支语法原始数据不受V0.9现代批量生成影响。",
-    "现代不规则动词及未知名词类别保留未定，不套A/O类。"
+    "现代不规则动词及未知名词类别保留未定，不套A/O类。",
+    "新增3个中性词肥皂、镜子、水桶只显示词典原形；在现代中性词尾正式验证前不套阳性O类。"
   ],
   "lexemes": [
     {
@@ -13973,6 +13983,1479 @@
         }
       },
       "reason": "marked feminine and -a both N/SE"
+    },
+    {
+      "id": "D0340",
+      "gloss": "枕头",
+      "pos": "noun",
+      "proto": "*poduška",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "A",
+      "sourceType": "v09-noun-class-template",
+      "sourceId": "D0340",
+      "gender": "阴",
+      "animacy": "无生",
+      "aspect": null,
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "poduška",
+          "forms": {
+            "SG.NOM": "poduška",
+            "SG.GEN": "poduškÿ",
+            "SG.DAT": "poduški",
+            "SG.ACC": "podušku",
+            "SG.INS": "poduškoją",
+            "SG.LOC": "poduške",
+            "PL.NOM": "poduškÿ",
+            "PL.GEN": "podušk",
+            "PL.DAT": "poduškam",
+            "PL.ACC": "poduškÿ",
+            "PL.INS": "poduškami",
+            "PL.LOC": "poduškaħ"
+          }
+        },
+        "SE": {
+          "lemma": "poduška",
+          "forms": {
+            "SG.NOM": "poduška",
+            "SG.GEN": "poduški",
+            "SG.DAT": "poduški",
+            "SG.ACC": "podušku",
+            "SG.INS": "poduškojo",
+            "SG.LOC": "poduške",
+            "PL.NOM": "poduški",
+            "PL.GEN": "podušk",
+            "PL.DAT": "poduškam",
+            "PL.ACC": "poduški",
+            "PL.INS": "poduškami",
+            "PL.LOC": "poduškah"
+          }
+        },
+        "W": {
+          "lemma": "podušk",
+          "forms": {
+            "SG.NOM": "podušk",
+            "SG.GEN": "poduškÿ",
+            "SG.DAT": "poduški",
+            "SG.ACC": "podušku",
+            "SG.INS": "poduškoj",
+            "SG.LOC": "podušk",
+            "PL.NOM": "poduškÿ",
+            "PL.GEN": "podušk",
+            "PL.DAT": "poduškam",
+            "PL.ACC": "poduškÿ",
+            "PL.INS": "poduškami",
+            "PL.LOC": "poduškaħ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0341",
+      "gloss": "毯子",
+      "pos": "noun",
+      "proto": "*pokrÿva",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "A",
+      "sourceType": "v09-noun-class-template",
+      "sourceId": "D0341",
+      "gender": "阴",
+      "animacy": "无生",
+      "aspect": null,
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "pokrÿŵa",
+          "forms": {
+            "SG.NOM": "pokrÿŵa",
+            "SG.GEN": "pokrÿŵÿ",
+            "SG.DAT": "pokrÿŵi",
+            "SG.ACC": "pokrÿŵu",
+            "SG.INS": "pokrÿŵoją",
+            "SG.LOC": "pokrÿŵe",
+            "PL.NOM": "pokrÿŵÿ",
+            "PL.GEN": "pokrÿŵ",
+            "PL.DAT": "pokrÿŵam",
+            "PL.ACC": "pokrÿŵÿ",
+            "PL.INS": "pokrÿŵami",
+            "PL.LOC": "pokrÿŵaħ"
+          }
+        },
+        "SE": {
+          "lemma": "pokriva",
+          "forms": {
+            "SG.NOM": "pokriva",
+            "SG.GEN": "pokrivi",
+            "SG.DAT": "pokrivi",
+            "SG.ACC": "pokrivu",
+            "SG.INS": "pokrivojo",
+            "SG.LOC": "pokrive",
+            "PL.NOM": "pokrivi",
+            "PL.GEN": "pokriv",
+            "PL.DAT": "pokrivam",
+            "PL.ACC": "pokrivi",
+            "PL.INS": "pokrivami",
+            "PL.LOC": "pokrivah"
+          }
+        },
+        "W": {
+          "lemma": "pokrÿŵ",
+          "forms": {
+            "SG.NOM": "pokrÿŵ",
+            "SG.GEN": "pokrÿŵÿ",
+            "SG.DAT": "pokrÿŵi",
+            "SG.ACC": "pokrÿŵu",
+            "SG.INS": "pokrÿŵoj",
+            "SG.LOC": "pokrÿŵ",
+            "PL.NOM": "pokrÿŵÿ",
+            "PL.GEN": "pokrÿŵ",
+            "PL.DAT": "pokrÿŵam",
+            "PL.ACC": "pokrÿŵÿ",
+            "PL.INS": "pokrÿŵami",
+            "PL.LOC": "pokrÿŵaħ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0342",
+      "gloss": "毛巾",
+      "pos": "noun",
+      "proto": "*ručnik",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "O",
+      "sourceType": "v09-noun-class-template",
+      "sourceId": "D0342",
+      "gender": "阳",
+      "animacy": "无生",
+      "aspect": null,
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "ručnik",
+          "forms": {
+            "SG.NOM": "ručnik",
+            "SG.GEN": "ručnika",
+            "SG.DAT": "ručniku",
+            "SG.ACC": "ručnik",
+            "SG.INS": "ručnikom",
+            "SG.LOC": "ručnike",
+            "PL.NOM": "ručnikÿ",
+            "PL.GEN": "ručnikoŵ",
+            "PL.DAT": "ručnikam",
+            "PL.ACC": "ručnikÿ",
+            "PL.INS": "ručnikami",
+            "PL.LOC": "ručnikaħ"
+          }
+        },
+        "SE": {
+          "lemma": "ručnik",
+          "forms": {
+            "SG.NOM": "ručnik",
+            "SG.GEN": "ručnika",
+            "SG.DAT": "ručniku",
+            "SG.ACC": "ručnik",
+            "SG.INS": "ručnikom",
+            "SG.LOC": "ručnike",
+            "PL.NOM": "ručniki",
+            "PL.GEN": "ručnikov",
+            "PL.DAT": "ručnikam",
+            "PL.ACC": "ručniki",
+            "PL.INS": "ručnikami",
+            "PL.LOC": "ručnikah"
+          }
+        },
+        "W": {
+          "lemma": "ručnik",
+          "forms": {
+            "SG.NOM": "ručnik",
+            "SG.GEN": "ručnik",
+            "SG.DAT": "ručniku",
+            "SG.ACC": "ručnik",
+            "SG.INS": "ručnikom",
+            "SG.LOC": "ručnik",
+            "PL.NOM": "ručnikÿ",
+            "PL.GEN": "ručnikoŵ",
+            "PL.DAT": "ručnikam",
+            "PL.ACC": "ručnikÿ",
+            "PL.INS": "ručnikami",
+            "PL.LOC": "ručnikaħ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0343",
+      "gloss": "肥皂",
+      "pos": "noun",
+      "proto": "*mÿlo",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "O",
+      "sourceType": "v09-neuter-lemma-only",
+      "sourceId": "D0343",
+      "gender": "中",
+      "animacy": "无生",
+      "aspect": null,
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "中性名词不可套用阳性O类范式，除不定原形/主格以外的形态待独立校准",
+      "branches": {
+        "N": {
+          "lemma": "mÿlo",
+          "forms": {
+            "SG.NOM": "mÿlo"
+          }
+        },
+        "SE": {
+          "lemma": "milo",
+          "forms": {
+            "SG.NOM": "milo"
+          }
+        },
+        "W": {
+          "lemma": "mÿł",
+          "forms": {
+            "SG.NOM": "mÿł"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0344",
+      "gloss": "镜子",
+      "pos": "noun",
+      "proto": "*zerkalo",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "O",
+      "sourceType": "v09-neuter-lemma-only",
+      "sourceId": "D0344",
+      "gender": "中",
+      "animacy": "无生",
+      "aspect": null,
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "中性名词不可套用阳性O类范式，除不定原形/主格以外的形态待独立校准",
+      "branches": {
+        "N": {
+          "lemma": "zerkalo",
+          "forms": {
+            "SG.NOM": "zerkalo"
+          }
+        },
+        "SE": {
+          "lemma": "zerkalo",
+          "forms": {
+            "SG.NOM": "zerkalo"
+          }
+        },
+        "W": {
+          "lemma": "zerkał",
+          "forms": {
+            "SG.NOM": "zerkał"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0345",
+      "gloss": "梯子",
+      "pos": "noun",
+      "proto": "*lestva",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "A",
+      "sourceType": "v09-noun-class-template",
+      "sourceId": "D0345",
+      "gender": "阴",
+      "animacy": "无生",
+      "aspect": null,
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "lestŵa",
+          "forms": {
+            "SG.NOM": "lestŵa",
+            "SG.GEN": "lestŵÿ",
+            "SG.DAT": "lestŵi",
+            "SG.ACC": "lestŵu",
+            "SG.INS": "lestŵoją",
+            "SG.LOC": "lestŵe",
+            "PL.NOM": "lestŵÿ",
+            "PL.GEN": "lestŵ",
+            "PL.DAT": "lestŵam",
+            "PL.ACC": "lestŵÿ",
+            "PL.INS": "lestŵami",
+            "PL.LOC": "lestŵaħ"
+          }
+        },
+        "SE": {
+          "lemma": "lestva",
+          "forms": {
+            "SG.NOM": "lestva",
+            "SG.GEN": "lestvi",
+            "SG.DAT": "lestvi",
+            "SG.ACC": "lestvu",
+            "SG.INS": "lestvojo",
+            "SG.LOC": "lestve",
+            "PL.NOM": "lestvi",
+            "PL.GEN": "lestv",
+            "PL.DAT": "lestvam",
+            "PL.ACC": "lestvi",
+            "PL.INS": "lestvami",
+            "PL.LOC": "lestvah"
+          }
+        },
+        "W": {
+          "lemma": "łestŵ",
+          "forms": {
+            "SG.NOM": "łestŵ",
+            "SG.GEN": "łestŵÿ",
+            "SG.DAT": "łestŵi",
+            "SG.ACC": "łestŵu",
+            "SG.INS": "łestŵoj",
+            "SG.LOC": "łestŵ",
+            "PL.NOM": "łestŵÿ",
+            "PL.GEN": "łestŵ",
+            "PL.DAT": "łestŵam",
+            "PL.ACC": "łestŵÿ",
+            "PL.INS": "łestŵami",
+            "PL.LOC": "łestŵaħ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0346",
+      "gloss": "抽屉",
+      "pos": "noun",
+      "proto": "*jaščik",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "O",
+      "sourceType": "v09-noun-class-template",
+      "sourceId": "D0346",
+      "gender": "阳",
+      "animacy": "无生",
+      "aspect": null,
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "jaščik",
+          "forms": {
+            "SG.NOM": "jaščik",
+            "SG.GEN": "jaščika",
+            "SG.DAT": "jaščiku",
+            "SG.ACC": "jaščik",
+            "SG.INS": "jaščikom",
+            "SG.LOC": "jaščike",
+            "PL.NOM": "jaščikÿ",
+            "PL.GEN": "jaščikoŵ",
+            "PL.DAT": "jaščikam",
+            "PL.ACC": "jaščikÿ",
+            "PL.INS": "jaščikami",
+            "PL.LOC": "jaščikaħ"
+          }
+        },
+        "SE": {
+          "lemma": "jaščik",
+          "forms": {
+            "SG.NOM": "jaščik",
+            "SG.GEN": "jaščika",
+            "SG.DAT": "jaščiku",
+            "SG.ACC": "jaščik",
+            "SG.INS": "jaščikom",
+            "SG.LOC": "jaščike",
+            "PL.NOM": "jaščiki",
+            "PL.GEN": "jaščikov",
+            "PL.DAT": "jaščikam",
+            "PL.ACC": "jaščiki",
+            "PL.INS": "jaščikami",
+            "PL.LOC": "jaščikah"
+          }
+        },
+        "W": {
+          "lemma": "jaščik",
+          "forms": {
+            "SG.NOM": "jaščik",
+            "SG.GEN": "jaščik",
+            "SG.DAT": "jaščiku",
+            "SG.ACC": "jaščik",
+            "SG.INS": "jaščikom",
+            "SG.LOC": "jaščik",
+            "PL.NOM": "jaščikÿ",
+            "PL.GEN": "jaščikoŵ",
+            "PL.DAT": "jaščikam",
+            "PL.ACC": "jaščikÿ",
+            "PL.INS": "jaščikami",
+            "PL.LOC": "jaščikaħ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0347",
+      "gloss": "柜子",
+      "pos": "noun",
+      "proto": "*škaf",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "O",
+      "sourceType": "v09-noun-class-template",
+      "sourceId": "D0347",
+      "gender": "阳",
+      "animacy": "无生",
+      "aspect": null,
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "škaf",
+          "forms": {
+            "SG.NOM": "škaf",
+            "SG.GEN": "škafa",
+            "SG.DAT": "škafu",
+            "SG.ACC": "škaf",
+            "SG.INS": "škafom",
+            "SG.LOC": "škafe",
+            "PL.NOM": "škafÿ",
+            "PL.GEN": "škafoŵ",
+            "PL.DAT": "škafam",
+            "PL.ACC": "škafÿ",
+            "PL.INS": "škafami",
+            "PL.LOC": "škafaħ"
+          }
+        },
+        "SE": {
+          "lemma": "škaf",
+          "forms": {
+            "SG.NOM": "škaf",
+            "SG.GEN": "škafa",
+            "SG.DAT": "škafu",
+            "SG.ACC": "škaf",
+            "SG.INS": "škafom",
+            "SG.LOC": "škafe",
+            "PL.NOM": "škafi",
+            "PL.GEN": "škafov",
+            "PL.DAT": "škafam",
+            "PL.ACC": "škafi",
+            "PL.INS": "škafami",
+            "PL.LOC": "škafah"
+          }
+        },
+        "W": {
+          "lemma": "škaf",
+          "forms": {
+            "SG.NOM": "škaf",
+            "SG.GEN": "škaf",
+            "SG.DAT": "škafu",
+            "SG.ACC": "škaf",
+            "SG.INS": "škafom",
+            "SG.LOC": "škaf",
+            "PL.NOM": "škafÿ",
+            "PL.GEN": "škafoŵ",
+            "PL.DAT": "škafam",
+            "PL.ACC": "škafÿ",
+            "PL.INS": "škafami",
+            "PL.LOC": "škafaħ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0348",
+      "gloss": "口袋",
+      "pos": "noun",
+      "proto": "*karman",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "O",
+      "sourceType": "v09-noun-class-template",
+      "sourceId": "D0348",
+      "gender": "阳",
+      "animacy": "无生",
+      "aspect": null,
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "karman",
+          "forms": {
+            "SG.NOM": "karman",
+            "SG.GEN": "karmana",
+            "SG.DAT": "karmanu",
+            "SG.ACC": "karman",
+            "SG.INS": "karmanom",
+            "SG.LOC": "karmane",
+            "PL.NOM": "karmanÿ",
+            "PL.GEN": "karmanoŵ",
+            "PL.DAT": "karmanam",
+            "PL.ACC": "karmanÿ",
+            "PL.INS": "karmanami",
+            "PL.LOC": "karmanaħ"
+          }
+        },
+        "SE": {
+          "lemma": "karman",
+          "forms": {
+            "SG.NOM": "karman",
+            "SG.GEN": "karmana",
+            "SG.DAT": "karmanu",
+            "SG.ACC": "karman",
+            "SG.INS": "karmanom",
+            "SG.LOC": "karmane",
+            "PL.NOM": "karmani",
+            "PL.GEN": "karmanov",
+            "PL.DAT": "karmanam",
+            "PL.ACC": "karmani",
+            "PL.INS": "karmanami",
+            "PL.LOC": "karmanah"
+          }
+        },
+        "W": {
+          "lemma": "karman",
+          "forms": {
+            "SG.NOM": "karman",
+            "SG.GEN": "karman",
+            "SG.DAT": "karmanu",
+            "SG.ACC": "karman",
+            "SG.INS": "karmanom",
+            "SG.LOC": "karman",
+            "PL.NOM": "karmanÿ",
+            "PL.GEN": "karmanoŵ",
+            "PL.DAT": "karmanam",
+            "PL.ACC": "karmanÿ",
+            "PL.INS": "karmanami",
+            "PL.LOC": "karmanaħ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0349",
+      "gloss": "船",
+      "pos": "noun",
+      "proto": "*lodka",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "A",
+      "sourceType": "v09-noun-class-template",
+      "sourceId": "D0349",
+      "gender": "阴",
+      "animacy": "无生",
+      "aspect": null,
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "lodka",
+          "forms": {
+            "SG.NOM": "lodka",
+            "SG.GEN": "lodkÿ",
+            "SG.DAT": "lodki",
+            "SG.ACC": "lodku",
+            "SG.INS": "lodkoją",
+            "SG.LOC": "lodke",
+            "PL.NOM": "lodkÿ",
+            "PL.GEN": "lodk",
+            "PL.DAT": "lodkam",
+            "PL.ACC": "lodkÿ",
+            "PL.INS": "lodkami",
+            "PL.LOC": "lodkaħ"
+          }
+        },
+        "SE": {
+          "lemma": "lodka",
+          "forms": {
+            "SG.NOM": "lodka",
+            "SG.GEN": "lodki",
+            "SG.DAT": "lodki",
+            "SG.ACC": "lodku",
+            "SG.INS": "lodkojo",
+            "SG.LOC": "lodke",
+            "PL.NOM": "lodki",
+            "PL.GEN": "lodk",
+            "PL.DAT": "lodkam",
+            "PL.ACC": "lodki",
+            "PL.INS": "lodkami",
+            "PL.LOC": "lodkah"
+          }
+        },
+        "W": {
+          "lemma": "łodk",
+          "forms": {
+            "SG.NOM": "łodk",
+            "SG.GEN": "łodkÿ",
+            "SG.DAT": "łodki",
+            "SG.ACC": "łodku",
+            "SG.INS": "łodkoj",
+            "SG.LOC": "łodk",
+            "PL.NOM": "łodkÿ",
+            "PL.GEN": "łodk",
+            "PL.DAT": "łodkam",
+            "PL.ACC": "łodkÿ",
+            "PL.INS": "łodkami",
+            "PL.LOC": "łodkaħ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0350",
+      "gloss": "窗帘",
+      "pos": "noun",
+      "proto": "*zavesa",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "A",
+      "sourceType": "v09-noun-class-template",
+      "sourceId": "D0350",
+      "gender": "阴",
+      "animacy": "无生",
+      "aspect": null,
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "zaŵesa",
+          "forms": {
+            "SG.NOM": "zaŵesa",
+            "SG.GEN": "zaŵesÿ",
+            "SG.DAT": "zaŵesi",
+            "SG.ACC": "zaŵesu",
+            "SG.INS": "zaŵesoją",
+            "SG.LOC": "zaŵese",
+            "PL.NOM": "zaŵesÿ",
+            "PL.GEN": "zaŵes",
+            "PL.DAT": "zaŵesam",
+            "PL.ACC": "zaŵesÿ",
+            "PL.INS": "zaŵesami",
+            "PL.LOC": "zaŵesaħ"
+          }
+        },
+        "SE": {
+          "lemma": "zavesa",
+          "forms": {
+            "SG.NOM": "zavesa",
+            "SG.GEN": "zavesi",
+            "SG.DAT": "zavesi",
+            "SG.ACC": "zavesu",
+            "SG.INS": "zavesojo",
+            "SG.LOC": "zavese",
+            "PL.NOM": "zavesi",
+            "PL.GEN": "zaves",
+            "PL.DAT": "zavesam",
+            "PL.ACC": "zavesi",
+            "PL.INS": "zavesami",
+            "PL.LOC": "zavesah"
+          }
+        },
+        "W": {
+          "lemma": "zaŵes",
+          "forms": {
+            "SG.NOM": "zaŵes",
+            "SG.GEN": "zaŵesÿ",
+            "SG.DAT": "zaŵesi",
+            "SG.ACC": "zaŵesu",
+            "SG.INS": "zaŵesoj",
+            "SG.LOC": "zaŵes",
+            "PL.NOM": "zaŵesÿ",
+            "PL.GEN": "zaŵes",
+            "PL.DAT": "zaŵesam",
+            "PL.ACC": "zaŵesÿ",
+            "PL.INS": "zaŵesami",
+            "PL.LOC": "zaŵesaħ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0351",
+      "gloss": "水桶",
+      "pos": "noun",
+      "proto": "*vedro",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "O",
+      "sourceType": "v09-neuter-lemma-only",
+      "sourceId": "D0351",
+      "gender": "中",
+      "animacy": "无生",
+      "aspect": null,
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "中性名词不可套用阳性O类范式，除不定原形/主格以外的形态待独立校准",
+      "branches": {
+        "N": {
+          "lemma": "ŵedro",
+          "forms": {
+            "SG.NOM": "ŵedro"
+          }
+        },
+        "SE": {
+          "lemma": "vedro",
+          "forms": {
+            "SG.NOM": "vedro"
+          }
+        },
+        "W": {
+          "lemma": "ŵedr",
+          "forms": {
+            "SG.NOM": "ŵedr"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0352",
+      "gloss": "折叠",
+      "pos": "verb",
+      "proto": "*skladatʲ",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "A",
+      "sourceType": "v09-verb-class-template",
+      "sourceId": "D0352",
+      "gender": null,
+      "animacy": "未明确",
+      "aspect": "IPFV",
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "skladať",
+          "forms": {
+            "INF": "skladať",
+            "FIN.1SG": "skladam",
+            "FIN.2SG": "skladaš",
+            "FIN.3SG": "skladat",
+            "FIN.1PL": "skladame",
+            "FIN.2PL": "skladate",
+            "FIN.3PL": "skladająt",
+            "PST.M": "skladal",
+            "PST.F": "skladala",
+            "PST.N": "skladalo",
+            "PST.PL": "skladali",
+            "IMP.2SG": "skladaj",
+            "IMP.2PL": "skladajte",
+            "IMP.1PL": "skladajme",
+            "FUT.IPFV": "bu skladať"
+          }
+        },
+        "SE": {
+          "lemma": "skladat",
+          "forms": {
+            "INF": "skladat",
+            "FIN.1SG": "skladam",
+            "FIN.2SG": "skladaš",
+            "FIN.3SG": "skladat",
+            "FIN.1PL": "skladame",
+            "FIN.2PL": "skladate",
+            "FIN.3PL": "skladajot",
+            "PST.M": "skladal",
+            "PST.F": "skladala",
+            "PST.N": "skladalo",
+            "PST.PL": "skladali",
+            "IMP.2SG": "skladaj",
+            "IMP.2PL": "skladajte",
+            "IMP.1PL": "skladajme",
+            "FUT.IPFV": "bu skladat"
+          }
+        },
+        "W": {
+          "lemma": "składaþ",
+          "forms": {
+            "INF": "składaþ",
+            "FIN.1SG": "składam",
+            "FIN.2SG": "składaš",
+            "FIN.3SG": "składat",
+            "FIN.1PL": "składam",
+            "FIN.2PL": "składat",
+            "FIN.3PL": "składająt",
+            "PST.M": "składał",
+            "PST.F": "składał",
+            "PST.N": "składał",
+            "PST.PL": "składałi",
+            "IMP.2SG": "składaj",
+            "IMP.2PL": "składajt",
+            "IMP.1PL": "składajm",
+            "FUT.IPFV": "b składaþ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0353",
+      "gloss": "擦拭",
+      "pos": "verb",
+      "proto": "*vÿtiratʲ",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "A",
+      "sourceType": "v09-verb-class-template",
+      "sourceId": "D0353",
+      "gender": null,
+      "animacy": "未明确",
+      "aspect": "IPFV",
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "ŵÿtirať",
+          "forms": {
+            "INF": "ŵÿtirať",
+            "FIN.1SG": "ŵÿtiram",
+            "FIN.2SG": "ŵÿtiraš",
+            "FIN.3SG": "ŵÿtirat",
+            "FIN.1PL": "ŵÿtirame",
+            "FIN.2PL": "ŵÿtirate",
+            "FIN.3PL": "ŵÿtirająt",
+            "PST.M": "ŵÿtiral",
+            "PST.F": "ŵÿtirala",
+            "PST.N": "ŵÿtiralo",
+            "PST.PL": "ŵÿtirali",
+            "IMP.2SG": "ŵÿtiraj",
+            "IMP.2PL": "ŵÿtirajte",
+            "IMP.1PL": "ŵÿtirajme",
+            "FUT.IPFV": "bu ŵÿtirať"
+          }
+        },
+        "SE": {
+          "lemma": "vitirat",
+          "forms": {
+            "INF": "vitirat",
+            "FIN.1SG": "vitiram",
+            "FIN.2SG": "vitiraš",
+            "FIN.3SG": "vitirat",
+            "FIN.1PL": "vitirame",
+            "FIN.2PL": "vitirate",
+            "FIN.3PL": "vitirajot",
+            "PST.M": "vitiral",
+            "PST.F": "vitirala",
+            "PST.N": "vitiralo",
+            "PST.PL": "vitirali",
+            "IMP.2SG": "vitiraj",
+            "IMP.2PL": "vitirajte",
+            "IMP.1PL": "vitirajme",
+            "FUT.IPFV": "bu vitirat"
+          }
+        },
+        "W": {
+          "lemma": "ŵÿtiraþ",
+          "forms": {
+            "INF": "ŵÿtiraþ",
+            "FIN.1SG": "ŵÿtiram",
+            "FIN.2SG": "ŵÿtiraš",
+            "FIN.3SG": "ŵÿtirat",
+            "FIN.1PL": "ŵÿtiram",
+            "FIN.2PL": "ŵÿtirat",
+            "FIN.3PL": "ŵÿtirająt",
+            "PST.M": "ŵÿtirał",
+            "PST.F": "ŵÿtirał",
+            "PST.N": "ŵÿtirał",
+            "PST.PL": "ŵÿtirałi",
+            "IMP.2SG": "ŵÿtiraj",
+            "IMP.2PL": "ŵÿtirajt",
+            "IMP.1PL": "ŵÿtirajm",
+            "FUT.IPFV": "b ŵÿtiraþ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0354",
+      "gloss": "上锁（过程）",
+      "pos": "verb",
+      "proto": "*zapiratʲ",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "A",
+      "sourceType": "v09-verb-class-template",
+      "sourceId": "D0354",
+      "gender": null,
+      "animacy": "未明确",
+      "aspect": "IPFV",
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "zapirať",
+          "forms": {
+            "INF": "zapirať",
+            "FIN.1SG": "zapiram",
+            "FIN.2SG": "zapiraš",
+            "FIN.3SG": "zapirat",
+            "FIN.1PL": "zapirame",
+            "FIN.2PL": "zapirate",
+            "FIN.3PL": "zapirająt",
+            "PST.M": "zapiral",
+            "PST.F": "zapirala",
+            "PST.N": "zapiralo",
+            "PST.PL": "zapirali",
+            "IMP.2SG": "zapiraj",
+            "IMP.2PL": "zapirajte",
+            "IMP.1PL": "zapirajme",
+            "FUT.IPFV": "bu zapirať"
+          }
+        },
+        "SE": {
+          "lemma": "zapirat",
+          "forms": {
+            "INF": "zapirat",
+            "FIN.1SG": "zapiram",
+            "FIN.2SG": "zapiraš",
+            "FIN.3SG": "zapirat",
+            "FIN.1PL": "zapirame",
+            "FIN.2PL": "zapirate",
+            "FIN.3PL": "zapirajot",
+            "PST.M": "zapiral",
+            "PST.F": "zapirala",
+            "PST.N": "zapiralo",
+            "PST.PL": "zapirali",
+            "IMP.2SG": "zapiraj",
+            "IMP.2PL": "zapirajte",
+            "IMP.1PL": "zapirajme",
+            "FUT.IPFV": "bu zapirat"
+          }
+        },
+        "W": {
+          "lemma": "zapiraþ",
+          "forms": {
+            "INF": "zapiraþ",
+            "FIN.1SG": "zapiram",
+            "FIN.2SG": "zapiraš",
+            "FIN.3SG": "zapirat",
+            "FIN.1PL": "zapiram",
+            "FIN.2PL": "zapirat",
+            "FIN.3PL": "zapirająt",
+            "PST.M": "zapirał",
+            "PST.F": "zapirał",
+            "PST.N": "zapirał",
+            "PST.PL": "zapirałi",
+            "IMP.2SG": "zapiraj",
+            "IMP.2PL": "zapirajt",
+            "IMP.1PL": "zapirajm",
+            "FUT.IPFV": "b zapiraþ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0355",
+      "gloss": "开锁（过程）",
+      "pos": "verb",
+      "proto": "*otpiratʲ",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "A",
+      "sourceType": "v09-verb-class-template",
+      "sourceId": "D0355",
+      "gender": null,
+      "animacy": "未明确",
+      "aspect": "IPFV",
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "otpirať",
+          "forms": {
+            "INF": "otpirať",
+            "FIN.1SG": "otpiram",
+            "FIN.2SG": "otpiraš",
+            "FIN.3SG": "otpirat",
+            "FIN.1PL": "otpirame",
+            "FIN.2PL": "otpirate",
+            "FIN.3PL": "otpirająt",
+            "PST.M": "otpiral",
+            "PST.F": "otpirala",
+            "PST.N": "otpiralo",
+            "PST.PL": "otpirali",
+            "IMP.2SG": "otpiraj",
+            "IMP.2PL": "otpirajte",
+            "IMP.1PL": "otpirajme",
+            "FUT.IPFV": "bu otpirať"
+          }
+        },
+        "SE": {
+          "lemma": "otpirat",
+          "forms": {
+            "INF": "otpirat",
+            "FIN.1SG": "otpiram",
+            "FIN.2SG": "otpiraš",
+            "FIN.3SG": "otpirat",
+            "FIN.1PL": "otpirame",
+            "FIN.2PL": "otpirate",
+            "FIN.3PL": "otpirajot",
+            "PST.M": "otpiral",
+            "PST.F": "otpirala",
+            "PST.N": "otpiralo",
+            "PST.PL": "otpirali",
+            "IMP.2SG": "otpiraj",
+            "IMP.2PL": "otpirajte",
+            "IMP.1PL": "otpirajme",
+            "FUT.IPFV": "bu otpirat"
+          }
+        },
+        "W": {
+          "lemma": "otpiraþ",
+          "forms": {
+            "INF": "otpiraþ",
+            "FIN.1SG": "otpiram",
+            "FIN.2SG": "otpiraš",
+            "FIN.3SG": "otpirat",
+            "FIN.1PL": "otpiram",
+            "FIN.2PL": "otpirat",
+            "FIN.3PL": "otpirająt",
+            "PST.M": "otpirał",
+            "PST.F": "otpirał",
+            "PST.N": "otpirał",
+            "PST.PL": "otpirałi",
+            "IMP.2SG": "otpiraj",
+            "IMP.2PL": "otpirajt",
+            "IMP.1PL": "otpirajm",
+            "FUT.IPFV": "b otpiraþ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0356",
+      "gloss": "发光、照明",
+      "pos": "verb",
+      "proto": "*svetitʲ",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "I",
+      "sourceType": "v09-verb-class-template",
+      "sourceId": "D0356",
+      "gender": null,
+      "animacy": "未明确",
+      "aspect": "IPFV",
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "sŵetiť",
+          "forms": {
+            "INF": "sŵetiť",
+            "FIN.1SG": "sŵetim",
+            "FIN.2SG": "sŵetiš",
+            "FIN.3SG": "sŵetit",
+            "FIN.1PL": "sŵetime",
+            "FIN.2PL": "sŵetite",
+            "FIN.3PL": "sŵetięt",
+            "PST.M": "sŵetil",
+            "PST.F": "sŵetila",
+            "PST.N": "sŵetilo",
+            "PST.PL": "sŵetili",
+            "IMP.2SG": "sŵeti",
+            "IMP.2PL": "sŵetite",
+            "IMP.1PL": "sŵetime",
+            "FUT.IPFV": "bu sŵetiť"
+          }
+        },
+        "SE": {
+          "lemma": "svetit",
+          "forms": {
+            "INF": "svetit",
+            "FIN.1SG": "svetim",
+            "FIN.2SG": "svetiš",
+            "FIN.3SG": "svetit",
+            "FIN.1PL": "svetime",
+            "FIN.2PL": "svetite",
+            "FIN.3PL": "svetiet",
+            "PST.M": "svetil",
+            "PST.F": "svetila",
+            "PST.N": "svetilo",
+            "PST.PL": "svetili",
+            "IMP.2SG": "sveti",
+            "IMP.2PL": "svetite",
+            "IMP.1PL": "svetime",
+            "FUT.IPFV": "bu svetit"
+          }
+        },
+        "W": {
+          "lemma": "sŵetiþ",
+          "forms": {
+            "INF": "sŵetiþ",
+            "FIN.1SG": "sŵetim",
+            "FIN.2SG": "sŵetiš",
+            "FIN.3SG": "sŵetit",
+            "FIN.1PL": "sŵetim",
+            "FIN.2PL": "sŵetit",
+            "FIN.3PL": "sŵetięt",
+            "PST.M": "sŵetił",
+            "PST.F": "sŵetił",
+            "PST.N": "sŵetił",
+            "PST.PL": "sŵetiłi",
+            "IMP.2SG": "sŵeti",
+            "IMP.2PL": "sŵetit",
+            "IMP.1PL": "sŵetim",
+            "FUT.IPFV": "b sŵetiþ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0357",
+      "gloss": "使……熄灭",
+      "pos": "verb",
+      "proto": "*gasitʲ",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "I",
+      "sourceType": "v09-verb-class-template",
+      "sourceId": "D0357",
+      "gender": null,
+      "animacy": "未明确",
+      "aspect": "IPFV",
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "ġasiť",
+          "forms": {
+            "INF": "ġasiť",
+            "FIN.1SG": "ġasim",
+            "FIN.2SG": "ġasiš",
+            "FIN.3SG": "ġasit",
+            "FIN.1PL": "ġasime",
+            "FIN.2PL": "ġasite",
+            "FIN.3PL": "ġasięt",
+            "PST.M": "ġasil",
+            "PST.F": "ġasila",
+            "PST.N": "ġasilo",
+            "PST.PL": "ġasili",
+            "IMP.2SG": "ġasi",
+            "IMP.2PL": "ġasite",
+            "IMP.1PL": "ġasime",
+            "FUT.IPFV": "bu ġasiť"
+          }
+        },
+        "SE": {
+          "lemma": "gasit",
+          "forms": {
+            "INF": "gasit",
+            "FIN.1SG": "gasim",
+            "FIN.2SG": "gasiš",
+            "FIN.3SG": "gasit",
+            "FIN.1PL": "gasime",
+            "FIN.2PL": "gasite",
+            "FIN.3PL": "gasiet",
+            "PST.M": "gasil",
+            "PST.F": "gasila",
+            "PST.N": "gasilo",
+            "PST.PL": "gasili",
+            "IMP.2SG": "gasi",
+            "IMP.2PL": "gasite",
+            "IMP.1PL": "gasime",
+            "FUT.IPFV": "bu gasit"
+          }
+        },
+        "W": {
+          "lemma": "ġasiþ",
+          "forms": {
+            "INF": "ġasiþ",
+            "FIN.1SG": "ġasim",
+            "FIN.2SG": "ġasiš",
+            "FIN.3SG": "ġasit",
+            "FIN.1PL": "ġasim",
+            "FIN.2PL": "ġasit",
+            "FIN.3PL": "ġasięt",
+            "PST.M": "ġasił",
+            "PST.F": "ġasił",
+            "PST.N": "ġasił",
+            "PST.PL": "ġasiłi",
+            "IMP.2SG": "ġasi",
+            "IMP.2PL": "ġasit",
+            "IMP.1PL": "ġasim",
+            "FUT.IPFV": "b ġasiþ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0358",
+      "gloss": "测量",
+      "pos": "verb",
+      "proto": "*meritʲ",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "I",
+      "sourceType": "v09-verb-class-template",
+      "sourceId": "D0358",
+      "gender": null,
+      "animacy": "未明确",
+      "aspect": "IPFV",
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "meriť",
+          "forms": {
+            "INF": "meriť",
+            "FIN.1SG": "merim",
+            "FIN.2SG": "meriš",
+            "FIN.3SG": "merit",
+            "FIN.1PL": "merime",
+            "FIN.2PL": "merite",
+            "FIN.3PL": "merięt",
+            "PST.M": "meril",
+            "PST.F": "merila",
+            "PST.N": "merilo",
+            "PST.PL": "merili",
+            "IMP.2SG": "meri",
+            "IMP.2PL": "merite",
+            "IMP.1PL": "merime",
+            "FUT.IPFV": "bu meriť"
+          }
+        },
+        "SE": {
+          "lemma": "merit",
+          "forms": {
+            "INF": "merit",
+            "FIN.1SG": "merim",
+            "FIN.2SG": "meriš",
+            "FIN.3SG": "merit",
+            "FIN.1PL": "merime",
+            "FIN.2PL": "merite",
+            "FIN.3PL": "meriet",
+            "PST.M": "meril",
+            "PST.F": "merila",
+            "PST.N": "merilo",
+            "PST.PL": "merili",
+            "IMP.2SG": "meri",
+            "IMP.2PL": "merite",
+            "IMP.1PL": "merime",
+            "FUT.IPFV": "bu merit"
+          }
+        },
+        "W": {
+          "lemma": "meriþ",
+          "forms": {
+            "INF": "meriþ",
+            "FIN.1SG": "merim",
+            "FIN.2SG": "meriš",
+            "FIN.3SG": "merit",
+            "FIN.1PL": "merim",
+            "FIN.2PL": "merit",
+            "FIN.3PL": "merięt",
+            "PST.M": "merił",
+            "PST.F": "merił",
+            "PST.N": "merił",
+            "PST.PL": "meriłi",
+            "IMP.2SG": "meri",
+            "IMP.2PL": "merit",
+            "IMP.1PL": "merim",
+            "FUT.IPFV": "b meriþ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0359",
+      "gloss": "归还",
+      "pos": "verb",
+      "proto": "*vračatʲ",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "A",
+      "sourceType": "v09-verb-class-template",
+      "sourceId": "D0359",
+      "gender": null,
+      "animacy": "未明确",
+      "aspect": "IPFV",
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "ŵračať",
+          "forms": {
+            "INF": "ŵračať",
+            "FIN.1SG": "ŵračam",
+            "FIN.2SG": "ŵračaš",
+            "FIN.3SG": "ŵračat",
+            "FIN.1PL": "ŵračame",
+            "FIN.2PL": "ŵračate",
+            "FIN.3PL": "ŵračająt",
+            "PST.M": "ŵračal",
+            "PST.F": "ŵračala",
+            "PST.N": "ŵračalo",
+            "PST.PL": "ŵračali",
+            "IMP.2SG": "ŵračaj",
+            "IMP.2PL": "ŵračajte",
+            "IMP.1PL": "ŵračajme",
+            "FUT.IPFV": "bu ŵračať"
+          }
+        },
+        "SE": {
+          "lemma": "vračat",
+          "forms": {
+            "INF": "vračat",
+            "FIN.1SG": "vračam",
+            "FIN.2SG": "vračaš",
+            "FIN.3SG": "vračat",
+            "FIN.1PL": "vračame",
+            "FIN.2PL": "vračate",
+            "FIN.3PL": "vračajot",
+            "PST.M": "vračal",
+            "PST.F": "vračala",
+            "PST.N": "vračalo",
+            "PST.PL": "vračali",
+            "IMP.2SG": "vračaj",
+            "IMP.2PL": "vračajte",
+            "IMP.1PL": "vračajme",
+            "FUT.IPFV": "bu vračat"
+          }
+        },
+        "W": {
+          "lemma": "ŵračaþ",
+          "forms": {
+            "INF": "ŵračaþ",
+            "FIN.1SG": "ŵračam",
+            "FIN.2SG": "ŵračaš",
+            "FIN.3SG": "ŵračat",
+            "FIN.1PL": "ŵračam",
+            "FIN.2PL": "ŵračat",
+            "FIN.3PL": "ŵračająt",
+            "PST.M": "ŵračał",
+            "PST.F": "ŵračał",
+            "PST.N": "ŵračał",
+            "PST.PL": "ŵračałi",
+            "IMP.2SG": "ŵračaj",
+            "IMP.2PL": "ŵračajt",
+            "IMP.1PL": "ŵračajm",
+            "FUT.IPFV": "b ŵračaþ"
+          }
+        }
+      }
+    },
+    {
+      "id": "D0360",
+      "gloss": "清扫、整理",
+      "pos": "verb",
+      "proto": "*ubiratʲ",
+      "lexicalStage": "v09-lexicon",
+      "gramClass": "A",
+      "sourceType": "v09-verb-class-template",
+      "sourceId": "D0360",
+      "gender": null,
+      "animacy": "未明确",
+      "aspect": "IPFV",
+      "evidence": {
+        "lexical": "assets/data/zagren-dictionary-v05.json",
+        "paradigm": "V0.9新增词形类别；采用既有A/O/A-I校准框架，现代屈折形式未独立核定"
+      },
+      "reason": "词汇类别由新增设定指定；附着古典模板生成的是候选形态，非正式现代完整范式",
+      "branches": {
+        "N": {
+          "lemma": "ubirať",
+          "forms": {
+            "INF": "ubirať",
+            "FIN.1SG": "ubiram",
+            "FIN.2SG": "ubiraš",
+            "FIN.3SG": "ubirat",
+            "FIN.1PL": "ubirame",
+            "FIN.2PL": "ubirate",
+            "FIN.3PL": "ubirająt",
+            "PST.M": "ubiral",
+            "PST.F": "ubirala",
+            "PST.N": "ubiralo",
+            "PST.PL": "ubirali",
+            "IMP.2SG": "ubiraj",
+            "IMP.2PL": "ubirajte",
+            "IMP.1PL": "ubirajme",
+            "FUT.IPFV": "bu ubirať"
+          }
+        },
+        "SE": {
+          "lemma": "ubirat",
+          "forms": {
+            "INF": "ubirat",
+            "FIN.1SG": "ubiram",
+            "FIN.2SG": "ubiraš",
+            "FIN.3SG": "ubirat",
+            "FIN.1PL": "ubirame",
+            "FIN.2PL": "ubirate",
+            "FIN.3PL": "ubirajot",
+            "PST.M": "ubiral",
+            "PST.F": "ubirala",
+            "PST.N": "ubiralo",
+            "PST.PL": "ubirali",
+            "IMP.2SG": "ubiraj",
+            "IMP.2PL": "ubirajte",
+            "IMP.1PL": "ubirajme",
+            "FUT.IPFV": "bu ubirat"
+          }
+        },
+        "W": {
+          "lemma": "ubiraþ",
+          "forms": {
+            "INF": "ubiraþ",
+            "FIN.1SG": "ubiram",
+            "FIN.2SG": "ubiraš",
+            "FIN.3SG": "ubirat",
+            "FIN.1PL": "ubiram",
+            "FIN.2PL": "ubirat",
+            "FIN.3PL": "ubirająt",
+            "PST.M": "ubirał",
+            "PST.F": "ubirał",
+            "PST.N": "ubirał",
+            "PST.PL": "ubirałi",
+            "IMP.2SG": "ubiraj",
+            "IMP.2PL": "ubirajt",
+            "IMP.1PL": "ubirajm",
+            "FUT.IPFV": "b ubiraþ"
+          }
+        }
+      }
     }
   ],
   "validation": {
@@ -13981,12 +15464,19 @@
     "V08N13LivingInflectionPositionsCompared": 13,
     "V08N13LivingMismatches": 0,
     "priorControlledDialectUsagesRevalidated": 48,
-    "corePositionSum": 7818,
+    "corePositionSum": 8628,
     "testedSources": [
       "assets/data/zagren-morphology-pilot-v07.txt",
       "assets/data/zagren-v08-morphology-regression.json",
       "assets/data/zagren-v09-morphology-audit.json"
     ],
-    "level": "source-to-derived-record regression only; does not validate conjectured modern forms"
+    "level": "source-to-derived-record regression only; does not validate conjectured modern forms",
+    "lexicalGrowthRegression": {
+      "beforeLexemes": 205,
+      "added": 21,
+      "afterLexemes": 226,
+      "sourceV07PilotPreserved": 840,
+      "sourceV08N13Preserved": 13
+    }
   }
 }
