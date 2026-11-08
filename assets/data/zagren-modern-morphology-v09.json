@@ -88,7 +88,8 @@
     "sourceVerbProfiles": 44,
     "controlledGrammarPositions": 16,
     "controlledDialectUsages": 48,
-    "protectedWesternObliques": 20
+    "protectedWesternObliques": 20,
+    "westAnimateAccConstructionEntries": 10
   },
   "safeguards": [
     "本文件格式不等于语言已被自然母语者验证。",
@@ -1916,7 +1917,14 @@
             "W11-oblique-open:PL.ACC",
             "W11-oblique-open:PL.INS",
             "W11-oblique-open:PL.LOC"
-          ]
+          ],
+          "phrases": {
+            "SG.ACC": {
+              "text": "za boġ",
+              "authority": "controlled-existing-example",
+              "source": "A16"
+            }
+          }
         }
       }
     },
@@ -2452,7 +2460,14 @@
               "source": "A06",
               "word": "brat"
             }
-          ]
+          ],
+          "phrases": {
+            "SG.ACC": {
+              "text": "za brat",
+              "authority": "controlled-existing-example",
+              "source": "A06"
+            }
+          }
         }
       }
     },
@@ -6261,7 +6276,14 @@
           },
           "notes": [
             "W-animate-ACC: phrase za+łud (rule-licensed; not per-lexeme attested)"
-          ]
+          ],
+          "phrases": {
+            "SG.ACC": {
+              "text": "za łud",
+              "authority": "V0.7-M07-syntax-licensed-but-lexical-instance-provisional",
+              "source": "assets/data/zagren-syntax-v07.json"
+            }
+          }
         }
       }
     },
@@ -6443,7 +6465,14 @@
           },
           "notes": [
             "W-animate-ACC: phrase za+druġ (rule-licensed; not per-lexeme attested)"
-          ]
+          ],
+          "phrases": {
+            "SG.ACC": {
+              "text": "za druġ",
+              "authority": "V0.7-M07-syntax-licensed-but-lexical-instance-provisional",
+              "source": "assets/data/zagren-syntax-v07.json"
+            }
+          }
         }
       }
     },
@@ -6516,7 +6545,14 @@
           },
           "notes": [
             "W-animate-ACC: phrase za+sused (rule-licensed; not per-lexeme attested)"
-          ]
+          ],
+          "phrases": {
+            "SG.ACC": {
+              "text": "za sused",
+              "authority": "V0.7-M07-syntax-licensed-but-lexical-instance-provisional",
+              "source": "assets/data/zagren-syntax-v07.json"
+            }
+          }
         }
       }
     },
@@ -6660,7 +6696,14 @@
           },
           "notes": [
             "W-animate-ACC: phrase za+trudnik (rule-licensed; not per-lexeme attested)"
-          ]
+          ],
+          "phrases": {
+            "SG.ACC": {
+              "text": "za trudnik",
+              "authority": "V0.7-M07-syntax-licensed-but-lexical-instance-provisional",
+              "source": "assets/data/zagren-syntax-v07.json"
+            }
+          }
         }
       }
     },
@@ -6804,7 +6847,14 @@
           },
           "notes": [
             "W-animate-ACC: phrase za+łekar (rule-licensed; not per-lexeme attested)"
-          ]
+          ],
+          "phrases": {
+            "SG.ACC": {
+              "text": "za łekar",
+              "authority": "V0.7-M07-syntax-licensed-but-lexical-instance-provisional",
+              "source": "assets/data/zagren-syntax-v07.json"
+            }
+          }
         }
       }
     },
@@ -6888,7 +6938,7 @@
       "sourceType": "pilot-noun",
       "sourceId": null,
       "gender": "阴",
-      "animacy": "未明确",
+      "animacy": "无生",
       "aspect": null,
       "evidence": {
         "lexical": "assets/data/zagren-dictionary-v05.json",
@@ -6996,7 +7046,7 @@
       "sourceType": "pilot-noun",
       "sourceId": null,
       "gender": "阴",
-      "animacy": "未明确",
+      "animacy": "无生",
       "aspect": null,
       "evidence": {
         "lexical": "assets/data/zagren-dictionary-v05.json",
@@ -7066,7 +7116,7 @@
       "sourceType": "pilot-noun",
       "sourceId": null,
       "gender": "阴",
-      "animacy": "未明确",
+      "animacy": "无生",
       "aspect": null,
       "evidence": {
         "lexical": "assets/data/zagren-dictionary-v05.json",
@@ -7316,7 +7366,7 @@
       "sourceType": "pilot-noun",
       "sourceId": null,
       "gender": "阴",
-      "animacy": "未明确",
+      "animacy": "无生",
       "aspect": null,
       "evidence": {
         "lexical": "assets/data/zagren-dictionary-v05.json",
@@ -7386,7 +7436,7 @@
       "sourceType": "pilot-noun",
       "sourceId": null,
       "gender": "阴",
-      "animacy": "未明确",
+      "animacy": "无生",
       "aspect": null,
       "evidence": {
         "lexical": "assets/data/zagren-dictionary-v05.json",
@@ -7740,7 +7790,7 @@
       "sourceType": "pilot-noun",
       "sourceId": null,
       "gender": "阳",
-      "animacy": "未明确",
+      "animacy": "无生",
       "aspect": null,
       "evidence": {
         "lexical": "assets/data/zagren-dictionary-v05.json",
@@ -8241,7 +8291,7 @@
       "sourceType": "pilot-noun",
       "sourceId": null,
       "gender": "阳",
-      "animacy": "未明确",
+      "animacy": "无生",
       "aspect": null,
       "evidence": {
         "lexical": "assets/data/zagren-dictionary-v05.json",
@@ -8600,7 +8650,7 @@
       "sourceType": "pilot-noun",
       "sourceId": null,
       "gender": "阴",
-      "animacy": "未明确",
+      "animacy": "无生",
       "aspect": null,
       "evidence": {
         "lexical": "assets/data/zagren-dictionary-v05.json",
@@ -11781,7 +11831,14 @@
           },
           "notes": [
             "W-animate-ACC: phrase za+učenik (rule-licensed; not per-lexeme attested)"
-          ]
+          ],
+          "phrases": {
+            "SG.ACC": {
+              "text": "za učenik",
+              "authority": "V0.7-M07-syntax-licensed-but-lexical-instance-provisional",
+              "source": "assets/data/zagren-syntax-v07.json"
+            }
+          }
         }
       },
       "reason": "marked masculine with consonant/other N/SE lemma"
@@ -12009,7 +12066,14 @@
           },
           "notes": [
             "W-animate-ACC: phrase za+ŵzrosł (rule-licensed; not per-lexeme attested)"
-          ]
+          ],
+          "phrases": {
+            "SG.ACC": {
+              "text": "za ŵzrosł",
+              "authority": "V0.7-M07-syntax-licensed-but-lexical-instance-provisional",
+              "source": "assets/data/zagren-syntax-v07.json"
+            }
+          }
         }
       },
       "reason": "marked masculine with consonant/other N/SE lemma"
@@ -13472,7 +13536,14 @@
           },
           "notes": [
             "W-animate-ACC: phrase za+kot (rule-licensed; not per-lexeme attested)"
-          ]
+          ],
+          "phrases": {
+            "SG.ACC": {
+              "text": "za kot",
+              "authority": "V0.7-M07-syntax-licensed-but-lexical-instance-provisional",
+              "source": "assets/data/zagren-syntax-v07.json"
+            }
+          }
         }
       },
       "reason": "marked masculine with consonant/other N/SE lemma"
@@ -13903,5 +13974,19 @@
       },
       "reason": "marked feminine and -a both N/SE"
     }
-  ]
+  ],
+  "validation": {
+    "archivedV07PilotPositionsCompared": 840,
+    "archivedV07PilotMismatches": 0,
+    "V08N13LivingInflectionPositionsCompared": 13,
+    "V08N13LivingMismatches": 0,
+    "priorControlledDialectUsagesRevalidated": 48,
+    "corePositionSum": 7818,
+    "testedSources": [
+      "assets/data/zagren-morphology-pilot-v07.txt",
+      "assets/data/zagren-v08-morphology-regression.json",
+      "assets/data/zagren-v09-morphology-audit.json"
+    ],
+    "level": "source-to-derived-record regression only; does not validate conjectured modern forms"
+  }
 }
