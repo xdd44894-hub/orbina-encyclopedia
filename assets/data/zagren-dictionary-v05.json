@@ -5,7 +5,7 @@
   "basedOnLanguageVersion": "Žaġręn V0.9词典原形补全（沿用V0.8音系、V0.7核心句法）",
   "date": "2026-11-06",
   "normativeSource": "_articles/article-451.md",
-  "usage": "V0.9在不更动已有335条词典原形的前提下，将V0.8保留候选的4个祖语动词登记为三方言不定式原形；沿用既有21条音变。现代完整变位、重音、语流未完成；V0.8的339条审查记录保留为历史基线。",
+  "usage": "V0.9在不更动已有335条词典原形的前提下，将V0.8保留候选的4个祖语动词登记为三方言不定式原形；沿用既有21条音变。现代完整变位、重音、语流未完成；V0.8的339条审查记录保留为历史基线。 V0.9增补21条居家和日常行为词条，现行总词条360；原339条词义和词形保留不动。新词仅登记三方言原形及宽式IPA，完整屈折不自动纳入正史。",
   "branches": {
     "N": "珀璃璐卡 Pęrlÿkań（北部）",
     "SE": "丽庞萨 Lipańsë（东南）",
@@ -21,7 +21,8 @@
     "v07-lexicon": "V0.7新增词典原形；完整屈折与重音尚未核定",
     "v08-revised": "V0.8同源词干修订（现代原形）",
     "v08-reviewed": "V0.8已审阅保留旧原形（完整现代屈折待复核）",
-    "v09-lemma": "V0.9新核定三方言不定式词典原形（完整现代变位待核）"
+    "v09-lemma": "V0.9新核定三方言不定式词典原形（完整现代变位待核）",
+    "v09-lexicon": "V0.9新增日常词汇正式三方言原形；完整变格、变位与重音未核定"
   },
   "posGuide": {
     "noun": "名词",
@@ -60,10 +61,10 @@
     "所有现代原形提供可计算宽式IPA，重音未确立，因此不是有声词典"
   ],
   "stats": {
-    "total": 339,
+    "total": 360,
     "byPos": {
-      "noun": 132,
-      "verb": 73,
+      "noun": 144,
+      "verb": 82,
       "adj": 67,
       "participle": 20,
       "pronoun": 7,
@@ -83,11 +84,12 @@
       "v08-revised": 5,
       "v09-lemma": 4,
       "v06-core": 100,
-      "v07-lexicon": 60
+      "v07-lexicon": 60,
+      "v09-lexicon": 21
     },
-    "withThreeForms": 339,
-    "broadIPATranscriptions": 1017,
-    "modernHeadwordCount": 197,
+    "withThreeForms": 360,
+    "broadIPATranscriptions": 1080,
+    "modernHeadwordCount": 218,
     "reviewedLegacyWithoutFormChange": 142,
     "modernizedLegacyHeadwords": 5,
     "protoOnlyProposals": 0,
@@ -14035,6 +14037,888 @@
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
       }
+    },
+    {
+      "id": "D0340",
+      "pos": "noun",
+      "gloss": "枕头",
+      "aliases": [],
+      "proto": "*poduška",
+      "forms": {
+        "N": "poduška",
+        "SE": "poduška",
+        "W": "podušk"
+      },
+      "ipa": {
+        "N": "/poduʃka/",
+        "SE": "/poduʃka/",
+        "W": "/poduʃk/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "寝具",
+      "definition": "床头用软枕",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "A",
+        "gender": "阴",
+        "animacy": "无生",
+        "number": "SG",
+        "inflection": "modern-class-assigned; full paradigm not validated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0341",
+      "pos": "noun",
+      "gloss": "毯子",
+      "aliases": [],
+      "proto": "*pokrÿva",
+      "forms": {
+        "N": "pokrÿŵa",
+        "SE": "pokriva",
+        "W": "pokrÿŵ"
+      },
+      "ipa": {
+        "N": "/pokrɨwa/",
+        "SE": "/pokriva/",
+        "W": "/pokrɨw/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "寝具",
+      "definition": "用于覆盖身体的毯子；与床上被褥可区分",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "A",
+        "gender": "阴",
+        "animacy": "无生",
+        "number": "SG",
+        "inflection": "modern-class-assigned; full paradigm not validated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0342",
+      "pos": "noun",
+      "gloss": "毛巾",
+      "aliases": [],
+      "proto": "*ručnik",
+      "forms": {
+        "N": "ručnik",
+        "SE": "ručnik",
+        "W": "ručnik"
+      },
+      "ipa": {
+        "N": "/rut͡ʃnik/",
+        "SE": "/rut͡ʃnik/",
+        "W": "/rut͡ʃnik/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "居家器物",
+      "definition": "擦干手或身体用的布巾",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "O",
+        "gender": "阳",
+        "animacy": "无生",
+        "number": "SG",
+        "inflection": "modern-class-assigned; full paradigm not validated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0343",
+      "pos": "noun",
+      "gloss": "肥皂",
+      "aliases": [],
+      "proto": "*mÿlo",
+      "forms": {
+        "N": "mÿlo",
+        "SE": "milo",
+        "W": "mÿł"
+      },
+      "ipa": {
+        "N": "/mɨlo/",
+        "SE": "/milo/",
+        "W": "/mɨɫ/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "洗护用品",
+      "definition": "清洁用皂类，不专指现代合成洗剂",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "O",
+        "gender": "中",
+        "animacy": "无生",
+        "number": "SG",
+        "inflection": "modern-class-assigned; full paradigm not validated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0344",
+      "pos": "noun",
+      "gloss": "镜子",
+      "aliases": [],
+      "proto": "*zerkalo",
+      "forms": {
+        "N": "zerkalo",
+        "SE": "zerkalo",
+        "W": "zerkał"
+      },
+      "ipa": {
+        "N": "/zerkalo/",
+        "SE": "/zerkalo/",
+        "W": "/zerkaɫ/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "居家器物",
+      "definition": "用于照见影像的镜面器物",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "O",
+        "gender": "中",
+        "animacy": "无生",
+        "number": "SG",
+        "inflection": "modern-class-assigned; full paradigm not validated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0345",
+      "pos": "noun",
+      "gloss": "梯子",
+      "aliases": [],
+      "proto": "*lestva",
+      "forms": {
+        "N": "lestŵa",
+        "SE": "lestva",
+        "W": "łestŵ"
+      },
+      "ipa": {
+        "N": "/lestwa/",
+        "SE": "/lestva/",
+        "W": "/ɫestw/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "建筑居家",
+      "definition": "可搬动的梯具，不表示整座建筑楼梯间",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "A",
+        "gender": "阴",
+        "animacy": "无生",
+        "number": "SG",
+        "inflection": "modern-class-assigned; full paradigm not validated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0346",
+      "pos": "noun",
+      "gloss": "抽屉",
+      "aliases": [],
+      "proto": "*jaščik",
+      "forms": {
+        "N": "jaščik",
+        "SE": "jaščik",
+        "W": "jaščik"
+      },
+      "ipa": {
+        "N": "/jaʃt͡ʃik/",
+        "SE": "/jaʃt͡ʃik/",
+        "W": "/jaʃt͡ʃik/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "居家器物",
+      "definition": "可从桌柜中抽出的储物格",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "O",
+        "gender": "阳",
+        "animacy": "无生",
+        "number": "SG",
+        "inflection": "modern-class-assigned; full paradigm not validated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0347",
+      "pos": "noun",
+      "gloss": "柜子",
+      "aliases": [],
+      "proto": "*škaf",
+      "forms": {
+        "N": "škaf",
+        "SE": "škaf",
+        "W": "škaf"
+      },
+      "ipa": {
+        "N": "/ʃkaf/",
+        "SE": "/ʃkaf/",
+        "W": "/ʃkaf/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "居家器物",
+      "definition": "带门或隔层的储物柜",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "O",
+        "gender": "阳",
+        "animacy": "无生",
+        "number": "SG",
+        "inflection": "modern-class-assigned; full paradigm not validated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0348",
+      "pos": "noun",
+      "gloss": "口袋",
+      "aliases": [],
+      "proto": "*karman",
+      "forms": {
+        "N": "karman",
+        "SE": "karman",
+        "W": "karman"
+      },
+      "ipa": {
+        "N": "/karman/",
+        "SE": "/karman/",
+        "W": "/karman/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "衣物与随身物件",
+      "definition": "衣服或携行物上的收纳袋",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "O",
+        "gender": "阳",
+        "animacy": "无生",
+        "number": "SG",
+        "inflection": "modern-class-assigned; full paradigm not validated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0349",
+      "pos": "noun",
+      "gloss": "船",
+      "aliases": [],
+      "proto": "*lodka",
+      "forms": {
+        "N": "lodka",
+        "SE": "lodka",
+        "W": "łodk"
+      },
+      "ipa": {
+        "N": "/lodka/",
+        "SE": "/lodka/",
+        "W": "/ɫodk/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "交通与地理",
+      "definition": "小型船艇；不默认大型远洋舰船",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "A",
+        "gender": "阴",
+        "animacy": "无生",
+        "number": "SG",
+        "inflection": "modern-class-assigned; full paradigm not validated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0350",
+      "pos": "noun",
+      "gloss": "窗帘",
+      "aliases": [],
+      "proto": "*zavesa",
+      "forms": {
+        "N": "zaŵesa",
+        "SE": "zavesa",
+        "W": "zaŵes"
+      },
+      "ipa": {
+        "N": "/zawesa/",
+        "SE": "/zavesa/",
+        "W": "/zawes/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "居家器物",
+      "definition": "悬于窗前的遮挡布料",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "A",
+        "gender": "阴",
+        "animacy": "无生",
+        "number": "SG",
+        "inflection": "modern-class-assigned; full paradigm not validated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0351",
+      "pos": "noun",
+      "gloss": "水桶",
+      "aliases": [],
+      "proto": "*vedro",
+      "forms": {
+        "N": "ŵedro",
+        "SE": "vedro",
+        "W": "ŵedr"
+      },
+      "ipa": {
+        "N": "/wedro/",
+        "SE": "/vedro/",
+        "W": "/wedr/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "居家器物",
+      "definition": "盛放水或其他液体的桶",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "O",
+        "gender": "中",
+        "animacy": "无生",
+        "number": "SG",
+        "inflection": "modern-class-assigned; full paradigm not validated"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0352",
+      "pos": "verb",
+      "gloss": "折叠",
+      "aliases": [],
+      "proto": "*skladatʲ",
+      "forms": {
+        "N": "skladať",
+        "SE": "skladat",
+        "W": "składaþ"
+      },
+      "ipa": {
+        "N": "/skladatʲ/",
+        "SE": "/skladat/",
+        "W": "/skɫadaθ/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "日常动作",
+      "definition": "反复、持续地折起或整理可折物；不预设完成体对应",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive-provisional",
+        "inflection": "modern-class-assigned; finite forms not independently certified"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0353",
+      "pos": "verb",
+      "gloss": "擦拭",
+      "aliases": [],
+      "proto": "*vÿtiratʲ",
+      "forms": {
+        "N": "ŵÿtirať",
+        "SE": "vitirat",
+        "W": "ŵÿtiraþ"
+      },
+      "ipa": {
+        "N": "/wɨtiratʲ/",
+        "SE": "/vitirat/",
+        "W": "/wɨtiraθ/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "日常动作",
+      "definition": "用布或手擦拭表面，不专指清洗整件物品",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive-provisional",
+        "inflection": "modern-class-assigned; finite forms not independently certified"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0354",
+      "pos": "verb",
+      "gloss": "上锁（过程）",
+      "aliases": [],
+      "proto": "*zapiratʲ",
+      "forms": {
+        "N": "zapirať",
+        "SE": "zapirat",
+        "W": "zapiraþ"
+      },
+      "ipa": {
+        "N": "/zapiratʲ/",
+        "SE": "/zapirat/",
+        "W": "/zapiraθ/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "日常动作",
+      "definition": "给门、柜等上锁的持续或习惯动作",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive-provisional",
+        "inflection": "modern-class-assigned; finite forms not independently certified"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0355",
+      "pos": "verb",
+      "gloss": "开锁（过程）",
+      "aliases": [],
+      "proto": "*otpiratʲ",
+      "forms": {
+        "N": "otpirať",
+        "SE": "otpirat",
+        "W": "otpiraþ"
+      },
+      "ipa": {
+        "N": "/otpiratʲ/",
+        "SE": "/otpirat/",
+        "W": "/otpiraθ/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "日常动作",
+      "definition": "解开锁具的持续或习惯动作",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive-provisional",
+        "inflection": "modern-class-assigned; finite forms not independently certified"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0356",
+      "pos": "verb",
+      "gloss": "发光、照明",
+      "aliases": [],
+      "proto": "*svetitʲ",
+      "forms": {
+        "N": "sŵetiť",
+        "SE": "svetit",
+        "W": "sŵetiþ"
+      },
+      "ipa": {
+        "N": "/swetitʲ/",
+        "SE": "/svetit/",
+        "W": "/swetiθ/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "光与感知",
+      "definition": "发出光亮或为某处提供照明",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "I",
+        "aspect": "IPFV",
+        "valency": "—/ACC",
+        "kind": "productive-provisional",
+        "inflection": "modern-class-assigned; finite forms not independently certified"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0357",
+      "pos": "verb",
+      "gloss": "使……熄灭",
+      "aliases": [],
+      "proto": "*gasitʲ",
+      "forms": {
+        "N": "ġasiť",
+        "SE": "gasit",
+        "W": "ġasiþ"
+      },
+      "ipa": {
+        "N": "/ɣasitʲ/",
+        "SE": "/ɡasit/",
+        "W": "/ɣasiθ/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "日常动作",
+      "definition": "使火、灯等熄灭的持续或反复动作",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "I",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive-provisional",
+        "inflection": "modern-class-assigned; finite forms not independently certified"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0358",
+      "pos": "verb",
+      "gloss": "测量",
+      "aliases": [],
+      "proto": "*meritʲ",
+      "forms": {
+        "N": "meriť",
+        "SE": "merit",
+        "W": "meriþ"
+      },
+      "ipa": {
+        "N": "/meritʲ/",
+        "SE": "/merit/",
+        "W": "/meriθ/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "生产与学习",
+      "definition": "对长度、时间或其他量进行测定",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "I",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive-provisional",
+        "inflection": "modern-class-assigned; finite forms not independently certified"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0359",
+      "pos": "verb",
+      "gloss": "归还",
+      "aliases": [],
+      "proto": "*vračatʲ",
+      "forms": {
+        "N": "ŵračať",
+        "SE": "vračat",
+        "W": "ŵračaþ"
+      },
+      "ipa": {
+        "N": "/wrat͡ʃatʲ/",
+        "SE": "/vrat͡ʃat/",
+        "W": "/wrat͡ʃaθ/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "日常动作",
+      "definition": "把借来的物品返还给持有人",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC+DAT",
+        "kind": "productive-provisional",
+        "inflection": "modern-class-assigned; finite forms not independently certified"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
+    },
+    {
+      "id": "D0360",
+      "pos": "verb",
+      "gloss": "清扫、整理",
+      "aliases": [],
+      "proto": "*ubiratʲ",
+      "forms": {
+        "N": "ubirať",
+        "SE": "ubirat",
+        "W": "ubiraþ"
+      },
+      "ipa": {
+        "N": "/ubiratʲ/",
+        "SE": "/ubirat/",
+        "W": "/ubiraθ/"
+      },
+      "stage": "v09-lexicon",
+      "source": [
+        "_articles/article-451.md"
+      ],
+      "theme": "居家动作",
+      "definition": "清理并整理场所或物品；不等同于已登记的‘洗净’",
+      "referenceKind": "Worldbuilding-internal Slavic-inspired constructed historical root; not externally attested Proto-Slavic",
+      "detail": {
+        "class": "A",
+        "aspect": "IPFV",
+        "valency": "ACC",
+        "kind": "productive-provisional",
+        "inflection": "modern-class-assigned; finite forms not independently certified"
+      },
+      "ruleIds": [
+        "BASE-N",
+        "BASE-SE",
+        "BASE-W"
+      ],
+      "notes": [
+        "V0.9日常与生产词汇增补；正式确定三方言词典原形，现代完整屈折仍须通过形态学测试",
+        "词根为俄庇娜内部比较构拟，不代表现实世界已证实的历史词源"
+      ],
+      "inflectionCoverage": "lemma-only",
+      "ipaStatus": "以V0.6已登记音位字母对应得到的宽式IPA；尚无重音或自然语流标注"
     }
   ],
   "errata": [
@@ -14224,5 +15108,59 @@
       "v08N13ThirteenMismatches": 0
     },
     "policy": "保留已登记词典原形；其他生成为有源历史对应、校准类推或低证据形态候选。不可把所有生成结果标记为完整现行屈折。"
+  },
+  "v09LexicalExpansion": {
+    "date": "2026-11-09",
+    "wordCount": 21,
+    "byPos": {
+      "noun": 12,
+      "verb": 9
+    },
+    "newIds": [
+      "D0340",
+      "D0341",
+      "D0342",
+      "D0343",
+      "D0344",
+      "D0345",
+      "D0346",
+      "D0347",
+      "D0348",
+      "D0349",
+      "D0350",
+      "D0351",
+      "D0352",
+      "D0353",
+      "D0354",
+      "D0355",
+      "D0356",
+      "D0357",
+      "D0358",
+      "D0359",
+      "D0360"
+    ],
+    "lexicalThemes": [
+      "寝具",
+      "居家器物",
+      "洗护用品",
+      "建筑居家",
+      "衣物与随身物件",
+      "交通与地理",
+      "日常动作",
+      "光与感知",
+      "生产与学习",
+      "居家动作"
+    ],
+    "status": "canonical-headwords-only",
+    "rootPolicy": "全部为俄庇娜内部创设的斯拉夫式历史构拟；仅采用现有正字法与已确认的三方言对应，不新设通用音变",
+    "historicalBaseline": {
+      "previousTotal": 339,
+      "previousThreeForms": 339,
+      "previousIPA": 1017,
+      "newTotal": 360,
+      "newThreeForms": 360,
+      "newIPA": 1080
+    },
+    "sourceOfAuthority": "_articles/article-451.md"
   }
 }
