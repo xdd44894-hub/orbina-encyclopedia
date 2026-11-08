@@ -3,7 +3,7 @@
   "language": "Žaġręn",
   "dictVersion": "0.5",
   "basedOnLanguageVersion": "Žaġręn V0.9词典原形补全（沿用V0.8音系、V0.7核心句法）",
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "normativeSource": "_articles/article-451.md",
   "usage": "V0.9在不更动已有335条词典原形的前提下，将V0.8保留候选的4个祖语动词登记为三方言不定式原形；沿用既有21条音变。现代完整变位、重音、语流未完成；V0.8的339条审查记录保留为历史基线。 V0.9增补21条居家和日常行为词条，现行总词条360；原339条词义和词形保留不动。新词仅登记三方言原形及宽式IPA，完整屈折不自动纳入正史。",
   "branches": {
@@ -3122,6 +3122,14 @@
         "status": "registered-modern-infinitive-lemma-only",
         "formBasis": "V0.8原形候选经现存三方言不定式词尾规则与V0.4历史分词交叉核对",
         "pending": "不预设现代现在时 -aj- 交替和完整人称形式"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -3232,6 +3240,14 @@
         "status": "registered-modern-infinitive-lemma-only",
         "formBasis": "V0.8原形候选经现存三方言不定式词尾规则与V0.4历史分词交叉核对",
         "pending": "不把分词 -en 系列直接作为现代动词变位规则"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "I",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -7233,6 +7249,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -7362,6 +7386,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -7448,6 +7480,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -7749,6 +7789,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -7792,6 +7840,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -7964,6 +8020,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -8007,6 +8071,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -8050,6 +8122,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -8093,6 +8173,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -8179,6 +8267,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -8222,6 +8318,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -8308,6 +8412,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -8351,6 +8463,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -8437,6 +8557,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -8523,6 +8651,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -8609,6 +8745,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -8652,6 +8796,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -8824,6 +8976,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9076,6 +9236,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "E",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9118,6 +9286,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "E",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9202,6 +9378,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "I",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9244,6 +9428,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9286,6 +9478,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "I",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9328,6 +9528,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9370,6 +9578,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "I",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9454,6 +9670,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9496,6 +9720,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "I",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9538,6 +9770,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9580,6 +9820,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9622,6 +9870,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "E",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9664,6 +9920,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9748,6 +10012,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "I",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9832,6 +10104,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -9874,6 +10154,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -11378,6 +11666,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -11423,6 +11719,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -11467,6 +11771,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -11571,6 +11883,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -11615,6 +11935,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -11659,6 +11987,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -11704,6 +12040,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -11764,6 +12108,14 @@
           "SE12"
         ],
         "scope": "词典原形与宽式IPA升级；历史范式保留源版本，不构成所有现代格位已核定"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -11809,6 +12161,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -11899,6 +12259,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -11944,6 +12312,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -11988,6 +12364,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12033,6 +12417,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12077,6 +12469,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12122,6 +12522,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12167,6 +12575,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12212,6 +12628,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12257,6 +12681,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12347,6 +12779,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12527,6 +12967,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12572,6 +13020,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12616,6 +13072,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12661,6 +13125,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12706,6 +13178,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "I",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记三方言不定式去尾后的词干元音 + 与历史A/I/E类结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12793,6 +13273,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12837,6 +13325,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12882,6 +13378,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -12926,6 +13430,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13142,6 +13654,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13186,6 +13706,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13231,6 +13759,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13275,6 +13811,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13319,6 +13863,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13364,6 +13916,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13409,6 +13969,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13454,6 +14022,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13499,6 +14075,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13544,6 +14128,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13588,6 +14180,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13633,6 +14233,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "O",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -13678,6 +14286,14 @@
       "lexicalReviewV08": {
         "status": "reviewed-unchanged",
         "scope": "当前范围未发现需更新的限定音变；不表示所有音节重音和格位已审核"
+      },
+      "modernMorphologyClassReviewV09": {
+        "date": "2026-11-09",
+        "reviewClass": "A",
+        "status": "provisional-structural-classification",
+        "evidence": "已登记性别 + 北/东南当前词典原形词尾 + 与历史A/O类的结构比较",
+        "holdout": "有历史分类的旧词中，符合检测条件的名词25/25、动词40/40和推断规则一致；同源数据自检不等于真实口语语法验证",
+        "paradigm": "现代具体格尾/变位是候选，未据此正式确认整个范式"
       }
     },
     {
@@ -15097,17 +15713,21 @@
   },
   "modernMorphologyV09": {
     "reference": "assets/data/zagren-modern-morphology-v09.json",
-    "indexWordCount": 205,
-    "nounCount": 132,
-    "verbCount": 73,
-    "corePositionCount": 7818,
-    "filledIncludesCandidates": 6148,
-    "unfilled": 1670,
+    "indexWordCount": 226,
+    "nounCount": 144,
+    "verbCount": 82,
+    "corePositionCount": 8628,
+    "filledIncludesCandidates": 6859,
+    "unfilled": 1769,
     "sourceValidation": {
       "pilot840Mismatches": 0,
-      "v08N13ThirteenMismatches": 0
+      "v08N13ThirteenMismatches": 0,
+      "classHoldoutNoun": "25/25",
+      "classHoldoutVerb": "40/40"
     },
-    "policy": "保留已登记词典原形；其他生成为有源历史对应、校准类推或低证据形态候选。不可把所有生成结果标记为完整现行屈折。"
+    "policy": "360个原形为词典正式形式；其余词形按历史、试验及试分型逐格标注，不能以已填充计数宣称现代完整屈折已核定。",
+    "analyticFuture": 168,
+    "newV09Vocabulary": 21
   },
   "v09LexicalExpansion": {
     "date": "2026-11-09",
@@ -15162,5 +15782,23 @@
       "newIPA": 1080
     },
     "sourceOfAuthority": "_articles/article-451.md"
+  },
+  "v09MorphologyClassification": {
+    "date": "2026-11-09",
+    "reviewedCount": 77,
+    "nounAorO": 52,
+    "verbAIorE": 25,
+    "heldout": {
+      "nounCases": 25,
+      "nounAgreement": 25,
+      "verbCases": 40,
+      "verbAgreement": 40
+    },
+    "status": "structural candidates, not certified modern morphology",
+    "notes": [
+      "77条此前仅靠词形形状生成的类别现在统一加了可追溯的类别依据标记",
+      "复核仅证明已标注旧词与启发式匹配，不证明全部现代格位自然正确",
+      "3个新增中性O类名词只记原形，不能套阳性O类格尾"
+    ]
   }
 }
