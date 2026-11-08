@@ -15477,6 +15477,24 @@
       "afterLexemes": 226,
       "sourceV07PilotPreserved": 840,
       "sourceV08N13Preserved": 13
+    },
+    "classShapeHoldout": {
+      "noun": 25,
+      "nounMatch": 25,
+      "verb": 40,
+      "verbMatch": 40,
+      "scope": "与已存在类目标签的旧词比对，不是新词类目自然语言实证"
+    },
+    "lexicalExpansion": {
+      "newEntries": 21,
+      "newNouns": 12,
+      "newVerbs": 9,
+      "newNeuterLemmasWithoutParadigm": 3,
+      "totalHeadwords": 360,
+      "nounVerbWords": 226,
+      "coreExpected": 8628,
+      "coreFilled": 6859,
+      "coreBlank": 1769
     }
   }
 }
