@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="俄庇娜百科 · 扎格伦字典 V0.5，339条带出处的三方言词汇，按中文、词根、拼写、IPA与词性搜索。">
+<meta name="description" content="俄庇娜百科 · 扎格伦字典 V0.5，360条带出处的三方言词汇，按中文、词根、拼写、IPA与词性搜索。">
 <title>《扎格伦字典》V0.5 · Žaġręn Dictionary</title>
 <style>
 :root{color-scheme:dark;--bg:#0d1720;--nav:#12232d;--p:#172a35;--fg:#edf5f7;--muted:#a7c0ce;--border:#385361;--teal:#a4d6dd}
@@ -56,9 +56,9 @@ footer{border-top:1px solid var(--border);margin-top:3rem;padding:1rem 0;color:v
 <h1>扎格伦字典</h1>
 <p class="lead">藏朔原语的现行第五版统一汇编字典。每条记录都有中文释义、可考的三方言词形、来源与版本阶段；V0.6 已演化词形和此前 V0.1–V0.5 的历史词形严格区分。</p>
 <div class="metrics">
-<div class="metric"><b id="countAll">339</b><span>词典条目</span></div>
-<div class="metric"><b id="countTri">339</b><span>三方言词形齐全</span></div>
-<div class="metric"><b id="countModern">197</b><span>V0.6–V0.9 已登记现代原形</span></div>
+<div class="metric"><b id="countAll">360</b><span>词典条目</span></div>
+<div class="metric"><b id="countTri">360</b><span>三方言词形齐全</span></div>
+<div class="metric"><b id="countModern">218</b><span>V0.6–V0.9 已登记现代原形</span></div>
 <div class="metric"><b>3</b><span>区域中心方言</span></div>
 </div>
 <p class="small"><a href="../assets/data/zagren-dictionary-v05.txt" download="扎格伦字典V0.5.txt">下载完整 TXT 词典</a>　·　<a href="../assets/data/zagren-dictionary-v05.json">查看结构化 JSON</a>　·　<a href="../articles/article-456/">阅读词典前言与编写规范</a>　·　<a href="../assets/data/zagren-language-compendium-v09.txt">统一语言总卷 TXT</a></p>
@@ -72,8 +72,8 @@ footer{border-top:1px solid var(--border);margin-top:3rem;padding:1rem 0;color:v
 <div id="more" class="center" hidden><button type="button" id="loadMore">显示更多条目</button></div>
 <div class="note"><b>词典版本说明：</b>本版保留原279条词目，并新增60条教育、表达、生活与时间主题词形；旧范式与新词典原形不会被混为一谈。现在显示的IPA是逐字母规则生成的宽式音位，<b>尚未标注重音、语流音变</b>，不能当作最终准确口音。<br><b>读法说明：</b>与“现实斯拉夫语相似”不等于可以直接互译。V0.6 标为现代的词形，只表示对应第一阶段音变及词典原形已有来源；完整变格、重音和独立 IPA 尚需逐步校验。未注明的 V0.6 语法变化不得从旧版字典自行推断。</div>
 <section class="section">
-<h2>V0.9名词与动词批量形态学</h2><p class="small">132个名词、73个动词已进入三方言批量语法索引；6,148个位置有已登记原形或不同等级候选，1,670个位置仍留空。这些数字不代表已核定现代格位数。<a href="../zagren-morphology/">查看现代形态学实验室</a> · <a href="../assets/data/zagren-modern-morphology-v09.json">查看完整候选JSON</a>。</p><h2>后续构建流程与西部形态研究</h2><p class="small">正式研究计划按十阶段推进：西部W11的20格位、62个受限音变候选，再到名词、动词、修饰词、重音和现代三方言语料。现已区分4个裸ġ结尾与16个显性格尾，但尚未核准20个现代格位。<a href="../articles/article-451/">查看详细流程与验收门槛</a> · <a href="../assets/data/zagren-v09-morphology-audit.json">查看逐项任务</a>。</p><h2>历史书面语与现代词典</h2><p class="small">旧V0.2–V0.4三方言范式现正式属于早期三支书面语的语法传统，不因现代音变而删除。109个需要核对的格位位置中有27项具备现代对应，其中62项有音变候选，20项尚无可靠推导；全部82项仍须审订现代格尾。<a href="../articles/article-451/">查看语言史分层</a>。</p><h2>V0.9 四条动词原形补全 · V0.8历史音系</h2>
-<p class="small">V0.8阶段已审阅151个旧阶段条目：5条正式升级、142条保留原形，另校订2条新录词。V0.9进一步将原有4条祖语候选登记为现代不定式原形，现行339条词典条目均具有三方言原形；完整变位与重音仍待验证。</p>
+<h2>V0.9词汇扩充 · 新增21个日常词</h2><p class="small">新增12个名词（寝具、家用品、交通物件）及9个动词（清扫、测量、归还等），三大方言原形及宽式IPA已纳入现行词典。新增的是正式词典原形；完整变格变位仍是候选。当前词典总数360条、宽式IPA 1,080条。</p><h2>V0.9名词与动词批量形态学</h2><p class="small">144个名词、82个动词已进入三方言批量语法索引；6,859个位置有已登记原形或不同等级候选，1,769个位置仍留空。这些数字不代表已核定现代格位数。<a href="../zagren-morphology/">查看现代形态学实验室</a> · <a href="../assets/data/zagren-modern-morphology-v09.json">查看完整候选JSON</a>。</p><h2>后续构建流程与西部形态研究</h2><p class="small">正式研究计划按十阶段推进：西部W11的20格位、62个受限音变候选，再到名词、动词、修饰词、重音和现代三方言语料。现已区分4个裸ġ结尾与16个显性格尾，但尚未核准20个现代格位。<a href="../articles/article-451/">查看详细流程与验收门槛</a> · <a href="../assets/data/zagren-v09-morphology-audit.json">查看逐项任务</a>。</p><h2>历史书面语与现代词典</h2><p class="small">旧V0.2–V0.4三方言范式现正式属于早期三支书面语的语法传统，不因现代音变而删除。109个需要核对的格位位置中有27项具备现代对应，其中62项有音变候选，20项尚无可靠推导；全部82项仍须审订现代格尾。<a href="../articles/article-451/">查看语言史分层</a>。</p><h2>V0.9 四条动词原形补全 · V0.8历史音系</h2>
+<p class="small">V0.8阶段已审阅151个旧阶段条目：5条正式升级、142条保留原形，另校订2条新录词。V0.9进一步将原有4条祖语候选登记为现代不定式原形，截至当时339条词典条目均有三方言原形；V0.9再新增21条，现行360条均有三方言原形；完整变位与重音仍待验证。</p>
 <p><a href="../assets/data/zagren-v09-morphology-audit.json">V0.9第二、三阶段：597项古今检查、62个音变候选</a>　·　<a href="../assets/data/zagren-v09-lemma-audit.json">查看V0.9四词补全与142旧词审订清单</a>　·　<a href="../zagren-phonology/">查看历时音系与审阅结果</a>　·　<a href="../assets/data/zagren-v08-lexicon-review.json">339条词形适用性审阅记录</a></p>
 <h2>新增词汇的参考来源</h2>
 <p class="small">俄语参照字形以 <a href="https://orfo.ruslang.ru/">俄罗斯科学院 Академос 正字法资源</a>及 <a href="https://ruslang.ru/normativnyje_slovari">国家规范词典目录</a>作为研究入口；选词围绕阅读、教育、交流、时间及生活主题。<strong>藏朔原语祖语形式和三方言是本项目自行构拟，不是俄罗斯机构出版的词条。</strong></p>
@@ -100,7 +100,7 @@ footer{border-top:1px solid var(--border);margin-top:3rem;padding:1rem 0;color:v
 const q=(id)=>document.getElementById(id);
 let data=null,matched=[],limit=30;
 const posText={noun:"名词",verb:"动词",adj:"形容词",participle:"分词",pronoun:"代词",adverb:"副词",preposition:"介词",conjunction:"连词",particle:"助词",demonstrative:"指示词",interrogative:"疑问词",interjection:"感叹词",numeral:"数词"};
-const stageText={"v06":"V0.6已演化","v06-new-root":"V0.6新词根","v06-core":"V0.6核心新词","legacy":"继承旧版","attested":"语料实见","proto-only":"仅祖语构拟","v07-lexicon":"V0.7新录词","v08-revised":"V0.8同根修订","v08-reviewed":"V0.8已审阅保留原形","v09-lemma":"V0.9正式不定式"};
+const stageText={"v06":"V0.6已演化","v06-new-root":"V0.6新词根","v06-core":"V0.6核心新词","legacy":"继承旧版","attested":"语料实见","proto-only":"仅祖语构拟","v07-lexicon":"V0.7新录词","v08-revised":"V0.8同根修订","v08-reviewed":"V0.8已审阅保留原形","v09-lemma":"V0.9正式不定式","v09-lexicon":"V0.9日常生活新词"};
 function node(tag,cl,value){const x=document.createElement(tag);if(cl)x.className=cl;if(value!==undefined)x.textContent=value;return x}
 function normalize(x){return String(x||"").normalize("NFC").toLocaleLowerCase()}
 function options(sel,items){for(const [value,label] of items){const op=document.createElement("option");op.value=value;op.textContent=label;sel.append(op)}}
