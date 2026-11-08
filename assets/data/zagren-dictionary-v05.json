@@ -14196,6 +14196,19 @@
         "SE14"
       ],
       "rule": "推导候选以早期格尾保留为假设；字典V0.5的339正式原形未被修改。所有现代非主格形式仍须核定。"
+    },
+    "constructionRoadmap": {
+      "canonicalArticle": "_articles/article-451.md",
+      "structuredPlan": "assets/data/zagren-v09-morphology-audit.json",
+      "stageCount": 10,
+      "stages": "R00-R09",
+      "westernStudy": {
+        "unresolved": 20,
+        "bareFinalG": 4,
+        "overtEnding": 16,
+        "newlyConfirmedModernInflections": 0
+      },
+      "consistencyNote": "本研究规划不更动现行339词条、21音变及28句法规范；格尾候选不自动转正"
     }
   }
 }
