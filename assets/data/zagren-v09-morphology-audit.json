@@ -32,7 +32,10 @@
     "modernUnresolvedOfDriftPositions": 82,
     "v09Phase3SoundLawCandidatePositions": 62,
     "v09Phase3StillWithoutSoundLawCandidate": 20,
-    "v09Phase3ModernUnverifiedPositions": 82
+    "v09Phase3ModernUnverifiedPositions": 82,
+    "westCasePhonologyReviewed": 20,
+    "westCaseBareFinalG": 4,
+    "westCaseOvertSuffix": 16
   },
   "nounLexemes": [
     {
@@ -5786,7 +5789,18 @@
         "changeRule": "W11 and V0.7 animate ACC za",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "bare-final-g-competing-case-analysis",
+          "attestedModern": null,
+          "compatibility": "W11 could yield a syncretic NOM-like surface only if grammatical case permits loss of final ġ",
+          "phonologicalTrial": {
+            "surface": "bo",
+            "status": "conditional-sound-change-prediction-not-certified-modern-case"
+          },
+          "alternativeInterpretation": "case-conditioned retention of ġ; or analytical case marking / form levelling not yet specified",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M07",
@@ -5801,7 +5815,18 @@
         "changeRule": "W11 and V0.7 animate ACC za",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "boġu",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M07",
@@ -5829,7 +5854,18 @@
         "changeRule": "W11 and V0.7 animate ACC za",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "boġom",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M07",
@@ -5844,7 +5880,18 @@
         "changeRule": "W11 and V0.7 animate ACC za",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "bare-final-g-competing-case-analysis",
+          "attestedModern": null,
+          "compatibility": "W11 could yield a syncretic NOM-like surface only if grammatical case permits loss of final ġ",
+          "phonologicalTrial": {
+            "surface": "bo",
+            "status": "conditional-sound-change-prediction-not-certified-modern-case"
+          },
+          "alternativeInterpretation": "case-conditioned retention of ġ; or analytical case marking / form levelling not yet specified",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M07",
@@ -5859,7 +5906,18 @@
         "changeRule": "W11 and V0.7 animate ACC za",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "boġÿ",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M07",
@@ -5874,7 +5932,18 @@
         "changeRule": "W11 and V0.7 animate ACC za",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "boġoŵ",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M07",
@@ -5889,7 +5958,18 @@
         "changeRule": "W11 and V0.7 animate ACC za",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "boġam",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M07",
@@ -5904,7 +5984,18 @@
         "changeRule": "W11 and V0.7 animate ACC za",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "boġoŵ",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M07",
@@ -5919,7 +6010,18 @@
         "changeRule": "W11 and V0.7 animate ACC za",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "boġami",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M07",
@@ -5934,7 +6036,18 @@
         "changeRule": "W11 and V0.7 animate ACC za",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "boġaħ",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M08",
@@ -6042,7 +6155,18 @@
         "changeRule": "W11",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "bare-final-g-competing-case-analysis",
+          "attestedModern": null,
+          "compatibility": "W11 could yield a syncretic NOM-like surface only if grammatical case permits loss of final ġ",
+          "phonologicalTrial": {
+            "surface": "sne",
+            "status": "conditional-sound-change-prediction-not-certified-modern-case"
+          },
+          "alternativeInterpretation": "case-conditioned retention of ġ; or analytical case marking / form levelling not yet specified",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M08",
@@ -6111,7 +6235,18 @@
         "changeRule": "W11",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "sneġu",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M08",
@@ -6219,7 +6354,18 @@
         "changeRule": "W11",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "sneġom",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M08",
@@ -6288,7 +6434,18 @@
         "changeRule": "W11",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "bare-final-g-competing-case-analysis",
+          "attestedModern": null,
+          "compatibility": "W11 could yield a syncretic NOM-like surface only if grammatical case permits loss of final ġ",
+          "phonologicalTrial": {
+            "surface": "sne",
+            "status": "conditional-sound-change-prediction-not-certified-modern-case"
+          },
+          "alternativeInterpretation": "case-conditioned retention of ġ; or analytical case marking / form levelling not yet specified",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M08",
@@ -6357,7 +6514,18 @@
         "changeRule": "W11",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "sneġÿ",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M08",
@@ -6426,7 +6594,18 @@
         "changeRule": "W11",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "sneġoŵ",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M08",
@@ -6495,7 +6674,18 @@
         "changeRule": "W11",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "sneġam",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M08",
@@ -6564,7 +6754,18 @@
         "changeRule": "W11",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "sneġÿ",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M08",
@@ -6633,7 +6834,18 @@
         "changeRule": "W11",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "sneġami",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M08",
@@ -6702,7 +6914,18 @@
         "changeRule": "W11",
         "explanation": "早期三支书面语形式已保留；不可凭现代词典原形推导该格位的新词尾",
         "reconstructedModernCandidate": null,
-        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域"
+        "nextAction": "不得仅凭W11主格词尾ġ脱落，推断属格、与格、复数及全部斜格；需独立分析现代格尾和宾格za作用域",
+        "westCaseStudyV09": {
+          "subgroup": "overt-inflectional-ending-preserves-intervocalic-g-phonologically",
+          "attestedModern": null,
+          "compatibility": "W11 by itself does not delete medial ġ before preserved overt suffixes",
+          "phonologicalTrial": {
+            "surface": "sneġaħ",
+            "status": "phonologically-compatible-historical-form-not-modern-certified"
+          },
+          "alternativeInterpretation": "later analogical suffix change or reduction may still change the historical form",
+          "requiredTest": "Compare full NP in NOM/GEN/DAT/ACC/INS/LOC and SG/PL with existing W11,W S07? and W za restriction; do not generalize za outside animate masculine singular."
+        }
       },
       {
         "lexemeId": "M11",
@@ -7604,5 +7827,154 @@
       "旧范式继续属于历史正史；原27项具体现代依据不受影响。",
       "现代字典继续保留339个已登记原形。"
     ]
+  },
+  "westCaseMorphologyV09": {
+    "title": "V0.9第四阶段：西部雷西尼昂帕20个未定格位与部分分析化假说",
+    "date": "2026-11-08",
+    "scope": "在109个古今差异位置中，27个有具体对照，62个仅有音变许可候选，剩余20个集中在W的M07神明与M08雪。现逐项划分音韵边界与格位问题，不将旧语法无证据地转为现代语法。",
+    "authority": "research-framework-and-test-plan; not a completed western modern paradigm",
+    "settledRules": [
+      {
+        "id": "W11",
+        "claim": "词末元音后的ġ可脱落，但带显性词尾时，ġ位于词中，W11本身不能删除它",
+        "status": "already-normative",
+        "source": "assets/data/zagren-v08-diachrony.json"
+      },
+      {
+        "id": "M07",
+        "claim": "西部阳性有生单数宾格短语存在za标记；不得把za视为词干或推广至所有格位及无生名词",
+        "status": "already-normative",
+        "source": "assets/data/zagren-syntax-v07.json"
+      },
+      {
+        "id": "A16",
+        "claim": "神明现代主格bo；受控宾格za boġ",
+        "status": "controlled-example",
+        "source": "assets/data/zagren-syntax-tests-v07.json"
+      },
+      {
+        "id": "A04",
+        "claim": "雪现代词典原形sne，受控宾格sne",
+        "status": "controlled-example",
+        "source": "assets/data/zagren-syntax-tests-v07.json"
+      },
+      {
+        "id": "A14",
+        "claim": "西部od dom示例说明传统属格功能仍可由介词与合流词形共同表达，但不能从一例推导神明、雪的全部属格",
+        "status": "controlled-example",
+        "source": "assets/data/zagren-syntax-tests-v07.json"
+      }
+    ],
+    "classification": {
+      "bareFinalG": 4,
+      "overtSuffix": 16
+    },
+    "hypotheses": [
+      {
+        "id": "W-H1",
+        "name": "保守斜格词干",
+        "proposal": "古典显性词尾前的ġ继续保留（例如boġu、sneġom），但词尾在现代是否仍有效需逐个证明",
+        "scope": "16 overt-suffix cases",
+        "status": "phonologically-compatible-only",
+        "evidence": "W11 does not predict medial deletion"
+      },
+      {
+        "id": "W-H2",
+        "name": "裸尾格位合流",
+        "proposal": "对于早期形式恰好以ġ结束的属格和处所格，W11若直接作用会得到bo、sne，与现代主格同形；但也可能发生格位保护/重新加词尾",
+        "scope": "4 bare-final-g cases",
+        "status": "competing-hypothesis",
+        "evidence": "W11 phonological conditioning, not independent GEN/LOC attestation"
+      },
+      {
+        "id": "W-H3",
+        "name": "局部分析化与词组标记",
+        "proposal": "在传统屈折趋于同形的位置，介词或专门宾格标记可帮助区分语法功能，已知za仅可用于特定阳性有生宾格",
+        "scope": "limited and construction-specific",
+        "status": "partial-canon-partial-open",
+        "evidence": "A06 za brat, A16 za boġ, A14 od dom, A04 snow ACC"
+      }
+    ],
+    "guidingDecision": "优先研究部分分析型+保留屈折的混合范式；确立的是研究方向，不是20个格位的最终现代词形。",
+    "contrasts": [
+      {
+        "id": "W-C01",
+        "lexeme": "M07",
+        "gloss": "神明",
+        "modernNom": "bo",
+        "modernAccPhrase": "za boġ",
+        "historicalGen": "boġ",
+        "historicalDat": "boġu",
+        "questions": [
+          "现代属格是否与主格bo同形，还是因形态保护保留boġ？",
+          "与格boġu的旧尾是否仍活跃？",
+          "有生宾格za是否只局限于单数？"
+        ]
+      },
+      {
+        "id": "W-C02",
+        "lexeme": "M08",
+        "gloss": "雪",
+        "modernNom": "sne",
+        "modernAccPhrase": "sne",
+        "historicalGen": "sneġ",
+        "historicalDat": "sneġu",
+        "questions": [
+          "无生宾格同形是否保留？",
+          "属格sneġ是否可能变为sne？",
+          "词中ġ在带格尾时是否长期保留？"
+        ]
+      },
+      {
+        "id": "W-C03",
+        "lexeme": "M05/M06",
+        "gloss": "房屋/兄弟控制对照",
+        "modernNom": "dom / brat",
+        "modernContrast": "od dom / za brat",
+        "questions": [
+          "既有介词属格和有生宾格标记是否不依赖ġ词干？",
+          "什么类型发生格位同形、什么类型保留有形词尾？"
+        ]
+      }
+    ],
+    "perPositionEvidencePolicy": "每个位置必须单独存储词典原形、历史词形、条件性音段预测、屈折对照、句法证据和证据等级；对20个位置均保持modern=null，直到出现专门通过的受控语法样本或创作者明确新定规范。",
+    "tests": [
+      {
+        "id": "WC-01",
+        "task": "检查W11在词尾和在屈折后缀前的作用域",
+        "items": 20,
+        "gate": "所有候选均应符合词末/词中界限，不能把ġ一律删除"
+      },
+      {
+        "id": "WC-02",
+        "task": "比较GEN/LOC裸尾与NOM是否同形",
+        "items": 4,
+        "gate": "对4个格位给出至少两个竞争分析，并明确是否需要格标记"
+      },
+      {
+        "id": "WC-03",
+        "task": "比较有显性词尾的DAT/INS和复数",
+        "items": 16,
+        "gate": "分清音系可保留与现代格尾仍有效两种不同命题"
+      },
+      {
+        "id": "WC-04",
+        "task": "用已登记主格、宾格、属格介词构造限制性测试句",
+        "items": 3,
+        "gate": "必须保存来源词形、组分注释和逐方言对照；新例句不冒充历史文本"
+      },
+      {
+        "id": "WC-05",
+        "task": "在选择现行范式后回归28条句法规则与16组原有测试",
+        "items": 28,
+        "gate": "旧受控用法不回退，不能凭一例把za推广到其他格"
+      }
+    ],
+    "metrics": {
+      "westernUnresolvedPositions": 20,
+      "conditionalW11Bare": 4,
+      "medialGWithOvertEnding": 16,
+      "certifiedNewModernInflections": 0
+    }
   }
 }
