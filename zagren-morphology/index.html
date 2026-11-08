@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="藏朔原语 Žaġręn V0.9 现代名词与动词形态学批量实验室：132名词、73动词、三方言、古今来源和证据等级。">
+<meta name="description" content="藏朔原语 Žaġręn V0.9 现代名词与动词形态学批量实验室：144名词、82动词、三方言、古今来源和证据等级。">
 <title>Žaġręn V0.9 · 现代形态学实验室</title>
 <style>
 :root{color-scheme:dark;--bg:#0b1620;--panel:#182b36;--line:#385360;--text:#f0f6f7;--sub:#adc4ce;--accent:#a5dce2}
@@ -31,11 +31,11 @@ footer{border-top:1px solid var(--line);color:var(--sub);font-size:.82rem;paddin
 </style>
 </head>
 <body>
-<header><nav><a href="../">俄庇娜百科</a><a href="../zagren/">语言资料中心</a><a href="../zagren-dictionary/">339条现行词典</a><a href="../articles/article-451/">统一语言总纲</a></nav></header>
+<header><nav><a href="../">俄庇娜百科</a><a href="../zagren/">语言资料中心</a><a href="../zagren-dictionary/">360条现行词典</a><a href="../articles/article-451/">统一语言总纲</a></nav></header>
 <main>
 <div class="eyebrow">ŽAĠRĘN · V0.9 · MODERN MORPHOLOGY</div>
 <h1>现代形态学实验室</h1>
-<p class="lead">从早期三支书面语的格位、历史动词变位、V0.7校准模板以及现代词典原形出发，按北部、东南、西部三方言批量查看名词和动词变化。每种词形都保留不同的证据等级。</p>
+<p class="lead">从早期三支书面语的格位、历史动词变位、V0.7校准模板以及现代词典原形出发，按北部、东南、西部三方言批量查看名词和动词变化。当前含21个新词；每种词形都保留不同的证据等级。</p>
 <div class="stats">
 <div class="stat"><strong id="wordCount">—</strong><small>名词＋动词词条</small></div>
 <div class="stat"><strong id="filled">—</strong><small>已填充基本形态位置（含候选）</small></div>
@@ -75,6 +75,7 @@ const B=["N","SE","W"],cs=["NOM","GEN","DAT","ACC","INS","LOC"],ns=["SG","PL"],p
 const nslots=ns.flatMap(n=>cs.map(c=>n+"."+c));
 const vslots=["INF",...person.map(p=>"FIN."+p),...["M","F","N","PL"].map(p=>"PST."+p),...["2SG","2PL","1PL"].map(p=>"IMP."+p)];
 const sourceLabels={
+"v09-noun-class-template":"V0.9新词指定A/O类；格尾仍为候选","v09-neuter-lemma-only":"V0.9中性名词原形；中性格尾未定","v09-verb-class-template":"V0.9新词指定A/I类；变位仍为候选",
 "early-noun":"早期三支书面语转写候选","early-noun-extended":"早期名词补充范式候选","early-verb":"早期动词范式转写候选",
 "pilot-noun":"V0.7已校准类推候选","pilot-verb":"V0.7已校准类推候选",
 "shape-noun":"词形外观推断（低证据）","shape-verb":"词形外观推断（低证据）","lemma-only":"未确定现代屈折类型"};
@@ -124,7 +125,7 @@ async function init(){
   const res=await fetch("../assets/data/zagren-modern-morphology-v09.json",{cache:"no-cache"});
   if(!res.ok)throw Error("HTTP "+res.status);
   data=await res.json();all=data.lexemes||[];
-  if(all.length!==205||data.metrics.coreExpected!==7818||data.metrics.filledCorePositions+data.metrics.unfilledCorePositions!==7818)throw Error("数据版本和预期数量不匹配");
+  if(all.length!==data.metrics.totalNouns+data.metrics.totalVerbs||data.metrics.coreExpected!==data.metrics.totalNouns*36+data.metrics.totalVerbs*42||data.metrics.filledCorePositions+data.metrics.unfilledCorePositions!==data.metrics.coreExpected)throw Error("数据版本和预期数量不匹配");
   $("wordCount").textContent=all.length;$("filled").textContent=data.metrics.filledCorePositions.toLocaleString();$("missing").textContent=data.metrics.unfilledCorePositions.toLocaleString();$("controlled").textContent=data.metrics.controlledDialectUsages;
   $("pos").addEventListener("change",refreshEntries);$("search").addEventListener("input",refreshEntries);$("gloss").addEventListener("change",render);refreshEntries();
  }catch(err){$("entryStatus").textContent="加载失败："+err.message}
