@@ -8109,7 +8109,7 @@
         "id": "R03",
         "name": "名词、代词完整现代形态",
         "phase": "V0.9–V1.0前",
-        "state": "planned",
+        "state": "candidate-batch-index-in-progress",
         "input": [
           "名词132条、代词7条",
           "历史A/O/I/J及不规则变格",
@@ -8138,7 +8138,7 @@
         "id": "R04",
         "name": "动词与体、时态、语气的现代形态",
         "phase": "V0.9–V1.0前",
-        "state": "planned",
+        "state": "candidate-batch-index-in-progress",
         "input": [
           "动词73条",
           "历史V0.3规则及不规则动词",
@@ -8302,5 +8302,53 @@
         ]
       }
     ]
+  },
+  "modernBatchMorphologyV09": {
+    "version": "V0.9-morphology-batch-1",
+    "source": "assets/data/zagren-modern-morphology-v09.json",
+    "scope": "205个现代名词及动词的批量形态索引，不修改祖语与早期三支书面语",
+    "metrics": {
+      "totalDictionaryWords": 339,
+      "totalNouns": 132,
+      "totalVerbs": 73,
+      "coreExpected": 7818,
+      "sourceTypes": {
+        "lemma-only": 49,
+        "early-noun-extended": 7,
+        "early-noun": 14,
+        "early-verb": 36,
+        "shape-verb": 25,
+        "pilot-noun": 14,
+        "shape-noun": 52,
+        "pilot-verb": 8
+      },
+      "lexemesWithFullBasicParadigm": 153,
+      "lexemesWithAnyPredictedInflections": 156,
+      "corePositions": 7818,
+      "filledCorePositions": 6148,
+      "unfilledCorePositions": 1670,
+      "analyticFuturePositions": 141,
+      "sourceNounProfiles": 35,
+      "sourceVerbProfiles": 44,
+      "controlledGrammarPositions": 16,
+      "controlledDialectUsages": 48,
+      "protectedWesternObliques": 20,
+      "westAnimateAccConstructionEntries": 10
+    },
+    "regression": {
+      "archivedV07PilotPositionsCompared": 840,
+      "archivedV07PilotMismatches": 0,
+      "V08N13LivingInflectionPositionsCompared": 13,
+      "V08N13LivingMismatches": 0,
+      "priorControlledDialectUsagesRevalidated": 48,
+      "corePositionSum": 7818,
+      "testedSources": [
+        "assets/data/zagren-morphology-pilot-v07.txt",
+        "assets/data/zagren-v08-morphology-regression.json",
+        "assets/data/zagren-v09-morphology-audit.json"
+      ],
+      "level": "source-to-derived-record regression only; does not validate conjectured modern forms"
+    },
+    "warning": "仅词典原形与受控语料有正式/限定效力；historical/pilot/shape推导属候选。西部20个W11未定斜格仍留空。"
   }
 }
