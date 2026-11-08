@@ -14210,5 +14210,19 @@
       },
       "consistencyNote": "本研究规划不更动现行339词条、21音变及28句法规范；格尾候选不自动转正"
     }
+  },
+  "modernMorphologyV09": {
+    "reference": "assets/data/zagren-modern-morphology-v09.json",
+    "indexWordCount": 205,
+    "nounCount": 132,
+    "verbCount": 73,
+    "corePositionCount": 7818,
+    "filledIncludesCandidates": 6148,
+    "unfilled": 1670,
+    "sourceValidation": {
+      "pilot840Mismatches": 0,
+      "v08N13ThirteenMismatches": 0
+    },
+    "policy": "保留已登记词典原形；其他生成为有源历史对应、校准类推或低证据形态候选。不可把所有生成结果标记为完整现行屈折。"
   }
 }
