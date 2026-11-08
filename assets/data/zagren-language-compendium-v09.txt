@@ -2,10 +2,11 @@
 俄庇娜百科 · 《扎格伦字典 V0.5》 · 2026-11-06
 
 本卷以现行统一总纲和V0.5完整词典为准，补齐此前4条只有祖语构拟的动词现代词典原形；并将V0.2–V0.4旧范式正式确立为早期三支书面语历史文法。
-当前339条词典条目均有三方言原形，共1,017条宽式IPA；197条已登记现代原形、142条审查保留原形。
+现行360条词典条目均有三方言原形，共1,080条宽式IPA；218条已登记现代原形（含本轮21条），142条审查保留旧原形。
 四条新登记词仍未核定完整现代变位、重音和语流；V0.8音变、V0.7句法及三方言文学与早期文法史资料保留。109项词干变化检查位置中，27项有具体现代对应；另82项经过音变筛查，62项取得候选音段形态，20项西部斜格因规则限制暂不推断。所有82项现代完整格位仍需进一步验证。
 本轮进一步检视西部W11的20个未定格位，分为4个裸ġ结尾与16个带显性词尾，暂未新增正式现代格位。后续语言设定采用R00–R09十阶段构建、逐步验证与发布流程。
-本轮加入V0.9现代形态学批量索引：132名词、73动词（共205个词条），7,818个基本位置中6,148个有正式原形或分级候选、1,670个留空；另生成141项分析将来组合。候选格位不是正式现代变格。
+本轮更新V0.9现代形态学批量索引：144名词、82动词（共226词条），8,628个基本位置中6,859个有正式原形或分级候选、1,769个留空；另有168项分析将来组合。候选格位不是正式现代变格。
+本轮新增21条居家与日常活动词（D0340–D0360），原339条完整保存。新词三方言词典原形已正式登记；形态学试算是候选。
 
 ================= 第一编　现行统一语言总纲 =================
 
@@ -54,6 +55,38 @@ ai_search: true
 
 [查看109项逐格古今对应与分层原则](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-v09-morphology-audit.json) · [早期名词语法](https://xdd44894-hub.github.io/orbina-encyclopedia/articles/article-452/) · [早期动词语法](https://xdd44894-hub.github.io/orbina-encyclopedia/articles/article-453/) · [早期修饰语法](https://xdd44894-hub.github.io/orbina-encyclopedia/articles/article-454/)
 
+## V0.9词汇扩充（2026-11-09）：21个正式三方言新词
+
+现行词典增至**360条**，三方言词典原形全部登记，共**1,080条宽式IPA**。其中218条属于已登记现代原形（包括本轮21新词），另142条为V0.8审查后保留旧原形。新增词是世界观内部构拟，并非现实原始斯拉夫语的实证重建。
+
+| 中文 | 北部 | 东南 | 西部 |
+|---|---|---|---|
+| 枕头 | `poduška` | `poduška` | `podušk` |
+| 毯子 | `pokrÿŵa` | `pokriva` | `pokrÿŵ` |
+| 毛巾 | `ručnik` | `ručnik` | `ručnik` |
+| 肥皂 | `mÿlo` | `milo` | `mÿł` |
+| 镜子 | `zerkalo` | `zerkalo` | `zerkał` |
+| 梯子 | `lestŵa` | `lestva` | `łestŵ` |
+| 抽屉 | `jaščik` | `jaščik` | `jaščik` |
+| 柜子 | `škaf` | `škaf` | `škaf` |
+| 口袋 | `karman` | `karman` | `karman` |
+| 船（小型） | `lodka` | `lodka` | `łodk` |
+| 窗帘 | `zaŵesa` | `zavesa` | `zaŵes` |
+| 水桶 | `ŵedro` | `vedro` | `ŵedr` |
+| 折叠 | `skladať` | `skladat` | `składaþ` |
+| 擦拭 | `ŵÿtirať` | `vitirat` | `ŵÿtiraþ` |
+| 上锁（过程） | `zapirať` | `zapirat` | `zapiraþ` |
+| 开锁（过程） | `otpirať` | `otpirat` | `otpiraþ` |
+| 发光、照明 | `sŵetiť` | `svetit` | `sŵetiþ` |
+| 使……熄灭 | `ġasiť` | `gasit` | `ġasiþ` |
+| 测量 | `meriť` | `merit` | `meriþ` |
+| 归还 | `ŵračať` | `vračat` | `ŵračaþ` |
+| 清扫、整理 | `ubirať` | `ubirat` | `ubiraþ` |
+
+**新增的只是正式词典原形与宽式IPA。** 三个中性名词“肥皂／镜子／水桶”在校准中性变格前，仍只保存原形；其他新词的A/O类名词和A/I类动词变格变位为候选，而非已全面核准的现代语法。
+
+[词典完整JSON](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-dictionary-v05.json) · [现代形态索引](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-morphology/)。
+
 ## V0.9：四个祖语动词补全现代不定式词典原形
 
 本次依据V0.8已有的候选不定式、历史分词词根及三大方言不定式词尾对应，**正式确定四条词典原形**。这是一项俄庇娜世界观内部的新规范决定，不等于已核定各时态与人称变位。
@@ -65,7 +98,7 @@ ai_search: true
 | 使……冰封 | `zamraziť` | `zamrazit` | `zamraziþ` | *zamrazitʲ；zamrazen |
 | 忘记 | `zabÿť` | `zabit` | `zabÿþ` | *zabÿtʲ；zabÿt |
 
-**当前统计：339条词典条目、339条具有三方言现代原形、1,017条宽式IPA、197条已登记现代原形、142条V0.8审阅保留原形、0条仅祖语未定形。** 旧词保留原形不是否认其历史，也不表示现代屈折已全部验证。音系继续沿用V0.8现有21条音变，不添加不受约束的新音变。
+**现行统计：360条词典条目、360条具有三方言现代原形、1,080条宽式IPA、218条已登记现代原形、142条V0.8审阅保留原形、0条仅祖语未定形。** 旧词保留原形不是否认其历史，也不表示现代屈折已全部验证。音系继续沿用V0.8现有21条音变，不添加不受约束的新音变。
 
 后续V0.9形态研究按旧动词35、旧名词26、旧形容词41、旧分词19、功能词21的队列推进。尤其是“忘记”的不规则变位与“冻结”的词干交替，不应从不定式直接反推。
 
@@ -110,7 +143,7 @@ ai_search: true
 
 另外20项属于**西部“神明”（10）与“雪”（10）的斜格和复数**。W11虽然说明词末`ġ`可在现代主格中脱落，但不能因此断定历史属格`boġ`也必然变成`bo`，或现代所有复数必然沿用古式`boġ-`。特别是现代西部宾格`za boġ`已经显示主格和斜格存在词干/标记重分析。故这20项只登记问题，不编造现代形式。
 
-**证据等级严格分开：**现代正式词典原形仍为339条；此前27项有现代对照依据（其中13项是受限规则生成，非独立自然语料）；本轮62项属于音变许可下的历史格尾保留假设；20项仍无可用候选。**82项现代屈折仍未最终核定。**保留早期三支书面语的完整历史范式，不因后期语言变化而改写古文献。
+**证据等级严格分开：**现代正式词典原形现为360条；此前27项有现代对照依据（其中13项是受限规则生成，非独立自然语料）；本轮62项属于音变许可下的历史格尾保留假设；20项仍无可用候选。**82项现代屈折仍未最终核定。**保留早期三支书面语的完整历史范式，不因后期语言变化而改写古文献。
 
 [查看82项逐格状态、候选及音变规则](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-v09-morphology-audit.json)。
 
@@ -137,18 +170,18 @@ ai_search: true
 
 ## 藏朔原语后续设定构建：十阶段完整工作流程
 
-这是自V0.9开始实施的**研究、编纂与验证路线**。阶段编号R00–R09表示工作顺序，不等于现在已经公布的新语言版本；每个阶段通过验收后才能将对应的候选形式转为正史。现行基线为339条词典、1,017条三方言宽式IPA、21条音变与28条核心句法规则；早期三支书面语法另行保存。
+这是自V0.9开始实施的**研究、编纂与验证路线**。阶段编号R00–R09表示工作顺序，不等于现在已经公布的新语言版本；每个阶段通过验收后才能将对应的候选形式转为正史。现行基线为360条词典、1,080条三方言宽式IPA、21条音变与28条核心句法规则；早期三支书面语法另行保存。
 
 | 阶段 | 要解决的问题 | 具体工作与交付结果 | 完成标准 |
 |---|---|---|---|
-| **R00 基线与史料分层** | 避免古典、现代、祖语混用 | 整理词条时代、语域、来源、格位与证据等级；保护旧三卷范式 | 339词条和历史数据无损；词典、总纲、测试一致 |
+| **R00 基线与史料分层** | 避免古典、现代、祖语混用 | 整理词条时代、语域、来源、格位与证据等级；保护旧三卷范式 | 360词条及原339条历史数据无损；词典、总纲、测试一致 |
 | **R01 西部20格位** | `ġ`脱落与格位合流的关系 | 对4裸尾/16显尾分组，研究属、处所、与、工具、复数和`za`宾格作用域，制作最小对立句 | 20项逐一核定或明示未定；不违背`bo`/`za boġ`/`sne` |
 | **R02 62音变候选** | 现代词干与旧格尾是否兼容 | 按N11/N12/N14、SE11/SE14、W12逐词族审核，辨析格尾创新与类推 | 62项各有结论、证据等级和对应测试；不自动转正 |
-| **R03 名词与代词** | 三方言六格、复数、有生性 | 先检验14个代表名词的12位置×3方言（原504候选）和7代词，再扩展132名词 | 形成有例外说明的现代变格类别；正式格位可复核 |
-| **R04 动词与体** | 现代人称、过去时、祈使、时态和体 | 检验8高频动词的14位置×3方言（原336候选），再处理73动词及不规则类 | 独立核准规则与例外，过去时性别合流、分析将来不冲突 |
+| **R03 名词与代词** | 三方言六格、复数、有生性 | 先检验14个代表名词的12位置×3方言（原504候选）和7代词，再扩展144名词 | 形成有例外说明的现代变格类别；正式格位可复核 |
+| **R04 动词与体** | 现代人称、过去时、祈使、时态和体 | 检验8高频动词的14位置×3方言（原336候选），再处理82动词及不规则类 | 独立核准规则与例外，过去时性别合流、分析将来不冲突 |
 | **R05 修饰词与分词** | 性数格一致及构词 | 检验67形容词、20分词，比较级、关系形容词、北部`ẑ`与冬季词干 | 新范式能复现既有“铁制管道”“活着的兄弟”等句形 |
 | **R06 句法与语用** | 从单词进入真实句子 | 以28条现行规则、16组受控样本为基础，测试否定、疑问、条件、焦点、从句及方言差异 | 每个新结构有语法解析、反例及三方言对照 |
-| **R07 重音与语流** | 从宽式IPA走向可阅读发音 | 制定词干/格尾重音、音节与弱读、连读；按词族复查1,017条宽式读音 | 未证实重音不填写`ˈ`；读音规则及例外可重复检查 |
+| **R07 重音与语流** | 从宽式IPA走向可阅读发音 | 制定词干/格尾重音、音节与弱读、连读；按词族复查1,080条宽式读音 | 未证实重音不填写`ˈ`；读音规则及例外可重复检查 |
 | **R08 词义与社会语言** | 让三支语言有文化深度 | 扩展词族、借词、构词法、地域语域、职业语言、代际差异 | 新词能追溯词根、形成三方言原形，并附语法使用例 |
 | **R09 现代语料与V1.0门槛** | 让语言可用于完整叙事 | 建立现代三方言平行语料，加入词素与语法注释；整体验证网页、JSON、TXT和历史卷 | 核心词法/句法回归通过；未定项明确标示，才评估V1.0 |
 
@@ -168,36 +201,28 @@ ai_search: true
 
 [十阶段完整机器可读计划与验收清单](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-v09-morphology-audit.json)。
 
-## V0.9第五阶段：205词条现代名词与动词批量形态建设
+## V0.9第五阶段：226个现代名词和动词的批量形态索引
 
-本阶段正式进入原先“旧词现代化之后”的主线工作，而不是继续按零散词条逐个重复研究。使用现行V0.5词典的**132个名词与73个动词**，建立三大方言对应的现代形态**分级候选索引**。
+本阶段以现行360词词典为基础，其中**144名词、82动词**已纳入三方言结构化形态索引；其他词类沿用既定专项研究。**批量填充不等于批量定稿。**
 
-**[打开V0.9在线现代形态学实验室](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-morphology/)** · [205词条批量形态JSON](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-modern-morphology-v09.json)。
-
-| 检查项目 | 实际数量 | 解释 |
+| 项目 | 数量 | 含义 |
 |---|---:|---|
-| 现代词条覆盖 | **205** | 132名词、73动词，全部有现代词典原形 |
-| 基本形态位置总量 | **7,818** | 名词132×12×3＝4,752；动词73×14×3＝3,066 |
-| 已填充的基本形态位置 | **6,148** | **包含正式原形、受控用法、古典转写、校准候选、低证据类推；不是6,148个正式现代格位** |
-| 留空、没有可靠可生成形式 | **1,670** | 明确保持未定，未强行套用不规则动词或未知名词类 |
-| 分析式未完成体将来 | **141** | 另以现行`bu`（北/东南）或`b`（西部）＋已登记现代不定式组合；未并入7,818个基本形态位置 |
-| 全基本位置都有生成形式的词条 | **153** | 仅为数据填充完整度，候选未获得整体定稿 |
-| 目前只有现代原形／不具独立变位模板的词条 | **49** | 该类少数未完成体动词仍可使用既定分析将来构式 |
+| 名词与动词 | **226** | 144名词、82动词，全部有三方言正式原形 |
+| 基本形态位置 | **8,628** | 名词144×12×3＝5,184，动词82×14×3＝3,444 |
+| 已填充位置 | **6,859** | 包含正式原形、受控用法、历史转写、校准候选与低证据类推 |
+| 留空位置 | **1,769** | 尚无安全的完整格位形态 |
+| 分析式未完成体将来组合 | **168** | 不计入8,628个基本位置 |
+| 全部基本位置都有候选的词条 | **171** | 仅为填充完整性，不能宣称171词均已正式变格 |
+| 旧版不具可靠独立模板的词 | **49** | 保留原形或既定分析式未来 |
+| 新增中性名词只有原形 | **3** | 避免误套阳性O类变格 |
 
-**生成依据按来源分级：**
+### 分类与回归
 
-| 来源 | 名词 | 动词 | 证据等级 |
-|---|---:|---:|---|
-| 早期三支书面语范式（包含V0.4名词扩展） | 21 | 36 | 历史有据；现代转换属**候选**，明确现代例句可单独确认 |
-| V0.7已校准的类推试验模板 | 14 | 8 | 经历史模板校准，但新形式不能自动转正式 |
-| 仅由性、现行词尾和不定式形状推断类别 | 52 | 25 | **低证据推断**，不能作为现代规范 |
-| 无法安全分类，保留原形 | 45 | 4 | 未定，不生成无依据的完整范式 |
+旧范式直接对应21名词、36动词；V0.7历史模板校准覆盖14名词、8动词。另有**52名词和25动词**经现行词典原形与已标注性／词尾复核，暂定为A/O或A/I/E类，仍然保留为现代格尾候选。现有已标注旧词中适用同一分类规则的名词**25/25**、动词**40/40**与类别一致；这一同一数据源内部的回归测试不能取代独立例句和规范验收。
 
-**回归测试：**与V0.7原始TXT模板的840个候选位置逐项比对，**840项一致、0项不匹配**；北部“生活”V0.8 N13词族的13个历史转写对应，**13项一致、0项不匹配**；先前16个受控语法位置的48个方言实现已重新核验。此类机器一致性检验不等于自然使用证据，尤其不能将52名词与25动词的外形推断当成正式现代类。
+本轮21新词中，9名词及9动词可依据指定类别使用试算模板；另3个中性名词只保留现行原形。**旧V0.7的840个候选位置0差异，V0.8北部“生活”13个对应位置0差异。** 西部“神明/雪”的20个尚未解决的斜格仍保持未定。现代词形的证据层次以各格位标记为准。
 
-**西部特殊限制继续有效：**神明`bo`／`za boġ`及雪`sne`保留原有受控证据；西部W11的20个未定斜格继续留空，不因为批量生成而改为“已完成”。`za`是阳性有生单数宾格**词组标记**，不加进字典原词干。
-
-**下一步：**优先对A/O名词和A/I/E动词类开展按规则分组的批量格尾审定，再核查I/J/N及不规则类；更新词典词法字段必须有受控例句或显式的新规范决定。当前正史的词典原形仍为339个条目、1,017条宽式IPA，现行V0.7句法28条、V0.8音变21条均未被擅自改变。
+[在线形态学实验室](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-morphology/) · [226词条完整候选数据](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-modern-morphology-v09.json)。
 
 ## V0.7 第一阶段：句法和形态架构正式统一
 
@@ -225,9 +250,9 @@ ai_search: true
 
 为了避免新词尚未定类就扩充到数千词，本阶段从《扎格伦字典 V0.2》高频词选择14个名词和8个动词，使用**已见 A／O 类名词、A／I 类动词范式**展开小规模类推实验。
 
-**[打开可操作的 V0.7 形态学试验室](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-morphology/)** · [840个三方言试验形式 TXT](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-morphology-pilot-v07.txt) · [候选词条及适用范围 JSON](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-morphology-pilot-v07.json) · [生成器源码](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/js/zagren-morphology-pilot-v07.js)
+**[打开现行V0.9形态学实验室（保留V0.7试验）](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-morphology/)** · [840个三方言试验形式 TXT](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-morphology-pilot-v07.txt) · [候选词条及适用范围 JSON](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-morphology-pilot-v07.json) · [生成器源码](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/js/zagren-morphology-pilot-v07.js)
 
-**验证和效力：**在原有资料上，规则模板重现了288个名词格位与1,014个规则动词形式，共 **1,302项对照、0项不匹配**。在此基础上生成14名词×12格位×3方言 = **504个候选形式**，以及8动词×14个词形位置×3方言 = **336个候选形式**，合计 **840个**。这些新形式属于**类推试验，不等于840个正式核定的词形**；已通过旧数据校准的是*模板*，而不是新词的独立语料认证。该试验当时以V0.2的279条为基线；现行新增60条，详见后文。
+**验证和效力：**在原有资料上，规则模板重现了288个名词格位与1,014个规则动词形式，共 **1,302项对照、0项不匹配**。在此基础上生成14名词×12格位×3方言 = **504个候选形式**，以及8动词×14个词形位置×3方言 = **336个候选形式**，合计 **840个**。这些新形式属于**类推试验，不等于840个正式核定的词形**；已通过旧数据校准的是*模板*，而不是新词的独立语料认证。该试验当时以V0.2的279条为基线；后来依次新增60条和21条，现行为360条。
 
 | 类别 | 样本 | 构形特点 |
 | --- | --- | --- |
@@ -270,7 +295,7 @@ V0.8 仍使用 **21条现有音变**，补充其历史作用顺序、格位边�
 
 本次对V0.3的339条词典原形进行音变适用性复查。其中此前属于历史或仅祖语状态的 **151条**：**5条升级为V0.8现代词典原形，142条在当前受限规则下保留原形，4条仍只有祖语构拟**；此外，对V0.7新录的“句子”和“语言”校正了两处方言拼写。在**V0.8阶段**339个词条中，193条已登记现代原形、142条经审查保留原形、4条尚未有正式现代原形；这4条现已在V0.9正式定为不定式原形。
 
-保留原形是当前规范的审查结论，**不等于全部现代变格、音节划分、重音都已经被证实**。V0.8当时仅祖语的四条动词不计入335组三方言原形和1,005条IPA；V0.9已将其补全，目前统计为339组与1,017条。
+保留原形是当前规范的审查结论，**不等于全部现代变格、音节划分、重音都已经被证实**。V0.8当时仅祖语的四条动词不计入335组三方言原形和1,005条IPA；V0.9四动词补全时，词典达到339组与1,017条；随后新增21词，**现行规模为360组、1,080条宽式IPA**。
 
 ### 词法回归验证
 
@@ -293,7 +318,7 @@ V0.8 仍使用 **21条现有音变**，补充其历史作用顺序、格位边�
 
 本轮对照俄罗斯科学院维诺格拉多夫俄语研究所的 [Академос 正字法资源](https://orfo.ruslang.ru/) 与 [俄语国家规范词典目录](https://ruslang.ru/normativnyje_slovari)，按阅读教育18、人际交流12、时间位置10、生活自然12、性质状态8五个主题录入60个新词典原形。使用俄罗斯官方资源的目的，是辅助确定**俄语参照词的书写与语义领域**，不是把俄语词直接复制成藏朔原语或声称俄方机构核定了本项目语言。
 
-**[浏览现行《扎格伦字典 V0.5》](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-dictionary/)** · [60词三方言完整数据](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-academic-v07-lexical-expansion.json) · [339条完整TXT](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-dictionary-v05.txt)
+**[浏览现行《扎格伦字典 V0.5》](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-dictionary/)** · [60词三方言完整数据](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-academic-v07-lexical-expansion.json) · [360条完整TXT](https://xdd44894-hub.github.io/orbina-encyclopedia/assets/data/zagren-dictionary-v05.txt)
 
 | 中文 | 俄语参考 | 北部 | 东南 | 西部 |
 | --- | --- | --- | --- | --- |
@@ -303,13 +328,13 @@ V0.8 仍使用 **21条现有音变**，补充其历史作用顺序、格位边�
 | 欺骗（完成体） | обмануть | `obmanuť` | `obmanut` | `obmanuþ` |
 | 真相 | истина | `istina` | `istina` | `istin` |
 
-这60个词的三方言**词典原形正式登记**，其原始藏朔原语词根为世界观内部构拟，不是现实语言学界的原始斯拉夫语重建。名词变格、动词全部变位、形容词一致和词汇重音仍需要后续校验。现行字典共339条，全部有三方言原形，1,017个宽式IPA词形。
+这60个词的三方言**词典原形正式登记**，其原始藏朔原语词根为世界观内部构拟，不是现实语言学界的原始斯拉夫语重建。名词变格、动词全部变位、形容词一致和词汇重音仍需要后续校验。现行字典共360条，全部有三方言原形，1,080个宽式IPA词形。
 
 ## 一、统一资料入口
 
 | 资料 | 作用 |
 | --- | --- |
-| **[《扎格伦字典 V0.5》](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-dictionary/)** | 339词条、三方言词形、规则宽式IPA、词源、词性与版本状态 |
+| **[《扎格伦字典 V0.5》](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-dictionary/)** | 360词条、三方言词形、规则宽式IPA、词源、词性与版本状态 |
 | **[语法实验室](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-grammar/)** | V0.2/0.3有依据的名词/代词/动词格位，按限定音变呈现V0.6形态 |
 | **[50句日常受控语料](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-corpus/)** | 50句 × 3方言，测试陈述、及物、形容词、疑问、将来和标点 |
 | **[《雪原上的一天》](https://xdd44894-hub.github.io/orbina-encyclopedia/zagren-showcase/)** | V0.5保留的32句比较文学历史基准，含旧版IPA |
@@ -354,7 +379,7 @@ V0.8 仍使用 **21条现有音变**，补充其历史作用顺序、格位边�
 
 ### IPA标注边界
 
-现行V0.5字典已为 **339个三方言原形词条**给出 **1,017条**按字母音值推导的**宽式音位转写**，尚未完成词汇重音、语音同化、连读和精确元音变体的实证校准。因此当前转写适合**查字母读法**，不是宣称真实民族口音已经被完全确定。
+现行V0.5字典已为 **360个三方言原形词条**给出 **1,080条**按字母音值推导的**宽式音位转写**，尚未完成词汇重音、语音同化、连读和精确元音变体的实证校准。因此当前转写适合**查字母读法**，不是宣称真实民族口音已经被完全确定。
 
 ## 四、正式语用标点
 
@@ -441,9 +466,9 @@ V0.8 仍使用 **21条现有音变**，补充其历史作用顺序、格位边�
 
 ### 字典统计
 
-- **339个词典条目**：在V0.2的279条基础上新增60条，历史179条与V0.6核心100条全部保留。
-- **339条**均具有三个方言的词典原形；4条原仅祖语动词已在V0.9完成词典原形确定。
-- **197条**属于已登记现代原形；**142条**经V0.8审阅保留原形（仍待现代屈折校验）；仅祖语而无现代原形的词条已归零。
+- **360个词典条目**：保留原339条（V0.2的279条及V0.7新增60条），V0.9再增21条，历史179条与V0.6核心100条全部保留。
+- **360条**均具有三个方言的词典原形；4条原仅祖语动词已在V0.9完成词典原形确定。
+- **218条**属于已登记现代原形；**142条**经V0.8审阅保留原形（仍待现代屈折校验）；仅祖语而无现代原形的词条已归零。
 - 词典中的“词条”不等同于独立词根数、所有义项数或已经核定的屈折格位数。
 
 优先选择具有完整日常语义、简洁词长且词源可解释的词形；不为了提高陌生感而拉长词或增添装饰字母。斯拉夫语背景者或可认出部分词根，但互懂程度尚无正式实验数据。
@@ -587,26 +612,28 @@ V0.5《雪原上的一天》32句仍是早期的文学实验文本。不能将�
 
 现代藏朔原的RDE工业、部族礼仪与冻土生活，将在语域词典中继续积累各自的借词与语义变化。部族名 **Pęrlÿkań / Lipańsë / Reśinąmp** 是现阶段使用的地方语言自称拼写，民族名称仍以中文既定名称为准。
 
-================= 第二编　《扎格伦字典 V0.5》339条全文 =================
+================= 第二编　《扎格伦字典 V0.5》360条全文 =================
 
 《扎格伦字典 V0.5》
 Žaġręn Dictionary V0.5
-藏朔原语 Žaġręn · V0.9 现代词典原形补全 · 2026-11-06
+藏朔原语 Žaġręn · V0.9 词汇扩充与现代原形定稿 · 2026-11-09
 
 【现行版本】
 V0.9在V0.8音系及V0.7核心句法基础上，正式登记4条原仅有祖语构拟的动词三方言不定式：结冻／融化／使冰封／忘记。
 这四条只确认词典原形和按既有字母音值推得的宽式IPA；不能反推出完整现代时态、变位、分词和语流重音。
 继承V0.8的142条旧词原形审查结论，本轮不为追求差异而强行改写。原V0.8七词九方言词形改定结果保持有效。
-历史V0.2至V0.4范式仍按原始研究层次保存；V0.8词典保留作可追溯基线。
+历史V0.2至V0.4范式仍作为早期三支书面语正史保存；V0.8词典保留作可追溯基线。
 
-【现行统计】词条339；三方言正式原形339；宽式IPA 1017；已登记现代原形197；审查保留旧原形142；仅祖语尚无现代原形0。
-名词：132；动词：73；形容词：67；分词：20；代词：7；副词：16；介词：6；连词：5；助词：4；指示词：2；疑问词：2；感叹词：3；数词：2。
+【现行统计】词条360；三方言正式原形360；宽式IPA 1080；已登记现代原形218（含本轮21条新增）；审查保留旧原形142；仅祖语尚无现代原形0。
+名词：144；动词：82；形容词：67；分词：20；代词：7；副词：16；介词：6；连词：5；助词：4；指示词：2；疑问词：2；感叹词：3；数词：2。
 
 【本轮V0.9确定的四条不定式】
 D0067 结冻、冻结：N zamrznuť；SE zamrznut；W zamrznuþ
 D0077 融化：N tajať；SE tajat；W tajaþ
 D0079 使……冰封：N zamraziť；SE zamrazit；W zamraziþ
 D0085 忘记：N zabÿť；SE zabit；W zabÿþ
+
+【V0.9词汇扩充】新增21条正式三方言词典原形（名词12、动词9），均为世界观内部构拟；完整现代屈折与词汇重音未核定。旧339条内容原样保留。
 
 【全书词条】
 
@@ -3126,12 +3153,163 @@ D0339 严肃 [形容词 · V0.7新增词典原形；完整屈折与重音尚未�
   备注：严肃、认真，不自动标记郑言符；俄语仅用于参考词义与词根，不把俄语现代形式当作藏朔原语的历史证据；词典原形已登记；词尾、变位、重音尚未完整核定
   屈折边界：仅词典原形；不可直接推断全部变格／变位
 
+
+
+【V0.9新增日常与生产词汇（正式词典原形）】
+D0340 枕头 [名词 · V0.9新增正式词典原形]
+  N: poduška /poduʃka/ | SE: poduška /poduʃka/ | W: podušk /poduʃk/
+  世界观内部构拟词根：*poduška
+  词法标签：class=A；gender=阴；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：床头用软枕
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0341 毯子 [名词 · V0.9新增正式词典原形]
+  N: pokrÿŵa /pokrɨwa/ | SE: pokriva /pokriva/ | W: pokrÿŵ /pokrɨw/
+  世界观内部构拟词根：*pokrÿva
+  词法标签：class=A；gender=阴；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：用于覆盖身体的毯子；与床上被褥可区分
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0342 毛巾 [名词 · V0.9新增正式词典原形]
+  N: ručnik /rut͡ʃnik/ | SE: ručnik /rut͡ʃnik/ | W: ručnik /rut͡ʃnik/
+  世界观内部构拟词根：*ručnik
+  词法标签：class=O；gender=阳；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：擦干手或身体用的布巾
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0343 肥皂 [名词 · V0.9新增正式词典原形]
+  N: mÿlo /mɨlo/ | SE: milo /milo/ | W: mÿł /mɨɫ/
+  世界观内部构拟词根：*mÿlo
+  词法标签：class=O；gender=中；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：清洁用皂类，不专指现代合成洗剂
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0344 镜子 [名词 · V0.9新增正式词典原形]
+  N: zerkalo /zerkalo/ | SE: zerkalo /zerkalo/ | W: zerkał /zerkaɫ/
+  世界观内部构拟词根：*zerkalo
+  词法标签：class=O；gender=中；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：用于照见影像的镜面器物
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0345 梯子 [名词 · V0.9新增正式词典原形]
+  N: lestŵa /lestwa/ | SE: lestva /lestva/ | W: łestŵ /ɫestw/
+  世界观内部构拟词根：*lestva
+  词法标签：class=A；gender=阴；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：可搬动的梯具，不表示整座建筑楼梯间
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0346 抽屉 [名词 · V0.9新增正式词典原形]
+  N: jaščik /jaʃt͡ʃik/ | SE: jaščik /jaʃt͡ʃik/ | W: jaščik /jaʃt͡ʃik/
+  世界观内部构拟词根：*jaščik
+  词法标签：class=O；gender=阳；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：可从桌柜中抽出的储物格
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0347 柜子 [名词 · V0.9新增正式词典原形]
+  N: škaf /ʃkaf/ | SE: škaf /ʃkaf/ | W: škaf /ʃkaf/
+  世界观内部构拟词根：*škaf
+  词法标签：class=O；gender=阳；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：带门或隔层的储物柜
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0348 口袋 [名词 · V0.9新增正式词典原形]
+  N: karman /karman/ | SE: karman /karman/ | W: karman /karman/
+  世界观内部构拟词根：*karman
+  词法标签：class=O；gender=阳；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：衣服或携行物上的收纳袋
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0349 船 [名词 · V0.9新增正式词典原形]
+  N: lodka /lodka/ | SE: lodka /lodka/ | W: łodk /ɫodk/
+  世界观内部构拟词根：*lodka
+  词法标签：class=A；gender=阴；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：小型船艇；不默认大型远洋舰船
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0350 窗帘 [名词 · V0.9新增正式词典原形]
+  N: zaŵesa /zawesa/ | SE: zavesa /zavesa/ | W: zaŵes /zawes/
+  世界观内部构拟词根：*zavesa
+  词法标签：class=A；gender=阴；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：悬于窗前的遮挡布料
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0351 水桶 [名词 · V0.9新增正式词典原形]
+  N: ŵedro /wedro/ | SE: vedro /vedro/ | W: ŵedr /wedr/
+  世界观内部构拟词根：*vedro
+  词法标签：class=O；gender=中；animacy=无生；number=SG；inflection=modern-class-assigned; full paradigm not validated
+  语义范围：盛放水或其他液体的桶
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0352 折叠 [动词 · V0.9新增正式词典原形]
+  N: skladať /skladatʲ/ | SE: skladat /skladat/ | W: składaþ /skɫadaθ/
+  世界观内部构拟词根：*skladatʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：反复、持续地折起或整理可折物；不预设完成体对应
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0353 擦拭 [动词 · V0.9新增正式词典原形]
+  N: ŵÿtirať /wɨtiratʲ/ | SE: vitirat /vitirat/ | W: ŵÿtiraþ /wɨtiraθ/
+  世界观内部构拟词根：*vÿtiratʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：用布或手擦拭表面，不专指清洗整件物品
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0354 上锁（过程） [动词 · V0.9新增正式词典原形]
+  N: zapirať /zapiratʲ/ | SE: zapirat /zapirat/ | W: zapiraþ /zapiraθ/
+  世界观内部构拟词根：*zapiratʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：给门、柜等上锁的持续或习惯动作
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0355 开锁（过程） [动词 · V0.9新增正式词典原形]
+  N: otpirať /otpiratʲ/ | SE: otpirat /otpirat/ | W: otpiraþ /otpiraθ/
+  世界观内部构拟词根：*otpiratʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：解开锁具的持续或习惯动作
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0356 发光、照明 [动词 · V0.9新增正式词典原形]
+  N: sŵetiť /swetitʲ/ | SE: svetit /svetit/ | W: sŵetiþ /swetiθ/
+  世界观内部构拟词根：*svetitʲ
+  词法标签：class=I；aspect=IPFV；valency=—/ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：发出光亮或为某处提供照明
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0357 使……熄灭 [动词 · V0.9新增正式词典原形]
+  N: ġasiť /ɣasitʲ/ | SE: gasit /ɡasit/ | W: ġasiþ /ɣasiθ/
+  世界观内部构拟词根：*gasitʲ
+  词法标签：class=I；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：使火、灯等熄灭的持续或反复动作
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0358 测量 [动词 · V0.9新增正式词典原形]
+  N: meriť /meritʲ/ | SE: merit /merit/ | W: meriþ /meriθ/
+  世界观内部构拟词根：*meritʲ
+  词法标签：class=I；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：对长度、时间或其他量进行测定
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0359 归还 [动词 · V0.9新增正式词典原形]
+  N: ŵračať /wrat͡ʃatʲ/ | SE: vračat /vrat͡ʃat/ | W: ŵračaþ /wrat͡ʃaθ/
+  世界观内部构拟词根：*vračatʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC+DAT；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：把借来的物品返还给持有人
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
+D0360 清扫、整理 [动词 · V0.9新增正式词典原形]
+  N: ubirať /ubiratʲ/ | SE: ubirat /ubirat/ | W: ubiraþ /ubiraθ/
+  世界观内部构拟词根：*ubiratʲ
+  词法标签：class=A；aspect=IPFV；valency=ACC；kind=productive-provisional；inflection=modern-class-assigned; finite forms not independently certified
+  语义范围：清理并整理场所或物品；不等同于已登记的‘洗净’
+  研究边界：现行原形正式登记；完整变格／变位、重音和自然语流仍待证实
+
 【版本与研究资料】
 V0.9本轮定形审计：assets/data/zagren-v09-lemma-audit.json
 V0.8音系与词族仍有效；历史旧词审查结果不被覆写。
 V0.8现行规则：assets/data/zagren-v08-diachrony.json
-339条逐词审查记录：assets/data/zagren-v08-lexicon-review.json
+V0.8历史基线339条逐词审查记录：assets/data/zagren-v08-lexicon-review.json
 原始V0.3词典：assets/data/zagren-dictionary-v03.json
+V0.9新增21条：D0340–D0360，现行总词条360。
 （完）
 
 ================= 第三编　V0.6五十句受控三方言语料 =================
