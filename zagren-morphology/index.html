@@ -101,6 +101,32 @@ footer{border-top:1px solid var(--line);color:var(--sub);font-size:.82rem;paddin
 </table></div>
 <div class="links"><a href="../assets/data/zagren-r02-phonology-review.json">R02全部62格位逐条审订矩阵 JSON</a><a href="../assets/data/zagren-v08-diachrony.json">既定音变来源</a></div>
 </section>
+<section class="panel" id="nominal-r03">
+<h2>R03 · 14名词与7组代词的630项分级审订</h2>
+<p>这一步从早期名词文法、V0.7受控名词类推模板和现行V0.9词典三层资料出发，检查<strong>现代主格原形、历史格位、已有受控句和待确认的其他屈折位置</strong>。有完整字符串，并不意味着完成现代变格。</p>
+<div class="stats">
+<div class="stat"><strong id="r03Total">—</strong><small>已整理的对照位置</small></div>
+<div class="stat"><strong id="r03Headwords">—</strong><small>三方言正式主格原形</small></div>
+<div class="stat"><strong id="r03Scoped">—</strong><small>受控句中的代词与格用法</small></div>
+<div class="stat"><strong id="r03Unapproved">—</strong><small>未取得无条件现代认证</small></div>
+</div>
+<div class="note"><strong>特别保护：</strong>西部“朋友”词典主格为 <code>dru</code>，其余11个 <code>druġ-</code> 位置尚属校准类推候选；<code>tebi</code>（你·与格）、<code>nam</code>（我们·与格）已见V0.6受控句，但不能由此认证整套代词变格。<strong>本轮新增正式现代格尾为0。</strong></div>
+<div class="controls">
+<label for="r03Kind">资料类别
+<select id="r03Kind"><option value="all">名词与代词</option><option value="noun">14个名词</option><option value="pronoun">7组代词</option></select></label>
+<label for="r03Branch">方言
+<select id="r03Branch"><option value="all">三个方言</option><option value="N">北部</option><option value="SE">东南</option><option value="W">西部</option></select></label>
+<label for="r03Search">按词义、格位或词形检索
+<input id="r03Search" type="search" placeholder="例如：朋友、SG.GEN、nam"></label>
+</div>
+<p class="muted" id="r03Status" role="status">正在读取R03对照数据……</p>
+<div class="scroll"><table>
+<thead><tr><th>词义／方言</th><th>格位</th><th>原形／候选形式</th><th>证据等级</th><th>待检问题</th></tr></thead>
+<tbody id="r03Rows"></tbody>
+</table></div>
+<p class="muted">默认只展示前80条匹配记录，可通过词义、形态位置和方言进一步筛选。格位尚未确认意味着无条件现代规范未确立，不表示该词形在世界观中不存在。</p>
+<div class="links"><a href="../assets/data/zagren-r03-noun-pronoun-review.json">R03 · 630项逐格审核数据（JSON）</a><a href="../assets/data/zagren-morphology-pilot-v07.json">V0.7类推模板原始记录</a><a href="../assets/data/zagren-nominal-morphology-v02.json">早期名词与代词历史文法</a></div>
+</section>
 <section class="panel">
 <h2>资料与历史基线</h2>
 <p>形态来源分为：历史书面范式对应、已校准试验模板、低证据外形推断、词典原形限定。西部“神明／雪”的20个未定斜格继续留空，避免把W11词尾脱落套用于全部格位。</p>
@@ -253,6 +279,47 @@ async function initR02Phonology(){
  }catch(err){status.textContent="R02数据读取失败："+err.message}
 }
 initR02Phonology();
+async function initR03NominalPronoun(){
+ const host=$("r03Rows"), status=$("r03Status"), kind=$("r03Kind"), branch=$("r03Branch"), search=$("r03Search");
+ try {
+  const res=await fetch("../assets/data/zagren-r03-noun-pronoun-review.json",{cache:"no-cache"});
+  if(!res.ok)throw Error("HTTP "+res.status);
+  const doc=await res.json(), rows=doc.rows||[], m=doc.metrics||{};
+  if(rows.length!==630||m.nounCandidatePositions!==504||m.pronounHistoricalPositions!==126||m.officialModernLemmaSlots!==63||m.scopedControlledPronounOccurrences!==6||rows.some(x=>x.status!=="official-modern-dictionary-headword"&&x.modernApprovedForm!==null))throw Error("证据等级校验未通过");
+  $("r03Total").textContent=rows.length;
+  $("r03Headwords").textContent=m.officialModernLemmaSlots;
+  $("r03Scoped").textContent=m.scopedControlledPronounOccurrences;
+  $("r03Unapproved").textContent=m.unapprovedOrHistoricalPositions;
+  const labels={N:"北部",SE:"东南",W:"西部"};
+  function refresh(){
+   const q=search.value.trim().toLocaleLowerCase("zh-CN");
+   const match=rows.filter(x=>
+     (kind.value==="all"||x.kind===kind.value)&&
+     (branch.value==="all"||x.branch===branch.value)&&
+     (!q||[x.gloss,x.person||"",x.position,x.recordedForm,x.modernHeadword,x.lexemeId].join(" ").toLocaleLowerCase("zh-CN").includes(q))
+   );
+   host.replaceChildren();
+   for(const r of match.slice(0,80)){
+    const tr=document.createElement("tr");
+    const d=make("td");d.append(make("strong",null,r.gloss));d.append(make("small","tag",labels[r.branch]+(r.morphologicalClass?" · "+r.morphologicalClass+"类":"")));tr.append(d);
+    tr.append(make("td",null,r.position));
+    const f=make("td");f.append(make("code",null,r.recordedForm));f.append(make("small","tag","现代词典主格："+r.modernHeadword));tr.append(f);
+    const e=make("td");
+    if(r.status==="official-modern-dictionary-headword")e.append(make("span","good","正式现代原形"));
+    else if(r.status==="controlled-usage-sentence-only")e.append(make("span","warn","受控句限定："+r.scopedControlledAttestation.sentenceId));
+    else e.append(make("span","warn",r.kind==="noun"?"类推候选":"早期书面形式"));
+    if(r.flags?.length)e.append(make("small","tag","注意：西部词干候选，未定"));
+    tr.append(e);
+    tr.append(make("td",null,r.morphologyProbe||"已登记词典原形；不据此证明全部格位。"));
+    host.append(tr);
+   }
+   status.textContent="符合筛选 "+match.length+" / 630 项；显示前 "+Math.min(match.length,80)+" 项。新增正式现代格位：0。";
+  }
+  [kind,branch].forEach(x=>x.addEventListener("change",refresh));search.addEventListener("input",refresh);
+  refresh();
+ }catch(err){status.textContent="R03数据读取失败："+err.message}
+}
+initR03NominalPronoun();
 </script>
 </body>
 </html>
