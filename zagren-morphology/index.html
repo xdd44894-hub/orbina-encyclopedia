@@ -76,6 +76,31 @@ footer{border-top:1px solid var(--line);color:var(--sub);font-size:.82rem;paddin
 <p class="muted">条件性音变读法只是研究假设，<strong>不等于现代格位已获认可</strong>。格尾、复数、格位合流需要独立的现代句法与词法证据。</p>
 <div class="links"><a href="../assets/data/zagren-r01-western-case-review.json">R01全部20项审订矩阵 JSON</a><a href="../assets/data/zagren-v09-morphology-audit.json">历时形态研究原始审订</a></div>
 </section>
+<section class="panel" id="phonology-r02">
+<h2>R02 · 62项受限音变逐格审核</h2>
+<p>对“管道、雪、火”三个词族的62项早期书面语格位，使用<strong>已有六条音变</strong>检查词干对应，并将其与现行形态学索引中的<strong>候选词形</strong>对照。这里检查的是<strong>音系许可与数据一致性</strong>，不是宣称古典格尾在现代仍然成立。</p>
+<div class="stats">
+<div class="stat"><strong id="r02Total">—</strong><small>历史格位逐条核查</small></div>
+<div class="stat"><strong id="r02Sound">—</strong><small>符合既有音变环境</small></div>
+<div class="stat"><strong id="r02Index">—</strong><small>与原候选索引一致</small></div>
+<div class="stat"><strong id="r02Modern">—</strong><small>新增正式现代屈折</small></div>
+</div>
+<div class="note"><strong>严格区分：</strong>左边的历史词形是早期书面语正史；中间的是受控音变允许的<strong>候选读写形式</strong>；它与现代词典原形的对应<strong>不能独立证实现代语法格尾</strong>。例如东南“火”旧宾格 <code>ogon</code> 必须先经历 <code>ogon → ogn → oң</code> 的既定历史路径，而不是全词无条件替换。</div>
+<div class="controls" style="grid-template-columns: minmax(190px,1fr) minmax(180px,1fr) minmax(190px,1fr);">
+<label for="r02Family">词族
+<select id="r02Family"><option value="all">全部词族</option><option value="管道">管道</option><option value="雪">雪</option><option value="火">火</option></select></label>
+<label for="r02Rule">音变规则
+<select id="r02Rule"><option value="all">全部六条规则</option><option value="N14">N14 · 北部管道</option><option value="W12">W12 · 西部管道</option><option value="N11">N11 · 北部雪</option><option value="SE11">SE11 · 东南雪</option><option value="N12">N12 · 北部火</option><option value="SE14">SE14 · 东南火</option></select></label>
+<label for="r02Slot">语法位置
+<select id="r02Slot"><option value="all">全部单复数／格</option><option value="SG">单数</option><option value="PL">复数</option></select></label>
+</div>
+<p class="muted" id="r02Status" role="status">读取R02核查数据中……</p>
+<div class="scroll"><table>
+<thead><tr><th>规则／格位</th><th>早期历史词形</th><th>受限音变候选</th><th>审核结论</th><th>还需验证</th></tr></thead>
+<tbody id="r02Rows"></tbody>
+</table></div>
+<div class="links"><a href="../assets/data/zagren-r02-phonology-review.json">R02全部62格位逐条审订矩阵 JSON</a><a href="../assets/data/zagren-v08-diachrony.json">既定音变来源</a></div>
+</section>
 <section class="panel">
 <h2>资料与历史基线</h2>
 <p>形态来源分为：历史书面范式对应、已校准试验模板、低证据外形推断、词典原形限定。西部“神明／雪”的20个未定斜格继续留空，避免把W11词尾脱落套用于全部格位。</p>
@@ -188,6 +213,46 @@ async function initWestR01(){
  }catch(err){status.textContent="R01数据读取失败："+err.message}
 }
 initWestR01();
+async function initR02Phonology(){
+ const area=$("r02Rows"), status=$("r02Status"), family=$("r02Family"), rule=$("r02Rule"), slot=$("r02Slot");
+ try{
+  const res=await fetch("../assets/data/zagren-r02-phonology-review.json",{cache:"no-cache"});
+  if(!res.ok)throw Error("HTTP "+res.status);
+  const doc=await res.json(), rows=doc.rows||[], m=doc.metrics||{};
+  const byRule=rows.reduce((acc,r)=>(acc[r.ruleId]=(acc[r.ruleId]||0)+1,acc),{});
+  if(rows.length!==62||Object.values(byRule).reduce((a,b)=>a+b,0)!==62||rows.some(r=>r.modernApprovedForm!==null)||m.independentlyVerifiedModernInflections!==0||m.matchesExistingProvisionalIndex!==62||m.soundLawCompatible!==62)throw Error("数据统计或核准级别异常");
+  $("r02Total").textContent=rows.length;
+  $("r02Sound").textContent=m.soundLawCompatible;
+  $("r02Index").textContent=m.matchesExistingProvisionalIndex;
+  $("r02Modern").textContent=m.independentlyVerifiedModernInflections;
+  function renderR02(){
+   const shown=rows.filter(r=>(family.value==="all"||family.value===r.meaning)&&(rule.value==="all"||rule.value===r.ruleId)&&(slot.value==="all"||r.position.startsWith(slot.value+".")));
+   area.replaceChildren();
+   for(const r of shown){
+    const tr=document.createElement("tr");
+    const label=make("td");
+    label.append(make("strong",null,r.meaning+" · "+r.positionLabel));
+    label.append(make("small","tag",r.branchName+" / "+r.ruleId));
+    tr.append(label);
+    const historic=make("td");
+    historic.append(make("code",null,r.historicalEarlyWrittenForm));
+    historic.append(make("small","tag","早期三支书面语"));
+    tr.append(historic);
+    const modern=make("td");
+    modern.append(make("code",null,r.conditionalSoundDerivedForm));
+    modern.append(make("small","tag warn","非正式现代格位"));
+    tr.append(modern);
+    tr.append(make("td",null,r.correspondsToExistingIndexCandidate?"音变规则与候选索引一致；格尾未证实":"待核"));
+    tr.append(make("td",null,r.verificationQuestion));
+    area.append(tr);
+   }
+   status.textContent="正在展示 "+shown.length+" / 62 项；全部62项仍需单独验证现代变格。";
+  }
+  [family,rule,slot].forEach(e=>e.addEventListener("change",renderR02));
+  renderR02();
+ }catch(err){status.textContent="R02数据读取失败："+err.message}
+}
+initR02Phonology();
 </script>
 </body>
 </html>
