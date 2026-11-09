@@ -127,6 +127,32 @@ footer{border-top:1px solid var(--line);color:var(--sub);font-size:.82rem;paddin
 <p class="muted">默认只展示前80条匹配记录，可通过词义、形态位置和方言进一步筛选。格位尚未确认意味着无条件现代规范未确立，不表示该词形在世界观中不存在。</p>
 <div class="links"><a href="../assets/data/zagren-r03-noun-pronoun-review.json">R03 · 630项逐格审核数据（JSON）</a><a href="../assets/data/zagren-morphology-pilot-v07.json">V0.7类推模板原始记录</a><a href="../assets/data/zagren-nominal-morphology-v02.json">早期名词与代词历史文法</a></div>
 </section>
+<section class="panel" id="nominal-r03b">
+<h2>R03第二阶段 · A/O类格尾分布与对立核验</h2>
+<p>本工作台从既有V0.7校准模板抽取<strong>2个类别×3种方言×12个数格位置＝72组</strong>候选形式，观察共同词尾、格位同形和例外，专门核查西部阳性有生宾格的 <code>za</code> 标记适用范围。<strong>一致性是研究线索，不是新的现代正史。</strong></p>
+<div class="stats">
+<div class="stat"><strong id="r03bTotal">—</strong><small>类别×方言×格位分布</small></div>
+<div class="stat"><strong id="r03bUniform">—</strong><small>候选分布一致的格位</small></div>
+<div class="stat"><strong id="r03bVariation">—</strong><small>候选分布出现差异的格位</small></div>
+<div class="stat"><strong id="r03bApproved">—</strong><small>新增正式现代变格</small></div>
+</div>
+<div class="note"><strong>重点歧义：</strong>现有西部O类的5个阳性有生名词，模板单数宾格单元都未单独写出 <code>za</code>；而现代受控句中已有 <code>za brat</code>、<code>za boġ</code>。模板单元只包含词形，不是完整的宾格短语，因此<strong>不能据此判定 <code>za</code> 必然省略、必须添加或禁止使用</strong>。必须通过完整句子的独立验证解决。</div>
+<div class="controls" style="grid-template-columns: minmax(170px,1fr) minmax(170px,1fr) minmax(170px,1fr)">
+<label for="r03bClass">名词类别
+<select id="r03bClass"><option value="A">A类（7词）</option><option value="O">O类（7词）</option></select></label>
+<label for="r03bDialect">方言
+<select id="r03bDialect"><option value="N">北部</option><option value="SE">东南</option><option value="W">西部</option></select></label>
+<label for="r03bScope">分布筛选
+<select id="r03bScope"><option value="all">全部位置</option><option value="uniform">7词一致</option><option value="variable">存在形态差异</option></select></label>
+</div>
+<p class="muted" id="r03bStatus" role="status">读取格尾形态对照中……</p>
+<div class="scroll"><table>
+<thead><tr><th>格位</th><th>模板候选词尾分布</th><th>一致性</th><th>词形示例</th></tr></thead>
+<tbody id="r03bRows"></tbody>
+</table></div>
+<p class="muted">词尾是在给定词典主格与试验模板的基础上进行表层比较的结果，不保证其本身是有效的现代词素分界。西部“朋友”现代主格 <code>dru</code> 与候选斜格 <code>druġ-</code> 的差异会保留在分布中，不自动强制统一。</p>
+<div class="links"><a href="../assets/data/zagren-r03-class-contrast-review.json">R03第二阶段：72组词尾、18项对照及6条语境依据</a><a href="../assets/data/zagren-r03-noun-pronoun-review.json">R03第一阶段：630项词形分级审订</a></div>
+</section>
 <section class="panel">
 <h2>资料与历史基线</h2>
 <p>形态来源分为：历史书面范式对应、已校准试验模板、低证据外形推断、词典原形限定。西部“神明／雪”的20个未定斜格继续留空，避免把W11词尾脱落套用于全部格位。</p>
@@ -320,6 +346,37 @@ async function initR03NominalPronoun(){
  }catch(err){status.textContent="R03数据读取失败："+err.message}
 }
 initR03NominalPronoun();
+async function initR03ClassContrast(){
+ const host=$("r03bRows"), status=$("r03bStatus"), cls=$("r03bClass"), dialect=$("r03bDialect"), scope=$("r03bScope");
+ try{
+  const r=await fetch("../assets/data/zagren-r03-class-contrast-review.json",{cache:"no-cache"});
+  if(!r.ok)throw Error("HTTP "+r.status);
+  const d=await r.json(), rows=d.candidateSuffixDistributions||[], m=d.metrics||{};
+  if(rows.length!==72||m.classSlotDistributionsUnanimous!==57||m.classSlotDistributionsVariable!==15||m.contrastChecks!==18||m.newApprovedModernInflections!==0)throw Error("证据等级或分布统计不匹配");
+  $("r03bTotal").textContent=rows.length;
+  $("r03bUniform").textContent=m.classSlotDistributionsUnanimous;
+  $("r03bVariation").textContent=m.classSlotDistributionsVariable;
+  $("r03bApproved").textContent=m.newApprovedModernInflections;
+  function render(){
+   const visible=rows.filter(x=>x.gramClass===cls.value&&x.branch===dialect.value&&(scope.value==="all"||(scope.value==="uniform")===x.unanimous));
+   host.replaceChildren();
+   for(const x of visible){
+    const tr=document.createElement("tr");
+    tr.append(make("td",null,x.slot));
+    tr.append(make("td",null,Object.entries(x.distribution).map(([s,n])=>s+" ×"+n).join("；")));
+    tr.append(make("td",x.unanimous?"good":"warn",x.unanimous?"7/7一致（候选）":"存在分歧（候选）"));
+    const e=make("td");
+    const sample=x.forms.slice(0,2).map(q=>q.gloss+"："+q.wordForm).join("；");
+    e.append(make("span",null,sample));
+    tr.append(e);host.append(tr);
+   }
+   status.textContent="显示 "+visible.length+" / 12 个"+cls.value+"类·"+dialect.value+"方言格位；所有格尾仍属候选。";
+  }
+  [cls,dialect,scope].forEach(x=>x.addEventListener("change",render));
+  render();
+ }catch(err){status.textContent="R03第二阶段资料读取失败："+err.message}
+}
+initR03ClassContrast();
 </script>
 </body>
 </html>
