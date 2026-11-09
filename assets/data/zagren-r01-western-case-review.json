@@ -1,0 +1,724 @@
+{
+  "title": "Žaġręn · R01 西部20个格位逐项核验工作台",
+  "version": "V0.9-R01-review-1",
+  "date": "2026-11-09",
+  "authority": "research-only; no new modern inflection approved",
+  "location": "雷西尼昂帕／西部方言",
+  "reference": "assets/data/zagren-v09-morphology-audit.json",
+  "phonologySource": "assets/data/zagren-v08-diachrony.json",
+  "morphologySource": "assets/data/zagren-modern-morphology-v09.json",
+  "syntaxSource": "assets/data/zagren-syntax-tests-v07.json",
+  "principle": "Early literary paradigms are canon as history; modern forms remain null unless independently controlled. No unattested words are asserted as modern Žaġręn.",
+  "controls": [
+    {
+      "id": "M07",
+      "meaning": "神明",
+      "modernNominative": "bo",
+      "modernAccusative": "za boġ",
+      "source": "A16",
+      "notes": "za is an independent animate-singular accusative marker, not a root prefix."
+    },
+    {
+      "id": "M08",
+      "meaning": "雪",
+      "modernNominative": "sne",
+      "modernAccusative": "sne",
+      "source": "T04",
+      "notes": "Inanimate modern accusative is controlled; no evidence for west oblique or plural."
+    },
+    {
+      "id": "M05",
+      "meaning": "房屋",
+      "modernCasePhrase": "od dom",
+      "source": "A14",
+      "notes": "Comparison only; does not prove god/snow genitive endings."
+    },
+    {
+      "id": "M06",
+      "meaning": "兄弟",
+      "modernCasePhrase": "za brat",
+      "source": "existing-western-animate-accusative-example",
+      "notes": "Comparison only; do not extend za to plural or inanimate nouns."
+    }
+  ],
+  "statuses": {
+    "historical": "历史正史",
+    "controlled": "受控现代用法",
+    "hypothesis": "音变或类推候选",
+    "unresolved": "尚无现代认证"
+  },
+  "metrics": {
+    "positions": 20,
+    "lexemes": 2,
+    "bareFinalG": 4,
+    "withOvertSuffix": 16,
+    "newApprovedModernPositions": 0
+  },
+  "rows": [
+    {
+      "id": "R01-M07-SG-GEN",
+      "lexemeId": "M07",
+      "gloss": "神明",
+      "branch": "W",
+      "position": "SG.GEN",
+      "historicalEarlyWrittenForm": "boġ",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "bo",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "bare-word-final-ġ",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 permits loss of final ġ; whether this historical case survives as a bare form is NOT established",
+      "conditionalPhoneticHypothesis": "bo",
+      "conditionalHypothesisStatus": "phonetic-only-not-modern-case-form",
+      "contrastWithKnown": {
+        "modernNominative": "bo",
+        "modernAccusative": "za boġ",
+        "controlledEvidence": "A16"
+      },
+      "alternativeModels": [
+        "主格同形／格位合流",
+        "保留不同形的斜格词干或语法标记"
+      ],
+      "testQuestion": "单数属格：考察所有者／来源关系及介词支配时，现代语是否区分裸词干与历史格尾。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M07-SG-DAT",
+      "lexemeId": "M07",
+      "gloss": "神明",
+      "branch": "W",
+      "position": "SG.DAT",
+      "historicalEarlyWrittenForm": "boġu",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "bo",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "bo",
+        "modernAccusative": "za boġ",
+        "controlledEvidence": "A16"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "单数与格：考察接收者／受益者位置，核实历史与格尾在现代是否仍有效。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M07-SG-INS",
+      "lexemeId": "M07",
+      "gloss": "神明",
+      "branch": "W",
+      "position": "SG.INS",
+      "historicalEarlyWrittenForm": "boġom",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "bo",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "bo",
+        "modernAccusative": "za boġ",
+        "controlledEvidence": "A16"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "单数工具格：考察工具或伴随关系，核实历史工具格词尾是否仍有效。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M07-SG-LOC",
+      "lexemeId": "M07",
+      "gloss": "神明",
+      "branch": "W",
+      "position": "SG.LOC",
+      "historicalEarlyWrittenForm": "boġ",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "bo",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "bare-word-final-ġ",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 permits loss of final ġ; whether this historical case survives as a bare form is NOT established",
+      "conditionalPhoneticHypothesis": "bo",
+      "conditionalHypothesisStatus": "phonetic-only-not-modern-case-form",
+      "contrastWithKnown": {
+        "modernNominative": "bo",
+        "modernAccusative": "za boġ",
+        "controlledEvidence": "A16"
+      },
+      "alternativeModels": [
+        "主格同形／格位合流",
+        "保留不同形的斜格词干或语法标记"
+      ],
+      "testQuestion": "单数处所格：考察介词支配的地点／话题位置，核实历史处所格是否仍有区别。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M07-PL-NOM",
+      "lexemeId": "M07",
+      "gloss": "神明",
+      "branch": "W",
+      "position": "PL.NOM",
+      "historicalEarlyWrittenForm": "boġÿ",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "bo",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "bo",
+        "modernAccusative": "za boġ",
+        "controlledEvidence": "A16"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "复数主格：考察复数主语的一致关系与名词复数词干。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M07-PL-GEN",
+      "lexemeId": "M07",
+      "gloss": "神明",
+      "branch": "W",
+      "position": "PL.GEN",
+      "historicalEarlyWrittenForm": "boġoŵ",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "bo",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "bo",
+        "modernAccusative": "za boġ",
+        "controlledEvidence": "A16"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "复数属格：考察所有者／来源关系及介词支配时，现代语是否区分裸词干与历史格尾。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M07-PL-DAT",
+      "lexemeId": "M07",
+      "gloss": "神明",
+      "branch": "W",
+      "position": "PL.DAT",
+      "historicalEarlyWrittenForm": "boġam",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "bo",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "bo",
+        "modernAccusative": "za boġ",
+        "controlledEvidence": "A16"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "复数与格：考察接收者／受益者位置，核实历史与格尾在现代是否仍有效。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M07-PL-ACC",
+      "lexemeId": "M07",
+      "gloss": "神明",
+      "branch": "W",
+      "position": "PL.ACC",
+      "historicalEarlyWrittenForm": "boġoŵ",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "bo",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "bo",
+        "modernAccusative": "za boġ",
+        "controlledEvidence": "A16"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "复数宾格：考察复数受事：确认有生性作用域与za的限定范围，不能从单数类推。 不能据za boġ推定复数宾格za的用法。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M07-PL-INS",
+      "lexemeId": "M07",
+      "gloss": "神明",
+      "branch": "W",
+      "position": "PL.INS",
+      "historicalEarlyWrittenForm": "boġami",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "bo",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "bo",
+        "modernAccusative": "za boġ",
+        "controlledEvidence": "A16"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "复数工具格：考察工具或伴随关系，核实历史工具格词尾是否仍有效。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M07-PL-LOC",
+      "lexemeId": "M07",
+      "gloss": "神明",
+      "branch": "W",
+      "position": "PL.LOC",
+      "historicalEarlyWrittenForm": "boġaħ",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "bo",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "bo",
+        "modernAccusative": "za boġ",
+        "controlledEvidence": "A16"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "复数处所格：考察介词支配的地点／话题位置，核实历史处所格是否仍有区别。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M08-SG-GEN",
+      "lexemeId": "M08",
+      "gloss": "雪",
+      "branch": "W",
+      "position": "SG.GEN",
+      "historicalEarlyWrittenForm": "sneġ",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "sne",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "bare-word-final-ġ",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 permits loss of final ġ; whether this historical case survives as a bare form is NOT established",
+      "conditionalPhoneticHypothesis": "sne",
+      "conditionalHypothesisStatus": "phonetic-only-not-modern-case-form",
+      "contrastWithKnown": {
+        "modernNominative": "sne",
+        "modernAccusative": "sne",
+        "controlledEvidence": "T04"
+      },
+      "alternativeModels": [
+        "主格同形／格位合流",
+        "保留不同形的斜格词干或语法标记"
+      ],
+      "testQuestion": "单数属格：考察所有者／来源关系及介词支配时，现代语是否区分裸词干与历史格尾。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M08-SG-DAT",
+      "lexemeId": "M08",
+      "gloss": "雪",
+      "branch": "W",
+      "position": "SG.DAT",
+      "historicalEarlyWrittenForm": "sneġu",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "sne",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "sne",
+        "modernAccusative": "sne",
+        "controlledEvidence": "T04"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "单数与格：考察接收者／受益者位置，核实历史与格尾在现代是否仍有效。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M08-SG-INS",
+      "lexemeId": "M08",
+      "gloss": "雪",
+      "branch": "W",
+      "position": "SG.INS",
+      "historicalEarlyWrittenForm": "sneġom",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "sne",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "sne",
+        "modernAccusative": "sne",
+        "controlledEvidence": "T04"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "单数工具格：考察工具或伴随关系，核实历史工具格词尾是否仍有效。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M08-SG-LOC",
+      "lexemeId": "M08",
+      "gloss": "雪",
+      "branch": "W",
+      "position": "SG.LOC",
+      "historicalEarlyWrittenForm": "sneġ",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "sne",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "bare-word-final-ġ",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 permits loss of final ġ; whether this historical case survives as a bare form is NOT established",
+      "conditionalPhoneticHypothesis": "sne",
+      "conditionalHypothesisStatus": "phonetic-only-not-modern-case-form",
+      "contrastWithKnown": {
+        "modernNominative": "sne",
+        "modernAccusative": "sne",
+        "controlledEvidence": "T04"
+      },
+      "alternativeModels": [
+        "主格同形／格位合流",
+        "保留不同形的斜格词干或语法标记"
+      ],
+      "testQuestion": "单数处所格：考察介词支配的地点／话题位置，核实历史处所格是否仍有区别。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M08-PL-NOM",
+      "lexemeId": "M08",
+      "gloss": "雪",
+      "branch": "W",
+      "position": "PL.NOM",
+      "historicalEarlyWrittenForm": "sneġÿ",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "sne",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "sne",
+        "modernAccusative": "sne",
+        "controlledEvidence": "T04"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "复数主格：考察复数主语的一致关系与名词复数词干。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M08-PL-GEN",
+      "lexemeId": "M08",
+      "gloss": "雪",
+      "branch": "W",
+      "position": "PL.GEN",
+      "historicalEarlyWrittenForm": "sneġoŵ",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "sne",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "sne",
+        "modernAccusative": "sne",
+        "controlledEvidence": "T04"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "复数属格：考察所有者／来源关系及介词支配时，现代语是否区分裸词干与历史格尾。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M08-PL-DAT",
+      "lexemeId": "M08",
+      "gloss": "雪",
+      "branch": "W",
+      "position": "PL.DAT",
+      "historicalEarlyWrittenForm": "sneġam",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "sne",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "sne",
+        "modernAccusative": "sne",
+        "controlledEvidence": "T04"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "复数与格：考察接收者／受益者位置，核实历史与格尾在现代是否仍有效。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M08-PL-ACC",
+      "lexemeId": "M08",
+      "gloss": "雪",
+      "branch": "W",
+      "position": "PL.ACC",
+      "historicalEarlyWrittenForm": "sneġÿ",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "sne",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "sne",
+        "modernAccusative": "sne",
+        "controlledEvidence": "T04"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "复数宾格：考察复数受事：确认有生性作用域与za的限定范围，不能从单数类推。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M08-PL-INS",
+      "lexemeId": "M08",
+      "gloss": "雪",
+      "branch": "W",
+      "position": "PL.INS",
+      "historicalEarlyWrittenForm": "sneġami",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "sne",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "sne",
+        "modernAccusative": "sne",
+        "controlledEvidence": "T04"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "复数工具格：考察工具或伴随关系，核实历史工具格词尾是否仍有效。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    },
+    {
+      "id": "R01-M08-PL-LOC",
+      "lexemeId": "M08",
+      "gloss": "雪",
+      "branch": "W",
+      "position": "PL.LOC",
+      "historicalEarlyWrittenForm": "sneġaħ",
+      "historicalStatus": "accepted-early-western-written-form",
+      "modernDictionaryLemma": "sne",
+      "modernForm": null,
+      "modernStatus": "unresolved-not-normative",
+      "phonologicalEnvironment": "ġ-before-overt-inflection",
+      "existingRule": "W11",
+      "ruleConsequence": "W11 does not delete ġ when it precedes an overt inflectional ending",
+      "conditionalPhoneticHypothesis": null,
+      "conditionalHypothesisStatus": "not-applicable",
+      "contrastWithKnown": {
+        "modernNominative": "sne",
+        "modernAccusative": "sne",
+        "controlledEvidence": "T04"
+      },
+      "alternativeModels": [
+        "历史屈折词尾保留",
+        "部分屈折简化或格位合流",
+        "词干与格尾重新类推"
+      ],
+      "testQuestion": "复数处所格：考察介词支配的地点／话题位置，核实历史处所格是否仍有区别。",
+      "evidenceToAcquire": [
+        "明确的现代三方言最小对立句",
+        "名词本身的数格形态证据",
+        "与现有语法规则及古今音变的回归一致性"
+      ]
+    }
+  ],
+  "regressionGates": [
+    "R01 rows=20, unique slot+lexeme identities=20",
+    "Both lexemes must have 10 unresolved positions; do not include their already-controlled singular NOM/ACC",
+    "Exactly 4 bare-ġ and 16 suffix-bearing historical forms",
+    "Every row must have modernForm=null; conditional hypotheses cannot be styled as approved",
+    "Never apply final-ġ loss to ġ before an overt ending",
+    "Never extend animate singular za to inanimate or plural without independent evidence",
+    "No additions to the 360-word modern dictionary or the 21 modern sound changes"
+  ]
+}
