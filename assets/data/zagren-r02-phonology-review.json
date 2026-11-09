@@ -1,0 +1,1975 @@
+{
+  "title": "Žaġręn · R02 62项历史词形—现代音变许可逐格检查",
+  "version": "V0.9-R02-phonology-review-1",
+  "date": "2026-11-09",
+  "authority": "research-and-phonological-correspondence-only; not approved modern case endings",
+  "purpose": "验证三词族、六条已存在音变对62个历史格位的适用性并逐格说明现代变格仍待独立验证。",
+  "sources": [
+    "assets/data/zagren-v09-morphology-audit.json",
+    "assets/data/zagren-v08-diachrony.json",
+    "assets/data/zagren-modern-morphology-v09.json",
+    "assets/data/zagren-dictionary-v05.json"
+  ],
+  "protection": {
+    "dictionaryHeadwordsRemain": 360,
+    "permittedSoundLawsRemain": 21,
+    "protectedR01WestPositions": 20,
+    "approvedModernInflectionsAdded": 0,
+    "pointOfReview": "词干音变许可≠历史格尾在现代继续存活。",
+    "noModernGrammarByConstruction": true
+  },
+  "metrics": {
+    "historicalPositionsReviewed": 62,
+    "soundLawCompatible": 62,
+    "matchesExistingProvisionalIndex": 62,
+    "independentlyVerifiedModernInflections": 0,
+    "groups": {
+      "N14": 10,
+      "W12": 10,
+      "N11": 10,
+      "SE11": 10,
+      "N12": 11,
+      "SE14": 11
+    },
+    "multiStepSE14Cases": 1,
+    "lexicalFamilies": 3,
+    "dialects": 3
+  },
+  "rules": [
+    {
+      "id": "N14",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "meaning": "管道",
+      "count": 10,
+      "establishedLaw": "历史 /tʲr/ > /tʰr/；新增字母 ṱ = /tʰ/，区别于 ť、t",
+      "sourceCaveat": "仅该音丛起源，不把所有t变送气",
+      "allowedScope": "only the previously enumerated lexical family and phonological environment"
+    },
+    {
+      "id": "W12",
+      "branch": "W",
+      "branchName": "西部·雷西尼昂帕",
+      "meaning": "管道",
+      "count": 10,
+      "establishedLaw": "/r/ 在 /θ/（þ）后强化为 /r̝/，写ř",
+      "sourceCaveat": "先验证此辅音丛，不影响全部r",
+      "allowedScope": "only the previously enumerated lexical family and phonological environment"
+    },
+    {
+      "id": "N11",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "meaning": "雪",
+      "count": 10,
+      "establishedLaw": "词首 /sne/ > /sę/（鼻音失去辅音地位，元音鼻化）",
+      "sourceCaveat": "也可作用于复合词词根的起始位置",
+      "allowedScope": "only the previously enumerated lexical family and phonological environment"
+    },
+    {
+      "id": "SE11",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "meaning": "雪",
+      "count": 10,
+      "establishedLaw": "词首 /sne/ > /se/，失去鼻音但不保留鼻化",
+      "sourceCaveat": "与北部N11形成同源对应",
+      "allowedScope": "only the previously enumerated lexical family and phonological environment"
+    },
+    {
+      "id": "N12",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "meaning": "火",
+      "count": 11,
+      "establishedLaw": "历史软音节尾触发 /o/ 前化为 /ø/，后经类推推广到全词干",
+      "sourceCaveat": "词干音变；不能见软音就无条件换字",
+      "allowedScope": "only the previously enumerated lexical family and phonological environment"
+    },
+    {
+      "id": "SE14",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "meaning": "火",
+      "count": 11,
+      "establishedLaw": "/gn/ > /ŋ/ 写ң；旧 ogon 经次音节脱落 ogn 再同化",
+      "sourceCaveat": "保留相关词汇历史层级，不得无根据把单独g或n写作ң",
+      "allowedScope": "only the previously enumerated lexical family and phonological environment"
+    }
+  ],
+  "rows": [
+    {
+      "id": "R02-N14-SG-GEN",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N14",
+      "modernLemma": "ṱruba",
+      "position": "SG.GEN",
+      "positionLabel": "单数属格",
+      "historicalEarlyWrittenForm": "ťrubÿ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ṱrubÿ",
+      "predictedIndexForm": "ṱrubÿ",
+      "soundLawSteps": [
+        "ťr → ṱr（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过所有关系、来源关系或受介词支配的属格最小对立句，检验该词是否保留历史属格词尾。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N14-SG-DAT",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N14",
+      "modernLemma": "ṱruba",
+      "position": "SG.DAT",
+      "positionLabel": "单数与格",
+      "historicalEarlyWrittenForm": "ťrubi",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ṱrubi",
+      "predictedIndexForm": "ṱrubi",
+      "soundLawSteps": [
+        "ťr → ṱr（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过接受者／受益者句法环境检验现代与格标记，并与主宾格区分。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N14-SG-INS",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N14",
+      "modernLemma": "ṱruba",
+      "position": "SG.INS",
+      "positionLabel": "单数工具格",
+      "historicalEarlyWrittenForm": "ťruboją",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ṱruboją",
+      "predictedIndexForm": "ṱruboją",
+      "soundLawSteps": [
+        "ťr → ṱr（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过工具或伴随环境检验现代工具格名词形式与修饰词配合。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N14-SG-LOC",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N14",
+      "modernLemma": "ṱruba",
+      "position": "SG.LOC",
+      "positionLabel": "单数处所格",
+      "historicalEarlyWrittenForm": "ťrube",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ṱrube",
+      "predictedIndexForm": "ṱrube",
+      "soundLawSteps": [
+        "ťr → ṱr（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过需要处所格的介词短语检验现代处所格是否仍有独立形态。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N14-PL-NOM",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N14",
+      "modernLemma": "ṱruba",
+      "position": "PL.NOM",
+      "positionLabel": "复数主格",
+      "historicalEarlyWrittenForm": "ťrubÿ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ṱrubÿ",
+      "predictedIndexForm": "ṱrubÿ",
+      "soundLawSteps": [
+        "ťr → ṱr（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过复数主语及谓语一致关系检验现代复数主格。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N14-PL-GEN",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N14",
+      "modernLemma": "ṱruba",
+      "position": "PL.GEN",
+      "positionLabel": "复数属格",
+      "historicalEarlyWrittenForm": "ťrub",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ṱrub",
+      "predictedIndexForm": "ṱrub",
+      "soundLawSteps": [
+        "ťr → ṱr（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过所有关系、来源关系或受介词支配的属格最小对立句，检验该词是否保留历史属格词尾。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N14-PL-DAT",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N14",
+      "modernLemma": "ṱruba",
+      "position": "PL.DAT",
+      "positionLabel": "复数与格",
+      "historicalEarlyWrittenForm": "ťrubam",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ṱrubam",
+      "predictedIndexForm": "ṱrubam",
+      "soundLawSteps": [
+        "ťr → ṱr（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过接受者／受益者句法环境检验现代与格标记，并与主宾格区分。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N14-PL-ACC",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N14",
+      "modernLemma": "ṱruba",
+      "position": "PL.ACC",
+      "positionLabel": "复数宾格",
+      "historicalEarlyWrittenForm": "ťrubÿ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ṱrubÿ",
+      "predictedIndexForm": "ṱrubÿ",
+      "soundLawSteps": [
+        "ťr → ṱr（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过及物句核查无生宾格与主格同形是否属于现代规范；不得因词形与词典原形相同就自动认可。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N14-PL-INS",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N14",
+      "modernLemma": "ṱruba",
+      "position": "PL.INS",
+      "positionLabel": "复数工具格",
+      "historicalEarlyWrittenForm": "ťrubami",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ṱrubami",
+      "predictedIndexForm": "ṱrubami",
+      "soundLawSteps": [
+        "ťr → ṱr（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过工具或伴随环境检验现代工具格名词形式与修饰词配合。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N14-PL-LOC",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N14",
+      "modernLemma": "ṱruba",
+      "position": "PL.LOC",
+      "positionLabel": "复数处所格",
+      "historicalEarlyWrittenForm": "ťrubaħ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ṱrubaħ",
+      "predictedIndexForm": "ṱrubaħ",
+      "soundLawSteps": [
+        "ťr → ṱr（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过需要处所格的介词短语检验现代处所格是否仍有独立形态。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-W12-SG-GEN",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "W",
+      "branchName": "西部·雷西尼昂帕",
+      "ruleId": "W12",
+      "modernLemma": "þřub",
+      "position": "SG.GEN",
+      "positionLabel": "单数属格",
+      "historicalEarlyWrittenForm": "þrubÿ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "þřubÿ",
+      "predictedIndexForm": "þřubÿ",
+      "soundLawSteps": [
+        "þr → þř（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过所有关系、来源关系或受介词支配的属格最小对立句，检验该词是否保留历史属格词尾。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-W12-SG-DAT",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "W",
+      "branchName": "西部·雷西尼昂帕",
+      "ruleId": "W12",
+      "modernLemma": "þřub",
+      "position": "SG.DAT",
+      "positionLabel": "单数与格",
+      "historicalEarlyWrittenForm": "þrubi",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "þřubi",
+      "predictedIndexForm": "þřubi",
+      "soundLawSteps": [
+        "þr → þř（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过接受者／受益者句法环境检验现代与格标记，并与主宾格区分。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-W12-SG-INS",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "W",
+      "branchName": "西部·雷西尼昂帕",
+      "ruleId": "W12",
+      "modernLemma": "þřub",
+      "position": "SG.INS",
+      "positionLabel": "单数工具格",
+      "historicalEarlyWrittenForm": "þruboj",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "þřuboj",
+      "predictedIndexForm": "þřuboj",
+      "soundLawSteps": [
+        "þr → þř（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过工具或伴随环境检验现代工具格名词形式与修饰词配合。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-W12-SG-LOC",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "W",
+      "branchName": "西部·雷西尼昂帕",
+      "ruleId": "W12",
+      "modernLemma": "þřub",
+      "position": "SG.LOC",
+      "positionLabel": "单数处所格",
+      "historicalEarlyWrittenForm": "þrub",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "þřub",
+      "predictedIndexForm": "þřub",
+      "soundLawSteps": [
+        "þr → þř（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过需要处所格的介词短语检验现代处所格是否仍有独立形态。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-W12-PL-NOM",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "W",
+      "branchName": "西部·雷西尼昂帕",
+      "ruleId": "W12",
+      "modernLemma": "þřub",
+      "position": "PL.NOM",
+      "positionLabel": "复数主格",
+      "historicalEarlyWrittenForm": "þrubÿ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "þřubÿ",
+      "predictedIndexForm": "þřubÿ",
+      "soundLawSteps": [
+        "þr → þř（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过复数主语及谓语一致关系检验现代复数主格。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-W12-PL-GEN",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "W",
+      "branchName": "西部·雷西尼昂帕",
+      "ruleId": "W12",
+      "modernLemma": "þřub",
+      "position": "PL.GEN",
+      "positionLabel": "复数属格",
+      "historicalEarlyWrittenForm": "þrub",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "þřub",
+      "predictedIndexForm": "þřub",
+      "soundLawSteps": [
+        "þr → þř（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过所有关系、来源关系或受介词支配的属格最小对立句，检验该词是否保留历史属格词尾。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-W12-PL-DAT",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "W",
+      "branchName": "西部·雷西尼昂帕",
+      "ruleId": "W12",
+      "modernLemma": "þřub",
+      "position": "PL.DAT",
+      "positionLabel": "复数与格",
+      "historicalEarlyWrittenForm": "þrubam",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "þřubam",
+      "predictedIndexForm": "þřubam",
+      "soundLawSteps": [
+        "þr → þř（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过接受者／受益者句法环境检验现代与格标记，并与主宾格区分。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-W12-PL-ACC",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "W",
+      "branchName": "西部·雷西尼昂帕",
+      "ruleId": "W12",
+      "modernLemma": "þřub",
+      "position": "PL.ACC",
+      "positionLabel": "复数宾格",
+      "historicalEarlyWrittenForm": "þrubÿ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "þřubÿ",
+      "predictedIndexForm": "þřubÿ",
+      "soundLawSteps": [
+        "þr → þř（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过及物句核查无生宾格与主格同形是否属于现代规范；不得因词形与词典原形相同就自动认可。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-W12-PL-INS",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "W",
+      "branchName": "西部·雷西尼昂帕",
+      "ruleId": "W12",
+      "modernLemma": "þřub",
+      "position": "PL.INS",
+      "positionLabel": "复数工具格",
+      "historicalEarlyWrittenForm": "þrubami",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "þřubami",
+      "predictedIndexForm": "þřubami",
+      "soundLawSteps": [
+        "þr → þř（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过工具或伴随环境检验现代工具格名词形式与修饰词配合。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-W12-PL-LOC",
+      "lexemeId": "M04",
+      "dictionaryId": "D0015",
+      "meaning": "管道",
+      "branch": "W",
+      "branchName": "西部·雷西尼昂帕",
+      "ruleId": "W12",
+      "modernLemma": "þřub",
+      "position": "PL.LOC",
+      "positionLabel": "复数处所格",
+      "historicalEarlyWrittenForm": "þrubaħ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "þřubaħ",
+      "predictedIndexForm": "þřubaħ",
+      "soundLawSteps": [
+        "þr → þř（限 管道 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过需要处所格的介词短语检验现代处所格是否仍有独立形态。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N11-SG-GEN",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N11",
+      "modernLemma": "sęġ",
+      "position": "SG.GEN",
+      "positionLabel": "单数属格",
+      "historicalEarlyWrittenForm": "sneġa",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "sęġa",
+      "predictedIndexForm": "sęġa",
+      "soundLawSteps": [
+        "sne → sę（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过所有关系、来源关系或受介词支配的属格最小对立句，检验该词是否保留历史属格词尾。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N11-SG-DAT",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N11",
+      "modernLemma": "sęġ",
+      "position": "SG.DAT",
+      "positionLabel": "单数与格",
+      "historicalEarlyWrittenForm": "sneġu",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "sęġu",
+      "predictedIndexForm": "sęġu",
+      "soundLawSteps": [
+        "sne → sę（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过接受者／受益者句法环境检验现代与格标记，并与主宾格区分。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N11-SG-INS",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N11",
+      "modernLemma": "sęġ",
+      "position": "SG.INS",
+      "positionLabel": "单数工具格",
+      "historicalEarlyWrittenForm": "sneġom",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "sęġom",
+      "predictedIndexForm": "sęġom",
+      "soundLawSteps": [
+        "sne → sę（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过工具或伴随环境检验现代工具格名词形式与修饰词配合。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N11-SG-LOC",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N11",
+      "modernLemma": "sęġ",
+      "position": "SG.LOC",
+      "positionLabel": "单数处所格",
+      "historicalEarlyWrittenForm": "sneġe",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "sęġe",
+      "predictedIndexForm": "sęġe",
+      "soundLawSteps": [
+        "sne → sę（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过需要处所格的介词短语检验现代处所格是否仍有独立形态。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N11-PL-NOM",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N11",
+      "modernLemma": "sęġ",
+      "position": "PL.NOM",
+      "positionLabel": "复数主格",
+      "historicalEarlyWrittenForm": "sneġÿ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "sęġÿ",
+      "predictedIndexForm": "sęġÿ",
+      "soundLawSteps": [
+        "sne → sę（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过复数主语及谓语一致关系检验现代复数主格。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N11-PL-GEN",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N11",
+      "modernLemma": "sęġ",
+      "position": "PL.GEN",
+      "positionLabel": "复数属格",
+      "historicalEarlyWrittenForm": "sneġoŵ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "sęġoŵ",
+      "predictedIndexForm": "sęġoŵ",
+      "soundLawSteps": [
+        "sne → sę（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过所有关系、来源关系或受介词支配的属格最小对立句，检验该词是否保留历史属格词尾。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N11-PL-DAT",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N11",
+      "modernLemma": "sęġ",
+      "position": "PL.DAT",
+      "positionLabel": "复数与格",
+      "historicalEarlyWrittenForm": "sneġam",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "sęġam",
+      "predictedIndexForm": "sęġam",
+      "soundLawSteps": [
+        "sne → sę（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过接受者／受益者句法环境检验现代与格标记，并与主宾格区分。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N11-PL-ACC",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N11",
+      "modernLemma": "sęġ",
+      "position": "PL.ACC",
+      "positionLabel": "复数宾格",
+      "historicalEarlyWrittenForm": "sneġÿ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "sęġÿ",
+      "predictedIndexForm": "sęġÿ",
+      "soundLawSteps": [
+        "sne → sę（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过及物句核查无生宾格与主格同形是否属于现代规范；不得因词形与词典原形相同就自动认可。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N11-PL-INS",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N11",
+      "modernLemma": "sęġ",
+      "position": "PL.INS",
+      "positionLabel": "复数工具格",
+      "historicalEarlyWrittenForm": "sneġami",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "sęġami",
+      "predictedIndexForm": "sęġami",
+      "soundLawSteps": [
+        "sne → sę（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过工具或伴随环境检验现代工具格名词形式与修饰词配合。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N11-PL-LOC",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N11",
+      "modernLemma": "sęġ",
+      "position": "PL.LOC",
+      "positionLabel": "复数处所格",
+      "historicalEarlyWrittenForm": "sneġaħ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "sęġaħ",
+      "predictedIndexForm": "sęġaħ",
+      "soundLawSteps": [
+        "sne → sę（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过需要处所格的介词短语检验现代处所格是否仍有独立形态。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE11-SG-GEN",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE11",
+      "modernLemma": "seg",
+      "position": "SG.GEN",
+      "positionLabel": "单数属格",
+      "historicalEarlyWrittenForm": "snega",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "sega",
+      "predictedIndexForm": "sega",
+      "soundLawSteps": [
+        "sne → se（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过所有关系、来源关系或受介词支配的属格最小对立句，检验该词是否保留历史属格词尾。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE11-SG-DAT",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE11",
+      "modernLemma": "seg",
+      "position": "SG.DAT",
+      "positionLabel": "单数与格",
+      "historicalEarlyWrittenForm": "snegu",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "segu",
+      "predictedIndexForm": "segu",
+      "soundLawSteps": [
+        "sne → se（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过接受者／受益者句法环境检验现代与格标记，并与主宾格区分。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE11-SG-INS",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE11",
+      "modernLemma": "seg",
+      "position": "SG.INS",
+      "positionLabel": "单数工具格",
+      "historicalEarlyWrittenForm": "snegom",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "segom",
+      "predictedIndexForm": "segom",
+      "soundLawSteps": [
+        "sne → se（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过工具或伴随环境检验现代工具格名词形式与修饰词配合。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE11-SG-LOC",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE11",
+      "modernLemma": "seg",
+      "position": "SG.LOC",
+      "positionLabel": "单数处所格",
+      "historicalEarlyWrittenForm": "snege",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "sege",
+      "predictedIndexForm": "sege",
+      "soundLawSteps": [
+        "sne → se（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过需要处所格的介词短语检验现代处所格是否仍有独立形态。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE11-PL-NOM",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE11",
+      "modernLemma": "seg",
+      "position": "PL.NOM",
+      "positionLabel": "复数主格",
+      "historicalEarlyWrittenForm": "snegi",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "segi",
+      "predictedIndexForm": "segi",
+      "soundLawSteps": [
+        "sne → se（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过复数主语及谓语一致关系检验现代复数主格。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE11-PL-GEN",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE11",
+      "modernLemma": "seg",
+      "position": "PL.GEN",
+      "positionLabel": "复数属格",
+      "historicalEarlyWrittenForm": "snegov",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "segov",
+      "predictedIndexForm": "segov",
+      "soundLawSteps": [
+        "sne → se（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过所有关系、来源关系或受介词支配的属格最小对立句，检验该词是否保留历史属格词尾。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE11-PL-DAT",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE11",
+      "modernLemma": "seg",
+      "position": "PL.DAT",
+      "positionLabel": "复数与格",
+      "historicalEarlyWrittenForm": "snegam",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "segam",
+      "predictedIndexForm": "segam",
+      "soundLawSteps": [
+        "sne → se（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过接受者／受益者句法环境检验现代与格标记，并与主宾格区分。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE11-PL-ACC",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE11",
+      "modernLemma": "seg",
+      "position": "PL.ACC",
+      "positionLabel": "复数宾格",
+      "historicalEarlyWrittenForm": "snegi",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "segi",
+      "predictedIndexForm": "segi",
+      "soundLawSteps": [
+        "sne → se（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过及物句核查无生宾格与主格同形是否属于现代规范；不得因词形与词典原形相同就自动认可。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE11-PL-INS",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE11",
+      "modernLemma": "seg",
+      "position": "PL.INS",
+      "positionLabel": "复数工具格",
+      "historicalEarlyWrittenForm": "snegami",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "segami",
+      "predictedIndexForm": "segami",
+      "soundLawSteps": [
+        "sne → se（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过工具或伴随环境检验现代工具格名词形式与修饰词配合。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE11-PL-LOC",
+      "lexemeId": "M08",
+      "dictionaryId": "D0044",
+      "meaning": "雪",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE11",
+      "modernLemma": "seg",
+      "position": "PL.LOC",
+      "positionLabel": "复数处所格",
+      "historicalEarlyWrittenForm": "snegah",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "segah",
+      "predictedIndexForm": "segah",
+      "soundLawSteps": [
+        "sne → se（限 雪 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过需要处所格的介词短语检验现代处所格是否仍有独立形态。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N12-SG-GEN",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N12",
+      "modernLemma": "ӧġń",
+      "position": "SG.GEN",
+      "positionLabel": "单数属格",
+      "historicalEarlyWrittenForm": "oġńa",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ӧġńa",
+      "predictedIndexForm": "ӧġńa",
+      "soundLawSteps": [
+        "oġń → ӧġń（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过所有关系、来源关系或受介词支配的属格最小对立句，检验该词是否保留历史属格词尾。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N12-SG-DAT",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N12",
+      "modernLemma": "ӧġń",
+      "position": "SG.DAT",
+      "positionLabel": "单数与格",
+      "historicalEarlyWrittenForm": "oġńu",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ӧġńu",
+      "predictedIndexForm": "ӧġńu",
+      "soundLawSteps": [
+        "oġń → ӧġń（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过接受者／受益者句法环境检验现代与格标记，并与主宾格区分。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N12-SG-ACC",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N12",
+      "modernLemma": "ӧġń",
+      "position": "SG.ACC",
+      "positionLabel": "单数宾格",
+      "historicalEarlyWrittenForm": "oġń",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ӧġń",
+      "predictedIndexForm": "ӧġń",
+      "soundLawSteps": [
+        "oġń → ӧġń（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified",
+        "lemma-identity-does-not-prove-accusative-case"
+      ],
+      "verificationQuestion": "通过及物句核查无生宾格与主格同形是否属于现代规范；不得因词形与词典原形相同就自动认可。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N12-SG-INS",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N12",
+      "modernLemma": "ӧġń",
+      "position": "SG.INS",
+      "positionLabel": "单数工具格",
+      "historicalEarlyWrittenForm": "oġńem",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ӧġńem",
+      "predictedIndexForm": "ӧġńem",
+      "soundLawSteps": [
+        "oġń → ӧġń（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过工具或伴随环境检验现代工具格名词形式与修饰词配合。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N12-SG-LOC",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N12",
+      "modernLemma": "ӧġń",
+      "position": "SG.LOC",
+      "positionLabel": "单数处所格",
+      "historicalEarlyWrittenForm": "oġńe",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ӧġńe",
+      "predictedIndexForm": "ӧġńe",
+      "soundLawSteps": [
+        "oġń → ӧġń（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过需要处所格的介词短语检验现代处所格是否仍有独立形态。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N12-PL-NOM",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N12",
+      "modernLemma": "ӧġń",
+      "position": "PL.NOM",
+      "positionLabel": "复数主格",
+      "historicalEarlyWrittenForm": "oġńi",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ӧġńi",
+      "predictedIndexForm": "ӧġńi",
+      "soundLawSteps": [
+        "oġń → ӧġń（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过复数主语及谓语一致关系检验现代复数主格。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N12-PL-GEN",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N12",
+      "modernLemma": "ӧġń",
+      "position": "PL.GEN",
+      "positionLabel": "复数属格",
+      "historicalEarlyWrittenForm": "oġńeŵ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ӧġńeŵ",
+      "predictedIndexForm": "ӧġńeŵ",
+      "soundLawSteps": [
+        "oġń → ӧġń（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过所有关系、来源关系或受介词支配的属格最小对立句，检验该词是否保留历史属格词尾。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N12-PL-DAT",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N12",
+      "modernLemma": "ӧġń",
+      "position": "PL.DAT",
+      "positionLabel": "复数与格",
+      "historicalEarlyWrittenForm": "oġńam",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ӧġńam",
+      "predictedIndexForm": "ӧġńam",
+      "soundLawSteps": [
+        "oġń → ӧġń（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过接受者／受益者句法环境检验现代与格标记，并与主宾格区分。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N12-PL-ACC",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N12",
+      "modernLemma": "ӧġń",
+      "position": "PL.ACC",
+      "positionLabel": "复数宾格",
+      "historicalEarlyWrittenForm": "oġńi",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ӧġńi",
+      "predictedIndexForm": "ӧġńi",
+      "soundLawSteps": [
+        "oġń → ӧġń（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过及物句核查无生宾格与主格同形是否属于现代规范；不得因词形与词典原形相同就自动认可。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N12-PL-INS",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N12",
+      "modernLemma": "ӧġń",
+      "position": "PL.INS",
+      "positionLabel": "复数工具格",
+      "historicalEarlyWrittenForm": "oġńami",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ӧġńami",
+      "predictedIndexForm": "ӧġńami",
+      "soundLawSteps": [
+        "oġń → ӧġń（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过工具或伴随环境检验现代工具格名词形式与修饰词配合。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-N12-PL-LOC",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "N",
+      "branchName": "北部·珀璃璐卡",
+      "ruleId": "N12",
+      "modernLemma": "ӧġń",
+      "position": "PL.LOC",
+      "positionLabel": "复数处所格",
+      "historicalEarlyWrittenForm": "oġńaħ",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "ӧġńaħ",
+      "predictedIndexForm": "ӧġńaħ",
+      "soundLawSteps": [
+        "oġń → ӧġń（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过需要处所格的介词短语检验现代处所格是否仍有独立形态。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE14-SG-GEN",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE14",
+      "modernLemma": "oң",
+      "position": "SG.GEN",
+      "positionLabel": "单数属格",
+      "historicalEarlyWrittenForm": "ogna",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "oңa",
+      "predictedIndexForm": "oңa",
+      "soundLawSteps": [
+        "ogn → oң（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过所有关系、来源关系或受介词支配的属格最小对立句，检验该词是否保留历史属格词尾。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE14-SG-DAT",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE14",
+      "modernLemma": "oң",
+      "position": "SG.DAT",
+      "positionLabel": "单数与格",
+      "historicalEarlyWrittenForm": "ognu",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "oңu",
+      "predictedIndexForm": "oңu",
+      "soundLawSteps": [
+        "ogn → oң（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过接受者／受益者句法环境检验现代与格标记，并与主宾格区分。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE14-SG-ACC",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE14",
+      "modernLemma": "oң",
+      "position": "SG.ACC",
+      "positionLabel": "单数宾格",
+      "historicalEarlyWrittenForm": "ogon",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "oң",
+      "predictedIndexForm": "oң",
+      "soundLawSteps": [
+        "历史多音节 ogon 的次音节脱落得到 ogn",
+        "既定SE14: /gn/ → /ŋ/，写 ң"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified",
+        "multi-step-historical-medial-form-required",
+        "lemma-identity-does-not-prove-accusative-case"
+      ],
+      "verificationQuestion": "通过及物句核查无生宾格与主格同形是否属于现代规范；不得因词形与词典原形相同就自动认可。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE14-SG-INS",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE14",
+      "modernLemma": "oң",
+      "position": "SG.INS",
+      "positionLabel": "单数工具格",
+      "historicalEarlyWrittenForm": "ognem",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "oңem",
+      "predictedIndexForm": "oңem",
+      "soundLawSteps": [
+        "ogn → oң（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过工具或伴随环境检验现代工具格名词形式与修饰词配合。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE14-SG-LOC",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE14",
+      "modernLemma": "oң",
+      "position": "SG.LOC",
+      "positionLabel": "单数处所格",
+      "historicalEarlyWrittenForm": "ogne",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "oңe",
+      "predictedIndexForm": "oңe",
+      "soundLawSteps": [
+        "ogn → oң（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过需要处所格的介词短语检验现代处所格是否仍有独立形态。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE14-PL-NOM",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE14",
+      "modernLemma": "oң",
+      "position": "PL.NOM",
+      "positionLabel": "复数主格",
+      "historicalEarlyWrittenForm": "ogni",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "oңi",
+      "predictedIndexForm": "oңi",
+      "soundLawSteps": [
+        "ogn → oң（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过复数主语及谓语一致关系检验现代复数主格。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE14-PL-GEN",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE14",
+      "modernLemma": "oң",
+      "position": "PL.GEN",
+      "positionLabel": "复数属格",
+      "historicalEarlyWrittenForm": "ognev",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "oңev",
+      "predictedIndexForm": "oңev",
+      "soundLawSteps": [
+        "ogn → oң（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过所有关系、来源关系或受介词支配的属格最小对立句，检验该词是否保留历史属格词尾。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE14-PL-DAT",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE14",
+      "modernLemma": "oң",
+      "position": "PL.DAT",
+      "positionLabel": "复数与格",
+      "historicalEarlyWrittenForm": "ognam",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "oңam",
+      "predictedIndexForm": "oңam",
+      "soundLawSteps": [
+        "ogn → oң（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过接受者／受益者句法环境检验现代与格标记，并与主宾格区分。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE14-PL-ACC",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE14",
+      "modernLemma": "oң",
+      "position": "PL.ACC",
+      "positionLabel": "复数宾格",
+      "historicalEarlyWrittenForm": "ogni",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "oңi",
+      "predictedIndexForm": "oңi",
+      "soundLawSteps": [
+        "ogn → oң（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过及物句核查无生宾格与主格同形是否属于现代规范；不得因词形与词典原形相同就自动认可。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE14-PL-INS",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE14",
+      "modernLemma": "oң",
+      "position": "PL.INS",
+      "positionLabel": "复数工具格",
+      "historicalEarlyWrittenForm": "ognami",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "oңami",
+      "predictedIndexForm": "oңami",
+      "soundLawSteps": [
+        "ogn → oң（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过工具或伴随环境检验现代工具格名词形式与修饰词配合。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    },
+    {
+      "id": "R02-SE14-PL-LOC",
+      "lexemeId": "M11",
+      "dictionaryId": "D0019",
+      "meaning": "火",
+      "branch": "SE",
+      "branchName": "东南·丽庞萨",
+      "ruleId": "SE14",
+      "modernLemma": "oң",
+      "position": "PL.LOC",
+      "positionLabel": "复数处所格",
+      "historicalEarlyWrittenForm": "ognah",
+      "historicalAuthority": "early-branch-written-canon",
+      "conditionalSoundDerivedForm": "oңah",
+      "predictedIndexForm": "oңah",
+      "soundLawSteps": [
+        "ogn → oң（限 火 已登记词族）"
+      ],
+      "phonologicalEnvironmentReviewed": true,
+      "correspondsToExistingIndexCandidate": true,
+      "independentModernMorphologicalAttestation": false,
+      "modernApprovedForm": null,
+      "formAuthority": "historical-form-plus-phonology-only-not-modern-inflection",
+      "riskFlags": [
+        "case-ending-survival-unverified",
+        "modern-declension-not-certified"
+      ],
+      "verificationQuestion": "通过需要处所格的介词短语检验现代处所格是否仍有独立形态。 还须独立检查复数构词及修饰词一致。",
+      "testRequirement": "须有能区分名词格尾和词根音变的现代三方言受控最小对立例句；不能仅据古典书面范式或生成器输出转正。"
+    }
+  ],
+  "reviewGates": [
+    "All 62 positions must be derived from recorded historical case slots with no existing modern grammatical evidence.",
+    "The predicted strings must match the V0.9 morphology index candidates exactly; this is a pipeline consistency check, not independent linguistic certification.",
+    "All 62 new modernApprovedForm fields stay null and the dictionary's 360 headwords remain unchanged.",
+    "SE14 SG.ACC is two-step ogon → ogn → oң, not a blind global g/n deletion.",
+    "Modern accusative equal to a nominative lemma is still not independently verified as a new case slot.",
+    "No newly invented phonological rule, declension, dialect spelling, or dictionary entry.",
+    "R01's 20 west oblique cases are excluded and remain unresolved."
+  ]
+}
