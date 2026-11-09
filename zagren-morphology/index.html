@@ -56,6 +56,26 @@ footer{border-top:1px solid var(--line);color:var(--sub);font-size:.82rem;paddin
 <tbody id="records"></tbody></table></div>
 <p class="muted" id="sourceNote"></p>
 </section>
+<section class="panel" id="western-r01">
+<h2>R01 · 西部20格位逐格审订</h2>
+<p>雷西尼昂帕方言的“神明”与“雪”各有10个现代未定格位。这里分清<strong>早期书面语词形</strong>、<strong>W11音变允许的条件性预测</strong>和<strong>真正核定的现代词形</strong>，不把三者合并。</p>
+<div class="stats">
+<div class="stat"><strong id="westTotal">—</strong><small>仍待核定的西部格位</small></div>
+<div class="stat"><strong id="westBare">—</strong><small>4项历史词尾 ġ</small></div>
+<div class="stat"><strong id="westSuffix">—</strong><small>16项历史带显性词尾</small></div>
+<div class="stat"><strong id="westApproved">—</strong><small>本阶段新增现代核定</small></div>
+</div>
+<div class="note"><strong>已确认的对照：</strong>神明主格 <code>bo</code>、单数宾格短语 <code>za boġ</code>；雪主格与受控宾格 <code>sne</code>。<code>za</code> 不是词根，也不能据单数例证推导复数。W11不允许直接删除词中、格尾前的 <code>ġ</code>。</div>
+<label for="westFilter" style="max-width:260px;margin:0 0 1rem">选择词族
+<select id="westFilter"><option value="all">全部20项</option><option value="M07">神明（10项）</option><option value="M08">雪（10项）</option></select></label>
+<p id="westStatus" class="muted" role="status">读取R01审订记录中……</p>
+<div class="scroll"><table>
+<thead><tr><th>词义与格位</th><th>早期西部词形</th><th>现代状态</th><th>W11适用边界</th><th>待验证的问题</th></tr></thead>
+<tbody id="westRows"></tbody>
+</table></div>
+<p class="muted">条件性音变读法只是研究假设，<strong>不等于现代格位已获认可</strong>。格尾、复数、格位合流需要独立的现代句法与词法证据。</p>
+<div class="links"><a href="../assets/data/zagren-r01-western-case-review.json">R01全部20项审订矩阵 JSON</a><a href="../assets/data/zagren-v09-morphology-audit.json">历时形态研究原始审订</a></div>
+</section>
 <section class="panel">
 <h2>资料与历史基线</h2>
 <p>形态来源分为：历史书面范式对应、已校准试验模板、低证据外形推断、词典原形限定。西部“神明／雪”的20个未定斜格继续留空，避免把W11词尾脱落套用于全部格位。</p>
@@ -131,6 +151,43 @@ async function init(){
  }catch(err){$("entryStatus").textContent="加载失败："+err.message}
 }
 init();
+async function initWestR01(){
+ const host=$("westRows"),status=$("westStatus"),filter=$("westFilter");
+ try{
+  const res=await fetch("../assets/data/zagren-r01-western-case-review.json",{cache:"no-cache"});
+  if(!res.ok)throw Error("HTTP "+res.status);
+  const doc=await res.json(),rows=doc.rows||[],metric=doc.metrics||{};
+  const bare=rows.filter(r=>r.phonologicalEnvironment==="bare-word-final-ġ").length;
+  if(rows.length!==20||bare!==4||metric.withOvertSuffix!==16||metric.newApprovedModernPositions!==0||rows.some(r=>r.modernForm!==null)){
+   throw Error("审订表格与证据等级不一致");
+  }
+  $("westTotal").textContent=rows.length;
+  $("westBare").textContent=bare;
+  $("westSuffix").textContent=rows.length-bare;
+  $("westApproved").textContent=metric.newApprovedModernPositions;
+  const caseNames={"NOM":"主格","GEN":"属格","DAT":"与格","ACC":"宾格","INS":"工具格","LOC":"处所格"};
+  function show(){
+   host.replaceChildren();
+   const visible=rows.filter(r=>filter.value==="all"||r.lexemeId===filter.value);
+   for(const row of visible){
+    const tr=document.createElement("tr");
+    const [num,cas]=row.position.split(".");
+    tr.append(make("td",null,row.gloss+" · "+(num==="SG"?"单数":"复数")+caseNames[cas]));
+    const old=make("td");old.append(make("code",null,row.historicalEarlyWrittenForm));old.append(make("small","tag","仅早期书面语"));tr.append(old);
+    const modern=make("td");modern.append(make("strong","warn","尚未核定"));
+    if(row.conditionalPhoneticHypothesis){modern.append(make("small","tag","W11音段假设："+row.conditionalPhoneticHypothesis+"（非现代格位）"))}
+    tr.append(modern);
+    tr.append(make("td",null,row.phonologicalEnvironment==="bare-word-final-ġ"?"词末ġ：满足W11音变环境，但格位是否合流未定":"显性词尾前ġ：W11不能直接删去"));
+    tr.append(make("td",null,row.testQuestion));
+    host.append(tr);
+   }
+   status.textContent="显示 "+visible.length+" / 20 个未定位置；本阶段新增正式现代格位：0。";
+  }
+  filter.addEventListener("change",show);
+  show();
+ }catch(err){status.textContent="R01数据读取失败："+err.message}
+}
+initWestR01();
 </script>
 </body>
 </html>
