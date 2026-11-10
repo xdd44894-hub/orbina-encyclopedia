@@ -1,0 +1,6381 @@
+{
+  "edition": "V2.25-R-B46",
+  "date": "2026-11-10",
+  "status": "NONCANON_GLOBAL_POLYGON_WATER_CONTINUITY_AUDIT_ONLY",
+  "description": "Rebuild all 99 candidate polygons from B16+B34+B35+B36+B37+B38+B42. Confirm B45 T/O steepest-descent exits against periodically wrapped full-world landmask at 6- and 3-unit planar raster resolution. No new coastline changes.",
+  "sources": {
+    "b16-aesthetic-geography-master.json": {
+      "path": "assets/data/orbina-v225r-b16-aesthetic-geography-master.json",
+      "blob_sha": "d580bd5d0410b1c533acfe9709e99092d302584c"
+    },
+    "b34-reversible-coastline-layer.json": {
+      "path": "assets/data/orbina-v225r-b34-reversible-coastline-layer.json",
+      "blob_sha": "cc35278c54ba12c2ebefecb7d97567110270e881"
+    },
+    "b35-reversible-archipelago-layer.json": {
+      "path": "assets/data/orbina-v225r-b35-reversible-archipelago-layer.json",
+      "blob_sha": "28e6e8143aac255f9150904a9b8f2abc464585c0"
+    },
+    "b36-island-spacing-layer.json": {
+      "path": "assets/data/orbina-v225r-b36-island-spacing-layer.json",
+      "blob_sha": "c54a08165caba6f1a978465a3cb6221560f140f5"
+    },
+    "b37-macro-basin-composition-layer.json": {
+      "path": "assets/data/orbina-v225r-b37-macro-basin-composition-layer.json",
+      "blob_sha": "5aa747a543317f955ea9a6965c2365d348591c17"
+    },
+    "b38-global-basin-density-layer.json": {
+      "path": "assets/data/orbina-v225r-b38-global-basin-density-layer.json",
+      "blob_sha": "c53b60e4d38eab1bafd35a8f570e2eb8fd3b2583"
+    },
+    "b42-north-crown-dual-basin-coastline.json": {
+      "path": "assets/data/orbina-v225r-b42-north-crown-dual-basin-coastline.json",
+      "blob_sha": "000d4b1862934e8b122d8d871b39addf81240926"
+    },
+    "b45-full-mainland-relative-relief.json": {
+      "path": "assets/data/orbina-v225r-b45-full-mainland-relative-relief.json",
+      "blob_sha": "2203b9e04917a0ed0a8a4e649756b0d75785776d"
+    }
+  },
+  "applied_layers": [
+    "B16 initial macro + archipelago (16+83)",
+    "B34 replace 3 coast contours",
+    "B35 replace 8 island contours",
+    "B36 translate 7 islands",
+    "B37 translate polygon #12",
+    "B38 translate polygon #9",
+    "B42 replace polygon #0",
+    "B45 replay synthetic T/O drainage directly from saved formula (no terrain edits)"
+  ],
+  "sampling": {
+    "world_canvas": [
+      2400,
+      1200
+    ],
+    "horizontal_wrap": true,
+    "world_frame_provisional": true,
+    "polygon_count": 99,
+    "vertex_count": 9690,
+    "reference_time": "2026-11-10",
+    "raster6": {
+      "step": 6,
+      "shape": [
+        400,
+        200
+      ],
+      "land_cells": 27658,
+      "mainland0_cells": 12614,
+      "connected_outside_water_cells": 52340,
+      "unconnected_water_cells": 2,
+      "pocket_samples": [
+        [
+          2154,
+          744
+        ],
+        [
+          1794,
+          1110
+        ]
+      ]
+    },
+    "raster3": {
+      "step": 3,
+      "shape": [
+        800,
+        400
+      ],
+      "land_cells": 110576,
+      "mainland0_cells": 50445,
+      "connected_outside_water_cells": 209421,
+      "unconnected_water_cells": 3,
+      "pocket_samples": [
+        [
+          1719,
+          537
+        ],
+        [
+          1722,
+          537
+        ],
+        [
+          1845,
+          615
+        ]
+      ]
+    },
+    "water_connectivity": "4-neighbor flood-fill from upper and lower outer frame water cells; x wraps by 2400 drawing units. This is projected raster connectivity, not measured ocean depth, global geophysical proof or navigability.",
+    "B45_D8": "Recomputed full B45 T/O float synthetic heights and 8-direction steepest descent; first grid cell outside polygon #0 classified through entire reconstructed global land mask.",
+    "raster_validation": {
+      "deterministic_points_checked": 1500,
+      "misclassified": 0
+    },
+    "nearby_other_land_screen": {
+      "exit_locations_within_6_illustration_units": 0,
+      "exit_locations_within_12_illustration_units": 3,
+      "exit_locations_within_24_illustration_units": 18,
+      "details": [
+        {
+          "xy": [
+            666,
+            750
+          ],
+          "min_distance_units": 19.187,
+          "neighbor_polygon_id": 21,
+          "T": 10,
+          "O": 26
+        },
+        {
+          "xy": [
+            672,
+            756
+          ],
+          "min_distance_units": 18.611,
+          "neighbor_polygon_id": 21,
+          "T": 7,
+          "O": 24
+        },
+        {
+          "xy": [
+            678,
+            762
+          ],
+          "min_distance_units": 20.998,
+          "neighbor_polygon_id": 21,
+          "T": 4,
+          "O": 22
+        },
+        {
+          "xy": [
+            648,
+            726
+          ],
+          "min_distance_units": 23.115,
+          "neighbor_polygon_id": 26,
+          "T": 1,
+          "O": 17
+        },
+        {
+          "xy": [
+            660,
+            744
+          ],
+          "min_distance_units": 21.669,
+          "neighbor_polygon_id": 21,
+          "T": 1,
+          "O": 14
+        },
+        {
+          "xy": [
+            1530,
+            582
+          ],
+          "min_distance_units": 20.052,
+          "neighbor_polygon_id": 9,
+          "T": 1,
+          "O": 11
+        },
+        {
+          "xy": [
+            1530,
+            576
+          ],
+          "min_distance_units": 22.084,
+          "neighbor_polygon_id": 9,
+          "T": 1,
+          "O": 9
+        },
+        {
+          "xy": [
+            1506,
+            684
+          ],
+          "min_distance_units": 13.669,
+          "neighbor_polygon_id": 72,
+          "T": 3,
+          "O": 5
+        },
+        {
+          "xy": [
+            1500,
+            660
+          ],
+          "min_distance_units": 21.012,
+          "neighbor_polygon_id": 72,
+          "T": 3,
+          "O": 3
+        },
+        {
+          "xy": [
+            1506,
+            720
+          ],
+          "min_distance_units": 18.919,
+          "neighbor_polygon_id": 72,
+          "T": 2,
+          "O": 2
+        },
+        {
+          "xy": [
+            1506,
+            678
+          ],
+          "min_distance_units": 14.057,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 2
+        },
+        {
+          "xy": [
+            1512,
+            702
+          ],
+          "min_distance_units": 8.277,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 2
+        },
+        {
+          "xy": [
+            1512,
+            708
+          ],
+          "min_distance_units": 9.752,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 2
+        },
+        {
+          "xy": [
+            1512,
+            714
+          ],
+          "min_distance_units": 12.635,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 2
+        },
+        {
+          "xy": [
+            678,
+            768
+          ],
+          "min_distance_units": 18.26,
+          "neighbor_polygon_id": 21,
+          "T": 1,
+          "O": 1
+        },
+        {
+          "xy": [
+            1500,
+            654
+          ],
+          "min_distance_units": 21.769,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 1
+        },
+        {
+          "xy": [
+            1506,
+            672
+          ],
+          "min_distance_units": 14.598,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 1
+        },
+        {
+          "xy": [
+            1512,
+            696
+          ],
+          "min_distance_units": 7.589,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 1
+        }
+      ]
+    }
+  },
+  "results": {
+    "B45_mainland_cells": 12614,
+    "scenarios": [
+      {
+        "type": "T",
+        "total": 12614,
+        "B45_regression_mismatch": 0,
+        "unresolved_d8": 0,
+        "sink_attempts": 0,
+        "endpoint6": {
+          "water": 12614,
+          "otherLand": 0,
+          "isolated": 0
+        },
+        "endpoint3": {
+          "water": 12614,
+          "otherLand": 0,
+          "isolated": 0
+        },
+        "B45_classification": {
+          "R1": 161,
+          "R2": 1307,
+          "OTHER_COAST": 11146,
+          "DOMAIN_EDGE": 0,
+          "SINK": 0
+        }
+      },
+      {
+        "type": "O",
+        "total": 12614,
+        "B45_regression_mismatch": 0,
+        "unresolved_d8": 0,
+        "sink_attempts": 0,
+        "endpoint6": {
+          "water": 12614,
+          "otherLand": 0,
+          "isolated": 0
+        },
+        "endpoint3": {
+          "water": 12614,
+          "otherLand": 0,
+          "isolated": 0
+        },
+        "B45_classification": {
+          "R1": 743,
+          "R2": 544,
+          "OTHER_COAST": 11327,
+          "DOMAIN_EDGE": 0,
+          "SINK": 0
+        }
+      }
+    ],
+    "combined_unique_exit_samples": 529,
+    "all_exit_points_land_vs_water_checked": true,
+    "global_exit_points": [
+      {
+        "p": [
+          594,
+          450
+        ],
+        "b": "OTHER_COAST",
+        "t": 992,
+        "o": 81,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          606,
+          666
+        ],
+        "b": "OTHER_COAST",
+        "t": 995,
+        "o": 77,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1188,
+          660
+        ],
+        "b": "R2",
+        "t": 756,
+        "o": 111,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1134,
+          450
+        ],
+        "b": "OTHER_COAST",
+        "t": 801,
+        "o": 57,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1008,
+          582
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 569,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1146,
+          462
+        ],
+        "b": "R1",
+        "t": 16,
+        "o": 525,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1056,
+          480
+        ],
+        "b": "OTHER_COAST",
+        "t": 14,
+        "o": 406,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          618,
+          360
+        ],
+        "b": "OTHER_COAST",
+        "t": 274,
+        "o": 88,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          618,
+          378
+        ],
+        "b": "OTHER_COAST",
+        "t": 281,
+        "o": 76,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          660,
+          312
+        ],
+        "b": "OTHER_COAST",
+        "t": 265,
+        "o": 79,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          984,
+          642
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 323,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          666,
+          300
+        ],
+        "b": "OTHER_COAST",
+        "t": 265,
+        "o": 32,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          948,
+          714
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 295,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          666,
+          294
+        ],
+        "b": "OTHER_COAST",
+        "t": 264,
+        "o": 22,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          648,
+          228
+        ],
+        "b": "OTHER_COAST",
+        "t": 238,
+        "o": 38,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          588,
+          444
+        ],
+        "b": "OTHER_COAST",
+        "t": 149,
+        "o": 49,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          576,
+          426
+        ],
+        "b": "OTHER_COAST",
+        "t": 150,
+        "o": 47,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          648,
+          318
+        ],
+        "b": "OTHER_COAST",
+        "t": 135,
+        "o": 55,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          582,
+          408
+        ],
+        "b": "OTHER_COAST",
+        "t": 150,
+        "o": 39,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          588,
+          402
+        ],
+        "b": "OTHER_COAST",
+        "t": 150,
+        "o": 39,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          576,
+          420
+        ],
+        "b": "OTHER_COAST",
+        "t": 150,
+        "o": 38,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          594,
+          396
+        ],
+        "b": "OTHER_COAST",
+        "t": 148,
+        "o": 40,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          642,
+          324
+        ],
+        "b": "OTHER_COAST",
+        "t": 136,
+        "o": 52,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          576,
+          432
+        ],
+        "b": "OTHER_COAST",
+        "t": 150,
+        "o": 37,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          618,
+          342
+        ],
+        "b": "OTHER_COAST",
+        "t": 138,
+        "o": 48,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          636,
+          330
+        ],
+        "b": "OTHER_COAST",
+        "t": 136,
+        "o": 50,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          630,
+          336
+        ],
+        "b": "OTHER_COAST",
+        "t": 136,
+        "o": 48,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          606,
+          390
+        ],
+        "b": "OTHER_COAST",
+        "t": 145,
+        "o": 37,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          612,
+          384
+        ],
+        "b": "OTHER_COAST",
+        "t": 143,
+        "o": 38,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          600,
+          642
+        ],
+        "b": "OTHER_COAST",
+        "t": 27,
+        "o": 152,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          618,
+          366
+        ],
+        "b": "OTHER_COAST",
+        "t": 137,
+        "o": 41,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          618,
+          372
+        ],
+        "b": "OTHER_COAST",
+        "t": 138,
+        "o": 39,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          612,
+          690
+        ],
+        "b": "OTHER_COAST",
+        "t": 114,
+        "o": 59,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          582,
+          558
+        ],
+        "b": "OTHER_COAST",
+        "t": 145,
+        "o": 27,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1194,
+          672
+        ],
+        "b": "R2",
+        "t": 99,
+        "o": 72,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1182,
+          648
+        ],
+        "b": "R2",
+        "t": 29,
+        "o": 135,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          600,
+          462
+        ],
+        "b": "OTHER_COAST",
+        "t": 51,
+        "o": 111,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1200,
+          690
+        ],
+        "b": "R2",
+        "t": 98,
+        "o": 64,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1206,
+          702
+        ],
+        "b": "R2",
+        "t": 98,
+        "o": 54,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1374,
+          228
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 150,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          648,
+          720
+        ],
+        "b": "OTHER_COAST",
+        "t": 97,
+        "o": 52,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          642,
+          270
+        ],
+        "b": "OTHER_COAST",
+        "t": 134,
+        "o": 12,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          594,
+          480
+        ],
+        "b": "OTHER_COAST",
+        "t": 64,
+        "o": 81,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          630,
+          246
+        ],
+        "b": "OTHER_COAST",
+        "t": 127,
+        "o": 18,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          648,
+          276
+        ],
+        "b": "OTHER_COAST",
+        "t": 133,
+        "o": 12,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          660,
+          288
+        ],
+        "b": "OTHER_COAST",
+        "t": 134,
+        "o": 11,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          654,
+          282
+        ],
+        "b": "OTHER_COAST",
+        "t": 134,
+        "o": 10,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          630,
+          264
+        ],
+        "b": "OTHER_COAST",
+        "t": 129,
+        "o": 12,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          642,
+          234
+        ],
+        "b": "OTHER_COAST",
+        "t": 123,
+        "o": 18,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          636,
+          240
+        ],
+        "b": "OTHER_COAST",
+        "t": 125,
+        "o": 10,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1212,
+          732
+        ],
+        "b": "OTHER_COAST",
+        "t": 80,
+        "o": 49,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          660,
+          738
+        ],
+        "b": "OTHER_COAST",
+        "t": 92,
+        "o": 28,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1428,
+          738
+        ],
+        "b": "OTHER_COAST",
+        "t": 13,
+        "o": 105,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1134,
+          564
+        ],
+        "b": "OTHER_COAST",
+        "t": 78,
+        "o": 37,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          576,
+          546
+        ],
+        "b": "OTHER_COAST",
+        "t": 76,
+        "o": 35,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1368,
+          222
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 102,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          606,
+          672
+        ],
+        "b": "OTHER_COAST",
+        "t": 59,
+        "o": 37,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          594,
+          636
+        ],
+        "b": "OTHER_COAST",
+        "t": 37,
+        "o": 57,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          606,
+          678
+        ],
+        "b": "OTHER_COAST",
+        "t": 59,
+        "o": 35,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          636,
+          714
+        ],
+        "b": "OTHER_COAST",
+        "t": 52,
+        "o": 40,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          966,
+          690
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 89,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1140,
+          456
+        ],
+        "b": "R1",
+        "t": 50,
+        "o": 39,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1176,
+          636
+        ],
+        "b": "OTHER_COAST",
+        "t": 13,
+        "o": 76,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          972,
+          666
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 86,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          666,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 67,
+        "o": 19,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          762,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 48,
+        "o": 38,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          768,
+          192
+        ],
+        "b": "OTHER_COAST",
+        "t": 46,
+        "o": 40,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1206,
+          708
+        ],
+        "b": "R2",
+        "t": 49,
+        "o": 35,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1218,
+          762
+        ],
+        "b": "OTHER_COAST",
+        "t": 55,
+        "o": 28,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1440,
+          744
+        ],
+        "b": "OTHER_COAST",
+        "t": 8,
+        "o": 75,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          612,
+          696
+        ],
+        "b": "OTHER_COAST",
+        "t": 56,
+        "o": 26,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          978,
+          660
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 80,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1404,
+          756
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 79,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          678,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 63,
+        "o": 18,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          582,
+          630
+        ],
+        "b": "OTHER_COAST",
+        "t": 23,
+        "o": 57,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          624,
+          708
+        ],
+        "b": "OTHER_COAST",
+        "t": 55,
+        "o": 25,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1128,
+          558
+        ],
+        "b": "OTHER_COAST",
+        "t": 66,
+        "o": 13,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          654,
+          732
+        ],
+        "b": "OTHER_COAST",
+        "t": 48,
+        "o": 30,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1458,
+          750
+        ],
+        "b": "OTHER_COAST",
+        "t": 5,
+        "o": 72,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          654,
+          216
+        ],
+        "b": "OTHER_COAST",
+        "t": 70,
+        "o": 6,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1410,
+          252
+        ],
+        "b": "OTHER_COAST",
+        "t": 6,
+        "o": 70,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1470,
+          756
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 73,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          570,
+          504
+        ],
+        "b": "OTHER_COAST",
+        "t": 19,
+        "o": 56,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          786,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 9,
+        "o": 65,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1338,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 71,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1194,
+          678
+        ],
+        "b": "R2",
+        "t": 50,
+        "o": 22,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1212,
+          744
+        ],
+        "b": "OTHER_COAST",
+        "t": 32,
+        "o": 40,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1248,
+          804
+        ],
+        "b": "OTHER_COAST",
+        "t": 8,
+        "o": 64,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1050,
+          462
+        ],
+        "b": "OTHER_COAST",
+        "t": 45,
+        "o": 26,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1206,
+          714
+        ],
+        "b": "R2",
+        "t": 48,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1152,
+          510
+        ],
+        "b": "R1",
+        "t": 13,
+        "o": 57,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1206,
+          720
+        ],
+        "b": "R2",
+        "t": 47,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1128,
+          540
+        ],
+        "b": "OTHER_COAST",
+        "t": 66,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          570,
+          618
+        ],
+        "b": "OTHER_COAST",
+        "t": 19,
+        "o": 46,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          870,
+          186
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 63,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          984,
+          648
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 63,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          768,
+          780
+        ],
+        "b": "OTHER_COAST",
+        "t": 26,
+        "o": 37,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          888,
+          186
+        ],
+        "b": "OTHER_COAST",
+        "t": 25,
+        "o": 38,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          762,
+          774
+        ],
+        "b": "OTHER_COAST",
+        "t": 28,
+        "o": 34,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1224,
+          774
+        ],
+        "b": "OTHER_COAST",
+        "t": 15,
+        "o": 46,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1398,
+          246
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 59,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          756,
+          768
+        ],
+        "b": "OTHER_COAST",
+        "t": 29,
+        "o": 31,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1038,
+          450
+        ],
+        "b": "OTHER_COAST",
+        "t": 13,
+        "o": 47,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          750,
+          762
+        ],
+        "b": "OTHER_COAST",
+        "t": 31,
+        "o": 28,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1152,
+          474
+        ],
+        "b": "R1",
+        "t": 25,
+        "o": 34,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1200,
+          216
+        ],
+        "b": "OTHER_COAST",
+        "t": 26,
+        "o": 33,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1176,
+          630
+        ],
+        "b": "OTHER_COAST",
+        "t": 23,
+        "o": 35,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          600,
+          648
+        ],
+        "b": "OTHER_COAST",
+        "t": 15,
+        "o": 42,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          600,
+          654
+        ],
+        "b": "OTHER_COAST",
+        "t": 16,
+        "o": 41,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          774,
+          186
+        ],
+        "b": "OTHER_COAST",
+        "t": 15,
+        "o": 42,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          990,
+          630
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 55,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          780,
+          180
+        ],
+        "b": "OTHER_COAST",
+        "t": 12,
+        "o": 44,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1212,
+          738
+        ],
+        "b": "OTHER_COAST",
+        "t": 33,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          744,
+          756
+        ],
+        "b": "OTHER_COAST",
+        "t": 33,
+        "o": 22,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          972,
+          678
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 54,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1002,
+          600
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 53,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          576,
+          624
+        ],
+        "b": "OTHER_COAST",
+        "t": 21,
+        "o": 33,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          972,
+          672
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 53,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1212,
+          750
+        ],
+        "b": "OTHER_COAST",
+        "t": 30,
+        "o": 24,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1236,
+          792
+        ],
+        "b": "OTHER_COAST",
+        "t": 12,
+        "o": 42,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          798,
+          168
+        ],
+        "b": "OTHER_COAST",
+        "t": 6,
+        "o": 46,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          804,
+          162
+        ],
+        "b": "OTHER_COAST",
+        "t": 4,
+        "o": 48,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          732,
+          750
+        ],
+        "b": "OTHER_COAST",
+        "t": 38,
+        "o": 12,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          954,
+          156
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 48,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1020,
+          450
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 47,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1170,
+          618
+        ],
+        "b": "OTHER_COAST",
+        "t": 19,
+        "o": 31,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1242,
+          798
+        ],
+        "b": "OTHER_COAST",
+        "t": 10,
+        "o": 40,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1386,
+          234
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 48,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          954,
+          708
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 47,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1230,
+          780
+        ],
+        "b": "OTHER_COAST",
+        "t": 25,
+        "o": 24,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1392,
+          240
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 46,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          570,
+          534
+        ],
+        "b": "OTHER_COAST",
+        "t": 4,
+        "o": 43,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          588,
+          486
+        ],
+        "b": "OTHER_COAST",
+        "t": 18,
+        "o": 29,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1386,
+          786
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 45,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1434,
+          240
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 46,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          576,
+          492
+        ],
+        "b": "OTHER_COAST",
+        "t": 16,
+        "o": 30,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          684,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 9,
+        "o": 37,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1224,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 4,
+        "o": 42,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          696,
+          192
+        ],
+        "b": "OTHER_COAST",
+        "t": 5,
+        "o": 40,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          702,
+          186
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 42,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1008,
+          588
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 44,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          570,
+          600
+        ],
+        "b": "OTHER_COAST",
+        "t": 10,
+        "o": 34,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1116,
+          450
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 41,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1362,
+          216
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 42,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1374,
+          792
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 43,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1464,
+          270
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 42,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          900,
+          180
+        ],
+        "b": "OTHER_COAST",
+        "t": 22,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1392,
+          768
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 41,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1398,
+          762
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 41,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1464,
+          318
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 41,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          996,
+          618
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 40,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1272,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 40,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          594,
+          474
+        ],
+        "b": "OTHER_COAST",
+        "t": 11,
+        "o": 30,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          786,
+          786
+        ],
+        "b": "OTHER_COAST",
+        "t": 24,
+        "o": 17,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1260,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 39,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          744,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 38,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1164,
+          606
+        ],
+        "b": "OTHER_COAST",
+        "t": 13,
+        "o": 27,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1416,
+          750
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 38,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1422,
+          744
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 38,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1488,
+          744
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 38,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          780,
+          786
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 38,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          834,
+          798
+        ],
+        "b": "OTHER_COAST",
+        "t": 27,
+        "o": 11,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1104,
+          216
+        ],
+        "b": "OTHER_COAST",
+        "t": 12,
+        "o": 25,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          666,
+          750
+        ],
+        "b": "OTHER_COAST",
+        "t": 10,
+        "o": 26,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            666,
+            750
+          ],
+          "min_distance_units": 19.187,
+          "neighbor_polygon_id": 21,
+          "T": 10,
+          "O": 26
+        }
+      },
+      {
+        "p": [
+          1002,
+          612
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 35,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1452,
+          348
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 34,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          582,
+          582
+        ],
+        "b": "OTHER_COAST",
+        "t": 10,
+        "o": 25,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          906,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 13,
+        "o": 22,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          924,
+          162
+        ],
+        "b": "OTHER_COAST",
+        "t": 7,
+        "o": 28,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1044,
+          456
+        ],
+        "b": "OTHER_COAST",
+        "t": 10,
+        "o": 25,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1122,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 5,
+        "o": 30,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1134,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 33,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1452,
+          360
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 32,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1452,
+          750
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 34,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          948,
+          720
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 33,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1056,
+          486
+        ],
+        "b": "OTHER_COAST",
+        "t": 7,
+        "o": 27,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1158,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 32,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1170,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 32,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          912,
+          168
+        ],
+        "b": "OTHER_COAST",
+        "t": 10,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1182,
+          216
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 31,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1158,
+          594
+        ],
+        "b": "OTHER_COAST",
+        "t": 9,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1272,
+          810
+        ],
+        "b": "OTHER_COAST",
+        "t": 5,
+        "o": 27,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          564,
+          516
+        ],
+        "b": "OTHER_COAST",
+        "t": 5,
+        "o": 26,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          672,
+          756
+        ],
+        "b": "OTHER_COAST",
+        "t": 7,
+        "o": 24,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            672,
+            756
+          ],
+          "min_distance_units": 18.611,
+          "neighbor_polygon_id": 21,
+          "T": 7,
+          "O": 24
+        }
+      },
+      {
+        "p": [
+          978,
+          168
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 29,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1356,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 29,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1422,
+          246
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 28,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          822,
+          792
+        ],
+        "b": "OTHER_COAST",
+        "t": 18,
+        "o": 12,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          960,
+          702
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 28,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          990,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 28,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1206,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 10,
+        "o": 19,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1464,
+          372
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 27,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          930,
+          156
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 25,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1152,
+          588
+        ],
+        "b": "OTHER_COAST",
+        "t": 7,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1170,
+          624
+        ],
+        "b": "OTHER_COAST",
+        "t": 11,
+        "o": 17,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1008,
+          462
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 25,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1152,
+          504
+        ],
+        "b": "R1",
+        "t": 7,
+        "o": 20,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1212,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 7,
+        "o": 20,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1452,
+          354
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 26,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1458,
+          366
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 25,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          564,
+          522
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 25,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          678,
+          762
+        ],
+        "b": "OTHER_COAST",
+        "t": 4,
+        "o": 22,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            678,
+            762
+          ],
+          "min_distance_units": 20.998,
+          "neighbor_polygon_id": 21,
+          "T": 4,
+          "O": 22
+        }
+      },
+      {
+        "p": [
+          810,
+          156
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 25,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          816,
+          156
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 25,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          972,
+          162
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 24,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1062,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 24,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 9,
+        "o": 17,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1332,
+          774
+        ],
+        "b": "OTHER_COAST",
+        "t": 10,
+        "o": 16,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1476,
+          384
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1482,
+          390
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 24,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          708,
+          180
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          846,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1062,
+          540
+        ],
+        "b": "OTHER_COAST",
+        "t": 12,
+        "o": 13,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1152,
+          498
+        ],
+        "b": "R1",
+        "t": 8,
+        "o": 17,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1332,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 24,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          792,
+          168
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          858,
+          180
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 22,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1026,
+          450
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1032,
+          450
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1146,
+          582
+        ],
+        "b": "OTHER_COAST",
+        "t": 5,
+        "o": 19,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1152,
+          480
+        ],
+        "b": "R1",
+        "t": 11,
+        "o": 13,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1152,
+          486
+        ],
+        "b": "R1",
+        "t": 10,
+        "o": 14,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1152,
+          492
+        ],
+        "b": "R1",
+        "t": 9,
+        "o": 15,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1254,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 22,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1320,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1326,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 23,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          732,
+          192
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          840,
+          816
+        ],
+        "b": "OTHER_COAST",
+        "t": 21,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          948,
+          726
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 22,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1038,
+          180
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1080,
+          216
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1164,
+          612
+        ],
+        "b": "OTHER_COAST",
+        "t": 8,
+        "o": 15,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1242,
+          192
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 22,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1302,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 22,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1308,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 22,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1314,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 22,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1452,
+          264
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          576,
+          588
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 20,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1002,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1008,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1020,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1236,
+          192
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1284,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1290,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1296,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 21,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          690,
+          192
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 20,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          894,
+          180
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 20,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          930,
+          780
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 19,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          948,
+          732
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 20,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          990,
+          636
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 20,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          996,
+          624
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 20,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1002,
+          606
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 20,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1008,
+          594
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 20,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1014,
+          456
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 19,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1050,
+          192
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 19,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1122,
+          450
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 20,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1320,
+          774
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 18,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1470,
+          372
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 20,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          750,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 19,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          756,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 19,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          876,
+          186
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 19,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          882,
+          186
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 19,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1128,
+          450
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 19,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1140,
+          576
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 17,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1260,
+          810
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 19,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1146,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 18,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1158,
+          600
+        ],
+        "b": "OTHER_COAST",
+        "t": 6,
+        "o": 13,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          600,
+          660
+        ],
+        "b": "OTHER_COAST",
+        "t": 17,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          648,
+          726
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 17,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            648,
+            726
+          ],
+          "min_distance_units": 23.115,
+          "neighbor_polygon_id": 26,
+          "T": 1,
+          "O": 17
+        }
+      },
+      {
+        "p": [
+          948,
+          738
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 17,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1074,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 16,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1266,
+          810
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 17,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1506,
+          612
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 16,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1068,
+          582
+        ],
+        "b": "OTHER_COAST",
+        "t": 7,
+        "o": 10,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1182,
+          654
+        ],
+        "b": "R2",
+        "t": 16,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1188,
+          216
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 16,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1194,
+          216
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 16,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1278,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 16,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1494,
+          738
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 15,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          942,
+          756
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 14,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1092,
+          216
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 15,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1344,
+          780
+        ],
+        "b": "OTHER_COAST",
+        "t": 8,
+        "o": 8,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1368,
+          792
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 15,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1482,
+          474
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 14,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          660,
+          744
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 14,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            660,
+            744
+          ],
+          "min_distance_units": 21.669,
+          "neighbor_polygon_id": 21,
+          "T": 1,
+          "O": 14
+        }
+      },
+      {
+        "p": [
+          696,
+          768
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 12,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          936,
+          768
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 13,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1176,
+          642
+        ],
+        "b": "R2",
+        "t": 14,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1494,
+          636
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 13,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1056,
+          492
+        ],
+        "b": "OTHER_COAST",
+        "t": 7,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1446,
+          258
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 11,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1488,
+          480
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 12,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1524,
+          588
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 12,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          582,
+          564
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 12,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          582,
+          570
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 11,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          582,
+          576
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 10,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          708,
+          762
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 10,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          834,
+          804
+        ],
+        "b": "OTHER_COAST",
+        "t": 12,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1056,
+          498
+        ],
+        "b": "OTHER_COAST",
+        "t": 6,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1488,
+          396
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 11,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          846,
+          828
+        ],
+        "b": "OTHER_COAST",
+        "t": 10,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1014,
+          576
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 10,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1044,
+          186
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 10,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1056,
+          504
+        ],
+        "b": "OTHER_COAST",
+        "t": 5,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1062,
+          546
+        ],
+        "b": "OTHER_COAST",
+        "t": 6,
+        "o": 6,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1062,
+          552
+        ],
+        "b": "OTHER_COAST",
+        "t": 6,
+        "o": 6,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1062,
+          558
+        ],
+        "b": "OTHER_COAST",
+        "t": 6,
+        "o": 6,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1134,
+          534
+        ],
+        "b": "OTHER_COAST",
+        "t": 10,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1494,
+          486
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 10,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1500,
+          492
+        ],
+        "b": "OTHER_COAST",
+        "t": 6,
+        "o": 6,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1500,
+          624
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 10,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1530,
+          582
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 11,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            1530,
+            582
+          ],
+          "min_distance_units": 20.052,
+          "neighbor_polygon_id": 9,
+          "T": 1,
+          "O": 11
+        }
+      },
+      {
+        "p": [
+          720,
+          756
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 8,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          798,
+          792
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 8,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1026,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 10,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1056,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 9,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1056,
+          510
+        ],
+        "b": "OTHER_COAST",
+        "t": 4,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1356,
+          786
+        ],
+        "b": "OTHER_COAST",
+        "t": 5,
+        "o": 6,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1524,
+          510
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 9,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1530,
+          522
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 10,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          582,
+          486
+        ],
+        "b": "OTHER_COAST",
+        "t": 9,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1014,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 9,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1056,
+          516
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1098,
+          216
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 9,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1530,
+          576
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 9,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            1530,
+            576
+          ],
+          "min_distance_units": 22.084,
+          "neighbor_polygon_id": 9,
+          "T": 1,
+          "O": 9
+        }
+      },
+      {
+        "p": [
+          924,
+          798
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          942,
+          150
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 8,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          960,
+          156
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 8,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          996,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 8,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1020,
+          570
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1056,
+          522
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1062,
+          576
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 6,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1086,
+          216
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 8,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1134,
+          570
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 8,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1140,
+          528
+        ],
+        "b": "R1",
+        "t": 4,
+        "o": 5,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1500,
+          726
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1530,
+          570
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 8,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1056,
+          528
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1056,
+          534
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1062,
+          570
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 6,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1146,
+          516
+        ],
+        "b": "R1",
+        "t": 6,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1326,
+          774
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1464,
+          324
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1506,
+          684
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 5,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            1506,
+            684
+          ],
+          "min_distance_units": 13.669,
+          "neighbor_polygon_id": 72,
+          "T": 3,
+          "O": 5
+        }
+      },
+      {
+        "p": [
+          1512,
+          606
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 6,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1530,
+          564
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 7,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          852,
+          834
+        ],
+        "b": "OTHER_COAST",
+        "t": 5,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          918,
+          810
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 5,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1026,
+          564
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 5,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1062,
+          564
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 6,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1476,
+          468
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 4,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1488,
+          420
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 5,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1530,
+          558
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 6,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          726,
+          186
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          882,
+          834
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1008,
+          498
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1014,
+          510
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1020,
+          522
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1080,
+          588
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          492
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1470,
+          294
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1494,
+          642
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1500,
+          660
+        ],
+        "b": "OTHER_COAST",
+        "t": 3,
+        "o": 3,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            1500,
+            660
+          ],
+          "min_distance_units": 21.012,
+          "neighbor_polygon_id": 72,
+          "T": 3,
+          "O": 3
+        }
+      },
+      {
+        "p": [
+          1512,
+          498
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 4,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1518,
+          600
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 4,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1530,
+          552
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 5,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          912,
+          822
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1032,
+          558
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1278,
+          816
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1530,
+          546
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 4,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          834,
+          162
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          840,
+          168
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          876,
+          840
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1026,
+          528
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1032,
+          534
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1098,
+          582
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1104,
+          570
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          456
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          516
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1296,
+          816
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1302,
+          804
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1308,
+          798
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1314,
+          786
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1458,
+          342
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1470,
+          312
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1476,
+          456
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1482,
+          444
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1506,
+          492
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1506,
+          720
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            1506,
+            720
+          ],
+          "min_distance_units": 18.919,
+          "neighbor_polygon_id": 72,
+          "T": 2,
+          "O": 2
+        }
+      },
+      {
+        "p": [
+          1518,
+          504
+        ],
+        "b": "OTHER_COAST",
+        "t": 2,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1530,
+          540
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 3,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          816,
+          792
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1506,
+          678
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 2,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            1506,
+            678
+          ],
+          "min_distance_units": 14.057,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 2
+        }
+      },
+      {
+        "p": [
+          1512,
+          702
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 2,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            1512,
+            702
+          ],
+          "min_distance_units": 8.277,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 2
+        }
+      },
+      {
+        "p": [
+          1512,
+          708
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 2,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            1512,
+            708
+          ],
+          "min_distance_units": 9.752,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 2
+        }
+      },
+      {
+        "p": [
+          1512,
+          714
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 2,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            1512,
+            714
+          ],
+          "min_distance_units": 12.635,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 2
+        }
+      },
+      {
+        "p": [
+          1530,
+          534
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 2,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          564,
+          528
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          564,
+          612
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          570,
+          540
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          576,
+          438
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          576,
+          552
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          594,
+          456
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          600,
+          390
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          606,
+          684
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          612,
+          354
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          612,
+          702
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          624,
+          258
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          624,
+          336
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          654,
+          312
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          660,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          672,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          678,
+          768
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            678,
+            768
+          ],
+          "min_distance_units": 18.26,
+          "neighbor_polygon_id": 21,
+          "T": 1,
+          "O": 1
+        }
+      },
+      {
+        "p": [
+          714,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          720,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          738,
+          192
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          810,
+          792
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          822,
+          156
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          828,
+          156
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          834,
+          810
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          840,
+          822
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          852,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          852,
+          840
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          864,
+          180
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          864,
+          846
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          888,
+          834
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          894,
+          834
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          900,
+          834
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          912,
+          828
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          918,
+          162
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          918,
+          816
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          924,
+          804
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          930,
+          786
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          930,
+          792
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          936,
+          150
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          936,
+          774
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          942,
+          762
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          948,
+          150
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          948,
+          744
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          948,
+          750
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          966,
+          156
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          966,
+          696
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          972,
+          684
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          984,
+          168
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          984,
+          654
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1008,
+          468
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1008,
+          474
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1008,
+          480
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1008,
+          486
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1008,
+          492
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1032,
+          174
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1038,
+          534
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1038,
+          546
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1038,
+          552
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1050,
+          468
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1050,
+          474
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1068,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1086,
+          588
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1104,
+          576
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          462
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          468
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          474
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          480
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          486
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          522
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          528
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          534
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          540
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          546
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          552
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          558
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1110,
+          564
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1116,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1116,
+          504
+        ],
+        "b": "R1",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1116,
+          510
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1122,
+          552
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1128,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1140,
+          192
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1146,
+          468
+        ],
+        "b": "R1",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1152,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1164,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1176,
+          210
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1188,
+          666
+        ],
+        "b": "R2",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1194,
+          684
+        ],
+        "b": "R2",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1200,
+          696
+        ],
+        "b": "R2",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1206,
+          726
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1212,
+          756
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1218,
+          198
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1218,
+          768
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1230,
+          192
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1230,
+          786
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1248,
+          192
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1266,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1284,
+          822
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1302,
+          810
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1314,
+          792
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1320,
+          780
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1344,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1350,
+          204
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1380,
+          228
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1392,
+          774
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1392,
+          780
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1404,
+          246
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1416,
+          246
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1428,
+          240
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1440,
+          240
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1446,
+          252
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1458,
+          264
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1464,
+          330
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1464,
+          336
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1470,
+          282
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1470,
+          288
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1476,
+          306
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1476,
+          462
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1482,
+          450
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1488,
+          426
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1488,
+          432
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1488,
+          438
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1488,
+          750
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1494,
+          408
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1494,
+          414
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1500,
+          630
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1500,
+          654
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            1500,
+            654
+          ],
+          "min_distance_units": 21.769,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 1
+        }
+      },
+      {
+        "p": [
+          1500,
+          732
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1506,
+          618
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1506,
+          672
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            1506,
+            672
+          ],
+          "min_distance_units": 14.598,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 1
+        }
+      },
+      {
+        "p": [
+          1512,
+          696
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water",
+        "neighbor": {
+          "xy": [
+            1512,
+            696
+          ],
+          "min_distance_units": 7.589,
+          "neighbor_polygon_id": 72,
+          "T": 1,
+          "O": 1
+        }
+      },
+      {
+        "p": [
+          1524,
+          594
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      },
+      {
+        "p": [
+          1530,
+          528
+        ],
+        "b": "OTHER_COAST",
+        "t": 1,
+        "o": 1,
+        "s6": "water",
+        "s3": "water"
+      }
+    ]
+  },
+  "limits": [
+    "Raster land mask tests water connectivity on a finite working map, not actual terrestrial shoreline, depth or current regime.",
+    "4-connectivity and the 3/6 illustration-unit spacing could miss sub-grid barriers, underwater obstacles and narrow channels.",
+    "B45 elevation/flow algorithm is synthetic; confirming that its first water pixels connect to edge water does not validate the river courses.",
+    "Global frame top/bottom are used as water-component seeds purely for cartographic topology; real polar bathymetry not represented.",
+    "All 25 accepted ocean/sea names, country positions and North Crown physical constraints remain unchanged.",
+    "No Zangshuoyuan sea or anomalous-water network is assigned to current coordinates in B46; separate future study."
+  ],
+  "qa": {
+    "original_polygons": true,
+    "original_vertices": true,
+    "B45_sampling_count": true,
+    "B45_regression_match": true,
+    "no_missing_outlets": true,
+    "all_6_unit_outlets_connected": true,
+    "all_3_unit_outlets_connected": true,
+    "raster3_point_samples_consistent": true,
+    "scenario_count_2": true,
+    "no_GeoCanons_changed": true
+  },
+  "next": [
+    "B47: inspect specific coast-exit concentration points and overly large synthetic drainage funnels; no river-channel claims until relief hypotheses are constrained.",
+    "Investigate model assumptions for highlands, resistance arc, erosion and sediment without treating arbitrary relief peaks as real mountains.",
+    "Maintain B42 coastline and preserve 99 land shapes while studying catchment route sensitivity."
+  ]
+}
