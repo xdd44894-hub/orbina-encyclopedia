@@ -183,6 +183,40 @@ footer{border-top:1px solid var(--line);color:var(--sub);font-size:.82rem;paddin
 </div>
 <div class="links"><a href="../assets/data/zagren-r03-minimal-contrast-v09.json">39项来源／候选数据及3个假说</a><a href="../assets/js/zagren-r03-scope-validator-v09.js">证据范围自动校验程序</a></div>
 </section>
+<section class="panel" id="nominal-r04">
+<h2>R04 · 形容词一致与西部za证据谱系</h2>
+<p>这一阶段不再用自动生成句证明自己：将<strong>原有2组现代已核验句、6组历史协调语境及1组早期书面语词组</strong>分开，对其中2处复用旧文法资料的条目去重。按三方言可查看共27条已有词组／句形。</p>
+<div class="stats">
+<div class="stat"><strong id="r04Sources">—</strong><small>有明确资料来源的语境</small></div>
+<div class="stat"><strong id="r04Dialects">—</strong><small>三方言对应句形</small></div>
+<div class="stat"><strong id="r04Aliases">—</strong><small>需避免重复计数的旧材料</small></div>
+<div class="stat"><strong id="r04Approved">—</strong><small>新核准现代格尾</small></div>
+</div>
+<div class="note"><strong>已有规则范围：</strong>西部`za žiŵoġ brat`说明`za`位于“修饰词＋名词”外层；A03的`noŵu ẑeleznu ṱrubu`等例证说明已核验语料中修饰词与名词可以共同构成宾格短语。早期复数`žiŵÿħ bratoŵ`不带`za`，<strong>但不能据此宣布现代复数永远不用`za`</strong>。</div>
+<div class="controls" style="grid-template-columns: minmax(180px,1fr) minmax(180px,1fr) minmax(150px,1fr)">
+<label for="r04Level">来源层次
+<select id="r04Level"><option value="all">全部来源</option><option value="modern-v06-verified">V0.6现代核验句</option><option value="historical-reconciled-context">V0.7历史协调句</option><option value="early-literary-example">V0.4早期书面语</option></select></label>
+<label for="r04Dialect">方言
+<select id="r04Dialect"><option value="N">北部</option><option value="SE">东南</option><option value="W">西部</option></select></label>
+<label for="r04Focus">考察范围
+<select id="r04Focus"><option value="all">全部语法语境</option><option value="za">西部za标记</option><option value="modifier">有形容词修饰</option></select></label>
+</div>
+<p id="r04Status" class="muted" role="status">正在读取R04来源审订……</p>
+<div class="scroll"><table><thead><tr><th>来源</th><th>已记录的原始句形</th><th>句法层次</th><th>证据边界</th></tr></thead><tbody id="r04Rows"></tbody></table></div>
+<h2>模拟现代可接受性调查结果（不修改正史）</h2>
+<p class="muted">为同一个西部阳性有生名词分别判断“不带za”和“带za”的句子能否成立。下方只演示<strong>如果将来获得这类独立证据</strong>，三种模型会受到什么影响；此处的选择不代表真实调查结果。</p>
+<div class="controls" style="grid-template-columns:minmax(190px,1fr) minmax(190px,1fr) minmax(190px,1fr)">
+<label for="r04Bare">无za句形
+<select id="r04Bare"><option value="accepted">假设：可接受</option><option value="rejected">假设：不可接受</option></select></label>
+<label for="r04Marked">带za句形
+<select id="r04Marked"><option value="accepted">假设：可接受</option><option value="rejected">假设：不可接受</option></select></label>
+<label for="r04Target">示例名词
+<select id="r04Target"><option value="D0180">人</option><option value="D0183">朋友</option><option value="D0184">邻居</option><option value="D0186">工人</option><option value="D0188">医生</option></select></label>
+</div>
+<p id="r04Example" class="muted"></p>
+<p id="r04Judgement" class="muted" role="status"></p>
+<div class="links"><a href="../assets/data/zagren-r04-agreement-evidence-v09.json">R04证据谱系与模型判定矩阵</a><a href="../assets/js/zagren-r04-evidence-validator-v09.js">R04资料来源自动核验程序</a></div>
+</section>
 <section class="panel">
 <h2>资料与历史基线</h2>
 <p>形态来源分为：历史书面范式对应、已校准试验模板、低证据外形推断、词典原形限定。西部“神明／雪”的20个未定斜格继续留空，避免把W11词尾脱落套用于全部格位。</p>
@@ -455,6 +489,47 @@ async function initR03ConstructedContrasts(){
  }catch(e){$r("r03cValid").textContent="异常";status.textContent="R03第三阶段数据校验失败："+e.message}
 }
 initR03ConstructedContrasts();
+</script>
+<script>
+(async function initR04Evidence(){
+ const $=id=>document.getElementById(id);
+ const level=$("r04Level"),dialect=$("r04Dialect"),focus=$("r04Focus"),bare=$("r04Bare"),marked=$("r04Marked"),target=$("r04Target"),table=$("r04Rows"),status=$("r04Status");
+ try{
+  const response=await fetch("../assets/data/zagren-r04-agreement-evidence-v09.json",{cache:"no-cache"});
+  if(!response.ok)throw Error("HTTP "+response.status);
+  const data=await response.json(),m=data.metrics;
+  if(data.sourceAnchors?.length!==9||m.branchRealizations!==27||m.provenanceAliases!==2||m.newCertifiedModernCaseEndings!==0||data.judgementMatrix?.length!==4)throw Error("R04数据数量或规范边界不一致");
+  $("r04Sources").textContent=data.sourceAnchors.length;
+  $("r04Dialects").textContent=m.branchRealizations;
+  $("r04Aliases").textContent=m.provenanceAliases;
+  $("r04Approved").textContent=m.newCertifiedModernCaseEndings;
+  const branchNames={N:"北部",SE:"东南",W:"西部"};
+  const levelNames={"modern-v06-verified":"现代核验语境","historical-reconciled-context":"历史协调用法","early-literary-example":"早期书面语"};
+  function refresh(){
+   const entries=data.sourceAnchors.filter(x=>(level.value==="all"||x.level===level.value)
+      &&(focus.value==="all"||(focus.value==="za"?x.branches[dialect.value].components.phraseMarker==="za":x.branches[dialect.value].components.modifierTokens.length>0)));
+   table.replaceChildren();
+   for(const x of entries){
+    const tr=document.createElement("tr");
+    const a=document.createElement("td");a.textContent=x.id+" · "+branchNames[dialect.value];tr.append(a);
+    const b=document.createElement("td");const surface=document.createElement("code");surface.textContent=x.branches[dialect.value].original;b.append(surface);tr.append(b);
+    const c=document.createElement("td");c.textContent=levelNames[x.level];tr.append(c);
+    const d=document.createElement("td");d.textContent=x.duplicatesExistingHistoricSource?"与V0.4的"+x.duplicatesExistingHistoricSource+"同源，不能重复计数":x.level==="modern-v06-verified"?"限于该核验语境":"不直接推广为完整现代范式";tr.append(d);
+    table.append(tr);
+   }
+   status.textContent="显示 "+entries.length+"组来源在"+branchNames[dialect.value]+"的原文（来自9组来源）；不额外计入新现代变格。";
+  }
+  function simulate(){
+   const test=data.judgementMatrix.find(x=>x.bare===bare.value&&x.marked===marked.value);
+   const lex=data.experimentalTargets.find(x=>x.id===target.value);
+   $("r04Example").textContent=lex?"研究构造（未核定）：无za："+lex.bare+"；带za："+lex.marked:"";
+   $("r04Judgement").textContent=test?"假设结果 "+test.id+"：H1 "+test.effect.H1+"；H2 "+test.effect.H2+"；H3 "+test.effect.H3+"。前提："+test.condition+"。这并非真实语言判定。":"尚无匹配的判定方案。";
+  }
+  [level,dialect,focus].forEach(x=>x.addEventListener("change",refresh));
+  [bare,marked,target].forEach(x=>x.addEventListener("change",simulate));
+  refresh();simulate();
+ }catch(err){status.textContent="R04资料读取失败："+err.message}
+})();
 </script>
 </body>
 </html>
