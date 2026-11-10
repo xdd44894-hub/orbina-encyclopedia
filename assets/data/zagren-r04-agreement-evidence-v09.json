@@ -1,0 +1,594 @@
+{
+  "title": "Žaġręn V0.9 · R04形容词一致与西部za语法证据谱系",
+  "version": "V0.9-R04-evidence-matrix-1",
+  "date": "2026-11-10",
+  "authority": "source-anchored structural facts; no new modern inflection or sentence is canonized",
+  "scope": "以既有V0.6五句语料、V0.7历史协调句和V0.4早期词组完成证据计数去重，并评估三个za假说能否由现有记录区分。",
+  "sources": [
+    "assets/data/zagren-syntax-v07.json",
+    "assets/data/zagren-syntax-tests-v07.json",
+    "assets/data/zagren-modifier-morphology-v04.json",
+    "assets/data/zagren-r03-minimal-contrast-v09.json"
+  ],
+  "metrics": {
+    "total": 9,
+    "verified": 2,
+    "historical": 6,
+    "early": 1,
+    "branchRealizations": 27,
+    "westAnimateZa": 3,
+    "westPluralOldUnmarked": 1,
+    "provenanceAliases": 2,
+    "westAnimateTestLexemes": 5,
+    "candidateJudgementPatterns": 4,
+    "newCertifiedModernCaseEndings": 0,
+    "selectedZaModel": null
+  },
+  "knownConclusions": [
+    {
+      "id": "K1",
+      "authority": "verified-v06-context",
+      "claim": "A03已核验三方言新／铁制两修饰词前置与管道宾格搭配",
+      "source": "A03",
+      "isGeneralProductiveAgreementRule": false
+    },
+    {
+      "id": "K2",
+      "authority": "adopted-syntax-M07-plus-reconciled-example",
+      "claim": "A11西部za标记在修饰词与名词短语之外，词序为za＋修饰词＋名词；它不是词根成分",
+      "source": "A11",
+      "historicalAlias": "C09",
+      "isGeneralProductiveAgreementRule": false
+    },
+    {
+      "id": "K3",
+      "authority": "early-literary-only",
+      "claim": "C34旧书面语中有生复数宾格词组无za；该事实不证明现代西部复数禁用za",
+      "source": "C34",
+      "isModernNegativeEvidence": false
+    },
+    {
+      "id": "K4",
+      "authority": "limited-existing-syntax",
+      "claim": "A06、A11、A16三个西部带za的语境都符合H1、H2、H3三个假说；无法由正例判定za是否必须或可选",
+      "source": "A06/A11/A16",
+      "selectableModel": null
+    },
+    {
+      "id": "K5",
+      "authority": "provenance-deduplication",
+      "claim": "A11与历史C09复用一套句形；A12与历史C03复用一套短语；同文双文件不构成独立双重证据",
+      "source": "A11/C09 and A12/C03"
+    }
+  ],
+  "sourceAnchors": [
+    {
+      "id": "A03",
+      "level": "modern-v06-verified",
+      "phenomenon": "multi-adjective-accusative",
+      "sourcePath": "assets/data/zagren-syntax-tests-v07.json",
+      "independenceUnit": "A03",
+      "duplicatesExistingHistoricSource": null,
+      "provenanceNote": null,
+      "branches": {
+        "N": {
+          "original": "mÿ ħranime noŵu ẑeleznu ṱrubu.",
+          "fragment": "noŵu ẑeleznu ṱrubu",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [
+              "noŵu",
+              "ẑeleznu"
+            ],
+            "nounToken": "ṱrubu"
+          }
+        },
+        "SE": {
+          "original": "mi hranime novu železnu trubu.",
+          "fragment": "novu železnu trubu",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [
+              "novu",
+              "železnu"
+            ],
+            "nounToken": "trubu"
+          }
+        },
+        "W": {
+          "original": "mÿ ħranim noŵu žłeznu þřubu.",
+          "fragment": "noŵu žłeznu þřubu",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [
+              "noŵu",
+              "žłeznu"
+            ],
+            "nounToken": "þřubu"
+          }
+        }
+      }
+    },
+    {
+      "id": "A04",
+      "level": "modern-v06-verified",
+      "phenomenon": "inanimate-accusative",
+      "sourcePath": "assets/data/zagren-syntax-tests-v07.json",
+      "independenceUnit": "A04",
+      "duplicatesExistingHistoricSource": null,
+      "provenanceNote": null,
+      "branches": {
+        "N": {
+          "original": "mÿ ŵ lese ńe ŵideme sęġ.",
+          "fragment": "sęġ",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [],
+            "nounToken": "sęġ"
+          }
+        },
+        "SE": {
+          "original": "mi v lese ne videme seg.",
+          "fragment": "seg",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [],
+            "nounToken": "seg"
+          }
+        },
+        "W": {
+          "original": "mÿ ŵ łes n ŵidem sne.",
+          "fragment": "sne",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [],
+            "nounToken": "sne"
+          }
+        }
+      }
+    },
+    {
+      "id": "A06",
+      "level": "historical-reconciled-context",
+      "phenomenon": "animate-accusative-bare-vs-za",
+      "sourcePath": "assets/data/zagren-syntax-tests-v07.json",
+      "independenceUnit": "A06",
+      "duplicatesExistingHistoricSource": null,
+      "provenanceNote": null,
+      "branches": {
+        "N": {
+          "original": "ja ŵidem brata.",
+          "fragment": "brata",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [],
+            "nounToken": "brata"
+          }
+        },
+        "SE": {
+          "original": "ja videm brata.",
+          "fragment": "brata",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [],
+            "nounToken": "brata"
+          }
+        },
+        "W": {
+          "original": "ja ŵidem za brat.",
+          "fragment": "za brat",
+          "components": {
+            "phraseMarker": "za",
+            "modifierTokens": [],
+            "nounToken": "brat"
+          }
+        }
+      }
+    },
+    {
+      "id": "A11",
+      "level": "historical-reconciled-context",
+      "phenomenon": "animate-accusative-modified",
+      "sourcePath": "assets/data/zagren-syntax-tests-v07.json",
+      "independenceUnit": "legacy-C09",
+      "duplicatesExistingHistoricSource": "C09",
+      "provenanceNote": "V0.7的A11复用历史V0.4 C09，二者为一条证据链",
+      "branches": {
+        "N": {
+          "original": "ja ŵidem žiŵoġo brata.",
+          "fragment": "žiŵoġo brata",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [
+              "žiŵoġo"
+            ],
+            "nounToken": "brata"
+          }
+        },
+        "SE": {
+          "original": "ja videm živogo brata.",
+          "fragment": "živogo brata",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [
+              "živogo"
+            ],
+            "nounToken": "brata"
+          }
+        },
+        "W": {
+          "original": "ja ŵidem za žiŵoġ brat.",
+          "fragment": "za žiŵoġ brat",
+          "components": {
+            "phraseMarker": "za",
+            "modifierTokens": [
+              "žiŵoġ"
+            ],
+            "nounToken": "brat"
+          }
+        }
+      }
+    },
+    {
+      "id": "A12",
+      "level": "historical-reconciled-context",
+      "phenomenon": "locative-adjective",
+      "sourcePath": "assets/data/zagren-syntax-tests-v07.json",
+      "independenceUnit": "legacy-C03",
+      "duplicatesExistingHistoricSource": "C03",
+      "provenanceNote": "V0.7的A12复用历史V0.4 C03，二者为一条证据链",
+      "branches": {
+        "N": {
+          "original": "na černoją ġore.",
+          "fragment": "na černoją ġore",
+          "components": {
+            "phraseMarker": "na",
+            "modifierTokens": [
+              "černoją"
+            ],
+            "nounToken": "ġore"
+          }
+        },
+        "SE": {
+          "original": "na černojo gore.",
+          "fragment": "na černojo gore",
+          "components": {
+            "phraseMarker": "na",
+            "modifierTokens": [
+              "černojo"
+            ],
+            "nounToken": "gore"
+          }
+        },
+        "W": {
+          "original": "na černoj ġor.",
+          "fragment": "na černoj ġor",
+          "components": {
+            "phraseMarker": "na",
+            "modifierTokens": [
+              "černoj"
+            ],
+            "nounToken": "ġor"
+          }
+        }
+      }
+    },
+    {
+      "id": "A14",
+      "level": "historical-reconciled-context",
+      "phenomenon": "genitive-od",
+      "sourcePath": "assets/data/zagren-syntax-tests-v07.json",
+      "independenceUnit": "A14",
+      "duplicatesExistingHistoricSource": null,
+      "provenanceNote": null,
+      "branches": {
+        "N": {
+          "original": "od doma.",
+          "fragment": "od doma",
+          "components": {
+            "phraseMarker": "od",
+            "modifierTokens": [],
+            "nounToken": "doma"
+          }
+        },
+        "SE": {
+          "original": "od doma.",
+          "fragment": "od doma",
+          "components": {
+            "phraseMarker": "od",
+            "modifierTokens": [],
+            "nounToken": "doma"
+          }
+        },
+        "W": {
+          "original": "od dom.",
+          "fragment": "od dom",
+          "components": {
+            "phraseMarker": "od",
+            "modifierTokens": [],
+            "nounToken": "dom"
+          }
+        }
+      }
+    },
+    {
+      "id": "A15",
+      "level": "historical-reconciled-context",
+      "phenomenon": "instrumental-s",
+      "sourcePath": "assets/data/zagren-syntax-tests-v07.json",
+      "independenceUnit": "A15",
+      "duplicatesExistingHistoricSource": null,
+      "provenanceNote": null,
+      "branches": {
+        "N": {
+          "original": "s rękoją.",
+          "fragment": "s rękoją",
+          "components": {
+            "phraseMarker": "s",
+            "modifierTokens": [],
+            "nounToken": "rękoją"
+          }
+        },
+        "SE": {
+          "original": "s renkojo.",
+          "fragment": "s renkojo",
+          "components": {
+            "phraseMarker": "s",
+            "modifierTokens": [],
+            "nounToken": "renkojo"
+          }
+        },
+        "W": {
+          "original": "s rękoj.",
+          "fragment": "s rękoj",
+          "components": {
+            "phraseMarker": "s",
+            "modifierTokens": [],
+            "nounToken": "rękoj"
+          }
+        }
+      }
+    },
+    {
+      "id": "A16",
+      "level": "historical-reconciled-context",
+      "phenomenon": "animate-accusative-god",
+      "sourcePath": "assets/data/zagren-syntax-tests-v07.json",
+      "independenceUnit": "A16",
+      "duplicatesExistingHistoricSource": null,
+      "provenanceNote": null,
+      "branches": {
+        "N": {
+          "original": "mať ŵidet boġa.",
+          "fragment": "boġa",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [],
+            "nounToken": "boġa"
+          }
+        },
+        "SE": {
+          "original": "mat videt boga.",
+          "fragment": "boga",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [],
+            "nounToken": "boga"
+          }
+        },
+        "W": {
+          "original": "maþ ŵidet za boġ.",
+          "fragment": "za boġ",
+          "components": {
+            "phraseMarker": "za",
+            "modifierTokens": [],
+            "nounToken": "boġ"
+          }
+        }
+      }
+    },
+    {
+      "id": "C34",
+      "level": "early-literary-example",
+      "phenomenon": "plural-animate-accusative",
+      "sourcePath": "assets/data/zagren-modifier-morphology-v04.json",
+      "independenceUnit": "C34",
+      "duplicatesExistingHistoricSource": null,
+      "provenanceNote": null,
+      "branches": {
+        "N": {
+          "original": "žiŵÿħ bratoŵ",
+          "fragment": "žiŵÿħ bratoŵ",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [
+              "žiŵÿħ"
+            ],
+            "nounToken": "bratoŵ"
+          }
+        },
+        "SE": {
+          "original": "živih bratov",
+          "fragment": "živih bratov",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [
+              "živih"
+            ],
+            "nounToken": "bratov"
+          }
+        },
+        "W": {
+          "original": "žiŵÿħ bratoŵ",
+          "fragment": "žiŵÿħ bratoŵ",
+          "components": {
+            "phraseMarker": null,
+            "modifierTokens": [
+              "žiŵÿħ"
+            ],
+            "nounToken": "bratoŵ"
+          }
+        }
+      }
+    }
+  ],
+  "hypothesisCompatibility": [
+    {
+      "model": "H1",
+      "name": "西部有生单数宾格za普遍必需",
+      "observationsConsistent": [
+        "A06",
+        "A11",
+        "A16"
+      ],
+      "contradictedByExistingEvidence": [],
+      "conclusion": "cannot-select-model-from-positive-marked-examples-alone"
+    },
+    {
+      "model": "H2",
+      "name": "西部有生单数宾格za可选",
+      "observationsConsistent": [
+        "A06",
+        "A11",
+        "A16"
+      ],
+      "contradictedByExistingEvidence": [],
+      "conclusion": "cannot-select-model-from-positive-marked-examples-alone"
+    },
+    {
+      "model": "H3",
+      "name": "西部有生单数宾格za受词汇／语域条件制约",
+      "observationsConsistent": [
+        "A06",
+        "A11",
+        "A16"
+      ],
+      "contradictedByExistingEvidence": [],
+      "conclusion": "cannot-select-model-from-positive-marked-examples-alone"
+    }
+  ],
+  "experimentalTargets": [
+    {
+      "id": "D0180",
+      "gloss": "人",
+      "marked": "ja ŵidem za łud.",
+      "bare": "ja ŵidem łud.",
+      "validity": "both-composed-candidates-unattested",
+      "lemma": "łud",
+      "stemCaveat": null
+    },
+    {
+      "id": "D0183",
+      "gloss": "朋友",
+      "marked": "ja ŵidem za druġ.",
+      "bare": "ja ŵidem druġ.",
+      "validity": "both-composed-candidates-unattested",
+      "lemma": "dru",
+      "stemCaveat": "现代主格dru，斜格druġ-依旧候选"
+    },
+    {
+      "id": "D0184",
+      "gloss": "邻居",
+      "marked": "ja ŵidem za sused.",
+      "bare": "ja ŵidem sused.",
+      "validity": "both-composed-candidates-unattested",
+      "lemma": "sused",
+      "stemCaveat": null
+    },
+    {
+      "id": "D0186",
+      "gloss": "工人",
+      "marked": "ja ŵidem za trudnik.",
+      "bare": "ja ŵidem trudnik.",
+      "validity": "both-composed-candidates-unattested",
+      "lemma": "trudnik",
+      "stemCaveat": null
+    },
+    {
+      "id": "D0188",
+      "gloss": "医生",
+      "marked": "ja ŵidem za łekar.",
+      "bare": "ja ŵidem łekar.",
+      "validity": "both-composed-candidates-unattested",
+      "lemma": "łekar",
+      "stemCaveat": null
+    }
+  ],
+  "judgementMatrix": [
+    {
+      "id": "J1",
+      "bare": "accepted",
+      "marked": "accepted",
+      "effect": {
+        "H1": "disfavored-under-strong-obligatory-definition",
+        "H2": "consistent",
+        "H3": "consistent-if-lexically-optional"
+      },
+      "condition": "same noun, case, meaning, speech register; other morphology independently checked"
+    },
+    {
+      "id": "J2",
+      "bare": "rejected",
+      "marked": "accepted",
+      "effect": {
+        "H1": "consistent",
+        "H2": "disfavored-under-fully-optional-definition",
+        "H3": "consistent-if-lexically-required"
+      },
+      "condition": "bare rejection cannot be due to incorrect guessed oblique stem"
+    },
+    {
+      "id": "J3",
+      "bare": "accepted",
+      "marked": "rejected",
+      "effect": {
+        "H1": "disfavored",
+        "H2": "disfavored-if-marker-must-always-be-available",
+        "H3": "consistent-if-lexically-blocked"
+      },
+      "condition": "za rejection must be about marker, not form/stem or register mismatch"
+    },
+    {
+      "id": "J4",
+      "bare": "rejected",
+      "marked": "rejected",
+      "effect": {
+        "H1": "non-identifying",
+        "H2": "non-identifying",
+        "H3": "non-identifying"
+      },
+      "condition": "first repair noun inflection, agreement, and frame validity before drawing marker conclusions"
+    }
+  ],
+  "validationPolicy": [
+    "Historical text is canonical only for its own period; never promote it by occurrence-counting.",
+    "Do not count A11 and C09 as two independent attestations; likewise A12 and C03.",
+    "Do not treat absence of za in the early plural C34 as a modern negative finding.",
+    "Do not infer za's obligatoriness or optionality from 3 marked positive singular contexts.",
+    "Before treating bare and marked West friend forms as an experiment, verify the modern oblique stem independently.",
+    "Unattested trial strings must be visibly labeled as constructed hypotheses, not dictionary forms.",
+    "Keep modern official lemmas=360, new approved case endings=0."
+  ],
+  "nextResearchPriorities": [
+    {
+      "rank": 1,
+      "goal": "先核定西部阳性有生名词的真正宾格词干，尤其dru / druġ-",
+      "gate": "modern oblique-stem evidence"
+    },
+    {
+      "rank": 2,
+      "goal": "同词同义同语域对照za有／无，排除屈折词干干扰",
+      "gate": "acceptability outcomes for matched pair"
+    },
+    {
+      "rank": 3,
+      "goal": "通过多词、多修饰词比较za的句法作用域",
+      "gate": "independently anchored agreement morphology"
+    },
+    {
+      "rank": 4,
+      "goal": "核实复数和无生名词的独立格标记范围",
+      "gate": "new corpora; do not back-project the old C34"
+    }
+  ]
+}
