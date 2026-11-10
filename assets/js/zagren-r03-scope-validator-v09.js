@@ -23,11 +23,11 @@ export function validateR03Contrast(document, syntaxTests, nominalReview) {
   }
   for (const id of ["A06", "A11", "A16"]) {
     const s = corpus.get(id);
-    check(!!s && /\\bza\\b/u.test(s.forms.W), "Known W animate-accusative has za: " + id);
+    check(!!s && /\bza\b/u.test(s.forms.W), "Known W animate-accusative has za: " + id);
   }
   for (const id of ["A03", "A04"]) {
     const s = corpus.get(id);
-    check(!!s && !/\\bza\\b/u.test(s.forms.W), "Known W inanimate-accusative control must remain unmarked: " + id);
+    check(!!s && !/\bza\b/u.test(s.forms.W), "Known W inanimate-accusative control must remain unmarked: " + id);
   }
   let westAnimateMarked = 0, westOutsideScope = 0, countedCandidate = 0;
   const westAnimatePairs = new Map();
@@ -42,7 +42,7 @@ export function validateR03Contrast(document, syntaxTests, nominalReview) {
     check(trial.case === "SG.ACC" && entry.recordedForm === trial.nounCandidate,
       "Candidate noun does not match R03 pilot " + trial.id);
     check(trial.headword === lemma.recordedForm, "Headword mismatch in " + trial.id);
-    const words = trial.text.trim().replace(/[.!?！？]$/u, "").split(/\\s+/u);
+    const words = trial.text.trim().replace(/[.!?！？]$/u, "").split(/\s+/u);
     const last = words[words.length - 1];
     check(last === trial.nounCandidate, "Object must match standalone pilot noun form " + trial.id);
     if (trial.marker === "za") {
