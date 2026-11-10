@@ -165,7 +165,7 @@ footer{border-top:1px solid var(--line);color:var(--sub);font-size:.82rem;paddin
 <div class="note"><strong>语法边界：</strong>当前已见 <code>ja ŵidem za brat.</code>、<code>ja ŵidem za žiŵoġ brat.</code> 等西部有生宾格语境。但从它们不能推断 <code>za</code> 对所有新词都必用、可选，或只对少数名词适用。无生名词前的 <code>za</code> 例子只作越界对照，<strong>不是合格的现代句子，也不表示已实证证明其绝对不合语法</strong>。</div>
 <div class="controls" style="grid-template-columns: minmax(160px,1fr) minmax(160px,1fr) minmax(220px,1fr)">
 <label for="r03cKind">证据层次
-<select id="r03cKind"><option value="all">全部39项</option><option value="attested-context-control">已存在的句法语境</option><option value="constructed-contrast">拟定句形（未认证）</option><option value="counterexample-scope-control">超出现有规则范围的控制句</option></select></label>
+<select id="r03cKind"><option value="all">全部研究对象（49个句形）</option><option value="attested-context-control">已存在的句法语境</option><option value="constructed-contrast">拟定句形（未认证）</option><option value="counterexample-scope-control">超出现有规则范围的控制句</option></select></label>
 <label for="r03cBranch">方言
 <select id="r03cBranch"><option value="all">三个方言</option><option value="N">北部</option><option value="SE">东南</option><option value="W">西部</option></select></label>
 <label for="r03cSearch">按词义或词形检索
@@ -443,7 +443,7 @@ async function initR03ConstructedContrasts(){
     tag.className=x.kind==="attested-context-control"?"good":"warn";tr.append(tag);
     const why=document.createElement("td");why.textContent=x.note||x.testFocus||x.domainStatus||"";tr.append(why);host.append(tr);
    }
-   status.textContent="显示 "+matches.length+"项方言实现；5个原有语境/15个实现不等于新增现代语法认可。";
+   status.textContent="显示 "+matches.length+" / 49 个句形（5组原有语境展开为15句形，另有34个实验句形）；实验句不等于已认证现代语法。";
   }
   function updateModel(){
    const h=doc.hypothesisModels.find(x=>x.id===model.value);
