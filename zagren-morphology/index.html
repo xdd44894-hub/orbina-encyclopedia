@@ -153,6 +153,36 @@ footer{border-top:1px solid var(--line);color:var(--sub);font-size:.82rem;paddin
 <p class="muted">词尾是在给定词典主格与试验模板的基础上进行表层比较的结果，不保证其本身是有效的现代词素分界。西部“朋友”现代主格 <code>dru</code> 与候选斜格 <code>druġ-</code> 的差异会保留在分布中，不自动强制统一。</p>
 <div class="links"><a href="../assets/data/zagren-r03-class-contrast-review.json">R03第二阶段：72组词尾、18项对照及6条语境依据</a><a href="../assets/data/zagren-r03-noun-pronoun-review.json">R03第一阶段：630项词形分级审订</a></div>
 </section>
+<section class="panel" id="nominal-r03c">
+<h2>R03第三阶段 · 西部za与A/O名词宾格的最小对立试验</h2>
+<p>将已知语法证据与尚未认证的构造句严格分开：<strong>5个原有句法语境</strong>与<strong>34个用于比较的实验句形</strong>，覆盖9个代表名词、三大方言及西部独立格标记 <code>za</code>。所有实验句只用于比较语法模型，<strong>不代表现代扎格伦语正式用例</strong>。</p>
+<div class="stats">
+<div class="stat"><strong id="r03cOriginal">—</strong><small>既有句法语境</small></div>
+<div class="stat"><strong id="r03cConstructed">—</strong><small>候选及作用域控制句</small></div>
+<div class="stat"><strong id="r03cPairs">—</strong><small>西部有生名词双形式</small></div>
+<div class="stat"><strong id="r03cValid">—</strong><small>资料一致性校验</small></div>
+</div>
+<div class="note"><strong>语法边界：</strong>当前已见 <code>ja ŵidem za brat.</code>、<code>ja ŵidem za žiŵoġ brat.</code> 等西部有生宾格语境。但从它们不能推断 <code>za</code> 对所有新词都必用、可选，或只对少数名词适用。无生名词前的 <code>za</code> 例子只作越界对照，<strong>不是合格的现代句子，也不表示已实证证明其绝对不合语法</strong>。</div>
+<div class="controls" style="grid-template-columns: minmax(160px,1fr) minmax(160px,1fr) minmax(220px,1fr)">
+<label for="r03cKind">证据层次
+<select id="r03cKind"><option value="all">全部39项</option><option value="attested-context-control">已存在的句法语境</option><option value="constructed-contrast">拟定句形（未认证）</option><option value="counterexample-scope-control">超出现有规则范围的控制句</option></select></label>
+<label for="r03cBranch">方言
+<select id="r03cBranch"><option value="all">三个方言</option><option value="N">北部</option><option value="SE">东南</option><option value="W">西部</option></select></label>
+<label for="r03cSearch">按词义或词形检索
+<input type="search" id="r03cSearch" placeholder="例如：朋友、druġ、za"></label>
+</div>
+<p class="muted" id="r03cStatus" role="status">读取对立句组并校验资料中……</p>
+<div class="scroll"><table>
+<thead><tr><th>例句归属</th><th>句形／片段</th><th>证据等级</th><th>语法说明</th></tr></thead><tbody id="r03cRows"></tbody>
+</table></div>
+<div class="panel">
+<h2>三个待比较的西部语法模型</h2>
+<label for="r03cModel">研究模型（仅用于查看假说）
+<select id="r03cModel"><option value="H1">H1：za普遍必需</option><option value="H2">H2：za可以省略</option><option value="H3">H3：za受词汇或语域制约</option></select></label>
+<p class="muted" id="r03cModelDescription">模型仍待现代独立用法证据才能作出选择。</p>
+</div>
+<div class="links"><a href="../assets/data/zagren-r03-minimal-contrast-v09.json">39项来源／候选数据及3个假说</a><a href="../assets/js/zagren-r03-scope-validator-v09.js">证据范围自动校验程序</a></div>
+</section>
 <section class="panel">
 <h2>资料与历史基线</h2>
 <p>形态来源分为：历史书面范式对应、已校准试验模板、低证据外形推断、词典原形限定。西部“神明／雪”的20个未定斜格继续留空，避免把W11词尾脱落套用于全部格位。</p>
@@ -377,6 +407,54 @@ async function initR03ClassContrast(){
  }catch(err){status.textContent="R03第二阶段资料读取失败："+err.message}
 }
 initR03ClassContrast();
+</script>
+<script type="module">
+import {validateR03Contrast} from "../assets/js/zagren-r03-scope-validator-v09.js";
+const $r=id=>document.getElementById(id);
+async function initR03ConstructedContrasts(){
+ const host=$r("r03cRows"),status=$r("r03cStatus"),kind=$r("r03cKind"),branch=$r("r03cBranch"),search=$r("r03cSearch"),model=$r("r03cModel");
+ try{
+  const files=["zagren-r03-minimal-contrast-v09.json","zagren-syntax-tests-v07.json","zagren-r03-noun-pronoun-review.json"];
+  const responses=await Promise.all(files.map(f=>fetch("../assets/data/"+f,{cache:"no-cache"})));
+  if(responses.some(r=>!r.ok))throw Error("至少一个来源文件无法读取");
+  const [doc,syntax,review]=await Promise.all(responses.map(r=>r.json()));
+  const result=validateR03Contrast(doc,syntax,review);
+  if(!result.pass)throw Error(result.errors.slice(0,3).join("；"));
+  const examples=doc.currentExamples.flatMap(e=>["N","SE","W"].map(b=>({id:e.id+"-"+b,meaning:e.meaning,
+    branch:b,text:e.forms[b],kind:e.kind,sourceStatus:e.sourceStatus,note:"保留来源 "+e.reference+" 现有上下文，不能外推全词类"})));
+  const trials=doc.modernExperimentalExamples;
+  $r("r03cOriginal").textContent=doc.metrics.authoritativeSentenceAnchors;
+  $r("r03cConstructed").textContent=trials.length;
+  $r("r03cPairs").textContent=result.checked.westAnimatePairLexemes;
+  $r("r03cValid").textContent="通过";
+  const names={N:"北部",SE:"东南",W:"西部"};
+  function render(){
+   const term=search.value.trim().toLocaleLowerCase("zh-CN");
+   const matches=[...examples,...trials].filter(x=>(kind.value==="all"||x.kind===kind.value)
+    &&(branch.value==="all"||x.branch===branch.value)
+    &&(!term||[x.meaning,x.gloss||"",x.text||""].join(" ").toLocaleLowerCase("zh-CN").includes(term)));
+   host.replaceChildren();
+   for(const x of matches){
+    const tr=document.createElement("tr");
+    const meta=document.createElement("td");meta.textContent=names[x.branch]+" · "+(x.meaning||x.gloss||"");tr.append(meta);
+    const form=document.createElement("td");const code=document.createElement("code");code.textContent=x.text;form.append(code);tr.append(form);
+    const tag=document.createElement("td");
+    tag.textContent=x.kind==="attested-context-control"?"已有语境（原状）":x.kind==="counterexample-scope-control"?"超出M07范围·仅作对照":"待验证的实验构造";
+    tag.className=x.kind==="attested-context-control"?"good":"warn";tr.append(tag);
+    const why=document.createElement("td");why.textContent=x.note||x.testFocus||x.domainStatus||"";tr.append(why);host.append(tr);
+   }
+   status.textContent="显示 "+matches.length+"项方言实现；5个原有语境/15个实现不等于新增现代语法认可。";
+  }
+  function updateModel(){
+   const h=doc.hypothesisModels.find(x=>x.id===model.value);
+   $r("r03cModelDescription").textContent=h?h.prediction+"；目前状态：研究假说。已有语料无法区分三个模型。":"尚未建立该模型。";
+  }
+  [kind,branch].forEach(x=>x.addEventListener("change",render));search.addEventListener("input",render);
+  model.addEventListener("change",updateModel);
+  render();updateModel();
+ }catch(e){$r("r03cValid").textContent="异常";status.textContent="R03第三阶段数据校验失败："+e.message}
+}
+initR03ConstructedContrasts();
 </script>
 </body>
 </html>
