@@ -192,7 +192,7 @@ footer{border-top:1px solid var(--line);color:var(--sub);font-size:.82rem;paddin
 <div class="stat"><strong id="r04Aliases">—</strong><small>需避免重复计数的旧材料</small></div>
 <div class="stat"><strong id="r04Approved">—</strong><small>新核准现代格尾</small></div>
 </div>
-<div class="note"><strong>已有规则范围：</strong>西部`za žiŵoġ brat`说明`za`位于“修饰词＋名词”外层；A03的`noŵu ẑeleznu ṱrubu`等例证说明已核验语料中修饰词与名词可以共同构成宾格短语。早期复数`žiŵÿħ bratoŵ`不带`za`，<strong>但不能据此宣布现代复数永远不用`za`</strong>。</div>
+<div class="note"><strong>已有规则范围：</strong>西部<code>za žiŵoġ brat</code>说明<code>za</code>位于“修饰词＋名词”外层；A03的<code>noŵu ẑeleznu ṱrubu</code>等例证说明已核验语料中修饰词与名词可以共同构成宾格短语。早期复数<code>žiŵÿħ bratoŵ</code>不带<code>za</code>，<strong>但不能据此宣布现代复数永远不用<code>za</code></strong>。</div>
 <div class="controls" style="grid-template-columns: minmax(180px,1fr) minmax(180px,1fr) minmax(150px,1fr)">
 <label for="r04Level">来源层次
 <select id="r04Level"><option value="all">全部来源</option><option value="modern-v06-verified">V0.6现代核验句</option><option value="historical-reconciled-context">V0.7历史协调句</option><option value="early-literary-example">V0.4早期书面语</option></select></label>
@@ -523,7 +523,16 @@ initR03ConstructedContrasts();
    const test=data.judgementMatrix.find(x=>x.bare===bare.value&&x.marked===marked.value);
    const lex=data.experimentalTargets.find(x=>x.id===target.value);
    $("r04Example").textContent=lex?"研究构造（未核定）：无za："+lex.bare+"；带za："+lex.marked:"";
-   $("r04Judgement").textContent=test?"假设结果 "+test.id+"：H1 "+test.effect.H1+"；H2 "+test.effect.H2+"；H3 "+test.effect.H3+"。前提："+test.condition+"。这并非真实语言判定。":"尚无匹配的判定方案。";
+   const label={
+    "consistent":"相容","consistent-if-lexically-optional":"若该词可选则相容","consistent-if-lexically-required":"若该词必须带标记则相容",
+    "consistent-if-lexically-blocked":"若该词禁止标记则相容",
+    "disfavored":"不支持","disfavored-under-strong-obligatory-definition":"不支持普遍必需的强假说",
+    "disfavored-under-fully-optional-definition":"不支持所有词均能省略的强假说",
+    "disfavored-if-marker-must-always-be-available":"不支持对全部同类词均允许za的强假说",
+    "non-identifying":"无法区分"
+   };
+   const caution={J1:"须保证同词同义同语域，排除词干和格尾干扰",J2:"先核实裸形式未被误判，尤其要确认候选斜格词干",J3:"先排除词干、语域和名词类别差异",J4:"两式均不成立时应先修正候选词形与句框"}; 
+   $("r04Judgement").textContent=test?"假设结果 "+test.id+"：H1 "+(label[test.effect.H1]||test.effect.H1)+"；H2 "+(label[test.effect.H2]||test.effect.H2)+"；H3 "+(label[test.effect.H3]||test.effect.H3)+"。条件："+caution[test.id]+"。这只是研究模拟，不是实测结论。":"尚无匹配的判定方案。";
   }
   [level,dialect,focus].forEach(x=>x.addEventListener("change",refresh));
   [bare,marked,target].forEach(x=>x.addEventListener("change",simulate));
