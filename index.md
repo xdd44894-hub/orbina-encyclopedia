@@ -9,7 +9,7 @@ permalink: /
 <p><strong><a href="{{ '/timeline/' | relative_url }}">浏览大事件时间轴：从旧地球迁徙、弑神战到全球攻势与联合城分裂</a></strong></p>
 {% assign current_articles = site.articles | where_exp: "article", "article.archived != true" %}
 <p>收录 {{ current_articles | size }} 个公开条目。可按主题浏览，也可以直接检索人物、国家、地理、战争、装备及日常生活。</p>
-<p><a href="{{ '/assets/maps/orbina-v225r-b45-mainland-watershed-comparison.html' | relative_url }}">最新：全主大陆高程与水系对照（B45）</a> · <a href="{{ '/assets/maps/orbina-v225r-b44-relative-relief-watershed-comparison.html' | relative_url }}">东岸局部研究（B44）</a> · <a href="{{ '/assets/maps/orbina-v225r-b42-north-crown-dual-basin-before-after.html' | relative_url }}">北冠双海盆岸线（B42）</a></p>
+<p><a href="{{ '/assets/maps/orbina-v225r-b46-global-coastal-exit-review.html' | relative_url }}">最新：全球陆海连通性核查（B46）</a> · <a href="{{ '/assets/maps/orbina-v225r-b45-mainland-watershed-comparison.html' | relative_url }}">全主大陆地势对照（B45）</a> · <a href="{{ '/assets/maps/orbina-v225r-b42-north-crown-dual-basin-before-after.html' | relative_url }}">北冠双海盆海岸（B42）</a></p>
 <label class="searchbox"><span>全文检索</span><input id="wiki-search" type="search" placeholder="输入人物、地点、术语或事件" autocomplete="off"></label>
 <div id="search-results" class="search-results" hidden></div>
 <h2>分类目录</h2>
