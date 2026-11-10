@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俄庇娜 B46｜全球陆海连通与模型排水出口核查</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eff3ee;color:#244753;font:15px/1.63 system-ui,-apple-system,"Microsoft YaHei",sans-serif}
+header{background:linear-gradient(115deg,#174452,#277477);padding:25px max(15px,calc((100vw - 1250px)/2));color:white}
+header h1{font-size:clamp(23px,3vw,34px);margin:0 0 5px}header p{color:#d4e7e2;margin:0;max-width:1100px}
+main{max-width:1250px;margin:auto;padding:17px 13px 62px}
+nav{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:13px}
+nav a{display:inline-block;background:#fff;border:1px solid #cadbd4;padding:7px 10px;border-radius:8px;text-decoration:none;color:#236574}
+.panel{border:1px solid #cbded4;border-radius:12px;background:#fffefa;padding:15px;margin:13px 0}
+.panel h2{font-size:20px;margin:0 0 8px}.panel h3{font-size:16px;margin:0 0 4px}
+.controls{display:flex;gap:15px;flex-wrap:wrap;align-items:center}.controls label{display:inline-flex;align-items:center;gap:6px}
+input{accent-color:#278693}select{font:inherit;border:1px solid #b9d2c7;padding:6px 9px;border-radius:7px;background:#eef4ee}
+.statgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.stat{border:1px solid #d6e3dc;background:#eaf1eb;padding:12px;border-radius:9px}
+.stat strong{font-size:25px;display:block;color:#286579}.stat small{font-size:12px;color:#55747b}
+canvas{display:block;width:100%;height:auto;aspect-ratio:1200/800;background:#356a7b;border:1px solid #b2cbc5;border-radius:10px;cursor:crosshair;touch-action:manipulation}
+#detail{min-height:44px;padding:10px;border-radius:8px;background:#eef5f0;color:#355e6a}
+small,.hint{color:#60777a}.warning{color:#805f47}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:740px){.statgrid,.twocol{grid-template-columns:repeat(2,minmax(0,1fr))}canvas{aspect-ratio:1.4}.controls{gap:8px}}
+</style></head><body>
+<header><h1>俄庇娜世界地图 B46</h1><p>全球 99 陆块复核 · 两种网格分辨率的水面连通性 · 模型排水出口核查（非正史地形坐标）</p></header>
+<main>
+<nav>
+<a href="../images/orbina-v225r-b46-global-coastal-outlets-atlas.svg">查看完整99陆块全球地图（SVG）</a>
+<a href="../data/orbina-v225r-b46-global-coastal-water-connectivity-audit.json">B46完整校验数据</a>
+<a href="orbina-v225r-b45-mainland-watershed-comparison.html">B45两种地势方案</a>
+<a href="orbina-v225r-b42-north-crown-dual-basin-before-after.html">B42海岸方案</a>
+</nav>
+<div class="statgrid"><div class="stat"><strong>99</strong><small>重建陆块</small></div>
+<div class="stat"><strong>9,690</strong><small>顶点总数</small></div>
+<div class="stat"><strong>529</strong><small>不同的出口采样坐标</small></div>
+<div class="stat"><strong>18</strong><small>接近其他陆块海岸的出口</small></div></div>
+<section class="panel"><h2>候选主大陆 #0 · 出口分布检查</h2>
+<div class="controls">
+<label for="scenario">模型</label><select id="scenario"><option value="t">T：东升高地</option><option value="o">O：分段隆起</option><option value="both">T + O 对比</option></select>
+<label for="minimum">最低影响格数 <span id="minvalue">60</span></label><input id="minimum" type="range" min="1" max="800" step="1" value="60">
+<label><input id="near" type="checkbox" checked>显示邻近陆块警示（18处）</label>
+<label><input id="rivers" type="checkbox">显示 B43 候选 R1／R2</label>
+</div>
+<p id="status" class="hint" role="status">正在载入研究数据……</p>
+<canvas id="map" width="1200" height="800" aria-label="B46模型水域出口地理分布交互地图"></canvas>
+<p class="hint">点击任一标记可查看坐标及T/O模型汇水网格数。图示圈大小反映模拟网格数，**不是**海口宽度或河流流量。</p>
+<div id="detail" aria-live="polite">选择地图上的出口标记查看它的检测结果。</div>
+</section>
+<div class="twocol">
+<section class="panel"><h2>检查结论</h2>
+<p>对全部 99 片候选陆地进行空间重建后，重新追踪 B45 的两套模型。模拟总共涉及 12,614 个主大陆陆地网格；两种分辨率下，所有首个出陆地的样点均属于与全球边界连通的水面。</p>
+<p>其中 18 处水面出口接近其他陆块边缘（小于 24 图纸单位）；它们不是陆地误判，但仍需关注细尺度的浅滩或狭窄水道。</p>
+</section>
+<section class="panel"><h2>需要避免的误读</h2>
+<p>本研究的“连通”是图纸平面拓扑结论，既没有测深，也没有水流速度或地质构造依据。3、6 单位栅格都可能漏掉比网格更小的暗礁、沙洲和狭窄隔断。</p>
+<p class="warning">T/O 所用地势依然全部为假设，不能因水面出口核验通过便正式确认R1、R2的真实源头、河道、分水岭或国界。</p>
+</section>
+</div>
+</main>
+<script>
+"use strict";
+const $=id=>document.getElementById(id);
+const canvas=$("map"),ctx=canvas.getContext("2d"),C={x:515,y:128,w:1080,h:760};
+let audit=null,shore=null,b43=null,screenOutlets=[];
+function px(x,y){return [(x-C.x)/C.w*canvas.width,(y-C.y)/C.h*canvas.height]}
+function polygon(p,fill,stroke){ctx.beginPath();p.forEach((a,i)=>{let [x,y]=px(a[0],a[1]);if(!i)ctx.moveTo(x,y);else ctx.lineTo(x,y)});ctx.closePath();ctx.fillStyle=fill;ctx.fill();ctx.strokeStyle=stroke;ctx.lineWidth=2;ctx.stroke()}
+function path(points,color){ctx.beginPath();points.forEach((p,i)=>{let [x,y]=px(...p);if(!i)ctx.moveTo(x,y);else ctx.lineTo(x,y)});ctx.strokeStyle=color;ctx.lineWidth=2.6;ctx.setLineDash([10,7]);ctx.stroke();ctx.setLineDash([])}
+function circle(x,y,r,fill,stroke,width=1){ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);if(fill){ctx.fillStyle=fill;ctx.fill()}ctx.lineWidth=width;ctx.strokeStyle=stroke;ctx.stroke()}
+function render(){
+if(!audit||!shore)return;screenOutlets=[];
+ctx.fillStyle="#356b7b";ctx.fillRect(0,0,canvas.width,canvas.height);
+polygon(shore.change.revised_coordinates,"#dbe5ca","#7d9176");
+const scenario=$("scenario").value,min=Number($("minimum").value);$("minvalue").textContent=min;
+if($("rivers").checked&&b43)b43.schematic_routes.forEach((v,i)=>path(v.points,i?"#375aa3":"#eefdfa"));
+for(const rec of audit.results.global_exit_points){
+const max=scenario==="t"?rec.t:scenario==="o"?rec.o:Math.max(rec.t,rec.o);
+if(max<min)continue;
+const [x,y]=px(...rec.p),visible=x>=0&&x<=canvas.width&&y>=0&&y<=canvas.height;
+if(!visible)continue;const rt=3+Math.sqrt(rec.t)*.33,ro=3+Math.sqrt(rec.o)*.33;
+if(scenario==="t"){circle(x,y,rt,"rgba(37,156,178,.50)","#147c96",2)}
+else if(scenario==="o"){circle(x,y,ro,"rgba(228,138,78,.52)","#bd673d",2)}
+else{if(rec.t>=min)circle(x,y,rt,null,"#1380a4",3);if(rec.o>=min)circle(x,y,ro*.77,"rgba(231,150,80,.60)","#c27638",2)}
+screenOutlets.push({rec,x,y,r:Math.max(rt,ro,12)});
+}
+if($("near").checked)for(const rec of audit.results.global_exit_points){if(!rec.neighbor)continue;let [x,y]=px(...rec.p);circle(x,y,19,null,"#e1a34d",2.7);}
+const count=screenOutlets.length;
+$("status").textContent="已显示 "+count+" 处模型出口；蓝色＝T，橙色＝O，金色空圈＝接近其他陆块（筛查范围24绘图单位）。";
+}
+["scenario","minimum","near","rivers"].forEach(k=>$(k).addEventListener("change",render));
+$("minimum").addEventListener("input",render);
+canvas.addEventListener("click",e=>{
+const box=canvas.getBoundingClientRect(),x=(e.clientX-box.left)/box.width*canvas.width,y=(e.clientY-box.top)/box.height*canvas.height;
+let nearest=null,d=Infinity;for(const item of screenOutlets){let dist=Math.hypot(item.x-x,item.y-y);if(dist<d){d=dist;nearest=item;}}
+if(nearest&&d<Math.max(18,nearest.r+6)){
+const z=nearest.rec;
+const warning=z.neighbor?"; 距另一陆块#"+z.neighbor.neighbor_polygon_id+"的岸线约 "+z.neighbor.min_distance_units+" 图纸单位":"";
+$("detail").textContent="出口（"+z.p[0]+"，"+z.p[1]+"） · T "+z.t+"格，O "+z.o+"格 · 3/6图纸单位下均为连通水面"+warning+"。";
+}else $("detail").textContent="此处没有被选中的出口标记。降低最低影响格数可显示更多采样点。";
+});
+async function init(){
+try{
+const p=["../data/orbina-v225r-b46-global-coastal-water-connectivity-audit.json","../data/orbina-v225r-b42-north-crown-dual-basin-coastline.json","../data/orbina-v225r-b43-east-inner-sea-r1-r2-screen.json"];
+const r=await Promise.all(p.map(x=>fetch(x)));if(r.some(z=>!z.ok))throw Error("Source not found");
+[audit,shore,b43]=await Promise.all(r.map(z=>z.json()));
+if(audit.results.global_exit_points.length!==529||shore.change.revised_coordinates.length!==164)throw Error("Data do not match");
+render();
+}catch(e){$("status").textContent="公共数据尚未成功载入，建议先使用上方静态全球SVG地图。";}}
+init();
+</script></body></html>
