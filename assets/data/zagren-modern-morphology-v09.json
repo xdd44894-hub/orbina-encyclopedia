@@ -1,8 +1,8 @@
 {
   "title": "Žaġręn V0.9 · 现代名词与动词批量形态学数据",
-  "version": "V0.9-morphology-batch-2",
+  "version": "V0.9-morphology-batch-2-r05-A7-norm",
   "date": "2026-11-09",
-  "normativePolicy": "词典原形、V0.7核心句法及16组受控句中已核定的位置有效；本文件其余派生为历史转写、校准模板或词形推断候选，未声明完成全现代范式。",
+  "normativePolicy": "词典原形、V0.7核心句法及16组受控句中已核定的位置有效；本文件其余派生为历史转写、校准模板或词形推断候选，未声明完成全现代范式。 R05在不更改原有候选或历史范式的前提下，以明确编纂决定正式核准7个阴性A类词的252个现代格位（21主格原有，231其他位置新定型），不将此规则自动推广到全部A类词。",
   "source": [
     "assets/data/zagren-dictionary-v05.json",
     "assets/data/zagren-nominal-morphology-v02.json",
@@ -20,7 +20,8 @@
     "仅在已有例证支持的词族上执行限定音变；神明/雪西部20个格位仍未定",
     "保存既有16个受控语法位置在三方言中的48个原形/短语",
     "未来完成完整屈折时逐格覆盖候选，而非重写历史文法",
-    "为新增21词登记词类和已确定的三方言原形：9个可用现有A/O名词模板试算，3个中性名词不套男性O类模板；9个动词可试算A/I变位。"
+    "为新增21词登记词类和已确定的三方言原形：9个可用现有A/O名词模板试算，3个中性名词不套男性O类模板；9个动词可试算A/I变位。",
+    "R05：直接规范化7个已逐项校对的阴性A类名词三方言12格位，共252个，其中231个为新增正式屈折。"
   ],
   "authorityLayers": {
     "registeredHeadword": "forms.SG.NOM 或 forms.INF；直接来自V0.5词典，正式现行",
@@ -29,7 +30,8 @@
     "shapeInferred": "sourceType=shape-*；仅据性/词典原形的形式进行弱推断，低置信度，不得直接引用为现代规范",
     "lemmaOnly": "sourceType=lemma-only；没有足够格位类型依据，不生成除词典原形/允许的分析未来外的词形",
     "controlledException": "branches.*.controlled 内的每条有明确历史句型或现代受控句证据；其中短语za保留为词组，不进入词根",
-    "newV09": "新增名词A/O及动词A/I分类已指定，但除现行词典原形外，其余格尾是基于旧模板生成的待核候选；中性O类另需中性变格模板，不代用阳性O类"
+    "newV09": "新增名词A/O及动词A/I分类已指定，但除现行词典原形外，其余格尾是基于旧模板生成的待核候选；中性O类另需中性变格模板，不代用阳性O类",
+    "r05EditorialNorm": "branches.*.normativeSlots 明示的R05 7个阴性A类现代标准格位；其余V0.7类推仍为候选"
   },
   "corePositions": {
     "nouns": 12,
@@ -98,7 +100,10 @@
     "westAnimateAccConstructionEntries": 10,
     "newModernLexicalEntries": 21,
     "newNounEntries": 12,
-    "newVerbEntries": 9
+    "newVerbEntries": 9,
+    "r05NormativeAClassLexemes": 7,
+    "r05NormativePositions": 252,
+    "r05NewlyStandardizedInflections": 231
   },
   "safeguards": [
     "本文件格式不等于语言已被自然母语者验证。",
@@ -106,7 +111,8 @@
     "西部za短语规则仅允许阳性有生单数宾格的既定范围；不可改造词根。",
     "历史三支语法原始数据不受V0.9现代批量生成影响。",
     "现代不规则动词及未知名词类别保留未定，不套A/O类。",
-    "新增3个中性词肥皂、镜子、水桶只显示词典原形；在现代中性词尾正式验证前不套阳性O类。"
+    "新增3个中性词肥皂、镜子、水桶只显示词典原形；在现代中性词尾正式验证前不套阳性O类。",
+    "R05正式规范化为作者编纂决定，不等于自然语料证明；仅7词，其他A/O类、形容词及西部za未随之全类转正。"
   ],
   "lexemes": [
     {
@@ -6900,7 +6906,21 @@
             "PL.ACC": "babÿ",
             "PL.INS": "babami",
             "PL.LOC": "babaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "baba",
@@ -6917,7 +6937,21 @@
             "PL.ACC": "babi",
             "PL.INS": "babami",
             "PL.LOC": "babah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "bab",
@@ -6934,9 +6968,24 @@
             "PL.ACC": "babÿ",
             "PL.INS": "babami",
             "PL.LOC": "babaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         }
-      }
+      },
+      "normativeAddendum": "R05-A7-modern-editorial-standard"
     },
     {
       "id": "D0190",
@@ -6970,7 +7019,21 @@
             "PL.ACC": "dŵerÿ",
             "PL.INS": "dŵerami",
             "PL.LOC": "dŵeraħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "dvera",
@@ -6987,7 +7050,21 @@
             "PL.ACC": "dveri",
             "PL.INS": "dverami",
             "PL.LOC": "dverah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "dŵer",
@@ -7004,9 +7081,24 @@
             "PL.ACC": "dŵerÿ",
             "PL.INS": "dŵerami",
             "PL.LOC": "dŵeraħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         }
-      }
+      },
+      "normativeAddendum": "R05-A7-modern-editorial-standard"
     },
     {
       "id": "D0191",
@@ -7078,7 +7170,21 @@
             "PL.ACC": "stenÿ",
             "PL.INS": "stenami",
             "PL.LOC": "stenaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "stena",
@@ -7095,7 +7201,21 @@
             "PL.ACC": "steni",
             "PL.INS": "stenami",
             "PL.LOC": "stenah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "sten",
@@ -7112,9 +7232,24 @@
             "PL.ACC": "stenÿ",
             "PL.INS": "stenami",
             "PL.LOC": "stenaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         }
-      }
+      },
+      "normativeAddendum": "R05-A7-modern-editorial-standard"
     },
     {
       "id": "D0193",
@@ -7148,7 +7283,21 @@
             "PL.ACC": "kroŵÿ",
             "PL.INS": "kroŵami",
             "PL.LOC": "kroŵaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "krova",
@@ -7165,7 +7314,21 @@
             "PL.ACC": "krovi",
             "PL.INS": "krovami",
             "PL.LOC": "krovah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "kroŵ",
@@ -7182,9 +7345,24 @@
             "PL.ACC": "kroŵÿ",
             "PL.INS": "kroŵami",
             "PL.LOC": "kroŵaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         }
-      }
+      },
+      "normativeAddendum": "R05-A7-modern-editorial-standard"
     },
     {
       "id": "D0194",
@@ -7398,7 +7576,21 @@
             "PL.ACC": "kupÿ",
             "PL.INS": "kupami",
             "PL.LOC": "kupaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "kupa",
@@ -7415,7 +7607,21 @@
             "PL.ACC": "kupi",
             "PL.INS": "kupami",
             "PL.LOC": "kupah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "kup",
@@ -7432,9 +7638,24 @@
             "PL.ACC": "kupÿ",
             "PL.INS": "kupami",
             "PL.LOC": "kupaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         }
-      }
+      },
+      "normativeAddendum": "R05-A7-modern-editorial-standard"
     },
     {
       "id": "D0198",
@@ -7468,7 +7689,21 @@
             "PL.ACC": "misÿ",
             "PL.INS": "misami",
             "PL.LOC": "misaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "misa",
@@ -7485,7 +7720,21 @@
             "PL.ACC": "misi",
             "PL.INS": "misami",
             "PL.LOC": "misah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "mis",
@@ -7502,9 +7751,24 @@
             "PL.ACC": "misÿ",
             "PL.INS": "misami",
             "PL.LOC": "misaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         }
-      }
+      },
+      "normativeAddendum": "R05-A7-modern-editorial-standard"
     },
     {
       "id": "D0199",
@@ -8682,7 +8946,21 @@
             "PL.ACC": "lunÿ",
             "PL.INS": "lunami",
             "PL.LOC": "lunaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "luna",
@@ -8699,7 +8977,21 @@
             "PL.ACC": "luni",
             "PL.INS": "lunami",
             "PL.LOC": "lunah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "łun",
@@ -8716,9 +9008,24 @@
             "PL.ACC": "łunÿ",
             "PL.INS": "łunami",
             "PL.LOC": "łunaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         }
-      }
+      },
+      "normativeAddendum": "R05-A7-modern-editorial-standard"
     },
     {
       "id": "D0218",
@@ -15496,5 +15803,98 @@
       "coreFilled": 6859,
       "coreBlank": 1769
     }
+  },
+  "modernNormR05": {
+    "title": "R05第一批：现代阴性A类7词的受限正式变格",
+    "date": "2026-11-11",
+    "authority": "new-authorial-standardization-decision-not-independent-attestation",
+    "source": "assets/data/zagren-morphology-pilot-v07.json",
+    "scope": "仅D0189、D0190、D0192、D0193、D0197、D0198、D0217七词三方言十二位置；不推广到其余A类，不影响O类、代词或西部za",
+    "coverageLexemeIds": [
+      "D0189",
+      "D0190",
+      "D0192",
+      "D0193",
+      "D0197",
+      "D0198",
+      "D0217"
+    ],
+    "meanings": [
+      "祖母",
+      "门",
+      "墙",
+      "屋顶",
+      "杯子",
+      "碗",
+      "月亮"
+    ],
+    "caseSlots": [
+      "SG.NOM",
+      "SG.GEN",
+      "SG.DAT",
+      "SG.ACC",
+      "SG.INS",
+      "SG.LOC",
+      "PL.NOM",
+      "PL.GEN",
+      "PL.DAT",
+      "PL.ACC",
+      "PL.INS",
+      "PL.LOC"
+    ],
+    "endings": {
+      "N": {
+        "SG.NOM": "a",
+        "SG.GEN": "ÿ",
+        "SG.DAT": "i",
+        "SG.ACC": "u",
+        "SG.INS": "oją",
+        "SG.LOC": "e",
+        "PL.NOM": "ÿ",
+        "PL.GEN": "",
+        "PL.DAT": "am",
+        "PL.ACC": "ÿ",
+        "PL.INS": "ami",
+        "PL.LOC": "aħ"
+      },
+      "SE": {
+        "SG.NOM": "a",
+        "SG.GEN": "i",
+        "SG.DAT": "i",
+        "SG.ACC": "u",
+        "SG.INS": "ojo",
+        "SG.LOC": "e",
+        "PL.NOM": "i",
+        "PL.GEN": "",
+        "PL.DAT": "am",
+        "PL.ACC": "i",
+        "PL.INS": "ami",
+        "PL.LOC": "ah"
+      },
+      "W": {
+        "SG.NOM": "",
+        "SG.GEN": "ÿ",
+        "SG.DAT": "i",
+        "SG.ACC": "u",
+        "SG.INS": "oj",
+        "SG.LOC": "",
+        "PL.NOM": "ÿ",
+        "PL.GEN": "",
+        "PL.DAT": "am",
+        "PL.ACC": "ÿ",
+        "PL.INS": "ami",
+        "PL.LOC": "aħ"
+      }
+    },
+    "metrics": {
+      "nouns": 7,
+      "branches": 3,
+      "slotsPerNounAndDialect": 12,
+      "totalNormativePositions": 252,
+      "existingHeadwords": 21,
+      "newlyStandardizedInflectedPositions": 231
+    },
+    "methodology": "词典现代原形+经V0.7历史模板校准的一致词尾，作为世界观语言设计者的明确编纂决定予以规范化；不能称为新发现的自然语料。",
+    "exceptions": "只核定7个明示词，不强推全部A类，不自动认证形容词的所有格位"
   }
 }
