@@ -183,6 +183,23 @@ footer{border-top:1px solid var(--line);color:var(--sub);font-size:.82rem;paddin
 </div>
 <div class="links"><a href="../assets/data/zagren-r03-minimal-contrast-v09.json">39项来源／候选数据及3个假说</a><a href="../assets/js/zagren-r03-scope-validator-v09.js">证据范围自动校验程序</a></div>
 </section>
+<section class="panel" id="nominal-r05">
+<h2>R05 · 首批正式现代A类名词变格</h2>
+<p>以明确的语言编纂决定，正式定型<strong>祖母、门、墙、屋顶、杯子、碗、月亮</strong>七个阴性A类名词。每词在北部、东南、西部各有12个数格形式，共<strong>252个正式格位（21个既有主格＋231个新定型屈折）</strong>。这是作者采纳的正式设计标准，不是声称找到了231条自然语料；<strong>尚不自动推广到其余A类词或O类名词</strong>。</p>
+<div class="stats">
+<div class="stat"><strong id="r05Nouns">—</strong><small>已正式定型的A类名词</small></div>
+<div class="stat"><strong id="r05Slots">—</strong><small>正式数格位置</small></div>
+<div class="stat"><strong id="r05New">—</strong><small>新增正式屈折</small></div>
+<div class="stat"><strong id="r05Candidates">—</strong><small>自动推广的其他词</small></div>
+</div>
+<label for="r05Lexeme">选择正式定型的名词
+<select id="r05Lexeme"><option value="D0189">祖母</option><option value="D0190">门</option><option value="D0192">墙</option><option value="D0193">屋顶</option><option value="D0197">杯子</option><option value="D0198">碗</option><option value="D0217">月亮</option></select></label>
+<p id="r05Status" class="muted" role="status">读取七词现代变格规范中……</p>
+<div class="scroll"><table>
+<thead><tr><th>语法位置</th><th>北部</th><th>东南</th><th>西部</th></tr></thead><tbody id="r05Rows"></tbody>
+</table></div>
+<div class="links"><a href="../assets/data/zagren-modern-morphology-v09.json">包含R05规范层的现行现代形态数据</a></div>
+</section>
 <section class="panel" id="nominal-r04">
 <h2>R04 · 形容词一致与西部za证据谱系</h2>
 <p>这一阶段不再用自动生成句证明自己：将<strong>原有2组现代已核验句、6组历史协调语境及1组早期书面语词组</strong>分开，对其中2处复用旧文法资料的条目去重。按三方言可查看共27条已有词组／句形。</p>
@@ -248,6 +265,7 @@ function slotName(k){if(k.includes(".")){const [a,b]=k.split(".");if(a==="SG"||a
 function sourceStatus(x,b,k){const row=x.branches[b],controlled=row.controlled?.find(z=>z.slot===k);if(controlled)return {label:"受控用法："+controlled.source,good:true,phrase:controlled.form};
  const analytic=row.phrases?.[k];if(analytic)return {label:"西部za宾格词组（规则类推，个别用法待核）",good:false,phrase:analytic.text};
  if(k==="SG.NOM"||k==="INF")return {label:"正式现代词典原形",good:true};
+ if(row.normativeSlots?.includes(k))return {label:"R05正式现代屈折·七词定型",good:true};
  if(k==="FUT.IPFV")return {label:"V0.7分析将来结构；变位未独立校准",good:false};
  if(row.notes?.some(x=>x==="W11-oblique-open:"+k))return {label:"西部W11格位待核",good:false};
  return {label:sourceLabels[x.sourceType]||"候选",good:false}}
@@ -279,13 +297,38 @@ function render(){
   table.append(tr);
  }
  $("entryStatus").textContent=x.gloss+" · "+x.id+" · "+(x.gramClass||"类别未定")+"类 · "+sourceLabels[x.sourceType]+" · "+(x.aspect||x.gender||"")+".";
- $("sourceNote").textContent="来源："+(x.evidence.paradigm||"仅依据现代词典原形")+"。空白位置表示没有足够规则生成；所有候选仍须按语法位置校验。";
+ $("sourceNote").textContent="来源："+(x.evidence.paradigm||"仅依据现代词典原形")+"。空白位置表示没有足够规则生成；未列为正式规范的候选仍须按语法位置校验。";
+}
+function renderR05Norm(){
+ const root=data?.modernNormR05;
+ if(!root||root.metrics?.newlyStandardizedInflectedPositions!==231)throw Error("R05规范层缺失或数量异常");
+ const pick=$("r05Lexeme"),target=$("r05Rows");
+ $("r05Nouns").textContent=root.metrics.nouns;
+ $("r05Slots").textContent=root.metrics.totalNormativePositions;
+ $("r05New").textContent=root.metrics.newlyStandardizedInflectedPositions;
+ $("r05Candidates").textContent="0";
+ function draw(){
+  const x=all.find(x=>x.id===pick.value);
+  if(!x||!root.coverageLexemeIds.includes(x.id))throw Error("R05所选词不在正式七词范围");
+  target.replaceChildren();
+  for(const slot of root.caseSlots){
+   const tr=make("tr");tr.append(make("td",null,slotName(slot)));
+   for(const b of B){
+    if(!x.branches[b].normativeSlots?.includes(slot))throw Error("缺失R05核定标记："+x.id+"/"+b+"/"+slot);
+    const td=make("td");td.append(make("code",null,x.branches[b].forms[slot]));tr.append(td);
+   }
+   target.append(tr);
+  }
+  $("r05Status").textContent=x.gloss+" · "+x.id+" · 三方言各12位置均已正式定型；不代表全A类完成。";
+ }
+ if(!pick.dataset.loaded){pick.addEventListener("change",draw);pick.dataset.loaded="yes"}
+ draw();
 }
 async function init(){
  try{
   const res=await fetch("../assets/data/zagren-modern-morphology-v09.json",{cache:"no-cache"});
   if(!res.ok)throw Error("HTTP "+res.status);
-  data=await res.json();all=data.lexemes||[];
+  data=await res.json();all=data.lexemes||[];renderR05Norm();
   if(all.length!==data.metrics.totalNouns+data.metrics.totalVerbs||data.metrics.coreExpected!==data.metrics.totalNouns*36+data.metrics.totalVerbs*42||data.metrics.filledCorePositions+data.metrics.unfilledCorePositions!==data.metrics.coreExpected)throw Error("数据版本和预期数量不匹配");
   $("wordCount").textContent=all.length;$("filled").textContent=data.metrics.filledCorePositions.toLocaleString();$("missing").textContent=data.metrics.unfilledCorePositions.toLocaleString();$("controlled").textContent=data.metrics.controlledDialectUsages;
   $("pos").addEventListener("change",refreshEntries);$("search").addEventListener("input",refreshEntries);$("gloss").addEventListener("change",render);refreshEntries();
