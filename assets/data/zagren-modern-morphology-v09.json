@@ -1,8 +1,8 @@
 {
   "title": "Žaġręn V0.9 · 现代名词与动词批量形态学数据",
-  "version": "V0.9-morphology-batch-2-r05-A7-norm",
+  "version": "V0.9-morphology-batch-2-r05-A7-r06-O7-nse-norm",
   "date": "2026-11-09",
-  "normativePolicy": "词典原形、V0.7核心句法及16组受控句中已核定的位置有效；本文件其余派生为历史转写、校准模板或词形推断候选，未声明完成全现代范式。 R05在不更改原有候选或历史范式的前提下，以明确编纂决定正式核准7个阴性A类词的252个现代格位（21主格原有，231其他位置新定型），不将此规则自动推广到全部A类词。",
+  "normativePolicy": "词典原形、V0.7核心句法及16组受控句中已核定的位置有效；本文件其余派生为历史转写、校准模板或词形推断候选，未声明完成全现代范式。 R05在不更改原有候选或历史范式的前提下，以明确编纂决定正式核准7个阴性A类词的252个现代格位（21主格原有，231其他位置新定型），不将此规则自动推广到全部A类词。 R06在N/SE明确核定七个阳性O类代表名词的168个格位，其中154个为新核定屈折；W仍按原有限定证据。",
   "source": [
     "assets/data/zagren-dictionary-v05.json",
     "assets/data/zagren-nominal-morphology-v02.json",
@@ -21,7 +21,8 @@
     "保存既有16个受控语法位置在三方言中的48个原形/短语",
     "未来完成完整屈折时逐格覆盖候选，而非重写历史文法",
     "为新增21词登记词类和已确定的三方言原形：9个可用现有A/O名词模板试算，3个中性名词不套男性O类模板；9个动词可试算A/I变位。",
-    "R05：直接规范化7个已逐项校对的阴性A类名词三方言12格位，共252个，其中231个为新增正式屈折。"
+    "R05：直接规范化7个已逐项校对的阴性A类名词三方言12格位，共252个，其中231个为新增正式屈折。",
+    "R06：七个阳性O类名词N、SE两方言正式定型168格位（14个现行主格、154个新标准屈折），保留W和za原有边界。"
   ],
   "authorityLayers": {
     "registeredHeadword": "forms.SG.NOM 或 forms.INF；直接来自V0.5词典，正式现行",
@@ -31,7 +32,8 @@
     "lemmaOnly": "sourceType=lemma-only；没有足够格位类型依据，不生成除词典原形/允许的分析未来外的词形",
     "controlledException": "branches.*.controlled 内的每条有明确历史句型或现代受控句证据；其中短语za保留为词组，不进入词根",
     "newV09": "新增名词A/O及动词A/I分类已指定，但除现行词典原形外，其余格尾是基于旧模板生成的待核候选；中性O类另需中性变格模板，不代用阳性O类",
-    "r05EditorialNorm": "branches.*.normativeSlots 明示的R05 7个阴性A类现代标准格位；其余V0.7类推仍为候选"
+    "r05EditorialNorm": "branches.*.normativeSlots 明示的R05 7个阴性A类现代标准格位；其余V0.7类推仍为候选",
+    "r06EditorialNorm": "R06仅在七个O类名词N、SE分支的normativeSlots正式核定12格位；西部W仍留在原有候选／受控范围"
   },
   "corePositions": {
     "nouns": 12,
@@ -103,7 +105,13 @@
     "newVerbEntries": 9,
     "r05NormativeAClassLexemes": 7,
     "r05NormativePositions": 252,
-    "r05NewlyStandardizedInflections": 231
+    "r05NewlyStandardizedInflections": 231,
+    "r06NormativeOClassLexemes": 7,
+    "r06NormativePositions": 168,
+    "r06NewlyStandardizedInflections": 154,
+    "r06WesternPositionsChanged": 0,
+    "normativePositionsFromR05AndR06": 420,
+    "newInflectionsFromR05AndR06": 385
   },
   "safeguards": [
     "本文件格式不等于语言已被自然母语者验证。",
@@ -112,7 +120,8 @@
     "历史三支语法原始数据不受V0.9现代批量生成影响。",
     "现代不规则动词及未知名词类别保留未定，不套A/O类。",
     "新增3个中性词肥皂、镜子、水桶只显示词典原形；在现代中性词尾正式验证前不套阳性O类。",
-    "R05正式规范化为作者编纂决定，不等于自然语料证明；仅7词，其他A/O类、形容词及西部za未随之全类转正。"
+    "R05正式规范化为作者编纂决定，不等于自然语料证明；仅7词，其他A/O类、形容词及西部za未随之全类转正。",
+    "R06七词的北部／东南现代变格是正式编纂决定，不能从七词推定所有阳性O类；西部及中性名词未经升级。"
   ],
   "lexemes": [
     {
@@ -6255,7 +6264,21 @@
             "PL.ACC": "ludoŵ",
             "PL.INS": "ludami",
             "PL.LOC": "ludaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "lud",
@@ -6272,7 +6295,21 @@
             "PL.ACC": "ludov",
             "PL.INS": "ludami",
             "PL.LOC": "ludah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "łud",
@@ -6301,7 +6338,8 @@
             }
           }
         }
-      }
+      },
+      "normativeAddendum": "R06-O7-N-SE-authorial-standard"
     },
     {
       "id": "D0181",
@@ -6444,7 +6482,21 @@
             "PL.ACC": "druġoŵ",
             "PL.INS": "druġami",
             "PL.LOC": "druġaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "drug",
@@ -6461,7 +6513,21 @@
             "PL.ACC": "drugov",
             "PL.INS": "drugami",
             "PL.LOC": "drugah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "dru",
@@ -6490,7 +6556,8 @@
             }
           }
         }
-      }
+      },
+      "normativeAddendum": "R06-O7-N-SE-authorial-standard"
     },
     {
       "id": "D0184",
@@ -6524,7 +6591,21 @@
             "PL.ACC": "susedoŵ",
             "PL.INS": "susedami",
             "PL.LOC": "susedaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "sused",
@@ -6541,7 +6622,21 @@
             "PL.ACC": "susedov",
             "PL.INS": "susedami",
             "PL.LOC": "susedah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "sused",
@@ -6570,7 +6665,8 @@
             }
           }
         }
-      }
+      },
+      "normativeAddendum": "R06-O7-N-SE-authorial-standard"
     },
     {
       "id": "D0185",
@@ -6675,7 +6771,21 @@
             "PL.ACC": "trudnikoŵ",
             "PL.INS": "trudnikami",
             "PL.LOC": "trudnikaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "trudnik",
@@ -6692,7 +6802,21 @@
             "PL.ACC": "trudnikov",
             "PL.INS": "trudnikami",
             "PL.LOC": "trudnikah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "trudnik",
@@ -6721,7 +6845,8 @@
             }
           }
         }
-      }
+      },
+      "normativeAddendum": "R06-O7-N-SE-authorial-standard"
     },
     {
       "id": "D0187",
@@ -6826,7 +6951,21 @@
             "PL.ACC": "lekaroŵ",
             "PL.INS": "lekarami",
             "PL.LOC": "lekaraħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "lekar",
@@ -6843,7 +6982,21 @@
             "PL.ACC": "lekarov",
             "PL.INS": "lekarami",
             "PL.LOC": "lekarah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "łekar",
@@ -6872,7 +7025,8 @@
             }
           }
         }
-      }
+      },
+      "normativeAddendum": "R06-O7-N-SE-authorial-standard"
     },
     {
       "id": "D0189",
@@ -8086,7 +8240,21 @@
             "PL.ACC": "ħlebÿ",
             "PL.INS": "ħlebami",
             "PL.LOC": "ħlebaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "hleb",
@@ -8103,7 +8271,21 @@
             "PL.ACC": "hlebi",
             "PL.INS": "hlebami",
             "PL.LOC": "hlebah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "ħłeb",
@@ -8122,7 +8304,8 @@
             "PL.LOC": "ħłebaħ"
           }
         }
-      }
+      },
+      "normativeAddendum": "R06-O7-N-SE-authorial-standard"
     },
     {
       "id": "D0204",
@@ -8587,7 +8770,21 @@
             "PL.ACC": "mostÿ",
             "PL.INS": "mostami",
             "PL.LOC": "mostaħ"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "SE": {
           "lemma": "most",
@@ -8604,7 +8801,21 @@
             "PL.ACC": "mosti",
             "PL.INS": "mostami",
             "PL.LOC": "mostah"
-          }
+          },
+          "normativeSlots": [
+            "SG.NOM",
+            "SG.GEN",
+            "SG.DAT",
+            "SG.ACC",
+            "SG.INS",
+            "SG.LOC",
+            "PL.NOM",
+            "PL.GEN",
+            "PL.DAT",
+            "PL.ACC",
+            "PL.INS",
+            "PL.LOC"
+          ]
         },
         "W": {
           "lemma": "most",
@@ -8623,7 +8834,8 @@
             "PL.LOC": "mostaħ"
           }
         }
-      }
+      },
+      "normativeAddendum": "R06-O7-N-SE-authorial-standard"
     },
     {
       "id": "D0212",
@@ -15896,5 +16108,144 @@
     },
     "methodology": "词典现代原形+经V0.7历史模板校准的一致词尾，作为世界观语言设计者的明确编纂决定予以规范化；不能称为新发现的自然语料。",
     "exceptions": "只核定7个明示词，不强推全部A类，不自动认证形容词的所有格位"
+  },
+  "modernNormR06": {
+    "title": "R06第一批：阳性O类7名词北部与东南现代变格",
+    "date": "2026-11-13",
+    "authority": "new-authorial-standardization-decision-not-independent-attestation",
+    "source": [
+      "assets/data/zagren-r03-noun-pronoun-review.json",
+      "assets/data/zagren-morphology-pilot-v07.json",
+      "assets/data/zagren-syntax-v07.json"
+    ],
+    "scope": "仅7个O类代表名词的北部N与东南SE两方言全部12个单复数六格位置；不修改西部W的任何斜格或za分布",
+    "lexemes": [
+      {
+        "id": "D0180",
+        "gloss": "人",
+        "animacy": "有生",
+        "N": "lud",
+        "SE": "lud",
+        "W": "łud"
+      },
+      {
+        "id": "D0183",
+        "gloss": "朋友",
+        "animacy": "有生",
+        "N": "druġ",
+        "SE": "drug",
+        "W": "dru"
+      },
+      {
+        "id": "D0184",
+        "gloss": "邻居",
+        "animacy": "有生",
+        "N": "sused",
+        "SE": "sused",
+        "W": "sused"
+      },
+      {
+        "id": "D0186",
+        "gloss": "工人",
+        "animacy": "有生",
+        "N": "trudnik",
+        "SE": "trudnik",
+        "W": "trudnik"
+      },
+      {
+        "id": "D0188",
+        "gloss": "医生",
+        "animacy": "有生",
+        "N": "lekar",
+        "SE": "lekar",
+        "W": "łekar"
+      },
+      {
+        "id": "D0203",
+        "gloss": "面包",
+        "animacy": "无生",
+        "N": "ħleb",
+        "SE": "hleb",
+        "W": "ħłeb"
+      },
+      {
+        "id": "D0211",
+        "gloss": "桥梁",
+        "animacy": "无生",
+        "N": "most",
+        "SE": "most",
+        "W": "most"
+      }
+    ],
+    "branches": [
+      "N",
+      "SE"
+    ],
+    "caseSlots": [
+      "SG.NOM",
+      "SG.GEN",
+      "SG.DAT",
+      "SG.ACC",
+      "SG.INS",
+      "SG.LOC",
+      "PL.NOM",
+      "PL.GEN",
+      "PL.DAT",
+      "PL.ACC",
+      "PL.INS",
+      "PL.LOC"
+    ],
+    "morphosyntacticRule": {
+      "singularAccusativeAnimate": "equals SG.GEN",
+      "singularAccusativeInanimate": "equals SG.NOM",
+      "pluralAccusativeAnimate": "equals PL.GEN",
+      "pluralAccusativeInanimate": "equals PL.NOM",
+      "decisionScope": "only the 7 listed O-class nouns in N and SE",
+      "independentHistoricalEvidence": "pilot-verified-shape-not-new-contemporary-natural-corpus"
+    },
+    "suffixes": {
+      "N": {
+        "NOM": "",
+        "GEN": "a",
+        "DAT": "u",
+        "INS": "om",
+        "LOC": "e",
+        "PNOM": "ÿ",
+        "PGEN": "oŵ",
+        "PDAT": "am",
+        "PINS": "ami",
+        "PLOC": "aħ"
+      },
+      "SE": {
+        "NOM": "",
+        "GEN": "a",
+        "DAT": "u",
+        "INS": "om",
+        "LOC": "e",
+        "PNOM": "i",
+        "PGEN": "ov",
+        "PDAT": "am",
+        "PINS": "ami",
+        "PLOC": "ah"
+      }
+    },
+    "metrics": {
+      "nouns": 7,
+      "animateNouns": 5,
+      "inanimateNouns": 2,
+      "branches": 2,
+      "slotsPerNounAndDialect": 12,
+      "totalNormativePositions": 168,
+      "previouslyOfficialHeadwordPositions": 14,
+      "newlyStandardizedInflectedPositions": 154,
+      "westernPositionsStandardized": 0
+    },
+    "methodology": "由语言作者采纳七词已校准的V0.7候选范式并冻结为N/SE现代规范，属创作的规范化决定，不假装为自然语言实证。",
+    "exclusions": [
+      "西部7词的非主格仍未定型，尤其朋友dru / druġ-",
+      "西部za分析性标记M07范围不变",
+      "其他O类名词与中性词不自动使用本表",
+      "形容词跨词所有格位未因此核定"
+    ]
   }
 }
