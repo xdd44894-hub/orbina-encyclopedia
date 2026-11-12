@@ -1,6 +1,6 @@
 ---
 title: "CrystalDiamond（晶钻，CD）"
-category: "科技与工业"
+category: "科技与装备"
 ai_search: true
 ---
 
